@@ -2,6 +2,7 @@ package efd;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Collections;
 import java.util.List;
@@ -14,6 +15,11 @@ public class Parsers {
     }
 
     public static String formataData(LocalDate data, String f) {
+        DateTimeFormatter formato = DateTimeFormatter.ofPattern(f);
+        return formato.format(data);
+    }
+
+    public static String formataHora(LocalTime data, String f) {
         DateTimeFormatter formato = DateTimeFormatter.ofPattern(f);
         return formato.format(data);
     }

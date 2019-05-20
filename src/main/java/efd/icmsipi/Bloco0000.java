@@ -4,7 +4,6 @@ import efd.Parsers;
 import efd.UF;
 
 import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,7 +13,7 @@ import java.util.List;
  *<p>
  * Este Registro é obrigatório e corresponde ao primeiro registro do arquivo.
  * Nos casos de EFD-ICMS/IPI apresentadas por estabelecimentos situados em outra UF e que possuam Inscrição Estadual nos termos do Convênio ICMS nº 113/04 (serviços de comunicação definidos pela Anatel), deve-se observar o seguinte procedimento para preenchimento do registro 0000:
- * <p>
+ * </p>
  * <ul>
  * <li>Informar o campo UF da unidade federada do tomador de serviços</li>
  * <li>Informar no campo IE a inscrição estadual na unidade federada do tomador de serviços</li>
