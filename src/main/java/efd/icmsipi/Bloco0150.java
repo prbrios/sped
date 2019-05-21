@@ -1,25 +1,23 @@
 package efd.icmsipi;
 
+import efd.Inclui;
 import efd.Parsers;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class Bloco0150 {
 
-    private final String reg = "0150";
-    private String codPart;
-    private String nome;
-    private String codPais;
-    private String cnpj;
-    private String cpf;
-    private String ie;
-    private String codMun;
-    private String suframa;
-    private String end;
-    private String num;
-    private String compl;
-    private String bairro;
+    @Inclui private final String reg = "0150";
+    @Inclui private String codPart;
+    @Inclui private String nome;
+    @Inclui private String codPais;
+    @Inclui private String cnpj;
+    @Inclui private String cpf;
+    @Inclui private String ie;
+    @Inclui private String codMun;
+    @Inclui private String suframa;
+    @Inclui private String end;
+    @Inclui private String num;
+    @Inclui private String compl;
+    @Inclui private String bairro;
 
     public String getReg() {
         return reg;
@@ -123,24 +121,6 @@ public class Bloco0150 {
 
     @Override
     public String toString(){
-
-        List arr = new ArrayList<>();
-
-        arr.add(this.reg);
-        arr.add(this.codPart);
-        arr.add(this.nome);
-        arr.add(this.codPais);
-        arr.add(this.cnpj);
-        arr.add(this.cpf);
-        arr.add(this.ie);
-        arr.add(this.codMun);
-        arr.add(this.suframa);
-        arr.add(this.end);
-        arr.add(this.num);
-        arr.add(this.compl);
-        arr.add(this.bairro);
-
-        return Parsers.converteBlocoEmString(arr);
-
+        return Parsers.converteBlocoEmString(this);
     }
 }

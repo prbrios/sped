@@ -1,20 +1,19 @@
 package efd.icmsipi;
 
+import efd.Inclui;
 import efd.Parsers;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
 
 public class Bloco0500 {
 
-    private final String reg = "0500";
-    private LocalDate dtAlt;
-    private CodNatCc codNatCc;
-    private IndCta indCta;
-    private Integer nivel;
-    private String codCta;
-    private String nomeCta;
+    @Inclui private final String reg = "0500";
+    @Inclui private LocalDate dtAlt;
+    @Inclui private String codNatCc;
+    @Inclui private String indCta;
+    @Inclui private Integer nivel;
+    @Inclui private String codCta;
+    @Inclui private String nomeCta;
 
     public String getReg() {
         return reg;
@@ -28,19 +27,19 @@ public class Bloco0500 {
         this.dtAlt = dtAlt;
     }
 
-    public CodNatCc getCodNatCc() {
+    public String getCodNatCc() {
         return codNatCc;
     }
 
-    public void setCodNatCc(CodNatCc codNatCc) {
+    public void setCodNatCc(String codNatCc) {
         this.codNatCc = codNatCc;
     }
 
-    public IndCta getIndCta() {
+    public String getIndCta() {
         return indCta;
     }
 
-    public void setIndCta(IndCta indCta) {
+    public void setIndCta(String indCta) {
         this.indCta = indCta;
     }
 
@@ -70,54 +69,6 @@ public class Bloco0500 {
 
     @Override
     public String toString(){
-
-        List arr = new ArrayList<>();
-
-        arr.add(this.reg);
-        arr.add(this.dtAlt != null ? Parsers.formataData(this.dtAlt, "ddMMyyyy") : null);
-        arr.add(this.codNatCc != null ? this.codNatCc.getCodigo() : null);
-        arr.add(this.indCta != null ? this.indCta.getCodigo() : null);
-        arr.add(this.nivel);
-        arr.add(this.codCta);
-        arr.add(this.nomeCta);
-
-        return Parsers.converteBlocoEmString(arr);
-
-    }
-
-    public enum CodNatCc {
-
-        CONTAS_DE_ATIVO("01"),
-        CONTAS_DE_PASSIVO("02"),
-        PATRIMONIO_LIQUIDO("03"),
-        CONTAS_DE_RESULTADO("04"),
-        CONTAS_DE_COMPENSACAO("05"),
-        OUTRAS("09");
-
-        private String codigo;
-
-        CodNatCc(String codigo){
-            this.codigo = codigo;
-        }
-
-        public String getCodigo() {
-            return this.codigo;
-        }
-    }
-
-    public enum IndCta {
-
-        SINTETICA("S"),
-        ANALITICA("A");
-
-        private String codigo;
-
-        IndCta(String codigo){
-            this.codigo = codigo;
-        }
-
-        public String getCodigo() {
-            return this.codigo;
-        }
+        return Parsers.converteBlocoEmString(this);
     }
 }

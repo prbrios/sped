@@ -1,18 +1,18 @@
 package efd.icmsipi;
 
+import efd.Inclui;
 import efd.Parsers;
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
 
 public class BlocoC120 {
 
-    private final String reg = "C120";
-    private String codDocImp;
-    private String numDocImp;
-    private BigDecimal pisImp;
-    private BigDecimal cofinsImp;
-    private String numAcdraw;
+    @Inclui private final String reg = "C120";
+    @Inclui private String codDocImp;
+    @Inclui private String numDocImp;
+    @Inclui private BigDecimal pisImp;
+    @Inclui private BigDecimal cofinsImp;
+    @Inclui private String numAcdraw;
 
     public String getReg() {
         return reg;
@@ -60,17 +60,6 @@ public class BlocoC120 {
 
     @Override
     public String toString(){
-
-        java.util.List arr = new ArrayList<>();
-
-        arr.add(this.reg);
-        arr.add(this.codDocImp);
-        arr.add(this.numDocImp);
-        arr.add(this.pisImp != null ? Parsers.formataNumero(this.pisImp, 2) : null);
-        arr.add(this.cofinsImp != null ? Parsers.formataNumero(this.cofinsImp, 2) : null);
-        arr.add(this.numAcdraw);
-
-        return Parsers.converteBlocoEmString(arr);
-
+        return Parsers.converteBlocoEmString(this);
     }
 }

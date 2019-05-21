@@ -1,16 +1,16 @@
 package efd.icmsipi;
 
+import efd.Inclui;
 import efd.Parsers;
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
 
 public class BlocoB500 {
 
-    private final String reg = "B500";
-    private BigDecimal vlRec;
-    private Integer qtdProf;
-    private BigDecimal vlOr;
+    @Inclui private final String reg = "B500";
+    @Inclui private BigDecimal vlRec;
+    @Inclui private Integer qtdProf;
+    @Inclui private BigDecimal vlOr;
 
     public String getReg() {
         return reg;
@@ -42,16 +42,7 @@ public class BlocoB500 {
 
     @Override
     public String toString(){
-
-        java.util.List arr = new ArrayList<>();
-
-        arr.add(this.reg);
-        arr.add(this.vlRec != null ? Parsers.formataNumero(this.vlRec, 2) : null);
-        arr.add(this.qtdProf);
-        arr.add(this.vlOr != null ? Parsers.formataNumero(this.vlOr, 2) : null);
-
-        return Parsers.converteBlocoEmString(arr);
-
+        return Parsers.converteBlocoEmString(this);
     }
 
 }

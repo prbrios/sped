@@ -1,10 +1,8 @@
 package efd.icmsipi;
 
 import efd.Parsers;
-import efd.UF;
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
 
 public class BlocoC160 {
 
@@ -14,7 +12,7 @@ public class BlocoC160 {
     private Integer qtdVol;
     private BigDecimal pesoBrt;
     private BigDecimal pesoLiq;
-    private UF ufId;
+    private String ufId;
 
     public String getReg() {
         return reg;
@@ -60,29 +58,17 @@ public class BlocoC160 {
         this.pesoLiq = pesoLiq;
     }
 
-    public UF getUfId() {
+    public String getUfId() {
         return ufId;
     }
 
-    public void setUfId(UF ufId) {
+    public void setUfId(String ufId) {
         this.ufId = ufId;
     }
 
     @Override
     public String toString(){
-
-        java.util.List arr = new ArrayList<>();
-
-        arr.add(this.reg);
-        arr.add(this.codPart);
-        arr.add(this.veicId);
-        arr.add(this.qtdVol);
-        arr.add(this.pesoBrt != null ? Parsers.formataNumero(this.pesoBrt, 2) : null);
-        arr.add(this.pesoLiq != null ? Parsers.formataNumero(this.pesoLiq, 2) : null);
-        arr.add(this.ufId != null ? this.ufId.getCodigo() : null);
-
-        return Parsers.converteBlocoEmString(arr);
-
+        return Parsers.converteBlocoEmString(this);
     }
 
 }

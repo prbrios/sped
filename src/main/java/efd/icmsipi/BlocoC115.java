@@ -1,31 +1,30 @@
 package efd.icmsipi;
 
+import efd.Inclui;
 import efd.Parsers;
-
-import java.util.ArrayList;
 
 public class BlocoC115 {
 
-    private final String reg = "C115";
-    private IndCarga indCarga;
-    private String cnpjCol;
-    private String ieCol;
-    private String cpfCol;
-    private String codMunCol;
-    private String cnpjEntg;
-    private String ieEntg;
-    private String cpfEntg;
-    private String codMunEntg;
+    @Inclui private final String reg = "C115";
+    @Inclui private String indCarga;
+    @Inclui private String cnpjCol;
+    @Inclui private String ieCol;
+    @Inclui private String cpfCol;
+    @Inclui private String codMunCol;
+    @Inclui private String cnpjEntg;
+    @Inclui private String ieEntg;
+    @Inclui private String cpfEntg;
+    @Inclui private String codMunEntg;
 
     public String getReg() {
         return reg;
     }
 
-    public IndCarga getIndCarga() {
+    public String getIndCarga() {
         return indCarga;
     }
 
-    public void setIndCarga(IndCarga indCarga) {
+    public void setIndCarga(String indCarga) {
         this.indCarga = indCarga;
     }
 
@@ -95,43 +94,7 @@ public class BlocoC115 {
 
     @Override
     public String toString(){
-
-        java.util.List arr = new ArrayList<>();
-
-        arr.add(this.reg);
-        arr.add(this.indCarga != null ? this.indCarga.getCodigo() : null);
-        arr.add(this.cnpjCol);
-        arr.add(this.ieCol);
-        arr.add(this.cpfCol);
-        arr.add(this.codMunCol);
-        arr.add(this.cnpjEntg);
-        arr.add(this.ieEntg);
-        arr.add(this.cpfEntg);
-        arr.add(this.codMunEntg);
-
-        return Parsers.converteBlocoEmString(arr);
-
-    }
-
-    public enum IndCarga {
-
-        RODOVIARIO("0"),
-        FERROVIARIO("1"),
-        RODO_FERROVIARIO("2"),
-        AQUAVIARIO("3"),
-        DUTOVIARIO("4"),
-        AEREO("5"),
-        OUTROS("9");
-
-        private String codigo;
-
-        IndCarga(String codigo){
-            this.codigo = codigo;
-        }
-
-        public String getCodigo() {
-            return this.codigo;
-        }
+        return Parsers.converteBlocoEmString(this);
     }
 
 }

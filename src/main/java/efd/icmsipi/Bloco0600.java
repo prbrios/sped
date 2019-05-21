@@ -1,17 +1,16 @@
 package efd.icmsipi;
 
+import efd.Inclui;
 import efd.Parsers;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
 
 public class Bloco0600 {
 
-    private final String reg = "0600";
-    private LocalDate dtAlt;
-    private String codCcus;
-    private String ccus;
+    @Inclui private final String reg = "0600";
+    @Inclui private LocalDate dtAlt;
+    @Inclui private String codCcus;
+    @Inclui private String ccus;
 
     public String getReg() {
         return reg;
@@ -43,16 +42,7 @@ public class Bloco0600 {
 
     @Override
     public String toString(){
-
-        List arr = new ArrayList<>();
-
-        arr.add(this.reg);
-        arr.add(this.dtAlt != null ? Parsers.formataData(this.dtAlt, "ddMMyyyy") : null);
-        arr.add(this.codCcus);
-        arr.add(this.ccus);
-
-        return Parsers.converteBlocoEmString(arr);
-
+        return Parsers.converteBlocoEmString(this);
     }
 
 }

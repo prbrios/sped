@@ -1,28 +1,28 @@
 package efd.icmsipi;
 
+import efd.Inclui;
 import efd.Parsers;
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
 
 public class BlocoB440 {
 
-    private final String reg = "B440";
-    private IndOper indOper;
-    private String codPart;
-    private BigDecimal vlContRt;
-    private BigDecimal vlBcIssRt;
-    private BigDecimal vlIssRt;
+    @Inclui private final String reg = "B440";
+    @Inclui private String indOper;
+    @Inclui private String codPart;
+    @Inclui private BigDecimal vlContRt;
+    @Inclui private BigDecimal vlBcIssRt;
+    @Inclui private BigDecimal vlIssRt;
 
     public String getReg() {
         return reg;
     }
 
-    public IndOper getIndOper() {
+    public String getIndOper() {
         return indOper;
     }
 
-    public void setIndOper(IndOper indOper) {
+    public void setIndOper(String indOper) {
         this.indOper = indOper;
     }
 
@@ -60,33 +60,7 @@ public class BlocoB440 {
 
     @Override
     public String toString(){
-
-        java.util.List arr = new ArrayList<>();
-
-        arr.add(this.reg);
-        arr.add(this.indOper != null ? this.indOper.getCodigo() : null );
-        arr.add(this.codPart);
-        arr.add(this.vlContRt != null ? Parsers.formataNumero(this.vlContRt, 2) : null);
-        arr.add(this.vlBcIssRt != null ? Parsers.formataNumero(this.vlBcIssRt, 2) : null);
-        arr.add(this.vlIssRt != null ? Parsers.formataNumero(this.vlIssRt, 2) : null);
-
-        return Parsers.converteBlocoEmString(arr);
-
+        return Parsers.converteBlocoEmString(this);
     }
 
-    public enum IndOper {
-
-        AQUISICAO("0"),
-        PRESTACAO("1");
-
-        private String codigo;
-
-        IndOper(String codigo){
-            this.codigo = codigo;
-        }
-
-        public String getCodigo() {
-            return codigo;
-        }
-    }
 }

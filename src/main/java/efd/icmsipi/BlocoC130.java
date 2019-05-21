@@ -1,20 +1,20 @@
 package efd.icmsipi;
 
+import efd.Inclui;
 import efd.Parsers;
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
 
 public class BlocoC130 {
 
-    private final String reg = "C130";
-    private BigDecimal vlServNt;
-    private BigDecimal vlBcIssqn;
-    private BigDecimal vlIssqn;
-    private BigDecimal vlBcIrrf;
-    private BigDecimal vlIrrf;
-    private BigDecimal vlBcPrev;
-    private BigDecimal vlPrev;
+    @Inclui private final String reg = "C130";
+    @Inclui private BigDecimal vlServNt;
+    @Inclui private BigDecimal vlBcIssqn;
+    @Inclui private BigDecimal vlIssqn;
+    @Inclui private BigDecimal vlBcIrrf;
+    @Inclui private BigDecimal vlIrrf;
+    @Inclui private BigDecimal vlBcPrev;
+    @Inclui private BigDecimal vlPrev;
 
     public String getReg() {
         return reg;
@@ -78,20 +78,7 @@ public class BlocoC130 {
 
     @Override
     public String toString(){
-
-        java.util.List arr = new ArrayList<>();
-
-        arr.add(this.reg);
-        arr.add(this.vlServNt != null ? Parsers.formataNumero(this.vlServNt, 2) : null);
-        arr.add(this.vlBcIssqn != null ? Parsers.formataNumero(this.vlBcIssqn, 2) : null);
-        arr.add(this.vlIssqn != null ? Parsers.formataNumero(this.vlIssqn, 2) : null);
-        arr.add(this.vlBcIrrf != null ? Parsers.formataNumero(this.vlBcIrrf, 2) : null);
-        arr.add(this.vlIrrf != null ? Parsers.formataNumero(this.vlIrrf, 2) : null);
-        arr.add(this.vlBcPrev != null ? Parsers.formataNumero(this.vlBcPrev, 2) : null);
-        arr.add(this.vlPrev != null ? Parsers.formataNumero(this.vlPrev, 2) : null);
-
-        return Parsers.converteBlocoEmString(arr);
-
+        return Parsers.converteBlocoEmString(this);
     }
 
 }

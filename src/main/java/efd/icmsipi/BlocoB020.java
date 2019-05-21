@@ -1,53 +1,52 @@
 package efd.icmsipi;
 
+import efd.Inclui;
 import efd.Parsers;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
 
 public class BlocoB020 {
 
-    private final String reg = "B020";
-    private IndOper indOper;
-    private IndEmit indEmit;
-    private String codPart;
-    private String codMod;
-    private String codSit;
-    private String ser;
-    private String numDoc;
-    private String chvNfe;
-    private LocalDate dtDoc;
-    private String codMunServ;
-    private BigDecimal vlCont;
-    private BigDecimal vlMatTerc;
-    private BigDecimal vlSub;
-    private BigDecimal vlInstIss;
-    private BigDecimal vlDedBc;
-    private BigDecimal vlBcIss;
-    private BigDecimal vlBsIssRt;
-    private BigDecimal vlIssRt;
-    private BigDecimal vlIss;
-    private String codInfObs;
+    @Inclui private final String reg = "B020";
+    @Inclui private String indOper;
+    @Inclui private String indEmit;
+    @Inclui private String codPart;
+    @Inclui private String codMod;
+    @Inclui private String codSit;
+    @Inclui private String ser;
+    @Inclui private String numDoc;
+    @Inclui private String chvNfe;
+    @Inclui private LocalDate dtDoc;
+    @Inclui private String codMunServ;
+    @Inclui private BigDecimal vlCont;
+    @Inclui private BigDecimal vlMatTerc;
+    @Inclui private BigDecimal vlSub;
+    @Inclui private BigDecimal vlInstIss;
+    @Inclui private BigDecimal vlDedBc;
+    @Inclui private BigDecimal vlBcIss;
+    @Inclui private BigDecimal vlBsIssRt;
+    @Inclui private BigDecimal vlIssRt;
+    @Inclui private BigDecimal vlIss;
+    @Inclui private String codInfObs;
 
     public String getReg() {
         return reg;
     }
 
-    public IndOper getIndOper() {
+    public String getIndOper() {
         return indOper;
     }
 
-    public void setIndOper(IndOper indOper) {
+    public void setIndOper(String indOper) {
         this.indOper = indOper;
     }
 
-    public IndEmit getIndEmit() {
+    public String getIndEmit() {
         return indEmit;
     }
 
-    public void setIndEmit(IndEmit indEmit) {
+    public void setIndEmit(String indEmit) {
         this.indEmit = indEmit;
     }
 
@@ -197,67 +196,7 @@ public class BlocoB020 {
 
     @Override
     public String toString(){
-
-        List arr = new ArrayList<>();
-
-        arr.add(this.reg);
-        arr.add(this.indOper != null ? this.indOper.getCodigo() : null);
-        arr.add(this.indEmit != null ? this.indEmit.getCodigo() : null);
-        arr.add(this.codPart);
-        arr.add(this.codMod);
-        arr.add(this.codSit);
-        arr.add(this.ser);
-        arr.add(this.numDoc);
-        arr.add(this.chvNfe);
-        arr.add(this.dtDoc != null ? Parsers.formataData(this.dtDoc, "ddMMyyyy") : null);
-        arr.add(this.codMunServ);
-        arr.add(this.vlCont != null ? Parsers.formataNumero(this.vlCont, 2) : null);
-        arr.add(this.vlMatTerc != null ? Parsers.formataNumero(this.vlMatTerc, 2) : null);
-        arr.add(this.vlSub != null ? Parsers.formataNumero(this.vlSub, 2) : null);
-        arr.add(this.vlInstIss != null ? Parsers.formataNumero(this.vlInstIss, 2) : null);
-        arr.add(this.vlDedBc != null ? Parsers.formataNumero(this.vlDedBc, 2) : null);
-        arr.add(this.vlBcIss != null ? Parsers.formataNumero(this.vlBcIss, 2) : null);
-        arr.add(this.vlBsIssRt != null ? Parsers.formataNumero(this.vlBsIssRt, 2) : null);
-        arr.add(this.vlIssRt != null ? Parsers.formataNumero(this.vlIssRt, 2) : null);
-        arr.add(this.vlIss != null ? Parsers.formataNumero(this.vlIss, 2) : null);
-        arr.add(this.codInfObs);
-
-        return Parsers.converteBlocoEmString(arr);
-
-    }
-
-    public enum IndOper {
-
-        AQUISICAO("0"),
-        PRESTACAO("1");
-
-        private String codigo;
-
-        IndOper(String codigo){
-            this.codigo = codigo;
-        }
-
-        public String getCodigo() {
-            return this.codigo;
-        }
-
-    }
-
-    public enum IndEmit {
-
-        EMISSAO_PROPRIA("0"),
-        TERCEIROS("1");
-
-        private String codigo;
-
-        IndEmit(String codigo){
-            this.codigo = codigo;
-        }
-
-        public String getCodigo() {
-            return this.codigo;
-        }
-
+        return Parsers.converteBlocoEmString(this);
     }
 
 }

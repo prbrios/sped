@@ -1,26 +1,25 @@
 package efd.icmsipi;
 
+import efd.Inclui;
 import efd.Parsers;
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.List;
 
 public class Bloco0200 {
 
-    private final String reg = "0200";
-    private String codItem;
-    private String descrItem;
-    private String codBarras;
-    private String codAntItem;
-    private String unidInv;
-    private TipoItem tipoItem;
-    private String codNcm;
-    private String exIpi;
-    private String codGen;
-    private String codLst;
-    private BigDecimal aliqIcms;
-    private String cest;
+    @Inclui private final String reg = "0200";
+    @Inclui private String codItem;
+    @Inclui private String descrItem;
+    @Inclui private String codBarras;
+    @Inclui private String codAntItem;
+    @Inclui private String unidInv;
+    @Inclui private String tipoItem;
+    @Inclui private String codNcm;
+    @Inclui private String exIpi;
+    @Inclui private String codGen;
+    @Inclui private String codLst;
+    @Inclui private BigDecimal aliqIcms;
+    @Inclui private String cest;
 
     public String getReg() {
         return reg;
@@ -66,11 +65,11 @@ public class Bloco0200 {
         this.unidInv = unidInv;
     }
 
-    public TipoItem getTipoItem() {
+    public String getTipoItem() {
         return tipoItem;
     }
 
-    public void setTipoItem(TipoItem tipoItem) {
+    public void setTipoItem(String tipoItem) {
         this.tipoItem = tipoItem;
     }
 
@@ -124,50 +123,7 @@ public class Bloco0200 {
 
     @Override
     public String toString(){
-
-        List arr = new ArrayList<>();
-
-        arr.add(this.reg);
-        arr.add(this.codItem);
-        arr.add(this.descrItem);
-        arr.add(this.codBarras);
-        arr.add(this.codAntItem);
-        arr.add(this.unidInv);
-        arr.add(this.tipoItem != null ? this.tipoItem.getCodigo() : null);
-        arr.add(this.codNcm);
-        arr.add(this.exIpi);
-        arr.add(this.codGen);
-        arr.add(this.codLst);
-        arr.add(this.aliqIcms != null ? Parsers.formataNumero(this.aliqIcms, 2) : null);
-        arr.add(this.cest);
-
-        return Parsers.converteBlocoEmString(arr);
-
+        return Parsers.converteBlocoEmString(this);
     }
 
-    public enum TipoItem {
-
-        MERCADORIA_PARA_REVENDA("00"),
-        MATERIA_PRIMA("01"),
-        EMBALAGEM("02"),
-        PRODUTO_EM_PROCESSO("03"),
-        PRODUTO_ACABADO("04"),
-        SUBPRODUTO("05"),
-        PRODUTO_INTERMEDIARIO("06"),
-        MATERIAL_DE_USO_E_CONSUMO("07"),
-        ATIVO_IMOBILIZADO("08"),
-        SERVICOS("09"),
-        OUTROS_INSUMOS("10"),
-        OUTRAS("99");
-
-        private String codigo;
-
-        TipoItem(String codigo){
-            this.codigo = codigo;
-        }
-
-        public String getCodigo() {
-            return this.codigo;
-        }
-    }
 }

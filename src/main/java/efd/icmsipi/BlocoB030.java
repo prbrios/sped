@@ -1,26 +1,25 @@
 package efd.icmsipi;
 
+import efd.Inclui;
 import efd.Parsers;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
 
 public class BlocoB030 {
 
-    private final String reg = "B030";
-    private String codMod;
-    private String ser;
-    private Integer numDocIni;
-    private Integer numDocFin;
-    private LocalDate dtDoc;
-    private Integer qtdCanc;
-    private BigDecimal vlCont;
-    private BigDecimal vlIsntIss;
-    private BigDecimal vlBcIss;
-    private BigDecimal vlIss;
-    private String codInfObs;
+    @Inclui private final String reg = "B030";
+    @Inclui private String codMod;
+    @Inclui private String ser;
+    @Inclui private Integer numDocIni;
+    @Inclui private Integer numDocFin;
+    @Inclui private LocalDate dtDoc;
+    @Inclui private Integer qtdCanc;
+    @Inclui private BigDecimal vlCont;
+    @Inclui private BigDecimal vlIsntIss;
+    @Inclui private BigDecimal vlBcIss;
+    @Inclui private BigDecimal vlIss;
+    @Inclui private String codInfObs;
 
     public String getReg() {
         return reg;
@@ -116,23 +115,7 @@ public class BlocoB030 {
 
     @Override
     public String toString(){
-
-        List arr = new ArrayList<>();
-
-        arr.add(reg);
-        arr.add(codMod);
-        arr.add(ser);
-        arr.add(numDocIni);
-        arr.add(numDocFin);
-        arr.add(this.dtDoc != null ? Parsers.formataData(this.dtDoc, "ddMMyyyy") : null);
-        arr.add(qtdCanc);
-        arr.add(this.vlCont != null ? Parsers.formataNumero(this.vlCont, 2) : null);
-        arr.add(this.vlIsntIss != null ? Parsers.formataNumero(this.vlIsntIss, 2) : null);
-        arr.add(this.vlBcIss != null ? Parsers.formataNumero(this.vlBcIss, 2) : null);
-        arr.add(this.vlIss != null ? Parsers.formataNumero(this.vlIss, 2) : null);
-        arr.add(codInfObs);
-
-        return Parsers.converteBlocoEmString(arr);
-
+        return Parsers.converteBlocoEmString(this);
     }
+
 }

@@ -1,15 +1,13 @@
 package efd.icmsipi;
 
+import efd.Inclui;
 import efd.Parsers;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class Bloco0190 {
 
-    private final String reg = "0190";
-    private String unid;
-    private String descr;
+    @Inclui private final String reg = "0190";
+    @Inclui private String unid;
+    @Inclui private String descr;
 
     public String getReg() {
         return reg;
@@ -33,14 +31,7 @@ public class Bloco0190 {
 
     @Override
     public String toString(){
-
-        List arr = new ArrayList<>();
-
-        arr.add(this.reg);
-        arr.add(this.unid);
-        arr.add(this.descr);
-
-        return Parsers.converteBlocoEmString(arr);
-
+        return Parsers.converteBlocoEmString(this);
     }
+
 }

@@ -1,14 +1,15 @@
 package efd.icmsipi;
 
+import efd.Inclui;
 import efd.Parsers;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class Bloco0001 {
 
+    @Inclui
     private String reg = "0001";
-    private IndMov indMov;
+
+    @Inclui
+    private String indMov;
 
     private Bloco0005 bloco0005;
 
@@ -16,11 +17,11 @@ public class Bloco0001 {
         return reg;
     }
 
-    public IndMov getIndMov() {
+    public String getIndMov() {
         return indMov;
     }
 
-    public void setIndMov(IndMov indMov) {
+    public void setIndMov(String indMov) {
         this.indMov = indMov;
     }
 
@@ -34,28 +35,7 @@ public class Bloco0001 {
 
     @Override
     public String toString(){
-
-        List arr = new ArrayList<>();
-        arr.add(this.reg);
-        arr.add(this.indMov != null ? this.indMov.getCodigo() : null);
-
-        return Parsers.converteBlocoEmString(arr);
+        return Parsers.converteBlocoEmString(this);
     }
 
-    public enum IndMov {
-
-        BLOCO_COM_DADOS_INFORMADOS("0"),
-        BLOCO_SEM_DADOS_INFORMADOS("1");
-
-        private String codigo;
-
-        IndMov(String codigo){
-            this.codigo = codigo;
-        }
-
-        public String getCodigo() {
-            return this.codigo;
-        }
-
-    }
 }

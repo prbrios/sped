@@ -1,26 +1,28 @@
 package efd.icmsipi;
 
+import efd.Inclui;
 import efd.Parsers;
-import efd.UF;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class Bloco0015 {
 
+    @Inclui
     private String reg = "0015";
-    private UF ufSt;
+
+    @Inclui
+    private String ufSt;
+
+    @Inclui
     private String ieSt;
 
     public String getReg() {
         return reg;
     }
 
-    public UF getUfSt() {
+    public String getUfSt() {
         return ufSt;
     }
 
-    public void setUfSt(UF ufSt) {
+    public void setUfSt(String ufSt) {
         this.ufSt = ufSt;
     }
 
@@ -34,15 +36,7 @@ public class Bloco0015 {
 
     @Override
     public String toString(){
-
-        List arr = new ArrayList<>();
-
-        arr.add(this.reg);
-        arr.add(this.ufSt != null ? this.ufSt.getCodigo() : null);
-        arr.add(this.ieSt);
-
-        return Parsers.converteBlocoEmString(arr);
-
+        return Parsers.converteBlocoEmString(this);
     }
 
 }

@@ -1,21 +1,38 @@
 package efd.icmsipi;
 
+import efd.Inclui;
 import efd.Parsers;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class Bloco0005 {
 
+    @Inclui
     private String reg = "0005";
+
+    @Inclui
     private String fantasia;
+
+    @Inclui
     private String cep;
+
+    @Inclui
     private String end;
+
+    @Inclui
     private String num;
+
+    @Inclui
     private String compl;
+
+    @Inclui
     private String bairro;
+
+    @Inclui
     private String fone;
+
+    @Inclui
     private String fax;
+
+    @Inclui
     private String email;
 
     public String getReg() {
@@ -96,21 +113,6 @@ public class Bloco0005 {
 
     @Override
     public String toString(){
-
-        List arr = new ArrayList<>();
-
-        arr.add(this.reg);
-        arr.add(this.fantasia);
-        arr.add(this.cep);
-        arr.add(this.end);
-        arr.add(this.num);
-        arr.add(this.compl);
-        arr.add(this.bairro);
-        arr.add(this.fone);
-        arr.add(this.fax);
-        arr.add(this.email);
-
-        return Parsers.converteBlocoEmString(arr);
-
+        return Parsers.converteBlocoEmString(this);
     }
 }

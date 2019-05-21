@@ -1,27 +1,26 @@
 package efd.icmsipi;
 
+import efd.Inclui;
 import efd.Parsers;
-import efd.UF;
 
 import java.math.BigDecimal;
 import java.time.LocalTime;
-import java.util.ArrayList;
 
 public class BlocoC165 {
 
-    private final String reg = "C165";
-    private String codPart;
-    private String veidId;
-    private String codAut;
-    private String nrPasse;
-    private LocalTime hora;
-    private BigDecimal temper;
-    private BigDecimal qtdVol;
-    private BigDecimal pesoBrt;
-    private BigDecimal pesoLiq;
-    private String nomMot;
-    private String cpf;
-    private UF ufId;
+    @Inclui private final String reg = "C165";
+    @Inclui private String codPart;
+    @Inclui private String veidId;
+    @Inclui private String codAut;
+    @Inclui private String nrPasse;
+    @Inclui private LocalTime hora;
+    @Inclui private BigDecimal temper;
+    @Inclui private BigDecimal qtdVol;
+    @Inclui private BigDecimal pesoBrt;
+    @Inclui private BigDecimal pesoLiq;
+    @Inclui private String nomMot;
+    @Inclui private String cpf;
+    @Inclui private String ufId;
 
     public String getReg() {
         return reg;
@@ -115,35 +114,17 @@ public class BlocoC165 {
         this.cpf = cpf;
     }
 
-    public UF getUfId() {
+    public String getUfId() {
         return ufId;
     }
 
-    public void setUfId(UF ufId) {
+    public void setUfId(String ufId) {
         this.ufId = ufId;
     }
 
     @Override
     public String toString(){
-
-        java.util.List arr = new ArrayList<>();
-
-        arr.add(this.reg);
-        arr.add(this.codPart);
-        arr.add(this.veidId);
-        arr.add(this.codAut);
-        arr.add(this.nrPasse);
-        arr.add(this.hora != null ? Parsers.formataHora(this.hora, "hhmmss") : null);
-        arr.add(this.temper != null ? Parsers.formataNumero(this.temper, 2) : null);
-        arr.add(this.qtdVol != null ? Parsers.formataNumero(this.qtdVol, 2) : null);
-        arr.add(this.pesoBrt != null ? Parsers.formataNumero(this.pesoBrt, 2) : null);
-        arr.add(this.pesoLiq != null ? Parsers.formataNumero(this.pesoLiq, 2) : null);
-        arr.add(this.nomMot);
-        arr.add(this.cpf);
-        arr.add(this.ufId != null ? this.ufId.getCodigo() : null);
-
-        return Parsers.converteBlocoEmString(arr);
-
+        return Parsers.converteBlocoEmString(this);
     }
 
 }

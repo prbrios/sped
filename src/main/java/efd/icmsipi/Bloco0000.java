@@ -1,11 +1,9 @@
 package efd.icmsipi;
 
+import efd.Inclui;
 import efd.Parsers;
-import efd.UF;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * BLOCO 0: ABERTURA, IDENTIFICAÇÃO E REFERÊNCIAS
@@ -31,77 +29,92 @@ public class Bloco0000 {
      * 01 REG
      * Texto fixo contendo "0000"
      */
+    @Inclui
     private String reg = "0000";
 
     /**
      * 02 COD_VER
      */
+    @Inclui
     private String codVer;
 
     /**
      * 03 COD_FIN
      */
-    private CodFin codFin;
+    @Inclui
+    private String codFin;
 
     /**
      * 04 DT_INI
      */
+    @Inclui
     private LocalDate dtIni;
 
     /**
      * 05 DT_FIN
      */
+    @Inclui
     private LocalDate dtFin;
 
     /**
      * 06 NOME
      */
+    @Inclui
     private String nome;
 
     /**
      * 07 CNPJ
      */
+    @Inclui
     private String cnpj;
 
     /**
      * 08 CPF
      */
+    @Inclui
     private String cpf;
 
     /**
      * 09 UF
      */
-    private UF uf;
+    @Inclui
+    private String uf;
 
     /**
      * 10 IE
      */
+    @Inclui
     private String ie;
 
     /**
      * 11 COD_MUN
      */
+    @Inclui
     private String codMun;
 
     /**
      * 12 IM
      */
+    @Inclui
     private String im;
 
     /**
      * 13 SUFRAMA
      */
+    @Inclui
     private String suframa;
 
     /**
      * 14 IND_PERFIL
      */
-    private IndPerfil indPerfil;
+    @Inclui
+    private String indPerfil;
 
     /**
      * 15 IND_ATIV
      */
-    private IndAtiv indAtiv;
+    @Inclui
+    private String indAtiv;
 
     private Bloco0001 bloco0001;
 
@@ -118,11 +131,11 @@ public class Bloco0000 {
         this.codVer = codVer;
     }
 
-    public CodFin getCodFin() {
+    public String getCodFin() {
         return codFin;
     }
 
-    public void setCodFin(CodFin codFin) {
+    public void setCodFin(String codFin) {
         this.codFin = codFin;
     }
 
@@ -166,11 +179,11 @@ public class Bloco0000 {
         this.cpf = cpf;
     }
 
-    public UF getUf() {
+    public String getUf() {
         return uf;
     }
 
-    public void setUf(UF uf) {
+    public void setUf(String uf) {
         this.uf = uf;
     }
 
@@ -206,19 +219,19 @@ public class Bloco0000 {
         this.suframa = suframa;
     }
 
-    public IndPerfil getIndPerfil() {
+    public String getIndPerfil() {
         return indPerfil;
     }
 
-    public void setIndPerfil(IndPerfil indPerfil) {
+    public void setIndPerfil(String indPerfil) {
         this.indPerfil = indPerfil;
     }
 
-    public IndAtiv getIndAtiv() {
+    public String getIndAtiv() {
         return indAtiv;
     }
 
-    public void setIndAtiv(IndAtiv indAtiv) {
+    public void setIndAtiv(String indAtiv) {
         this.indAtiv = indAtiv;
     }
 
@@ -232,79 +245,7 @@ public class Bloco0000 {
 
     @Override
     public String toString(){
-
-        List arr = new ArrayList<>();
-
-        arr.add(this.reg);
-        arr.add(this.codVer);
-        arr.add(this.codFin != null ? this.codFin.getCodigo() : null);
-        arr.add(this.dtIni != null ? Parsers.formataData(this.dtIni, "ddMMyyyy") : null);
-        arr.add(this.dtFin != null ? Parsers.formataData(this.dtFin, "ddMMyyyy") : null);
-        arr.add(this.nome);
-        arr.add(this.cnpj);
-        arr.add(this.cpf);
-        arr.add(this.uf != null ? this.uf.getSigla() : null);
-        arr.add(this.ie);
-        arr.add(this.codMun);
-        arr.add(this.im);
-        arr.add(this.suframa);
-        arr.add(this.indPerfil != null ? this.indPerfil.getCodigo() : null);
-        arr.add(this.indAtiv != null ? this.indAtiv.getCodigo() : null);
-
-        return Parsers.converteBlocoEmString(arr);
-
-    }
-
-    public enum IndPerfil {
-
-        PERFIL_A("A"),
-        PERFIL_B("B"),
-        PERFIL_C("C");
-
-        private String codigo;
-
-        IndPerfil(String codigo){
-            this.codigo = codigo;
-        }
-
-        public String getCodigo() {
-            return this.codigo;
-        }
-
-    }
-
-    public enum CodFin {
-
-        REMESSA_DO_ARQUIVO_ORIGINAL("0"),
-        REMESSA_DO_ARQUIVO_SUBSTITUTO("1");
-
-        private String codigo;
-
-        CodFin(String codigo){
-            this.codigo = codigo;
-        }
-
-        public String getCodigo() {
-            return this.codigo;
-        }
-
-    }
-
-    public enum IndAtiv {
-
-        INDUSTRIAL_OU_EQUIPARADO_A_INDUSTRIAL("0"),
-        OUTROS("1");
-
-        private String codigo;
-
-        IndAtiv(String codigo){
-            this.codigo = codigo;
-        }
-
-        public String getCodigo() {
-            return codigo;
-        }
-
+        return Parsers.converteBlocoEmString(this);
     }
 
 }

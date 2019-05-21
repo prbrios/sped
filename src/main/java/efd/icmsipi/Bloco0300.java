@@ -1,19 +1,17 @@
 package efd.icmsipi;
 
+import efd.Inclui;
 import efd.Parsers;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class Bloco0300 {
 
-    private final String reg = "0300";
-    private String codIndBem;
-    private IdentMerc identMerc;
-    private String descrItem;
-    private String codPrnc;
-    private String codCta;
-    private Integer nrParc;
+    @Inclui private final String reg = "0300";
+    @Inclui private String codIndBem;
+    @Inclui private String identMerc;
+    @Inclui private String descrItem;
+    @Inclui private String codPrnc;
+    @Inclui private String codCta;
+    @Inclui private Integer nrParc;
 
     public String getReg() {
         return reg;
@@ -27,11 +25,11 @@ public class Bloco0300 {
         this.codIndBem = codIndBem;
     }
 
-    public IdentMerc getIdentMerc() {
+    public String getIdentMerc() {
         return identMerc;
     }
 
-    public void setIdentMerc(IdentMerc identMerc) {
+    public void setIdentMerc(String identMerc) {
         this.identMerc = identMerc;
     }
 
@@ -69,35 +67,7 @@ public class Bloco0300 {
 
     @Override
     public String toString(){
-
-        List arr = new ArrayList<>();
-
-        arr.add(this.reg);
-        arr.add(this.codIndBem);
-        arr.add(this.identMerc != null ? this.identMerc.getCodigo() : null);
-        arr.add(this.descrItem);
-        arr.add(this.codPrnc);
-        arr.add(this.codCta);
-        arr.add(this.nrParc);
-
-        return Parsers.converteBlocoEmString(arr);
-
+        return Parsers.converteBlocoEmString(this);
     }
 
-    public enum IdentMerc {
-
-        BEM("1"),
-        COMPONENTE("2");
-
-        private String codigo;
-
-        IdentMerc(String codigo){
-            this.codigo = codigo;
-        }
-
-        public String getCodigo() {
-            return codigo;
-        }
-
-    }
 }

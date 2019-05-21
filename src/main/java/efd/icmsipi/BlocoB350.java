@@ -1,23 +1,23 @@
 package efd.icmsipi;
 
+import efd.Inclui;
 import efd.Parsers;
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
 
 public class BlocoB350 {
 
-    private final String reg = "B350";
-    private String codCtd;
-    private String ctaIss;
-    private String ctaCosif;
-    private Integer qtdOcor;
-    private String codServ;
-    private BigDecimal vlCont;
-    private BigDecimal vlBcIss;
-    private BigDecimal aliqIss;
-    private BigDecimal vlIss;
-    private String codIndObs;
+    @Inclui private final String reg = "B350";
+    @Inclui private String codCtd;
+    @Inclui private String ctaIss;
+    @Inclui private String ctaCosif;
+    @Inclui private Integer qtdOcor;
+    @Inclui private String codServ;
+    @Inclui private BigDecimal vlCont;
+    @Inclui private BigDecimal vlBcIss;
+    @Inclui private BigDecimal aliqIss;
+    @Inclui private BigDecimal vlIss;
+    @Inclui private String codIndObs;
 
     public String getReg() {
         return reg;
@@ -105,22 +105,7 @@ public class BlocoB350 {
 
     @Override
     public String toString(){
-
-        java.util.List arr = new ArrayList<>();
-
-        arr.add(this.reg);
-        arr.add(this.codCtd);
-        arr.add(this.ctaIss);
-        arr.add(this.ctaCosif);
-        arr.add(this.qtdOcor);
-        arr.add(this.codServ);
-        arr.add(this.vlCont != null ? Parsers.formataNumero(this.vlCont, 2) : null);
-        arr.add(this.vlBcIss != null ? Parsers.formataNumero(this.vlBcIss, 2) : null);
-        arr.add(this.aliqIss != null ? Parsers.formataNumero(this.aliqIss, 2) : null);
-        arr.add(this.vlIss != null ? Parsers.formataNumero(this.vlIss, 2) : null);
-        arr.add(this.codIndObs);
-
-        return Parsers.converteBlocoEmString(arr);
-
+        return Parsers.converteBlocoEmString(this);
     }
+
 }

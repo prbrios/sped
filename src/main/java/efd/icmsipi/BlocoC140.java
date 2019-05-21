@@ -1,37 +1,37 @@
 package efd.icmsipi;
 
+import efd.Inclui;
 import efd.Parsers;
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
 
 public class BlocoC140 {
 
-    private final String reg = "C140";
-    private IndEmit indEmit;
-    private IndTit indTit;
-    private String descTit;
-    private String numTit;
-    private Integer qtdParc;
-    private BigDecimal vlTit;
+    @Inclui private final String reg = "C140";
+    @Inclui private String indEmit;
+    @Inclui private String indTit;
+    @Inclui private String descTit;
+    @Inclui private String numTit;
+    @Inclui private Integer qtdParc;
+    @Inclui private BigDecimal vlTit;
 
     public String getReg() {
         return reg;
     }
 
-    public IndEmit getIndEmit() {
+    public String getIndEmit() {
         return indEmit;
     }
 
-    public void setIndEmit(IndEmit indEmit) {
+    public void setIndEmit(String indEmit) {
         this.indEmit = indEmit;
     }
 
-    public IndTit getIndTit() {
+    public String getIndTit() {
         return indTit;
     }
 
-    public void setIndTit(IndTit indTit) {
+    public void setIndTit(String indTit) {
         this.indTit = indTit;
     }
 
@@ -69,53 +69,6 @@ public class BlocoC140 {
 
     @Override
     public String toString(){
-
-        java.util.List arr = new ArrayList<>();
-
-        arr.add(this.reg);
-        arr.add(this.indEmit != null ? this.indEmit.getCodigo() : null);
-        arr.add(this.indTit != null ? this.indTit.getCodigo() : null);
-        arr.add(this.descTit);
-        arr.add(this.numTit);
-        arr.add(this.qtdParc);
-        arr.add(this.vlTit != null ? Parsers.formataNumero(this.vlTit, 2) : null);
-
-        return Parsers.converteBlocoEmString(arr);
-
-    }
-
-    public enum IndEmit {
-
-        EMISSAO_PROPRIA("0"),
-        TERCEIROS("1");
-
-        private String codigo;
-
-        IndEmit(String codigo){
-            this.codigo = codigo;
-        }
-
-        public String getCodigo() {
-            return this.codigo;
-        }
-    }
-
-    public enum IndTit {
-
-        DUPLICATA("00"),
-        CHEQUE("01"),
-        PROMISSORIA("02"),
-        RECIBO("03"),
-        OUTRO("99");
-
-        private String codigo;
-
-        IndTit(String codigo){
-            this.codigo = codigo;
-        }
-
-        public String getCodigo() {
-            return this.codigo;
-        }
+        return Parsers.converteBlocoEmString(this);
     }
 }

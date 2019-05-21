@@ -1,19 +1,19 @@
 package efd.icmsipi;
 
+import efd.Inclui;
 import efd.Parsers;
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
 
 public class BlocoB420 {
 
-    private final String reg = "B420";
-    private BigDecimal vlCont;
-    private BigDecimal vlBcIss;
-    private BigDecimal aliqIss;
-    private BigDecimal vlIsntIss;
-    private BigDecimal vlIss;
-    private String codServ;
+    @Inclui private final String reg = "B420";
+    @Inclui private BigDecimal vlCont;
+    @Inclui private BigDecimal vlBcIss;
+    @Inclui private BigDecimal aliqIss;
+    @Inclui private BigDecimal vlIsntIss;
+    @Inclui private BigDecimal vlIss;
+    @Inclui private String codServ;
 
     public String getReg() {
         return reg;
@@ -69,18 +69,7 @@ public class BlocoB420 {
 
     @Override
     public String toString(){
-
-        java.util.List arr = new ArrayList<>();
-
-        arr.add(this.reg);
-        arr.add(this.vlCont != null ? Parsers.formataNumero(this.vlCont, 2) : null);
-        arr.add(this.vlBcIss != null ? Parsers.formataNumero(this.vlBcIss, 2) : null);
-        arr.add(this.aliqIss != null ? Parsers.formataNumero(this.aliqIss, 2) : null);
-        arr.add(this.vlIsntIss != null ? Parsers.formataNumero(this.vlIsntIss, 2) : null);
-        arr.add(this.vlIss != null ? Parsers.formataNumero(this.vlIss, 2) : null);
-        arr.add(this.codServ);
-
-        return Parsers.converteBlocoEmString(arr);
-
+        return Parsers.converteBlocoEmString(this);
     }
+
 }

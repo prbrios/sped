@@ -1,17 +1,16 @@
 package efd.icmsipi;
 
+import efd.Inclui;
 import efd.Parsers;
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.List;
 
 public class Bloco0210 {
 
-    private final String reg = "0210";
-    private String codItemComp;
-    private BigDecimal qtdComp;
-    private BigDecimal perda;
+    @Inclui private final String reg = "0210";
+    @Inclui private String codItemComp;
+    @Inclui private BigDecimal qtdComp;
+    @Inclui private BigDecimal perda;
 
     public String getReg() {
         return reg;
@@ -43,15 +42,6 @@ public class Bloco0210 {
 
     @Override
     public String toString(){
-
-        List arr = new ArrayList<>();
-
-        arr.add(this.reg);
-        arr.add(this.codItemComp);
-        arr.add(this.qtdComp != null ? Parsers.formataNumero(this.qtdComp, 2) : null);
-        arr.add(this.perda != null ? Parsers.formataNumero(this.perda, 2) : null);
-
-        return Parsers.converteBlocoEmString(arr);
-
+        return Parsers.converteBlocoEmString(this);
     }
 }

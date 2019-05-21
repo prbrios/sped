@@ -1,30 +1,30 @@
 package efd.icmsipi;
 
+import efd.Inclui;
 import efd.Parsers;
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
 
 public class BlocoB460 {
 
-    private final String reg = "B460";
-    private IndDed indDed;
-    private BigDecimal vlDed;
-    private String numProc;
-    private IndProc indProc;
-    private String proc;
-    private String codInfObs;
-    private IndObr indObr;
+    @Inclui private final String reg = "B460";
+    @Inclui private String indDed;
+    @Inclui private BigDecimal vlDed;
+    @Inclui private String numProc;
+    @Inclui private String indProc;
+    @Inclui private String proc;
+    @Inclui private String codInfObs;
+    @Inclui private String indObr;
 
     public String getReg() {
         return reg;
     }
 
-    public IndDed getIndDed() {
+    public String getIndDed() {
         return indDed;
     }
 
-    public void setIndDed(IndDed indDed) {
+    public void setIndDed(String indDed) {
         this.indDed = indDed;
     }
 
@@ -44,11 +44,11 @@ public class BlocoB460 {
         this.numProc = numProc;
     }
 
-    public IndProc getIndProc() {
+    public String getIndProc() {
         return indProc;
     }
 
-    public void setIndProc(IndProc indProc) {
+    public void setIndProc(String indProc) {
         this.indProc = indProc;
     }
 
@@ -68,84 +68,17 @@ public class BlocoB460 {
         this.codInfObs = codInfObs;
     }
 
-    public IndObr getIndObr() {
+    public String getIndObr() {
         return indObr;
     }
 
-    public void setIndObr(IndObr indObr) {
+    public void setIndObr(String indObr) {
         this.indObr = indObr;
     }
 
     @Override
     public String toString(){
-
-        java.util.List arr = new ArrayList<>();
-
-        arr.add(this.reg);
-        arr.add(this.indDed != null ? this.indDed.getCodigo() : null);
-        arr.add(this.vlDed != null ? Parsers.formataNumero(this.vlDed, 2) : null);
-        arr.add(this.numProc);
-        arr.add(this.indProc != null ? this.indProc.getCodigo() : null);
-        arr.add(this.proc);
-        arr.add(this.codInfObs);
-        arr.add(this.indObr != null ? this.indObr.getCodigo() : null);
-
-        return Parsers.converteBlocoEmString(arr);
-
+        return Parsers.converteBlocoEmString(this);
     }
 
-    public enum IndDed {
-
-        COMPENSACAO_DO_ISS_CALCULADO_A_MAIOR("0"),
-        BENEFICIO_FISCAL_POR_INCENTIVO_A_CULTURA("1"),
-        DECISAO_ADMINISTRATIVA_OU_JUDICIAL("2"),
-        OUTROS("9");
-
-        private String codigo;
-
-        IndDed(String codigo){
-            this.codigo = codigo;
-        }
-
-        public String getCodigo() {
-            return this.codigo;
-        }
-
-    }
-
-    public enum IndProc {
-
-        SEFIN("0"),
-        JUSTICA_FEDERAL("1"),
-        JUSTICA_ESTADUAL("2"),
-        OUTROS("9");
-
-        private String codigo;
-
-        IndProc(String codigo){
-            this.codigo = codigo;
-        }
-
-        public String getCodigo() {
-            return this.codigo;
-        }
-
-    }
-
-    public enum IndObr {
-
-        ISS_PROPRIO("0"),
-        ISS_SUBSTITUTO("1"),
-        ISS_UNIPROFISSIONAL("2");
-
-        private String codigo;
-
-        IndObr(String codigo){
-            this.codigo = codigo;
-        }
-
-        public String getCodigo() {
-            return this.codigo;
-        }
-    }
 }
