@@ -1,7 +1,11 @@
 package efd.icmsipi;
 
-import efd.Inclui;
-import efd.Parsers;
+import efd.anotacoes.Filho;
+import efd.anotacoes.Inclui;
+import efd.icmsipi.bloco0.n1.Bloco0001;
+import efd.icmsipi.bloco0.n1.Bloco0990;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.time.LocalDate;
 
@@ -20,9 +24,11 @@ import java.time.LocalDate;
  *
  * @author Paulo Rios prbrios@gmail.com
  * @since 17/05/2019
- * @see efd.icmsipi.Bloco0000
  *
  */
+
+@Getter
+@Setter
 public class Bloco0000 {
 
     /**
@@ -30,19 +36,19 @@ public class Bloco0000 {
      * Texto fixo contendo "0000"
      */
     @Inclui
-    private String reg = "0000";
+    private final String reg = "0000";
 
     /**
      * 02 COD_VER
      */
-    @Inclui
-    private String codVer;
+    @Inclui(zerosEsquerda = 3)
+    private Integer codVer;
 
     /**
      * 03 COD_FIN
      */
     @Inclui
-    private String codFin;
+    private Integer codFin;
 
     /**
      * 04 DT_INI
@@ -65,14 +71,14 @@ public class Bloco0000 {
     /**
      * 07 CNPJ
      */
-    @Inclui
-    private String cnpj;
+    @Inclui(zerosEsquerda = 14)
+    private Long cnpj;
 
     /**
      * 08 CPF
      */
-    @Inclui
-    private String cpf;
+    @Inclui(zerosEsquerda = 11)
+    private Long cpf;
 
     /**
      * 09 UF
@@ -89,8 +95,8 @@ public class Bloco0000 {
     /**
      * 11 COD_MUN
      */
-    @Inclui
-    private String codMun;
+    @Inclui(zerosEsquerda = 7)
+    private Integer codMun;
 
     /**
      * 12 IM
@@ -114,138 +120,12 @@ public class Bloco0000 {
      * 15 IND_ATIV
      */
     @Inclui
-    private String indAtiv;
+    private Integer indAtiv;
 
-    private Bloco0001 bloco0001;
+    @Filho
+    private Bloco0001 bloco0001 = new Bloco0001();
 
-
-    public String getReg() {
-        return reg;
-    }
-
-    public String getCodVer() {
-        return codVer;
-    }
-
-    public void setCodVer(String codVer) {
-        this.codVer = codVer;
-    }
-
-    public String getCodFin() {
-        return codFin;
-    }
-
-    public void setCodFin(String codFin) {
-        this.codFin = codFin;
-    }
-
-    public LocalDate getDtIni() {
-        return dtIni;
-    }
-
-    public void setDtIni(LocalDate dtIni) {
-        this.dtIni = dtIni;
-    }
-
-    public LocalDate getDtFin() {
-        return dtFin;
-    }
-
-    public void setDtFin(LocalDate dtFin) {
-        this.dtFin = dtFin;
-    }
-
-    public String getNome() {
-        return this.nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public String getCnpj() {
-        return cnpj;
-    }
-
-    public void setCnpj(String cnpj) {
-        this.cnpj = cnpj;
-    }
-
-    public String getCpf() {
-        return cpf;
-    }
-
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
-    }
-
-    public String getUf() {
-        return uf;
-    }
-
-    public void setUf(String uf) {
-        this.uf = uf;
-    }
-
-    public String getIe() {
-        return ie;
-    }
-
-    public void setIe(String ie) {
-        this.ie = ie;
-    }
-
-    public String getCodMun() {
-        return codMun;
-    }
-
-    public void setCodMun(String codMun) {
-        this.codMun = codMun;
-    }
-
-    public String getIm() {
-        return im;
-    }
-
-    public void setIm(String im) {
-        this.im = im;
-    }
-
-    public String getSuframa() {
-        return suframa;
-    }
-
-    public void setSuframa(String suframa) {
-        this.suframa = suframa;
-    }
-
-    public String getIndPerfil() {
-        return indPerfil;
-    }
-
-    public void setIndPerfil(String indPerfil) {
-        this.indPerfil = indPerfil;
-    }
-
-    public String getIndAtiv() {
-        return indAtiv;
-    }
-
-    public void setIndAtiv(String indAtiv) {
-        this.indAtiv = indAtiv;
-    }
-
-    public Bloco0001 getBloco0001() {
-        return bloco0001;
-    }
-
-    public void setBloco0001(Bloco0001 bloco0001) {
-        this.bloco0001 = bloco0001;
-    }
-
-    @Override
-    public String toString(){
-        return Parsers.converteBlocoEmString(this);
-    }
+    @Filho
+    private Bloco0990 bloco0990 = new Bloco0990();
 
 }

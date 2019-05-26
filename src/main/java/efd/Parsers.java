@@ -1,6 +1,8 @@
 package efd;
 
-import efd.icmsipi.Bloco0000;
+import efd.anotacoes.Filho;
+import efd.anotacoes.Inclui;
+import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Field;
 import java.math.BigDecimal;
@@ -14,71 +16,144 @@ import java.util.Locale;
 
 public class Parsers {
 
-    public static String converteBlocoEmString(Object obj){
+    protected static String converteBlocoEmString(Object obj, boolean processaFilhos) {
 
         List arr = new ArrayList();
         Class clazz = obj.getClass();
 
         String formatoData, formatoHora;
-        int decimais;
+        int decimais, zerosEsquerda;
         Object anotacao;
 
+        StringBuilder sb = new StringBuilder();
+        List<Object> nosFilhos = new ArrayList<Object>();
+
         for(Field m : clazz.getDeclaredFields()){
+
             m.setAccessible(true);
 
-            if(m.isAnnotationPresent(Inclui.class)) {
+            if (m.isAnnotationPresent(Inclui.class)) {
 
                 anotacao = m.getAnnotation(Inclui.class);
                 formatoData = ((Inclui) anotacao).formatoData();
                 formatoHora = ((Inclui) anotacao).formatoHora();
                 decimais = ((Inclui) anotacao).casasDecimais();
+                zerosEsquerda = ((Inclui) anotacao).zerosEsquerda();
 
                 try {
 
                     Object o = null;
                     if(m.get(obj) != null){
 
-                        if(m.getType().equals(BigDecimal.class)){
+                        if (m.getType().equals(BigDecimal.class)) {
+
                             o = (String) formataNumero((BigDecimal) m.get(obj), decimais);
-                        }else if(m.getType().equals(String.class)){
+
+                        } else if (m.getType().equals(String.class)) {
+
                             o = (String) m.get(obj);
-                        }else if(m.getType().equals(Integer.class)){
+
+                        } else if (m.getType().equals(Integer.class)) {
+
                             o = (Integer) m.get(obj);
-                        }else if(m.getType().equals(LocalDate.class)){
+
+                            if (zerosEsquerda > 0) {
+                                o = String.format("%0" + zerosEsquerda+ "d", o);
+                            }
+
+                        } else if (m.getType().equals(LocalDate.class)) {
+
                             o = (String) formataData((LocalDate) m.get(obj), formatoData);
-                        }else if(m.getType().equals(LocalTime.class)) {
+
+                        } else if (m.getType().equals(LocalTime.class)) {
+
                             o = (String) formataHora((LocalTime) m.get(obj), formatoHora);
+
+                        } else if (m.getType().equals(Long.class)) {
+
+                            o = (Long) m.get(obj);
+
+                            if (zerosEsquerda > 0) {
+                                o = String.format("%0" + zerosEsquerda+ "d", o);
+                            }
+
                         }
 
+                    } else {
+                      o = StringUtils.EMPTY;
                     }
 
-                    arr.add(o);
+                    arr.add(o.toString());
 
                 } catch (IllegalAccessException e) {
                     e.printStackTrace();
                 }
+
+            } else if (m.isAnnotationPresent(Filho.class) && processaFilhos) {
+
+                try {
+                    if (m.get(obj) != null) {
+                        nosFilhos.add(m.get(obj));
+                    }
+                } catch (IllegalAccessException e) {
+                    e.printStackTrace();
+                }
+
             }
+
         }
 
         // remove da lista os valores null
         arr.removeAll(Collections.singleton(null));
 
-        // monta a linha
-        return "|" + String.join("|", arr) + "|" + System.getProperty("line.separator");
+        sb.append("|" + String.join("|", arr) + "|" + System.getProperty("line.separator"));
+
+        for(Object j : nosFilhos){
+
+            if (j.getClass().equals(ArrayList.class)) {
+
+                for(Object o : (ArrayList) j){
+
+                    sb.append(new Parsers().converteBlocoEmString(o, processaFilhos));
+
+                }
+
+            } else {
+
+                sb.append(new Parsers().converteBlocoEmString(j, processaFilhos));
+
+            }
+
+        }
+
+        return sb.toString();
+
+        /*
+        String diretorioArquivo = System.getProperty("java.io.tmpdir") + "SPED-" + System.currentTimeMillis() + ".txt";
+        Path path = Paths.get(diretorioArquivo);
+
+        try(PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter(diretorioArquivo, true)))){
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return "";
+        */
 
     }
 
-    public static String formataData(LocalDate data, String f) {
+    protected static String formataData(LocalDate data, String f) {
         DateTimeFormatter formato = DateTimeFormatter.ofPattern(f);
         return formato.format(data);
     }
 
-    public static String formataHora(LocalTime data, String f) {
+    protected static String formataHora(LocalTime data, String f) {
         DateTimeFormatter formato = DateTimeFormatter.ofPattern(f);
         return formato.format(data);
     }
 
-    public static String formataNumero(BigDecimal numero, Integer decimais){
+    protected static String formataNumero(BigDecimal numero, Integer decimais){
         return String.format(new Locale("pt", "BR"), "%."+decimais+"f", numero);
     }
 
