@@ -1,8 +1,8 @@
 package efd;
 
 import efd.anotacoes.Filho;
-import efd.icmsipi.Bloco0000;
-import efd.icmsipi.Bloco9999;
+import efd.icmsipi.Reg0000;
+import efd.icmsipi.Reg9999;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -11,9 +11,9 @@ import lombok.Setter;
 public class IcmsIpi {
 
     @Filho
-    private Bloco0000 bloco0000;
+    private Reg0000 reg0000;
 
     @Filho
-    private Bloco9999 bloco9999;
+    private Reg9999 reg9999;
 
 }
