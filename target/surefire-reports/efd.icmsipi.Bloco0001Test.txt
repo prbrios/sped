@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: efd.icmsipi.Bloco0001Test
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec

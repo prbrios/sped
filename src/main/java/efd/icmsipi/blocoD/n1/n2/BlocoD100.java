@@ -1,11 +1,14 @@
 package efd.icmsipi.blocoD.n1.n2;
 
+import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
+import efd.icmsipi.blocoD.n1.n2.n3.*;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.util.List;
 
 @Getter
 @Setter
@@ -85,5 +88,35 @@ public class BlocoD100 {
 
     @Inclui(zerosEsquerda = 7)
     private Integer codMunDest;
+
+    @Filho
+    private BlocoD101 blocoD101;
+
+    @Filho
+    private List<BlocoD110> blocoD110;
+
+    @Filho
+    private List<BlocoD130> blocoD130;
+
+    @Filho
+    private BlocoD140 blocoD140;
+
+    @Filho
+    private BlocoD150 blocoD150;
+
+    @Filho
+    private List<BlocoD160> blocoD160;
+
+    @Filho
+    private BlocoD170 blocoD170;
+
+    @Filho
+    private List<BlocoD180> blocoD180;
+
+    @Filho
+    private List<BlocoD190> blocoD190;
+
+    @Filho
+    private List<BlocoD195> blocoD195;
 
 }

@@ -1,10 +1,15 @@
 package efd.icmsipi.blocoE.n1.n2.n3;
 
+import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
+import efd.icmsipi.blocoE.n1.n2.n3.n4.BlocoE111;
+import efd.icmsipi.blocoE.n1.n2.n3.n4.BlocoE115;
+import efd.icmsipi.blocoE.n1.n2.n3.n4.BlocoE116;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 @Getter
 @Setter
@@ -54,5 +59,14 @@ public class BlocoE110 {
 
     @Inclui
     private BigDecimal debEsp;
+
+    @Filho
+    private List<BlocoE111> blocoE111;
+
+    @Filho
+    private List<BlocoE115> blocoE115;
+
+    @Filho
+    private List<BlocoE116> blocoE116;
 
 }

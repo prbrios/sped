@@ -1,6 +1,9 @@
 package efd.icmsipi.blocoC.n1.n2.n3;
 
+import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
+import efd.icmsipi.blocoC.n1.n2.n3.n4.BlocoC179;
+import efd.icmsipi.blocoC.n1.n2.n3.n4.BlocoC191;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -45,5 +48,8 @@ public class BlocoC190 {
 
     @Inclui
     private String codObs;
+
+    @Filho
+    private BlocoC191 blocoC191;
 
 }

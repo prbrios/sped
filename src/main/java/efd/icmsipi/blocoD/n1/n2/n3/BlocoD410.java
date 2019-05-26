@@ -1,11 +1,14 @@
 package efd.icmsipi.blocoD.n1.n2.n3;
 
+import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
+import efd.icmsipi.blocoD.n1.n2.n3.n4.BlocoD411;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.util.List;
 
 @Getter
 @Setter
@@ -55,5 +58,8 @@ public class BlocoD410 {
 
     @Inclui
     private BigDecimal vlIcms;
+
+    @Filho
+    private List<BlocoD411> blocoD411;
 
 }

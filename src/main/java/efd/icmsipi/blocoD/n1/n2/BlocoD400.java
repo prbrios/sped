@@ -1,11 +1,15 @@
 package efd.icmsipi.blocoD.n1.n2;
 
+import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
+import efd.icmsipi.blocoD.n1.n2.n3.BlocoD410;
+import efd.icmsipi.blocoD.n1.n2.n3.BlocoD420;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.util.List;
 
 @Getter
 @Setter
@@ -58,5 +62,11 @@ public class BlocoD400 {
 
     @Inclui
     private String codCta;
+
+    @Filho
+    private List<BlocoD410> blocoD410;
+
+    @Filho
+    private List<BlocoD420> blocoD420;
 
 }

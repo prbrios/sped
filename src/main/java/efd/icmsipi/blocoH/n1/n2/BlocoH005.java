@@ -1,11 +1,14 @@
 package efd.icmsipi.blocoH.n1.n2;
 
+import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
+import efd.icmsipi.blocoH.n1.n2.n3.BlocoH010;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.util.List;
 
 @Getter
 @Setter
@@ -22,5 +25,8 @@ public class BlocoH005 {
 
     @Inclui
     private String motInv;
+
+    @Filho
+    private List<BlocoH010> blocoH010;
 
 }

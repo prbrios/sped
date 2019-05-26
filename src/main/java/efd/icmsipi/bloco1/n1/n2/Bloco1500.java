@@ -1,11 +1,14 @@
 package efd.icmsipi.bloco1.n1.n2;
 
+import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
+import efd.icmsipi.bloco1.n1.n2.n3.Bloco1510;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.util.List;
 
 @Getter
 @Setter
@@ -91,5 +94,8 @@ public class Bloco1500 {
 
     @Inclui
     private String codGrupoTensao;
+
+    @Filho
+    private List<Bloco1510> bloco1510;
 
 }

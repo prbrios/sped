@@ -53,6 +53,6 @@ public class Bloco0150 {
     private String bairro;
 
     @Filho
-    private List<Bloco0175> bloco0175 = new ArrayList<Bloco0175>();
+    private List<Bloco0175> bloco0175;
 
 }

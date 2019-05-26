@@ -1,6 +1,8 @@
 package efd.icmsipi.bloco1.n1.n2.n3;
 
+import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
+import efd.icmsipi.bloco1.n1.n2.n3.n4.Bloco1920;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -18,5 +20,8 @@ public class Bloco1910 {
 
     @Inclui
     private LocalDate dtFin;
+
+    @Filho
+    private Bloco1920 bloco1920;
 
 }

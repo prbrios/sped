@@ -21,27 +21,30 @@ public class BlocoB001 {
     private String indDad;
 
     @Filho
-    private List<BlocoB020> blocoB020 = new ArrayList<BlocoB020>();
+    private List<BlocoB020> blocoB020;
 
     @Filho
-    private List<BlocoB030> blocoB030 = new ArrayList<BlocoB030>();
+    private List<BlocoB030> blocoB030;
 
     @Filho
-    private List<BlocoB035> blocoB035 = new ArrayList<BlocoB035>();
+    private List<BlocoB035> blocoB035;
 
     @Filho
-    private List<BlocoB420> blocoB420 = new ArrayList<BlocoB420>();
+    private List<BlocoB350> blocoB350;
 
     @Filho
-    private List<BlocoB440> blocoB440 = new ArrayList<BlocoB440>();
+    private List<BlocoB420> blocoB420;
 
     @Filho
-    private List<BlocoB460> blocoB460 = new ArrayList<BlocoB460>();
+    private List<BlocoB440> blocoB440;
 
     @Filho
-    private BlocoB470 blocoB470 = new BlocoB470();
+    private List<BlocoB460> blocoB460;
 
     @Filho
-    private BlocoB500 blocoB500 = new BlocoB500();
+    private BlocoB470 blocoB470;
+
+    @Filho
+    private BlocoB500 blocoB500;
 
 }

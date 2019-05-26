@@ -1,10 +1,14 @@
 package efd.icmsipi.blocoC.n1.n2.n3;
 
+import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
+import efd.icmsipi.blocoC.n1.n2.n3.n4.BlocoC176;
+import efd.icmsipi.blocoC.n1.n2.n3.n4.BlocoC791;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 @Getter
 @Setter
@@ -42,5 +46,8 @@ public class BlocoC790 {
 
     @Inclui
     private String codObs;
+
+    @Filho
+    private List<BlocoC791> blocoC791;
 
 }

@@ -16,7 +16,7 @@ import java.util.Locale;
 
 public class Parsers {
 
-    protected static String converteBlocoEmString(Object obj, boolean processaFilhos) {
+    public static String converteBlocoEmString(Object obj, boolean processaFilhos) {
 
         List arr = new ArrayList();
         Class clazz = obj.getClass();
@@ -106,7 +106,9 @@ public class Parsers {
         // remove da lista os valores null
         arr.removeAll(Collections.singleton(null));
 
-        sb.append("|" + String.join("|", arr) + "|" + System.getProperty("line.separator"));
+        if(arr.size() > 0) {
+            sb.append("|" + String.join("|", arr) + "|" + System.getProperty("line.separator"));
+        }
 
         for(Object j : nosFilhos){
 

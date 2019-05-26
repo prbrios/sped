@@ -1,11 +1,14 @@
 package efd.icmsipi.bloco1.n1.n2;
 
+import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
+import efd.icmsipi.bloco1.n1.n2.n3.Bloco1310;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.util.List;
 
 @Getter
 @Setter
@@ -43,5 +46,8 @@ public class Bloco1300 {
 
     @Inclui(casasDecimais = 3)
     private BigDecimal fechFisico;
+
+    @Filho
+    private List<Bloco1310> bloco1310;
 
 }

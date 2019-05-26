@@ -4,6 +4,24 @@ import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
 import efd.icmsipi.bloco0.n1.Bloco0001;
 import efd.icmsipi.bloco0.n1.Bloco0990;
+import efd.icmsipi.bloco1.n1.Bloco1001;
+import efd.icmsipi.bloco1.n1.Bloco1990;
+import efd.icmsipi.bloco9.Bloco9001;
+import efd.icmsipi.bloco9.Bloco9990;
+import efd.icmsipi.blocoB.n1.BlocoB001;
+import efd.icmsipi.blocoB.n1.BlocoB990;
+import efd.icmsipi.blocoC.n1.BlocoC001;
+import efd.icmsipi.blocoC.n1.BlocoC990;
+import efd.icmsipi.blocoD.n1.BlocoD001;
+import efd.icmsipi.blocoD.n1.BlocoD990;
+import efd.icmsipi.blocoE.n1.BlocoE001;
+import efd.icmsipi.blocoE.n1.BlocoE990;
+import efd.icmsipi.blocoG.n1.BlocoG001;
+import efd.icmsipi.blocoG.n1.BlocoG990;
+import efd.icmsipi.blocoH.n1.BlocoH001;
+import efd.icmsipi.blocoH.n1.BlocoH990;
+import efd.icmsipi.blocoK.n1.BlocoK001;
+import efd.icmsipi.blocoK.n1.BlocoK990;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -123,9 +141,63 @@ public class Bloco0000 {
     private Integer indAtiv;
 
     @Filho
-    private Bloco0001 bloco0001 = new Bloco0001();
+    private Bloco0001 bloco0001;
 
     @Filho
-    private Bloco0990 bloco0990 = new Bloco0990();
+    private Bloco0990 bloco0990;
+
+    @Filho
+    private BlocoB001 blocoB001;
+
+    @Filho
+    private BlocoB990 blocoB990;
+
+    @Filho
+    private BlocoC001 blocoC001;
+
+    @Filho
+    private BlocoC990 blocoC990;
+
+    @Filho
+    private BlocoD001 blocoD001;
+
+    @Filho
+    private BlocoD990 blocoD990;
+
+    @Filho
+    private BlocoE001 blocoE001;
+
+    @Filho
+    private BlocoE990 blocoE990;
+
+    @Filho
+    private BlocoG001 blocoG001;
+
+    @Filho
+    private BlocoG990 blocoG990;
+
+    @Filho
+    private BlocoH001 blocoH001;
+
+    @Filho
+    private BlocoH990 blocoH990;
+
+    @Filho
+    private BlocoK001 blocoK001;
+
+    @Filho
+    private BlocoK990 blocoK990;
+
+    @Filho
+    private Bloco1001 bloco1001;
+
+    @Filho
+    private Bloco1990 bloco1990;
+
+    @Filho
+    private Bloco9001 bloco9001;
+
+    @Filho
+    private Bloco9990 bloco9990;
 
 }

@@ -1,11 +1,16 @@
 package efd.icmsipi.blocoD.n1.n2;
 
+import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
+import efd.icmsipi.blocoD.n1.n2.n3.BlocoD510;
+import efd.icmsipi.blocoD.n1.n2.n3.BlocoD530;
+import efd.icmsipi.blocoD.n1.n2.n3.BlocoD590;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.util.List;
 
 @Getter
 @Setter
@@ -82,5 +87,14 @@ public class BlocoD500 {
 
     @Inclui
     private Integer tpAssinante;
+
+    @Filho
+    private List<BlocoD510> blocoD510;
+
+    @Filho
+    private List<BlocoD530> blocoD530;
+
+    @Filho
+    private List<BlocoD590> blocoD590;
 
 }

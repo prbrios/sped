@@ -1,11 +1,14 @@
 package efd.icmsipi.blocoH.n1.n2.n3;
 
+import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
+import efd.icmsipi.blocoH.n1.n2.n3.n4.BlocoH020;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.util.List;
 
 @Getter
 @Setter
@@ -43,5 +46,8 @@ public class BlocoH010 {
 
     @Inclui
     private BigDecimal vlItemIr;
+
+    @Filho
+    private List<BlocoH020> blocoH020;
 
 }

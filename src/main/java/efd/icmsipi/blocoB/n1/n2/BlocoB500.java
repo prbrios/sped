@@ -27,6 +27,6 @@ public class BlocoB500 {
     private BigDecimal vlOr;
 
     @Filho
-    private List<BlocoB510> blocoB510 = new ArrayList<BlocoB510>();
+    private List<BlocoB510> blocoB510;
 
 }

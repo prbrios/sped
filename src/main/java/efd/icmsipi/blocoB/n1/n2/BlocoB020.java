@@ -79,6 +79,6 @@ public class BlocoB020 {
     private String codInfObs;
 
     @Filho
-    private List<BlocoB025> blocoB025 = new ArrayList<BlocoB025>();
+    private List<BlocoB025> blocoB025;
 
 }

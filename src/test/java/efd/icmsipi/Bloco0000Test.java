@@ -10,6 +10,9 @@ public class Bloco0000Test {
 
     @Test
     public void deveMontarUmaString(){
+
+
+
 /*
         Bloco0000 obj = new Bloco0000();
         obj.setCodVer("013");

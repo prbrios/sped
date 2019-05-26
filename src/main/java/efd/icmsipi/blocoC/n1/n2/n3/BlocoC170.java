@@ -1,10 +1,13 @@
 package efd.icmsipi.blocoC.n1.n2.n3;
 
+import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
+import efd.icmsipi.blocoC.n1.n2.n3.n4.*;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 @Setter
 @Getter
@@ -275,5 +278,32 @@ public class BlocoC170 {
      */
     @Inclui
     private BigDecimal vlAbatNt;
+
+    @Filho
+    private List<BlocoC171> blocoC171;
+
+    @Filho
+    private BlocoC172 blocoC172;
+
+    @Filho
+    private List<BlocoC173> blocoC173;
+
+    @Filho
+    private List<BlocoC174> blocoC174;
+
+    @Filho
+    private List<BlocoC175> blocoC175;
+
+    @Filho
+    private List<BlocoC176> blocoC176;
+
+    @Filho
+    private BlocoC177 blocoC177;
+
+    @Filho
+    private BlocoC178 blocoC178;
+
+    @Filho
+    private BlocoC179 blocoC179;
 
 }

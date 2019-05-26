@@ -57,15 +57,15 @@ public class Bloco0200 {
     private String cest;
 
     @Filho
-    private List<Bloco0205> bloco0205 = new ArrayList<Bloco0205>();
+    private List<Bloco0205> bloco0205;
 
     @Filho
-    Bloco0206 bloco0206;
+    private Bloco0206 bloco0206;
 
     @Filho
-    private List<Bloco0210> bloco0210 = new ArrayList<Bloco0210>();
+    private List<Bloco0210> bloco0210;
 
     @Filho
-    private List<Bloco0220> bloco0220 = new ArrayList<Bloco0220>();
+    private List<Bloco0220> bloco0220;
 
 }

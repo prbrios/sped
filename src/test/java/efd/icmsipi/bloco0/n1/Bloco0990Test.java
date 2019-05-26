@@ -2,7 +2,6 @@ package efd.icmsipi.bloco0.n1;
 
 import efd.Conversor;
 import efd.icmsipi.Util;
-import efd.icmsipi.bloco9.Bloco9001;
 import org.junit.Assert;
 import org.junit.Test;
 

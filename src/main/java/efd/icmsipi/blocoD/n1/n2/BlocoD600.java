@@ -1,11 +1,15 @@
 package efd.icmsipi.blocoD.n1.n2;
 
+import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
+import efd.icmsipi.blocoD.n1.n2.n3.BlocoD610;
+import efd.icmsipi.blocoD.n1.n2.n3.BlocoD690;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.util.List;
 
 @Getter
 @Setter
@@ -64,5 +68,11 @@ public class BlocoD600 {
 
     @Inclui
     private BigDecimal vlCofins;
+
+    @Filho
+    private List<BlocoD610> blocoD610;
+
+    @Filho
+    private List<BlocoD690> blocoD690;
 
 }
