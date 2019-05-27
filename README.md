@@ -1,7 +1,7 @@
 # SPED
-Esses projeto tem por objetivo facilitar a geração do arquivo do SPED por meio de classes desenvolvidas em Java.
+Esses projeto tem por objetivo facilitar a geração do arquivo do SPED por meio de classes desenvolvidas em Java. O projeto foi iniciado tendo com base o GUIA PRÁTICO DA ESCRITURAÇÃO FISCAL DIGITAL – EFD ICMS/IPI.
 
-O projeto foi iniciado tendo com base o GUIA PRÁTICO DA ESCRITURAÇÃO FISCAL DIGITAL – EFD ICMS/IPI.
+[![Apache 2.0 License](https://img.shields.io/badge/license-apache%202.0-green.svg) ](https://github.com/wmixvideo/nfe/blob/master/LICENSE)
 
 ### Atenção
 

@@ -13,6 +13,14 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
 
+    <developers>
+        <developer>
+            <id>prbrios</id>
+            <name>Paulo Roberto Rios</name>
+            <url>https://github.com/prbrios</url>
+        </developer>
+    </developers>
+
     <build>
         <plugins>
             <plugin>
