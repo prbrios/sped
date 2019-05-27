@@ -9,7 +9,7 @@ import lombok.Setter;
 public class Reg0005 {
 
     @Inclui
-    private String reg = "0005";
+    private final String reg = "0005";
 
     @Inclui
     private String fantasia;

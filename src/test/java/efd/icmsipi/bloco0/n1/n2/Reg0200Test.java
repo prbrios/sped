@@ -1,0 +1,44 @@
+package efd.icmsipi.bloco0.n1.n2;
+
+import efd.Conversor;
+import efd.icmsipi.Util;
+import org.junit.Assert;
+import org.junit.Test;
+
+import java.math.BigDecimal;
+
+public class Reg0200Test {
+
+    @Test
+    public void teste1() {
+        Assert.assertEquals("0200", new Reg0200().getReg());
+    }
+
+    @Test
+    public void teste2() {
+
+        Reg0200 reg = new Reg0200();
+        reg.setCodItem("C1");
+        reg.setDescrItem("ITEM");
+        reg.setCodBarras("12345678");
+        reg.setCodAntItem("C0");
+        reg.setUnidInv("UND");
+        reg.setTipoItem(1);
+        reg.setCodNcm(10002358);
+        reg.setExIpi("");
+        reg.setCodGen(0);
+        reg.setCodLst("LST");
+        reg.setAliqIcms(new BigDecimal(18.00));
+        reg.setCest(1402330);
+
+        Assert.assertEquals(Util.formata("|0200|C1|ITEM|12345678|C0|UND|01|10002358||00|LST|18,00|1402330|"), Conversor.converteBloco(reg));
+    }
+
+    @Test
+    public void teste3() {
+
+        Reg0200 reg = new Reg0200();
+
+        Assert.assertEquals(Util.formata("|0200|||||||||||||"), Conversor.converteBloco(reg));
+    }
+}

@@ -53,7 +53,7 @@ public class Reg0200 {
     private BigDecimal aliqIcms;
 
     @Inclui(zerosEsquerda = 7)
-    private String cest;
+    private Integer cest;
 
     @Filho
     private List<Reg0205> reg0205;

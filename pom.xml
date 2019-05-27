@@ -73,8 +73,12 @@
                 <artifactId>maven-javadoc-plugin</artifactId>
                 <version>3.1.0</version>
                 <configuration>
+                    <!--
                     <stylesheetfile>${basedir}/src/main/javadoc/stylesheet.css</stylesheetfile>
                     <show>public</show>
+                -->
+                    <sourcepath>${basedir}/src/main/java</sourcepath>
+                    <excludePackageNames>efd.icmsipi.*:efd.anotacoes.*</excludePackageNames>
                 </configuration>
             </plugin>
         </plugins>
