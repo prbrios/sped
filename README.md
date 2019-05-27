@@ -3,7 +3,19 @@ Esses projeto tem por objetivo facilitar a geração do arquivo do SPED por meio
 
 O projeto foi iniciado tendo com base o GUIA PRÁTICO DA ESCRITURAÇÃO FISCAL DIGITAL – EFD ICMS/IPI.
 
-####Java
+### Atenção
+
+Este é um projeto colaborativo, sinta-se a vontade em usar e colaborar com o mesmo.
+
+### Instalação
+
+```
+git clone https://github.com/prbrios/sped
+mvn clean install
+``` 
+### Como usar
+
+Você vai precisar basicamente criar objetos e no final converter esse(s) objeto(s) em uma string.
 
 ```java
 import efd.*;

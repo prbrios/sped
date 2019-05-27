@@ -3,306 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="947fd104-c589-49df-ba58-f44ba55b0904" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/efd/icmsipi/bloco0/Bloco0.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/efd/icmsipi/bloco0/n1/n2/Reg0005.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/efd/icmsipi/bloco0/n1/n2/Reg0005.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/efd/icmsipi/bloco0/n1/n2/Reg0015.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/efd/icmsipi/bloco0/n1/n2/Reg0015.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/efd/icmsipi/bloco0/n1/n2/Reg0200.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/efd/icmsipi/bloco0/n1/n2/Reg0200.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/efd/icmsipi/bloco1/Bloco1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/efd/icmsipi/bloco9/Bloco9.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/efd/icmsipi/blocoB/BlocoB.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/efd/icmsipi/blocoC/BlocoC.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/efd/icmsipi/blocoD/BlocoD.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/efd/icmsipi/blocoE/BlocoE.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/efd/icmsipi/blocoG/BlocoG.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/efd/icmsipi/blocoH/BlocoH.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/efd/icmsipi/blocoK/BlocoK.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/efd/icmsipi/Bloco_0000Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/efd/icmsipi/Reg0000Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/efd/icmsipi/Bloco_0001Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/efd/icmsipi/Reg9999Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/efd/icmsipi/IcmsIpiTeste.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/efd/icmsipi/bloco0/Bloco0.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/efd/icmsipi/bloco0/n1/Bloco_0001Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/efd/icmsipi/bloco0/n1/Reg0001Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/efd/icmsipi/bloco0/n1/Bloco_0990Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/efd/icmsipi/bloco0/n1/Reg0990Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/efd/icmsipi/bloco0/n1/n2/Bloco_0005Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/efd/icmsipi/bloco0/n1/n2/Reg0005Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/sped.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/Conversor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/ICMSIPI.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/Parsers.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/Zip.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/anotacoes/Filho.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/anotacoes/Inclui.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/Reg0000.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/Reg9999.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/bloco0/Bloco0.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/bloco0/n1/Reg0001.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/bloco0/n1/Reg0990.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/bloco0/n1/n2/Reg0005.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/bloco0/n1/n2/Reg0015.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/bloco0/n1/n2/Reg0100.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/bloco0/n1/n2/Reg0150.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/bloco0/n1/n2/Reg0190.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/bloco0/n1/n2/Reg0200.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/bloco0/n1/n2/Reg0300.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/bloco0/n1/n2/Reg0400.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/bloco0/n1/n2/Reg0450.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/bloco0/n1/n2/Reg0460.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/bloco0/n1/n2/Reg0500.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/bloco0/n1/n2/Reg0600.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/bloco0/n1/n2/n3/Reg0175.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/bloco0/n1/n2/n3/Reg0205.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/bloco0/n1/n2/n3/Reg0206.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/bloco0/n1/n2/n3/Reg0210.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/bloco0/n1/n2/n3/Reg0220.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/bloco0/n1/n2/n3/Reg0305.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/bloco1/Bloco1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/bloco1/n1/Reg1001.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/bloco1/n1/Reg1990.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/bloco1/n1/n2/Reg1010.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/bloco1/n1/n2/Reg1100.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/bloco1/n1/n2/Reg1200.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/bloco1/n1/n2/Reg1300.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/bloco1/n1/n2/Reg1350.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/bloco1/n1/n2/Reg1390.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/bloco1/n1/n2/Reg1400.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/bloco1/n1/n2/Reg1500.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/bloco1/n1/n2/Reg1600.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/bloco1/n1/n2/Reg1700.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/bloco1/n1/n2/Reg1800.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/bloco1/n1/n2/Reg1900.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/bloco1/n1/n2/Reg1960.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/bloco1/n1/n2/Reg1970.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/bloco1/n1/n2/Reg1980.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/bloco1/n1/n2/n3/Reg1105.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/bloco1/n1/n2/n3/Reg1210.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/bloco1/n1/n2/n3/Reg1310.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/bloco1/n1/n2/n3/Reg1360.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/bloco1/n1/n2/n3/Reg1370.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/bloco1/n1/n2/n3/Reg1391.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/bloco1/n1/n2/n3/Reg1510.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/bloco1/n1/n2/n3/Reg1710.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/bloco1/n1/n2/n3/Reg1910.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/bloco1/n1/n2/n3/Reg1975.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/bloco1/n1/n2/n3/n4/Reg1110.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/bloco1/n1/n2/n3/n4/Reg1320.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/bloco1/n1/n2/n3/n4/Reg1920.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/bloco1/n1/n2/n3/n4/n5/Reg1921.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/bloco1/n1/n2/n3/n4/n5/Reg1925.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/bloco1/n1/n2/n3/n4/n5/Reg1926.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/bloco1/n1/n2/n3/n4/n5/n6/Reg1922.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/bloco1/n1/n2/n3/n4/n5/n6/Reg1923.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/bloco9/Bloco9.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/bloco9/Reg9001.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/bloco9/Reg9900.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/bloco9/Reg9990.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/bloco9/Reg9999.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoB/BlocoB.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoB/n1/RegB001.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoB/n1/RegB990.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoB/n1/n2/RegB020.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoB/n1/n2/RegB030.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoB/n1/n2/RegB350.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoB/n1/n2/RegB420.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoB/n1/n2/RegB440.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoB/n1/n2/RegB460.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoB/n1/n2/RegB470.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoB/n1/n2/RegB500.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoB/n1/n2/n3/RegB025.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoB/n1/n2/n3/RegB035.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoB/n1/n2/n3/RegB510.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoC/BlocoC.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoC/n1/RegC001.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoC/n1/RegC990.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoC/n1/n2/RegC100.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoC/n1/n2/RegC300.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoC/n1/n2/RegC350.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoC/n1/n2/RegC400.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoC/n1/n2/RegC495.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoC/n1/n2/RegC500.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoC/n1/n2/RegC600.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoC/n1/n2/RegC700.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoC/n1/n2/RegC800.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoC/n1/n2/RegC860.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoC/n1/n2/n3/RegC101.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoC/n1/n2/n3/RegC105.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoC/n1/n2/n3/RegC110.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoC/n1/n2/n3/RegC120.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoC/n1/n2/n3/RegC130.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoC/n1/n2/n3/RegC140.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoC/n1/n2/n3/RegC160.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoC/n1/n2/n3/RegC165.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoC/n1/n2/n3/RegC170.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoC/n1/n2/n3/RegC190.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoC/n1/n2/n3/RegC195.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoC/n1/n2/n3/RegC310.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoC/n1/n2/n3/RegC320.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoC/n1/n2/n3/RegC370.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoC/n1/n2/n3/RegC390.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoC/n1/n2/n3/RegC405.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoC/n1/n2/n3/RegC510.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoC/n1/n2/n3/RegC590.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoC/n1/n2/n3/RegC601.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoC/n1/n2/n3/RegC610.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoC/n1/n2/n3/RegC690.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoC/n1/n2/n3/RegC790.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoC/n1/n2/n3/RegC850.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoC/n1/n2/n3/RegC890.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoC/n1/n2/n3/n4/RegC111.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoC/n1/n2/n3/n4/RegC112.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoC/n1/n2/n3/n4/RegC113.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoC/n1/n2/n3/n4/RegC114.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoC/n1/n2/n3/n4/RegC115.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoC/n1/n2/n3/n4/RegC116.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoC/n1/n2/n3/n4/RegC141.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoC/n1/n2/n3/n4/RegC171.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoC/n1/n2/n3/n4/RegC172.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoC/n1/n2/n3/n4/RegC173.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoC/n1/n2/n3/n4/RegC174.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoC/n1/n2/n3/n4/RegC175.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoC/n1/n2/n3/n4/RegC176.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoC/n1/n2/n3/n4/RegC177.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoC/n1/n2/n3/n4/RegC178.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoC/n1/n2/n3/n4/RegC179.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoC/n1/n2/n3/n4/RegC191.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoC/n1/n2/n3/n4/RegC197.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoC/n1/n2/n3/n4/RegC321.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoC/n1/n2/n3/n4/RegC410.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoC/n1/n2/n3/n4/RegC420.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoC/n1/n2/n3/n4/RegC460.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoC/n1/n2/n3/n4/RegC490.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoC/n1/n2/n3/n4/RegC791.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoC/n1/n2/n3/n4/n5/RegC425.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoC/n1/n2/n3/n4/n5/RegC465.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoC/n1/n2/n3/n4/n5/RegC470.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoD/BlocoD.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoD/n1/RegD001.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoD/n1/RegD990.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoD/n1/n2/RegD100.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoD/n1/n2/RegD300.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoD/n1/n2/RegD350.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoD/n1/n2/RegD400.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoD/n1/n2/RegD500.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoD/n1/n2/RegD600.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoD/n1/n2/RegD695.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoD/n1/n2/n3/RegD101.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoD/n1/n2/n3/RegD110.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoD/n1/n2/n3/RegD130.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoD/n1/n2/n3/RegD140.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoD/n1/n2/n3/RegD150.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoD/n1/n2/n3/RegD160.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoD/n1/n2/n3/RegD170.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoD/n1/n2/n3/RegD180.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoD/n1/n2/n3/RegD190.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoD/n1/n2/n3/RegD195.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoD/n1/n2/n3/RegD301.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoD/n1/n2/n3/RegD310.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoD/n1/n2/n3/RegD355.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoD/n1/n2/n3/RegD410.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoD/n1/n2/n3/RegD420.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoD/n1/n2/n3/RegD510.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoD/n1/n2/n3/RegD530.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoD/n1/n2/n3/RegD590.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoD/n1/n2/n3/RegD610.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoD/n1/n2/n3/RegD690.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoD/n1/n2/n3/RegD696.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoD/n1/n2/n3/n4/RegD120.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoD/n1/n2/n3/n4/RegD161.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoD/n1/n2/n3/n4/RegD162.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoD/n1/n2/n3/n4/RegD197.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoD/n1/n2/n3/n4/RegD360.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoD/n1/n2/n3/n4/RegD365.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoD/n1/n2/n3/n4/RegD390.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoD/n1/n2/n3/n4/RegD411.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoD/n1/n2/n3/n4/RegD697.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoD/n1/n2/n3/n4/n5/RegD370.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoE/BlocoE.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoE/n1/RegE001.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoE/n1/RegE990.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoE/n1/n2/RegE100.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoE/n1/n2/RegE200.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoE/n1/n2/RegE300.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoE/n1/n2/RegE500.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoE/n1/n2/n3/RegE110.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoE/n1/n2/n3/RegE210.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoE/n1/n2/n3/RegE310.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoE/n1/n2/n3/RegE510.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoE/n1/n2/n3/RegE520.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoE/n1/n2/n3/n4/RegE111.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoE/n1/n2/n3/n4/RegE115.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoE/n1/n2/n3/n4/RegE116.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoE/n1/n2/n3/n4/RegE220.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoE/n1/n2/n3/n4/RegE250.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoE/n1/n2/n3/n4/RegE311.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoE/n1/n2/n3/n4/RegE316.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoE/n1/n2/n3/n4/RegE530.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoE/n1/n2/n3/n4/n5/RegE112.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoE/n1/n2/n3/n4/n5/RegE113.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoE/n1/n2/n3/n4/n5/RegE230.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoE/n1/n2/n3/n4/n5/RegE240.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoE/n1/n2/n3/n4/n5/RegE312.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoE/n1/n2/n3/n4/n5/RegE313.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoE/n1/n2/n3/n4/n5/RegE531.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoG/BlocoG.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoG/n1/RegG001.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoG/n1/RegG990.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoG/n1/n2/RegG110.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoG/n1/n2/n3/RegG125.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoG/n1/n2/n3/n4/RegG126.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoG/n1/n2/n3/n4/RegG130.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoG/n1/n2/n3/n4/n5/RegG140.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoH/BlocoH.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoH/n1/RegH001.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoH/n1/RegH990.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoH/n1/n2/RegH005.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoH/n1/n2/n3/RegH010.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoH/n1/n2/n3/n4/RegH020.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoK/BlocoK.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoK/n1/RegK001.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoK/n1/RegK990.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoK/n1/n2/RegK100.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoK/n1/n2/n3/RegK200.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoK/n1/n2/n3/RegK210.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoK/n1/n2/n3/RegK220.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoK/n1/n2/n3/RegK230.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoK/n1/n2/n3/RegK250.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoK/n1/n2/n3/RegK260.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoK/n1/n2/n3/RegK270.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoK/n1/n2/n3/RegK280.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoK/n1/n2/n3/RegK290.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoK/n1/n2/n3/RegK300.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoK/n1/n2/n3/n4/RegK215.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoK/n1/n2/n3/n4/RegK235.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoK/n1/n2/n3/n4/RegK255.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoK/n1/n2/n3/n4/RegK265.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoK/n1/n2/n3/n4/RegK275.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoK/n1/n2/n3/n4/RegK291.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoK/n1/n2/n3/n4/RegK292.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoK/n1/n2/n3/n4/RegK301.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/efd/icmsipi/blocoK/n1/n2/n3/n4/RegK302.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/sped-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-efd.icmsipi.Bloco0000Test.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-efd.icmsipi.Bloco0001Test.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-efd.icmsipi.bloco0.n1.Bloco0001Test.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-efd.icmsipi.bloco0.n1.Bloco0990Test.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-efd.icmsipi.bloco0.n1.n2.Bloco0005Test.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/efd.icmsipi.Bloco0000Test.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/efd.icmsipi.Bloco0001Test.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/efd.icmsipi.bloco0.n1.Bloco0001Test.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/efd.icmsipi.bloco0.n1.Bloco0990Test.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/efd.icmsipi.bloco0.n1.n2.Bloco0005Test.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/sped.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/efd/icmsipi/Bloco_0000Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/efd/icmsipi/Bloco_0001Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/efd/icmsipi/IcmsIpiTeste.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/efd/icmsipi/Util.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/efd/icmsipi/bloco0/Bloco0.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/efd/icmsipi/bloco0/n1/Bloco_0001Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/efd/icmsipi/bloco0/n1/Bloco_0990Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/efd/icmsipi/bloco0/n1/n2/Bloco_0005Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -313,11 +14,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
+            <state relative-caret-position="1264">
               <caret line="79" column="34" selection-start-line="79" selection-start-column="34" selection-end-line="79" selection-end-column="34" />
             </state>
           </provider>
@@ -326,8 +27,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/efd/icmsipi/Reg0000Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="35" column="133" lean-forward="true" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="133" />
+            <state relative-caret-position="448">
+              <caret line="35" column="133" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="133" />
             </state>
           </provider>
         </entry>
@@ -335,7 +36,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/efd/icmsipi/Reg0000.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1328">
+            <state relative-caret-position="384">
               <caret line="49" column="13" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
             </state>
           </provider>
@@ -344,8 +45,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/efd/icmsipi/bloco0/n1/Reg0001Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="18" column="38" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="38" />
+            <state relative-caret-position="208">
+              <caret line="18" column="38" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -355,9 +56,15 @@
       </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="672">
-              <caret line="42" column="3" selection-start-line="42" selection-start-column="3" selection-end-line="42" selection-end-column="3" />
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="96">
+                <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+                <folding>
+                  <element signature="imports" expanded="true" />
+                </folding>
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -377,11 +84,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/efd/Parsers.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1872">
+            <state relative-caret-position="160">
               <caret line="22" selection-start-line="22" selection-end-line="22" />
-              <folding>
-                <element signature="e#767#775#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -486,7 +190,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -563,11 +266,12 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558924326973" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558924461153" />
     <property name="extract.method.default.visibility" value="public" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/efd/icmsipi/bloco0/n1" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../integradorsaas" />
@@ -728,7 +432,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49921012" visible="true" weight="0.35098335" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49921012" visible="true" weight="0.35627836" />
       <window_info id="Structure" order="1" sideWeight="0.5007899" side_tool="true" weight="0.22012103" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -742,7 +446,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.31595576" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.31595576" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32543445" />
@@ -895,13 +599,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/efd/icmsipi/bloco0/Bloco0.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/efd/icmsipi/bloco0/Bloco0.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/efd/icmsipi/bloco0/n1/n2/Reg0005.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
@@ -1128,16 +826,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/efd/icmsipi/IcmsIpiTeste.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/efd/icmsipi/IcmsIpiTeste.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/efd/icmsipi/Reg9999.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
@@ -1165,10 +854,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/efd/icmsipi/bloco0/Bloco0.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/efd/icmsipi/bloco0/Bloco0.java" />
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="1264">
+          <caret line="79" column="34" selection-start-line="79" selection-start-column="34" selection-end-line="79" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/efd/icmsipi/Reg0000Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="35" column="133" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="133" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/efd/icmsipi/Reg0000.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="49" column="13" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/efd/icmsipi/bloco0/n1/Reg0001Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="18" column="38" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1184,49 +898,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/efd/Parsers.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1872">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="e#767#775#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="79" column="34" selection-start-line="79" selection-start-column="34" selection-end-line="79" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/efd/icmsipi/Reg0000Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="35" column="133" lean-forward="true" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="133" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/efd/icmsipi/Reg0000.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1328">
-          <caret line="49" column="13" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/efd/icmsipi/bloco0/n1/Reg0001Test.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
-          <caret line="18" column="38" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
+      <provider editor-type-id="text-editor">
         <state relative-caret-position="672">
           <caret line="42" column="3" selection-start-line="42" selection-start-column="3" selection-end-line="42" selection-end-column="3" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="96">
+            <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            <folding>
+              <element signature="imports" expanded="true" />
+            </folding>
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
