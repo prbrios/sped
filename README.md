@@ -3,17 +3,17 @@ Esses projeto tem por objetivo facilitar a geração do arquivo do SPED por meio
 
 [![Apache 2.0 License](https://img.shields.io/badge/license-apache%202.0-green.svg) ](https://github.com/wmixvideo/nfe/blob/master/LICENSE)
 
-### Atenção
+## Atenção
 
 Este é um projeto colaborativo, sinta-se a vontade em usar e colaborar com o mesmo.
 
-### Instalação
+## Instalação
 
 ```
 git clone https://github.com/prbrios/sped
 mvn clean install
 ``` 
-### Como usar
+## Como usar
 
 Você vai precisar basicamente criar objetos e no final converter esse(s) objeto(s) em uma string.
 
