@@ -14,4 +14,9 @@ public class RegK990 {
     @Inclui
     private Integer qtdLinK;
 
+    public RegK990(Integer qtdLinK) {
+        this.qtdLinK = qtdLinK;
+    }
+
+    public RegK990(){}
 }

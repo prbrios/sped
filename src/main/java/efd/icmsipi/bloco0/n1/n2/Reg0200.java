@@ -67,4 +67,24 @@ public class Reg0200 {
     @Filho
     private List<Reg0220> reg0220;
 
+    public Reg0200(String codItem, String descrItem, String codBarras, String codAntItem, String unidInv,
+                   Integer tipoItem, Integer codNcm, String exIpi, Integer codGen, String codLst,
+                   BigDecimal aliqIcms, Integer cest) {
+
+        this.codItem = codItem;
+        this.descrItem = descrItem;
+        this.codBarras = codBarras;
+        this.codAntItem = codAntItem;
+        this.unidInv = unidInv;
+        this.tipoItem = tipoItem;
+        this.codNcm = codNcm;
+        this.exIpi = exIpi;
+        this.codGen = codGen;
+        this.codLst = codLst;
+        this.aliqIcms = aliqIcms;
+        this.cest = cest;
+    }
+
+    public Reg0200(){}
+
 }

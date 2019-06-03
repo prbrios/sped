@@ -52,4 +52,21 @@ public class RegD170 {
     @Inclui
     private String ufId;
 
+    public RegD170(String codPartConsg, String codPartRed, Integer codMunOrig, Integer codMunDest, String otm, String indNatFrt, BigDecimal vlLiqFrt, BigDecimal vlGris, BigDecimal vlPdg, BigDecimal vlOut, BigDecimal vlFrt, String veicId, String ufId) {
+        this.codPartConsg = codPartConsg;
+        this.codPartRed = codPartRed;
+        this.codMunOrig = codMunOrig;
+        this.codMunDest = codMunDest;
+        this.otm = otm;
+        this.indNatFrt = indNatFrt;
+        this.vlLiqFrt = vlLiqFrt;
+        this.vlGris = vlGris;
+        this.vlPdg = vlPdg;
+        this.vlOut = vlOut;
+        this.vlFrt = vlFrt;
+        this.veicId = veicId;
+        this.ufId = ufId;
+    }
+
+    public RegD170(){}
 }

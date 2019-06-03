@@ -17,4 +17,11 @@ public class Reg0015 {
     @Inclui
     private String ieSt;
 
+    public Reg0015(String ufSt, String ieSt) {
+        this.ufSt = ufSt;
+        this.ieSt = ieSt;
+    }
+
+    public Reg0015(){}
+
 }

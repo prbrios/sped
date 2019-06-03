@@ -41,4 +41,17 @@ public class Reg1923 {
     @Inclui
     private String chvDoce;
 
+    public Reg1923(String codPart, String codMod, String ser, Integer sub, Integer numDoc, LocalDate dtDoc, String codItem, BigDecimal vlAjItem, String chvDoce) {
+        this.codPart = codPart;
+        this.codMod = codMod;
+        this.ser = ser;
+        this.sub = sub;
+        this.numDoc = numDoc;
+        this.dtDoc = dtDoc;
+        this.codItem = codItem;
+        this.vlAjItem = vlAjItem;
+        this.chvDoce = chvDoce;
+    }
+
+    public Reg1923(){}
 }

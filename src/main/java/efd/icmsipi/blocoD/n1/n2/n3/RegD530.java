@@ -31,4 +31,14 @@ public class RegD530 {
     @Inclui
     private Integer terminal;
 
+    public RegD530(String indServ, LocalDate dtIniServ, LocalDate dtFinServ, Integer perFiscal, String codArea, Integer terminal) {
+        this.indServ = indServ;
+        this.dtIniServ = dtIniServ;
+        this.dtFinServ = dtFinServ;
+        this.perFiscal = perFiscal;
+        this.codArea = codArea;
+        this.terminal = terminal;
+    }
+
+    public RegD530(){}
 }

@@ -54,4 +54,10 @@ public class Reg0001 {
     @Filho
     private List<Reg0600> reg0600;
 
+    public Reg0001(Integer indMov) {
+        this.indMov = indMov;
+    }
+
+    public Reg0001(){}
+
 }

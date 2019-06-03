@@ -32,4 +32,11 @@ public class RegE111 {
     @Filho
     private List<RegE113> regE113;
 
+    public RegE111(String codAjApur, String descrComplAj, BigDecimal vlAjApur) {
+        this.codAjApur = codAjApur;
+        this.descrComplAj = descrComplAj;
+        this.vlAjApur = vlAjApur;
+    }
+
+    public RegE111(){}
 }

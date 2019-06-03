@@ -22,4 +22,11 @@ public class RegK265 {
     @Inclui(casasDecimais = 6)
     private BigDecimal qtdRet;
 
+    public RegK265(String codItem, BigDecimal qtdCons, BigDecimal qtdRet) {
+        this.codItem = codItem;
+        this.qtdCons = qtdCons;
+        this.qtdRet = qtdRet;
+    }
+
+    public RegK265(){}
 }

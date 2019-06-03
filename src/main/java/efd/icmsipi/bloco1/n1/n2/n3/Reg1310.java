@@ -46,4 +46,17 @@ public class Reg1310 {
     @Filho
     private List<Reg1320> reg1320;
 
+    public Reg1310(String numTanque, BigDecimal estqAbert, BigDecimal volEntr, BigDecimal volDisp, BigDecimal volSaidas, BigDecimal estqEscr, BigDecimal valAjPerda, BigDecimal valAjGanho, BigDecimal fechFisico) {
+        this.numTanque = numTanque;
+        this.estqAbert = estqAbert;
+        this.volEntr = volEntr;
+        this.volDisp = volDisp;
+        this.volSaidas = volSaidas;
+        this.estqEscr = estqEscr;
+        this.valAjPerda = valAjPerda;
+        this.valAjGanho = valAjGanho;
+        this.fechFisico = fechFisico;
+    }
+
+    public Reg1310(){}
 }

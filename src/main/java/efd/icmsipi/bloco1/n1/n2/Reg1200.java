@@ -37,4 +37,14 @@ public class Reg1200 {
     @Filho
     private List<Reg1210> reg1210;
 
+    public Reg1200(String codAjApur, BigDecimal sldCred, BigDecimal credApr, BigDecimal credReceb, BigDecimal credUtil, BigDecimal sldCredFim) {
+        this.codAjApur = codAjApur;
+        this.sldCred = sldCred;
+        this.credApr = credApr;
+        this.credReceb = credReceb;
+        this.credUtil = credUtil;
+        this.sldCredFim = sldCredFim;
+    }
+
+    public Reg1200(){}
 }

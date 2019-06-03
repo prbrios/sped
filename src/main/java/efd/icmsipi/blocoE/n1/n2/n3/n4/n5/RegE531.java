@@ -41,4 +41,17 @@ public class RegE531 {
     @Inclui
     private String chvNfe;
 
+    public RegE531(String codPart, String codMod, String ser, Integer sub, Integer numDoc, LocalDate dtDoc, String codItem, BigDecimal vlAjitem, String chvNfe) {
+        this.codPart = codPart;
+        this.codMod = codMod;
+        this.ser = ser;
+        this.sub = sub;
+        this.numDoc = numDoc;
+        this.dtDoc = dtDoc;
+        this.codItem = codItem;
+        this.vlAjitem = vlAjitem;
+        this.chvNfe = chvNfe;
+    }
+
+    public RegE531(){}
 }

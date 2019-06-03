@@ -49,4 +49,18 @@ public class RegC790 {
     @Filho
     private List<RegC791> regC791;
 
+    public RegC790(Integer cstIcms, Integer cfop, BigDecimal aliqIcms, BigDecimal vlOper, BigDecimal vlBcIcms, BigDecimal vlIcms, BigDecimal vlBcIcmsSt, BigDecimal vlIcmsSt, BigDecimal vlRedBc, String codObs) {
+        this.cstIcms = cstIcms;
+        this.cfop = cfop;
+        this.aliqIcms = aliqIcms;
+        this.vlOper = vlOper;
+        this.vlBcIcms = vlBcIcms;
+        this.vlIcms = vlIcms;
+        this.vlBcIcmsSt = vlBcIcmsSt;
+        this.vlIcmsSt = vlIcmsSt;
+        this.vlRedBc = vlRedBc;
+        this.codObs = codObs;
+    }
+
+    public RegC790(){}
 }

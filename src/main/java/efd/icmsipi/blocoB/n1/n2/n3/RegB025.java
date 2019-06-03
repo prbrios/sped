@@ -31,4 +31,14 @@ public class RegB025 {
     @Inclui
     private String codServ;
 
+    public RegB025(BigDecimal vlContP, BigDecimal vlBcIssP, BigDecimal aliqIss, BigDecimal vlIssP, BigDecimal vlIsntIssP, String codServ) {
+        this.vlContP = vlContP;
+        this.vlBcIssP = vlBcIssP;
+        this.aliqIss = aliqIss;
+        this.vlIssP = vlIssP;
+        this.vlIsntIssP = vlIsntIssP;
+        this.codServ = codServ;
+    }
+
+    public RegB025(){}
 }

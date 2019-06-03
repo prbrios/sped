@@ -26,4 +26,13 @@ public class RegE312 {
     @Inclui
     private String txtCompl;
 
+    public RegE312(String numDa, String numProc, Integer indProc, String proc, String txtCompl) {
+        this.numDa = numDa;
+        this.numProc = numProc;
+        this.indProc = indProc;
+        this.proc = proc;
+        this.txtCompl = txtCompl;
+    }
+
+    public RegE312(){}
 }

@@ -34,4 +34,16 @@ public class Reg0300 {
     @Filho
     private Reg0305 bloco0350;
 
+    public Reg0300(String codIndBem, String identMerc, String descrItem, String codPrnc, String codCta, Integer nrParc) {
+
+        this.codIndBem = codIndBem;
+        this.identMerc = identMerc;
+        this.descrItem = descrItem;
+        this.codPrnc = codPrnc;
+        this.codCta = codCta;
+        this.nrParc = nrParc;
+    }
+
+    public Reg0300(){}
+
 }

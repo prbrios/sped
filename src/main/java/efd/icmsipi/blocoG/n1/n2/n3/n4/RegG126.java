@@ -38,4 +38,16 @@ public class RegG126 {
     @Inclui
     private BigDecimal vlParcAprop;
 
+    public RegG126(LocalDate dtIni, LocalDate dtFin, Integer numParc, BigDecimal vlParcPass, BigDecimal clTribOc, BigDecimal vlTotal, BigDecimal indPerSai, BigDecimal vlParcAprop) {
+        this.dtIni = dtIni;
+        this.dtFin = dtFin;
+        this.numParc = numParc;
+        this.vlParcPass = vlParcPass;
+        this.clTribOc = clTribOc;
+        this.vlTotal = vlTotal;
+        this.indPerSai = indPerSai;
+        this.vlParcAprop = vlParcAprop;
+    }
+
+    public RegG126(){}
 }

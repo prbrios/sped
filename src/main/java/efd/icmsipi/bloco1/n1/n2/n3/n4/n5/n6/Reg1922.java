@@ -26,4 +26,13 @@ public class Reg1922 {
     @Inclui
     private String txtCompl;
 
+    public Reg1922(String numDa, String numProc, String indProc, String proc, String txtCompl) {
+        this.numDa = numDa;
+        this.numProc = numProc;
+        this.indProc = indProc;
+        this.proc = proc;
+        this.txtCompl = txtCompl;
+    }
+
+    public Reg1922(){}
 }

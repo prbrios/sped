@@ -38,4 +38,17 @@ public class RegC115 {
     @Inclui(zerosEsquerda = 7)
     private Integer codMunEntg;
 
+    public RegC115(Integer indCarga, Long cnpjCol, String ieCol, Long cpfCol, Integer codMunCol, Long cnpjEntg, String ieEntg, Integer cpfEntg, Integer codMunEntg) {
+        this.indCarga = indCarga;
+        this.cnpjCol = cnpjCol;
+        this.ieCol = ieCol;
+        this.cpfCol = cpfCol;
+        this.codMunCol = codMunCol;
+        this.cnpjEntg = cnpjEntg;
+        this.ieEntg = ieEntg;
+        this.cpfEntg = cpfEntg;
+        this.codMunEntg = codMunEntg;
+    }
+
+    public RegC115(){}
 }

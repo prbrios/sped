@@ -35,4 +35,13 @@ public class RegK230 {
     @Filho
     private List<RegK235> regK235;
 
+    public RegK230(LocalDate dtIniOp, LocalDate dtFinOp, String codDocOp, String codItem, BigDecimal qtdEnc) {
+        this.dtIniOp = dtIniOp;
+        this.dtFinOp = dtFinOp;
+        this.codDocOp = codDocOp;
+        this.codItem = codItem;
+        this.qtdEnc = qtdEnc;
+    }
+
+    public RegK230(){}
 }

@@ -37,4 +37,14 @@ public class Reg1105 {
     @Filho
     private List<Reg1110> reg1110;
 
+    public Reg1105(String codMod, String serie, Integer numDoc, String chvNfe, LocalDate dtDoc, String codItem) {
+        this.codMod = codMod;
+        this.serie = serie;
+        this.numDoc = numDoc;
+        this.chvNfe = chvNfe;
+        this.dtDoc = dtDoc;
+        this.codItem = codItem;
+    }
+
+    public Reg1105(){}
 }

@@ -17,4 +17,10 @@ public class Reg0460 {
     @Inclui
     private String txt;
 
+    public Reg0460(String codObs, String txt) {
+        this.codObs = codObs;
+        this.txt = txt;
+    }
+
+    public Reg0460(){}
 }

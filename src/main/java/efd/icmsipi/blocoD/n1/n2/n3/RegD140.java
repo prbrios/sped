@@ -52,4 +52,21 @@ public class RegD140 {
     @Inclui
     private BigDecimal vlFrtMm;
 
+    public RegD140(String codPartConsg, Integer codMunOrig, Integer codMunDest, String indVeic, String veicId, String indNav, Integer viagem, BigDecimal vlFrtLiq, BigDecimal vlDespPort, BigDecimal vlDespCarDesc, BigDecimal vlOut, BigDecimal vlfrtBr, BigDecimal vlFrtMm) {
+        this.codPartConsg = codPartConsg;
+        this.codMunOrig = codMunOrig;
+        this.codMunDest = codMunDest;
+        this.indVeic = indVeic;
+        this.veicId = veicId;
+        this.indNav = indNav;
+        this.viagem = viagem;
+        this.vlFrtLiq = vlFrtLiq;
+        this.vlDespPort = vlDespPort;
+        this.vlDespCarDesc = vlDespCarDesc;
+        this.vlOut = vlOut;
+        this.vlfrtBr = vlfrtBr;
+        this.vlFrtMm = vlFrtMm;
+    }
+
+    public RegD140(){}
 }

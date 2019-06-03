@@ -22,4 +22,11 @@ public class RegC172 {
     @Inclui
     private BigDecimal vlIssqn;
 
+    public RegC172(BigDecimal vlBcIssqn, BigDecimal aliqIssqn, BigDecimal vlIssqn) {
+        this.vlBcIssqn = vlBcIssqn;
+        this.aliqIssqn = aliqIssqn;
+        this.vlIssqn = vlIssqn;
+    }
+
+    public RegC172(){}
 }

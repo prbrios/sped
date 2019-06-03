@@ -8,12 +8,7 @@ import org.junit.Test;
 public class Reg0005Test {
 
     @Test
-    public void teste1() {
-        Assert.assertEquals("0005", new Reg0005().getReg());
-    }
-
-    @Test
-    public void teste2() {
+    public void teste() {
 
         Reg0005 reg = new Reg0005();
         reg.setFantasia("FANTASIA");
@@ -27,13 +22,7 @@ public class Reg0005Test {
         reg.setEmail("email@email.com");
 
         Assert.assertEquals(Util.formata("|0005|FANTASIA|61603100|RUA B|304|APTO 2|CENTRO|8534581823|8534581823|email@email.com|"), Conversor.converteBloco(reg));
-    }
-
-    @Test
-    public void teste3() {
-
-        Reg0005 reg = new Reg0005();
-        Assert.assertEquals(Util.formata("|0005||||||||||"), Conversor.converteBloco(reg));
+        Assert.assertEquals(Util.formata("|0005||||||||||"), Conversor.converteBloco(new Reg0005()));
     }
 
 }

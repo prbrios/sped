@@ -68,4 +68,24 @@ public class RegC800 {
     @Filho
     private List<RegC850> regC850;
 
+    public RegC800(String codMod, String codSit, Integer numCfe, LocalDate dtDoc, BigDecimal vlCfe, BigDecimal vlPis, BigDecimal vlCofins, Long cnpjCpf, Integer nrSat, String chvCfe, BigDecimal vlDesc, BigDecimal vlMerc, BigDecimal vlOutDa, BigDecimal vlIcms, BigDecimal vlPisSt, BigDecimal vlCofinsSt) {
+        this.codMod = codMod;
+        this.codSit = codSit;
+        this.numCfe = numCfe;
+        this.dtDoc = dtDoc;
+        this.vlCfe = vlCfe;
+        this.vlPis = vlPis;
+        this.vlCofins = vlCofins;
+        this.cnpjCpf = cnpjCpf;
+        this.nrSat = nrSat;
+        this.chvCfe = chvCfe;
+        this.vlDesc = vlDesc;
+        this.vlMerc = vlMerc;
+        this.vlOutDa = vlOutDa;
+        this.vlIcms = vlIcms;
+        this.vlPisSt = vlPisSt;
+        this.vlCofinsSt = vlCofinsSt;
+    }
+
+    public RegC800(){}
 }

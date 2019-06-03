@@ -29,4 +29,11 @@ public class RegK250 {
     @Filho
     private List<RegK255> regK255;
 
+    public RegK250(LocalDate dtProd, String codItem, BigDecimal qtd) {
+        this.dtProd = dtProd;
+        this.codItem = codItem;
+        this.qtd = qtd;
+    }
+
+    public RegK250(){}
 }

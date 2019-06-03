@@ -119,4 +119,32 @@ public class RegD100 {
     @Filho
     private List<RegD195> regD195;
 
+    public RegD100(String indOper, String indEmit, String codPart, String codMod, Integer codSit, String ser, String sub, Integer numDoc, String chvCte, LocalDate dtDoc, LocalDate dtAp, Integer tpCte, String chvCteRef, BigDecimal vlDoc, BigDecimal vlDesc, String indFrt, BigDecimal vlServ, BigDecimal vlBcIcms, BigDecimal vlIcms, BigDecimal vlNt, String codInf, String codCta, Integer codMunOrig, Integer codMunDest) {
+        this.indOper = indOper;
+        this.indEmit = indEmit;
+        this.codPart = codPart;
+        this.codMod = codMod;
+        this.codSit = codSit;
+        this.ser = ser;
+        this.sub = sub;
+        this.numDoc = numDoc;
+        this.chvCte = chvCte;
+        this.dtDoc = dtDoc;
+        this.dtAp = dtAp;
+        this.tpCte = tpCte;
+        this.chvCteRef = chvCteRef;
+        this.vlDoc = vlDoc;
+        this.vlDesc = vlDesc;
+        this.indFrt = indFrt;
+        this.vlServ = vlServ;
+        this.vlBcIcms = vlBcIcms;
+        this.vlIcms = vlIcms;
+        this.vlNt = vlNt;
+        this.codInf = codInf;
+        this.codCta = codCta;
+        this.codMunOrig = codMunOrig;
+        this.codMunDest = codMunDest;
+    }
+
+    public RegD100(){}
 }

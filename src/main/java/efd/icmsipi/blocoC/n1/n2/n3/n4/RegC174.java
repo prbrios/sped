@@ -20,4 +20,11 @@ public class RegC174 {
     @Inclui
     private String descrCompl;
 
+    public RegC174(String indArm, String numArm, String descrCompl) {
+        this.indArm = indArm;
+        this.numArm = numArm;
+        this.descrCompl = descrCompl;
+    }
+
+    public RegC174(){}
 }

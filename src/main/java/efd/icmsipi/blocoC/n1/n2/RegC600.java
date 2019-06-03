@@ -91,4 +91,29 @@ public class RegC600 {
     @Filho
     private List<RegC690> regC690;
 
+    public RegC600(String codMod, Integer codMun, String ser, Integer sub, String codCons, Integer qtdCons, Integer qtdCanc, LocalDate dtDoc, BigDecimal vlDoc, BigDecimal vlDesc, Integer cons, BigDecimal vlForn, BigDecimal vlServNt, BigDecimal vlTerc, BigDecimal vlDa, BigDecimal vlBcIcms, BigDecimal vlIcms, BigDecimal vlBcIcmsSt, BigDecimal vlIcmsSt, BigDecimal vlPis, BigDecimal vlCofins) {
+        this.codMod = codMod;
+        this.codMun = codMun;
+        this.ser = ser;
+        this.sub = sub;
+        this.codCons = codCons;
+        this.qtdCons = qtdCons;
+        this.qtdCanc = qtdCanc;
+        this.dtDoc = dtDoc;
+        this.vlDoc = vlDoc;
+        this.vlDesc = vlDesc;
+        this.cons = cons;
+        this.vlForn = vlForn;
+        this.vlServNt = vlServNt;
+        this.vlTerc = vlTerc;
+        this.vlDa = vlDa;
+        this.vlBcIcms = vlBcIcms;
+        this.vlIcms = vlIcms;
+        this.vlBcIcmsSt = vlBcIcmsSt;
+        this.vlIcmsSt = vlIcmsSt;
+        this.vlPis = vlPis;
+        this.vlCofins = vlCofins;
+    }
+
+    public RegC600(){}
 }

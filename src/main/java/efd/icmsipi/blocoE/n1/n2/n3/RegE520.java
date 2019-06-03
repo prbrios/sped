@@ -40,4 +40,15 @@ public class RegE520 {
     @Filho
     private List<RegE530> regE530;
 
+    public RegE520(BigDecimal vlSdAntIpi, BigDecimal vlDebIpi, BigDecimal vlCredIpi, BigDecimal vlodIpi, BigDecimal vlOcIpi, BigDecimal vlScIpi, BigDecimal vlSdIpi) {
+        this.vlSdAntIpi = vlSdAntIpi;
+        this.vlDebIpi = vlDebIpi;
+        this.vlCredIpi = vlCredIpi;
+        this.vlodIpi = vlodIpi;
+        this.vlOcIpi = vlOcIpi;
+        this.vlScIpi = vlScIpi;
+        this.vlSdIpi = vlSdIpi;
+    }
+
+    public RegE520(){}
 }

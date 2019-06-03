@@ -25,4 +25,12 @@ public class RegK275 {
     @Inclui
     private String codInsSubst;
 
+    public RegK275(String codItem, BigDecimal qtdCorPos, BigDecimal qtdCorNeg, String codInsSubst) {
+        this.codItem = codItem;
+        this.qtdCorPos = qtdCorPos;
+        this.qtdCorNeg = qtdCorNeg;
+        this.codInsSubst = codInsSubst;
+    }
+
+    public RegK275(){}
 }

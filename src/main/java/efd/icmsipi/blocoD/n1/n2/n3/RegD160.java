@@ -43,4 +43,15 @@ public class RegD160 {
     @Filho
     private List<RegD162> regD162;
 
+    public RegD160(String despacho, Long cnpjCpfRem, String ieRem, Integer codMunOri, Long cnpjCpfDest, Integer ieDest, Integer codMunDest) {
+        this.despacho = despacho;
+        this.cnpjCpfRem = cnpjCpfRem;
+        this.ieRem = ieRem;
+        this.codMunOri = codMunOri;
+        this.cnpjCpfDest = cnpjCpfDest;
+        this.ieDest = ieDest;
+        this.codMunDest = codMunDest;
+    }
+
+    public RegD160(){}
 }

@@ -30,4 +30,12 @@ public class RegC400 {
     @Filho
     private List<RegC405> regC405;
 
+    public RegC400(String codMod, String ecfMod, String ecfFab, Integer ecfCx) {
+        this.codMod = codMod;
+        this.ecfMod = ecfMod;
+        this.ecfFab = ecfFab;
+        this.ecfCx = ecfCx;
+    }
+
+    public RegC400(){}
 }

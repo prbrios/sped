@@ -52,4 +52,9 @@ public class Reg1970 {
     @Filho
     private List<Reg1975> reg1975;
 
+    public Reg1970(String indAp) {
+        this.indAp = indAp;
+    }
+
+    public Reg1970(){}
 }

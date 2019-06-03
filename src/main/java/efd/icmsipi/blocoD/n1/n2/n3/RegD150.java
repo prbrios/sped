@@ -43,4 +43,18 @@ public class RegD150 {
     @Inclui
     private BigDecimal vlTxAdv;
 
+    public RegD150(Integer codMunOrig, Integer codMunDest, String veicId, Integer viagem, String indTfa, BigDecimal vlPesoTx, BigDecimal vlTxTerr, BigDecimal vlTxRed, BigDecimal vlOut, BigDecimal vlTxAdv) {
+        this.codMunOrig = codMunOrig;
+        this.codMunDest = codMunDest;
+        this.veicId = veicId;
+        this.viagem = viagem;
+        this.indTfa = indTfa;
+        this.vlPesoTx = vlPesoTx;
+        this.vlTxTerr = vlTxTerr;
+        this.vlTxRed = vlTxRed;
+        this.vlOut = vlOut;
+        this.vlTxAdv = vlTxAdv;
+    }
+
+    public RegD150(){}
 }

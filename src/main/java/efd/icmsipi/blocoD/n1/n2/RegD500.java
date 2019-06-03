@@ -97,4 +97,31 @@ public class RegD500 {
     @Filho
     private List<RegD590> regD590;
 
+    public RegD500(String indOper, String indEmit, String codPart, String codMod, Integer codSit, String ser, String sub, Integer numDoc, LocalDate dtDoc, LocalDate dtAp, BigDecimal vlDoc, BigDecimal vlDesc, BigDecimal vlServ, BigDecimal vlServNt, BigDecimal vlTerc, BigDecimal vlDa, BigDecimal vlBcIcms, BigDecimal vlIcms, String codInf, BigDecimal vlPis, BigDecimal vlCofins, String codCta, Integer tpAssinante) {
+        this.indOper = indOper;
+        this.indEmit = indEmit;
+        this.codPart = codPart;
+        this.codMod = codMod;
+        this.codSit = codSit;
+        this.ser = ser;
+        this.sub = sub;
+        this.numDoc = numDoc;
+        this.dtDoc = dtDoc;
+        this.dtAp = dtAp;
+        this.vlDoc = vlDoc;
+        this.vlDesc = vlDesc;
+        this.vlServ = vlServ;
+        this.vlServNt = vlServNt;
+        this.vlTerc = vlTerc;
+        this.vlDa = vlDa;
+        this.vlBcIcms = vlBcIcms;
+        this.vlIcms = vlIcms;
+        this.codInf = codInf;
+        this.vlPis = vlPis;
+        this.vlCofins = vlCofins;
+        this.codCta = codCta;
+        this.tpAssinante = tpAssinante;
+    }
+
+    public RegD500(){}
 }

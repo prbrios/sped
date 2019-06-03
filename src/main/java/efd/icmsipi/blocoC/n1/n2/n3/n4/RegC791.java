@@ -22,4 +22,11 @@ public class RegC791 {
     @Inclui
     private BigDecimal vlIcmsSt;
 
+    public RegC791(String uf, BigDecimal vlBcIcmsSt, BigDecimal vlIcmsSt) {
+        this.uf = uf;
+        this.vlBcIcmsSt = vlBcIcmsSt;
+        this.vlIcmsSt = vlIcmsSt;
+    }
+
+    public RegC791(){}
 }

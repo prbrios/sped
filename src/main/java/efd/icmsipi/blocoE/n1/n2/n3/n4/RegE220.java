@@ -42,4 +42,14 @@ public class RegE220 {
     @Filho
     private List<RegE240> regE240;
 
+    public RegE220(String uf, LocalDate dtIni, LocalDate dtFin, String codAjApur, String descrComplAj, BigDecimal vlAjApur) {
+        this.uf = uf;
+        this.dtIni = dtIni;
+        this.dtFin = dtFin;
+        this.codAjApur = codAjApur;
+        this.descrComplAj = descrComplAj;
+        this.vlAjApur = vlAjApur;
+    }
+
+    public RegE220(){}
 }

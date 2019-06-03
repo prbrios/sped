@@ -43,4 +43,18 @@ public class RegC470 {
     @Inclui
     private BigDecimal vlCofins;
 
+    public RegC470(String codItem, BigDecimal qtd, BigDecimal qtdCanc, String unid, BigDecimal vlItem, Integer cstIcms, Integer cfop, BigDecimal aliqIcms, BigDecimal vlPis, BigDecimal vlCofins) {
+        this.codItem = codItem;
+        this.qtd = qtd;
+        this.qtdCanc = qtdCanc;
+        this.unid = unid;
+        this.vlItem = vlItem;
+        this.cstIcms = cstIcms;
+        this.cfop = cfop;
+        this.aliqIcms = aliqIcms;
+        this.vlPis = vlPis;
+        this.vlCofins = vlCofins;
+    }
+
+    public RegC470(){}
 }

@@ -22,4 +22,11 @@ public class RegC178 {
     @Inclui(casasDecimais = 3)
     private BigDecimal quantPad;
 
+    public RegC178(String clEnq, BigDecimal vlUnid, BigDecimal quantPad) {
+        this.clEnq = clEnq;
+        this.vlUnid = vlUnid;
+        this.quantPad = quantPad;
+    }
+
+    public RegC178(){}
 }

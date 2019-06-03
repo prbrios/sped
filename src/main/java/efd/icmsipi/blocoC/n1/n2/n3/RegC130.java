@@ -34,4 +34,15 @@ public class RegC130 {
     @Inclui
     private BigDecimal vlPrev;
 
+    public RegC130(BigDecimal vlServNt, BigDecimal vlBcIssqn, BigDecimal vlIssqn, BigDecimal vlBcIrrf, BigDecimal vlIrrf, BigDecimal vlBcPrev, BigDecimal vlPrev) {
+        this.vlServNt = vlServNt;
+        this.vlBcIssqn = vlBcIssqn;
+        this.vlIssqn = vlIssqn;
+        this.vlBcIrrf = vlBcIrrf;
+        this.vlIrrf = vlIrrf;
+        this.vlBcPrev = vlBcPrev;
+        this.vlPrev = vlPrev;
+    }
+
+    public RegC130(){}
 }

@@ -49,4 +49,18 @@ public class RegD696 {
     @Filho
     private List<RegD697> regD697;
 
+    public RegD696(Integer cstIcms, Integer cfop, BigDecimal aliqIcms, BigDecimal vlOpr, BigDecimal vlbcIcms, BigDecimal vlIcms, BigDecimal vlBcIcms, BigDecimal vlIcmsUf, BigDecimal vlRedBc, String codObs) {
+        this.cstIcms = cstIcms;
+        this.cfop = cfop;
+        this.aliqIcms = aliqIcms;
+        this.vlOpr = vlOpr;
+        this.vlbcIcms = vlbcIcms;
+        this.vlIcms = vlIcms;
+        this.vlBcIcms = vlBcIcms;
+        this.vlIcmsUf = vlIcmsUf;
+        this.vlRedBc = vlRedBc;
+        this.codObs = codObs;
+    }
+
+    public RegD696(){}
 }

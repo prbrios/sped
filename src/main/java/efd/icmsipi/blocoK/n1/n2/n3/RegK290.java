@@ -32,4 +32,11 @@ public class RegK290 {
     @Filho
     private List<RegK292> regK292;
 
+    public RegK290(LocalDate dtIniOp, LocalDate dtFinOp, String codDocOp) {
+        this.dtIniOp = dtIniOp;
+        this.dtFinOp = dtFinOp;
+        this.codDocOp = codDocOp;
+    }
+
+    public RegK290(){}
 }

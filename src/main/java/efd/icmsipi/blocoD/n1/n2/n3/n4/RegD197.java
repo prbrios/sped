@@ -34,4 +34,15 @@ public class RegD197 {
     @Inclui
     private BigDecimal vlOutros;
 
+    public RegD197(String codAj, String descrComplAj, String codItem, BigDecimal vlBcIcms, BigDecimal aliqIcms, BigDecimal vlIcms, BigDecimal vlOutros) {
+        this.codAj = codAj;
+        this.descrComplAj = descrComplAj;
+        this.codItem = codItem;
+        this.vlBcIcms = vlBcIcms;
+        this.aliqIcms = aliqIcms;
+        this.vlIcms = vlIcms;
+        this.vlOutros = vlOutros;
+    }
+
+    public RegD197(){}
 }

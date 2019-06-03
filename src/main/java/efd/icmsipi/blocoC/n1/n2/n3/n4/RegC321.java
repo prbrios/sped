@@ -41,4 +41,17 @@ public class RegC321 {
     @Inclui
     private BigDecimal vlCofins;
 
+    public RegC321(String codItem, BigDecimal qtd, String unid, BigDecimal vlItem, BigDecimal vlDesc, BigDecimal vlBcIcms, BigDecimal vlIcms, BigDecimal vlPis, BigDecimal vlCofins) {
+        this.codItem = codItem;
+        this.qtd = qtd;
+        this.unid = unid;
+        this.vlItem = vlItem;
+        this.vlDesc = vlDesc;
+        this.vlBcIcms = vlBcIcms;
+        this.vlIcms = vlIcms;
+        this.vlPis = vlPis;
+        this.vlCofins = vlCofins;
+    }
+
+    public RegC321(){}
 }

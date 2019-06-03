@@ -26,4 +26,13 @@ public class RegB510 {
     @Inclui
     private String nome;
 
+    public RegB510(String indProf, String indEsc, String indSoc, Long cpf, String nome) {
+        this.indProf = indProf;
+        this.indEsc = indEsc;
+        this.indSoc = indSoc;
+        this.cpf = cpf;
+        this.nome = nome;
+    }
+
+    public RegB510(){}
 }

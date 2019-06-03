@@ -24,4 +24,11 @@ public class Reg1900 {
     @Filho
     private List<Reg1910> reg1910;
 
+    public Reg1900(String indApurIcms, String descrComplOutApur) {
+        this.indApurIcms = indApurIcms;
+        this.descrComplOutApur = descrComplOutApur;
+    }
+
+    public Reg1900(){}
+
 }

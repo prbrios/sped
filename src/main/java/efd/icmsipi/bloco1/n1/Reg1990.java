@@ -14,4 +14,10 @@ public class Reg1990 {
     @Inclui
     private Integer qtdLin1;
 
+    public Reg1990(Integer qtdLin1) {
+        this.qtdLin1 = qtdLin1;
+    }
+
+    public Reg1990(){}
+
 }

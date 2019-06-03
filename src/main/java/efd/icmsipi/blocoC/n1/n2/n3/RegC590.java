@@ -43,4 +43,18 @@ public class RegC590 {
     @Inclui
     private String codObs;
 
+    public RegC590(Integer cstIcms, Integer cfop, BigDecimal aliqIcms, BigDecimal vlOpr, BigDecimal vlBcIcms, BigDecimal vlIcms, BigDecimal vlBcIcmsSt, BigDecimal vlIcmsSt, BigDecimal vlRedBc, String codObs) {
+        this.cstIcms = cstIcms;
+        this.cfop = cfop;
+        this.aliqIcms = aliqIcms;
+        this.vlOpr = vlOpr;
+        this.vlBcIcms = vlBcIcms;
+        this.vlIcms = vlIcms;
+        this.vlBcIcmsSt = vlBcIcmsSt;
+        this.vlIcmsSt = vlIcmsSt;
+        this.vlRedBc = vlRedBc;
+        this.codObs = codObs;
+    }
+
+    public RegC590(){}
 }

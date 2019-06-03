@@ -24,4 +24,10 @@ public class RegD195 {
     @Filho
     private List<RegD197> regD197;
 
+    public RegD195(String codObs, String txtCompl) {
+        this.codObs = codObs;
+        this.txtCompl = txtCompl;
+    }
+
+    public RegD195(){}
 }

@@ -46,4 +46,9 @@ public class RegB001 {
     @Filho
     private RegB500 regB500;
 
+    public RegB001(String indDad) {
+        this.indDad = indDad;
+    }
+
+    public RegB001(){}
 }

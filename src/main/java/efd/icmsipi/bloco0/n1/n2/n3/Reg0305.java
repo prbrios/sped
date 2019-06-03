@@ -20,4 +20,12 @@ public class Reg0305 {
     @Inclui
     private Integer vidaUtil;
 
+    public Reg0305(String codCcus, String func, Integer vidaUtil) {
+        this.codCcus = codCcus;
+        this.func = func;
+        this.vidaUtil = vidaUtil;
+    }
+
+    public Reg0305(){}
+
 }

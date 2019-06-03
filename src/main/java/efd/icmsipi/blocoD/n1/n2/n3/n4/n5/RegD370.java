@@ -28,4 +28,13 @@ public class RegD370 {
     @Inclui
     private BigDecimal vlIcms;
 
+    public RegD370(Integer codMunOrig, BigDecimal vlServ, Integer qtdBilh, BigDecimal vlBcIcms, BigDecimal vlIcms) {
+        this.codMunOrig = codMunOrig;
+        this.vlServ = vlServ;
+        this.qtdBilh = qtdBilh;
+        this.vlBcIcms = vlBcIcms;
+        this.vlIcms = vlIcms;
+    }
+
+    public RegD370(){}
 }

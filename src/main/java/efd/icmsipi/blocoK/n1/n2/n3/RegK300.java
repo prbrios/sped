@@ -26,4 +26,9 @@ public class RegK300 {
     @Filho
     private List<RegK302> regK302;
 
+    public RegK300(LocalDate dtProd) {
+        this.dtProd = dtProd;
+    }
+
+    public RegK300(){}
 }

@@ -81,4 +81,27 @@ public class RegD300 {
     @Filho
     private List<RegD310> regD310;
 
+    public RegD300(String codMod, String ser, Integer sub, Integer numDocIni, Integer numDocFin, Integer cstIcms, Integer cfop, BigDecimal aliqIcms, LocalDate dtDoc, BigDecimal vlOpr, BigDecimal vlDesc, BigDecimal vlServ, BigDecimal vlSeg, BigDecimal vlOutDesp, BigDecimal vlbcIcms, BigDecimal vlIcms, BigDecimal vlRedBc, String codObs, String codCta) {
+        this.codMod = codMod;
+        this.ser = ser;
+        this.sub = sub;
+        this.numDocIni = numDocIni;
+        this.numDocFin = numDocFin;
+        this.cstIcms = cstIcms;
+        this.cfop = cfop;
+        this.aliqIcms = aliqIcms;
+        this.dtDoc = dtDoc;
+        this.vlOpr = vlOpr;
+        this.vlDesc = vlDesc;
+        this.vlServ = vlServ;
+        this.vlSeg = vlSeg;
+        this.vlOutDesp = vlOutDesp;
+        this.vlbcIcms = vlbcIcms;
+        this.vlIcms = vlIcms;
+        this.vlRedBc = vlRedBc;
+        this.codObs = codObs;
+        this.codCta = codCta;
+    }
+
+    public RegD300(){}
 }

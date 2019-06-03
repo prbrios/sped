@@ -31,4 +31,16 @@ public class Reg0500 {
     @Inclui
     private String nomeCta;
 
+    public Reg0500(LocalDate dtAlt, String codNatCc, String indCta, Integer nivel, String codCta, String nomeCta) {
+
+        this.dtAlt = dtAlt;
+        this.codNatCc = codNatCc;
+        this.indCta = indCta;
+        this.nivel = nivel;
+        this.codCta = codCta;
+        this.nomeCta = nomeCta;
+    }
+
+    public Reg0500(){}
+
 }

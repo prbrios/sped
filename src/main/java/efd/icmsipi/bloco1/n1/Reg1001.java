@@ -63,4 +63,10 @@ public class Reg1001 {
     @Filho
     private Reg1980 reg1980;
 
+    public Reg1001(Integer indMov) {
+        this.indMov = indMov;
+    }
+
+    public Reg1001(){}
+
 }

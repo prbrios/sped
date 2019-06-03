@@ -1,4 +1,4 @@
-package efd.icmsipi;
+package efd.icmsipi.bloco0;
 
 import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
@@ -6,8 +6,8 @@ import efd.icmsipi.bloco0.n1.Reg0001;
 import efd.icmsipi.bloco0.n1.Reg0990;
 import efd.icmsipi.bloco1.n1.Reg1001;
 import efd.icmsipi.bloco1.n1.Reg1990;
-import efd.icmsipi.bloco9.Reg9001;
-import efd.icmsipi.bloco9.Reg9990;
+import efd.icmsipi.bloco9.n1.Reg9001;
+import efd.icmsipi.bloco9.n1.Reg9990;
 import efd.icmsipi.blocoB.n1.RegB001;
 import efd.icmsipi.blocoB.n1.RegB990;
 import efd.icmsipi.blocoC.n1.RegC001;
@@ -26,24 +26,6 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.time.LocalDate;
-
-/**
- * BLOCO 0: ABERTURA, IDENTIFICAÇÃO E REFERÊNCIAS
- * REGISTRO 0000: ABERTURA DO ARQUIVO DIGITAL E IDENTIFICAÇÃO DA ENTIDADE
- *<p>
- * Este Registro é obrigatório e corresponde ao primeiro registro do arquivo.
- * Nos casos de EFD-ICMS/IPI apresentadas por estabelecimentos situados em outra UF e que possuam Inscrição Estadual nos termos do Convênio ICMS nº 113/04 (serviços de comunicação definidos pela Anatel), deve-se observar o seguinte procedimento para preenchimento do registro 0000:
- * </p>
- * <ul>
- * <li>Informar o campo UF da unidade federada do tomador de serviços</li>
- * <li>Informar no campo IE a inscrição estadual na unidade federada do tomador de serviços</li>
- * <li>Informar no campo COD_MUN o código de município correspondente à capital do estado do tomador de serviços</li>
- * </ul>
- *
- * @author Paulo Rios prbrios@gmail.com
- * @since 17/05/2019
- *
- */
 
 @Getter
 @Setter
@@ -199,5 +181,25 @@ public class Reg0000 {
 
     @Filho
     private Reg9990 reg9990;
+
+    public Reg0000(Integer codVer, Integer codFin, LocalDate dtIni, LocalDate dtFin, String nome, Long cnpj, Long cpf, String uf, String ie, Integer codMun, String im, String suframa, String indPerfil, Integer indAtiv) {
+
+        this.codVer = codVer;
+        this.codFin = codFin;
+        this.dtIni = dtIni;
+        this.dtFin = dtFin;
+        this.nome = nome;
+        this.cnpj = cnpj;
+        this.cpf = cpf;
+        this.uf = uf;
+        this.ie = ie;
+        this.codMun = codMun;
+        this.im = im;
+        this.suframa = suframa;
+        this.indPerfil = indPerfil;
+        this.indAtiv = indAtiv;
+    }
+
+    public Reg0000(){}
 
 }

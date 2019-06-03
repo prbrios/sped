@@ -55,4 +55,22 @@ public class RegC495 {
     @Inclui
     private BigDecimal vlIcmsSt;
 
+    public RegC495(BigDecimal aliqIcms, String codItem, BigDecimal qtd, BigDecimal qtdCanc, String unid, BigDecimal vlItem, BigDecimal vlDesc, BigDecimal vlCanc, BigDecimal vlAcmo, BigDecimal vlBcIcms, BigDecimal clIcms, BigDecimal vlIsen, BigDecimal vlNt, BigDecimal vlIcmsSt) {
+        this.aliqIcms = aliqIcms;
+        this.codItem = codItem;
+        this.qtd = qtd;
+        this.qtdCanc = qtdCanc;
+        this.unid = unid;
+        this.vlItem = vlItem;
+        this.vlDesc = vlDesc;
+        this.vlCanc = vlCanc;
+        this.vlAcmo = vlAcmo;
+        this.vlBcIcms = vlBcIcms;
+        this.clIcms = clIcms;
+        this.vlIsen = vlIsen;
+        this.vlNt = vlNt;
+        this.vlIcmsSt = vlIcmsSt;
+    }
+
+    public RegC495(){}
 }

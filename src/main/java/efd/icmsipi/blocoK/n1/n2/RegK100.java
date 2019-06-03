@@ -52,4 +52,10 @@ public class RegK100 {
     @Filho
     private List<RegK300> regK300;
 
+    public RegK100(LocalDate dtIni, LocalDate dtFin) {
+        this.dtIni = dtIni;
+        this.dtFin = dtFin;
+    }
+
+    public RegK100(){}
 }

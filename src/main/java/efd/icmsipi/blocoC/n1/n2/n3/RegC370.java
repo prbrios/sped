@@ -31,4 +31,14 @@ public class RegC370 {
     @Inclui
     private BigDecimal vlDesc;
 
+    public RegC370(Integer numItem, String codItem, BigDecimal qtd, String unid, BigDecimal vlItem, BigDecimal vlDesc) {
+        this.numItem = numItem;
+        this.codItem = codItem;
+        this.qtd = qtd;
+        this.unid = unid;
+        this.vlItem = vlItem;
+        this.vlDesc = vlDesc;
+    }
+
+    public RegC370(){}
 }

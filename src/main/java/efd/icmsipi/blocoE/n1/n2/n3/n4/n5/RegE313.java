@@ -41,4 +41,17 @@ public class RegE313 {
     @Inclui
     private BigDecimal vlAjItem;
 
+    public RegE313(String codPart, String codMod, String ser, Integer sub, Integer numDoc, String chvDoce, LocalDate dtDoc, String codItem, BigDecimal vlAjItem) {
+        this.codPart = codPart;
+        this.codMod = codMod;
+        this.ser = ser;
+        this.sub = sub;
+        this.numDoc = numDoc;
+        this.chvDoce = chvDoce;
+        this.dtDoc = dtDoc;
+        this.codItem = codItem;
+        this.vlAjItem = vlAjItem;
+    }
+
+    public RegE313(){}
 }

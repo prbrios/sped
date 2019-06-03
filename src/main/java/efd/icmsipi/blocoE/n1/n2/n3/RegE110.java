@@ -69,4 +69,22 @@ public class RegE110 {
     @Filho
     private List<RegE116> regE116;
 
+    public RegE110(BigDecimal vlTotDebitos, BigDecimal vlAjDebitos, BigDecimal vlTotAjDebitos, BigDecimal vlEstornosCred, BigDecimal vlTotCreditos, BigDecimal vlAjCreditos, BigDecimal vlTotAjCreditos, BigDecimal vlEstornosDeb, BigDecimal vlSldCredoAnt, BigDecimal vlSldApurado, BigDecimal vlTotDed, BigDecimal vlicmsRecolher, BigDecimal vlSldCredorTransportar, BigDecimal debEsp) {
+        this.vlTotDebitos = vlTotDebitos;
+        this.vlAjDebitos = vlAjDebitos;
+        this.vlTotAjDebitos = vlTotAjDebitos;
+        this.vlEstornosCred = vlEstornosCred;
+        this.vlTotCreditos = vlTotCreditos;
+        this.vlAjCreditos = vlAjCreditos;
+        this.vlTotAjCreditos = vlTotAjCreditos;
+        this.vlEstornosDeb = vlEstornosDeb;
+        this.vlSldCredoAnt = vlSldCredoAnt;
+        this.vlSldApurado = vlSldApurado;
+        this.vlTotDed = vlTotDed;
+        this.vlicmsRecolher = vlicmsRecolher;
+        this.vlSldCredorTransportar = vlSldCredorTransportar;
+        this.debEsp = debEsp;
+    }
+
+    public RegE110(){}
 }

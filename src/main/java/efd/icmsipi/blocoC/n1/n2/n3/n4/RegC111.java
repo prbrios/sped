@@ -17,4 +17,10 @@ public class RegC111 {
     @Inclui
     private String indProc;
 
+    public RegC111(String numProc, String indProc) {
+        this.numProc = numProc;
+        this.indProc = indProc;
+    }
+
+    public RegC111(){}
 }

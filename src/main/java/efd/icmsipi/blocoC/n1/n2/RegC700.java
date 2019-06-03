@@ -43,4 +43,16 @@ public class RegC700 {
     @Filho
     private List<RegC790> regC790;
 
+    public RegC700(String codMod, String ser, Integer nroOrdIni, Integer nroOrdFin, LocalDate dtDocIni, LocalDate dtDocFin, String nomMest, String chvCodDig) {
+        this.codMod = codMod;
+        this.ser = ser;
+        this.nroOrdIni = nroOrdIni;
+        this.nroOrdFin = nroOrdFin;
+        this.dtDocIni = dtDocIni;
+        this.dtDocFin = dtDocFin;
+        this.nomMest = nomMest;
+        this.chvCodDig = chvCodDig;
+    }
+
+    public RegC700(){}
 }

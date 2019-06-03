@@ -31,4 +31,14 @@ public class RegC160 {
     @Inclui
     private String ufId;
 
+    public RegC160(String codPart, String veicId, Integer qtdVol, BigDecimal pesoBrt, BigDecimal pesoLiq, String ufId) {
+        this.codPart = codPart;
+        this.veicId = veicId;
+        this.qtdVol = qtdVol;
+        this.pesoBrt = pesoBrt;
+        this.pesoLiq = pesoLiq;
+        this.ufId = ufId;
+    }
+
+    public RegC160(){}
 }

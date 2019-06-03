@@ -64,4 +64,25 @@ public class RegD610 {
     @Inclui
     private String codCta;
 
+    public RegD610(Integer codClass, String codItem, BigDecimal qtd, String unid, BigDecimal vlItem, BigDecimal vlDesc, Integer cstIcms, Integer cfop, BigDecimal aliqIcms, BigDecimal vlBcIcms, BigDecimal vlIcms, BigDecimal vlBcIcmsUf, BigDecimal vlIcmsUf, BigDecimal vlRedBc, BigDecimal vlPis, BigDecimal vlCofins, String codCta) {
+        this.codClass = codClass;
+        this.codItem = codItem;
+        this.qtd = qtd;
+        this.unid = unid;
+        this.vlItem = vlItem;
+        this.vlDesc = vlDesc;
+        this.cstIcms = cstIcms;
+        this.cfop = cfop;
+        this.aliqIcms = aliqIcms;
+        this.vlBcIcms = vlBcIcms;
+        this.vlIcms = vlIcms;
+        this.vlBcIcmsUf = vlBcIcmsUf;
+        this.vlIcmsUf = vlIcmsUf;
+        this.vlRedBc = vlRedBc;
+        this.vlPis = vlPis;
+        this.vlCofins = vlCofins;
+        this.codCta = codCta;
+    }
+
+    public RegD610(){}
 }

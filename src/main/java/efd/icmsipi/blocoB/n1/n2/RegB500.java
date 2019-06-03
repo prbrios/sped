@@ -28,4 +28,11 @@ public class RegB500 {
     @Filho
     private List<RegB510> regB510;
 
+    public RegB500(BigDecimal vlRec, Integer qtdProf, BigDecimal vlOr) {
+        this.vlRec = vlRec;
+        this.qtdProf = qtdProf;
+        this.vlOr = vlOr;
+    }
+
+    public RegB500(){}
 }

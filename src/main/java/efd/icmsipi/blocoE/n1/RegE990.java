@@ -14,4 +14,9 @@ public class RegE990 {
     @Inclui
     private Integer qtdLinE;
 
+    public RegE990(Integer qtdLinE) {
+        this.qtdLinE = qtdLinE;
+    }
+
+    public RegE990(){}
 }

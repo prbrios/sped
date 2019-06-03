@@ -19,4 +19,10 @@ public class Reg1360 {
     @Inclui
     private LocalDate dtAplicacao;
 
+    public Reg1360(String numLacre, LocalDate dtAplicacao) {
+        this.numLacre = numLacre;
+        this.dtAplicacao = dtAplicacao;
+    }
+
+    public Reg1360(){}
 }

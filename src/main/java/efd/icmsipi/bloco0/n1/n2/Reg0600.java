@@ -22,4 +22,11 @@ public class Reg0600 {
     @Inclui
     private String ccus;
 
+    public Reg0600(LocalDate dtAlt, String codCcus, String ccus) {
+        this.dtAlt = dtAlt;
+        this.codCcus = codCcus;
+        this.ccus = ccus;
+    }
+
+    public Reg0600(){}
 }

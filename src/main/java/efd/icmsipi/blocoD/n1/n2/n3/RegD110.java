@@ -31,4 +31,12 @@ public class RegD110 {
     @Filho
     private List<RegD120> regD120;
 
+    public RegD110(Integer numItem, String codItem, BigDecimal vlServ, BigDecimal vlOut) {
+        this.numItem = numItem;
+        this.codItem = codItem;
+        this.vlServ = vlServ;
+        this.vlOut = vlOut;
+    }
+
+    public RegD110(){}
 }

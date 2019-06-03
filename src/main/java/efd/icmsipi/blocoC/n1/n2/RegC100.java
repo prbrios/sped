@@ -135,4 +135,36 @@ public class RegC100 {
     @Filho
     private List<RegC195> regC195;
 
+    public RegC100(String indOper, String indEmit, String codPart, String codMod, Integer codSit, String ser, Integer numDoc, String chvNfe, LocalDate dtDoc, LocalDate dtES, BigDecimal vlDoc, String indPgto, BigDecimal vlDesc, BigDecimal vlAbatNt, BigDecimal vlMerc, String indFrt, BigDecimal vlFrt, BigDecimal vlSeg, BigDecimal vlOutDa, BigDecimal vlBcIcms, BigDecimal vlIcms, BigDecimal vlBcIcmsSt, BigDecimal vlIcmsSt, BigDecimal vlIpi, BigDecimal vlPis, BigDecimal vlCofins, BigDecimal vlPisSt, BigDecimal vlCofinsSt) {
+        this.indOper = indOper;
+        this.indEmit = indEmit;
+        this.codPart = codPart;
+        this.codMod = codMod;
+        this.codSit = codSit;
+        this.ser = ser;
+        this.numDoc = numDoc;
+        this.chvNfe = chvNfe;
+        this.dtDoc = dtDoc;
+        this.dtES = dtES;
+        this.vlDoc = vlDoc;
+        this.indPgto = indPgto;
+        this.vlDesc = vlDesc;
+        this.vlAbatNt = vlAbatNt;
+        this.vlMerc = vlMerc;
+        this.indFrt = indFrt;
+        this.vlFrt = vlFrt;
+        this.vlSeg = vlSeg;
+        this.vlOutDa = vlOutDa;
+        this.vlBcIcms = vlBcIcms;
+        this.vlIcms = vlIcms;
+        this.vlBcIcmsSt = vlBcIcmsSt;
+        this.vlIcmsSt = vlIcmsSt;
+        this.vlIpi = vlIpi;
+        this.vlPis = vlPis;
+        this.vlCofins = vlCofins;
+        this.vlPisSt = vlPisSt;
+        this.vlCofinsSt = vlCofinsSt;
+    }
+
+    public RegC100(){}
 }

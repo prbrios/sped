@@ -49,4 +49,9 @@ public class Reg1960 {
     @Inclui
     private BigDecimal g111;
 
+    public Reg1960(Integer indAp) {
+        this.indAp = indAp;
+    }
+
+    public Reg1960(){}
 }

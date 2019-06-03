@@ -19,4 +19,10 @@ public class RegD360 {
     @Inclui
     private BigDecimal vlCofins;
 
+    public RegD360(BigDecimal vlPis, BigDecimal vlCofins) {
+        this.vlPis = vlPis;
+        this.vlCofins = vlCofins;
+    }
+
+    public RegD360(){}
 }

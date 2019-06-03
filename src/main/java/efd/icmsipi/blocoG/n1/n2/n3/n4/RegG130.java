@@ -40,4 +40,15 @@ public class RegG130 {
     @Filho
     private List<RegG140> regG140;
 
+    public RegG130(String indEmit, String codPart, String codMod, String serie, Integer numDoc, String chvNfeCte, LocalDate dtDoc) {
+        this.indEmit = indEmit;
+        this.codPart = codPart;
+        this.codMod = codMod;
+        this.serie = serie;
+        this.numDoc = numDoc;
+        this.chvNfeCte = chvNfeCte;
+        this.dtDoc = dtDoc;
+    }
+
+    public RegG130(){}
 }

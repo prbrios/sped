@@ -306,4 +306,45 @@ public class RegC170 {
     @Filho
     private RegC179 regC179;
 
+    public RegC170(Integer numItem, String codItem, String descrCompl, BigDecimal qtd, String unid, BigDecimal vlItem, BigDecimal vlDesc, String indMov, Integer cstIcms, Integer cfop, String codNat, BigDecimal vlBcIcms, BigDecimal aliqIcms, BigDecimal vlIcms, BigDecimal vlBcIcmsSt, BigDecimal aliqSt, BigDecimal vlIcmsSt, String indApur, Integer cstIpi, String codEnq, BigDecimal vlBcIpi, BigDecimal aliqIpi, BigDecimal vlIpi, Integer cstPis, BigDecimal vlBcPis, BigDecimal aliqPis, BigDecimal quantBcPis, BigDecimal aliqPisRs, BigDecimal vlPisRs, Integer cstCofins, BigDecimal vlBcCofins, BigDecimal aliqCofins, BigDecimal quantBcCofins, BigDecimal aliqCofinsRs, BigDecimal vlCofins, String codCta, BigDecimal vlAbatNt) {
+        this.numItem = numItem;
+        this.codItem = codItem;
+        this.descrCompl = descrCompl;
+        this.qtd = qtd;
+        this.unid = unid;
+        this.vlItem = vlItem;
+        this.vlDesc = vlDesc;
+        this.indMov = indMov;
+        this.cstIcms = cstIcms;
+        this.cfop = cfop;
+        this.codNat = codNat;
+        this.vlBcIcms = vlBcIcms;
+        this.aliqIcms = aliqIcms;
+        this.vlIcms = vlIcms;
+        this.vlBcIcmsSt = vlBcIcmsSt;
+        this.aliqSt = aliqSt;
+        this.vlIcmsSt = vlIcmsSt;
+        this.indApur = indApur;
+        this.cstIpi = cstIpi;
+        this.codEnq = codEnq;
+        this.vlBcIpi = vlBcIpi;
+        this.aliqIpi = aliqIpi;
+        this.vlIpi = vlIpi;
+        this.cstPis = cstPis;
+        this.vlBcPis = vlBcPis;
+        this.aliqPis = aliqPis;
+        this.quantBcPis = quantBcPis;
+        this.aliqPisRs = aliqPisRs;
+        this.vlPisRs = vlPisRs;
+        this.cstCofins = cstCofins;
+        this.vlBcCofins = vlBcCofins;
+        this.aliqCofins = aliqCofins;
+        this.quantBcCofins = quantBcCofins;
+        this.aliqCofinsRs = aliqCofinsRs;
+        this.vlCofins = vlCofins;
+        this.codCta = codCta;
+        this.vlAbatNt = vlAbatNt;
+    }
+
+    public RegC170(){}
 }

@@ -73,4 +73,28 @@ public class Reg1510 {
     @Inclui
     private String codCta;
 
+    public Reg1510(Integer numItem, String codItem, Integer codClass, BigDecimal qtd, String unid, BigDecimal vlItem, BigDecimal vlDesc, Integer cstIcms, Integer cfop, BigDecimal vlBcIcms, BigDecimal aliqIcms, BigDecimal vlIcms, BigDecimal vlBcIcmsSt, BigDecimal aliqSt, BigDecimal vlIcmsSt, String indRec, String codPart, BigDecimal vlPis, BigDecimal vlCofins, String codCta) {
+        this.numItem = numItem;
+        this.codItem = codItem;
+        this.codClass = codClass;
+        this.qtd = qtd;
+        this.unid = unid;
+        this.vlItem = vlItem;
+        this.vlDesc = vlDesc;
+        this.cstIcms = cstIcms;
+        this.cfop = cfop;
+        this.vlBcIcms = vlBcIcms;
+        this.aliqIcms = aliqIcms;
+        this.vlIcms = vlIcms;
+        this.vlBcIcmsSt = vlBcIcmsSt;
+        this.aliqSt = aliqSt;
+        this.vlIcmsSt = vlIcmsSt;
+        this.indRec = indRec;
+        this.codPart = codPart;
+        this.vlPis = vlPis;
+        this.vlCofins = vlCofins;
+        this.codCta = codCta;
+    }
+
+    public Reg1510(){}
 }

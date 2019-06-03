@@ -48,5 +48,9 @@ public class RegC001 {
     @Filho
     private List<RegC860> regC860;
 
+    public RegC001(String indMov) {
+        this.indMov = indMov;
+    }
 
+    public RegC001(){}
 }

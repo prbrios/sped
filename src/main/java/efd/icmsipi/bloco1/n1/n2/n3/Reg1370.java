@@ -20,4 +20,11 @@ public class Reg1370 {
     @Inclui
     private String numTanque;
 
+    public Reg1370(Integer numBico, String codItem, String numTanque) {
+        this.numBico = numBico;
+        this.codItem = codItem;
+        this.numTanque = numTanque;
+    }
+
+    public Reg1370(){}
 }

@@ -25,4 +25,13 @@ public class Reg1975 {
     @Inclui
     private BigDecimal g312;
 
+    public Reg1975(BigDecimal aliqImpBase, BigDecimal g310, BigDecimal g311, BigDecimal g312) {
+        this.aliqImpBase = aliqImpBase;
+        this.g310 = g310;
+        this.g311 = g311;
+        this.g312 = g312;
+    }
+
+    public Reg1975(){}
+
 }

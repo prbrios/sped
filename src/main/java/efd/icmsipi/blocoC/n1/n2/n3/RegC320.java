@@ -43,4 +43,16 @@ public class RegC320 {
     @Filho
     private List<RegC321> regC321;
 
+    public RegC320(Integer cstIcms, Integer cfop, BigDecimal aliqIcms, BigDecimal vlOpr, BigDecimal vlbcIcms, BigDecimal vlIcms, BigDecimal vlRedBc, String codObs) {
+        this.cstIcms = cstIcms;
+        this.cfop = cfop;
+        this.aliqIcms = aliqIcms;
+        this.vlOpr = vlOpr;
+        this.vlbcIcms = vlbcIcms;
+        this.vlIcms = vlIcms;
+        this.vlRedBc = vlRedBc;
+        this.codObs = codObs;
+    }
+
+    public RegC320(){}
 }

@@ -21,4 +21,9 @@ public class RegK001 {
     @Filho
     private List<RegK100> regK100;
 
+    public RegK001(String indMov) {
+        this.indMov = indMov;
+    }
+
+    public RegK001(){}
 }

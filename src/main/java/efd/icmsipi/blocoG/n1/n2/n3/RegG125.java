@@ -51,4 +51,17 @@ public class RegG125 {
     @Filho
     private List<RegG130> regG130;
 
+    public RegG125(String codIndBem, LocalDate dtMov, String tipoMov, BigDecimal vlImobIcmsOp, BigDecimal vlImobicmsSt, BigDecimal vlImobIcmsFrt, BigDecimal vlImobIcmsDif, Integer numParc, BigDecimal vlParcPass) {
+        this.codIndBem = codIndBem;
+        this.dtMov = dtMov;
+        this.tipoMov = tipoMov;
+        this.vlImobIcmsOp = vlImobIcmsOp;
+        this.vlImobicmsSt = vlImobicmsSt;
+        this.vlImobIcmsFrt = vlImobIcmsFrt;
+        this.vlImobIcmsDif = vlImobIcmsDif;
+        this.numParc = numParc;
+        this.vlParcPass = vlParcPass;
+    }
+
+    public RegG125(){}
 }

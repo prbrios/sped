@@ -25,4 +25,12 @@ public class RegD310 {
     @Inclui
     private BigDecimal vlIcms;
 
+    public RegD310(Integer codMunOrig, BigDecimal vlServ, BigDecimal vlbcIcms, BigDecimal vlIcms) {
+        this.codMunOrig = codMunOrig;
+        this.vlServ = vlServ;
+        this.vlbcIcms = vlbcIcms;
+        this.vlIcms = vlIcms;
+    }
+
+    public RegD310(){}
 }

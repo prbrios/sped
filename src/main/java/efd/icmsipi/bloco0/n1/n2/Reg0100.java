@@ -50,4 +50,25 @@ public class Reg0100 {
     @Inclui(zerosEsquerda = 7)
     private Integer codMun;
 
+    public Reg0100(String nome, Long cpf, String crc, Long cnpj, Integer cep, String end,
+                   String num, String compl, String bairro, String fone, String fax,
+                   String email, Integer codMun) {
+
+        this.nome = nome;
+        this.cpf = cpf;
+        this.crc = crc;
+        this.cnpj = cnpj;
+        this.cep = cep;
+        this.end = end;
+        this.num = num;
+        this.compl = compl;
+        this.bairro = bairro;
+        this.fone = fone;
+        this.fax = fax;
+        this.email = email;
+        this.codMun = codMun;
+    }
+
+    public Reg0100(){}
+
 }

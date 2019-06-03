@@ -40,4 +40,17 @@ public class Reg1926 {
     @Inclui(formatoData = "MMyyyy")
     private LocalDate mesRef;
 
+    public Reg1926(String codOr, Integer vlOr, LocalDate dtVcto, String codRec, String nunProc, String indProc, String proc, String txtCompl, LocalDate mesRef) {
+        this.codOr = codOr;
+        this.vlOr = vlOr;
+        this.dtVcto = dtVcto;
+        this.codRec = codRec;
+        this.nunProc = nunProc;
+        this.indProc = indProc;
+        this.proc = proc;
+        this.txtCompl = txtCompl;
+        this.mesRef = mesRef;
+    }
+
+    public Reg1926(){}
 }

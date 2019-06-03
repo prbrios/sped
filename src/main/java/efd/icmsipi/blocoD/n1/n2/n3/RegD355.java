@@ -46,4 +46,14 @@ public class RegD355 {
     @Filho
     private List<RegD390> regD390;
 
+    public RegD355(LocalDate dtDoc, Integer cro, Integer crz, Integer numCooFin, Integer gtFin, BigDecimal vlBrt) {
+        this.dtDoc = dtDoc;
+        this.cro = cro;
+        this.crz = crz;
+        this.numCooFin = numCooFin;
+        this.gtFin = gtFin;
+        this.vlBrt = vlBrt;
+    }
+
+    public RegD355(){}
 }

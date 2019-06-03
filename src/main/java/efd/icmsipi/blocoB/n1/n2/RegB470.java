@@ -55,4 +55,22 @@ public class RegB470 {
     @Inclui
     private BigDecimal vlIssRecUni;
 
+    public RegB470(BigDecimal vlCont, BigDecimal vlMatTerc, BigDecimal vlMatProp, BigDecimal vlSub, BigDecimal vlIsnt, BigDecimal vlDedBc, BigDecimal vlBcIss, BigDecimal vlBcIssRt, BigDecimal vlIss, BigDecimal vlIssRt, BigDecimal vlDed, BigDecimal vlIssRec, BigDecimal vlIssSt, BigDecimal vlIssRecUni) {
+        this.vlCont = vlCont;
+        this.vlMatTerc = vlMatTerc;
+        this.vlMatProp = vlMatProp;
+        this.vlSub = vlSub;
+        this.vlIsnt = vlIsnt;
+        this.vlDedBc = vlDedBc;
+        this.vlBcIss = vlBcIss;
+        this.vlBcIssRt = vlBcIssRt;
+        this.vlIss = vlIss;
+        this.vlIssRt = vlIssRt;
+        this.vlDed = vlDed;
+        this.vlIssRec = vlIssRec;
+        this.vlIssSt = vlIssSt;
+        this.vlIssRecUni = vlIssRecUni;
+    }
+
+    public RegB470(){}
 }

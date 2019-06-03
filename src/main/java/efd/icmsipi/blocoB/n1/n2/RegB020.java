@@ -80,4 +80,28 @@ public class RegB020 {
     @Filho
     private List<RegB025> regB025;
 
+    public RegB020(String indOper, String indEmit, String codPart, String codMod, String codSit, String ser, Integer numDoc, String chvNfe, LocalDate dtDoc, Integer codMunServ, BigDecimal vlCont, BigDecimal vlMatTerc, BigDecimal vlSub, BigDecimal vlInstIss, BigDecimal vlDedBc, BigDecimal vlBcIss, BigDecimal vlBsIssRt, BigDecimal vlIssRt, BigDecimal vlIss, String codInfObs) {
+        this.indOper = indOper;
+        this.indEmit = indEmit;
+        this.codPart = codPart;
+        this.codMod = codMod;
+        this.codSit = codSit;
+        this.ser = ser;
+        this.numDoc = numDoc;
+        this.chvNfe = chvNfe;
+        this.dtDoc = dtDoc;
+        this.codMunServ = codMunServ;
+        this.vlCont = vlCont;
+        this.vlMatTerc = vlMatTerc;
+        this.vlSub = vlSub;
+        this.vlInstIss = vlInstIss;
+        this.vlDedBc = vlDedBc;
+        this.vlBcIss = vlBcIss;
+        this.vlBsIssRt = vlBsIssRt;
+        this.vlIssRt = vlIssRt;
+        this.vlIss = vlIss;
+        this.codInfObs = codInfObs;
+    }
+
+    public RegB020(){}
 }

@@ -23,4 +23,11 @@ public class RegC141 {
     @Inclui
     private BigDecimal vlParc;
 
+    public RegC141(Integer numParc, LocalDate dtVcto, BigDecimal vlParc) {
+        this.numParc = numParc;
+        this.dtVcto = dtVcto;
+        this.vlParc = vlParc;
+    }
+
+    public RegC141(){}
 }

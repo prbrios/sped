@@ -34,4 +34,15 @@ public class RegB460 {
     @Inclui
     private String indObr;
 
+    public RegB460(String indDed, BigDecimal vlDed, String numProc, String indProc, String proc, String codInfObs, String indObr) {
+        this.indDed = indDed;
+        this.vlDed = vlDed;
+        this.numProc = numProc;
+        this.indProc = indProc;
+        this.proc = proc;
+        this.codInfObs = codInfObs;
+        this.indObr = indObr;
+    }
+
+    public RegB460(){}
 }

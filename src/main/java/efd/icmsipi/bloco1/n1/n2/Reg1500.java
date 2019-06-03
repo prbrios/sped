@@ -98,4 +98,35 @@ public class Reg1500 {
     @Filho
     private List<Reg1510> reg1510;
 
+    public Reg1500(String indOper, String indEmit, String codPart, String codMod, Integer codSit, String ser, Integer sub, String codCons, Integer numDoc, LocalDate dtDoc, LocalDate dtEs, BigDecimal vlDoc, BigDecimal vlDesc, BigDecimal vlForn, BigDecimal vlServNt, BigDecimal vlTerc, BigDecimal vlDa, BigDecimal vlBcIcms, BigDecimal vlIcms, BigDecimal vlBcIcmsSt, BigDecimal vlIcmsSt, String codInf, BigDecimal vlPis, BigDecimal vlCofins, Integer tpLigacao, String codGrupoTensao) {
+        this.indOper = indOper;
+        this.indEmit = indEmit;
+        this.codPart = codPart;
+        this.codMod = codMod;
+        this.codSit = codSit;
+        this.ser = ser;
+        this.sub = sub;
+        this.codCons = codCons;
+        this.numDoc = numDoc;
+        this.dtDoc = dtDoc;
+        this.dtEs = dtEs;
+        this.vlDoc = vlDoc;
+        this.vlDesc = vlDesc;
+        this.vlForn = vlForn;
+        this.vlServNt = vlServNt;
+        this.vlTerc = vlTerc;
+        this.vlDa = vlDa;
+        this.vlBcIcms = vlBcIcms;
+        this.vlIcms = vlIcms;
+        this.vlBcIcmsSt = vlBcIcmsSt;
+        this.vlIcmsSt = vlIcmsSt;
+        this.codInf = codInf;
+        this.vlPis = vlPis;
+        this.vlCofins = vlCofins;
+        this.tpLigacao = tpLigacao;
+        this.codGrupoTensao = codGrupoTensao;
+    }
+
+    public Reg1500(){}
+
 }

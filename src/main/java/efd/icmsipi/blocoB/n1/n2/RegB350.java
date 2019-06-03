@@ -43,4 +43,18 @@ public class RegB350 {
     @Inclui
     private String codIndObs;
 
+    public RegB350(String codCtd, String ctaIss, Integer ctaCosif, Integer qtdOcor, Integer codServ, BigDecimal vlCont, BigDecimal vlBcIss, BigDecimal aliqIss, BigDecimal vlIss, String codIndObs) {
+        this.codCtd = codCtd;
+        this.ctaIss = ctaIss;
+        this.ctaCosif = ctaCosif;
+        this.qtdOcor = qtdOcor;
+        this.codServ = codServ;
+        this.vlCont = vlCont;
+        this.vlBcIss = vlBcIss;
+        this.aliqIss = aliqIss;
+        this.vlIss = vlIss;
+        this.codIndObs = codIndObs;
+    }
+
+    public RegB350(){}
 }

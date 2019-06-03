@@ -19,4 +19,11 @@ public class Reg0220 {
     @Inclui(casasDecimais = 6)
     private BigDecimal fatConv;
 
+    public Reg0220(String unidConv, BigDecimal fatConv) {
+        this.unidConv = unidConv;
+        this.fatConv = fatConv;
+    }
+
+    public Reg0220(){}
+
 }

@@ -28,4 +28,13 @@ public class RegC179 {
     @Inclui
     private BigDecimal icmsRet;
 
+    public RegC179(BigDecimal bcStOrigDest, BigDecimal icmsStRep, BigDecimal icmsStCompl, BigDecimal bcRet, BigDecimal icmsRet) {
+        this.bcStOrigDest = bcStOrigDest;
+        this.icmsStRep = icmsStRep;
+        this.icmsStCompl = icmsStCompl;
+        this.bcRet = bcRet;
+        this.icmsRet = icmsRet;
+    }
+
+    public RegC179(){}
 }

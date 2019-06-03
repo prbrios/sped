@@ -65,4 +65,22 @@ public class RegE210 {
     @Filho
     private List<RegE250> regE250;
 
+    public RegE210(String indMovSt, BigDecimal vlSldCredAntSt, BigDecimal vlDevolSt, BigDecimal vlRessascSt, BigDecimal vlOutCredSt, BigDecimal vlAjCreditosSt, BigDecimal vlRetencaoSt, BigDecimal vlOutDebSt, BigDecimal vlAjdebitosSt, BigDecimal vlSldDevAntSt, BigDecimal vlDeducoesSt, BigDecimal vlicmsRecolSt, BigDecimal vlSldCredStTransportar, BigDecimal debEspSt) {
+        this.indMovSt = indMovSt;
+        this.vlSldCredAntSt = vlSldCredAntSt;
+        this.vlDevolSt = vlDevolSt;
+        this.vlRessascSt = vlRessascSt;
+        this.vlOutCredSt = vlOutCredSt;
+        this.vlAjCreditosSt = vlAjCreditosSt;
+        this.vlRetencaoSt = vlRetencaoSt;
+        this.vlOutDebSt = vlOutDebSt;
+        this.vlAjdebitosSt = vlAjdebitosSt;
+        this.vlSldDevAntSt = vlSldDevAntSt;
+        this.vlDeducoesSt = vlDeducoesSt;
+        this.vlicmsRecolSt = vlicmsRecolSt;
+        this.vlSldCredStTransportar = vlSldCredStTransportar;
+        this.debEspSt = debEspSt;
+    }
+
+    public RegE210(){}
 }

@@ -14,4 +14,9 @@ public class RegD301 {
     @Inclui
     private Integer numDocCan;
 
+    public RegD301(Integer numDocCan) {
+        this.numDocCan = numDocCan;
+    }
+
+    public RegD301(){}
 }

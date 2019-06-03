@@ -47,4 +47,19 @@ public class RegB030 {
     @Inclui
     private String codInfObs;
 
+    public RegB030(String codMod, String ser, Integer numDocIni, Integer numDocFin, LocalDate dtDoc, Integer qtdCanc, BigDecimal vlCont, BigDecimal vlIsntIss, BigDecimal vlBcIss, BigDecimal vlIss, String codInfObs) {
+        this.codMod = codMod;
+        this.ser = ser;
+        this.numDocIni = numDocIni;
+        this.numDocFin = numDocFin;
+        this.dtDoc = dtDoc;
+        this.qtdCanc = qtdCanc;
+        this.vlCont = vlCont;
+        this.vlIsntIss = vlIsntIss;
+        this.vlBcIss = vlBcIss;
+        this.vlIss = vlIss;
+        this.codInfObs = codInfObs;
+    }
+
+    public RegB030(){}
 }

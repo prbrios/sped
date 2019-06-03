@@ -39,4 +39,16 @@ public class Reg1700 {
     @Filho
     private List<Reg1710> reg1710;
 
+    public Reg1700(String codDisp, String codMod, String ser, String sub, Integer numDocIni, Integer numDocFin, Integer numAut) {
+        this.codDisp = codDisp;
+        this.codMod = codMod;
+        this.ser = ser;
+        this.sub = sub;
+        this.numDocIni = numDocIni;
+        this.numDocFin = numDocFin;
+        this.numAut = numAut;
+    }
+
+    public Reg1700(){}
+
 }

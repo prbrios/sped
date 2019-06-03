@@ -62,4 +62,24 @@ public class Reg1391 {
     @Inclui
     private String obs;
 
+    public Reg1391(LocalDate dtRegistro, BigDecimal qtdMoid, BigDecimal estqIni, BigDecimal qtdProduz, BigDecimal entAnidHid, BigDecimal outrEntr, BigDecimal perda, BigDecimal cons, BigDecimal saiAniHid, Integer saidas, BigDecimal estqFin, BigDecimal estqIniMel, BigDecimal prodDiaMel, BigDecimal utilMel, BigDecimal prodAlcMel, String obs) {
+        this.dtRegistro = dtRegistro;
+        this.qtdMoid = qtdMoid;
+        this.estqIni = estqIni;
+        this.qtdProduz = qtdProduz;
+        this.entAnidHid = entAnidHid;
+        this.outrEntr = outrEntr;
+        this.perda = perda;
+        this.cons = cons;
+        this.saiAniHid = saiAniHid;
+        this.saidas = saidas;
+        this.estqFin = estqFin;
+        this.estqIniMel = estqIniMel;
+        this.prodDiaMel = prodDiaMel;
+        this.utilMel = utilMel;
+        this.prodAlcMel = prodAlcMel;
+        this.obs = obs;
+    }
+
+    public Reg1391(){}
 }

@@ -52,4 +52,10 @@ public class Reg1980 {
     @Inclui
     private BigDecimal g412;
 
+    public Reg1980(Integer indAp) {
+        this.indAp = indAp;
+    }
+
+    public Reg1980(){}
+
 }

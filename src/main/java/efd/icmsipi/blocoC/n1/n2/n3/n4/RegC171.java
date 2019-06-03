@@ -19,4 +19,10 @@ public class RegC171 {
     @Inclui(casasDecimais = 3)
     private BigDecimal qtde;
 
+    public RegC171(String numTanque, BigDecimal qtde) {
+        this.numTanque = numTanque;
+        this.qtde = qtde;
+    }
+
+    public RegC171(){}
 }

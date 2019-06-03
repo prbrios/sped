@@ -19,4 +19,10 @@ public class RegC410 {
     @Inclui
     private BigDecimal vlCofins;
 
+    public RegC410(BigDecimal vlPis, BigDecimal vlCofins) {
+        this.vlPis = vlPis;
+        this.vlCofins = vlCofins;
+    }
+
+    public RegC410(){}
 }

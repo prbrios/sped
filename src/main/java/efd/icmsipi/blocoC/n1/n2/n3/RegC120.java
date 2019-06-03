@@ -28,4 +28,13 @@ public class RegC120 {
     @Inclui
     private String numAcdraw;
 
+    public RegC120(String codDocImp, String numDocImp, BigDecimal pisImp, BigDecimal cofinsImp, String numAcdraw) {
+        this.codDocImp = codDocImp;
+        this.numDocImp = numDocImp;
+        this.pisImp = pisImp;
+        this.cofinsImp = cofinsImp;
+        this.numAcdraw = numAcdraw;
+    }
+
+    public RegC120(){}
 }

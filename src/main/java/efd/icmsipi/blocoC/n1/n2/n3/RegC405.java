@@ -47,4 +47,14 @@ public class RegC405 {
     @Filho
     private List<RegC490> regC490;
 
+    public RegC405(LocalDate dtDoc, Integer cro, Integer crz, Integer numCooFin, BigDecimal gtFin, BigDecimal vlBrt) {
+        this.dtDoc = dtDoc;
+        this.cro = cro;
+        this.crz = crz;
+        this.numCooFin = numCooFin;
+        this.gtFin = gtFin;
+        this.vlBrt = vlBrt;
+    }
+
+    public RegC405(){}
 }

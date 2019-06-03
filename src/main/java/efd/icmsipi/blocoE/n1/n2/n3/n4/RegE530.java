@@ -37,4 +37,14 @@ public class RegE530 {
     @Filho
     private List<RegE531> regE531;
 
+    public RegE530(String indAj, BigDecimal vlAj, String codAj, String indDoc, String numDoc, String descrAj) {
+        this.indAj = indAj;
+        this.vlAj = vlAj;
+        this.codAj = codAj;
+        this.indDoc = indDoc;
+        this.numDoc = numDoc;
+        this.descrAj = descrAj;
+    }
+
+    public RegE530(){}
 }

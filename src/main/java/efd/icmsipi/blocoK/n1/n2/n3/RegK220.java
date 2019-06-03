@@ -29,4 +29,13 @@ public class RegK220 {
     @Inclui(casasDecimais = 6)
     private BigDecimal qtdDest;
 
+    public RegK220(LocalDate dtMov, String codItemOri, String codItemDeSt, BigDecimal qtdOri, BigDecimal qtdDest) {
+        this.dtMov = dtMov;
+        this.codItemOri = codItemOri;
+        this.codItemDeSt = codItemDeSt;
+        this.qtdOri = qtdOri;
+        this.qtdDest = qtdDest;
+    }
+
+    public RegK220(){}
 }

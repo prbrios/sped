@@ -26,4 +26,12 @@ public class RegE200 {
 
     @Filho
     private RegE210 regE210;
+
+    public RegE200(String uf, LocalDate dtIni, LocalDate dtFin) {
+        this.uf = uf;
+        this.dtIni = dtIni;
+        this.dtFin = dtFin;
+    }
+
+    public RegE200(){}
 }

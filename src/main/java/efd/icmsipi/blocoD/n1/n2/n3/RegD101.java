@@ -22,4 +22,11 @@ public class RegD101 {
     @Inclui
     private BigDecimal vlIcmsUfRem;
 
+    public RegD101(BigDecimal vlFcpUfDest, BigDecimal vlIcmsUfDest, BigDecimal vlIcmsUfRem) {
+        this.vlFcpUfDest = vlFcpUfDest;
+        this.vlIcmsUfDest = vlIcmsUfDest;
+        this.vlIcmsUfRem = vlIcmsUfRem;
+    }
+
+    public RegD101(){}
 }

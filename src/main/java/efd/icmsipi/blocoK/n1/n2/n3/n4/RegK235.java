@@ -26,4 +26,12 @@ public class RegK235 {
     @Inclui
     private String codInsSubst;
 
+    public RegK235(LocalDate dtSaida, String codItem, BigDecimal qtd, String codInsSubst) {
+        this.dtSaida = dtSaida;
+        this.codItem = codItem;
+        this.qtd = qtd;
+        this.codInsSubst = codInsSubst;
+    }
+
+    public RegK235(){}
 }

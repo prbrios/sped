@@ -33,4 +33,9 @@ public class RegE001 {
     @Filho
     private List<RegE500> regE500;
 
+    public RegE001(String indMov) {
+        this.indMov = indMov;
+    }
+
+    public RegE001(){}
 }

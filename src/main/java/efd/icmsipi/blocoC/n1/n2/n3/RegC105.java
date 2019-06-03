@@ -17,4 +17,10 @@ public class RegC105 {
     @Inclui
     private String uf;
 
+    public RegC105(Integer oper, String uf) {
+        this.oper = oper;
+        this.uf = uf;
+    }
+
+    public RegC105(){}
 }

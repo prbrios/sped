@@ -28,4 +28,14 @@ public class RegE510 {
     @Inclui
     private BigDecimal vlIpi;
 
+    public RegE510(Integer cfop, String cstIpi, BigDecimal vlContIpi, BigDecimal vlBcIpi, BigDecimal vlIpi) {
+        this.cfop = cfop;
+        this.cstIpi = cstIpi;
+        this.vlContIpi = vlContIpi;
+        this.vlBcIpi = vlBcIpi;
+        this.vlIpi = vlIpi;
+    }
+
+    public RegE510(){}
+
 }

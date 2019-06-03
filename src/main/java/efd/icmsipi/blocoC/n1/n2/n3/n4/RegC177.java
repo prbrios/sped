@@ -20,4 +20,11 @@ public class RegC177 {
     @Inclui
     private String codInfItem;
 
+    public RegC177(String codSeloIpi, Long qtSeloIpi, String codInfItem) {
+        this.codSeloIpi = codSeloIpi;
+        this.qtSeloIpi = qtSeloIpi;
+        this.codInfItem = codInfItem;
+    }
+
+    public RegC177(){}
 }

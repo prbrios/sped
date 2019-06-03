@@ -34,4 +34,15 @@ public class RegC890 {
     @Inclui
     private String codObs;
 
+    public RegC890(Integer cstIcms, Integer cfop, BigDecimal aliqIcms, BigDecimal vlOpr, BigDecimal vlBcIcms, BigDecimal vlicms, String codObs) {
+        this.cstIcms = cstIcms;
+        this.cfop = cfop;
+        this.aliqIcms = aliqIcms;
+        this.vlOpr = vlOpr;
+        this.vlBcIcms = vlBcIcms;
+        this.vlicms = vlicms;
+        this.codObs = codObs;
+    }
+
+    public RegC890(){}
 }

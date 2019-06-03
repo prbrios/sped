@@ -1,4 +1,4 @@
-package efd.icmsipi.bloco9;
+package efd.icmsipi.bloco9.n1.n2;
 
 import efd.anotacoes.Inclui;
 import lombok.Getter;
@@ -17,4 +17,10 @@ public class Reg9900 {
     @Inclui
     private Integer qtdRegBlc;
 
+    public Reg9900(String regBlc, Integer qtdRegBlc) {
+        this.regBlc = regBlc;
+        this.qtdRegBlc = qtdRegBlc;
+    }
+
+    public Reg9900(){}
 }

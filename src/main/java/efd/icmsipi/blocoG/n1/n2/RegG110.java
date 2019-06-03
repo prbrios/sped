@@ -47,4 +47,17 @@ public class RegG110 {
     @Filho
     private List<RegG125> regG125;
 
+    public RegG110(LocalDate dtIni, LocalDate dtFin, BigDecimal saldoInIcms, BigDecimal somParc, BigDecimal vlTribExp, BigDecimal vlTotal, BigDecimal indPerSai, BigDecimal icmsAprop, BigDecimal somIcmsOc) {
+        this.dtIni = dtIni;
+        this.dtFin = dtFin;
+        this.saldoInIcms = saldoInIcms;
+        this.somParc = somParc;
+        this.vlTribExp = vlTribExp;
+        this.vlTotal = vlTotal;
+        this.indPerSai = indPerSai;
+        this.icmsAprop = icmsAprop;
+        this.somIcmsOc = somIcmsOc;
+    }
+
+    public RegG110(){}
 }

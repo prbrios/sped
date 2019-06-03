@@ -35,4 +35,13 @@ public class RegK210 {
     @Filho
     private List<RegK215> regK215;
 
+    public RegK210(LocalDate dtIniOs, LocalDate dtFinOs, String codDocOs, String codItemOri, BigDecimal qtdOri) {
+        this.dtIniOs = dtIniOs;
+        this.dtFinOs = dtFinOs;
+        this.codDocOs = codDocOs;
+        this.codItemOri = codItemOri;
+        this.qtdOri = qtdOri;
+    }
+
+    public RegK210(){}
 }

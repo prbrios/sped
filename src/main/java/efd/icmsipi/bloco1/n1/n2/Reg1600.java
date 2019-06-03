@@ -22,4 +22,12 @@ public class Reg1600 {
     @Inclui
     private BigDecimal totDebito;
 
+    public Reg1600(String codPart, BigDecimal totCredito, BigDecimal totDebito) {
+        this.codPart = codPart;
+        this.totCredito = totCredito;
+        this.totDebito = totDebito;
+    }
+
+    public Reg1600(){}
+
 }

@@ -24,4 +24,10 @@ public class Reg1910 {
     @Filho
     private Reg1920 reg1920;
 
+    public Reg1910(LocalDate dtIni, LocalDate dtFin) {
+        this.dtIni = dtIni;
+        this.dtFin = dtFin;
+    }
+
+    public Reg1910(){}
 }

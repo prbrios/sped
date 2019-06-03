@@ -29,4 +29,13 @@ public class RegK200 {
     @Inclui
     private String codPart;
 
+    public RegK200(LocalDate dtEst, String codItem, BigDecimal qtd, String indEst, String codPart) {
+        this.dtEst = dtEst;
+        this.codItem = codItem;
+        this.qtd = qtd;
+        this.indEst = indEst;
+        this.codPart = codPart;
+    }
+
+    public RegK200(){}
 }

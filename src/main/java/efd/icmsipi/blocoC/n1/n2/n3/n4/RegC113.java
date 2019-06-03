@@ -40,4 +40,17 @@ public class RegC113 {
     @Inclui
     private String chvDoce;
 
+    public RegC113(String indOper, String indEmit, String codPart, String codMod, String ser, Integer sub, Integer numDoc, LocalDate dtDoc, String chvDoce) {
+        this.indOper = indOper;
+        this.indEmit = indEmit;
+        this.codPart = codPart;
+        this.codMod = codMod;
+        this.ser = ser;
+        this.sub = sub;
+        this.numDoc = numDoc;
+        this.dtDoc = dtDoc;
+        this.chvDoce = chvDoce;
+    }
+
+    public RegC113(){}
 }

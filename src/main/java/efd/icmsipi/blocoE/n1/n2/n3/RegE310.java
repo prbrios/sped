@@ -86,4 +86,29 @@ public class RegE310 {
     @Filho
     private List<RegE316> regE316;
 
+    public RegE310(String indMovDifal, BigDecimal vlSldCredAntDifal, BigDecimal vlTotDebitosDifal, BigDecimal vlOutDebDifal, BigDecimal vlTotDebFcp, BigDecimal vlTotCreditosDifal, BigDecimal vlTotCredFcp, BigDecimal vlOutCredDifal, BigDecimal vlSldDevAntDifal, BigDecimal vlDeducoesDifal, BigDecimal vlRecol, BigDecimal vlSldCredTransportar, BigDecimal debEspDifal, String indMovFcpDifal, BigDecimal vlSldCredAntFcp, BigDecimal vlOutDebFcp, BigDecimal vlOutCredFcp, BigDecimal vlSldDevantFcp, BigDecimal vlDeducoesFcp, BigDecimal vlRecolFcp, BigDecimal debEspFcp) {
+        this.indMovDifal = indMovDifal;
+        this.vlSldCredAntDifal = vlSldCredAntDifal;
+        this.vlTotDebitosDifal = vlTotDebitosDifal;
+        this.vlOutDebDifal = vlOutDebDifal;
+        this.vlTotDebFcp = vlTotDebFcp;
+        this.vlTotCreditosDifal = vlTotCreditosDifal;
+        this.vlTotCredFcp = vlTotCredFcp;
+        this.vlOutCredDifal = vlOutCredDifal;
+        this.vlSldDevAntDifal = vlSldDevAntDifal;
+        this.vlDeducoesDifal = vlDeducoesDifal;
+        this.vlRecol = vlRecol;
+        this.vlSldCredTransportar = vlSldCredTransportar;
+        this.debEspDifal = debEspDifal;
+        this.indMovFcpDifal = indMovFcpDifal;
+        this.vlSldCredAntFcp = vlSldCredAntFcp;
+        this.vlOutDebFcp = vlOutDebFcp;
+        this.vlOutCredFcp = vlOutCredFcp;
+        this.vlSldDevantFcp = vlSldDevantFcp;
+        this.vlDeducoesFcp = vlDeducoesFcp;
+        this.vlRecolFcp = vlRecolFcp;
+        this.debEspFcp = debEspFcp;
+    }
+
+    public RegE310(){}
 }

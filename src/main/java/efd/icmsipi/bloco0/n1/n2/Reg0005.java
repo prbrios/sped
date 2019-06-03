@@ -38,4 +38,21 @@ public class Reg0005 {
     @Inclui
     private String email;
 
+    public Reg0005(String fantasia, Integer cep, String end, String num, String compl,
+                   String bairro, String fone, String fax, String email) {
+
+        this.fantasia = fantasia;
+        this.cep = cep;
+        this.end = end;
+        this.num = num;
+        this.compl = compl;
+        this.bairro = bairro;
+        this.fone = fone;
+        this.fax = fax;
+        this.email = email;
+
+    }
+
+    public Reg0005(){}
+
 }

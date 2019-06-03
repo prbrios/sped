@@ -17,4 +17,10 @@ public class Reg1710 {
     @Inclui
     private Inclui numDocFin;
 
+    public Reg1710(Integer numDocIni, Inclui numDocFin) {
+        this.numDocIni = numDocIni;
+        this.numDocFin = numDocFin;
+    }
+
+    public Reg1710(){}
 }

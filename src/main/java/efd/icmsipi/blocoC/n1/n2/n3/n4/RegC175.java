@@ -23,4 +23,12 @@ public class RegC175 {
     @Inclui
     private String chassiVeic;
 
+    public RegC175(String indVeicOper, Long cnpj, String uf, String chassiVeic) {
+        this.indVeicOper = indVeicOper;
+        this.cnpj = cnpj;
+        this.uf = uf;
+        this.chassiVeic = chassiVeic;
+    }
+
+    public RegC175(){}
 }

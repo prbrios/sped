@@ -10,12 +10,7 @@ import java.time.LocalDate;
 public class Reg0205Test {
 
     @Test
-    public void teste1() {
-        Assert.assertEquals("0205", new Reg0205().getReg());
-    }
-
-    @Test
-    public void teste2() {
+    public void teste() {
 
         Reg0205 reg = new Reg0205();
         reg.setDescrAntItem("Desc anterior do item");
@@ -24,13 +19,7 @@ public class Reg0205Test {
         reg.setCodAntItem("LAPIS");
 
         Assert.assertEquals(Util.formata("|0205|Desc anterior do item|26052019|26052019|LAPIS|"), Conversor.converteBloco(reg));
+        Assert.assertEquals(Util.formata("|0205|||||"), Conversor.converteBloco(new Reg0205()));
     }
 
-    @Test
-    public void teste3() {
-
-        Reg0205 reg = new Reg0205();
-
-        Assert.assertEquals(Util.formata("|0205|||||"), Conversor.converteBloco(reg));
-    }
 }

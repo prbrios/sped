@@ -31,4 +31,12 @@ public class RegC420 {
     @Filho
     private List<RegC425> regC425;
 
+    public RegC420(String codTotPar, BigDecimal vlrAcumTot, Integer nrTot, String descrNrTot) {
+        this.codTotPar = codTotPar;
+        this.vlrAcumTot = vlrAcumTot;
+        this.nrTot = nrTot;
+        this.descrNrTot = descrNrTot;
+    }
+
+    public RegC420(){}
 }

@@ -20,4 +20,10 @@ public class RegH001 {
 
     @Filho
     private List<RegH005> regH005;
+
+    public RegH001(String indMov) {
+        this.indMov = indMov;
+    }
+
+    public RegH001(){}
 }

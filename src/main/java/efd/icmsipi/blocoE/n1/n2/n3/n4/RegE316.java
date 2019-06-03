@@ -41,4 +41,17 @@ public class RegE316 {
     @Inclui(formatoData = "MMyyyy")
     private LocalDate mesRef;
 
+    public RegE316(String codOr, BigDecimal vlOr, LocalDate dtVcto, String codRec, String numProc, String indProc, String proc, String txtCompl, LocalDate mesRef) {
+        this.codOr = codOr;
+        this.vlOr = vlOr;
+        this.dtVcto = dtVcto;
+        this.codRec = codRec;
+        this.numProc = numProc;
+        this.indProc = indProc;
+        this.proc = proc;
+        this.txtCompl = txtCompl;
+        this.mesRef = mesRef;
+    }
+
+    public RegE316(){}
 }

@@ -92,4 +92,34 @@ public class RegC176 {
     @Inclui
     private BigDecimal vlUnitResFcpSt;
 
+    public RegC176(String codModUltE, Integer numDocUltE, String serUltE, LocalDate dtUltE, String codPartUltE, BigDecimal quantUltE, BigDecimal vlUnitUltE, BigDecimal vlUnitBcSt, String chaveNfeUltE, Integer numItemUltE, BigDecimal vlUnitBcIcmsUltE, BigDecimal aliqIcmsUltE, BigDecimal vlUnitLimiteBcIcmsUltE, BigDecimal vlUnitIcmsUltE, BigDecimal aliqStUltE, BigDecimal vlUnitRes, Integer codRespRet, Integer codMotRes, String chaveNfeRet, String codParNfeRet, String serNfeRet, Integer numNfeRet, Integer itemNfeRet, String codDa, String numDa, BigDecimal vlUnitResFcpSt) {
+        this.codModUltE = codModUltE;
+        this.numDocUltE = numDocUltE;
+        this.serUltE = serUltE;
+        this.dtUltE = dtUltE;
+        this.codPartUltE = codPartUltE;
+        this.quantUltE = quantUltE;
+        this.vlUnitUltE = vlUnitUltE;
+        this.vlUnitBcSt = vlUnitBcSt;
+        this.chaveNfeUltE = chaveNfeUltE;
+        this.numItemUltE = numItemUltE;
+        this.vlUnitBcIcmsUltE = vlUnitBcIcmsUltE;
+        this.aliqIcmsUltE = aliqIcmsUltE;
+        this.vlUnitLimiteBcIcmsUltE = vlUnitLimiteBcIcmsUltE;
+        this.vlUnitIcmsUltE = vlUnitIcmsUltE;
+        this.aliqStUltE = aliqStUltE;
+        this.vlUnitRes = vlUnitRes;
+        this.codRespRet = codRespRet;
+        this.codMotRes = codMotRes;
+        this.chaveNfeRet = chaveNfeRet;
+        this.codParNfeRet = codParNfeRet;
+        this.serNfeRet = serNfeRet;
+        this.numNfeRet = numNfeRet;
+        this.itemNfeRet = itemNfeRet;
+        this.codDa = codDa;
+        this.numDa = numDa;
+        this.vlUnitResFcpSt = vlUnitResFcpSt;
+    }
+
+    public RegC176(){}
 }

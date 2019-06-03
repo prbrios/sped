@@ -1,0 +1,32 @@
+package efd.icmsipi.bloco1.n1.n2;
+
+import efd.Conversor;
+import efd.icmsipi.Util;
+import org.junit.Assert;
+import org.junit.Test;
+
+public class Reg1010Test {
+
+    @Test
+    public void teste() {
+
+        Reg1010 reg = new Reg1010();
+        reg.setIndExp("S");
+        reg.setIndCcrf("N");
+        reg.setIndComb("S");
+        reg.setIndUsina("N");
+        reg.setIndVa("S");
+        reg.setIndEe("N");
+        reg.setIndCart("S");
+        reg.setIndForm("N");
+        reg.setIndAer("S");
+        reg.setIndGiaf1("N");
+        reg.setIndGiaf3("S");
+        reg.setIndGiaf4("N");
+
+        Assert.assertEquals(Util.formata("|1010|S|N|S|N|S|N|S|N|S|N|S|N|"), Conversor.converteBloco(reg));
+        Assert.assertEquals(Util.formata("|1010|||||||||||||"), Conversor.converteBloco(new Reg1010()));
+
+    }
+
+}

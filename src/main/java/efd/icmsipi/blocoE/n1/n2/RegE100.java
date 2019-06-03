@@ -24,4 +24,10 @@ public class RegE100 {
     @Filho
     private RegE110 regE110;
 
+    public RegE100(LocalDate dtIni, LocalDate dtFin) {
+        this.dtIni = dtIni;
+        this.dtFin = dtFin;
+    }
+
+    public RegE100(){}
 }

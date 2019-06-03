@@ -34,4 +34,12 @@ public class Reg1350 {
     @Filho
     private List<Reg1370> reg1370;
 
+    public Reg1350(String serie, String fabricante, String modelo, String tipoMedicao) {
+        this.serie = serie;
+        this.fabricante = fabricante;
+        this.modelo = modelo;
+        this.tipoMedicao = tipoMedicao;
+    }
+
+    public Reg1350(){}
 }

@@ -32,4 +32,14 @@ public class RegK280 {
     @Inclui
     private String codPart;
 
+    public RegK280(LocalDate dtEst, String codItem, BigDecimal qtdCorPos, BigDecimal qtdCodNeg, String indEst, String codPart) {
+        this.dtEst = dtEst;
+        this.codItem = codItem;
+        this.qtdCorPos = qtdCorPos;
+        this.qtdCodNeg = qtdCodNeg;
+        this.indEst = indEst;
+        this.codPart = codPart;
+    }
+
+    public RegK280(){}
 }

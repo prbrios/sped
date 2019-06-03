@@ -34,4 +34,13 @@ public class RegC860 {
     @Filho
     private List<RegC890> regC890;
 
+    public RegC860(String codMod, Integer nrSat, LocalDate dtDoc, Integer docIni, Integer docFin) {
+        this.codMod = codMod;
+        this.nrSat = nrSat;
+        this.dtDoc = dtDoc;
+        this.docIni = docIni;
+        this.docFin = docFin;
+    }
+
+    public RegC860(){}
 }

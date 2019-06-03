@@ -22,4 +22,11 @@ public class RegC191 {
     @Inclui
     private BigDecimal vlFcpRet;
 
+    public RegC191(BigDecimal vlFcpOp, BigDecimal vlFcpSt, BigDecimal vlFcpRet) {
+        this.vlFcpOp = vlFcpOp;
+        this.vlFcpSt = vlFcpSt;
+        this.vlFcpRet = vlFcpRet;
+    }
+
+    public RegC191(){}
 }

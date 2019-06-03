@@ -1,7 +1,8 @@
-package efd.icmsipi;
+package efd.icmsipi.bloco0;
 
 import efd.Conversor;
 import efd.Parsers;
+import efd.icmsipi.Util;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -10,12 +11,7 @@ import java.time.LocalDate;
 public class Reg0000Test {
 
     @Test
-    public void teste1() {
-        Assert.assertEquals("0000", new Reg0000().getReg());
-    }
-
-    @Test
-    public void teste2() {
+    public void teste() {
 
         Reg0000 reg = new Reg0000();
         reg.setCodVer(13);
@@ -34,13 +30,8 @@ public class Reg0000Test {
         reg.setIndAtiv(1);
 
         Assert.assertEquals(Util.formata("|0000|013|1|26052019|26052019|SAINT SEYA|00000000000001|00000000001|CE|1|0000001|1|123|A|1|"), Conversor.converteBloco(reg));
+        Assert.assertEquals(Util.formata("|0000|||||||||||||||"), Conversor.converteBloco(new Reg0000()));
+
     }
 
-    @Test
-    public void teste3() {
-
-        Reg0000 reg = new Reg0000();
-
-        Assert.assertEquals(Util.formata("|0000|||||||||||||||"), Conversor.converteBloco(reg));
-    }
 }

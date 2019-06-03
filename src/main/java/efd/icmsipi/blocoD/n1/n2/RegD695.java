@@ -43,4 +43,16 @@ public class RegD695 {
     @Filho
     private List<RegD696> regD696;
 
+    public RegD695(String codMod, String ser, Integer nroDocIni, Integer nroDocFin, LocalDate dtDocIni, LocalDate dtDocFin, String nomMest, String chvCodDig) {
+        this.codMod = codMod;
+        this.ser = ser;
+        this.nroDocIni = nroDocIni;
+        this.nroDocFin = nroDocFin;
+        this.dtDocIni = dtDocIni;
+        this.dtDocFin = dtDocFin;
+        this.nomMest = nomMest;
+        this.chvCodDig = chvCodDig;
+    }
+
+    public RegD695(){}
 }

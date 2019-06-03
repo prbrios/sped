@@ -14,4 +14,9 @@ public class Reg9999 {
     @Inclui
     private Integer qtdLin;
 
+    public Reg9999(Integer qtdLin) {
+        this.qtdLin = qtdLin;
+    }
+
+    public Reg9999(){}
 }

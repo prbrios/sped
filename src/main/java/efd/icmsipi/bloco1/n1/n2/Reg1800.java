@@ -40,4 +40,17 @@ public class Reg1800 {
     @Inclui
     private BigDecimal vlDif;
 
+    public Reg1800(BigDecimal vlCarga, BigDecimal vlPass, BigDecimal vlFat, BigDecimal indRat, BigDecimal vlIcmsAnt, BigDecimal vlBcIcms, BigDecimal vlIcmsApur, BigDecimal vlBcIcmsApur, BigDecimal vlDif) {
+        this.vlCarga = vlCarga;
+        this.vlPass = vlPass;
+        this.vlFat = vlFat;
+        this.indRat = indRat;
+        this.vlIcmsAnt = vlIcmsAnt;
+        this.vlBcIcms = vlBcIcms;
+        this.vlIcmsApur = vlIcmsApur;
+        this.vlBcIcmsApur = vlBcIcmsApur;
+        this.vlDif = vlDif;
+    }
+
+    public Reg1800(){}
 }

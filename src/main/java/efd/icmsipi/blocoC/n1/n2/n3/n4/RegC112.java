@@ -35,4 +35,15 @@ public class RegC112 {
     @Inclui
     private LocalDate dtPgto;
 
+    public RegC112(String codDa, String uf, String numDa, String codAut, BigDecimal vlDa, LocalDate dtVcto, LocalDate dtPgto) {
+        this.codDa = codDa;
+        this.uf = uf;
+        this.numDa = numDa;
+        this.codAut = codAut;
+        this.vlDa = vlDa;
+        this.dtVcto = dtVcto;
+        this.dtPgto = dtPgto;
+    }
+
+    public RegC112(){}
 }

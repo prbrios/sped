@@ -39,4 +39,9 @@ public class RegD001 {
     @Filho
     private List<RegD695> regD695;
 
+    public RegD001(String indMov) {
+        this.indMov = indMov;
+    }
+
+    public RegD001(){}
 }

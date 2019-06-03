@@ -23,4 +23,11 @@ public class RegH020 {
     @Inclui
     private BigDecimal vlIcms;
 
+    public RegH020(Integer cstIcms, BigDecimal bcIcms, BigDecimal vlIcms) {
+        this.cstIcms = cstIcms;
+        this.bcIcms = bcIcms;
+        this.vlIcms = vlIcms;
+    }
+
+    public RegH020(){}
 }

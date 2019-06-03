@@ -37,4 +37,15 @@ public class RegK260 {
 
     @Filho
     private List<RegK265> regK265;
+
+    public RegK260(String codOpOs, String codItem, LocalDate dtSaida, BigDecimal qtdSaida, LocalDate dtRet, BigDecimal qtdRet) {
+        this.codOpOs = codOpOs;
+        this.codItem = codItem;
+        this.dtSaida = dtSaida;
+        this.qtdSaida = qtdSaida;
+        this.dtRet = dtRet;
+        this.qtdRet = qtdRet;
+    }
+
+    public RegK260(){}
 }

@@ -32,5 +32,11 @@ public class RegE500 {
     @Filho
     private RegE520 regE520;
 
+    public RegE500(String indApur, LocalDate dtIni, LocalDate dtFin) {
+        this.indApur = indApur;
+        this.dtIni = dtIni;
+        this.dtFin = dtFin;
+    }
 
+    public RegE500(){}
 }

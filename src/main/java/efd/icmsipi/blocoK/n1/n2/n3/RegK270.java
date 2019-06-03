@@ -41,4 +41,15 @@ public class RegK270 {
     @Filho
     private List<RegK275> regK275;
 
+    public RegK270(LocalDate dtIniAp, LocalDate dtFinAp, String codOpOs, String codItem, BigDecimal qtdCorPos, BigDecimal qtdCorNeg, String origem) {
+        this.dtIniAp = dtIniAp;
+        this.dtFinAp = dtFinAp;
+        this.codOpOs = codOpOs;
+        this.codItem = codItem;
+        this.qtdCorPos = qtdCorPos;
+        this.qtdCorNeg = qtdCorNeg;
+        this.origem = origem;
+    }
+
+    public RegK270(){}
 }

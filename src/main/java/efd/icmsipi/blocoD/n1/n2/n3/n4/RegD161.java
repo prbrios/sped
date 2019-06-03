@@ -32,4 +32,15 @@ public class RegD161 {
     @Inclui(zerosEsquerda = 7)
     private Integer codMunEntg;
 
+    public RegD161(Integer indCarga, String cnpjCpfCol, String ieCol, Integer codMunCol, String cnpjCpfEntg, String ieEntg, Integer codMunEntg) {
+        this.indCarga = indCarga;
+        this.cnpjCpfCol = cnpjCpfCol;
+        this.ieCol = ieCol;
+        this.codMunCol = codMunCol;
+        this.cnpjCpfEntg = cnpjCpfEntg;
+        this.ieEntg = ieEntg;
+        this.codMunEntg = codMunEntg;
+    }
+
+    public RegD161(){}
 }

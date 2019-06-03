@@ -28,4 +28,13 @@ public class RegC114 {
     @Inclui
     private LocalDate dtDoc;
 
+    public RegC114(String codMod, String ecfFab, Integer ecfCx, Integer numDoc, LocalDate dtDoc) {
+        this.codMod = codMod;
+        this.ecfFab = ecfFab;
+        this.ecfCx = ecfCx;
+        this.numDoc = numDoc;
+        this.dtDoc = dtDoc;
+    }
+
+    public RegC114(){}
 }

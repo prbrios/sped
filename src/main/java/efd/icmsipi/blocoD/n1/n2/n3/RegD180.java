@@ -62,4 +62,24 @@ public class RegD180 {
     @Inclui
     private BigDecimal vlDoc;
 
+    public RegD180(Integer numSeq, String indEmit, Long cnpjCpfEmit, String ufEmit, String ieEmit, Integer codMunOrig, Long cnpjCpfTom, String ufTom, String ieTom, Integer codMunDest, String codMod, String ser, Integer sub, Integer numDoc, LocalDate dtDoc, BigDecimal vlDoc) {
+        this.numSeq = numSeq;
+        this.indEmit = indEmit;
+        this.cnpjCpfEmit = cnpjCpfEmit;
+        this.ufEmit = ufEmit;
+        this.ieEmit = ieEmit;
+        this.codMunOrig = codMunOrig;
+        this.cnpjCpfTom = cnpjCpfTom;
+        this.ufTom = ufTom;
+        this.ieTom = ieTom;
+        this.codMunDest = codMunDest;
+        this.codMod = codMod;
+        this.ser = ser;
+        this.sub = sub;
+        this.numDoc = numDoc;
+        this.dtDoc = dtDoc;
+        this.vlDoc = vlDoc;
+    }
+
+    public RegD180(){}
 }

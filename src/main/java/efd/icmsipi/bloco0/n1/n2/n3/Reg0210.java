@@ -22,4 +22,12 @@ public class Reg0210 {
     @Inclui(casasDecimais = 4)
     private BigDecimal perda;
 
+    public Reg0210(String codItemComp, BigDecimal qtdComp, BigDecimal perda) {
+        this.codItemComp = codItemComp;
+        this.qtdComp = qtdComp;
+        this.perda = perda;
+    }
+
+    public Reg0210(){}
+
 }

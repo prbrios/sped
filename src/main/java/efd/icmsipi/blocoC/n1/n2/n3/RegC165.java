@@ -50,4 +50,20 @@ public class RegC165 {
     @Inclui
     private String ufId;
 
+    public RegC165(String codPart, String veidId, String codAut, String nrPasse, LocalTime hora, BigDecimal temper, Integer qtdVol, BigDecimal pesoBrt, BigDecimal pesoLiq, String nomMot, Long cpf, String ufId) {
+        this.codPart = codPart;
+        this.veidId = veidId;
+        this.codAut = codAut;
+        this.nrPasse = nrPasse;
+        this.hora = hora;
+        this.temper = temper;
+        this.qtdVol = qtdVol;
+        this.pesoBrt = pesoBrt;
+        this.pesoLiq = pesoLiq;
+        this.nomMot = nomMot;
+        this.cpf = cpf;
+        this.ufId = ufId;
+    }
+
+    public RegC165(){}
 }

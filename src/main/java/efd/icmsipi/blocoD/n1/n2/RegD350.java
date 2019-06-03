@@ -30,4 +30,12 @@ public class RegD350 {
     @Filho
     private List<RegD355> regD355;
 
+    public RegD350(String codMod, String ecfMod, String ecfFab, Integer ecfCx) {
+        this.codMod = codMod;
+        this.ecfMod = ecfMod;
+        this.ecfFab = ecfFab;
+        this.ecfCx = ecfCx;
+    }
+
+    public RegD350(){}
 }

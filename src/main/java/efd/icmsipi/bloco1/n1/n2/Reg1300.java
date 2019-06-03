@@ -50,4 +50,18 @@ public class Reg1300 {
     @Filho
     private List<Reg1310> reg1310;
 
+    public Reg1300(String codItem, LocalDate dtFech, BigDecimal estqAbert, BigDecimal volEntr, BigDecimal volDisp, BigDecimal volSaidas, BigDecimal estqEscr, BigDecimal valAjPerda, BigDecimal valAjGanho, BigDecimal fechFisico) {
+        this.codItem = codItem;
+        this.dtFech = dtFech;
+        this.estqAbert = estqAbert;
+        this.volEntr = volEntr;
+        this.volDisp = volDisp;
+        this.volSaidas = volSaidas;
+        this.estqEscr = estqEscr;
+        this.valAjPerda = valAjPerda;
+        this.valAjGanho = valAjGanho;
+        this.fechFisico = fechFisico;
+    }
+
+    public Reg1300(){}
 }

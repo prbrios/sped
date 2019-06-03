@@ -35,4 +35,15 @@ public class RegC173 {
     @Inclui
     private BigDecimal vlTabMax;
 
+    public RegC173(String loteMed, BigDecimal qtdItem, LocalDate dtFab, LocalDate dtVal, String indMed, String tpProd, BigDecimal vlTabMax) {
+        this.loteMed = loteMed;
+        this.qtdItem = qtdItem;
+        this.dtFab = dtFab;
+        this.dtVal = dtVal;
+        this.indMed = indMed;
+        this.tpProd = tpProd;
+        this.vlTabMax = vlTabMax;
+    }
+
+    public RegC173(){}
 }

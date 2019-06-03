@@ -31,4 +31,12 @@ public class RegD365 {
     @Filho
     private List<RegD370> regD370;
 
+    public RegD365(String codTotPar, BigDecimal vlrAcumTot, Integer nrTot, String descrNrTot) {
+        this.codTotPar = codTotPar;
+        this.vlrAcumTot = vlrAcumTot;
+        this.nrTot = nrTot;
+        this.descrNrTot = descrNrTot;
+    }
+
+    public RegD365(){}
 }

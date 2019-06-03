@@ -28,4 +28,13 @@ public class RegC116 {
     @Inclui
     private LocalDate dtDoc;
 
+    public RegC116(String codMod, Long nrSat, String chvNfe, Integer numCfe, LocalDate dtDoc) {
+        this.codMod = codMod;
+        this.nrSat = nrSat;
+        this.chvNfe = chvNfe;
+        this.numCfe = numCfe;
+        this.dtDoc = dtDoc;
+    }
+
+    public RegC116(){}
 }

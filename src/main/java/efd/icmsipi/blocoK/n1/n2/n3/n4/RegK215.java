@@ -19,4 +19,10 @@ public class RegK215 {
     @Inclui(casasDecimais = 6)
     private BigDecimal qtdDes;
 
+    public RegK215(String codItemDes, BigDecimal qtdDes) {
+        this.codItemDes = codItemDes;
+        this.qtdDes = qtdDes;
+    }
+
+    public RegK215(){}
 }

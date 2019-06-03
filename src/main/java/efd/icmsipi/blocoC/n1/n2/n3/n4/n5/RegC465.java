@@ -17,4 +17,10 @@ public class RegC465 {
     @Inclui
     private Integer numCcf;
 
+    public RegC465(String chvCfe, Integer numCcf) {
+        this.chvCfe = chvCfe;
+        this.numCcf = numCcf;
+    }
+
+    public RegC465(){}
 }

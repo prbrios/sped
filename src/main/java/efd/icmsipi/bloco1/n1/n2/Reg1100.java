@@ -52,4 +52,19 @@ public class Reg1100 {
     @Filho
     private List<Reg1105> reg1105;
 
+    public Reg1100(Integer indDoc, String nroDe, LocalDate dtDe, Integer natExp, Integer nroRe, LocalDate dtRe, String chcEmb, LocalDate dtChc, LocalDate dtAvb, Integer tpChc, Integer pais) {
+        this.indDoc = indDoc;
+        this.nroDe = nroDe;
+        this.dtDe = dtDe;
+        this.natExp = natExp;
+        this.nroRe = nroRe;
+        this.dtRe = dtRe;
+        this.chcEmb = chcEmb;
+        this.dtChc = dtChc;
+        this.dtAvb = dtAvb;
+        this.tpChc = tpChc;
+        this.pais = pais;
+    }
+
+    public Reg1100(){}
 }

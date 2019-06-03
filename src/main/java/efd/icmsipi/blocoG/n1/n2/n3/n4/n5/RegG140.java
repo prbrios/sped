@@ -20,4 +20,10 @@ public class RegG140 {
     @Inclui
     private String codItem;
 
+    public RegG140(Integer numItem, String codItem) {
+        this.numItem = numItem;
+        this.codItem = codItem;
+    }
+
+    public RegG140(){}
 }

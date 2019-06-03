@@ -21,4 +21,9 @@ public class Reg1390 {
     @Filho
     private List<Reg1391> reg1391;
 
+    public Reg1390(Integer codProd) {
+        this.codProd = codProd;
+    }
+
+    public Reg1390(){}
 }

@@ -51,4 +51,17 @@ public class RegC460 {
     @Filho
     private List<RegC470> regC470;
 
+    public RegC460(String codMod, Integer codSit, Integer numDoc, LocalDate dtDoc, BigDecimal vlDoc, BigDecimal vlPis, BigDecimal vlCofins, Long cpfCnpj, String nomAdq) {
+        this.codMod = codMod;
+        this.codSit = codSit;
+        this.numDoc = numDoc;
+        this.dtDoc = dtDoc;
+        this.vlDoc = vlDoc;
+        this.vlPis = vlPis;
+        this.vlCofins = vlCofins;
+        this.cpfCnpj = cpfCnpj;
+        this.nomAdq = nomAdq;
+    }
+
+    public RegC460(){}
 }

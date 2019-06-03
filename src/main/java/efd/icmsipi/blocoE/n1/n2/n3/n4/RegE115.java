@@ -22,4 +22,11 @@ public class RegE115 {
     @Inclui
     private String descrComplAj;
 
+    public RegE115(String codInfAdic, BigDecimal vlInfAdic, String descrComplAj) {
+        this.codInfAdic = codInfAdic;
+        this.vlInfAdic = vlInfAdic;
+        this.descrComplAj = descrComplAj;
+    }
+
+    public RegE115(){}
 }

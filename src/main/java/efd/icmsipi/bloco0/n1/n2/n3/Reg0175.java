@@ -22,4 +22,12 @@ public class Reg0175 {
     @Inclui
     private String contAnt;
 
+    public Reg0175(LocalDate dtAlt, String nrCampo, String contAnt) {
+        this.dtAlt = dtAlt;
+        this.nrCampo = nrCampo;
+        this.contAnt = contAnt;
+    }
+
+    public Reg0175(){}
+
 }

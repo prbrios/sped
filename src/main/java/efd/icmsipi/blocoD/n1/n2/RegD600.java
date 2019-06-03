@@ -75,4 +75,25 @@ public class RegD600 {
     @Filho
     private List<RegD690> regD690;
 
+    public RegD600(String codMod, Integer codMun, String ser, Integer sub, Integer codCons, Integer qtdCons, LocalDate dtDoc, BigDecimal vlDoc, BigDecimal vlDesc, BigDecimal vlServ, BigDecimal vlServNt, BigDecimal vlTerc, BigDecimal vlDa, BigDecimal vlBcIcms, BigDecimal vlIcms, BigDecimal vlPis, BigDecimal vlCofins) {
+        this.codMod = codMod;
+        this.codMun = codMun;
+        this.ser = ser;
+        this.sub = sub;
+        this.codCons = codCons;
+        this.qtdCons = qtdCons;
+        this.dtDoc = dtDoc;
+        this.vlDoc = vlDoc;
+        this.vlDesc = vlDesc;
+        this.vlServ = vlServ;
+        this.vlServNt = vlServNt;
+        this.vlTerc = vlTerc;
+        this.vlDa = vlDa;
+        this.vlBcIcms = vlBcIcms;
+        this.vlIcms = vlIcms;
+        this.vlPis = vlPis;
+        this.vlCofins = vlCofins;
+    }
+
+    public RegD600(){}
 }

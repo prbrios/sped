@@ -23,4 +23,12 @@ public class RegD120 {
     @Inclui
     private String ufId;
 
+    public RegD120(Integer codMunOrig, Integer codMunDest, String veicId, String ufId) {
+        this.codMunOrig = codMunOrig;
+        this.codMunDest = codMunDest;
+        this.veicId = veicId;
+        this.ufId = ufId;
+    }
+
+    public RegD120(){}
 }

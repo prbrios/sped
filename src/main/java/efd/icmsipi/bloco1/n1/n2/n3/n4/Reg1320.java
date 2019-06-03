@@ -43,4 +43,18 @@ public class Reg1320 {
     @Inclui(casasDecimais = 3)
     private BigDecimal volVendas;
 
+    public Reg1320(Integer numBico, Integer nrInterv, String motInterv, String nomInterv, Long cnpjInterv, Long cpfInterv, BigDecimal valFecha, BigDecimal valAbert, BigDecimal volAferi, BigDecimal volVendas) {
+        this.numBico = numBico;
+        this.nrInterv = nrInterv;
+        this.motInterv = motInterv;
+        this.nomInterv = nomInterv;
+        this.cnpjInterv = cnpjInterv;
+        this.cpfInterv = cpfInterv;
+        this.valFecha = valFecha;
+        this.valAbert = valAbert;
+        this.volAferi = volAferi;
+        this.volVendas = volVendas;
+    }
+
+    public Reg1320(){}
 }

@@ -51,4 +51,19 @@ public class RegC190 {
     @Filho
     private RegC191 regC191;
 
+    public RegC190(Integer cstIcms, Integer cfop, BigDecimal aliqIcms, BigDecimal vlOpr, BigDecimal vlBcIcms, BigDecimal vlIcms, BigDecimal vlBcIcmsSt, BigDecimal vlIcmsSt, BigDecimal vlRedBc, BigDecimal vlIpi, String codObs) {
+        this.cstIcms = cstIcms;
+        this.cfop = cfop;
+        this.aliqIcms = aliqIcms;
+        this.vlOpr = vlOpr;
+        this.vlBcIcms = vlBcIcms;
+        this.vlIcms = vlIcms;
+        this.vlBcIcmsSt = vlBcIcmsSt;
+        this.vlIcmsSt = vlIcmsSt;
+        this.vlRedBc = vlRedBc;
+        this.vlIpi = vlIpi;
+        this.codObs = codObs;
+    }
+
+    public RegC190(){}
 }

@@ -39,4 +39,10 @@ public class RegC110 {
     @Filho
     private List<RegC116> regC116;
 
+    public RegC110(String codInf, String txtCompl) {
+        this.codInf = codInf;
+        this.txtCompl = txtCompl;
+    }
+
+    public RegC110(){}
 }

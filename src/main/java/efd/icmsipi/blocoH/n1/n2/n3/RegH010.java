@@ -49,4 +49,18 @@ public class RegH010 {
     @Filho
     private List<RegH020> regH020;
 
+    public RegH010(String codImtem, String unid, BigDecimal qtd, BigDecimal vlUnit, BigDecimal vlItem, String indProp, String codPart, String txtCompl, String codCta, BigDecimal vlItemIr) {
+        this.codImtem = codImtem;
+        this.unid = unid;
+        this.qtd = qtd;
+        this.vlUnit = vlUnit;
+        this.vlItem = vlItem;
+        this.indProp = indProp;
+        this.codPart = codPart;
+        this.txtCompl = txtCompl;
+        this.codCta = codCta;
+        this.vlItemIr = vlItemIr;
+    }
+
+    public RegH010(){}
 }

@@ -69,4 +69,23 @@ public class RegD400 {
     @Filho
     private List<RegD420> regD420;
 
+    public RegD400(String codPart, String codMod, Integer codSit, String ser, Integer sub, Integer numDoc, LocalDate dtDoc, BigDecimal vlDoc, BigDecimal vlDesc, BigDecimal vlServ, BigDecimal vlBcIcms, BigDecimal vlIcms, BigDecimal vlPis, BigDecimal vlCofins, String codCta) {
+        this.codPart = codPart;
+        this.codMod = codMod;
+        this.codSit = codSit;
+        this.ser = ser;
+        this.sub = sub;
+        this.numDoc = numDoc;
+        this.dtDoc = dtDoc;
+        this.vlDoc = vlDoc;
+        this.vlDesc = vlDesc;
+        this.vlServ = vlServ;
+        this.vlBcIcms = vlBcIcms;
+        this.vlIcms = vlIcms;
+        this.vlPis = vlPis;
+        this.vlCofins = vlCofins;
+        this.codCta = codCta;
+    }
+
+    public RegD400(){}
 }

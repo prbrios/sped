@@ -56,4 +56,20 @@ public class RegC350 {
 
     @Filho
     private List<RegC390> regC390;
+
+    public RegC350(String ser, String subSer, Integer numDoc, LocalDate dtDoc, Long cnpjCpf, BigDecimal vlMerc, BigDecimal vlDoc, BigDecimal vlDesc, BigDecimal vlPis, BigDecimal vlCofins, String codCta) {
+        this.ser = ser;
+        this.subSer = subSer;
+        this.numDoc = numDoc;
+        this.dtDoc = dtDoc;
+        this.cnpjCpf = cnpjCpf;
+        this.vlMerc = vlMerc;
+        this.vlDoc = vlDoc;
+        this.vlDesc = vlDesc;
+        this.vlPis = vlPis;
+        this.vlCofins = vlCofins;
+        this.codCta = codCta;
+    }
+
+    public RegC350(){}
 }

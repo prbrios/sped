@@ -37,4 +37,14 @@ public class RegC140 {
     @Filho
     private List<RegC141> regC141;
 
+    public RegC140(String indEmit, String indTit, String descTit, String numTit, Integer qtdParc, BigDecimal vlTit) {
+        this.indEmit = indEmit;
+        this.indTit = indTit;
+        this.descTit = descTit;
+        this.numTit = numTit;
+        this.qtdParc = qtdParc;
+        this.vlTit = vlTit;
+    }
+
+    public RegC140(){}
 }

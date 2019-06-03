@@ -22,4 +22,11 @@ public class Reg1400 {
     @Inclui
     private BigDecimal valor;
 
+    public Reg1400(String codItemImp, Integer mun, BigDecimal valor) {
+        this.codItemImp = codItemImp;
+        this.mun = mun;
+        this.valor = valor;
+    }
+
+    public Reg1400(){}
 }

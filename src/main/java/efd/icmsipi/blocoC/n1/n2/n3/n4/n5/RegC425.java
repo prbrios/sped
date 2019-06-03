@@ -31,4 +31,14 @@ public class RegC425 {
     @Inclui
     private BigDecimal vlCofins;
 
+    public RegC425(String codItem, BigDecimal qtd, String unid, BigDecimal vlItem, BigDecimal vlPis, BigDecimal vlCofins) {
+        this.codItem = codItem;
+        this.qtd = qtd;
+        this.unid = unid;
+        this.vlItem = vlItem;
+        this.vlPis = vlPis;
+        this.vlCofins = vlCofins;
+    }
+
+    public RegC425(){}
 }

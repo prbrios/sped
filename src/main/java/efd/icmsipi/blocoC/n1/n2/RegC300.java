@@ -54,4 +54,18 @@ public class RegC300 {
     @Filho
     private List<RegC320> regC320;
 
+    public RegC300(String codMod, String ser, String sub, Integer numDocIni, Integer numDocFin, LocalDate dtDoc, BigDecimal vlDoc, BigDecimal vlPis, BigDecimal vlCofins, String codCta) {
+        this.codMod = codMod;
+        this.ser = ser;
+        this.sub = sub;
+        this.numDocIni = numDocIni;
+        this.numDocFin = numDocFin;
+        this.dtDoc = dtDoc;
+        this.vlDoc = vlDoc;
+        this.vlPis = vlPis;
+        this.vlCofins = vlCofins;
+        this.codCta = codCta;
+    }
+
+    public RegC300(){}
 }

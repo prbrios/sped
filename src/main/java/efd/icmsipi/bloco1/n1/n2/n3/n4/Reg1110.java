@@ -41,6 +41,17 @@ public class Reg1110 {
     @Inclui
     private String unid;
 
+    public Reg1110(String codPart, String codMod, String ser, Integer numDoc, LocalDate dtDoc, String chvNfe, Integer nrMemo, BigDecimal qtd, String unid) {
+        this.codPart = codPart;
+        this.codMod = codMod;
+        this.ser = ser;
+        this.numDoc = numDoc;
+        this.dtDoc = dtDoc;
+        this.chvNfe = chvNfe;
+        this.nrMemo = nrMemo;
+        this.qtd = qtd;
+        this.unid = unid;
+    }
 
-
+    public Reg1110(){}
 }
