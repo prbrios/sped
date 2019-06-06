@@ -39,7 +39,7 @@ public class RegC800 {
     private BigDecimal vlCofins;
 
     @Inclui
-    private Long cnpjCpf;
+    private String cnpjCpf;
 
     @Inclui
     private Integer nrSat;
@@ -68,7 +68,7 @@ public class RegC800 {
     @Filho
     private List<RegC850> regC850;
 
-    public RegC800(String codMod, String codSit, Integer numCfe, LocalDate dtDoc, BigDecimal vlCfe, BigDecimal vlPis, BigDecimal vlCofins, Long cnpjCpf, Integer nrSat, String chvCfe, BigDecimal vlDesc, BigDecimal vlMerc, BigDecimal vlOutDa, BigDecimal vlIcms, BigDecimal vlPisSt, BigDecimal vlCofinsSt) {
+    public RegC800(String codMod, String codSit, Integer numCfe, LocalDate dtDoc, BigDecimal vlCfe, BigDecimal vlPis, BigDecimal vlCofins, String cnpjCpf, Integer nrSat, String chvCfe, BigDecimal vlDesc, BigDecimal vlMerc, BigDecimal vlOutDa, BigDecimal vlIcms, BigDecimal vlPisSt, BigDecimal vlCofinsSt) {
         this.codMod = codMod;
         this.codSit = codSit;
         this.numCfe = numCfe;
