@@ -1,5 +1,6 @@
 package efd.contribuicoes.bloco0.n1.n2;
 
+import efd.anotacoes.Inclui;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -7,6 +8,16 @@ import lombok.Setter;
 @Setter
 public class Reg0035 {
 
+    @Inclui
     private final String reg = "0035";
+
+    @Inclui(zerosEsquerda = 14)
+    private Integer codScp;
+
+    @Inclui
+    private String descScp;
+
+    @Inclui
+    private String infComp;
 
 }
