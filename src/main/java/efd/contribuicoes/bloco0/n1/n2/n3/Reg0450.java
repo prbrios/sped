@@ -17,4 +17,10 @@ public class Reg0450 {
     @Inclui
     private String txt;
 
+    public Reg0450(String codInf, String txt) {
+        this.codInf = codInf;
+        this.txt = txt;
+    }
+
+    public Reg0450(){}
 }

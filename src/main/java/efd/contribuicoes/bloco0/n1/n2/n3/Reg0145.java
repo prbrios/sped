@@ -28,4 +28,13 @@ public class Reg0145 {
     @Inclui
     private String infoCompl;
 
+    public Reg0145(Integer codIncTrib, BigDecimal vlRecTot, BigDecimal vlRecAtiv, BigDecimal vlRecDemaisAtiv, String infoCompl) {
+        this.codIncTrib = codIncTrib;
+        this.vlRecTot = vlRecTot;
+        this.vlRecAtiv = vlRecAtiv;
+        this.vlRecDemaisAtiv = vlRecDemaisAtiv;
+        this.infoCompl = infoCompl;
+    }
+
+    public Reg0145(){}
 }

@@ -20,4 +20,11 @@ public class Reg0208 {
     @Inclui
     private String marcaCom;
 
+    public Reg0208(String codTab, String codGru, String marcaCom) {
+        this.codTab = codTab;
+        this.codGru = codGru;
+        this.marcaCom = marcaCom;
+    }
+
+    public Reg0208(){}
 }

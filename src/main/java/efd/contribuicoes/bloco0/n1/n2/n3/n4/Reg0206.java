@@ -14,4 +14,9 @@ public class Reg0206 {
     @Inclui
     private String codComb;
 
+    public Reg0206(String codComb) {
+        this.codComb = codComb;
+    }
+
+    public Reg0206(){}
 }

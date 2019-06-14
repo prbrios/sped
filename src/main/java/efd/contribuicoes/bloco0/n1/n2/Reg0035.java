@@ -20,4 +20,11 @@ public class Reg0035 {
     @Inclui
     private String infComp;
 
+    public Reg0035(Integer codScp, String descScp, String infComp) {
+        this.codScp = codScp;
+        this.descScp = descScp;
+        this.infComp = infComp;
+    }
+
+    public Reg0035(){}
 }

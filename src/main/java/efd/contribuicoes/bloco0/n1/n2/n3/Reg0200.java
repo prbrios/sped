@@ -46,4 +46,19 @@ public class Reg0200 {
     @Inclui
     private BigDecimal aliqIcms;
 
+    public Reg0200(String codItem, String descrItem, String codBarra, String codAndItem, String unidInv, Integer tipoItem, String codNcm, String exIpi, Integer codGen, Integer codLst, BigDecimal aliqIcms) {
+        this.codItem = codItem;
+        this.descrItem = descrItem;
+        this.codBarra = codBarra;
+        this.codAndItem = codAndItem;
+        this.unidInv = unidInv;
+        this.tipoItem = tipoItem;
+        this.codNcm = codNcm;
+        this.exIpi = exIpi;
+        this.codGen = codGen;
+        this.codLst = codLst;
+        this.aliqIcms = aliqIcms;
+    }
+
+    public Reg0200(){}
 }

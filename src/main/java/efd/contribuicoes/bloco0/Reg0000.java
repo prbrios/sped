@@ -52,4 +52,21 @@ public class Reg0000 {
     @Inclui
     private Integer indAtiv;
 
+    public Reg0000(Integer codVer, Integer tipoEscrit, Integer indSitEsp, String numRecAnterior, LocalDate dtIni, LocalDate dtFin, String nome, Long cnpj, String uf, Integer codMun, String suframa, Integer indNatPj, Integer indAtiv) {
+        this.codVer = codVer;
+        this.tipoEscrit = tipoEscrit;
+        this.indSitEsp = indSitEsp;
+        this.numRecAnterior = numRecAnterior;
+        this.dtIni = dtIni;
+        this.dtFin = dtFin;
+        this.nome = nome;
+        this.cnpj = cnpj;
+        this.uf = uf;
+        this.codMun = codMun;
+        this.suframa = suframa;
+        this.indNatPj = indNatPj;
+        this.indAtiv = indAtiv;
+    }
+
+    public Reg0000(){}
 }

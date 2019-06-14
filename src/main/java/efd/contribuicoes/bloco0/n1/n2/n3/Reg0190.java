@@ -17,4 +17,10 @@ public class Reg0190 {
     @Inclui
     private String descr;
 
+    public Reg0190(String unid, String descr) {
+        this.unid = unid;
+        this.descr = descr;
+    }
+
+    public Reg0190(){}
 }

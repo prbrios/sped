@@ -23,4 +23,12 @@ public class Reg0110 {
     @Inclui
     private Integer indRegCum;
 
+    public Reg0110(Integer codincTrib, Integer indAproCred, Integer codTipoCont, Integer indRegCum) {
+        this.codincTrib = codincTrib;
+        this.indAproCred = indAproCred;
+        this.codTipoCont = codTipoCont;
+        this.indRegCum = indRegCum;
+    }
+
+    public Reg0110(){}
 }
