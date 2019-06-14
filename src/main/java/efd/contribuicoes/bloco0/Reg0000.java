@@ -13,7 +13,7 @@ public class Reg0000 {
     @Inclui
     private final String reg = "0000";
 
-    @Inclui
+    @Inclui(zerosEsquerda = 3)
     private Integer codVer;
 
     @Inclui
