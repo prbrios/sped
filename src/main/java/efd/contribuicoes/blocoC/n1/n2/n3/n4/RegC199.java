@@ -6,26 +6,33 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@Getter
-@Setter
 public class RegC199 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "C199";
 
-    @Inclui
+    @Getter @Inclui
     private String codDocImp;
 
-    @Inclui
+    @Getter @Inclui
     private String numDocImp;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlPisImp;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlCofinsImp;
 
-    @Inclui
+    @Getter @Inclui
     private String numAcdraw;
 
+    public RegC199(String codDocImp, String numDocImp, BigDecimal vlPisImp, BigDecimal vlCofinsImp, String numAcdraw) {
+        this.codDocImp = codDocImp;
+        this.numDocImp = numDocImp;
+        this.vlPisImp = vlPisImp;
+        this.vlCofinsImp = vlCofinsImp;
+        this.numAcdraw = numAcdraw;
+    }
+
+    public RegC199(){}
 }

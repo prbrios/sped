@@ -6,40 +6,53 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@Getter
-@Setter
 public class RegC491 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "C491";
 
-    @Inclui
+    @Getter @Inclui
     private String docItem;
 
-    @Inclui(zerosEsquerda = 2)
+    @Getter @Inclui(zerosEsquerda = 2)
     private Integer cstPis;
 
-    @Inclui(zerosEsquerda = 4)
+    @Getter @Inclui(zerosEsquerda = 4)
     private Integer cfop;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlItem;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlBcPis;
 
-    @Inclui(casasDecimais = 4)
+    @Getter @Inclui(casasDecimais = 4)
     private BigDecimal aliqPis;
 
-    @Inclui(casasDecimais = 3)
+    @Getter @Inclui(casasDecimais = 3)
     private BigDecimal quantBcPis;
 
-    @Inclui(casasDecimais = 4)
+    @Getter @Inclui(casasDecimais = 4)
     private BigDecimal aliqPisQuant;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlPis;
 
-    @Inclui
+    @Getter @Inclui
     private String codCta;
+
+    public RegC491(String docItem, Integer cstPis, Integer cfop, BigDecimal vlItem, BigDecimal vlBcPis, BigDecimal aliqPis, BigDecimal quantBcPis, BigDecimal aliqPisQuant, BigDecimal vlPis, String codCta) {
+        this.docItem = docItem;
+        this.cstPis = cstPis;
+        this.cfop = cfop;
+        this.vlItem = vlItem;
+        this.vlBcPis = vlBcPis;
+        this.aliqPis = aliqPis;
+        this.quantBcPis = quantBcPis;
+        this.aliqPisQuant = aliqPisQuant;
+        this.vlPis = vlPis;
+        this.codCta = codCta;
+    }
+
+    public RegC491(){}
 }

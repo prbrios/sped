@@ -7,32 +7,41 @@ import lombok.Setter;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-@Getter
-@Setter
 public class RegC395 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "C395";
 
-    @Inclui
+    @Getter @Inclui
     private String codMod;
 
-    @Inclui
+    @Getter @Inclui
     private String codPart;
 
-    @Inclui
+    @Getter @Inclui
     private String ser;
 
-    @Inclui
+    @Getter @Inclui
     private String subSer;
 
-    @Inclui
+    @Getter @Inclui
     private String numDoc;
 
-    @Inclui
+    @Getter @Inclui
     private LocalDate dtDoc;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlDoc;
 
+    public RegC395(String codMod, String codPart, String ser, String subSer, String numDoc, LocalDate dtDoc, BigDecimal vlDoc) {
+        this.codMod = codMod;
+        this.codPart = codPart;
+        this.ser = ser;
+        this.subSer = subSer;
+        this.numDoc = numDoc;
+        this.dtDoc = dtDoc;
+        this.vlDoc = vlDoc;
+    }
+
+    public RegC395(){ }
 }

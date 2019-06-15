@@ -6,32 +6,41 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@Getter
-@Setter
 public class RegF700 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "F700";
 
-    @Inclui(zerosEsquerda = 2)
+    @Getter @Inclui(zerosEsquerda = 2)
     private Integer indOriDed;
 
-    @Inclui
+    @Getter @Inclui
     private Integer indNatDed;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlDedPis;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlDedCofins;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlBcOper;
 
-    @Inclui(zerosEsquerda = 14)
+    @Getter @Inclui(zerosEsquerda = 14)
     private Long cnpj;
 
-    @Inclui
+    @Getter @Inclui
     private String infComp;
 
+    public RegF700(Integer indOriDed, Integer indNatDed, BigDecimal vlDedPis, BigDecimal vlDedCofins, BigDecimal vlBcOper, Long cnpj, String infComp) {
+        this.indOriDed = indOriDed;
+        this.indNatDed = indNatDed;
+        this.vlDedPis = vlDedPis;
+        this.vlDedCofins = vlDedCofins;
+        this.vlBcOper = vlBcOper;
+        this.cnpj = cnpj;
+        this.infComp = infComp;
+    }
+
+    public RegF700(){}
 }

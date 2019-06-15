@@ -4,17 +4,21 @@ import efd.anotacoes.Inclui;
 import lombok.Getter;
 import lombok.Setter;
 
-@Getter
-@Setter
 public class RegF559 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "F559";
 
-    @Inclui
+    @Getter @Inclui
     private String codProc;
 
-    @Inclui
+    @Getter @Inclui
     private String indProc;
 
+    public RegF559(String codProc, String indProc) {
+        this.codProc = codProc;
+        this.indProc = indProc;
+    }
+
+    public RegF559(){ }
 }

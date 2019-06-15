@@ -7,59 +7,77 @@ import lombok.Setter;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-@Getter
-@Setter
 public class RegC800 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "C800";
 
-    @Inclui
+    @Getter @Inclui
     private String codMod;
 
-    @Inclui
+    @Getter @Inclui
     private Integer codSit;
 
-    @Inclui
+    @Getter @Inclui
     private Integer numCfe;
 
-    @Inclui
+    @Getter @Inclui
     private LocalDate dtDoc;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlCfe;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlPis;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlCofins;
 
-    @Inclui
+    @Getter @Inclui
     private String cnpjCpf;
 
-    @Inclui
+    @Getter @Inclui
     private Integer nrSat;
 
-    @Inclui
+    @Getter @Inclui
     private String chvCfe;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlDesc;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlMerc;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlOutDa;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlIcms;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlPisSt;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlCofinsSt;
 
+    public RegC800(String codMod, Integer codSit, Integer numCfe, LocalDate dtDoc, BigDecimal vlCfe, BigDecimal vlPis, BigDecimal vlCofins, String cnpjCpf, Integer nrSat, String chvCfe, BigDecimal vlDesc, BigDecimal vlMerc, BigDecimal vlOutDa, BigDecimal vlIcms, BigDecimal vlPisSt, BigDecimal vlCofinsSt) {
+        this.codMod = codMod;
+        this.codSit = codSit;
+        this.numCfe = numCfe;
+        this.dtDoc = dtDoc;
+        this.vlCfe = vlCfe;
+        this.vlPis = vlPis;
+        this.vlCofins = vlCofins;
+        this.cnpjCpf = cnpjCpf;
+        this.nrSat = nrSat;
+        this.chvCfe = chvCfe;
+        this.vlDesc = vlDesc;
+        this.vlMerc = vlMerc;
+        this.vlOutDa = vlOutDa;
+        this.vlIcms = vlIcms;
+        this.vlPisSt = vlPisSt;
+        this.vlCofinsSt = vlCofinsSt;
+    }
+
+    public RegC800(){ }
 }

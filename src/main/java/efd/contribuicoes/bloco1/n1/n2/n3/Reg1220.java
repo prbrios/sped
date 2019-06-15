@@ -7,23 +7,29 @@ import lombok.Setter;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-@Getter
-@Setter
 public class Reg1220 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "1220";
 
-    @Inclui(formatoData = "MMyyyy")
+    @Getter @Inclui(formatoData = "MMyyyy")
     private LocalDate perApuCred;
 
-    @Inclui(zerosEsquerda = 2)
+    @Getter @Inclui(zerosEsquerda = 2)
     private Integer origCred;
 
-    @Inclui(zerosEsquerda = 3)
+    @Getter @Inclui(zerosEsquerda = 3)
     private Integer codCred;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlCred;
 
+    public Reg1220(LocalDate perApuCred, Integer origCred, Integer codCred, BigDecimal vlCred) {
+        this.perApuCred = perApuCred;
+        this.origCred = origCred;
+        this.codCred = codCred;
+        this.vlCred = vlCred;
+    }
+
+    public Reg1220(){ }
 }

@@ -6,44 +6,42 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@Getter
-@Setter
 public class Reg0200 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "0200";
 
-    @Inclui
+    @Getter @Inclui
     private String codItem;
 
-    @Inclui
+    @Getter @Inclui
     private String descrItem;
 
-    @Inclui
+    @Getter @Inclui
     private String codBarra;
 
-    @Inclui
+    @Getter @Inclui
     private String codAndItem;
 
-    @Inclui
+    @Getter @Inclui
     private String unidInv;
 
-    @Inclui(zerosEsquerda = 2)
+    @Getter @Inclui(zerosEsquerda = 2)
     private Integer tipoItem;
 
-    @Inclui
+    @Getter @Inclui
     private String codNcm;
 
-    @Inclui
+    @Getter @Inclui
     private String exIpi;
 
-    @Inclui(zerosEsquerda = 2)
+    @Getter @Inclui(zerosEsquerda = 2)
     private Integer codGen;
 
-    @Inclui
+    @Getter @Inclui
     private Integer codLst;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal aliqIcms;
 
     public Reg0200(String codItem, String descrItem, String codBarra, String codAndItem, String unidInv, Integer tipoItem, String codNcm, String exIpi, Integer codGen, Integer codLst, BigDecimal aliqIcms) {

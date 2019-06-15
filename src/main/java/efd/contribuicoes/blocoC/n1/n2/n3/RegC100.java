@@ -7,95 +7,125 @@ import lombok.Setter;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-@Getter
-@Setter
 public class RegC100 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "C100";
 
-    @Inclui
+    @Getter @Inclui
     private String indOper;
 
-    @Inclui
+    @Getter @Inclui
     private String indEmit;
 
-    @Inclui
+    @Getter @Inclui
     private String codPart;
 
-    @Inclui
+    @Getter @Inclui
     private String codMod;
 
-    @Inclui(zerosEsquerda = 2)
+    @Getter @Inclui(zerosEsquerda = 2)
     private Integer codSit;
 
-    @Inclui
+    @Getter @Inclui
     private String ser;
 
-    @Inclui
+    @Getter @Inclui
     private Integer numDoc;
 
-    @Inclui
+    @Getter @Inclui
     private String chvNfe;
 
-    @Inclui
+    @Getter @Inclui
     private LocalDate dtDoc;
 
-    @Inclui
+    @Getter @Inclui
     private LocalDate dtES;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlDoc;
 
-    @Inclui
+    @Getter @Inclui
     private String indPgto;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlDesc;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlAbatNt;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlMerc;
 
-    @Inclui
+    @Getter @Inclui
     private String indFrt;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlFrt;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlSeg;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlOutDa;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlBcIcms;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlIcms;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlBcIcmsSt;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlIcmsSt;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlIpi;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlPis;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlCofins;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlPisSt;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlCofinsSt;
 
+    public RegC100(String indOper, String indEmit, String codPart, String codMod, Integer codSit, String ser, Integer numDoc, String chvNfe, LocalDate dtDoc, LocalDate dtES, BigDecimal vlDoc, String indPgto, BigDecimal vlDesc, BigDecimal vlAbatNt, BigDecimal vlMerc, String indFrt, BigDecimal vlFrt, BigDecimal vlSeg, BigDecimal vlOutDa, BigDecimal vlBcIcms, BigDecimal vlIcms, BigDecimal vlBcIcmsSt, BigDecimal vlIcmsSt, BigDecimal vlIpi, BigDecimal vlPis, BigDecimal vlCofins, BigDecimal vlPisSt, BigDecimal vlCofinsSt) {
+        this.indOper = indOper;
+        this.indEmit = indEmit;
+        this.codPart = codPart;
+        this.codMod = codMod;
+        this.codSit = codSit;
+        this.ser = ser;
+        this.numDoc = numDoc;
+        this.chvNfe = chvNfe;
+        this.dtDoc = dtDoc;
+        this.dtES = dtES;
+        this.vlDoc = vlDoc;
+        this.indPgto = indPgto;
+        this.vlDesc = vlDesc;
+        this.vlAbatNt = vlAbatNt;
+        this.vlMerc = vlMerc;
+        this.indFrt = indFrt;
+        this.vlFrt = vlFrt;
+        this.vlSeg = vlSeg;
+        this.vlOutDa = vlOutDa;
+        this.vlBcIcms = vlBcIcms;
+        this.vlIcms = vlIcms;
+        this.vlBcIcmsSt = vlBcIcmsSt;
+        this.vlIcmsSt = vlIcmsSt;
+        this.vlIpi = vlIpi;
+        this.vlPis = vlPis;
+        this.vlCofins = vlCofins;
+        this.vlPisSt = vlPisSt;
+        this.vlCofinsSt = vlCofinsSt;
+    }
+
+    public RegC100(){ }
 }

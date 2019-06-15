@@ -7,77 +7,101 @@ import lombok.Setter;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-@Getter
-@Setter
 public class RegD100 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "D100";
 
-    @Inclui
+    @Getter @Inclui
     private String indOper;
 
-    @Inclui
+    @Getter @Inclui
     private String indEmit;
 
-    @Inclui
+    @Getter @Inclui
     private String codPart;
 
-    @Inclui
+    @Getter @Inclui
     private String codMod;
 
-    @Inclui
+    @Getter @Inclui
     private Integer codSit;
 
-    @Inclui
+    @Getter @Inclui
     private String ser;
 
-    @Inclui
+    @Getter @Inclui
     private String sub;
 
-    @Inclui
+    @Getter @Inclui
     private Integer numDoc;
 
-    @Inclui
+    @Getter @Inclui
     private String chvCte;
 
-    @Inclui
+    @Getter @Inclui
     private LocalDate dtDoc;
 
-    @Inclui
+    @Getter @Inclui
     private LocalDate dtAP;
 
-    @Inclui
+    @Getter @Inclui
     private Integer tpCte;
 
-    @Inclui
+    @Getter @Inclui
     private String chvCteRef;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlDoc;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlDesc;
 
-    @Inclui
+    @Getter @Inclui
     private String indFrt;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlServ;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlBcIcms;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlIcms;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlNt;
 
-    @Inclui
+    @Getter @Inclui
     private String coInf;
 
-    @Inclui
+    @Getter @Inclui
     private String codCta;
 
+    public RegD100(String indOper, String indEmit, String codPart, String codMod, Integer codSit, String ser, String sub, Integer numDoc, String chvCte, LocalDate dtDoc, LocalDate dtAP, Integer tpCte, String chvCteRef, BigDecimal vlDoc, BigDecimal vlDesc, String indFrt, BigDecimal vlServ, BigDecimal vlBcIcms, BigDecimal vlIcms, BigDecimal vlNt, String coInf, String codCta) {
+        this.indOper = indOper;
+        this.indEmit = indEmit;
+        this.codPart = codPart;
+        this.codMod = codMod;
+        this.codSit = codSit;
+        this.ser = ser;
+        this.sub = sub;
+        this.numDoc = numDoc;
+        this.chvCte = chvCte;
+        this.dtDoc = dtDoc;
+        this.dtAP = dtAP;
+        this.tpCte = tpCte;
+        this.chvCteRef = chvCteRef;
+        this.vlDoc = vlDoc;
+        this.vlDesc = vlDesc;
+        this.indFrt = indFrt;
+        this.vlServ = vlServ;
+        this.vlBcIcms = vlBcIcms;
+        this.vlIcms = vlIcms;
+        this.vlNt = vlNt;
+        this.coInf = coInf;
+        this.codCta = codCta;
+    }
+
+    public RegD100(){}
 }

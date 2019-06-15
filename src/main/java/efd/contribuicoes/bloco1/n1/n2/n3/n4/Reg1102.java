@@ -6,20 +6,25 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@Getter
-@Setter
 public class Reg1102 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "1102";
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlCredPisTribMi;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlCredPisNtMi;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlCredPisExp;
 
+    public Reg1102(BigDecimal vlCredPisTribMi, BigDecimal vlCredPisNtMi, BigDecimal vlCredPisExp) {
+        this.vlCredPisTribMi = vlCredPisTribMi;
+        this.vlCredPisNtMi = vlCredPisNtMi;
+        this.vlCredPisExp = vlCredPisExp;
+    }
+
+    public Reg1102(){ }
 }

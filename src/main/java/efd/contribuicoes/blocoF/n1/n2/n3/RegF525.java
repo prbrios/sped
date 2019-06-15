@@ -6,41 +6,53 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@Getter
-@Setter
 public class RegF525 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "F525";
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlRec;
 
-    @Inclui
+    @Getter @Inclui
     private String indRec;
 
-    @Inclui
+    @Getter @Inclui
     private String cnpjCpf;
 
-    @Inclui
+    @Getter @Inclui
     private String numDoc;
 
-    @Inclui
+    @Getter @Inclui
     private String codItem;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlRecDet;
 
-    @Inclui(zerosEsquerda = 2)
+    @Getter @Inclui(zerosEsquerda = 2)
     private Integer cstPis;
 
-    @Inclui(zerosEsquerda = 2)
+    @Getter @Inclui(zerosEsquerda = 2)
     private Integer cstCofins;
 
-    @Inclui
+    @Getter @Inclui
     private String infoComp;
 
-    @Inclui
+    @Getter @Inclui
     private String codCta;
 
+    public RegF525(BigDecimal vlRec, String indRec, String cnpjCpf, String numDoc, String codItem, BigDecimal vlRecDet, Integer cstPis, Integer cstCofins, String infoComp, String codCta) {
+        this.vlRec = vlRec;
+        this.indRec = indRec;
+        this.cnpjCpf = cnpjCpf;
+        this.numDoc = numDoc;
+        this.codItem = codItem;
+        this.vlRecDet = vlRecDet;
+        this.cstPis = cstPis;
+        this.cstCofins = cstCofins;
+        this.infoComp = infoComp;
+        this.codCta = codCta;
+    }
+
+    public RegF525(){}
 }

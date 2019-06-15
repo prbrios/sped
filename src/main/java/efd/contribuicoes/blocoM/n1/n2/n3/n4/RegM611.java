@@ -6,26 +6,32 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@Getter
-@Setter
 public class RegM611 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "M611";
 
-    @Inclui(zerosEsquerda = 2)
+    @Getter @Inclui(zerosEsquerda = 2)
     private Integer indTipCoop;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlBcContAntExcCoop;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlExcCoopGer;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlExcEspCoop;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlBcCont;
 
+    public RegM611(Integer indTipCoop, BigDecimal vlBcContAntExcCoop, BigDecimal vlExcCoopGer, BigDecimal vlExcEspCoop, BigDecimal vlBcCont) {
+        this.indTipCoop = indTipCoop;
+        this.vlBcContAntExcCoop = vlBcContAntExcCoop;
+        this.vlExcCoopGer = vlExcCoopGer;
+        this.vlExcEspCoop = vlExcEspCoop;
+        this.vlBcCont = vlBcCont;
+    }
+    public RegM611(){}
 }

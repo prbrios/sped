@@ -7,35 +7,45 @@ import lombok.Setter;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-@Getter
-@Setter
 public class RegA120 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "A120";
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlTotServ;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlBcPis;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlPisImp;
 
-    @Inclui
+    @Getter @Inclui
     private LocalDate dtPagPis;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlBcCofins;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlCofinsImp;
 
-    @Inclui
+    @Getter @Inclui
     private LocalDate dtPagCofins;
 
-    @Inclui
+    @Getter @Inclui
     private String locExeServ;
 
+    public RegA120(BigDecimal vlTotServ, BigDecimal vlBcPis, BigDecimal vlPisImp, LocalDate dtPagPis, BigDecimal vlBcCofins, BigDecimal vlCofinsImp, LocalDate dtPagCofins, String locExeServ) {
+        this.vlTotServ = vlTotServ;
+        this.vlBcPis = vlBcPis;
+        this.vlPisImp = vlPisImp;
+        this.dtPagPis = dtPagPis;
+        this.vlBcCofins = vlBcCofins;
+        this.vlCofinsImp = vlCofinsImp;
+        this.dtPagCofins = dtPagCofins;
+        this.locExeServ = locExeServ;
+    }
+
+    public RegA120(){ }
 }

@@ -6,23 +6,21 @@ import lombok.Setter;
 
 import java.time.LocalDate;
 
-@Getter
-@Setter
 public class Reg0205 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "0205";
 
-    @Inclui
+    @Getter @Inclui
     private String descrAntItem;
 
-    @Inclui
+    @Getter @Inclui
     private LocalDate dtIni;
 
-    @Inclui
+    @Getter @Inclui
     private LocalDate dtFim;
 
-    @Inclui
+    @Getter @Inclui
     private String codAntItem;
 
     public Reg0205(String descrAntItem, LocalDate dtIni, LocalDate dtFim, String codAntItem) {

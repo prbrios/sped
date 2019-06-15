@@ -6,47 +6,61 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@Getter
-@Setter
 public class RegC810 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "C810";
 
-    @Inclui(zerosEsquerda = 4)
+    @Getter @Inclui(zerosEsquerda = 4)
     private Integer cfop;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlItem;
 
-    @Inclui
+    @Getter @Inclui
     private String codItem;
 
-    @Inclui(zerosEsquerda = 2)
+    @Getter @Inclui(zerosEsquerda = 2)
     private Integer cstPis;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlBcPis;
 
-    @Inclui(casasDecimais = 4)
+    @Getter @Inclui(casasDecimais = 4)
     private BigDecimal aliqPis;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlPis;
 
-    @Inclui(zerosEsquerda = 2)
+    @Getter @Inclui(zerosEsquerda = 2)
     private Integer cstCofins;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlBcCofins;
 
-    @Inclui(casasDecimais = 4)
+    @Getter @Inclui(casasDecimais = 4)
     private BigDecimal aliqCofins;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlCofins;
 
-    @Inclui
+    @Getter @Inclui
     private String codCta;
 
+    public RegC810(Integer cfop, BigDecimal vlItem, String codItem, Integer cstPis, BigDecimal vlBcPis, BigDecimal aliqPis, BigDecimal vlPis, Integer cstCofins, BigDecimal vlBcCofins, BigDecimal aliqCofins, BigDecimal vlCofins, String codCta) {
+        this.cfop = cfop;
+        this.vlItem = vlItem;
+        this.codItem = codItem;
+        this.cstPis = cstPis;
+        this.vlBcPis = vlBcPis;
+        this.aliqPis = aliqPis;
+        this.vlPis = vlPis;
+        this.cstCofins = cstCofins;
+        this.vlBcCofins = vlBcCofins;
+        this.aliqCofins = aliqCofins;
+        this.vlCofins = vlCofins;
+        this.codCta = codCta;
+    }
+
+    public RegC810(){ }
 }

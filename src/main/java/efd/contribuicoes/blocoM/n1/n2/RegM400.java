@@ -6,23 +6,29 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@Getter
-@Setter
 public class RegM400 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "M400";
 
-    @Inclui(zerosEsquerda = 2)
+    @Getter @Inclui(zerosEsquerda = 2)
     private Integer cstPis;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlTotRec;
 
-    @Inclui
+    @Getter @Inclui
     private String codCta;
 
-    @Inclui
+    @Getter @Inclui
     private String descCompl;
 
+    public RegM400(Integer cstPis, BigDecimal vlTotRec, String codCta, String descCompl) {
+        this.cstPis = cstPis;
+        this.vlTotRec = vlTotRec;
+        this.codCta = codCta;
+        this.descCompl = descCompl;
+    }
+
+    public RegM400(){}
 }

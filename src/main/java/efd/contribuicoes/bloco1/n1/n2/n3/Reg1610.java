@@ -7,41 +7,53 @@ import lombok.Setter;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-@Getter
-@Setter
 public class Reg1610 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "1610";
 
-    @Inclui(zerosEsquerda = 14)
+    @Getter @Inclui(zerosEsquerda = 14)
     private Long cnpj;
 
-    @Inclui(zerosEsquerda = 2)
+    @Getter @Inclui(zerosEsquerda = 2)
     private Integer cstCofins;
 
-    @Inclui
+    @Getter @Inclui
     private String codPart;
 
-    @Inclui
+    @Getter @Inclui
     private LocalDate dtOper;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlOper;
 
-    @Inclui(casasDecimais = 3)
+    @Getter @Inclui(casasDecimais = 3)
     private BigDecimal vlBcCofins;
 
-    @Inclui(casasDecimais = 4)
+    @Getter @Inclui(casasDecimais = 4)
     private BigDecimal aliqCofins;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlCofins;
 
-    @Inclui
+    @Getter @Inclui
     private String codCta;
 
-    @Inclui
+    @Getter @Inclui
     private String descCompl;
 
+    public Reg1610(Long cnpj, Integer cstCofins, String codPart, LocalDate dtOper, BigDecimal vlOper, BigDecimal vlBcCofins, BigDecimal aliqCofins, BigDecimal vlCofins, String codCta, String descCompl) {
+        this.cnpj = cnpj;
+        this.cstCofins = cstCofins;
+        this.codPart = codPart;
+        this.dtOper = dtOper;
+        this.vlOper = vlOper;
+        this.vlBcCofins = vlBcCofins;
+        this.aliqCofins = aliqCofins;
+        this.vlCofins = vlCofins;
+        this.codCta = codCta;
+        this.descCompl = descCompl;
+    }
+
+    public Reg1610(){ }
 }

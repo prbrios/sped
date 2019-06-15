@@ -7,65 +7,85 @@ import lombok.Setter;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-@Getter
-@Setter
 public class RegF100 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "F100";
 
-    @Inclui
+    @Getter @Inclui
     private String indOper;
 
-    @Inclui
+    @Getter @Inclui
     private String codPart;
 
-    @Inclui
+    @Getter @Inclui
     private String codItem;
 
-    @Inclui
+    @Getter @Inclui
     private LocalDate dtOper;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlOper;
 
-    @Inclui(zerosEsquerda = 2)
+    @Getter @Inclui(zerosEsquerda = 2)
     private Integer cstPis;
 
-    @Inclui(casasDecimais = 4)
+    @Getter @Inclui(casasDecimais = 4)
     private BigDecimal vlBcPis;
 
-    @Inclui(casasDecimais = 4)
+    @Getter @Inclui(casasDecimais = 4)
     private BigDecimal aliqPis;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlPis;
 
-    @Inclui(zerosEsquerda = 2)
+    @Getter @Inclui(zerosEsquerda = 2)
     private Integer cstCofins;
 
-    @Inclui(casasDecimais = 4)
+    @Getter @Inclui(casasDecimais = 4)
     private BigDecimal vlBcCofins;
 
-    @Inclui(casasDecimais = 4)
+    @Getter @Inclui(casasDecimais = 4)
     private BigDecimal aliqCofins;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlCofins;
 
-    @Inclui
+    @Getter @Inclui
     private String natBcCred;
 
-    @Inclui
+    @Getter @Inclui
     private String indOrigCred;
 
-    @Inclui
+    @Getter @Inclui
     private String codCta;
 
-    @Inclui
+    @Getter @Inclui
     private String codCcus;
 
-    @Inclui
+    @Getter @Inclui
     private String descDocOper;
 
+    public RegF100(String indOper, String codPart, String codItem, LocalDate dtOper, BigDecimal vlOper, Integer cstPis, BigDecimal vlBcPis, BigDecimal aliqPis, BigDecimal vlPis, Integer cstCofins, BigDecimal vlBcCofins, BigDecimal aliqCofins, BigDecimal vlCofins, String natBcCred, String indOrigCred, String codCta, String codCcus, String descDocOper) {
+        this.indOper = indOper;
+        this.codPart = codPart;
+        this.codItem = codItem;
+        this.dtOper = dtOper;
+        this.vlOper = vlOper;
+        this.cstPis = cstPis;
+        this.vlBcPis = vlBcPis;
+        this.aliqPis = aliqPis;
+        this.vlPis = vlPis;
+        this.cstCofins = cstCofins;
+        this.vlBcCofins = vlBcCofins;
+        this.aliqCofins = aliqCofins;
+        this.vlCofins = vlCofins;
+        this.natBcCred = natBcCred;
+        this.indOrigCred = indOrigCred;
+        this.codCta = codCta;
+        this.codCcus = codCcus;
+        this.descDocOper = descDocOper;
+    }
+
+    public RegF100(){}
 }

@@ -7,29 +7,37 @@ import lombok.Setter;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-@Getter
-@Setter
 public class RegM110 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "M110";
 
-    @Inclui
+    @Getter @Inclui
     private String indAj;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlAj;
 
-    @Inclui
+    @Getter @Inclui
     private String codAj;
 
-    @Inclui
+    @Getter @Inclui
     private String numDoc;
 
-    @Inclui
+    @Getter @Inclui
     private String descrAj;
 
-    @Inclui
+    @Getter @Inclui
     private LocalDate dtRef;
 
+    public RegM110(String indAj, BigDecimal vlAj, String codAj, String numDoc, String descrAj, LocalDate dtRef) {
+        this.indAj = indAj;
+        this.vlAj = vlAj;
+        this.codAj = codAj;
+        this.numDoc = numDoc;
+        this.descrAj = descrAj;
+        this.dtRef = dtRef;
+    }
+
+    public RegM110(){}
 }

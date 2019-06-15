@@ -6,23 +6,29 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@Getter
-@Setter
 public class RegM810 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "M810";
 
-    @Inclui
+    @Getter @Inclui
     private String natRec;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlRec;
 
-    @Inclui
+    @Getter @Inclui
     private String codCta;
 
-    @Inclui
+    @Getter @Inclui
     private String descCompl;
 
+    public RegM810(String natRec, BigDecimal vlRec, String codCta, String descCompl) {
+        this.natRec = natRec;
+        this.vlRec = vlRec;
+        this.codCta = codCta;
+        this.descCompl = descCompl;
+    }
+
+    public RegM810(){}
 }

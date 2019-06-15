@@ -4,47 +4,45 @@ import efd.anotacoes.Inclui;
 import lombok.Getter;
 import lombok.Setter;
 
-@Getter
-@Setter
 public class Reg0150 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "0150";
 
-    @Inclui
+    @Getter @Inclui
     private String codPart;
 
-    @Inclui
+    @Getter @Inclui
     private String nome;
 
-    @Inclui
+    @Getter @Inclui
     private Integer codPais;
 
-    @Inclui(zerosEsquerda = 14)
+    @Getter @Inclui(zerosEsquerda = 14)
     private Long cnpj;
 
-    @Inclui(zerosEsquerda = 11)
+    @Getter @Inclui(zerosEsquerda = 11)
     private Long cpf;
 
-    @Inclui
+    @Getter @Inclui
     private String ie;
 
-    @Inclui(zerosEsquerda = 7)
+    @Getter @Inclui(zerosEsquerda = 7)
     private Integer codMun;
 
-    @Inclui
+    @Getter @Inclui
     private String suframa;
 
-    @Inclui
+    @Getter @Inclui
     private String end;
 
-    @Inclui
+    @Getter @Inclui
     private String num;
 
-    @Inclui
+    @Getter @Inclui
     private String compl;
 
-    @Inclui
+    @Getter @Inclui
     private String bairro;
 
     public Reg0150(String codPart, String nome, Integer codPais, Long cnpj, Long cpf, String ie, Integer codMun, String suframa, String end, String num, String compl, String bairro) {

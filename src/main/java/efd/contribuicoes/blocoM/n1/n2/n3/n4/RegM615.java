@@ -7,38 +7,49 @@ import lombok.Setter;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-@Getter
-@Setter
 public class RegM615 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "M615";
 
-    @Inclui
+    @Getter @Inclui
     private String indAjBc;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlAjBc;
 
-    @Inclui
+    @Getter @Inclui
     private String codAjBc;
 
-    @Inclui
+    @Getter @Inclui
     private String numDoc;
 
-    @Inclui
+    @Getter @Inclui
     private String descrAjBc;
 
-    @Inclui
+    @Getter @Inclui
     private LocalDate dtRef;
 
-    @Inclui
+    @Getter @Inclui
     private String codCta;
 
-    @Inclui(zerosEsquerda = 14)
+    @Getter @Inclui(zerosEsquerda = 14)
     private Long cnpj;
 
-    @Inclui
+    @Getter @Inclui
     private String infoCompl;
 
+    public RegM615(String indAjBc, BigDecimal vlAjBc, String codAjBc, String numDoc, String descrAjBc, LocalDate dtRef, String codCta, Long cnpj, String infoCompl) {
+        this.indAjBc = indAjBc;
+        this.vlAjBc = vlAjBc;
+        this.codAjBc = codAjBc;
+        this.numDoc = numDoc;
+        this.descrAjBc = descrAjBc;
+        this.dtRef = dtRef;
+        this.codCta = codCta;
+        this.cnpj = cnpj;
+        this.infoCompl = infoCompl;
+    }
+
+    public RegM615(){}
 }

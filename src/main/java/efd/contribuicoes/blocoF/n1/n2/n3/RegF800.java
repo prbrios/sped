@@ -7,35 +7,45 @@ import lombok.Setter;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-@Getter
-@Setter
 public class RegF800 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "F800";
 
-    @Inclui(zerosEsquerda = 2)
+    @Getter @Inclui(zerosEsquerda = 2)
     private Integer indNatEven;
 
-    @Inclui
+    @Getter @Inclui
     private LocalDate dtEven;
 
-    @Inclui(zerosEsquerda = 14)
+    @Getter @Inclui(zerosEsquerda = 14)
     private Long cnpjSuced;
 
-    @Inclui(formatoData = "MMyyyy")
+    @Getter @Inclui(formatoData = "MMyyyy")
     private LocalDate paContCred;
 
-    @Inclui(zerosEsquerda = 3)
+    @Getter @Inclui(zerosEsquerda = 3)
     private Integer codCred;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlCredPis;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlCredCofins;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal perCredCis;
 
+    public RegF800(Integer indNatEven, LocalDate dtEven, Long cnpjSuced, LocalDate paContCred, Integer codCred, BigDecimal vlCredPis, BigDecimal vlCredCofins, BigDecimal perCredCis) {
+        this.indNatEven = indNatEven;
+        this.dtEven = dtEven;
+        this.cnpjSuced = cnpjSuced;
+        this.paContCred = paContCred;
+        this.codCred = codCred;
+        this.vlCredPis = vlCredPis;
+        this.vlCredCofins = vlCredCofins;
+        this.perCredCis = perCredCis;
+    }
+
+    public RegF800(){}
 }

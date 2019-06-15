@@ -6,35 +6,45 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@Getter
-@Setter
 public class RegM625 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "M625";
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal detValorAj;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal cstCofins;
 
-    @Inclui(casasDecimais = 3)
+    @Getter @Inclui(casasDecimais = 3)
     private BigDecimal detBcCred;
 
-    @Inclui(casasDecimais = 4)
+    @Getter @Inclui(casasDecimais = 4)
     private BigDecimal detAliq;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal dtOperAj;
 
-    @Inclui
+    @Getter @Inclui
     private String descAj;
 
-    @Inclui
+    @Getter @Inclui
     private String codCta;
 
-    @Inclui
+    @Getter @Inclui
     private String infoCompl;
 
+    public RegM625(BigDecimal detValorAj, BigDecimal cstCofins, BigDecimal detBcCred, BigDecimal detAliq, BigDecimal dtOperAj, String descAj, String codCta, String infoCompl) {
+        this.detValorAj = detValorAj;
+        this.cstCofins = cstCofins;
+        this.detBcCred = detBcCred;
+        this.detAliq = detAliq;
+        this.dtOperAj = dtOperAj;
+        this.descAj = descAj;
+        this.codCta = codCta;
+        this.infoCompl = infoCompl;
+    }
+
+    public RegM625(){}
 }

@@ -7,32 +7,41 @@ import lombok.Setter;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-@Getter
-@Setter
 public class RegM300 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "M300";
 
-    @Inclui
+    @Getter @Inclui
     private String codCont;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlContAputDifer;
 
-    @Inclui
+    @Getter @Inclui
     private String natCredDesc;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlCredDescDifer;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlContDiferAnt;
 
-    @Inclui(formatoData = "MMyyyy")
+    @Getter @Inclui(formatoData = "MMyyyy")
     private LocalDate perApur;
 
-    @Inclui
+    @Getter @Inclui
     private LocalDate dtReceb;
 
+    public RegM300(String codCont, BigDecimal vlContAputDifer, String natCredDesc, BigDecimal vlCredDescDifer, BigDecimal vlContDiferAnt, LocalDate perApur, LocalDate dtReceb) {
+        this.codCont = codCont;
+        this.vlContAputDifer = vlContAputDifer;
+        this.natCredDesc = natCredDesc;
+        this.vlCredDescDifer = vlCredDescDifer;
+        this.vlContDiferAnt = vlContDiferAnt;
+        this.perApur = perApur;
+        this.dtReceb = dtReceb;
+    }
+
+    public RegM300(){}
 }

@@ -7,41 +7,53 @@ import lombok.Setter;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-@Getter
-@Setter
 public class RegF600 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "F600";
 
-    @Inclui(zerosEsquerda = 2)
+    @Getter @Inclui(zerosEsquerda = 2)
     private Integer indNatRet;
 
-    @Inclui
+    @Getter @Inclui
     private LocalDate dtRet;
 
-    @Inclui(casasDecimais = 4)
+    @Getter @Inclui(casasDecimais = 4)
     private BigDecimal vlBcRet;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlRet;
 
-    @Inclui
+    @Getter @Inclui
     private String codRec;
 
-    @Inclui
+    @Getter @Inclui
     private Integer indNatRec;
 
-    @Inclui(zerosEsquerda = 14)
+    @Getter @Inclui(zerosEsquerda = 14)
     private Long cnpj;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlRetPis;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlRetCofins;
 
-    @Inclui
+    @Getter @Inclui
     private Integer indDec;
 
+    public RegF600(Integer indNatRet, LocalDate dtRet, BigDecimal vlBcRet, BigDecimal vlRet, String codRec, Integer indNatRec, Long cnpj, BigDecimal vlRetPis, BigDecimal vlRetCofins, Integer indDec) {
+        this.indNatRet = indNatRet;
+        this.dtRet = dtRet;
+        this.vlBcRet = vlBcRet;
+        this.vlRet = vlRet;
+        this.codRec = codRec;
+        this.indNatRec = indNatRec;
+        this.cnpj = cnpj;
+        this.vlRetPis = vlRetPis;
+        this.vlRetCofins = vlRetCofins;
+        this.indDec = indDec;
+    }
+
+    public RegF600(){}
 }

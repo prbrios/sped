@@ -6,26 +6,24 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@Getter
-@Setter
 public class Reg0145 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "0145";
 
-    @Inclui
+    @Getter @Inclui
     private Integer codIncTrib;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlRecTot;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlRecAtiv;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlRecDemaisAtiv;
 
-    @Inclui
+    @Getter @Inclui
     private String infoCompl;
 
     public Reg0145(Integer codIncTrib, BigDecimal vlRecTot, BigDecimal vlRecAtiv, BigDecimal vlRecDemaisAtiv, String infoCompl) {

@@ -7,44 +7,57 @@ import lombok.Setter;
 import javax.xml.bind.annotation.XmlInlineBinaryData;
 import java.math.BigDecimal;
 
-@Getter
-@Setter
 public class RegI100 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "I100";
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlRec;
 
-    @Inclui(zerosEsquerda = 2)
+    @Getter @Inclui(zerosEsquerda = 2)
     private Integer cstPisCofins;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlTotDedGer;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlTotDedEsp;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlBcPis;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal aliqPis;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlPis;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlBcCofins;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal aliqCofins;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlCofins;
 
-    @Inclui
+    @Getter @Inclui
     private String infoCompl;
 
+    public RegI100(BigDecimal vlRec, Integer cstPisCofins, BigDecimal vlTotDedGer, BigDecimal vlTotDedEsp, BigDecimal vlBcPis, BigDecimal aliqPis, BigDecimal vlPis, BigDecimal vlBcCofins, BigDecimal aliqCofins, BigDecimal vlCofins, String infoCompl) {
+        this.vlRec = vlRec;
+        this.cstPisCofins = cstPisCofins;
+        this.vlTotDedGer = vlTotDedGer;
+        this.vlTotDedEsp = vlTotDedEsp;
+        this.vlBcPis = vlBcPis;
+        this.aliqPis = aliqPis;
+        this.vlPis = vlPis;
+        this.vlBcCofins = vlBcCofins;
+        this.aliqCofins = aliqCofins;
+        this.vlCofins = vlCofins;
+        this.infoCompl = infoCompl;
+    }
+
+    public RegI100(){}
 }

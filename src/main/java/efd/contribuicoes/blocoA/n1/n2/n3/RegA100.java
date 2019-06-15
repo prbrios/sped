@@ -7,71 +7,93 @@ import lombok.Setter;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-@Getter
-@Setter
 public class RegA100 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "A100";
 
-    @Inclui
+    @Getter @Inclui
     private String indOper;
 
-    @Inclui
+    @Getter @Inclui
     private String indEmit;
 
-    @Inclui
+    @Getter @Inclui
     private String codPart;
 
-    @Inclui(zerosEsquerda = 2)
+    @Getter @Inclui(zerosEsquerda = 2)
     private Integer codSit;
 
-    @Inclui
+    @Getter @Inclui
     private String ser;
 
-    @Inclui
+    @Getter @Inclui
     private String sub;
 
-    @Inclui
+    @Getter @Inclui
     private String numDoc;
 
-    @Inclui
+    @Getter @Inclui
     private String chvNfse;
 
-    @Inclui
+    @Getter @Inclui
     private LocalDate dtDoc;
 
-    @Inclui
+    @Getter @Inclui
     private LocalDate dtExeServ;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlDoc;
 
-    @Inclui
+    @Getter @Inclui
     private String indPgto;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlDesc;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlbcPis;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlPis;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlBcCofins;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlCofins;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlPisRet;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlCofinsRet;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlIss;
 
+    public RegA100(String indOper, String indEmit, String codPart, Integer codSit, String ser, String sub, String numDoc, String chvNfse, LocalDate dtDoc, LocalDate dtExeServ, BigDecimal vlDoc, String indPgto, BigDecimal vlDesc, BigDecimal vlbcPis, BigDecimal vlPis, BigDecimal vlBcCofins, BigDecimal vlCofins, BigDecimal vlPisRet, BigDecimal vlCofinsRet, BigDecimal vlIss) {
+        this.indOper = indOper;
+        this.indEmit = indEmit;
+        this.codPart = codPart;
+        this.codSit = codSit;
+        this.ser = ser;
+        this.sub = sub;
+        this.numDoc = numDoc;
+        this.chvNfse = chvNfse;
+        this.dtDoc = dtDoc;
+        this.dtExeServ = dtExeServ;
+        this.vlDoc = vlDoc;
+        this.indPgto = indPgto;
+        this.vlDesc = vlDesc;
+        this.vlbcPis = vlbcPis;
+        this.vlPis = vlPis;
+        this.vlBcCofins = vlBcCofins;
+        this.vlCofins = vlCofins;
+        this.vlPisRet = vlPisRet;
+        this.vlCofinsRet = vlCofinsRet;
+        this.vlIss = vlIss;
+    }
+
+    public RegA100(){ }
 }

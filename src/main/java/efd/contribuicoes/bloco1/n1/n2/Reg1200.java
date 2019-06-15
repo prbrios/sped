@@ -7,41 +7,53 @@ import lombok.Setter;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-@Getter
-@Setter
 public class Reg1200 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "1200";
 
-    @Inclui(formatoData = "MMyyyy")
+    @Getter @Inclui(formatoData = "MMyyyy")
     private LocalDate perApurAnt;
 
-    @Inclui
+    @Getter @Inclui
     private String natContRec;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlContApur;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlCredPisDesc;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlContDev;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlOutDed;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlContExt;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlMul;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlJur;
 
-    @Inclui
+    @Getter @Inclui
     private LocalDate dtRecol;
 
+    public Reg1200(LocalDate perApurAnt, String natContRec, BigDecimal vlContApur, BigDecimal vlCredPisDesc, BigDecimal vlContDev, BigDecimal vlOutDed, BigDecimal vlContExt, BigDecimal vlMul, BigDecimal vlJur, LocalDate dtRecol) {
+        this.perApurAnt = perApurAnt;
+        this.natContRec = natContRec;
+        this.vlContApur = vlContApur;
+        this.vlCredPisDesc = vlCredPisDesc;
+        this.vlContDev = vlContDev;
+        this.vlOutDed = vlOutDed;
+        this.vlContExt = vlContExt;
+        this.vlMul = vlMul;
+        this.vlJur = vlJur;
+        this.dtRecol = dtRecol;
+    }
+
+    public Reg1200(){ }
 }

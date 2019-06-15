@@ -7,71 +7,93 @@ import lombok.Setter;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-@Getter
-@Setter
 public class RegF130 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "F130";
 
-    @Inclui
+    @Getter @Inclui
     private String natBcCred;
 
-    @Inclui(zerosEsquerda = 2)
+    @Getter @Inclui(zerosEsquerda = 2)
     private Integer identBemImob;
 
-    @Inclui
+    @Getter @Inclui
     private String indOrigCred;
 
-    @Inclui
+    @Getter @Inclui
     private Integer indUtilBemImob;
 
-    @Inclui(formatoData = "MMyyyy")
+    @Getter @Inclui(formatoData = "MMyyyy")
     private LocalDate mesOperAquis;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlOperAquis;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal parcOperNaoBcCred;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlBcCred;
 
-    @Inclui
+    @Getter @Inclui
     private Integer indNrParc;
 
-    @Inclui(zerosEsquerda = 2)
+    @Getter @Inclui(zerosEsquerda = 2)
     private Integer cstPis;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlBcPis;
 
-    @Inclui(casasDecimais = 4)
+    @Getter @Inclui(casasDecimais = 4)
     private BigDecimal aliqPis;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlPis;
 
-    @Inclui(zerosEsquerda = 2)
+    @Getter @Inclui(zerosEsquerda = 2)
     private Integer cstCofins;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlBcCofins;
 
-    @Inclui(casasDecimais = 4)
+    @Getter @Inclui(casasDecimais = 4)
     private BigDecimal aliqCofins;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlCofins;
 
-    @Inclui
+    @Getter @Inclui
     private String codCta;
 
-    @Inclui
+    @Getter @Inclui
     private String codCcus;
 
-    @Inclui
+    @Getter @Inclui
     private String descBemImob;
 
+    public RegF130(String natBcCred, Integer identBemImob, String indOrigCred, Integer indUtilBemImob, LocalDate mesOperAquis, BigDecimal vlOperAquis, BigDecimal parcOperNaoBcCred, BigDecimal vlBcCred, Integer indNrParc, Integer cstPis, BigDecimal vlBcPis, BigDecimal aliqPis, BigDecimal vlPis, Integer cstCofins, BigDecimal vlBcCofins, BigDecimal aliqCofins, BigDecimal vlCofins, String codCta, String codCcus, String descBemImob) {
+        this.natBcCred = natBcCred;
+        this.identBemImob = identBemImob;
+        this.indOrigCred = indOrigCred;
+        this.indUtilBemImob = indUtilBemImob;
+        this.mesOperAquis = mesOperAquis;
+        this.vlOperAquis = vlOperAquis;
+        this.parcOperNaoBcCred = parcOperNaoBcCred;
+        this.vlBcCred = vlBcCred;
+        this.indNrParc = indNrParc;
+        this.cstPis = cstPis;
+        this.vlBcPis = vlBcPis;
+        this.aliqPis = aliqPis;
+        this.vlPis = vlPis;
+        this.cstCofins = cstCofins;
+        this.vlBcCofins = vlBcCofins;
+        this.aliqCofins = aliqCofins;
+        this.vlCofins = vlCofins;
+        this.codCta = codCta;
+        this.codCcus = codCcus;
+        this.descBemImob = descBemImob;
+    }
+
+    public RegF130(){ }
 }

@@ -6,35 +6,33 @@ import lombok.Setter;
 
 import java.time.LocalDate;
 
-@Getter
-@Setter
 public class Reg0500 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "0500";
 
-    @Inclui
+    @Getter @Inclui
     private LocalDate dtAlt;
 
-    @Inclui
+    @Getter @Inclui
     private String codNatCc;
 
-    @Inclui
+    @Getter @Inclui
     private String indCta;
 
-    @Inclui
+    @Getter @Inclui
     private Integer nivel;
 
-    @Inclui
+    @Getter @Inclui
     private String codCta;
 
-    @Inclui
+    @Getter @Inclui
     private String nomeCta;
 
-    @Inclui
+    @Getter @Inclui
     private String codCtaRef;
 
-    @Inclui(zerosEsquerda = 14)
+    @Getter @Inclui(zerosEsquerda = 14)
     private Long cnpjEst;
 
     public Reg0500(LocalDate dtAlt, String codNatCc, String indCta, Integer nivel, String codCta, String nomeCta, String codCtaRef, Long cnpjEst) {

@@ -7,29 +7,37 @@ import lombok.Setter;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-@Getter
-@Setter
 public class RegC405 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "C405";
 
-    @Inclui
+    @Getter @Inclui
     private LocalDate dtDoc;
 
-    @Inclui
+    @Getter @Inclui
     private Integer cro;
 
-    @Inclui
+    @Getter @Inclui
     private Integer crz;
 
-    @Inclui
+    @Getter @Inclui
     private Integer numCooFin;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal gtFin;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlBrt;
 
+    public RegC405(LocalDate dtDoc, Integer cro, Integer crz, Integer numCooFin, BigDecimal gtFin, BigDecimal vlBrt) {
+        this.dtDoc = dtDoc;
+        this.cro = cro;
+        this.crz = crz;
+        this.numCooFin = numCooFin;
+        this.gtFin = gtFin;
+        this.vlBrt = vlBrt;
+    }
+
+    public RegC405(){}
 }

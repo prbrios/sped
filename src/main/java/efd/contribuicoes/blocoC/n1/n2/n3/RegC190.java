@@ -7,32 +7,41 @@ import lombok.Setter;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-@Getter
-@Setter
 public class RegC190 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "C190";
 
-    @Inclui
+    @Getter @Inclui
     private String codMod;
 
-    @Inclui
+    @Getter @Inclui
     private LocalDate dtRefIni;
 
-    @Inclui
+    @Getter @Inclui
     private LocalDate dtRefFin;
 
-    @Inclui
+    @Getter @Inclui
     private String codItem;
 
-    @Inclui
+    @Getter @Inclui
     private String codNcm;
 
-    @Inclui
+    @Getter @Inclui
     private String exIpi;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlTotItem;
 
+    public RegC190(String codMod, LocalDate dtRefIni, LocalDate dtRefFin, String codItem, String codNcm, String exIpi, BigDecimal vlTotItem) {
+        this.codMod = codMod;
+        this.dtRefIni = dtRefIni;
+        this.dtRefFin = dtRefFin;
+        this.codItem = codItem;
+        this.codNcm = codNcm;
+        this.exIpi = exIpi;
+        this.vlTotItem = vlTotItem;
+    }
+
+    public RegC190(){ }
 }

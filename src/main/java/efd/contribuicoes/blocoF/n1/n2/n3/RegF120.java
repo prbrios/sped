@@ -6,62 +6,81 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@Getter
-@Setter
 public class RegF120 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "F120";
 
-    @Inclui
+    @Getter @Inclui
     private String natBcCred;
 
-    @Inclui(zerosEsquerda = 2)
+    @Getter @Inclui(zerosEsquerda = 2)
     private Integer identBemMob;
 
-    @Inclui
+    @Getter @Inclui
     private String indOrigCred;
 
-    @Inclui
+    @Getter @Inclui
     private Integer indUtilBemImob;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlOperDep;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal parcOperNaoBcCred;
 
-    @Inclui(zerosEsquerda = 2)
+    @Getter @Inclui(zerosEsquerda = 2)
     private Integer cstPis;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlBcPis;
 
-    @Inclui(casasDecimais = 4)
+    @Getter @Inclui(casasDecimais = 4)
     private BigDecimal aliqPis;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlPis;
 
-    @Inclui(zerosEsquerda = 2)
+    @Getter @Inclui(zerosEsquerda = 2)
     private Integer cstCofins;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlBcCofins;
 
-    @Inclui(casasDecimais = 4)
+    @Getter @Inclui(casasDecimais = 4)
     private BigDecimal aliqCofins;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlCofins;
 
-    @Inclui
+    @Getter @Inclui
     private String codCta;
 
-    @Inclui
+    @Getter @Inclui
     private String codCcus;
 
-    @Inclui
+    @Getter @Inclui
     private String descBemImob;
 
+    public RegF120(String natBcCred, Integer identBemMob, String indOrigCred, Integer indUtilBemImob, BigDecimal vlOperDep, BigDecimal parcOperNaoBcCred, Integer cstPis, BigDecimal vlBcPis, BigDecimal aliqPis, BigDecimal vlPis, Integer cstCofins, BigDecimal vlBcCofins, BigDecimal aliqCofins, BigDecimal vlCofins, String codCta, String codCcus, String descBemImob) {
+        this.natBcCred = natBcCred;
+        this.identBemMob = identBemMob;
+        this.indOrigCred = indOrigCred;
+        this.indUtilBemImob = indUtilBemImob;
+        this.vlOperDep = vlOperDep;
+        this.parcOperNaoBcCred = parcOperNaoBcCred;
+        this.cstPis = cstPis;
+        this.vlBcPis = vlBcPis;
+        this.aliqPis = aliqPis;
+        this.vlPis = vlPis;
+        this.cstCofins = cstCofins;
+        this.vlBcCofins = vlBcCofins;
+        this.aliqCofins = aliqCofins;
+        this.vlCofins = vlCofins;
+        this.codCta = codCta;
+        this.codCcus = codCcus;
+        this.descBemImob = descBemImob;
+    }
+
+    public RegF120(){}
 }

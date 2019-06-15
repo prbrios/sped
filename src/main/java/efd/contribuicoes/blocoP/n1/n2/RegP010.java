@@ -4,14 +4,17 @@ import efd.anotacoes.Inclui;
 import lombok.Getter;
 import lombok.Setter;
 
-@Getter
-@Setter
 public class RegP010 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "P010";
 
-    @Inclui
+    @Getter @Inclui
     private Long cnpj;
 
+    public RegP010(Long cnpj) {
+        this.cnpj = cnpj;
+    }
+
+    public RegP010(){}
 }

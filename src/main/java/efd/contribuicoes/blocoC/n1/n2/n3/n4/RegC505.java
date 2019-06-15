@@ -6,32 +6,41 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@Getter
-@Setter
 public class RegC505 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "C505";
 
-    @Inclui
+    @Getter @Inclui
     private Integer cstCofins;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlItem;
 
-    @Inclui
+    @Getter @Inclui
     private String natBcCred;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlBcCofins;
 
-    @Inclui(casasDecimais = 4)
+    @Getter @Inclui(casasDecimais = 4)
     private BigDecimal aliqCofins;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlCofins;
 
-    @Inclui
+    @Getter @Inclui
     private String codCta;
 
+    public RegC505(Integer cstCofins, BigDecimal vlItem, String natBcCred, BigDecimal vlBcCofins, BigDecimal aliqCofins, BigDecimal vlCofins, String codCta) {
+        this.cstCofins = cstCofins;
+        this.vlItem = vlItem;
+        this.natBcCred = natBcCred;
+        this.vlBcCofins = vlBcCofins;
+        this.aliqCofins = aliqCofins;
+        this.vlCofins = vlCofins;
+        this.codCta = codCta;
+    }
+
+    public RegC505(){ }
 }

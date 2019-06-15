@@ -7,50 +7,65 @@ import lombok.Setter;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-@Getter
-@Setter
 public class RegC500 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "C500";
 
-    @Inclui
+    @Getter @Inclui
     String codPart;
 
-    @Inclui
+    @Getter @Inclui
     String codMod;
 
-    @Inclui(zerosEsquerda = 2)
+    @Getter @Inclui(zerosEsquerda = 2)
     Integer codSit;
 
-    @Inclui
+    @Getter @Inclui
     String ser;
 
-    @Inclui
+    @Getter @Inclui
     Integer sub;
 
-    @Inclui
+    @Getter @Inclui
     Integer numDoc;
 
-    @Inclui
+    @Getter @Inclui
     LocalDate dtDoc;
 
-    @Inclui
+    @Getter @Inclui
     LocalDate dtEnt;
 
-    @Inclui
+    @Getter @Inclui
     BigDecimal vlDoc;
 
-    @Inclui
+    @Getter @Inclui
     BigDecimal vlIcms;
 
-    @Inclui
+    @Getter @Inclui
     String codInf;
 
-    @Inclui
+    @Getter @Inclui
     BigDecimal vlPis;
 
-    @Inclui
+    @Getter @Inclui
     BigDecimal vlCofins;
 
+    public RegC500(String codPart, String codMod, Integer codSit, String ser, Integer sub, Integer numDoc, LocalDate dtDoc, LocalDate dtEnt, BigDecimal vlDoc, BigDecimal vlIcms, String codInf, BigDecimal vlPis, BigDecimal vlCofins) {
+        this.codPart = codPart;
+        this.codMod = codMod;
+        this.codSit = codSit;
+        this.ser = ser;
+        this.sub = sub;
+        this.numDoc = numDoc;
+        this.dtDoc = dtDoc;
+        this.dtEnt = dtEnt;
+        this.vlDoc = vlDoc;
+        this.vlIcms = vlIcms;
+        this.codInf = codInf;
+        this.vlPis = vlPis;
+        this.vlCofins = vlCofins;
+    }
+
+    public RegC500(){ }
 }

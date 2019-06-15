@@ -6,26 +6,33 @@ import lombok.Setter;
 
 import java.time.LocalDate;
 
-@Getter
-@Setter
 public class RegC860 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "C860";
 
-    @Inclui
+    @Getter @Inclui
     private String codMod;
 
-    @Inclui
+    @Getter @Inclui
     private Integer nrSat;
 
-    @Inclui
+    @Getter @Inclui
     private LocalDate dtDoc;
 
-    @Inclui
+    @Getter @Inclui
     private Integer docIni;
 
-    @Inclui
+    @Getter @Inclui
     private Integer docFim;
 
+    public RegC860(String codMod, Integer nrSat, LocalDate dtDoc, Integer docIni, Integer docFim) {
+        this.codMod = codMod;
+        this.nrSat = nrSat;
+        this.dtDoc = dtDoc;
+        this.docIni = docIni;
+        this.docFim = docFim;
+    }
+
+    public RegC860(){}
 }

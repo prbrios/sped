@@ -7,76 +7,101 @@ import lombok.Setter;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-@Getter
-@Setter
 public class RegD350 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "D350";
 
-    @Inclui
+    @Getter @Inclui
     private String codMod;
 
-    @Inclui
+    @Getter @Inclui
     private String ecfMod;
 
-    @Inclui
+    @Getter @Inclui
     private String ecfFab;
 
-    @Inclui
+    @Getter @Inclui
     private LocalDate dtDoc;
 
-    @Inclui
+    @Getter @Inclui
     private Integer cro;
 
-    @Inclui
+    @Getter @Inclui
     private Integer crz;
 
-    @Inclui
+    @Getter @Inclui
     private Integer numCooFin;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal gtFin;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlBrt;
 
-    @Inclui(zerosEsquerda = 2)
+    @Getter @Inclui(zerosEsquerda = 2)
     private Integer cstPis;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlBcPis;
 
-    @Inclui(casasDecimais = 4)
+    @Getter @Inclui(casasDecimais = 4)
     private BigDecimal aliqPis;
 
-    @Inclui(casasDecimais = 3)
+    @Getter @Inclui(casasDecimais = 3)
     private BigDecimal quantBcPis;
 
-    @Inclui(casasDecimais = 4)
+    @Getter @Inclui(casasDecimais = 4)
     private BigDecimal aliqPisQuant;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlPis;
 
-    @Inclui(zerosEsquerda = 2)
+    @Getter @Inclui(zerosEsquerda = 2)
     private Integer cstCofins;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlBcCofins;
 
-    @Inclui(casasDecimais = 4)
+    @Getter @Inclui(casasDecimais = 4)
     private BigDecimal aliqCofins;
 
-    @Inclui(casasDecimais = 3)
+    @Getter @Inclui(casasDecimais = 3)
     private BigDecimal quantBcCofins;
 
-    @Inclui(casasDecimais = 4)
+    @Getter @Inclui(casasDecimais = 4)
     private BigDecimal aliqCofinsQuant;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlCofins;
 
-    @Inclui
+    @Getter @Inclui
     private String codCta;
+
+    public RegD350(String codMod, String ecfMod, String ecfFab, LocalDate dtDoc, Integer cro, Integer crz, Integer numCooFin, BigDecimal gtFin, BigDecimal vlBrt, Integer cstPis, BigDecimal vlBcPis, BigDecimal aliqPis, BigDecimal quantBcPis, BigDecimal aliqPisQuant, BigDecimal vlPis, Integer cstCofins, BigDecimal vlBcCofins, BigDecimal aliqCofins, BigDecimal quantBcCofins, BigDecimal aliqCofinsQuant, BigDecimal vlCofins, String codCta) {
+        this.codMod = codMod;
+        this.ecfMod = ecfMod;
+        this.ecfFab = ecfFab;
+        this.dtDoc = dtDoc;
+        this.cro = cro;
+        this.crz = crz;
+        this.numCooFin = numCooFin;
+        this.gtFin = gtFin;
+        this.vlBrt = vlBrt;
+        this.cstPis = cstPis;
+        this.vlBcPis = vlBcPis;
+        this.aliqPis = aliqPis;
+        this.quantBcPis = quantBcPis;
+        this.aliqPisQuant = aliqPisQuant;
+        this.vlPis = vlPis;
+        this.cstCofins = cstCofins;
+        this.vlBcCofins = vlBcCofins;
+        this.aliqCofins = aliqCofins;
+        this.quantBcCofins = quantBcCofins;
+        this.aliqCofinsQuant = aliqCofinsQuant;
+        this.vlCofins = vlCofins;
+        this.codCta = codCta;
+    }
+
+    public RegD350(){ }
 }

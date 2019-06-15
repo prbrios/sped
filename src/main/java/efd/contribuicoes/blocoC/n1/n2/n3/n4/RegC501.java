@@ -6,32 +6,41 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@Getter
-@Setter
 public class RegC501 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "C501";
 
-    @Inclui
+    @Getter @Inclui
     private Integer cstPis;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlItem;
 
-    @Inclui
+    @Getter @Inclui
     private String natBcCred;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlBcPis;
 
-    @Inclui(casasDecimais = 4)
+    @Getter @Inclui(casasDecimais = 4)
     private BigDecimal aliqPis;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlPis;
 
-    @Inclui
+    @Getter @Inclui
     private String codCta;
 
+    public RegC501(Integer cstPis, BigDecimal vlItem, String natBcCred, BigDecimal vlBcPis, BigDecimal aliqPis, BigDecimal vlPis, String codCta) {
+        this.cstPis = cstPis;
+        this.vlItem = vlItem;
+        this.natBcCred = natBcCred;
+        this.vlBcPis = vlBcPis;
+        this.aliqPis = aliqPis;
+        this.vlPis = vlPis;
+        this.codCta = codCta;
+    }
+
+    public RegC501(){}
 }

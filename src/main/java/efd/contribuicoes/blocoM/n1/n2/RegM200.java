@@ -7,47 +7,61 @@ import lombok.Setter;
 import javax.xml.bind.annotation.XmlInlineBinaryData;
 import java.math.BigDecimal;
 
-@Getter
-@Setter
 public class RegM200 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "M200";
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlTotContNcPer;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlTotCredDesc;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlTotCredDescAnt;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlTotContNcDev;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlRetNc;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlOutDedNc;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlContNcRec;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlTotContCumPer;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlRetCum;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlOutDedCum;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlContCumRec;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlTotContRec;
 
+    public RegM200(BigDecimal vlTotContNcPer, BigDecimal vlTotCredDesc, BigDecimal vlTotCredDescAnt, BigDecimal vlTotContNcDev, BigDecimal vlRetNc, BigDecimal vlOutDedNc, BigDecimal vlContNcRec, BigDecimal vlTotContCumPer, BigDecimal vlRetCum, BigDecimal vlOutDedCum, BigDecimal vlContCumRec, BigDecimal vlTotContRec) {
+        this.vlTotContNcPer = vlTotContNcPer;
+        this.vlTotCredDesc = vlTotCredDesc;
+        this.vlTotCredDescAnt = vlTotCredDescAnt;
+        this.vlTotContNcDev = vlTotContNcDev;
+        this.vlRetNc = vlRetNc;
+        this.vlOutDedNc = vlOutDedNc;
+        this.vlContNcRec = vlContNcRec;
+        this.vlTotContCumPer = vlTotContCumPer;
+        this.vlRetCum = vlRetCum;
+        this.vlOutDedCum = vlOutDedCum;
+        this.vlContCumRec = vlContCumRec;
+        this.vlTotContRec = vlTotContRec;
+    }
+
+    public RegM200(){}
 }

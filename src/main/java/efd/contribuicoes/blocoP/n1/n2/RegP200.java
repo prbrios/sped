@@ -7,28 +7,33 @@ import lombok.Setter;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-@Getter
-@Setter
 public class RegP200 {
 
-    //TODO: verificar layout
-
-    @Inclui
+    @Getter @Inclui
     private final String reg = "P200";
 
-    @Inclui(formatoData = "MMyyyy")
+    @Getter @Inclui(formatoData = "MMyyyy")
     private LocalDate perRef;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlTotContApu;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlTotAjAcres;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlTotContDev;
 
-    @Inclui
+    @Getter @Inclui
     private String codRec;
 
+    public RegP200(LocalDate perRef, BigDecimal vlTotContApu, BigDecimal vlTotAjAcres, BigDecimal vlTotContDev, String codRec) {
+        this.perRef = perRef;
+        this.vlTotContApu = vlTotContApu;
+        this.vlTotAjAcres = vlTotAjAcres;
+        this.vlTotContDev = vlTotContDev;
+        this.codRec = codRec;
+    }
+
+    public RegP200(){}
 }

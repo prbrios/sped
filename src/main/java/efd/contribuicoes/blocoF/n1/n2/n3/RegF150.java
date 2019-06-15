@@ -6,50 +6,65 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@Getter
-@Setter
 public class RegF150 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "F150";
 
-    @Inclui
+    @Getter @Inclui
     private String natBcCred;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlTotEst;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal estImp;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlBcEst;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlBcMenEst;
 
-    @Inclui(zerosEsquerda = 2)
+    @Getter @Inclui(zerosEsquerda = 2)
     private Integer cstPis;
 
-    @Inclui(casasDecimais = 4)
+    @Getter @Inclui(casasDecimais = 4)
     private BigDecimal aliqPis;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlCredPis;
 
-    @Inclui(zerosEsquerda = 2)
+    @Getter @Inclui(zerosEsquerda = 2)
     private Integer cstCofins;
 
-    @Inclui(casasDecimais = 4)
+    @Getter @Inclui(casasDecimais = 4)
     private BigDecimal aliqCofins;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlCredCofins;
 
-    @Inclui
+    @Getter @Inclui
     private String descEst;
 
-    @Inclui
+    @Getter @Inclui
     private String codCta;
 
+    public RegF150(String natBcCred, BigDecimal vlTotEst, BigDecimal estImp, BigDecimal vlBcEst, BigDecimal vlBcMenEst, Integer cstPis, BigDecimal aliqPis, BigDecimal vlCredPis, Integer cstCofins, BigDecimal aliqCofins, BigDecimal vlCredCofins, String descEst, String codCta) {
+        this.natBcCred = natBcCred;
+        this.vlTotEst = vlTotEst;
+        this.estImp = estImp;
+        this.vlBcEst = vlBcEst;
+        this.vlBcMenEst = vlBcMenEst;
+        this.cstPis = cstPis;
+        this.aliqPis = aliqPis;
+        this.vlCredPis = vlCredPis;
+        this.cstCofins = cstCofins;
+        this.aliqCofins = aliqCofins;
+        this.vlCredCofins = vlCredCofins;
+        this.descEst = descEst;
+        this.codCta = codCta;
+    }
+
+    public RegF150(){ }
 }

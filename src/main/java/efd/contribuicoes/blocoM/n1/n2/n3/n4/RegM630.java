@@ -6,29 +6,37 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@Getter
-@Setter
 public class RegM630 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "M630";
 
-    @Inclui(zerosEsquerda = 14)
+    @Getter @Inclui(zerosEsquerda = 14)
     private Long cnpj;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlVend;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlNaoReceb;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlContDif;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlCredDif;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal codCred;
 
+    public RegM630(Long cnpj, BigDecimal vlVend, BigDecimal vlNaoReceb, BigDecimal vlContDif, BigDecimal vlCredDif, BigDecimal codCred) {
+        this.cnpj = cnpj;
+        this.vlVend = vlVend;
+        this.vlNaoReceb = vlNaoReceb;
+        this.vlContDif = vlContDif;
+        this.vlCredDif = vlCredDif;
+        this.codCred = codCred;
+    }
+
+    public RegM630(){}
 }

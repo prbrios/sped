@@ -6,47 +6,61 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@Getter
-@Setter
 public class RegM600 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "M600";
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlTotContNcPer;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlTotCredDesc;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vltotCredDescAnt;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vltotContNcDev;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlRetNc;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlOutDedNc;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlContNcRec;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlTotContCumPer;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlRetCum;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlOutDedCum;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlContCumRec;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlTotContRec;
 
+    public RegM600(BigDecimal vlTotContNcPer, BigDecimal vlTotCredDesc, BigDecimal vltotCredDescAnt, BigDecimal vltotContNcDev, BigDecimal vlRetNc, BigDecimal vlOutDedNc, BigDecimal vlContNcRec, BigDecimal vlTotContCumPer, BigDecimal vlRetCum, BigDecimal vlOutDedCum, BigDecimal vlContCumRec, BigDecimal vlTotContRec) {
+        this.vlTotContNcPer = vlTotContNcPer;
+        this.vlTotCredDesc = vlTotCredDesc;
+        this.vltotCredDescAnt = vltotCredDescAnt;
+        this.vltotContNcDev = vltotContNcDev;
+        this.vlRetNc = vlRetNc;
+        this.vlOutDedNc = vlOutDedNc;
+        this.vlContNcRec = vlContNcRec;
+        this.vlTotContCumPer = vlTotContCumPer;
+        this.vlRetCum = vlRetCum;
+        this.vlOutDedCum = vlOutDedCum;
+        this.vlContCumRec = vlContCumRec;
+        this.vlTotContRec = vlTotContRec;
+    }
+
+    public RegM600(){}
 }

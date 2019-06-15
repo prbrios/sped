@@ -6,29 +6,37 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@Getter
-@Setter
 public class RegM230 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "M230";
 
-    @Inclui(zerosEsquerda = 14)
+    @Getter @Inclui(zerosEsquerda = 14)
     private Long cnpj;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlVend;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlNaoReceb;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlContDif;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlCredDif;
 
-    @Inclui
+    @Getter @Inclui
     private String codCred;
 
+    public RegM230(Long cnpj, BigDecimal vlVend, BigDecimal vlNaoReceb, BigDecimal vlContDif, BigDecimal vlCredDif, String codCred) {
+        this.cnpj = cnpj;
+        this.vlVend = vlVend;
+        this.vlNaoReceb = vlNaoReceb;
+        this.vlContDif = vlContDif;
+        this.vlCredDif = vlCredDif;
+        this.codCred = codCred;
+    }
+
+    public RegM230(){}
 }

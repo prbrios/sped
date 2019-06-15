@@ -6,52 +6,69 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@Getter
-@Setter
 public class RegM100 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "M100";
 
-    @Inclui
+    @Getter @Inclui
     private String codCred;
 
-    @Inclui
+    @Getter @Inclui
     private Integer indCredOri;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlBcPis;
 
-    @Inclui(casasDecimais = 4)
+    @Getter @Inclui(casasDecimais = 4)
     private BigDecimal aliqPis;
 
-    @Inclui(casasDecimais = 3)
+    @Getter @Inclui(casasDecimais = 3)
     private BigDecimal quantBcPis;
 
-    @Inclui(casasDecimais = 4)
+    @Getter @Inclui(casasDecimais = 4)
     private BigDecimal aliqPisQuant;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlCred;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlAjusAcres;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlAjusReduc;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlCredDif;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlCredDisp;
 
-    @Inclui
+    @Getter @Inclui
     private Integer indDescCred;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlCredDesc;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal sldCred;
+
+    public RegM100(String codCred, Integer indCredOri, BigDecimal vlBcPis, BigDecimal aliqPis, BigDecimal quantBcPis, BigDecimal aliqPisQuant, BigDecimal vlCred, BigDecimal vlAjusAcres, BigDecimal vlAjusReduc, BigDecimal vlCredDif, BigDecimal vlCredDisp, Integer indDescCred, BigDecimal vlCredDesc, BigDecimal sldCred) {
+        this.codCred = codCred;
+        this.indCredOri = indCredOri;
+        this.vlBcPis = vlBcPis;
+        this.aliqPis = aliqPis;
+        this.quantBcPis = quantBcPis;
+        this.aliqPisQuant = aliqPisQuant;
+        this.vlCred = vlCred;
+        this.vlAjusAcres = vlAjusAcres;
+        this.vlAjusReduc = vlAjusReduc;
+        this.vlCredDif = vlCredDif;
+        this.vlCredDisp = vlCredDisp;
+        this.indDescCred = indDescCred;
+        this.vlCredDesc = vlCredDesc;
+        this.sldCred = sldCred;
+    }
+
+    public RegM100(){}
 }

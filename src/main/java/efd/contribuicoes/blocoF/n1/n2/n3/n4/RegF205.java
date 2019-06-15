@@ -6,62 +6,81 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@Getter
-@Setter
 public class RegF205 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "F205";
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlCusIncAcumAnt;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlCusIncPerEsc;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlCusIncAcum;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlExcBcCusIncAcum;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlBcCusInc;
 
-    @Inclui(zerosEsquerda = 2)
+    @Getter @Inclui(zerosEsquerda = 2)
     private Integer cstPis;
 
-    @Inclui(casasDecimais = 4)
+    @Getter @Inclui(casasDecimais = 4)
     private BigDecimal aliqPis;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlCredPisAcum;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlCredPisDescAnt;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlCredPisDesc;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlCredPisDescFut;
 
-    @Inclui(zerosEsquerda = 2)
+    @Getter @Inclui(zerosEsquerda = 2)
     private Integer cstCofins;
 
-    @Inclui(casasDecimais = 4)
+    @Getter @Inclui(casasDecimais = 4)
     private BigDecimal aliqCofins;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlCredCofinsAcum;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlCredCofinsDescAnt;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlCredCofinsDesc;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlCredCofinsDescFut;
 
+    public RegF205(BigDecimal vlCusIncAcumAnt, BigDecimal vlCusIncPerEsc, BigDecimal vlCusIncAcum, BigDecimal vlExcBcCusIncAcum, BigDecimal vlBcCusInc, Integer cstPis, BigDecimal aliqPis, BigDecimal vlCredPisAcum, BigDecimal vlCredPisDescAnt, BigDecimal vlCredPisDesc, BigDecimal vlCredPisDescFut, Integer cstCofins, BigDecimal aliqCofins, BigDecimal vlCredCofinsAcum, BigDecimal vlCredCofinsDescAnt, BigDecimal vlCredCofinsDesc, BigDecimal vlCredCofinsDescFut) {
+        this.vlCusIncAcumAnt = vlCusIncAcumAnt;
+        this.vlCusIncPerEsc = vlCusIncPerEsc;
+        this.vlCusIncAcum = vlCusIncAcum;
+        this.vlExcBcCusIncAcum = vlExcBcCusIncAcum;
+        this.vlBcCusInc = vlBcCusInc;
+        this.cstPis = cstPis;
+        this.aliqPis = aliqPis;
+        this.vlCredPisAcum = vlCredPisAcum;
+        this.vlCredPisDescAnt = vlCredPisDescAnt;
+        this.vlCredPisDesc = vlCredPisDesc;
+        this.vlCredPisDescFut = vlCredPisDescFut;
+        this.cstCofins = cstCofins;
+        this.aliqCofins = aliqCofins;
+        this.vlCredCofinsAcum = vlCredCofinsAcum;
+        this.vlCredCofinsDescAnt = vlCredCofinsDescAnt;
+        this.vlCredCofinsDesc = vlCredCofinsDesc;
+        this.vlCredCofinsDescFut = vlCredCofinsDescFut;
+    }
+
+    public RegF205(){}
 }

@@ -7,62 +7,81 @@ import lombok.Setter;
 import javax.xml.bind.annotation.XmlInlineBinaryData;
 import java.math.BigDecimal;
 
-@Getter
-@Setter
 public class RegA170 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "A170";
 
-    @Inclui
+    @Getter @Inclui
     private Integer numItem;
 
-    @Inclui
+    @Getter @Inclui
     private String codItem;
 
-    @Inclui
+    @Getter @Inclui
     private String descrCompl;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlItem;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlDesc;
 
-    @Inclui
+    @Getter @Inclui
     private String natBcCred;
 
-    @Inclui
+    @Getter @Inclui
     private String indOrigCred;
 
-    @Inclui(zerosEsquerda = 2)
+    @Getter @Inclui(zerosEsquerda = 2)
     private Integer cstPis;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlBcPis;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal aliqPis;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlPis;
 
-    @Inclui(zerosEsquerda = 2)
+    @Getter @Inclui(zerosEsquerda = 2)
     private Integer cstCofins;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlBcCofins;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal aliqCofins;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlCofins;
 
-    @Inclui
+    @Getter @Inclui
     private String codCta;
 
-    @Inclui
+    @Getter @Inclui
     private String codCcus;
 
+    public RegA170(Integer numItem, String codItem, String descrCompl, BigDecimal vlItem, BigDecimal vlDesc, String natBcCred, String indOrigCred, Integer cstPis, BigDecimal vlBcPis, BigDecimal aliqPis, BigDecimal vlPis, Integer cstCofins, BigDecimal vlBcCofins, BigDecimal aliqCofins, BigDecimal vlCofins, String codCta, String codCcus) {
+        this.numItem = numItem;
+        this.codItem = codItem;
+        this.descrCompl = descrCompl;
+        this.vlItem = vlItem;
+        this.vlDesc = vlDesc;
+        this.natBcCred = natBcCred;
+        this.indOrigCred = indOrigCred;
+        this.cstPis = cstPis;
+        this.vlBcPis = vlBcPis;
+        this.aliqPis = aliqPis;
+        this.vlPis = vlPis;
+        this.cstCofins = cstCofins;
+        this.vlBcCofins = vlBcCofins;
+        this.aliqCofins = aliqCofins;
+        this.vlCofins = vlCofins;
+        this.codCta = codCta;
+        this.codCcus = codCcus;
+    }
+
+    public RegA170(){ }
 }

@@ -7,32 +7,41 @@ import lombok.Setter;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-@Getter
-@Setter
 public class RegC180 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "C180";
 
-    @Inclui
+    @Getter @Inclui
     private String codMod;
 
-    @Inclui
+    @Getter @Inclui
     private LocalDate dtDocIni;
 
-    @Inclui
+    @Getter @Inclui
     private LocalDate dtDocFin;
 
-    @Inclui
+    @Getter @Inclui
     private String codItem;
 
-    @Inclui
+    @Getter @Inclui
     private String codNcm;
 
-    @Inclui
+    @Getter @Inclui
     private String exIpi;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlTotItem;
 
+    public RegC180(String codMod, LocalDate dtDocIni, LocalDate dtDocFin, String codItem, String codNcm, String exIpi, BigDecimal vlTotItem) {
+        this.codMod = codMod;
+        this.dtDocIni = dtDocIni;
+        this.dtDocFin = dtDocFin;
+        this.codItem = codItem;
+        this.codNcm = codNcm;
+        this.exIpi = exIpi;
+        this.vlTotItem = vlTotItem;
+    }
+
+    public RegC180(){ }
 }

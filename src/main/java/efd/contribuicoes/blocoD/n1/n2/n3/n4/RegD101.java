@@ -6,35 +6,45 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@Getter
-@Setter
 public class RegD101 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "D101";
 
-    @Inclui
+    @Getter @Inclui
     private String indNatFrt;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlItem;
 
-    @Inclui(zerosEsquerda = 2)
+    @Getter @Inclui(zerosEsquerda = 2)
     private Integer cstPis;
 
-    @Inclui
+    @Getter @Inclui
     private String natBcCred;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlBcPis;
 
-    @Inclui(casasDecimais = 4)
+    @Getter @Inclui(casasDecimais = 4)
     private BigDecimal aliqPis;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlPis;
 
-    @Inclui
+    @Getter @Inclui
     private String codCta;
 
+    public RegD101(String indNatFrt, BigDecimal vlItem, Integer cstPis, String natBcCred, BigDecimal vlBcPis, BigDecimal aliqPis, BigDecimal vlPis, String codCta) {
+        this.indNatFrt = indNatFrt;
+        this.vlItem = vlItem;
+        this.cstPis = cstPis;
+        this.natBcCred = natBcCred;
+        this.vlBcPis = vlBcPis;
+        this.aliqPis = aliqPis;
+        this.vlPis = vlPis;
+        this.codCta = codCta;
+    }
+
+    public RegD101(){}
 }

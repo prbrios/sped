@@ -4,14 +4,17 @@ import efd.anotacoes.Inclui;
 import lombok.Getter;
 import lombok.Setter;
 
-@Getter
-@Setter
 public class RegF001 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "F001";
 
-    @Inclui
+    @Getter @Inclui
     private String indMov;
 
+    public RegF001(String indMov) {
+        this.indMov = indMov;
+    }
+
+    public RegF001(){ }
 }

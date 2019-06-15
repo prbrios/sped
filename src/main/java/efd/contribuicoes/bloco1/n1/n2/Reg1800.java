@@ -7,35 +7,45 @@ import lombok.Setter;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-@Getter
-@Setter
 public class Reg1800 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "1800";
 
-    @Inclui
+    @Getter @Inclui
     private String incImob;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal recRecebRet;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal recFinRet;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal bcRet;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal aliqRet;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlRecUni;
 
-    @Inclui
+    @Getter @Inclui
     private LocalDate dtRecUni;
 
-    @Inclui
+    @Getter @Inclui
     private String codRec;
 
+    public Reg1800(String incImob, BigDecimal recRecebRet, BigDecimal recFinRet, BigDecimal bcRet, BigDecimal aliqRet, BigDecimal vlRecUni, LocalDate dtRecUni, String codRec) {
+        this.incImob = incImob;
+        this.recRecebRet = recRecebRet;
+        this.recFinRet = recFinRet;
+        this.bcRet = bcRet;
+        this.aliqRet = aliqRet;
+        this.vlRecUni = vlRecUni;
+        this.dtRecUni = dtRecUni;
+        this.codRec = codRec;
+    }
+
+    public Reg1800(){ }
 }

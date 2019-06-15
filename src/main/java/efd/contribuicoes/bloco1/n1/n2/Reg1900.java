@@ -6,47 +6,61 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@Getter
-@Setter
 public class Reg1900 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "1900";
 
-    @Inclui(zerosEsquerda = 14)
+    @Getter @Inclui(zerosEsquerda = 14)
     private Long cnpj;
 
-    @Inclui
+    @Getter @Inclui
     private String codMod;
 
-    @Inclui
+    @Getter @Inclui
     private String ser;
 
-    @Inclui
+    @Getter @Inclui
     private Integer subSer;
 
-    @Inclui(zerosEsquerda = 2)
+    @Getter @Inclui(zerosEsquerda = 2)
     private Integer codSit;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vltotRec;
 
-    @Inclui
+    @Getter @Inclui
     private Integer quantDoc;
 
-    @Inclui(zerosEsquerda = 2)
+    @Getter @Inclui(zerosEsquerda = 2)
     private Integer cstPis;
 
-    @Inclui(zerosEsquerda = 2)
+    @Getter @Inclui(zerosEsquerda = 2)
     private Integer cstCofins;
 
-    @Inclui(zerosEsquerda = 4)
+    @Getter @Inclui(zerosEsquerda = 4)
     private Integer cfop;
 
-    @Inclui
+    @Getter @Inclui
     private String infCompl;
 
-    @Inclui
+    @Getter @Inclui
     private String codCta;
 
+    public Reg1900(Long cnpj, String codMod, String ser, Integer subSer, Integer codSit, BigDecimal vltotRec, Integer quantDoc, Integer cstPis, Integer cstCofins, Integer cfop, String infCompl, String codCta) {
+        this.cnpj = cnpj;
+        this.codMod = codMod;
+        this.ser = ser;
+        this.subSer = subSer;
+        this.codSit = codSit;
+        this.vltotRec = vltotRec;
+        this.quantDoc = quantDoc;
+        this.cstPis = cstPis;
+        this.cstCofins = cstCofins;
+        this.cfop = cfop;
+        this.infCompl = infCompl;
+        this.codCta = codCta;
+    }
+
+    public Reg1900(){ }
 }

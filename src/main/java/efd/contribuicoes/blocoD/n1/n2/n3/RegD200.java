@@ -8,41 +8,53 @@ import lombok.ToString;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-@Getter
-@Setter
 public class RegD200 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "D200";
 
-    @Inclui
+    @Getter @Inclui
     private String codMod;
 
-    @Inclui(zerosEsquerda = 2)
+    @Getter @Inclui(zerosEsquerda = 2)
     private Integer codSit;
 
-    @Inclui
+    @Getter @Inclui
     private String ser;
 
-    @Inclui
+    @Getter @Inclui
     private String sub;
 
-    @Inclui
+    @Getter @Inclui
     private Integer numDocIni;
 
-    @Inclui
+    @Getter @Inclui
     private Integer numDocFin;
 
-    @Inclui(zerosEsquerda = 4)
+    @Getter @Inclui(zerosEsquerda = 4)
     private Integer cfop;
 
-    @Inclui
+    @Getter @Inclui
     private LocalDate dtRef;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlDoc;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlDesc;
 
+    public RegD200(String codMod, Integer codSit, String ser, String sub, Integer numDocIni, Integer numDocFin, Integer cfop, LocalDate dtRef, BigDecimal vlDoc, BigDecimal vlDesc) {
+        this.codMod = codMod;
+        this.codSit = codSit;
+        this.ser = ser;
+        this.sub = sub;
+        this.numDocIni = numDocIni;
+        this.numDocFin = numDocFin;
+        this.cfop = cfop;
+        this.dtRef = dtRef;
+        this.vlDoc = vlDoc;
+        this.vlDesc = vlDesc;
+    }
+
+    public RegD200(){}
 }

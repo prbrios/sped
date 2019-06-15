@@ -7,31 +7,41 @@ import lombok.Setter;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-@Getter
-@Setter
 public class RegM700 {
 
-    //TODO: verificar versao do laytou
-
-    @Inclui
+    @Getter @Inclui
     private final String reg = "M700";
 
-    @Inclui
+    @Getter @Inclui
     private String codCont;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlContApurDifer;
 
-    @Inclui
+    @Getter @Inclui
+    private String natCredDesc;
+
+    @Getter @Inclui
     private BigDecimal vlCredDescDifer;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlContDiferAnt;
 
-    @Inclui(formatoData = "MMyyyy")
+    @Getter @Inclui(formatoData = "MMyyyy")
     private LocalDate perApur;
 
-    @Inclui
+    @Getter @Inclui
     private LocalDate dtReceb;
 
+    public RegM700(String codCont, BigDecimal vlContApurDifer, String natCredDesc, BigDecimal vlCredDescDifer, BigDecimal vlContDiferAnt, LocalDate perApur, LocalDate dtReceb) {
+        this.codCont = codCont;
+        this.vlContApurDifer = vlContApurDifer;
+        this.natCredDesc = natCredDesc;
+        this.vlCredDescDifer = vlCredDescDifer;
+        this.vlContDiferAnt = vlContDiferAnt;
+        this.perApur = perApur;
+        this.dtReceb = dtReceb;
+    }
+
+    public RegM700(){}
 }

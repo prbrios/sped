@@ -7,35 +7,45 @@ import lombok.Setter;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-@Getter
-@Setter
 public class RegM115 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "M115";
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal detValorAj;
 
-    @Inclui(zerosEsquerda = 2)
+    @Getter @Inclui(zerosEsquerda = 2)
     private Integer cstPis;
 
-    @Inclui(casasDecimais = 3)
+    @Getter @Inclui(casasDecimais = 3)
     private BigDecimal detBcCred;
 
-    @Inclui(casasDecimais = 4)
+    @Getter @Inclui(casasDecimais = 4)
     private BigDecimal detAliq;
 
-    @Inclui
+    @Getter @Inclui
     private LocalDate dtOprAj;
 
-    @Inclui
+    @Getter @Inclui
     private String descAj;
 
-    @Inclui
+    @Getter @Inclui
     private String codCta;
 
-    @Inclui
+    @Getter @Inclui
     private String infoCompl;
 
+    public RegM115(BigDecimal detValorAj, Integer cstPis, BigDecimal detBcCred, BigDecimal detAliq, LocalDate dtOprAj, String descAj, String codCta, String infoCompl) {
+        this.detValorAj = detValorAj;
+        this.cstPis = cstPis;
+        this.detBcCred = detBcCred;
+        this.detAliq = detAliq;
+        this.dtOprAj = dtOprAj;
+        this.descAj = descAj;
+        this.codCta = codCta;
+        this.infoCompl = infoCompl;
+    }
+
+    public RegM115(){}
 }

@@ -6,26 +6,33 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@Getter
-@Setter
 public class RegI200 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "I200";
 
-    @Inclui
+    @Getter @Inclui
     private String numCampo;
 
-    @Inclui
+    @Getter @Inclui
     private String codDet;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal detValor;
 
-    @Inclui
+    @Getter @Inclui
     private String codCta;
 
-    @Inclui
+    @Getter @Inclui
     private String infoCompl;
 
+    public RegI200(String numCampo, String codDet, BigDecimal detValor, String codCta, String infoCompl) {
+        this.numCampo = numCampo;
+        this.codDet = codDet;
+        this.detValor = detValor;
+        this.codCta = codCta;
+        this.infoCompl = infoCompl;
+    }
+
+    public RegI200(){}
 }

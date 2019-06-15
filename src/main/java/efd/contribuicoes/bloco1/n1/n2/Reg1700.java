@@ -7,32 +7,41 @@ import lombok.Setter;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-@Getter
-@Setter
 public class Reg1700 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "1700";
 
-    @Inclui(zerosEsquerda = 2)
+    @Getter @Inclui(zerosEsquerda = 2)
     private Integer indNatRet;
 
-    @Inclui(formatoData = "MMyyyy")
+    @Getter @Inclui(formatoData = "MMyyyy")
     private LocalDate prRecRet;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlRetApu;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlRetDed;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlRetPer;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlRetDcomp;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal sldRet;
 
+    public Reg1700(Integer indNatRet, LocalDate prRecRet, BigDecimal vlRetApu, BigDecimal vlRetDed, BigDecimal vlRetPer, BigDecimal vlRetDcomp, BigDecimal sldRet) {
+        this.indNatRet = indNatRet;
+        this.prRecRet = prRecRet;
+        this.vlRetApu = vlRetApu;
+        this.vlRetDed = vlRetDed;
+        this.vlRetPer = vlRetPer;
+        this.vlRetDcomp = vlRetDcomp;
+        this.sldRet = sldRet;
+    }
+
+    public Reg1700(){ }
 }

@@ -6,39 +6,49 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@Getter
-@Setter
 public class RegM505 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "M505";
 
-    @Inclui
+    @Getter @Inclui
     private String natBcCred;
 
-    @Inclui(zerosEsquerda = 2)
+    @Getter @Inclui(zerosEsquerda = 2)
     private Integer cstCofins;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlBcCofinsTot;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlBcCofinsCum;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlBcCofinsNc;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlBcCofins;
 
-    @Inclui(casasDecimais = 3)
+    @Getter @Inclui(casasDecimais = 3)
     private BigDecimal quantBcCofinsTot;
 
-    @Inclui(casasDecimais = 3)
+    @Getter @Inclui(casasDecimais = 3)
     private BigDecimal quantBcCofins;
 
-    @Inclui
+    @Getter @Inclui
     private String descCred;
 
+    public RegM505(String natBcCred, Integer cstCofins, BigDecimal vlBcCofinsTot, BigDecimal vlBcCofinsCum, BigDecimal vlBcCofinsNc, BigDecimal vlBcCofins, BigDecimal quantBcCofinsTot, BigDecimal quantBcCofins, String descCred) {
+        this.natBcCred = natBcCred;
+        this.cstCofins = cstCofins;
+        this.vlBcCofinsTot = vlBcCofinsTot;
+        this.vlBcCofinsCum = vlBcCofinsCum;
+        this.vlBcCofinsNc = vlBcCofinsNc;
+        this.vlBcCofins = vlBcCofins;
+        this.quantBcCofinsTot = quantBcCofinsTot;
+        this.quantBcCofins = quantBcCofins;
+        this.descCred = descCred;
+    }
 
+    public RegM505(){ }
 }

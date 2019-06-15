@@ -6,17 +6,15 @@ import lombok.Setter;
 
 import java.time.LocalDate;
 
-@Getter
-@Setter
 public class Reg0120 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "0120";
 
-    @Inclui(formatoData = "MMyyyy")
+    @Getter @Inclui(formatoData = "MMyyyy")
     private LocalDate mesRefer;
 
-    @Inclui
+    @Getter @Inclui
     private String infComp;
 
     public Reg0120(LocalDate mesRefer, String infComp) {

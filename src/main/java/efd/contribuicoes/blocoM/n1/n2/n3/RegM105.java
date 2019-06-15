@@ -6,38 +6,49 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@Getter
-@Setter
 public class RegM105 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "M105";
 
-    @Inclui
+    @Getter @Inclui
     private String natBcCred;
 
-    @Inclui(zerosEsquerda = 2)
+    @Getter @Inclui(zerosEsquerda = 2)
     private Integer cstPis;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlBcPisTot;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlBcPisCum;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlbcPisNc;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlBcPis;
 
-    @Inclui(casasDecimais = 3)
+    @Getter @Inclui(casasDecimais = 3)
     private BigDecimal quantBcPisTot;
 
-    @Inclui(casasDecimais = 3)
+    @Getter @Inclui(casasDecimais = 3)
     private BigDecimal quantBcPis;
 
-    @Inclui
+    @Getter @Inclui
     private String descCred;
 
+    public RegM105(String natBcCred, Integer cstPis, BigDecimal vlBcPisTot, BigDecimal vlBcPisCum, BigDecimal vlbcPisNc, BigDecimal vlBcPis, BigDecimal quantBcPisTot, BigDecimal quantBcPis, String descCred) {
+        this.natBcCred = natBcCred;
+        this.cstPis = cstPis;
+        this.vlBcPisTot = vlBcPisTot;
+        this.vlBcPisCum = vlBcPisCum;
+        this.vlbcPisNc = vlbcPisNc;
+        this.vlBcPis = vlBcPis;
+        this.quantBcPisTot = quantBcPisTot;
+        this.quantBcPis = quantBcPis;
+        this.descCred = descCred;
+    }
+
+    public RegM105(){}
 }

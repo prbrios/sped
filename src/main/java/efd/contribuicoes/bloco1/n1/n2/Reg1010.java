@@ -6,29 +6,37 @@ import lombok.Setter;
 
 import java.time.LocalDate;
 
-@Getter
-@Setter
 public class Reg1010 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "1010";
 
-    @Inclui
+    @Getter @Inclui
     private String numProc;
 
-    @Inclui
+    @Getter @Inclui
     private String idSecJud;
 
-    @Inclui
+    @Getter @Inclui
     private String idVara;
 
-    @Inclui
+    @Getter @Inclui
     private String indNatAcao;
 
-    @Inclui
+    @Getter @Inclui
     private String descDecJud;
 
-    @Inclui
+    @Getter @Inclui
     private LocalDate dtSentJud;
 
+    public Reg1010(String numProc, String idSecJud, String idVara, String indNatAcao, String descDecJud, LocalDate dtSentJud) {
+        this.numProc = numProc;
+        this.idSecJud = idSecJud;
+        this.idVara = idVara;
+        this.indNatAcao = indNatAcao;
+        this.descDecJud = descDecJud;
+        this.dtSentJud = dtSentJud;
+    }
+
+    public Reg1010(){ }
 }

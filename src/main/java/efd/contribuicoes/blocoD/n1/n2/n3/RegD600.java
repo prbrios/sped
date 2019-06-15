@@ -7,62 +7,81 @@ import lombok.Setter;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-@Getter
-@Setter
 public class RegD600 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "D600";
 
-    @Inclui
+    @Getter @Inclui
     private String codMod;
 
-    @Inclui(zerosEsquerda = 7)
+    @Getter @Inclui(zerosEsquerda = 7)
     private Integer codMun;
 
-    @Inclui
+    @Getter @Inclui
     private String ser;
 
-    @Inclui
+    @Getter @Inclui
     private Integer sub;
 
-    @Inclui
+    @Getter @Inclui
     private Integer indRec;
 
-    @Inclui
+    @Getter @Inclui
     private Integer qtdCons;
 
-    @Inclui
+    @Getter @Inclui
     private LocalDate dtDocIni;
 
-    @Inclui
+    @Getter @Inclui
     private LocalDate dtDocFin;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlDoc;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlDesc;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlServ;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlServNt;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlTerc;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlDa;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlBcIcms;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlIcms;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlPis;
 
+    public RegD600(String codMod, Integer codMun, String ser, Integer sub, Integer indRec, Integer qtdCons, LocalDate dtDocIni, LocalDate dtDocFin, BigDecimal vlDoc, BigDecimal vlDesc, BigDecimal vlServ, BigDecimal vlServNt, BigDecimal vlTerc, BigDecimal vlDa, BigDecimal vlBcIcms, BigDecimal vlIcms, BigDecimal vlPis) {
+        this.codMod = codMod;
+        this.codMun = codMun;
+        this.ser = ser;
+        this.sub = sub;
+        this.indRec = indRec;
+        this.qtdCons = qtdCons;
+        this.dtDocIni = dtDocIni;
+        this.dtDocFin = dtDocFin;
+        this.vlDoc = vlDoc;
+        this.vlDesc = vlDesc;
+        this.vlServ = vlServ;
+        this.vlServNt = vlServNt;
+        this.vlTerc = vlTerc;
+        this.vlDa = vlDa;
+        this.vlBcIcms = vlBcIcms;
+        this.vlIcms = vlIcms;
+        this.vlPis = vlPis;
+    }
+
+    public RegD600(){}
 }

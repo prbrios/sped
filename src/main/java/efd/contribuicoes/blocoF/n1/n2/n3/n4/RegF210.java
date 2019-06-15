@@ -6,41 +6,53 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@Getter
-@Setter
 public class RegF210 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "F210";
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlCusOrc;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlExc;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlCusOrcAju;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlBcCred;
 
-    @Inclui(zerosEsquerda = 2)
+    @Getter @Inclui(zerosEsquerda = 2)
     private Integer cstPis;
 
-    @Inclui(casasDecimais = 4)
+    @Getter @Inclui(casasDecimais = 4)
     private BigDecimal aliqPis;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlCredPisUtil;
 
-    @Inclui(zerosEsquerda = 2)
+    @Getter @Inclui(zerosEsquerda = 2)
     private Integer cstCofins;
 
-    @Inclui(casasDecimais = 4)
+    @Getter @Inclui(casasDecimais = 4)
     private BigDecimal aliqCofins;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlCredCofinsUtil;
 
+    public RegF210(BigDecimal vlCusOrc, BigDecimal vlExc, BigDecimal vlCusOrcAju, BigDecimal vlBcCred, Integer cstPis, BigDecimal aliqPis, BigDecimal vlCredPisUtil, Integer cstCofins, BigDecimal aliqCofins, BigDecimal vlCredCofinsUtil) {
+        this.vlCusOrc = vlCusOrc;
+        this.vlExc = vlExc;
+        this.vlCusOrcAju = vlCusOrcAju;
+        this.vlBcCred = vlBcCred;
+        this.cstPis = cstPis;
+        this.aliqPis = aliqPis;
+        this.vlCredPisUtil = vlCredPisUtil;
+        this.cstCofins = cstCofins;
+        this.aliqCofins = aliqCofins;
+        this.vlCredCofinsUtil = vlCredCofinsUtil;
+    }
+
+    public RegF210(){}
 }

@@ -6,23 +6,30 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@Getter
-@Setter
+
 public class RegM800 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "M800";
 
-    @Inclui(zerosEsquerda = 2)
+    @Getter @Inclui(zerosEsquerda = 2)
     private Integer cstCofins;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlTotRec;
 
-    @Inclui
+    @Getter @Inclui
     private String codCta;
 
-    @Inclui
+    @Getter @Inclui
     private String descCompl;
 
+    public RegM800(Integer cstCofins, BigDecimal vlTotRec, String codCta, String descCompl) {
+        this.cstCofins = cstCofins;
+        this.vlTotRec = vlTotRec;
+        this.codCta = codCta;
+        this.descCompl = descCompl;
+    }
+
+    public RegM800(){}
 }

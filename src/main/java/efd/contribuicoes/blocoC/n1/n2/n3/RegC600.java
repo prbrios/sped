@@ -7,74 +7,97 @@ import lombok.Setter;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-@Getter
-@Setter
 public class RegC600 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "C600";
 
-    @Inclui
+    @Getter @Inclui
     private String codMod;
 
-    @Inclui(zerosEsquerda = 7)
+    @Getter @Inclui(zerosEsquerda = 7)
     private Integer codMun;
 
-    @Inclui
+    @Getter @Inclui
     private String ser;
 
-    @Inclui
+    @Getter @Inclui
     private Integer sub;
 
-    @Inclui(zerosEsquerda = 2)
+    @Getter @Inclui(zerosEsquerda = 2)
     private Integer codCons;
 
-    @Inclui
+    @Getter @Inclui
     private Integer qtdCons;
 
-    @Inclui
+    @Getter @Inclui
     private Integer qtdCanc;
 
-    @Inclui
+    @Getter @Inclui
     private LocalDate dtDoc;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlDoc;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlDesc;
 
-    @Inclui
+    @Getter @Inclui
     private Integer cons;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlForn;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlServNt;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlTerc;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlDa;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlBcIcms;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlIcms;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlBcIcmsSt;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlIcmsSt;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlPis;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlCofins;
 
+    public RegC600(String codMod, Integer codMun, String ser, Integer sub, Integer codCons, Integer qtdCons, Integer qtdCanc, LocalDate dtDoc, BigDecimal vlDoc, BigDecimal vlDesc, Integer cons, BigDecimal vlForn, BigDecimal vlServNt, BigDecimal vlTerc, BigDecimal vlDa, BigDecimal vlBcIcms, BigDecimal vlIcms, BigDecimal vlBcIcmsSt, BigDecimal vlIcmsSt, BigDecimal vlPis, BigDecimal vlCofins) {
+        this.codMod = codMod;
+        this.codMun = codMun;
+        this.ser = ser;
+        this.sub = sub;
+        this.codCons = codCons;
+        this.qtdCons = qtdCons;
+        this.qtdCanc = qtdCanc;
+        this.dtDoc = dtDoc;
+        this.vlDoc = vlDoc;
+        this.vlDesc = vlDesc;
+        this.cons = cons;
+        this.vlForn = vlForn;
+        this.vlServNt = vlServNt;
+        this.vlTerc = vlTerc;
+        this.vlDa = vlDa;
+        this.vlBcIcms = vlBcIcms;
+        this.vlIcms = vlIcms;
+        this.vlBcIcmsSt = vlBcIcmsSt;
+        this.vlIcmsSt = vlIcmsSt;
+        this.vlPis = vlPis;
+        this.vlCofins = vlCofins;
+    }
+
+    public RegC600(){ }
 }

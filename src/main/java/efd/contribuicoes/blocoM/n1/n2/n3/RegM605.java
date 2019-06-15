@@ -6,20 +6,25 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@Getter
-@Setter
 public class RegM605 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "M605";
 
-    @Inclui
+    @Getter @Inclui
     private String numCampo;
 
-    @Inclui
+    @Getter @Inclui
     private String codRec;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlDebito;
 
+    public RegM605(String numCampo, String codRec, BigDecimal vlDebito) {
+        this.numCampo = numCampo;
+        this.codRec = codRec;
+        this.vlDebito = vlDebito;
+    }
+
+    public RegM605(){}
 }

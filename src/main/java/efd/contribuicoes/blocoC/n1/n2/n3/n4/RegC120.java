@@ -7,26 +7,33 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@Getter
-@Setter
 public class RegC120 {
 
-    @Filho
+    @Getter @Inclui
     private final String reg = "C120";
 
-    @Inclui
+    @Getter @Inclui
     private String codDocImp;
 
-    @Filho
+    @Getter @Inclui
     private String numDocImp;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlPisImp;
 
-    @Filho
+    @Getter @Inclui
     private BigDecimal vlCofinsImp;
 
-    @Inclui
+    @Getter @Inclui
     private String numAcdRaw;
 
+    public RegC120(String codDocImp, String numDocImp, BigDecimal vlPisImp, BigDecimal vlCofinsImp, String numAcdRaw) {
+        this.codDocImp = codDocImp;
+        this.numDocImp = numDocImp;
+        this.vlPisImp = vlPisImp;
+        this.vlCofinsImp = vlCofinsImp;
+        this.numAcdRaw = numAcdRaw;
+    }
+
+    public RegC120(){}
 }

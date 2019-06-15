@@ -7,74 +7,97 @@ import lombok.Setter;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-@Getter
-@Setter
 public class Reg1101 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "1101";
 
-    @Inclui
+    @Getter @Inclui
     private String codPart;
 
-    @Inclui
+    @Getter @Inclui
     private String codItem;
 
-    @Inclui
+    @Getter @Inclui
     private String codMod;
 
-    @Inclui
+    @Getter @Inclui
     private String ser;
 
-    @Inclui
+    @Getter @Inclui
     private String subSer;
 
-    @Inclui
+    @Getter @Inclui
     private Integer numDoc;
 
-    @Inclui
+    @Getter @Inclui
     private LocalDate dtOper;
 
-    @Inclui
+    @Getter @Inclui
     private String chvNfe;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlOper;
 
-    @Inclui(zerosEsquerda = 4)
+    @Getter @Inclui(zerosEsquerda = 4)
     private Integer cfop;
 
-    @Inclui
+    @Getter @Inclui
     private String natBcCred;
 
-    @Inclui
+    @Getter @Inclui
     private String indOrigCred;
 
-    @Inclui(zerosEsquerda = 2)
+    @Getter @Inclui(zerosEsquerda = 2)
     private Integer cstPis;
 
-    @Inclui(casasDecimais = 3)
+    @Getter @Inclui(casasDecimais = 3)
     private BigDecimal vlBcPis;
 
-    @Inclui(casasDecimais = 4)
+    @Getter @Inclui(casasDecimais = 4)
     private BigDecimal aliqPis;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlPis;
 
-    @Inclui
+    @Getter @Inclui
     private String codCta;
 
-    @Inclui
+    @Getter @Inclui
     private String codCcus;
 
-    @Inclui
+    @Getter @Inclui
     private String descCompl;
 
-    @Inclui
+    @Getter @Inclui
     private LocalDate perEscrit;
 
-    @Inclui(zerosEsquerda = 14)
+    @Getter @Inclui(zerosEsquerda = 14)
     private Long cnpj;
 
+    public Reg1101(String codPart, String codItem, String codMod, String ser, String subSer, Integer numDoc, LocalDate dtOper, String chvNfe, BigDecimal vlOper, Integer cfop, String natBcCred, String indOrigCred, Integer cstPis, BigDecimal vlBcPis, BigDecimal aliqPis, BigDecimal vlPis, String codCta, String codCcus, String descCompl, LocalDate perEscrit, Long cnpj) {
+        this.codPart = codPart;
+        this.codItem = codItem;
+        this.codMod = codMod;
+        this.ser = ser;
+        this.subSer = subSer;
+        this.numDoc = numDoc;
+        this.dtOper = dtOper;
+        this.chvNfe = chvNfe;
+        this.vlOper = vlOper;
+        this.cfop = cfop;
+        this.natBcCred = natBcCred;
+        this.indOrigCred = indOrigCred;
+        this.cstPis = cstPis;
+        this.vlBcPis = vlBcPis;
+        this.aliqPis = aliqPis;
+        this.vlPis = vlPis;
+        this.codCta = codCta;
+        this.codCcus = codCcus;
+        this.descCompl = descCompl;
+        this.perEscrit = perEscrit;
+        this.cnpj = cnpj;
+    }
+
+    public Reg1101(){ }
 }

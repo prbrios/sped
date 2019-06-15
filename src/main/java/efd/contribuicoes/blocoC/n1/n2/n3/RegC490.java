@@ -6,20 +6,25 @@ import lombok.Setter;
 
 import java.time.LocalDate;
 
-@Getter
-@Setter
 public class RegC490 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "C490";
 
-    @Inclui
+    @Getter @Inclui
     private LocalDate dtDocIni;
 
-    @Inclui
+    @Getter @Inclui
     private LocalDate dtDocFin;
 
-    @Inclui
+    @Getter @Inclui
     private String codMod;
 
+    public RegC490(LocalDate dtDocIni, LocalDate dtDocFin, String codMod) {
+        this.dtDocIni = dtDocIni;
+        this.dtDocFin = dtDocFin;
+        this.codMod = codMod;
+    }
+
+    public RegC490(){ }
 }

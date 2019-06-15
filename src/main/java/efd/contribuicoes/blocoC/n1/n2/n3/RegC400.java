@@ -4,23 +4,29 @@ import efd.anotacoes.Inclui;
 import lombok.Getter;
 import lombok.Setter;
 
-@Getter
-@Setter
 public class RegC400 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "C400";
 
-    @Inclui
+    @Getter @Inclui
     private String codMod;
 
-    @Inclui
+    @Getter @Inclui
     private String ecfMod;
 
-    @Inclui
+    @Getter @Inclui
     private String ecfFab;
 
-    @Inclui
+    @Getter @Inclui
     private Integer ecfCx;
 
+    public RegC400(String codMod, String ecfMod, String ecfFab, Integer ecfCx) {
+        this.codMod = codMod;
+        this.ecfMod = ecfMod;
+        this.ecfFab = ecfFab;
+        this.ecfCx = ecfCx;
+    }
+
+    public RegC400(){ }
 }

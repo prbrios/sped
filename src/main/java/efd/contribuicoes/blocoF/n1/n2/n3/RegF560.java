@@ -6,8 +6,6 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@Getter
-@Setter
 public class RegF560 {
 
     @Inclui
@@ -58,4 +56,23 @@ public class RegF560 {
     @Inclui
     private String infoCompl;
 
+    public RegF560(BigDecimal vlRecComp, Integer cstPis, BigDecimal vlDescPis, BigDecimal quantBcPis, BigDecimal aliqPisQuant, BigDecimal vlPis, Integer cstCofins, BigDecimal vlDescCofins, BigDecimal quantBcCofins, BigDecimal aliqCofinsQuant, BigDecimal vlCofins, String codMod, Integer cfop, String codCta, String infoCompl) {
+        this.vlRecComp = vlRecComp;
+        this.cstPis = cstPis;
+        this.vlDescPis = vlDescPis;
+        this.quantBcPis = quantBcPis;
+        this.aliqPisQuant = aliqPisQuant;
+        this.vlPis = vlPis;
+        this.cstCofins = cstCofins;
+        this.vlDescCofins = vlDescCofins;
+        this.quantBcCofins = quantBcCofins;
+        this.aliqCofinsQuant = aliqCofinsQuant;
+        this.vlCofins = vlCofins;
+        this.codMod = codMod;
+        this.cfop = cfop;
+        this.codCta = codCta;
+        this.infoCompl = infoCompl;
+    }
+
+    public RegF560(){}
 }

@@ -7,32 +7,41 @@ import lombok.Setter;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-@Getter
-@Setter
 public class RegC380 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "C380";
 
-    @Inclui
+    @Getter @Inclui
     private String codMod;
 
-    @Inclui
+    @Getter @Inclui
     private LocalDate dtDocIni;
 
-    @Inclui
+    @Getter @Inclui
     private LocalDate dtDocFin;
 
-    @Inclui
+    @Getter @Inclui
     private Integer numDocIni;
 
-    @Inclui
+    @Getter @Inclui
     private Integer numDocFin;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlDoc;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlDocCanc;
 
+    public RegC380(String codMod, LocalDate dtDocIni, LocalDate dtDocFin, Integer numDocIni, Integer numDocFin, BigDecimal vlDoc, BigDecimal vlDocCanc) {
+        this.codMod = codMod;
+        this.dtDocIni = dtDocIni;
+        this.dtDocFin = dtDocFin;
+        this.numDocIni = numDocIni;
+        this.numDocFin = numDocFin;
+        this.vlDoc = vlDoc;
+        this.vlDocCanc = vlDocCanc;
+    }
+
+    public RegC380(){ }
 }

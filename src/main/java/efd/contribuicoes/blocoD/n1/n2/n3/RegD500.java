@@ -7,74 +7,97 @@ import lombok.Setter;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-@Getter
-@Setter
 public class RegD500 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "D500";
 
-    @Inclui
+    @Getter @Inclui
     private String indOper;
 
-    @Inclui(zerosEsquerda = 2)
+    @Getter @Inclui(zerosEsquerda = 2)
     private String indEmit;
 
-    @Inclui
+    @Getter @Inclui
     private String codPart;
 
-    @Inclui
+    @Getter @Inclui
     private String codMod;
 
-    @Inclui
+    @Getter @Inclui
     private Integer codSit;
 
-    @Inclui
+    @Getter @Inclui
     private String ser;
 
-    @Inclui
+    @Getter @Inclui
     private Integer sub;
 
-    @Inclui
+    @Getter @Inclui
     private Integer numDoc;
 
-    @Inclui
+    @Getter @Inclui
     private LocalDate dtDoc;
 
-    @Inclui
+    @Getter @Inclui
     private LocalDate dtAP;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlDoc;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlDesc;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlServ;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlServNt;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlTerc;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlDA;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlBcIcms;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlIcms;
 
-    @Inclui
+    @Getter @Inclui
     private String codInf;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlPis;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlCofins;
 
+    public RegD500(String indOper, String indEmit, String codPart, String codMod, Integer codSit, String ser, Integer sub, Integer numDoc, LocalDate dtDoc, LocalDate dtAP, BigDecimal vlDoc, BigDecimal vlDesc, BigDecimal vlServ, BigDecimal vlServNt, BigDecimal vlTerc, BigDecimal vlDA, BigDecimal vlBcIcms, BigDecimal vlIcms, String codInf, BigDecimal vlPis, BigDecimal vlCofins) {
+        this.indOper = indOper;
+        this.indEmit = indEmit;
+        this.codPart = codPart;
+        this.codMod = codMod;
+        this.codSit = codSit;
+        this.ser = ser;
+        this.sub = sub;
+        this.numDoc = numDoc;
+        this.dtDoc = dtDoc;
+        this.dtAP = dtAP;
+        this.vlDoc = vlDoc;
+        this.vlDesc = vlDesc;
+        this.vlServ = vlServ;
+        this.vlServNt = vlServNt;
+        this.vlTerc = vlTerc;
+        this.vlDA = vlDA;
+        this.vlBcIcms = vlBcIcms;
+        this.vlIcms = vlIcms;
+        this.codInf = codInf;
+        this.vlPis = vlPis;
+        this.vlCofins = vlCofins;
+    }
+
+    public RegD500(){}
 }

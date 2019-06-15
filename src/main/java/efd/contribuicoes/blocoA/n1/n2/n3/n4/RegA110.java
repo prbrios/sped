@@ -4,17 +4,21 @@ import efd.anotacoes.Inclui;
 import lombok.Getter;
 import lombok.Setter;
 
-@Getter
-@Setter
 public class RegA110 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "A110";
 
-    @Inclui
+    @Getter @Inclui
     private String codInf;
 
-    @Inclui
+    @Getter @Inclui
     private String txtCompl;
 
+    public RegA110(String codInf, String txtCompl) {
+        this.codInf = codInf;
+        this.txtCompl = txtCompl;
+    }
+
+    public RegA110(){ }
 }

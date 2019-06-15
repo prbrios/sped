@@ -6,26 +6,33 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@Getter
-@Setter
 public class RegM350 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "M350";
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlTotFol;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlExcBc;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlTotBc;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal aliqPisFol;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlTotContFol;
 
+    public RegM350(BigDecimal vlTotFol, BigDecimal vlExcBc, BigDecimal vlTotBc, BigDecimal aliqPisFol, BigDecimal vlTotContFol) {
+        this.vlTotFol = vlTotFol;
+        this.vlExcBc = vlExcBc;
+        this.vlTotBc = vlTotBc;
+        this.aliqPisFol = aliqPisFol;
+        this.vlTotContFol = vlTotContFol;
+    }
+
+    public RegM350(){}
 }

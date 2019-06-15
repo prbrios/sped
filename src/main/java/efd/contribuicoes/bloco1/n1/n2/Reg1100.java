@@ -7,62 +7,81 @@ import lombok.Setter;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-@Getter
-@Setter
 public class Reg1100 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "1100";
 
-    @Inclui(formatoData = "MMyyyy")
+    @Getter @Inclui(formatoData = "MMyyyy")
     private LocalDate perApuCred;
 
-    @Inclui(zerosEsquerda = 2)
+    @Getter @Inclui(zerosEsquerda = 2)
     private Integer origCred;
 
-    @Inclui(zerosEsquerda = 14)
+    @Getter @Inclui(zerosEsquerda = 14)
     private Long cnpjSuc;
 
-    @Inclui
+    @Getter @Inclui
     private Integer codCred;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlCredApu;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlCredExtApu;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlTotCredApu;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlCredDescPaAnt;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlCredPerPaAnt;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlCredDcoMpPaAnt;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal sdCredDispEfd;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlCredDescEfd;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlCredPerEfd;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlCredDcoMpEfd;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlCredTrans;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal vlCredOut;
 
-    @Inclui
+    @Getter @Inclui
     private BigDecimal sldCredFim;
 
+    public Reg1100(LocalDate perApuCred, Integer origCred, Long cnpjSuc, Integer codCred, BigDecimal vlCredApu, BigDecimal vlCredExtApu, BigDecimal vlTotCredApu, BigDecimal vlCredDescPaAnt, BigDecimal vlCredPerPaAnt, BigDecimal vlCredDcoMpPaAnt, BigDecimal sdCredDispEfd, BigDecimal vlCredDescEfd, BigDecimal vlCredPerEfd, BigDecimal vlCredDcoMpEfd, BigDecimal vlCredTrans, BigDecimal vlCredOut, BigDecimal sldCredFim) {
+        this.perApuCred = perApuCred;
+        this.origCred = origCred;
+        this.cnpjSuc = cnpjSuc;
+        this.codCred = codCred;
+        this.vlCredApu = vlCredApu;
+        this.vlCredExtApu = vlCredExtApu;
+        this.vlTotCredApu = vlTotCredApu;
+        this.vlCredDescPaAnt = vlCredDescPaAnt;
+        this.vlCredPerPaAnt = vlCredPerPaAnt;
+        this.vlCredDcoMpPaAnt = vlCredDcoMpPaAnt;
+        this.sdCredDispEfd = sdCredDispEfd;
+        this.vlCredDescEfd = vlCredDescEfd;
+        this.vlCredPerEfd = vlCredPerEfd;
+        this.vlCredDcoMpEfd = vlCredDcoMpEfd;
+        this.vlCredTrans = vlCredTrans;
+        this.vlCredOut = vlCredOut;
+        this.sldCredFim = sldCredFim;
+    }
+
+    public Reg1100(){ }
 }
