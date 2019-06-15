@@ -1,7 +1,6 @@
 package efd;
 
-import efd.anotacoes.Filho;
-import efd.anotacoes.Inclui;
+import efd.anotacoes.*;
 import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Field;
@@ -18,6 +17,8 @@ public class Parsers {
 
     public static String converteBlocoEmString(Object obj, boolean processaFilhos) {
 
+        Grupo grupo = null;
+
         List arr = new ArrayList();
         Class clazz = obj.getClass();
 
@@ -32,7 +33,42 @@ public class Parsers {
 
             m.setAccessible(true);
 
-            if (m.isAnnotationPresent(Inclui.class)) {
+            boolean isGrupo = false;
+            try {
+                if (m.getName().equals("grupo")) {
+                    if (m.get(obj) != null) {
+                        grupo = (Grupo) m.get(obj);
+                    }
+                }
+            } catch (Exception e){ }
+
+            if(grupo != null){
+                if(grupo.equals(Grupo.G1)){
+                    isGrupo = m.isAnnotationPresent(G1.class);
+                } else if(grupo.equals(Grupo.G2)){
+                    isGrupo = m.isAnnotationPresent(G2.class);
+                } else if(grupo.equals(Grupo.G3)){
+                    isGrupo = m.isAnnotationPresent(G3.class);
+                } else if(grupo.equals(Grupo.G4)){
+                    isGrupo = m.isAnnotationPresent(G4.class);
+                } else if(grupo.equals(Grupo.G5)){
+                    isGrupo = m.isAnnotationPresent(G5.class);
+                } else if(grupo.equals(Grupo.G6)){
+                    isGrupo = m.isAnnotationPresent(G6.class);
+                } else if(grupo.equals(Grupo.G7)){
+                    isGrupo = m.isAnnotationPresent(G7.class);
+                } else if(grupo.equals(Grupo.G8)){
+                    isGrupo = m.isAnnotationPresent(G8.class);
+                } else if(grupo.equals(Grupo.G9)){
+                    isGrupo = m.isAnnotationPresent(G9.class);
+                }
+            }
+
+            if(grupo == null){
+                isGrupo = true;
+            }
+
+            if (m.isAnnotationPresent(Inclui.class) && isGrupo) {
 
                 anotacao = m.getAnnotation(Inclui.class);
                 formatoData = ((Inclui) anotacao).formatoData();

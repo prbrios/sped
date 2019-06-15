@@ -1,54 +1,100 @@
 package efd.contribuicoes.blocoM.n1.n2.n3;
 
+import efd.Grupo;
+import efd.anotacoes.G1;
+import efd.anotacoes.G2;
 import efd.anotacoes.Inclui;
 import lombok.Getter;
-import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@Getter
-@Setter
 public class RegM210 {
 
-    //TODO resoler esse registro. Há campos diferentes para periodos do ano
+    private Grupo grupo;
 
-    @Inclui
+    @Getter @Inclui @G1 @G2
     private final String reg = "M210";
 
-    @Inclui
+    @Getter @Inclui @G1 @G2
     private String codCont;
 
-    @Inclui
+    @Getter @Inclui @G1 @G2
     private BigDecimal vlRecBrt;
 
-    @Inclui
+    @Getter @Inclui @G1 @G2
     private BigDecimal vlBcCont;
 
-    @Inclui(casasDecimais = 4)
+    @Getter @Inclui @G2
+    private BigDecimal vlAjusAcresBcPis;
+
+    @Getter @Inclui @G2
+    private BigDecimal vlAjusReducBcPis;
+
+    @Getter @Inclui @G2
+    private BigDecimal vlBcContAjus;
+
+    @Getter @Inclui(casasDecimais = 4) @G1 @G2
     private BigDecimal aliqPis;
 
-    @Inclui(casasDecimais = 3)
+    @Getter @Inclui(casasDecimais = 3) @G1 @G2
     private BigDecimal quantBcPis;
 
-    @Inclui(casasDecimais = 4)
+    @Getter @Inclui(casasDecimais = 4) @G1 @G2
     private BigDecimal aliqPisQuant;
 
-    @Inclui
+    @Getter @Inclui @G1 @G2
     private BigDecimal vlContApur;
 
-    @Inclui
+    @Getter @Inclui @G1 @G2
     private BigDecimal vlAjusAcres;
 
-    @Inclui
+    @Getter @Inclui @G1 @G2
     private BigDecimal vlAjusReduc;
 
-    @Inclui
+    @Getter @Inclui @G1 @G2
     private BigDecimal vlContDifer;
 
-    @Inclui
+    @Getter @Inclui @G1 @G2
     private BigDecimal vlContDiferAnt;
 
-    @Inclui
+    @Getter @Inclui @G1 @G2
     private BigDecimal vlContPer;
 
+
+    public RegM210(String codCont, BigDecimal vlRecBrt, BigDecimal vlBcCont, BigDecimal aliqPis, BigDecimal quantBcPis, BigDecimal aliqPisQuant, BigDecimal vlContApur, BigDecimal vlAjusAcres, BigDecimal vlAjusReduc, BigDecimal vlContDifer, BigDecimal vlContDiferAnt, BigDecimal vlContPer) {
+        this.grupo = Grupo.G1;
+        this.codCont = codCont;
+        this.vlRecBrt = vlRecBrt;
+        this.vlBcCont = vlBcCont;
+        this.aliqPis = aliqPis;
+        this.quantBcPis = quantBcPis;
+        this.aliqPisQuant = aliqPisQuant;
+        this.vlContApur = vlContApur;
+        this.vlAjusAcres = vlAjusAcres;
+        this.vlAjusReduc = vlAjusReduc;
+        this.vlContDifer = vlContDifer;
+        this.vlContDiferAnt = vlContDiferAnt;
+        this.vlContPer = vlContPer;
+    }
+
+    public RegM210(String codCont, BigDecimal vlRecBrt, BigDecimal vlBcCont, BigDecimal vlAjusAcresBcPis, BigDecimal vlAjusReducBcPis, BigDecimal vlBcContAjus, BigDecimal aliqPis, BigDecimal quantBcPis, BigDecimal aliqPisQuant, BigDecimal vlContApur, BigDecimal vlAjusAcres, BigDecimal vlAjusReduc, BigDecimal vlContDifer, BigDecimal vlContDiferAnt, BigDecimal vlContPer) {
+        this.grupo = Grupo.G2;
+        this.codCont = codCont;
+        this.vlRecBrt = vlRecBrt;
+        this.vlBcCont = vlBcCont;
+        this.vlAjusAcresBcPis = vlAjusAcresBcPis;
+        this.vlAjusReducBcPis = vlAjusReducBcPis;
+        this.vlBcContAjus = vlBcContAjus;
+        this.aliqPis = aliqPis;
+        this.quantBcPis = quantBcPis;
+        this.aliqPisQuant = aliqPisQuant;
+        this.vlContApur = vlContApur;
+        this.vlAjusAcres = vlAjusAcres;
+        this.vlAjusReduc = vlAjusReduc;
+        this.vlContDifer = vlContDifer;
+        this.vlContDiferAnt = vlContDiferAnt;
+        this.vlContPer = vlContPer;
+    }
+
+    public RegM210(){}
 }
