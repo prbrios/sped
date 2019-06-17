@@ -13,57 +13,57 @@ import java.util.List;
 public class Reg1100 {
 
     @Getter @Inclui
-    private final String reg = "1100";
+private final String reg = "1100";
 
-    @Getter @Inclui(formatoData = "MMyyyy")
+    @Getter @Setter @Inclui(formatoData = "MMyyyy")
     private LocalDate perApuCred;
 
-    @Getter @Inclui(zerosEsquerda = 2)
+    @Getter @Setter @Inclui(zerosEsquerda = 2)
     private Integer origCred;
 
-    @Getter @Inclui(zerosEsquerda = 14)
+    @Getter @Setter @Inclui(zerosEsquerda = 14)
     private Long cnpjSuc;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private Integer codCred;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCredApu;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCredExtApu;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlTotCredApu;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCredDescPaAnt;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCredPerPaAnt;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCredDcoMpPaAnt;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal sdCredDispEfd;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCredDescEfd;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCredPerEfd;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCredDcoMpEfd;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCredTrans;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCredOut;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal sldCredFim;
 
     @Getter @Setter @Filho

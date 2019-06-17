@@ -11,9 +11,9 @@ import java.util.List;
 public class RegD010 {
 
     @Getter @Inclui
-    private final String reg = "D010";
+private final String reg = "D010";
 
-    @Getter @Inclui(zerosEsquerda = 14)
+    @Getter @Setter @Inclui(zerosEsquerda = 14)
     private Long cnpj;
 
     @Getter @Setter @Filho

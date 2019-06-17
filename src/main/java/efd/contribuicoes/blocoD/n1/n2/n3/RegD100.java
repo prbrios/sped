@@ -15,72 +15,72 @@ import java.util.List;
 public class RegD100 {
 
     @Getter @Inclui
-    private final String reg = "D100";
+private final String reg = "D100";
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String indOper;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String indEmit;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codPart;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codMod;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private Integer codSit;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String ser;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String sub;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private Integer numDoc;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String chvCte;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtDoc;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtAP;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private Integer tpCte;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String chvCteRef;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlDoc;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlDesc;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String indFrt;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlServ;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBcIcms;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlIcms;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlNt;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String coInf;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codCta;
 
     @Getter @Setter @Filho

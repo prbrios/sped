@@ -9,30 +9,30 @@ import java.math.BigDecimal;
 public class RegD101 {
 
     @Getter @Inclui
-    private final String reg = "D101";
+private final String reg = "D101";
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String indNatFrt;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlItem;
 
-    @Getter @Inclui(zerosEsquerda = 2)
+    @Getter @Setter @Inclui(zerosEsquerda = 2)
     private Integer cstPis;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String natBcCred;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBcPis;
 
-    @Getter @Inclui(casasDecimais = 4)
+    @Getter @Setter @Inclui(casasDecimais = 4)
     private BigDecimal aliqPis;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlPis;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codCta;
 
     public RegD101(String indNatFrt, BigDecimal vlItem, Integer cstPis, String natBcCred, BigDecimal vlBcPis, BigDecimal aliqPis, BigDecimal vlPis, String codCta) {

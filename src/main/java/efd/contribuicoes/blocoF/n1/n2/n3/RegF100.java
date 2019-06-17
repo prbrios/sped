@@ -13,60 +13,60 @@ import java.util.List;
 public class RegF100 {
 
     @Getter @Inclui
-    private final String reg = "F100";
+private final String reg = "F100";
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String indOper;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codPart;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codItem;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtOper;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlOper;
 
-    @Getter @Inclui(zerosEsquerda = 2)
+    @Getter @Setter @Inclui(zerosEsquerda = 2)
     private Integer cstPis;
 
-    @Getter @Inclui(casasDecimais = 4)
+    @Getter @Setter @Inclui(casasDecimais = 4)
     private BigDecimal vlBcPis;
 
-    @Getter @Inclui(casasDecimais = 4)
+    @Getter @Setter @Inclui(casasDecimais = 4)
     private BigDecimal aliqPis;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlPis;
 
-    @Getter @Inclui(zerosEsquerda = 2)
+    @Getter @Setter @Inclui(zerosEsquerda = 2)
     private Integer cstCofins;
 
-    @Getter @Inclui(casasDecimais = 4)
+    @Getter @Setter @Inclui(casasDecimais = 4)
     private BigDecimal vlBcCofins;
 
-    @Getter @Inclui(casasDecimais = 4)
+    @Getter @Setter @Inclui(casasDecimais = 4)
     private BigDecimal aliqCofins;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCofins;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String natBcCred;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String indOrigCred;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codCta;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codCcus;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String descDocOper;
 
     @Getter @Setter @Filho

@@ -9,24 +9,24 @@ import java.math.BigDecimal;
 public class RegC601 {
 
     @Getter @Inclui
-    private final String reg = "C601";
+private final String reg = "C601";
 
-    @Getter @Inclui(zerosEsquerda = 2)
+    @Getter @Setter @Inclui(zerosEsquerda = 2)
     private Integer cstPis;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlItem;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBcPis;
 
-    @Getter @Inclui(casasDecimais = 4)
+    @Getter @Setter @Inclui(casasDecimais = 4)
     private BigDecimal aliqPis;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlPis;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codCta;
 
     public RegC601(Integer cstPis, BigDecimal vlItem, BigDecimal vlBcPis, BigDecimal aliqPis, BigDecimal vlPis, String codCta) {

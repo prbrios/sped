@@ -10,36 +10,36 @@ import java.time.LocalDate;
 public class RegF600 {
 
     @Getter @Inclui
-    private final String reg = "F600";
+private final String reg = "F600";
 
-    @Getter @Inclui(zerosEsquerda = 2)
+    @Getter @Setter @Inclui(zerosEsquerda = 2)
     private Integer indNatRet;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtRet;
 
-    @Getter @Inclui(casasDecimais = 4)
+    @Getter @Setter @Inclui(casasDecimais = 4)
     private BigDecimal vlBcRet;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlRet;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codRec;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private Integer indNatRec;
 
-    @Getter @Inclui(zerosEsquerda = 14)
+    @Getter @Setter @Inclui(zerosEsquerda = 14)
     private Long cnpj;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlRetPis;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlRetCofins;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private Integer indDec;
 
     public RegF600(Integer indNatRet, LocalDate dtRet, BigDecimal vlBcRet, BigDecimal vlRet, String codRec, Integer indNatRec, Long cnpj, BigDecimal vlRetPis, BigDecimal vlRetCofins, Integer indDec) {

@@ -9,12 +9,12 @@ import java.time.LocalDate;
 public class Reg0120 {
 
     @Getter @Inclui
-    private final String reg = "0120";
+private final String reg = "0120";
 
-    @Getter @Inclui(formatoData = "MMyyyy")
+    @Getter @Setter @Inclui(formatoData = "MMyyyy")
     private LocalDate mesRefer;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String infComp;
 
     public Reg0120(LocalDate mesRefer, String infComp) {

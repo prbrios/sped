@@ -13,30 +13,30 @@ import java.util.List;
 public class Reg1800 {
 
     @Getter @Inclui
-    private final String reg = "1800";
+private final String reg = "1800";
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String incImob;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal recRecebRet;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal recFinRet;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal bcRet;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal aliqRet;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlRecUni;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtRecUni;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codRec;
 
     @Getter @Setter @Filho

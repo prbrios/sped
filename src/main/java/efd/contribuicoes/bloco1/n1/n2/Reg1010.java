@@ -9,24 +9,24 @@ import java.time.LocalDate;
 public class Reg1010 {
 
     @Getter @Inclui
-    private final String reg = "1010";
+private final String reg = "1010";
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String numProc;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String idSecJud;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String idVara;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String indNatAcao;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String descDecJud;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtSentJud;
 
     public Reg1010(String numProc, String idSecJud, String idVara, String indNatAcao, String descDecJud, LocalDate dtSentJud) {

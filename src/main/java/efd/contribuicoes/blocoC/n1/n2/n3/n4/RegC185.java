@@ -9,36 +9,36 @@ import java.math.BigDecimal;
 public class RegC185 {
 
     @Getter @Inclui
-    private final String reg = "C185";
+private final String reg = "C185";
 
-    @Getter @Inclui(zerosEsquerda = 2)
+    @Getter @Setter @Inclui(zerosEsquerda = 2)
     private Integer cstCofins;
 
-    @Getter @Inclui(zerosEsquerda = 4)
+    @Getter @Setter @Inclui(zerosEsquerda = 4)
     private Integer cfop;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlItem;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlDesc;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBcCofins;
 
-    @Getter @Inclui(casasDecimais = 4)
+    @Getter @Setter @Inclui(casasDecimais = 4)
     private BigDecimal aliqCofins;
 
-    @Getter @Inclui(casasDecimais = 3)
+    @Getter @Setter @Inclui(casasDecimais = 3)
     private BigDecimal quantBcCofins;
 
-    @Getter @Inclui(casasDecimais = 4)
+    @Getter @Setter @Inclui(casasDecimais = 4)
     private BigDecimal aliqCofinsQuant;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCofins;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codCta;
 
     public RegC185(Integer cstCofins, Integer cfop, BigDecimal vlItem, BigDecimal vlDesc, BigDecimal vlBcCofins, BigDecimal aliqCofins, BigDecimal quantBcCofins, BigDecimal aliqCofinsQuant, BigDecimal vlCofins, String codCta) {

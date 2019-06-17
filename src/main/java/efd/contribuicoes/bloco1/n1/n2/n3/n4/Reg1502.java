@@ -9,15 +9,15 @@ import java.math.BigDecimal;
 public class Reg1502 {
 
     @Getter @Inclui
-    private final String reg = "1502";
+private final String reg = "1502";
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCredCofinsTribMi;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCredCofinsNtMi;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCredCofinsExp;
 
     public Reg1502(BigDecimal vlCredCofinsTribMi, BigDecimal vlCredCofinsNtMi, BigDecimal vlCredCofinsExp) {

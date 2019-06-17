@@ -9,18 +9,18 @@ import java.math.BigDecimal;
 public class RegP110 {
 
     @Getter @Inclui
-    private final String reg = "P110";
+private final String reg = "P110";
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String numCampo;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codDet;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal detValor;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String infCompl;
 
     public RegP110(String numCampo, String codDet, BigDecimal detValor, String infCompl) {

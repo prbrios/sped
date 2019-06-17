@@ -10,24 +10,24 @@ import java.time.LocalDate;
 public class RegP210 {
 
     @Getter @Inclui
-    private final String reg = "P210";
+private final String reg = "P210";
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String indAj;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlAj;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codAj;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String numDoc;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String descrAj;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtRef;
 
     public RegP210(String indAj, BigDecimal vlAj, String codAj, String numDoc, String descrAj, LocalDate dtRef) {

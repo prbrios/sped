@@ -10,30 +10,30 @@ import java.time.LocalDate;
 public class RegF800 {
 
     @Getter @Inclui
-    private final String reg = "F800";
+private final String reg = "F800";
 
-    @Getter @Inclui(zerosEsquerda = 2)
+    @Getter @Setter @Inclui(zerosEsquerda = 2)
     private Integer indNatEven;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtEven;
 
-    @Getter @Inclui(zerosEsquerda = 14)
+    @Getter @Setter @Inclui(zerosEsquerda = 14)
     private Long cnpjSuced;
 
-    @Getter @Inclui(formatoData = "MMyyyy")
+    @Getter @Setter @Inclui(formatoData = "MMyyyy")
     private LocalDate paContCred;
 
-    @Getter @Inclui(zerosEsquerda = 3)
+    @Getter @Setter @Inclui(zerosEsquerda = 3)
     private Integer codCred;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCredPis;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCredCofins;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal perCredCis;
 
     public RegF800(Integer indNatEven, LocalDate dtEven, Long cnpjSuced, LocalDate paContCred, Integer codCred, BigDecimal vlCredPis, BigDecimal vlCredCofins, BigDecimal perCredCis) {

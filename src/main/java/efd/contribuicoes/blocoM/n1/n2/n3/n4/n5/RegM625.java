@@ -9,30 +9,30 @@ import java.math.BigDecimal;
 public class RegM625 {
 
     @Getter @Inclui
-    private final String reg = "M625";
+private final String reg = "M625";
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal detValorAj;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal cstCofins;
 
-    @Getter @Inclui(casasDecimais = 3)
+    @Getter @Setter @Inclui(casasDecimais = 3)
     private BigDecimal detBcCred;
 
-    @Getter @Inclui(casasDecimais = 4)
+    @Getter @Setter @Inclui(casasDecimais = 4)
     private BigDecimal detAliq;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal dtOperAj;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String descAj;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codCta;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String infoCompl;
 
     public RegM625(BigDecimal detValorAj, BigDecimal cstCofins, BigDecimal detBcCred, BigDecimal detAliq, BigDecimal dtOperAj, String descAj, String codCta, String infoCompl) {

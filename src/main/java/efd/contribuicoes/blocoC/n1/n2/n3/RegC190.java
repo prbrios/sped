@@ -16,27 +16,27 @@ import java.util.List;
 public class RegC190 {
 
     @Getter @Inclui
-    private final String reg = "C190";
+private final String reg = "C190";
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codMod;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtRefIni;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtRefFin;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codItem;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codNcm;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String exIpi;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlTotItem;
 
     @Getter @Setter @Filho

@@ -9,15 +9,15 @@ import java.time.LocalDate;
 public class Reg1020 {
 
     @Getter @Inclui
-    private final String reg = "1020";
+private final String reg = "1020";
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String numProc;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String indNatAcao;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtDecAdm;
 
     public Reg1020(String numProc, String indNatAcao, LocalDate dtDecAdm) {

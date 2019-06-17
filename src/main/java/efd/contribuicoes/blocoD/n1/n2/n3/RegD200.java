@@ -16,36 +16,36 @@ import java.util.List;
 public class RegD200 {
 
     @Getter @Inclui
-    private final String reg = "D200";
+private final String reg = "D200";
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codMod;
 
-    @Getter @Inclui(zerosEsquerda = 2)
+    @Getter @Setter @Inclui(zerosEsquerda = 2)
     private Integer codSit;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String ser;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String sub;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private Integer numDocIni;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private Integer numDocFin;
 
-    @Getter @Inclui(zerosEsquerda = 4)
+    @Getter @Setter @Inclui(zerosEsquerda = 4)
     private Integer cfop;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtRef;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlDoc;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlDesc;
 
     @Getter @Setter @Filho

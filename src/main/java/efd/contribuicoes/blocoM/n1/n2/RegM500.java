@@ -13,48 +13,48 @@ import java.util.List;
 public class RegM500 {
 
     @Getter @Inclui
-    private final String reg = "M500";
+private final String reg = "M500";
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codCred;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private Integer indCredOri;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBcCofins;
 
-    @Getter @Inclui(casasDecimais = 4)
+    @Getter @Setter @Inclui(casasDecimais = 4)
     private BigDecimal aliqCofins;
 
-    @Getter @Inclui(casasDecimais = 3)
+    @Getter @Setter @Inclui(casasDecimais = 3)
     private BigDecimal quantBcCofins;
 
-    @Getter @Inclui(casasDecimais = 4)
+    @Getter @Setter @Inclui(casasDecimais = 4)
     private BigDecimal aliqCofinsQuant;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCred;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlAjusAcres;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlAjusReduc;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCredDifer;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCredDisp;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String indDescCred;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCredDesc;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal sldCred;
 
     @Getter @Setter @Filho

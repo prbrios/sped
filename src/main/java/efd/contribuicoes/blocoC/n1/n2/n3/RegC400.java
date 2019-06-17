@@ -12,18 +12,18 @@ import java.util.List;
 public class RegC400 {
 
     @Getter @Inclui
-    private final String reg = "C400";
+private final String reg = "C400";
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codMod;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String ecfMod;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String ecfFab;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private Integer ecfCx;
 
     @Getter @Setter @Filho

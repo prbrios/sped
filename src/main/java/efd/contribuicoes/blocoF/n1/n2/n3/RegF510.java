@@ -13,51 +13,51 @@ import java.util.List;
 public class RegF510 {
 
     @Getter @Inclui
-    private final String reg = "F510";
+private final String reg = "F510";
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlRecCaixa;
 
-    @Getter @Inclui(zerosEsquerda = 2)
+    @Getter @Setter @Inclui(zerosEsquerda = 2)
     private Integer cstPis;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlDescPis;
 
-    @Getter @Inclui(casasDecimais = 3)
+    @Getter @Setter @Inclui(casasDecimais = 3)
     private BigDecimal quantBcPis;
 
-    @Getter @Inclui(casasDecimais = 4)
+    @Getter @Setter @Inclui(casasDecimais = 4)
     private BigDecimal aliqPisQuant;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlPis;
 
-    @Getter @Inclui(zerosEsquerda = 2)
+    @Getter @Setter @Inclui(zerosEsquerda = 2)
     private Integer cstCofins;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlDescCofins;
 
-    @Getter @Inclui(casasDecimais = 3)
+    @Getter @Setter @Inclui(casasDecimais = 3)
     private BigDecimal quantBcCofins;
 
-    @Getter @Inclui(casasDecimais = 4)
+    @Getter @Setter @Inclui(casasDecimais = 4)
     private BigDecimal aliqCofinsQuant;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCofins;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codMod;
 
-    @Getter @Inclui(zerosEsquerda = 4)
+    @Getter @Setter @Inclui(zerosEsquerda = 4)
     private Integer cfop;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codCta;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String infoCompl;
 
     @Getter @Setter @Filho

@@ -7,12 +7,12 @@ import lombok.Setter;
 public class RegC890 {
 
     @Getter @Inclui
-    private final String reg = "C890";
+private final String reg = "C890";
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String numProc;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String indProc;
 
     public RegC890(String numProc, String indProc) {

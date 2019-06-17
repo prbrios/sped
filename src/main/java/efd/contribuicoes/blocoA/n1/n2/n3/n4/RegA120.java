@@ -10,30 +10,30 @@ import java.time.LocalDate;
 public class RegA120 {
 
     @Getter @Inclui
-    private final String reg = "A120";
+private final String reg = "A120";
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlTotServ;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBcPis;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlPisImp;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtPagPis;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBcCofins;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCofinsImp;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtPagCofins;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String locExeServ;
 
     public RegA120(BigDecimal vlTotServ, BigDecimal vlBcPis, BigDecimal vlPisImp, LocalDate dtPagPis, BigDecimal vlBcCofins, BigDecimal vlCofinsImp, LocalDate dtPagCofins, String locExeServ) {

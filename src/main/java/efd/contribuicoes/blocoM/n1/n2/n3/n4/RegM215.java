@@ -10,33 +10,33 @@ import java.time.LocalDate;
 public class RegM215 {
 
     @Getter @Inclui
-    private final String reg = "M215";
+private final String reg = "M215";
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String indAjBc;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlAjBc;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codAjBc;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String numDoc;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String descrAjBc;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtRef;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codCta;
 
-    @Getter @Inclui(zerosEsquerda = 14)
+    @Getter @Setter @Inclui(zerosEsquerda = 14)
     private Long cnpj;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String infoCompl;
 
     public RegM215(String indAjBc, BigDecimal vlAjBc, String codAjBc, String numDoc, String descrAjBc, LocalDate dtRef, String codCta, Long cnpj, String infoCompl) {

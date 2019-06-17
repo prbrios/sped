@@ -32,43 +32,43 @@ public class Reg0000 {
     @Getter @Inclui
     private final String reg = "0000";
 
-    @Getter @Inclui(zerosEsquerda = 3)
+    @Getter @Setter @Inclui(zerosEsquerda = 3)
     private Integer codVer;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private Integer tipoEscrit;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private Integer indSitEsp;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String numRecAnterior;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtIni;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtFin;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String nome;
 
-    @Getter @Inclui(zerosEsquerda = 14)
+    @Getter @Setter @Inclui(zerosEsquerda = 14)
     private Long cnpj;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String uf;
 
-    @Getter @Inclui(zerosEsquerda = 7)
+    @Getter @Setter @Inclui(zerosEsquerda = 7)
     private Integer codMun;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String suframa;
 
-    @Getter @Inclui(zerosEsquerda = 2)
+    @Getter @Setter @Inclui(zerosEsquerda = 2)
     private Integer indNatPj;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private Integer indAtiv;
 
     @Getter @Setter @Filho

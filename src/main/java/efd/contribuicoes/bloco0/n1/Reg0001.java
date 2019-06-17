@@ -13,7 +13,7 @@ public class Reg0001 {
     @Getter @Inclui
     private final String reg = "0001";
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private Integer indMov;
 
     @Getter @Setter @Filho

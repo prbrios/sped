@@ -9,42 +9,42 @@ import java.math.BigDecimal;
 public class Reg1900 {
 
     @Getter @Inclui
-    private final String reg = "1900";
+private final String reg = "1900";
 
-    @Getter @Inclui(zerosEsquerda = 14)
+    @Getter @Setter @Inclui(zerosEsquerda = 14)
     private Long cnpj;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codMod;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String ser;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private Integer subSer;
 
-    @Getter @Inclui(zerosEsquerda = 2)
+    @Getter @Setter @Inclui(zerosEsquerda = 2)
     private Integer codSit;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vltotRec;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private Integer quantDoc;
 
-    @Getter @Inclui(zerosEsquerda = 2)
+    @Getter @Setter @Inclui(zerosEsquerda = 2)
     private Integer cstPis;
 
-    @Getter @Inclui(zerosEsquerda = 2)
+    @Getter @Setter @Inclui(zerosEsquerda = 2)
     private Integer cstCofins;
 
-    @Getter @Inclui(zerosEsquerda = 4)
+    @Getter @Setter @Inclui(zerosEsquerda = 4)
     private Integer cfop;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String infCompl;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codCta;
 
     public Reg1900(Long cnpj, String codMod, String ser, Integer subSer, Integer codSit, BigDecimal vltotRec, Integer quantDoc, Integer cstPis, Integer cstCofins, Integer cfop, String infCompl, String codCta) {

@@ -15,69 +15,69 @@ import java.util.List;
 public class RegF200 {
 
     @Getter @Inclui
-    private final String reg = "F200";
+private final String reg = "F200";
 
-    @Getter @Inclui(zerosEsquerda = 2)
+    @Getter @Setter @Inclui(zerosEsquerda = 2)
     private Integer indOper;
 
-    @Getter @Inclui(zerosEsquerda = 2)
+    @Getter @Setter @Inclui(zerosEsquerda = 2)
     private Integer unidImob;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String identEmp;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String descUnidImob;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String numCont;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String cpfCnpjAdqu;
 
-    @Getter @Inclui(formatoData = "MMyyyy")
+    @Getter @Setter @Inclui(formatoData = "MMyyyy")
     private LocalDate dtOper;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlTotVend;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlRecAcum;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlTotRec;
 
-    @Getter @Inclui(zerosEsquerda = 2)
+    @Getter @Setter @Inclui(zerosEsquerda = 2)
     private Integer cstPis;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBcPis;
 
-    @Getter @Inclui(casasDecimais = 4)
+    @Getter @Setter @Inclui(casasDecimais = 4)
     private BigDecimal aliqPis;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlPis;
 
-    @Getter @Inclui(zerosEsquerda = 2)
+    @Getter @Setter @Inclui(zerosEsquerda = 2)
     private Integer cstCofins;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBcCofins;
 
-    @Getter @Inclui(casasDecimais = 4)
+    @Getter @Setter @Inclui(casasDecimais = 4)
     private BigDecimal aliqCofins;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCofins;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal percRecReceb;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private Integer indNatEmp;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String infComp;
 
     @Getter @Setter @Filho

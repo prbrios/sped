@@ -9,15 +9,15 @@ import java.time.LocalDate;
 public class Reg0600 {
 
     @Getter @Inclui
-    private final String reg = "0600";
+private final String reg = "0600";
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtAlt;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codCcus;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String ccus;
 
     public Reg0600(LocalDate dtAlt, String codCcus, String ccus) {

@@ -9,21 +9,21 @@ import java.math.BigDecimal;
 public class Reg0145 {
 
     @Getter @Inclui
-    private final String reg = "0145";
+private final String reg = "0145";
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private Integer codIncTrib;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlRecTot;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlRecAtiv;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlRecDemaisAtiv;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String infoCompl;
 
     public Reg0145(Integer codIncTrib, BigDecimal vlRecTot, BigDecimal vlRecAtiv, BigDecimal vlRecDemaisAtiv, String infoCompl) {

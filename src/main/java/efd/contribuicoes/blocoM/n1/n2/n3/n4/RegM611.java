@@ -9,21 +9,21 @@ import java.math.BigDecimal;
 public class RegM611 {
 
     @Getter @Inclui
-    private final String reg = "M611";
+private final String reg = "M611";
 
-    @Getter @Inclui(zerosEsquerda = 2)
+    @Getter @Setter @Inclui(zerosEsquerda = 2)
     private Integer indTipCoop;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBcContAntExcCoop;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlExcCoopGer;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlExcEspCoop;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBcCont;
 
     public RegM611(Integer indTipCoop, BigDecimal vlBcContAntExcCoop, BigDecimal vlExcCoopGer, BigDecimal vlExcEspCoop, BigDecimal vlBcCont) {

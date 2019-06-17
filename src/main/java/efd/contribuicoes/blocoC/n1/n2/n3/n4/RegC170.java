@@ -9,114 +9,114 @@ import java.math.BigDecimal;
 public class RegC170 {
 
     @Getter @Inclui
-    private final String reg = "C170";
+private final String reg = "C170";
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private Integer numItem;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codItem;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String descrCompl;
 
-    @Getter @Inclui(casasDecimais = 5)
+    @Getter @Setter @Inclui(casasDecimais = 5)
     private BigDecimal qtd;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String unid;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlItem;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlDesc;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String indMov;
 
-    @Getter @Inclui(zerosEsquerda = 3)
+    @Getter @Setter @Inclui(zerosEsquerda = 3)
     private Integer cstIcms;
 
-    @Getter @Inclui(zerosEsquerda = 4)
+    @Getter @Setter @Inclui(zerosEsquerda = 4)
     private Integer cfop;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codNat;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBcIcms;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal aliqIcms;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlIcms;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBcIcmsSt;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal aliqSt;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlIcmsSt;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String indApur;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private Integer cstIpi;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codEnq;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBcIpi;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal aliqIpi;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlIpi;
 
-    @Getter @Inclui(zerosEsquerda = 2)
+    @Getter @Setter @Inclui(zerosEsquerda = 2)
     private Integer cstPis;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBcPis;
 
-    @Getter @Inclui(casasDecimais = 4)
+    @Getter @Setter @Inclui(casasDecimais = 4)
     private BigDecimal aliqPis;
 
-    @Getter @Inclui(casasDecimais = 3)
+    @Getter @Setter @Inclui(casasDecimais = 3)
     private BigDecimal quantBcPis;
 
-    @Getter @Inclui(casasDecimais = 4)
+    @Getter @Setter @Inclui(casasDecimais = 4)
     private BigDecimal aliqPisQuant;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlPis;
 
-    @Getter @Inclui(zerosEsquerda = 2)
+    @Getter @Setter @Inclui(zerosEsquerda = 2)
     private Integer cstCofins;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBcCofins;
 
-    @Getter @Inclui(casasDecimais = 4)
+    @Getter @Setter @Inclui(casasDecimais = 4)
     private BigDecimal aliqCofins;
 
-    @Getter @Inclui(casasDecimais = 3)
+    @Getter @Setter @Inclui(casasDecimais = 3)
     private BigDecimal quantBcCofins;
 
-    @Getter @Inclui(casasDecimais = 4)
+    @Getter @Setter @Inclui(casasDecimais = 4)
     private BigDecimal aliqCofinsQuant;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCofins;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codCta;
 
     public RegC170(Integer numItem, String codItem, String descrCompl, BigDecimal qtd, String unid, BigDecimal vlItem, BigDecimal vlDesc, String indMov, Integer cstIcms, Integer cfop, String codNat, BigDecimal vlBcIcms, BigDecimal aliqIcms, BigDecimal vlIcms, BigDecimal vlBcIcmsSt, BigDecimal aliqSt, BigDecimal vlIcmsSt, String indApur, Integer cstIpi, String codEnq, BigDecimal vlBcIpi, BigDecimal aliqIpi, BigDecimal vlIpi, Integer cstPis, BigDecimal vlBcPis, BigDecimal aliqPis, BigDecimal quantBcPis, BigDecimal aliqPisQuant, BigDecimal vlPis, Integer cstCofins, BigDecimal vlBcCofins, BigDecimal aliqCofins, BigDecimal quantBcCofins, BigDecimal aliqCofinsQuant, BigDecimal vlCofins, String codCta) {

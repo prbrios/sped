@@ -10,30 +10,30 @@ import java.time.LocalDate;
 public class RegM225 {
 
     @Getter @Inclui
-    private final String reg = "M225";
+private final String reg = "M225";
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal detValorAj;
 
-    @Getter @Inclui(zerosEsquerda = 2)
+    @Getter @Setter @Inclui(zerosEsquerda = 2)
     private Integer cstPis;
 
-    @Getter @Inclui(casasDecimais = 3)
+    @Getter @Setter @Inclui(casasDecimais = 3)
     private BigDecimal detBcCred;
 
-    @Getter @Inclui(casasDecimais = 4)
+    @Getter @Setter @Inclui(casasDecimais = 4)
     private BigDecimal detAliq;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtOperAj;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String descAj;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codCta;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String infoCompl;
 
     public RegM225(BigDecimal detValorAj, Integer cstPis, BigDecimal detBcCred, BigDecimal detAliq, LocalDate dtOperAj, String descAj, String codCta, String infoCompl) {

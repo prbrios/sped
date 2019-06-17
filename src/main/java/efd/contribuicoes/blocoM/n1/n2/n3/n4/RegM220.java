@@ -13,24 +13,24 @@ import java.util.List;
 public class RegM220 {
 
     @Getter @Inclui
-    private final String reg = "M220";
+private final String reg = "M220";
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String indAj;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlAj;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codAj;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String numDoc;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String descrAj;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtRef;
 
     @Getter @Setter @Filho

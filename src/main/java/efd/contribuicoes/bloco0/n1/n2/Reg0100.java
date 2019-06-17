@@ -9,43 +9,43 @@ public class Reg0100 {
     @Getter @Inclui
     private final String reg = "0100";
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String nome;
 
-    @Getter @Inclui(zerosEsquerda = 11)
+    @Getter @Setter @Inclui(zerosEsquerda = 11)
     private Long cpf;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String crc;
 
-    @Getter @Inclui(zerosEsquerda = 14)
+    @Getter @Setter @Inclui(zerosEsquerda = 14)
     private Long cnpj;
 
-    @Getter @Inclui(zerosEsquerda = 8)
+    @Getter @Setter @Inclui(zerosEsquerda = 8)
     private Integer cep;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String end;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String num;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String compl;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String bairro;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String fone;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String fax;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String email;
 
-    @Getter @Inclui(zerosEsquerda = 7)
+    @Getter @Setter @Inclui(zerosEsquerda = 7)
     private Integer codMun;
 
     public Reg0100(String nome, Long cpf, String crc, Long cnpj, Integer cep, String end, String num, String compl, String bairro, String fone, String fax, String email, Integer codMun) {

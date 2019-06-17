@@ -11,9 +11,9 @@ import java.util.List;
 public class Reg9001 {
 
     @Getter @Inclui
-    private final String reg = "9001";
+private final String reg = "9001";
     
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private Integer indMov;
 
     @Getter @Setter @Filho

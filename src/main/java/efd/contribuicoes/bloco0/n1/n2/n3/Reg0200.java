@@ -14,39 +14,39 @@ import java.util.List;
 public class Reg0200 {
 
     @Getter @Inclui
-    private final String reg = "0200";
+private final String reg = "0200";
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codItem;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String descrItem;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codBarra;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codAndItem;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String unidInv;
 
-    @Getter @Inclui(zerosEsquerda = 2)
+    @Getter @Setter @Inclui(zerosEsquerda = 2)
     private Integer tipoItem;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codNcm;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String exIpi;
 
-    @Getter @Inclui(zerosEsquerda = 2)
+    @Getter @Setter @Inclui(zerosEsquerda = 2)
     private Integer codGen;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private Integer codLst;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal aliqIcms;
 
     @Getter @Setter @Filho

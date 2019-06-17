@@ -9,45 +9,45 @@ import java.math.BigDecimal;
 public class RegF150 {
 
     @Getter @Inclui
-    private final String reg = "F150";
+private final String reg = "F150";
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String natBcCred;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlTotEst;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal estImp;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBcEst;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBcMenEst;
 
-    @Getter @Inclui(zerosEsquerda = 2)
+    @Getter @Setter @Inclui(zerosEsquerda = 2)
     private Integer cstPis;
 
-    @Getter @Inclui(casasDecimais = 4)
+    @Getter @Setter @Inclui(casasDecimais = 4)
     private BigDecimal aliqPis;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCredPis;
 
-    @Getter @Inclui(zerosEsquerda = 2)
+    @Getter @Setter @Inclui(zerosEsquerda = 2)
     private Integer cstCofins;
 
-    @Getter @Inclui(casasDecimais = 4)
+    @Getter @Setter @Inclui(casasDecimais = 4)
     private BigDecimal aliqCofins;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCredCofins;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String descEst;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codCta;
 
     public RegF150(String natBcCred, BigDecimal vlTotEst, BigDecimal estImp, BigDecimal vlBcEst, BigDecimal vlBcMenEst, Integer cstPis, BigDecimal aliqPis, BigDecimal vlCredPis, Integer cstCofins, BigDecimal aliqCofins, BigDecimal vlCredCofins, String descEst, String codCta) {

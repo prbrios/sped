@@ -7,9 +7,9 @@ import lombok.Setter;
 public class RegF990 {
 
     @Getter @Inclui
-    private final String reg = "F990";
+private final String reg = "F990";
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private Integer qtdLinF;
 
     public RegF990(Integer qtdLinF) {

@@ -13,90 +13,90 @@ import java.util.List;
 public class RegC100 {
 
     @Getter @Inclui
-    private final String reg = "C100";
+private final String reg = "C100";
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String indOper;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String indEmit;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codPart;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codMod;
 
-    @Getter @Inclui(zerosEsquerda = 2)
+    @Getter @Setter @Inclui(zerosEsquerda = 2)
     private Integer codSit;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String ser;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private Integer numDoc;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String chvNfe;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtDoc;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtES;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlDoc;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String indPgto;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlDesc;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlAbatNt;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlMerc;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String indFrt;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlFrt;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlSeg;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlOutDa;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBcIcms;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlIcms;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBcIcmsSt;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlIcmsSt;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlIpi;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlPis;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCofins;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlPisSt;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCofinsSt;
 
     @Getter @Setter @Filho

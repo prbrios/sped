@@ -9,15 +9,15 @@ import java.math.BigDecimal;
 public class RegM605 {
 
     @Getter @Inclui
-    private final String reg = "M605";
+private final String reg = "M605";
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String numCampo;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codRec;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlDebito;
 
     public RegM605(String numCampo, String codRec, BigDecimal vlDebito) {

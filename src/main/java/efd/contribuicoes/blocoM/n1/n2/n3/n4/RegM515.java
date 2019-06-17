@@ -10,30 +10,30 @@ import java.time.LocalDate;
 public class RegM515 {
 
     @Getter @Inclui
-    private final String reg = "M515";
+private final String reg = "M515";
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal detValorAj;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private Integer cstCofins;
 
-    @Getter @Inclui(casasDecimais = 3)
+    @Getter @Setter @Inclui(casasDecimais = 3)
     private BigDecimal detBcCred;
 
-    @Getter @Inclui(casasDecimais = 4)
+    @Getter @Setter @Inclui(casasDecimais = 4)
     private BigDecimal detAliq;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtOperAj;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String descAj;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codCta;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String infoCompl;
 
     public RegM515(BigDecimal detValorAj, Integer cstCofins, BigDecimal detBcCred, BigDecimal detAliq, LocalDate dtOperAj, String descAj, String codCta, String infoCompl) {

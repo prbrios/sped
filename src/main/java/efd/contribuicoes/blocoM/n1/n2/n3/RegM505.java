@@ -9,33 +9,33 @@ import java.math.BigDecimal;
 public class RegM505 {
 
     @Getter @Inclui
-    private final String reg = "M505";
+private final String reg = "M505";
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String natBcCred;
 
-    @Getter @Inclui(zerosEsquerda = 2)
+    @Getter @Setter @Inclui(zerosEsquerda = 2)
     private Integer cstCofins;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBcCofinsTot;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBcCofinsCum;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBcCofinsNc;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBcCofins;
 
-    @Getter @Inclui(casasDecimais = 3)
+    @Getter @Setter @Inclui(casasDecimais = 3)
     private BigDecimal quantBcCofinsTot;
 
-    @Getter @Inclui(casasDecimais = 3)
+    @Getter @Setter @Inclui(casasDecimais = 3)
     private BigDecimal quantBcCofins;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String descCred;
 
     public RegM505(String natBcCred, Integer cstCofins, BigDecimal vlBcCofinsTot, BigDecimal vlBcCofinsCum, BigDecimal vlBcCofinsNc, BigDecimal vlBcCofins, BigDecimal quantBcCofinsTot, BigDecimal quantBcCofins, String descCred) {

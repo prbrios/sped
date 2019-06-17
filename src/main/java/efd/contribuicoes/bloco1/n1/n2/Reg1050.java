@@ -10,57 +10,57 @@ import java.time.LocalDate;
 public class Reg1050 {
 
     @Getter @Inclui
-    private final String reg = "1050";
+private final String reg = "1050";
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtRef;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String indAjBc;
 
-    @Getter @Inclui(zerosEsquerda = 14)
+    @Getter @Setter @Inclui(zerosEsquerda = 14)
     private Long cnpj;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlAjCst01;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlAjCst02;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlAjCst03;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlAjCst04;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlAjCst05;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlAjCst06;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlAjCst07;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlAjCst08;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlAjCst09;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlAjCst49;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlAjCst99;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String indAprop;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String numRec;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String infoCompl;
 
     public Reg1050(LocalDate dtRef, String indAjBc, Long cnpj, BigDecimal vlAjCst01, BigDecimal vlAjCst02, BigDecimal vlAjCst03, BigDecimal vlAjCst04, BigDecimal vlAjCst05, BigDecimal vlAjCst06, BigDecimal vlAjCst07, BigDecimal vlAjCst08, BigDecimal vlAjCst09, BigDecimal vlAjCst49, BigDecimal vlAjCst99, String indAprop, String numRec, String infoCompl) {

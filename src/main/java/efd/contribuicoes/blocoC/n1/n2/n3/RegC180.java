@@ -15,27 +15,27 @@ import java.util.List;
 public class RegC180 {
 
     @Getter @Inclui
-    private final String reg = "C180";
+private final String reg = "C180";
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codMod;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtDocIni;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtDocFin;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codItem;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codNcm;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String exIpi;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlTotItem;
 
     @Getter @Setter @Filho

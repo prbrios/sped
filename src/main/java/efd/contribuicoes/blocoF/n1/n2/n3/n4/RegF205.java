@@ -9,57 +9,57 @@ import java.math.BigDecimal;
 public class RegF205 {
 
     @Getter @Inclui
-    private final String reg = "F205";
+private final String reg = "F205";
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCusIncAcumAnt;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCusIncPerEsc;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCusIncAcum;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlExcBcCusIncAcum;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBcCusInc;
 
-    @Getter @Inclui(zerosEsquerda = 2)
+    @Getter @Setter @Inclui(zerosEsquerda = 2)
     private Integer cstPis;
 
-    @Getter @Inclui(casasDecimais = 4)
+    @Getter @Setter @Inclui(casasDecimais = 4)
     private BigDecimal aliqPis;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCredPisAcum;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCredPisDescAnt;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCredPisDesc;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCredPisDescFut;
 
-    @Getter @Inclui(zerosEsquerda = 2)
+    @Getter @Setter @Inclui(zerosEsquerda = 2)
     private Integer cstCofins;
 
-    @Getter @Inclui(casasDecimais = 4)
+    @Getter @Setter @Inclui(casasDecimais = 4)
     private BigDecimal aliqCofins;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCredCofinsAcum;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCredCofinsDescAnt;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCredCofinsDesc;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCredCofinsDescFut;
 
     public RegF205(BigDecimal vlCusIncAcumAnt, BigDecimal vlCusIncPerEsc, BigDecimal vlCusIncAcum, BigDecimal vlExcBcCusIncAcum, BigDecimal vlBcCusInc, Integer cstPis, BigDecimal aliqPis, BigDecimal vlCredPisAcum, BigDecimal vlCredPisDescAnt, BigDecimal vlCredPisDesc, BigDecimal vlCredPisDescFut, Integer cstCofins, BigDecimal aliqCofins, BigDecimal vlCredCofinsAcum, BigDecimal vlCredCofinsDescAnt, BigDecimal vlCredCofinsDesc, BigDecimal vlCredCofinsDescFut) {

@@ -9,24 +9,24 @@ import java.math.BigDecimal;
 public class RegM630 {
 
     @Getter @Inclui
-    private final String reg = "M630";
+private final String reg = "M630";
 
-    @Getter @Inclui(zerosEsquerda = 14)
+    @Getter @Setter @Inclui(zerosEsquerda = 14)
     private Long cnpj;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlVend;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlNaoReceb;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlContDif;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCredDif;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal codCred;
 
     public RegM630(Long cnpj, BigDecimal vlVend, BigDecimal vlNaoReceb, BigDecimal vlContDif, BigDecimal vlCredDif, BigDecimal codCred) {

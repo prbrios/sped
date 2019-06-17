@@ -9,18 +9,18 @@ import lombok.Setter;
 public class Reg0110 {
 
     @Getter @Inclui
-    private final String reg = "0110";
+private final String reg = "0110";
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private Integer codincTrib;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private Integer indAproCred;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private Integer codTipoCont;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private Integer indRegCum;
 
     @Getter @Setter @Filho

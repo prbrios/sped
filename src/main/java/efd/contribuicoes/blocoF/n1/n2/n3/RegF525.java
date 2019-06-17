@@ -9,36 +9,36 @@ import java.math.BigDecimal;
 public class RegF525 {
 
     @Getter @Inclui
-    private final String reg = "F525";
+private final String reg = "F525";
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlRec;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String indRec;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String cnpjCpf;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String numDoc;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codItem;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlRecDet;
 
-    @Getter @Inclui(zerosEsquerda = 2)
+    @Getter @Setter @Inclui(zerosEsquerda = 2)
     private Integer cstPis;
 
-    @Getter @Inclui(zerosEsquerda = 2)
+    @Getter @Setter @Inclui(zerosEsquerda = 2)
     private Integer cstCofins;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String infoComp;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codCta;
 
     public RegF525(BigDecimal vlRec, String indRec, String cnpjCpf, String numDoc, String codItem, BigDecimal vlRecDet, Integer cstPis, Integer cstCofins, String infoComp, String codCta) {

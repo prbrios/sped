@@ -9,18 +9,18 @@ import java.time.LocalDate;
 public class Reg0205 {
 
     @Getter @Inclui
-    private final String reg = "0205";
+private final String reg = "0205";
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String descrAntItem;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtIni;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtFim;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codAntItem;
 
     public Reg0205(String descrAntItem, LocalDate dtIni, LocalDate dtFim, String codAntItem) {

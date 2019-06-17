@@ -9,21 +9,21 @@ import java.math.BigDecimal;
 public class RegC199 {
 
     @Getter @Inclui
-    private final String reg = "C199";
+private final String reg = "C199";
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codDocImp;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String numDocImp;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlPisImp;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCofinsImp;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String numAcdraw;
 
     public RegC199(String codDocImp, String numDocImp, BigDecimal vlPisImp, BigDecimal vlCofinsImp, String numAcdraw) {

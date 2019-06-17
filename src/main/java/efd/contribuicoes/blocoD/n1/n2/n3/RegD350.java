@@ -13,72 +13,72 @@ import java.util.List;
 public class RegD350 {
 
     @Getter @Inclui
-    private final String reg = "D350";
+private final String reg = "D350";
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codMod;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String ecfMod;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String ecfFab;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtDoc;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private Integer cro;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private Integer crz;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private Integer numCooFin;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal gtFin;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBrt;
 
-    @Getter @Inclui(zerosEsquerda = 2)
+    @Getter @Setter @Inclui(zerosEsquerda = 2)
     private Integer cstPis;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBcPis;
 
-    @Getter @Inclui(casasDecimais = 4)
+    @Getter @Setter @Inclui(casasDecimais = 4)
     private BigDecimal aliqPis;
 
-    @Getter @Inclui(casasDecimais = 3)
+    @Getter @Setter @Inclui(casasDecimais = 3)
     private BigDecimal quantBcPis;
 
-    @Getter @Inclui(casasDecimais = 4)
+    @Getter @Setter @Inclui(casasDecimais = 4)
     private BigDecimal aliqPisQuant;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlPis;
 
-    @Getter @Inclui(zerosEsquerda = 2)
+    @Getter @Setter @Inclui(zerosEsquerda = 2)
     private Integer cstCofins;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBcCofins;
 
-    @Getter @Inclui(casasDecimais = 4)
+    @Getter @Setter @Inclui(casasDecimais = 4)
     private BigDecimal aliqCofins;
 
-    @Getter @Inclui(casasDecimais = 3)
+    @Getter @Setter @Inclui(casasDecimais = 3)
     private BigDecimal quantBcCofins;
 
-    @Getter @Inclui(casasDecimais = 4)
+    @Getter @Setter @Inclui(casasDecimais = 4)
     private BigDecimal aliqCofinsQuant;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCofins;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codCta;
 
     @Getter @Setter @Filho

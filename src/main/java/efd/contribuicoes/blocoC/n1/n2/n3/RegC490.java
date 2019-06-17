@@ -14,15 +14,15 @@ import java.util.List;
 public class RegC490 {
 
     @Getter @Inclui
-    private final String reg = "C490";
+private final String reg = "C490";
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtDocIni;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtDocFin;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codMod;
 
     @Getter @Setter @Filho

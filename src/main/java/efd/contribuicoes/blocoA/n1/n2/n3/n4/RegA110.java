@@ -7,12 +7,12 @@ import lombok.Setter;
 public class RegA110 {
 
     @Getter @Inclui
-    private final String reg = "A110";
+private final String reg = "A110";
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codInf;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String txtCompl;
 
     public RegA110(String codInf, String txtCompl) {

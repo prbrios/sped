@@ -19,52 +19,52 @@ public class RegM610 {
 
     private Grupo grupo;
 
-    @Getter @Inclui @G1 @G2
+    @Getter @Setter @Inclui @G1 @G2
     private final String reg = "M610";
 
-    @Getter @Inclui @G1 @G2
+    @Getter @Setter @Inclui @G1 @G2
     private String codCont;
 
-    @Getter @Inclui @G1 @G2
+    @Getter @Setter @Inclui @G1 @G2
     private BigDecimal vlRecBrt;
 
-    @Getter @Inclui @G1 @G2
+    @Getter @Setter @Inclui @G1 @G2
     private BigDecimal vlBcCont;
 
-    @Getter @Inclui @G2
+    @Getter @Setter @Inclui @G2
     private BigDecimal vlAjusAcresBcCofins;
 
-    @Getter @Inclui @G2
+    @Getter @Setter @Inclui @G2
     private BigDecimal vlAjusReducBcCofins;
 
-    @Getter @Inclui @G2
+    @Getter @Setter @Inclui @G2
     private BigDecimal vlBcContAjus;
 
-    @Getter @Inclui(casasDecimais = 4) @G1 @G2
+    @Getter @Setter @Inclui(casasDecimais = 4) @G1 @G2
     private BigDecimal aliqCofins;
 
-    @Getter @Inclui(casasDecimais = 3) @G1 @G2
+    @Getter @Setter @Inclui(casasDecimais = 3) @G1 @G2
     private BigDecimal quantBcCofins;
 
-    @Getter @Inclui(casasDecimais = 4) @G1 @G2
+    @Getter @Setter @Inclui(casasDecimais = 4) @G1 @G2
     private BigDecimal aliqCofinsQuant;
 
-    @Getter @Inclui @G1 @G2
+    @Getter @Setter @Inclui @G1 @G2
     private BigDecimal vlContApur;
 
-    @Getter @Inclui @G1 @G2
+    @Getter @Setter @Inclui @G1 @G2
     private BigDecimal vlAjusAcres;
 
-    @Getter @Inclui @G1 @G2
+    @Getter @Setter @Inclui @G1 @G2
     private BigDecimal vlAjusReduc;
 
-    @Getter @Inclui @G1 @G2
+    @Getter @Setter @Inclui @G1 @G2
     private BigDecimal vlContDifer;
 
-    @Getter @Inclui @G1 @G2
+    @Getter @Setter @Inclui @G1 @G2
     private BigDecimal vlContDiferAnt;
 
-    @Getter @Inclui @G1 @G2
+    @Getter @Setter @Inclui @G1 @G2
     private BigDecimal vlContPer;
 
     @Getter @Setter @Filho

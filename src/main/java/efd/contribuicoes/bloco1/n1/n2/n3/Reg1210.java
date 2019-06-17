@@ -10,36 +10,36 @@ import java.time.LocalDate;
 public class Reg1210 {
 
     @Getter @Inclui
-    private final String reg = "1210";
+private final String reg = "1210";
 
-    @Getter @Inclui(zerosEsquerda = 14)
+    @Getter @Setter @Inclui(zerosEsquerda = 14)
     private Long cnpj;
 
-    @Getter @Inclui(zerosEsquerda = 2)
+    @Getter @Setter @Inclui(zerosEsquerda = 2)
     private Integer cstPis;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codPart;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtOper;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlOper;
 
-    @Getter @Inclui(casasDecimais = 3)
+    @Getter @Setter @Inclui(casasDecimais = 3)
     private BigDecimal vlBcPis;
 
-    @Getter @Inclui(casasDecimais = 4)
+    @Getter @Setter @Inclui(casasDecimais = 4)
     private BigDecimal aliqPis;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlPis;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codCta;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String descCompl;
 
     public Reg1210(Long cnpj, Integer cstPis, String codPart, LocalDate dtOper, BigDecimal vlOper, BigDecimal vlBcPis, BigDecimal aliqPis, BigDecimal vlPis, String codCta, String descCompl) {

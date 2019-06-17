@@ -10,18 +10,18 @@ import java.time.LocalDate;
 public class Reg1220 {
 
     @Getter @Inclui
-    private final String reg = "1220";
+private final String reg = "1220";
 
-    @Getter @Inclui(formatoData = "MMyyyy")
+    @Getter @Setter @Inclui(formatoData = "MMyyyy")
     private LocalDate perApuCred;
 
-    @Getter @Inclui(zerosEsquerda = 2)
+    @Getter @Setter @Inclui(zerosEsquerda = 2)
     private Integer origCred;
 
-    @Getter @Inclui(zerosEsquerda = 3)
+    @Getter @Setter @Inclui(zerosEsquerda = 3)
     private Integer codCred;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCred;
 
     public Reg1220(LocalDate perApuCred, Integer origCred, Integer codCred, BigDecimal vlCred) {

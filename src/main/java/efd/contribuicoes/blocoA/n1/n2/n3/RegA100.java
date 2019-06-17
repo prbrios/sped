@@ -16,66 +16,66 @@ import java.util.List;
 public class RegA100 {
 
     @Getter @Inclui
-    private final String reg = "A100";
+private final String reg = "A100";
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String indOper;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String indEmit;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codPart;
 
-    @Getter @Inclui(zerosEsquerda = 2)
+    @Getter @Setter @Inclui(zerosEsquerda = 2)
     private Integer codSit;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String ser;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String sub;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String numDoc;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String chvNfse;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtDoc;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtExeServ;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlDoc;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String indPgto;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlDesc;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlbcPis;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlPis;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBcCofins;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCofins;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlPisRet;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCofinsRet;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlIss;
 
     @Getter @Setter @Filho

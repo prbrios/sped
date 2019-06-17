@@ -12,69 +12,69 @@ import java.time.LocalDate;
 public class Reg1101 {
 
     @Getter @Inclui
-    private final String reg = "1101";
+private final String reg = "1101";
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codPart;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codItem;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codMod;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String ser;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String subSer;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private Integer numDoc;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtOper;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String chvNfe;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlOper;
 
-    @Getter @Inclui(zerosEsquerda = 4)
+    @Getter @Setter @Inclui(zerosEsquerda = 4)
     private Integer cfop;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String natBcCred;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String indOrigCred;
 
-    @Getter @Inclui(zerosEsquerda = 2)
+    @Getter @Setter @Inclui(zerosEsquerda = 2)
     private Integer cstPis;
 
-    @Getter @Inclui(casasDecimais = 3)
+    @Getter @Setter @Inclui(casasDecimais = 3)
     private BigDecimal vlBcPis;
 
-    @Getter @Inclui(casasDecimais = 4)
+    @Getter @Setter @Inclui(casasDecimais = 4)
     private BigDecimal aliqPis;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlPis;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codCta;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codCcus;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String descCompl;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private LocalDate perEscrit;
 
-    @Getter @Inclui(zerosEsquerda = 14)
+    @Getter @Setter @Inclui(zerosEsquerda = 14)
     private Long cnpj;
 
     @Getter @Setter @Filho

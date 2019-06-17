@@ -13,18 +13,18 @@ import java.util.List;
 public class RegM800 {
 
     @Getter @Inclui
-    private final String reg = "M800";
+private final String reg = "M800";
 
-    @Getter @Inclui(zerosEsquerda = 2)
+    @Getter @Setter @Inclui(zerosEsquerda = 2)
     private Integer cstCofins;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlTotRec;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codCta;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String descCompl;
 
     @Getter @Setter @Filho

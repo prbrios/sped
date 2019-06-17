@@ -14,21 +14,21 @@ import java.util.List;
 public class RegC860 {
 
     @Getter @Inclui
-    private final String reg = "C860";
+private final String reg = "C860";
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codMod;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private Integer nrSat;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtDoc;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private Integer docIni;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private Integer docFim;
 
     @Getter @Setter @Filho

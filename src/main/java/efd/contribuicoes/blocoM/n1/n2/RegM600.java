@@ -13,42 +13,42 @@ import java.util.List;
 public class RegM600 {
 
     @Getter @Inclui
-    private final String reg = "M600";
+private final String reg = "M600";
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlTotContNcPer;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlTotCredDesc;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vltotCredDescAnt;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vltotContNcDev;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlRetNc;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlOutDedNc;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlContNcRec;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlTotContCumPer;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlRetCum;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlOutDedCum;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlContCumRec;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlTotContRec;
 
     @Getter @Setter @Filho

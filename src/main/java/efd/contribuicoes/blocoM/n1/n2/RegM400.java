@@ -12,18 +12,18 @@ import java.util.List;
 public class RegM400 {
 
     @Getter @Inclui
-    private final String reg = "M400";
+private final String reg = "M400";
 
-    @Getter @Inclui(zerosEsquerda = 2)
+    @Getter @Setter @Inclui(zerosEsquerda = 2)
     private Integer cstPis;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlTotRec;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codCta;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String descCompl;
 
     @Getter @Setter @Filho

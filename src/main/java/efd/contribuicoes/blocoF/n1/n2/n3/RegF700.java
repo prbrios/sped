@@ -9,27 +9,27 @@ import java.math.BigDecimal;
 public class RegF700 {
 
     @Getter @Inclui
-    private final String reg = "F700";
+private final String reg = "F700";
 
-    @Getter @Inclui(zerosEsquerda = 2)
+    @Getter @Setter @Inclui(zerosEsquerda = 2)
     private Integer indOriDed;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private Integer indNatDed;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlDedPis;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlDedCofins;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBcOper;
 
-    @Getter @Inclui(zerosEsquerda = 14)
+    @Getter @Setter @Inclui(zerosEsquerda = 14)
     private Long cnpj;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String infComp;
 
     public RegF700(Integer indOriDed, Integer indNatDed, BigDecimal vlDedPis, BigDecimal vlDedCofins, BigDecimal vlBcOper, Long cnpj, String infComp) {

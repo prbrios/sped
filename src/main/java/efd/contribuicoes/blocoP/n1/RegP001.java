@@ -12,9 +12,9 @@ import java.util.List;
 public class RegP001 {
 
     @Getter @Inclui
-    private final String reg = "P001";
+private final String reg = "P001";
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String indMov;
 
     @Getter @Setter @Filho

@@ -9,18 +9,18 @@ import java.math.BigDecimal;
 public class RegM810 {
 
     @Getter @Inclui
-    private final String reg = "M810";
+private final String reg = "M810";
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String natRec;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlRec;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codCta;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String descCompl;
 
     public RegM810(String natRec, BigDecimal vlRec, String codCta, String descCompl) {

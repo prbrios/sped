@@ -7,12 +7,12 @@ import lombok.Setter;
 public class Reg9900 {
 
     @Getter @Inclui
-    private final String reg = "9900";
+private final String reg = "9900";
     
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String regBlc;
     
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private Integer qtdRegBlc;
 
     public Reg9900(String regBlc, Integer qtdRegBlc) {

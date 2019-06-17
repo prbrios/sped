@@ -11,30 +11,30 @@ import java.util.List;
 public class Reg0140 {
 
     @Getter @Inclui
-    private final String reg = "0140";
+private final String reg = "0140";
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codEst;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String nome;
 
-    @Getter @Inclui(zerosEsquerda = 14)
+    @Getter @Setter @Inclui(zerosEsquerda = 14)
     private Long cnpj;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String uf;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String ie;
 
-    @Getter @Inclui(zerosEsquerda = 7)
+    @Getter @Setter @Inclui(zerosEsquerda = 7)
     private Integer codMun;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String im;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String suframa;
 
     @Getter @Setter @Filho

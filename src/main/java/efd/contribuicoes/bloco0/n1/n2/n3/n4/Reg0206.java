@@ -7,9 +7,9 @@ import lombok.Setter;
 public class Reg0206 {
 
     @Getter @Inclui
-    private final String reg = "0206";
+private final String reg = "0206";
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codComb;
 
     public Reg0206(String codComb) {

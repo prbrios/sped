@@ -13,66 +13,66 @@ import java.util.List;
 public class RegF130 {
 
     @Getter @Inclui
-    private final String reg = "F130";
+private final String reg = "F130";
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String natBcCred;
 
-    @Getter @Inclui(zerosEsquerda = 2)
+    @Getter @Setter @Inclui(zerosEsquerda = 2)
     private Integer identBemImob;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String indOrigCred;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private Integer indUtilBemImob;
 
-    @Getter @Inclui(formatoData = "MMyyyy")
+    @Getter @Setter @Inclui(formatoData = "MMyyyy")
     private LocalDate mesOperAquis;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlOperAquis;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal parcOperNaoBcCred;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBcCred;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private Integer indNrParc;
 
-    @Getter @Inclui(zerosEsquerda = 2)
+    @Getter @Setter @Inclui(zerosEsquerda = 2)
     private Integer cstPis;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBcPis;
 
-    @Getter @Inclui(casasDecimais = 4)
+    @Getter @Setter @Inclui(casasDecimais = 4)
     private BigDecimal aliqPis;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlPis;
 
-    @Getter @Inclui(zerosEsquerda = 2)
+    @Getter @Setter @Inclui(zerosEsquerda = 2)
     private Integer cstCofins;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBcCofins;
 
-    @Getter @Inclui(casasDecimais = 4)
+    @Getter @Setter @Inclui(casasDecimais = 4)
     private BigDecimal aliqCofins;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCofins;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codCta;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codCcus;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String descBemImob;
 
     @Getter @Setter @Filho

@@ -13,57 +13,57 @@ import java.util.List;
 public class RegD600 {
 
     @Getter @Inclui
-    private final String reg = "D600";
+private final String reg = "D600";
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codMod;
 
-    @Getter @Inclui(zerosEsquerda = 7)
+    @Getter @Setter @Inclui(zerosEsquerda = 7)
     private Integer codMun;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String ser;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private Integer sub;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private Integer indRec;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private Integer qtdCons;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtDocIni;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtDocFin;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlDoc;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlDesc;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlServ;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlServNt;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlTerc;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlDa;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBcIcms;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlIcms;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlPis;
 
     @Getter @Setter @Filho

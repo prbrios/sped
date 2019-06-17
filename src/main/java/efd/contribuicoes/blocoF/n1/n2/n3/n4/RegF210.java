@@ -9,36 +9,36 @@ import java.math.BigDecimal;
 public class RegF210 {
 
     @Getter @Inclui
-    private final String reg = "F210";
+private final String reg = "F210";
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCusOrc;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlExc;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCusOrcAju;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBcCred;
 
-    @Getter @Inclui(zerosEsquerda = 2)
+    @Getter @Setter @Inclui(zerosEsquerda = 2)
     private Integer cstPis;
 
-    @Getter @Inclui(casasDecimais = 4)
+    @Getter @Setter @Inclui(casasDecimais = 4)
     private BigDecimal aliqPis;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCredPisUtil;
 
-    @Getter @Inclui(zerosEsquerda = 2)
+    @Getter @Setter @Inclui(zerosEsquerda = 2)
     private Integer cstCofins;
 
-    @Getter @Inclui(casasDecimais = 4)
+    @Getter @Setter @Inclui(casasDecimais = 4)
     private BigDecimal aliqCofins;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCredCofinsUtil;
 
     public RegF210(BigDecimal vlCusOrc, BigDecimal vlExc, BigDecimal vlCusOrcAju, BigDecimal vlBcCred, Integer cstPis, BigDecimal aliqPis, BigDecimal vlCredPisUtil, Integer cstCofins, BigDecimal aliqCofins, BigDecimal vlCredCofinsUtil) {

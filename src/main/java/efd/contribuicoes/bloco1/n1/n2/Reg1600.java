@@ -14,36 +14,36 @@ import java.util.List;
 public class Reg1600 {
 
     @Getter @Inclui
-    private final String reg = "1600";
+private final String reg = "1600";
 
-    @Getter @Inclui(formatoData = "MMyyyy")
+    @Getter @Setter @Inclui(formatoData = "MMyyyy")
     private LocalDate perApurAnt;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String natContRec;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlContApur;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCredCofinsDesc;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlContDev;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlOutDed;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlContExt;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlMul;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlJur;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtRecol;
 
     @Getter @Setter @Filho

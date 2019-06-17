@@ -14,27 +14,27 @@ import java.util.List;
 public class RegC380 {
 
     @Getter @Inclui
-    private final String reg = "C380";
+private final String reg = "C380";
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codMod;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtDocIni;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtDocFin;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private Integer numDocIni;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private Integer numDocFin;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlDoc;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlDocCanc;
 
     @Getter @Setter @Filho

@@ -10,21 +10,21 @@ import java.math.BigDecimal;
 public class RegC120 {
 
     @Getter @Inclui
-    private final String reg = "C120";
+private final String reg = "C120";
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codDocImp;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String numDocImp;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlPisImp;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCofinsImp;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String numAcdRaw;
 
     public RegC120(String codDocImp, String numDocImp, BigDecimal vlPisImp, BigDecimal vlCofinsImp, String numAcdRaw) {

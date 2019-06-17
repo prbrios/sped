@@ -14,42 +14,42 @@ import java.util.List;
 public class RegM200 {
 
     @Getter @Inclui
-    private final String reg = "M200";
+private final String reg = "M200";
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlTotContNcPer;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlTotCredDesc;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlTotCredDescAnt;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlTotContNcDev;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlRetNc;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlOutDedNc;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlContNcRec;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlTotContCumPer;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlRetCum;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlOutDedCum;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlContCumRec;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlTotContRec;
 
     @Getter @Setter @Filho

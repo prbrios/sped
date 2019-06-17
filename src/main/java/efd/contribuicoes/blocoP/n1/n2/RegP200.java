@@ -13,21 +13,21 @@ import java.util.List;
 public class RegP200 {
 
     @Getter @Inclui
-    private final String reg = "P200";
+private final String reg = "P200";
 
-    @Getter @Inclui(formatoData = "MMyyyy")
+    @Getter @Setter @Inclui(formatoData = "MMyyyy")
     private LocalDate perRef;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlTotContApu;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlTotAjAcres;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlTotContDev;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codRec;
 
     @Getter @Setter @Filho

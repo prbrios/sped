@@ -13,18 +13,18 @@ import java.util.List;
 public class RegI300 {
 
     @Getter @Inclui
-    private final String reg = "I300";
+private final String reg = "I300";
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codComp;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal detValor;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codCta;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String infoCompl;
 
     @Getter @Setter @Filho

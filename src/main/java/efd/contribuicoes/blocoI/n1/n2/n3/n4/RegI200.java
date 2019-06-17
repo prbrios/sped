@@ -14,21 +14,21 @@ import java.util.List;
 public class RegI200 {
 
     @Getter @Inclui
-    private final String reg = "I200";
+private final String reg = "I200";
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String numCampo;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codDet;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal detValor;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codCta;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String infoCompl;
 
 

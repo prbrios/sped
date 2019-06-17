@@ -9,30 +9,30 @@ import java.time.LocalDate;
 public class Reg0500 {
 
     @Getter @Inclui
-    private final String reg = "0500";
+private final String reg = "0500";
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtAlt;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codNatCc;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String indCta;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private Integer nivel;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codCta;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String nomeCta;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codCtaRef;
 
-    @Getter @Inclui(zerosEsquerda = 14)
+    @Getter @Setter @Inclui(zerosEsquerda = 14)
     private Long cnpjEst;
 
     public Reg0500(LocalDate dtAlt, String codNatCc, String indCta, Integer nivel, String codCta, String nomeCta, String codCtaRef, Long cnpjEst) {

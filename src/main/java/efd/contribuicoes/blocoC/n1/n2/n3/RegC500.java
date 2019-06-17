@@ -15,45 +15,45 @@ import java.util.List;
 public class RegC500 {
 
     @Getter @Inclui
-    private final String reg = "C500";
+private final String reg = "C500";
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     String codPart;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     String codMod;
 
-    @Getter @Inclui(zerosEsquerda = 2)
+    @Getter @Setter @Inclui(zerosEsquerda = 2)
     Integer codSit;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     String ser;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     Integer sub;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     Integer numDoc;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     LocalDate dtDoc;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     LocalDate dtEnt;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     BigDecimal vlDoc;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     BigDecimal vlIcms;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     String codInf;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     BigDecimal vlPis;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     BigDecimal vlCofins;
 
     @Getter @Setter @Filho

@@ -14,24 +14,24 @@ import java.util.List;
 public class RegC405 {
 
     @Getter @Inclui
-    private final String reg = "C405";
+private final String reg = "C405";
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtDoc;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private Integer cro;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private Integer crz;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private Integer numCooFin;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal gtFin;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBrt;
 
     @Getter @Setter @Filho

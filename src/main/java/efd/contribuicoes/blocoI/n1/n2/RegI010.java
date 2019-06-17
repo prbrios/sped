@@ -11,15 +11,15 @@ import java.util.List;
 public class RegI010 {
 
     @Getter @Inclui
-    private final String reg = "I010";
+private final String reg = "I010";
 
-    @Getter @Inclui(zerosEsquerda = 14)
+    @Getter @Setter @Inclui(zerosEsquerda = 14)
     private Long cnpj;
 
-    @Getter @Inclui(zerosEsquerda = 2)
+    @Getter @Setter @Inclui(zerosEsquerda = 2)
     private Integer indAtiv;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String infoCompl;
 
     @Getter @Setter @Filho

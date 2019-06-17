@@ -14,39 +14,39 @@ import java.util.List;
 public class RegP100 {
 
     @Getter @Inclui
-    private final String reg = "P100";
+private final String reg = "P100";
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtIni;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtFin;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlRecTotEst;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codAtivEcon;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlRecAtivEstab;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlExc;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBcCont;
 
-    @Getter @Inclui(casasDecimais = 4)
+    @Getter @Setter @Inclui(casasDecimais = 4)
     private BigDecimal aliqCont;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlContApu;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codCta;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String infoCompl;
 
     @Getter @Setter @Filho

@@ -15,39 +15,39 @@ import java.util.List;
 public class RegI100 {
 
     @Getter @Inclui
-    private final String reg = "I100";
+private final String reg = "I100";
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlRec;
 
-    @Getter @Inclui(zerosEsquerda = 2)
+    @Getter @Setter @Inclui(zerosEsquerda = 2)
     private Integer cstPisCofins;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlTotDedGer;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlTotDedEsp;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBcPis;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal aliqPis;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlPis;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBcCofins;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal aliqCofins;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCofins;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String infoCompl;
 
     @Getter @Setter @Filho

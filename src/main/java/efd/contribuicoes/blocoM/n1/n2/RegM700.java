@@ -10,27 +10,27 @@ import java.time.LocalDate;
 public class RegM700 {
 
     @Getter @Inclui
-    private final String reg = "M700";
+private final String reg = "M700";
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codCont;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlContApurDifer;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String natCredDesc;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCredDescDifer;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlContDiferAnt;
 
-    @Getter @Inclui(formatoData = "MMyyyy")
+    @Getter @Setter @Inclui(formatoData = "MMyyyy")
     private LocalDate perApur;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtReceb;
 
     public RegM700(String codCont, BigDecimal vlContApurDifer, String natCredDesc, BigDecimal vlCredDescDifer, BigDecimal vlContDiferAnt, LocalDate perApur, LocalDate dtReceb) {

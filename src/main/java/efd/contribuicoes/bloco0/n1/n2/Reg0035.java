@@ -9,13 +9,13 @@ public class Reg0035 {
     @Getter @Inclui
     private final String reg = "0035";
 
-    @Getter @Inclui(zerosEsquerda = 14)
+    @Getter @Setter @Inclui(zerosEsquerda = 14)
     private Integer codScp;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String descScp;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String infComp;
 
     public Reg0035(Integer codScp, String descScp, String infComp) {

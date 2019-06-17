@@ -7,42 +7,42 @@ import lombok.Setter;
 public class Reg0150 {
 
     @Getter @Inclui
-    private final String reg = "0150";
+private final String reg = "0150";
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codPart;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String nome;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private Integer codPais;
 
-    @Getter @Inclui(zerosEsquerda = 14)
+    @Getter @Setter @Inclui(zerosEsquerda = 14)
     private Long cnpj;
 
-    @Getter @Inclui(zerosEsquerda = 11)
+    @Getter @Setter @Inclui(zerosEsquerda = 11)
     private Long cpf;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String ie;
 
-    @Getter @Inclui(zerosEsquerda = 7)
+    @Getter @Setter @Inclui(zerosEsquerda = 7)
     private Integer codMun;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String suframa;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String end;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String num;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String compl;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String bairro;
 
     public Reg0150(String codPart, String nome, Integer codPais, Long cnpj, Long cpf, String ie, Integer codMun, String suframa, String end, String num, String compl, String bairro) {

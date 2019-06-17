@@ -15,54 +15,54 @@ import java.util.List;
 public class RegC800 {
 
     @Getter @Inclui
-    private final String reg = "C800";
+private final String reg = "C800";
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codMod;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private Integer codSit;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private Integer numCfe;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtDoc;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCfe;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlPis;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCofins;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String cnpjCpf;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private Integer nrSat;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String chvCfe;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlDesc;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlMerc;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlOutDa;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlIcms;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlPisSt;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCofinsSt;
 
     @Getter @Setter @Filho

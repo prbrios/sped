@@ -7,15 +7,15 @@ import lombok.Setter;
 public class Reg0208 {
 
     @Getter @Inclui
-    private final String reg = "0208";
+private final String reg = "0208";
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codTab;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codGru;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String marcaCom;
 
     public Reg0208(String codTab, String codGru, String marcaCom) {

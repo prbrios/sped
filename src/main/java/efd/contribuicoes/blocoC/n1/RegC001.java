@@ -11,9 +11,9 @@ import java.util.List;
 public class RegC001 {
 
     @Getter @Inclui
-    private final String reg = "C001";
+private final String reg = "C001";
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String indMov;
 
     @Getter @Setter @Filho

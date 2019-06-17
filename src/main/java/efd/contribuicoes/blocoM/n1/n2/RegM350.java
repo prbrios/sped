@@ -9,21 +9,21 @@ import java.math.BigDecimal;
 public class RegM350 {
 
     @Getter @Inclui
-    private final String reg = "M350";
+private final String reg = "M350";
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlTotFol;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlExcBc;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlTotBc;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal aliqPisFol;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlTotContFol;
 
     public RegM350(BigDecimal vlTotFol, BigDecimal vlExcBc, BigDecimal vlTotBc, BigDecimal aliqPisFol, BigDecimal vlTotContFol) {

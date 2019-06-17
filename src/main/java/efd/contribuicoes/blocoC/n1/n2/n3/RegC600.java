@@ -15,69 +15,69 @@ import java.util.List;
 public class RegC600 {
 
     @Getter @Inclui
-    private final String reg = "C600";
+private final String reg = "C600";
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String codMod;
 
-    @Getter @Inclui(zerosEsquerda = 7)
+    @Getter @Setter @Inclui(zerosEsquerda = 7)
     private Integer codMun;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private String ser;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private Integer sub;
 
-    @Getter @Inclui(zerosEsquerda = 2)
+    @Getter @Setter @Inclui(zerosEsquerda = 2)
     private Integer codCons;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private Integer qtdCons;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private Integer qtdCanc;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtDoc;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlDoc;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlDesc;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private Integer cons;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlForn;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlServNt;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlTerc;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlDa;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBcIcms;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlIcms;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBcIcmsSt;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlIcmsSt;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlPis;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCofins;
 
     @Getter @Setter @Filho

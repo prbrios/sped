@@ -10,27 +10,27 @@ import java.time.LocalDate;
 public class Reg1700 {
 
     @Getter @Inclui
-    private final String reg = "1700";
+private final String reg = "1700";
 
-    @Getter @Inclui(zerosEsquerda = 2)
+    @Getter @Setter @Inclui(zerosEsquerda = 2)
     private Integer indNatRet;
 
-    @Getter @Inclui(formatoData = "MMyyyy")
+    @Getter @Setter @Inclui(formatoData = "MMyyyy")
     private LocalDate prRecRet;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlRetApu;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlRetDed;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlRetPer;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlRetDcomp;
 
-    @Getter @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal sldRet;
 
     public Reg1700(Integer indNatRet, LocalDate prRecRet, BigDecimal vlRetApu, BigDecimal vlRetDed, BigDecimal vlRetPer, BigDecimal vlRetDcomp, BigDecimal sldRet) {
