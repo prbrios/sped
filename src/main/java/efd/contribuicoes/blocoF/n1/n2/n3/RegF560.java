@@ -12,52 +12,52 @@ import java.util.List;
 
 public class RegF560 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "F560";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlRecComp;
 
-    @Inclui(zerosEsquerda = 2)
+    @Getter @Setter @Inclui(zerosEsquerda = 2)
     private Integer cstPis;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlDescPis;
 
-    @Inclui(casasDecimais = 3)
+    @Getter @Setter @Inclui(casasDecimais = 3)
     private BigDecimal quantBcPis;
 
-    @Inclui(casasDecimais = 4)
+    @Getter @Setter @Inclui(casasDecimais = 4)
     private BigDecimal aliqPisQuant;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlPis;
 
-    @Inclui(zerosEsquerda = 2)
+    @Getter @Setter @Inclui(zerosEsquerda = 2)
     private Integer cstCofins;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlDescCofins;
 
-    @Inclui(casasDecimais = 3)
+    @Getter @Setter @Inclui(casasDecimais = 3)
     private BigDecimal quantBcCofins;
 
-    @Inclui(casasDecimais = 4)
+    @Getter @Setter @Inclui(casasDecimais = 4)
     private BigDecimal aliqCofinsQuant;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCofins;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codMod;
 
-    @Inclui(zerosEsquerda = 4)
+    @Getter @Setter @Inclui(zerosEsquerda = 4)
     private Integer cfop;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codCta;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String infoCompl;
 
     @Getter @Setter @Filho

@@ -1,5 +1,9 @@
 package efd;
 
+import efd.contribuicoes.blocoF.n1.RegF990;
+import efd.contribuicoes.blocoI.n1.RegI990;
+import efd.contribuicoes.blocoM.n1.RegM990;
+import efd.contribuicoes.blocoP.n1.RegP990;
 import efd.icmsipi.bloco0.Reg0000;
 import efd.icmsipi.bloco0.n1.Reg0001;
 import efd.icmsipi.bloco0.n1.Reg0990;
@@ -29,6 +33,7 @@ import efd.icmsipi.blocoK.n1.RegK990;
 import org.apache.log4j.Logger;
 
 import java.lang.reflect.Field;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -181,6 +186,95 @@ public class Conversor {
 
             return Parsers.converteBlocoEmString(icmsIpi, true);
 
+        } else if(obj instanceof Contribuicoes && calculaQuantidades) {
+
+            logger.info("Converter objeto em String com a opção de contagem automatica dos totalizadores dos blocos");
+            logger.info("Inicio de conversao da classe Contribuicoes");
+
+            int qtdReg0 = getQuantidadeRegistrosDoBloco(((Contribuicoes) obj).getReg0000().getReg0001());
+            int qtdReg1 = getQuantidadeRegistrosDoBloco(((Contribuicoes) obj).getReg0000().getReg1001());
+            int qtdRegA = getQuantidadeRegistrosDoBloco(((Contribuicoes) obj).getReg0000().getRegA001());
+            int qtdRegC = getQuantidadeRegistrosDoBloco(((Contribuicoes) obj).getReg0000().getRegC001());
+            int qtdRegD = getQuantidadeRegistrosDoBloco(((Contribuicoes) obj).getReg0000().getRegD001());
+            int qtdRegF = getQuantidadeRegistrosDoBloco(((Contribuicoes) obj).getReg0000().getRegF001());
+            int qtdRegI = getQuantidadeRegistrosDoBloco(((Contribuicoes) obj).getReg0000().getRegI001());
+            int qtdRegM = getQuantidadeRegistrosDoBloco(((Contribuicoes) obj).getReg0000().getRegM001());
+            int qtdRegP = getQuantidadeRegistrosDoBloco(((Contribuicoes) obj).getReg0000().getRegP001());
+
+            logger.info("Calculado a quantidade de registro de cada bloco");
+
+            if(qtdReg0 > 0){
+                ((Contribuicoes) obj).getReg0000().setReg0990(new efd.contribuicoes.bloco0.n1.Reg0990(qtdReg0 + 2));
+            }
+            if(qtdReg1 > 0){
+                ((Contribuicoes) obj).getReg0000().setReg1990(new efd.contribuicoes.bloco1.n1.Reg1990(qtdReg1 + 1));
+            }
+            if(qtdRegA > 0){
+                ((Contribuicoes) obj).getReg0000().setRegA990(new efd.contribuicoes.blocoA.n1.RegA990(qtdRegA + 1));
+            }
+            if(qtdRegC > 0){
+                ((Contribuicoes) obj).getReg0000().setRegC990(new efd.contribuicoes.blocoC.n1.RegC990(qtdRegC + 1));
+            }
+            if(qtdRegD > 0){
+                ((Contribuicoes) obj).getReg0000().setRegD990(new efd.contribuicoes.blocoD.n1.RegD990(qtdRegD + 1));
+            }
+            if(qtdRegF > 0){
+                ((Contribuicoes) obj).getReg0000().setRegF990(new efd.contribuicoes.blocoF.n1.RegF990(qtdRegF + 1));
+            }
+            if(qtdRegI > 0){
+                ((Contribuicoes) obj).getReg0000().setRegI990(new efd.contribuicoes.blocoI.n1.RegI990(qtdRegI + 1));
+            }
+            if(qtdRegM > 0){
+                ((Contribuicoes) obj).getReg0000().setRegM990(new efd.contribuicoes.blocoM.n1.RegM990(qtdRegM + 1));
+            }
+            if(qtdRegP > 0){
+                ((Contribuicoes) obj).getReg0000().setRegP990(new efd.contribuicoes.blocoP.n1.RegP990(qtdRegP + 1));
+            }
+
+            Conversor c = new Conversor();
+            c.trataObjeto(obj);
+
+            Map<String, Long> resultado = c.getClasses().stream().collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+            ArrayList<String> sortedKeys = new ArrayList<String>(resultado.keySet());
+            Collections.sort(sortedKeys);
+
+            Integer quantidadeTotalLinhas = 3;
+
+            List<efd.contribuicoes.bloco9.n1.n2.Reg9900> reg9900 = new ArrayList<>();
+            for (String key : sortedKeys) {
+
+                Integer quantidade = Integer.parseInt(resultado.get(key).toString());
+                quantidadeTotalLinhas += quantidade;
+
+                efd.contribuicoes.bloco9.n1.n2.Reg9900 reg9900l = new efd.contribuicoes.bloco9.n1.n2.Reg9900();
+                reg9900l.setRegBlc(key.substring(3));
+                reg9900l.setQtdRegBlc(quantidade);
+                reg9900.add(reg9900l);
+
+            }
+
+            reg9900.add(new efd.contribuicoes.bloco9.n1.n2.Reg9900("9001", 1));
+            reg9900.add(new efd.contribuicoes.bloco9.n1.n2.Reg9900("9900", reg9900.size() + 3));
+            reg9900.add(new efd.contribuicoes.bloco9.n1.n2.Reg9900("9990", 1));
+            reg9900.add(new efd.contribuicoes.bloco9.n1.n2.Reg9900("9999", 1));
+
+            efd.contribuicoes.bloco9.n1.Reg9001 reg9001 = new efd.contribuicoes.bloco9.n1.Reg9001();
+            reg9001.setIndMov(0);
+            reg9001.setReg9900(reg9900);
+
+            efd.contribuicoes.bloco9.n1.Reg9990 reg9990 = new efd.contribuicoes.bloco9.n1.Reg9990();
+            reg9990.setQtdLin9(reg9900.size() + 3);
+
+            efd.contribuicoes.bloco9.Reg9999 reg9999 = new efd.contribuicoes.bloco9.Reg9999();
+            reg9999.setQtdLin(quantidadeTotalLinhas + reg9900.size());
+
+            Contribuicoes contrib = (Contribuicoes) obj;
+            contrib.getReg0000().setReg9001(reg9001);
+            contrib.getReg0000().setReg9990(reg9990);
+            contrib.setReg9999(reg9999);
+
+            return Parsers.converteBlocoEmString(contrib, true);
+
         }
 
         return Parsers.converteBlocoEmString(obj, true);
@@ -226,10 +320,10 @@ public class Conversor {
         RegC001 regC001 = new RegC001("0");
         regC001.setRegC100(rC100l);
 
-        Reg0001 r0001 = new Reg0001();
+        Reg0001 r0001 = new Reg0001(0);
         r0001.setReg0200(r0200);
 
-        Reg0000 r0000 = new Reg0000();
+        Reg0000 r0000 = new Reg0000(1, 1, LocalDate.parse("2019-05-05"), LocalDate.parse("2019-05-05"), "Nome", null, null, null, null, null, null, null, null, null);
         r0000.setReg0001(r0001);
         r0000.setRegB001(rB001);
         r0000.setRegD001(rD001);

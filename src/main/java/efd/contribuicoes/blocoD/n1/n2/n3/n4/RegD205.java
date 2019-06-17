@@ -8,6 +8,7 @@ import java.math.BigDecimal;
 
 public class RegD205 {
 
+    @Getter @Inclui
     private final String reg = "D205";
 
     @Getter @Setter @Inclui(zerosEsquerda = 2)
