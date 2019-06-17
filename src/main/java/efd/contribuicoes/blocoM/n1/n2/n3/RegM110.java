@@ -1,11 +1,14 @@
 package efd.contribuicoes.blocoM.n1.n2.n3;
 
+import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
+import efd.contribuicoes.blocoM.n1.n2.n3.n4.RegM115;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.util.List;
 
 public class RegM110 {
 
@@ -29,6 +32,9 @@ public class RegM110 {
 
     @Getter @Inclui
     private LocalDate dtRef;
+
+    @Getter @Setter @Filho
+    private List<RegM115> regM115;
 
     public RegM110(String indAj, BigDecimal vlAj, String codAj, String numDoc, String descrAj, LocalDate dtRef) {
         this.indAj = indAj;

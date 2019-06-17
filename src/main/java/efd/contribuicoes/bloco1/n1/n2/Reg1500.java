@@ -1,11 +1,14 @@
 package efd.contribuicoes.bloco1.n1.n2;
 
+import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
+import efd.contribuicoes.bloco1.n1.n2.n3.Reg1501;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.util.List;
 
 public class Reg1500 {
 
@@ -62,6 +65,9 @@ public class Reg1500 {
 
     @Getter @Inclui
     private BigDecimal sldCredFim;
+
+    @Getter @Setter @Filho
+    private List<Reg1501> reg1501;
 
     public Reg1500(LocalDate perApuCred, Integer origCred, Long cnpjSuc, Integer codCred, BigDecimal vlCredApu, BigDecimal vlCredExtApu, BigDecimal vlTotCredApu, BigDecimal vlCredDescPaAnt, BigDecimal vlCredPerPaAnt, BigDecimal vlCredDcompPaAnt, BigDecimal sdCredDispEfd, BigDecimal vlCredDescEfd, BigDecimal vlCredPerEfd, BigDecimal vlCredDcompEfd, BigDecimal vlCredTrans, BigDecimal vlCredOut, BigDecimal sldCredFim) {
         this.perApuCred = perApuCred;

@@ -1,11 +1,14 @@
 package efd.contribuicoes.blocoC.n1.n2.n3;
 
+import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
+import efd.contribuicoes.blocoC.n1.n2.n3.n4.*;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.util.List;
 
 public class RegC100 {
 
@@ -95,6 +98,21 @@ public class RegC100 {
 
     @Getter @Inclui
     private BigDecimal vlCofinsSt;
+
+    @Getter @Setter @Filho
+    private List<RegC110> regC110;
+
+    @Getter @Setter @Filho
+    private List<RegC111> regC111;
+
+    @Getter @Setter @Filho
+    private List<RegC120> regC120;
+
+    @Getter @Setter @Filho
+    private List<RegC170> regC170;
+
+    @Getter @Setter @Filho
+    private List<RegC175> regC175;
 
     public RegC100(String indOper, String indEmit, String codPart, String codMod, Integer codSit, String ser, Integer numDoc, String chvNfe, LocalDate dtDoc, LocalDate dtES, BigDecimal vlDoc, String indPgto, BigDecimal vlDesc, BigDecimal vlAbatNt, BigDecimal vlMerc, String indFrt, BigDecimal vlFrt, BigDecimal vlSeg, BigDecimal vlOutDa, BigDecimal vlBcIcms, BigDecimal vlIcms, BigDecimal vlBcIcmsSt, BigDecimal vlIcmsSt, BigDecimal vlIpi, BigDecimal vlPis, BigDecimal vlCofins, BigDecimal vlPisSt, BigDecimal vlCofinsSt) {
         this.indOper = indOper;

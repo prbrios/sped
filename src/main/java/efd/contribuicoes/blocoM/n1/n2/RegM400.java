@@ -1,10 +1,13 @@
 package efd.contribuicoes.blocoM.n1.n2;
 
+import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
+import efd.contribuicoes.blocoM.n1.n2.n3.RegM410;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 public class RegM400 {
 
@@ -22,6 +25,9 @@ public class RegM400 {
 
     @Getter @Inclui
     private String descCompl;
+
+    @Getter @Setter @Filho
+    private List<RegM410> regM410;
 
     public RegM400(Integer cstPis, BigDecimal vlTotRec, String codCta, String descCompl) {
         this.cstPis = cstPis;

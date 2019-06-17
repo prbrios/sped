@@ -1,11 +1,15 @@
 package efd.contribuicoes.blocoC.n1.n2.n3;
 
+import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
+import efd.contribuicoes.blocoC.n1.n2.n3.n4.RegC381;
+import efd.contribuicoes.blocoC.n1.n2.n3.n4.RegC385;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.util.List;
 
 public class RegC380 {
 
@@ -32,6 +36,12 @@ public class RegC380 {
 
     @Getter @Inclui
     private BigDecimal vlDocCanc;
+
+    @Getter @Setter @Filho
+    private List<RegC381> regC381;
+
+    @Getter @Setter @Filho
+    private List<RegC385> regC385;
 
     public RegC380(String codMod, LocalDate dtDocIni, LocalDate dtDocFin, Integer numDocIni, Integer numDocFin, BigDecimal vlDoc, BigDecimal vlDocCanc) {
         this.codMod = codMod;

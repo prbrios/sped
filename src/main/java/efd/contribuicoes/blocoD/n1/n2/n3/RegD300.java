@@ -1,11 +1,14 @@
 package efd.contribuicoes.blocoD.n1.n2.n3;
 
+import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
+import efd.contribuicoes.blocoD.n1.n2.n3.n4.RegD309;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.util.List;
 
 public class RegD300 {
 
@@ -52,19 +55,22 @@ public class RegD300 {
     private BigDecimal vlPis;
 
     @Getter @Inclui(zerosEsquerda = 2)
-    Integer cstCofins;
+    private Integer cstCofins;
 
     @Getter @Inclui
-    BigDecimal vlBcCofins;
+    private BigDecimal vlBcCofins;
 
     @Getter @Inclui(casasDecimais = 4)
-    BigDecimal aliqCofins;
+    private BigDecimal aliqCofins;
 
     @Getter @Inclui
-    BigDecimal vlCofins;
+    private BigDecimal vlCofins;
 
     @Getter @Inclui
-    String codCta;
+    private String codCta;
+
+    @Getter @Setter @Filho
+    private List<RegD309> regD309;
 
     public RegD300(String codMod, String ser, Integer sub, Integer numDocIni, Integer numDocFin, Integer cfop, LocalDate dtRef, BigDecimal vlDoc, BigDecimal vlDesc, Integer cstPis, BigDecimal vlBcPis, BigDecimal aliqPis, BigDecimal vlPis, Integer cstCofins, BigDecimal vlBcCofins, BigDecimal aliqCofins, BigDecimal vlCofins, String codCta) {
         this.codMod = codMod;

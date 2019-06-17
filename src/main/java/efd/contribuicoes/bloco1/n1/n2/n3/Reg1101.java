@@ -1,6 +1,8 @@
 package efd.contribuicoes.bloco1.n1.n2.n3;
 
+import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
+import efd.contribuicoes.bloco1.n1.n2.n3.n4.Reg1102;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -74,6 +76,9 @@ public class Reg1101 {
 
     @Getter @Inclui(zerosEsquerda = 14)
     private Long cnpj;
+
+    @Getter @Setter @Filho
+    private Reg1102 reg1102;
 
     public Reg1101(String codPart, String codItem, String codMod, String ser, String subSer, Integer numDoc, LocalDate dtOper, String chvNfe, BigDecimal vlOper, Integer cfop, String natBcCred, String indOrigCred, Integer cstPis, BigDecimal vlBcPis, BigDecimal aliqPis, BigDecimal vlPis, String codCta, String codCcus, String descCompl, LocalDate perEscrit, Long cnpj) {
         this.codPart = codPart;

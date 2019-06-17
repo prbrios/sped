@@ -1,10 +1,14 @@
 package efd.contribuicoes.blocoM.n1.n2;
 
+import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
+import efd.contribuicoes.blocoM.n1.n2.n3.RegM605;
+import efd.contribuicoes.blocoM.n1.n2.n3.RegM610;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 public class RegM600 {
 
@@ -46,6 +50,12 @@ public class RegM600 {
 
     @Getter @Inclui
     private BigDecimal vlTotContRec;
+
+    @Getter @Setter @Filho
+    private List<RegM605> regM605;
+
+    @Getter @Setter @Filho
+    private List<RegM610> regM610;
 
     public RegM600(BigDecimal vlTotContNcPer, BigDecimal vlTotCredDesc, BigDecimal vltotCredDescAnt, BigDecimal vltotContNcDev, BigDecimal vlRetNc, BigDecimal vlOutDedNc, BigDecimal vlContNcRec, BigDecimal vlTotContCumPer, BigDecimal vlRetCum, BigDecimal vlOutDedCum, BigDecimal vlContCumRec, BigDecimal vlTotContRec) {
         this.vlTotContNcPer = vlTotContNcPer;

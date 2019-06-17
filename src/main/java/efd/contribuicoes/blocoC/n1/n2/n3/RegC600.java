@@ -1,11 +1,16 @@
 package efd.contribuicoes.blocoC.n1.n2.n3;
 
+import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
+import efd.contribuicoes.blocoC.n1.n2.n3.n4.RegC601;
+import efd.contribuicoes.blocoC.n1.n2.n3.n4.RegC605;
+import efd.contribuicoes.blocoC.n1.n2.n3.n4.RegC609;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.util.List;
 
 public class RegC600 {
 
@@ -74,6 +79,15 @@ public class RegC600 {
 
     @Getter @Inclui
     private BigDecimal vlCofins;
+
+    @Getter @Setter @Filho
+    private List<RegC601> regC601;
+
+    @Getter @Setter @Filho
+    private List<RegC605> regC605;
+
+    @Getter @Setter @Filho
+    private List<RegC609> regC609;
 
     public RegC600(String codMod, Integer codMun, String ser, Integer sub, Integer codCons, Integer qtdCons, Integer qtdCanc, LocalDate dtDoc, BigDecimal vlDoc, BigDecimal vlDesc, Integer cons, BigDecimal vlForn, BigDecimal vlServNt, BigDecimal vlTerc, BigDecimal vlDa, BigDecimal vlBcIcms, BigDecimal vlIcms, BigDecimal vlBcIcmsSt, BigDecimal vlIcmsSt, BigDecimal vlPis, BigDecimal vlCofins) {
         this.codMod = codMod;

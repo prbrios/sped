@@ -1,11 +1,14 @@
 package efd.contribuicoes.blocoC.n1.n2.n3;
 
+import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
+import efd.contribuicoes.blocoC.n1.n2.n3.n4.RegC396;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.util.List;
 
 public class RegC395 {
 
@@ -32,6 +35,9 @@ public class RegC395 {
 
     @Getter @Inclui
     private BigDecimal vlDoc;
+
+    @Getter @Setter @Filho
+    private List<RegC396> regC396;
 
     public RegC395(String codMod, String codPart, String ser, String subSer, String numDoc, LocalDate dtDoc, BigDecimal vlDoc) {
         this.codMod = codMod;

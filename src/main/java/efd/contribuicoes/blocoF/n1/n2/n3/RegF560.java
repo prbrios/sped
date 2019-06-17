@@ -1,10 +1,14 @@
 package efd.contribuicoes.blocoF.n1.n2.n3;
 
+import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
+import efd.contribuicoes.blocoF.n1.n2.n3.n4.RegF211;
+import efd.contribuicoes.blocoF.n1.n2.n3.n4.RegF569;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 public class RegF560 {
 
@@ -55,6 +59,9 @@ public class RegF560 {
 
     @Inclui
     private String infoCompl;
+
+    @Getter @Setter @Filho
+    private List<RegF569> regF569;
 
     public RegF560(BigDecimal vlRecComp, Integer cstPis, BigDecimal vlDescPis, BigDecimal quantBcPis, BigDecimal aliqPisQuant, BigDecimal vlPis, Integer cstCofins, BigDecimal vlDescCofins, BigDecimal quantBcCofins, BigDecimal aliqCofinsQuant, BigDecimal vlCofins, String codMod, Integer cfop, String codCta, String infoCompl) {
         this.vlRecComp = vlRecComp;

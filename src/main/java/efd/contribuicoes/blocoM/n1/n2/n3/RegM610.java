@@ -1,13 +1,19 @@
 package efd.contribuicoes.blocoM.n1.n2.n3;
 
 import efd.Grupo;
+import efd.anotacoes.Filho;
 import efd.anotacoes.G1;
 import efd.anotacoes.G2;
 import efd.anotacoes.Inclui;
+import efd.contribuicoes.blocoM.n1.n2.n3.n4.RegM611;
+import efd.contribuicoes.blocoM.n1.n2.n3.n4.RegM615;
+import efd.contribuicoes.blocoM.n1.n2.n3.n4.RegM620;
+import efd.contribuicoes.blocoM.n1.n2.n3.n4.RegM630;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 public class RegM610 {
 
@@ -60,6 +66,18 @@ public class RegM610 {
 
     @Getter @Inclui @G1 @G2
     private BigDecimal vlContPer;
+
+    @Getter @Setter @Filho
+    private RegM611 regM611;
+
+    @Getter @Setter @Filho
+    private List<RegM615> regM615;
+
+    @Getter @Setter @Filho
+    private List<RegM620> regM620;
+
+    @Getter @Setter @Filho
+    private List<RegM630> regM630;
 
     /**
      * Leiaute do Registro M610 aplicável aos Fatos Geradores ocorridos até 31 de dezembro de 2018

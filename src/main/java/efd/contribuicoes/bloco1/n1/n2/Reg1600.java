@@ -1,11 +1,15 @@
 package efd.contribuicoes.bloco1.n1.n2;
 
+import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
+import efd.contribuicoes.bloco1.n1.n2.n3.Reg1610;
+import efd.contribuicoes.bloco1.n1.n2.n3.Reg1620;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.util.List;
 
 public class Reg1600 {
 
@@ -41,6 +45,12 @@ public class Reg1600 {
 
     @Getter @Inclui
     private LocalDate dtRecol;
+
+    @Getter @Setter @Filho
+    private List<Reg1610> reg1610;
+
+    @Getter @Setter @Filho
+    private List<Reg1620> reg1620;
 
     public Reg1600(LocalDate perApurAnt, String natContRec, BigDecimal vlContApur, BigDecimal vlCredCofinsDesc, BigDecimal vlContDev, BigDecimal vlOutDed, BigDecimal vlContExt, BigDecimal vlMul, BigDecimal vlJur, LocalDate dtRecol) {
         this.perApurAnt = perApurAnt;

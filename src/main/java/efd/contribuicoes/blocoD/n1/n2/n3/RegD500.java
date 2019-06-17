@@ -1,11 +1,16 @@
 package efd.contribuicoes.blocoD.n1.n2.n3;
 
+import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
+import efd.contribuicoes.blocoD.n1.n2.n3.n4.RegD501;
+import efd.contribuicoes.blocoD.n1.n2.n3.n4.RegD505;
+import efd.contribuicoes.blocoD.n1.n2.n3.n4.RegD509;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.util.List;
 
 public class RegD500 {
 
@@ -74,6 +79,15 @@ public class RegD500 {
 
     @Getter @Inclui
     private BigDecimal vlCofins;
+
+    @Getter @Setter @Filho
+    private List<RegD501> regD501;
+
+    @Getter @Setter @Filho
+    private List<RegD505> regD505;
+
+    @Getter @Setter @Filho
+    private List<RegD509> regD509;
 
     public RegD500(String indOper, String indEmit, String codPart, String codMod, Integer codSit, String ser, Integer sub, Integer numDoc, LocalDate dtDoc, LocalDate dtAP, BigDecimal vlDoc, BigDecimal vlDesc, BigDecimal vlServ, BigDecimal vlServNt, BigDecimal vlTerc, BigDecimal vlDA, BigDecimal vlBcIcms, BigDecimal vlIcms, String codInf, BigDecimal vlPis, BigDecimal vlCofins) {
         this.indOper = indOper;

@@ -1,11 +1,14 @@
 package efd.contribuicoes.blocoD.n1.n2.n3;
 
+import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
+import efd.contribuicoes.blocoD.n1.n2.n3.n4.RegD359;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.util.List;
 
 public class RegD350 {
 
@@ -77,6 +80,9 @@ public class RegD350 {
 
     @Getter @Inclui
     private String codCta;
+
+    @Getter @Setter @Filho
+    private List<RegD359> regD359;
 
     public RegD350(String codMod, String ecfMod, String ecfFab, LocalDate dtDoc, Integer cro, Integer crz, Integer numCooFin, BigDecimal gtFin, BigDecimal vlBrt, Integer cstPis, BigDecimal vlBcPis, BigDecimal aliqPis, BigDecimal quantBcPis, BigDecimal aliqPisQuant, BigDecimal vlPis, Integer cstCofins, BigDecimal vlBcCofins, BigDecimal aliqCofins, BigDecimal quantBcCofins, BigDecimal aliqCofinsQuant, BigDecimal vlCofins, String codCta) {
         this.codMod = codMod;

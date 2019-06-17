@@ -1,10 +1,14 @@
 package efd.contribuicoes.blocoM.n1.n2;
 
+import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
+import efd.contribuicoes.blocoM.n1.n2.n3.RegM105;
+import efd.contribuicoes.blocoM.n1.n2.n3.RegM110;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 public class RegM100 {
 
@@ -52,6 +56,12 @@ public class RegM100 {
 
     @Getter @Inclui
     private BigDecimal sldCred;
+
+    @Getter @Setter @Filho
+    private List<RegM105> regM105;
+
+    @Getter @Setter @Filho
+    private List<RegM110> regM110;
 
     public RegM100(String codCred, Integer indCredOri, BigDecimal vlBcPis, BigDecimal aliqPis, BigDecimal quantBcPis, BigDecimal aliqPisQuant, BigDecimal vlCred, BigDecimal vlAjusAcres, BigDecimal vlAjusReduc, BigDecimal vlCredDif, BigDecimal vlCredDisp, Integer indDescCred, BigDecimal vlCredDesc, BigDecimal sldCred) {
         this.codCred = codCred;

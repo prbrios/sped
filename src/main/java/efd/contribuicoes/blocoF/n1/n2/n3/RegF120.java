@@ -1,10 +1,13 @@
 package efd.contribuicoes.blocoF.n1.n2.n3;
 
+import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
+import efd.contribuicoes.blocoF.n1.n2.n3.n4.RegF129;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 public class RegF120 {
 
@@ -61,6 +64,9 @@ public class RegF120 {
 
     @Getter @Inclui
     private String descBemImob;
+
+    @Getter @Setter @Filho
+    private List<RegF129> regF129;
 
     public RegF120(String natBcCred, Integer identBemMob, String indOrigCred, Integer indUtilBemImob, BigDecimal vlOperDep, BigDecimal parcOperNaoBcCred, Integer cstPis, BigDecimal vlBcPis, BigDecimal aliqPis, BigDecimal vlPis, Integer cstCofins, BigDecimal vlBcCofins, BigDecimal aliqCofins, BigDecimal vlCofins, String codCta, String codCcus, String descBemImob) {
         this.natBcCred = natBcCred;

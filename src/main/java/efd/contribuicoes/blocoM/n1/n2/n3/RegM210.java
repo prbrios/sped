@@ -1,12 +1,19 @@
 package efd.contribuicoes.blocoM.n1.n2.n3;
 
 import efd.Grupo;
+import efd.anotacoes.Filho;
 import efd.anotacoes.G1;
 import efd.anotacoes.G2;
 import efd.anotacoes.Inclui;
+import efd.contribuicoes.blocoM.n1.n2.n3.n4.RegM211;
+import efd.contribuicoes.blocoM.n1.n2.n3.n4.RegM215;
+import efd.contribuicoes.blocoM.n1.n2.n3.n4.RegM220;
+import efd.contribuicoes.blocoM.n1.n2.n3.n4.RegM230;
 import lombok.Getter;
+import lombok.Setter;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 public class RegM210 {
 
@@ -60,6 +67,17 @@ public class RegM210 {
     @Getter @Inclui @G1 @G2
     private BigDecimal vlContPer;
 
+    @Getter @Setter @Filho
+    private RegM211 regM211;
+
+    @Getter @Setter @Filho
+    private List<RegM215> regM215;
+
+    @Getter @Setter @Filho
+    private List<RegM220> regM220;
+
+    @Getter @Setter @Filho
+    private List<RegM230> regM230;
 
     public RegM210(String codCont, BigDecimal vlRecBrt, BigDecimal vlBcCont, BigDecimal aliqPis, BigDecimal quantBcPis, BigDecimal aliqPisQuant, BigDecimal vlContApur, BigDecimal vlAjusAcres, BigDecimal vlAjusReduc, BigDecimal vlContDifer, BigDecimal vlContDiferAnt, BigDecimal vlContPer) {
         this.grupo = Grupo.G1;
