@@ -10,22 +10,22 @@ import java.math.BigDecimal;
 @Getter
 public class RegC120 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "C120";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codDocImp;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String numDocImp;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal pisImp;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal cofinsImp;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String numAcdraw;
 
     public RegC120(String codDocImp, String numDocImp, BigDecimal pisImp, BigDecimal cofinsImp, String numAcdraw) {

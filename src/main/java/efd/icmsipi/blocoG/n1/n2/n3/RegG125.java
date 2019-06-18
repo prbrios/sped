@@ -11,44 +11,43 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
 
-@Getter
-@Setter
+
 public class RegG125 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "G125";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codIndBem;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtMov;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String tipoMov;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlImobIcmsOp;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlImobicmsSt;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlImobIcmsFrt;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlImobIcmsDif;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer numParc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private  BigDecimal vlParcPass;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegG126> regG126;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegG130> regG130;
 
     public RegG125(String codIndBem, LocalDate dtMov, String tipoMov, BigDecimal vlImobIcmsOp, BigDecimal vlImobicmsSt, BigDecimal vlImobIcmsFrt, BigDecimal vlImobIcmsDif, Integer numParc, BigDecimal vlParcPass) {

@@ -4,32 +4,31 @@ import efd.anotacoes.Inclui;
 import lombok.Getter;
 import lombok.Setter;
 
-@Getter
-@Setter
+
 public class RegD161 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "D161";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer indCarga;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String cnpjCpfCol;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String ieCol;
 
-    @Inclui(zerosEsquerda = 7)
+    @Getter @Setter @Inclui(zerosEsquerda = 7)
     private Integer codMunCol;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String cnpjCpfEntg;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String ieEntg;
 
-    @Inclui(zerosEsquerda = 7)
+    @Getter @Setter @Inclui(zerosEsquerda = 7)
     private Integer codMunEntg;
 
     public RegD161(Integer indCarga, String cnpjCpfCol, String ieCol, Integer codMunCol, String cnpjCpfEntg, String ieEntg, Integer codMunEntg) {

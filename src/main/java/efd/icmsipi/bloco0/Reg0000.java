@@ -27,159 +27,158 @@ import lombok.Setter;
 
 import java.time.LocalDate;
 
-@Getter
-@Setter
+
 public class Reg0000 {
 
     /**
      * 01 REG
      * Texto fixo contendo "0000"
      */
-    @Inclui
+    @Getter @Inclui
     private final String reg = "0000";
 
     /**
      * 02 COD_VER
      */
-    @Inclui(zerosEsquerda = 3)
+    @Getter @Setter @Inclui(zerosEsquerda = 3)
     private Integer codVer;
 
     /**
      * 03 COD_FIN
      */
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer codFin;
 
     /**
      * 04 DT_INI
      */
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtIni;
 
     /**
      * 05 DT_FIN
      */
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtFin;
 
     /**
      * 06 NOME
      */
-    @Inclui
+    @Getter @Setter @Inclui
     private String nome;
 
     /**
      * 07 CNPJ
      */
-    @Inclui(zerosEsquerda = 14)
+    @Getter @Setter @Inclui(zerosEsquerda = 14)
     private Long cnpj;
 
     /**
      * 08 CPF
      */
-    @Inclui(zerosEsquerda = 11)
+    @Getter @Setter @Inclui(zerosEsquerda = 11)
     private Long cpf;
 
     /**
      * 09 UF
      */
-    @Inclui
+    @Getter @Setter @Inclui
     private String uf;
 
     /**
      * 10 IE
      */
-    @Inclui
+    @Getter @Setter @Inclui
     private String ie;
 
     /**
      * 11 COD_MUN
      */
-    @Inclui(zerosEsquerda = 7)
+    @Getter @Setter @Inclui(zerosEsquerda = 7)
     private Integer codMun;
 
     /**
      * 12 IM
      */
-    @Inclui
+    @Getter @Setter @Inclui
     private String im;
 
     /**
      * 13 SUFRAMA
      */
-    @Inclui
+    @Getter @Setter @Inclui
     private String suframa;
 
     /**
      * 14 IND_PERFIL
      */
-    @Inclui
+    @Getter @Setter @Inclui
     private String indPerfil;
 
     /**
      * 15 IND_ATIV
      */
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer indAtiv;
 
-    @Filho
+    @Getter @Setter @Filho
     private Reg0001 reg0001;
 
-    @Filho
+    @Getter @Setter @Filho
     private Reg0990 reg0990;
 
-    @Filho
+    @Getter @Setter @Filho
     private RegB001 regB001;
 
-    @Filho
+    @Getter @Setter @Filho
     private RegB990 regB990;
 
-    @Filho
+    @Getter @Setter @Filho
     private RegC001 regC001;
 
-    @Filho
+    @Getter @Setter @Filho
     private RegC990 regC990;
 
-    @Filho
+    @Getter @Setter @Filho
     private RegD001 regD001;
 
-    @Filho
+    @Getter @Setter @Filho
     private RegD990 regD990;
 
-    @Filho
+    @Getter @Setter @Filho
     private RegE001 regE001;
 
-    @Filho
+    @Getter @Setter @Filho
     private RegE990 regE990;
 
-    @Filho
+    @Getter @Setter @Filho
     private RegG001 regG001;
 
-    @Filho
+    @Getter @Setter @Filho
     private RegG990 regG990;
 
-    @Filho
+    @Getter @Setter @Filho
     private RegH001 regH001;
 
-    @Filho
+    @Getter @Setter @Filho
     private RegH990 regH990;
 
-    @Filho
+    @Getter @Setter @Filho
     private RegK001 regK001;
 
-    @Filho
+    @Getter @Setter @Filho
     private RegK990 regK990;
 
-    @Filho
+    @Getter @Setter @Filho
     private Reg1001 reg1001;
 
-    @Filho
+    @Getter @Setter @Filho
     private Reg1990 reg1990;
 
-    @Filho
+    @Getter @Setter @Filho
     private Reg9001 reg9001;
 
-    @Filho
+    @Getter @Setter @Filho
     private Reg9990 reg9990;
 
     public Reg0000(Integer codVer, Integer codFin, LocalDate dtIni, LocalDate dtFin, String nome, Long cnpj, Long cpf, String uf, String ie, Integer codMun, String im, String suframa, String indPerfil, Integer indAtiv) {

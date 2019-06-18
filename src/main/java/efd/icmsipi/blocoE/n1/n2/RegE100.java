@@ -8,20 +8,19 @@ import lombok.Setter;
 
 import java.time.LocalDate;
 
-@Getter
-@Setter
+
 public class RegE100 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "E100";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtIni;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtFin;
 
-    @Filho
+    @Getter @Setter @Filho
     private RegE110 regE110;
 
     public RegE100(LocalDate dtIni, LocalDate dtFin) {

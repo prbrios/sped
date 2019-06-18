@@ -9,38 +9,37 @@ import lombok.Setter;
 import java.time.LocalDate;
 import java.util.List;
 
-@Getter
-@Setter
+
 public class RegD695 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "D695";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codMod;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String ser;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer nroDocIni;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer nroDocFin;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtDocIni;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtDocFin;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String nomMest;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String chvCodDig;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegD696> regD696;
 
     public RegD695(String codMod, String ser, Integer nroDocIni, Integer nroDocFin, LocalDate dtDocIni, LocalDate dtDocFin, String nomMest, String chvCodDig) {

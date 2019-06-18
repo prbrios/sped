@@ -7,38 +7,37 @@ import lombok.Setter;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-@Getter
-@Setter
+
 public class RegE531 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "E531";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codPart;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codMod;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String ser;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer sub;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer numDoc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtDoc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codItem;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlAjitem;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String chvNfe;
 
     public RegE531(String codPart, String codMod, String ser, Integer sub, Integer numDoc, LocalDate dtDoc, String codItem, BigDecimal vlAjitem, String chvNfe) {

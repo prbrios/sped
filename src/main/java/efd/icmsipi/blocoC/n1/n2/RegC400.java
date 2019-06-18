@@ -8,26 +8,25 @@ import lombok.Setter;
 
 import java.util.List;
 
-@Getter
-@Setter
+
 public class RegC400 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "C400";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codMod;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String ecfMod;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String ecfFab;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer ecfCx;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegC405> regC405;
 
     public RegC400(String codMod, String ecfMod, String ecfFab, Integer ecfCx) {

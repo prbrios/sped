@@ -6,32 +6,31 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@Getter
-@Setter
+
 public class RegB460 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "B460";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String indDed;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlDed;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String numProc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String indProc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String proc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codInfObs;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String indObr;
 
     public RegB460(String indDed, BigDecimal vlDed, String numProc, String indProc, String proc, String codInfObs, String indObr) {

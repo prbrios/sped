@@ -6,26 +6,25 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@Getter
-@Setter
+
 public class RegE510 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "E510";
 
-    @Inclui(zerosEsquerda = 4)
+    @Getter @Setter @Inclui(zerosEsquerda = 4)
     private Integer cfop;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String cstIpi;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlContIpi;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBcIpi;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlIpi;
 
     public RegE510(Integer cfop, String cstIpi, BigDecimal vlContIpi, BigDecimal vlBcIpi, BigDecimal vlIpi) {

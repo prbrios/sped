@@ -9,26 +9,25 @@ import lombok.Setter;
 import java.math.BigDecimal;
 import java.util.List;
 
-@Getter
-@Setter
+
 public class RegD110 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "D110";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer numItem;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codItem;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlServ;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlOut;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegD120> regD120;
 
     public RegD110(Integer numItem, String codItem, BigDecimal vlServ, BigDecimal vlOut) {

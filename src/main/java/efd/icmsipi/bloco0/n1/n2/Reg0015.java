@@ -4,17 +4,16 @@ import efd.anotacoes.Inclui;
 import lombok.Getter;
 import lombok.Setter;
 
-@Getter
-@Setter
+
 public class Reg0015 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "0015";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String ufSt;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String ieSt;
 
     public Reg0015(String ufSt, String ieSt) {

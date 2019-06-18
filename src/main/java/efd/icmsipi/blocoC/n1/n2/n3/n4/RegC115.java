@@ -8,34 +8,34 @@ import lombok.Setter;
 @Getter
 public class RegC115 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "C115";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer indCarga;
 
-    @Inclui(zerosEsquerda = 14)
+    @Getter @Setter @Inclui(zerosEsquerda = 14)
     private Long cnpjCol;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String ieCol;
 
-    @Inclui(zerosEsquerda = 11)
+    @Getter @Setter @Inclui(zerosEsquerda = 11)
     private Long cpfCol;
 
-    @Inclui(zerosEsquerda = 7)
+    @Getter @Setter @Inclui(zerosEsquerda = 7)
     private Integer codMunCol;
 
-    @Inclui(zerosEsquerda = 14)
+    @Getter @Setter @Inclui(zerosEsquerda = 14)
     private Long cnpjEntg;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String ieEntg;
 
-    @Inclui(zerosEsquerda = 11)
+    @Getter @Setter @Inclui(zerosEsquerda = 11)
     private Integer cpfEntg;
 
-    @Inclui(zerosEsquerda = 7)
+    @Getter @Setter @Inclui(zerosEsquerda = 7)
     private Integer codMunEntg;
 
     public RegC115(Integer indCarga, Long cnpjCol, String ieCol, Long cpfCol, Integer codMunCol, Long cnpjEntg, String ieEntg, Integer cpfEntg, Integer codMunEntg) {

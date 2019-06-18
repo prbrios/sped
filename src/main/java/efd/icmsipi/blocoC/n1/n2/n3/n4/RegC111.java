@@ -4,17 +4,16 @@ import efd.anotacoes.Inclui;
 import lombok.Getter;
 import lombok.Setter;
 
-@Getter
-@Setter
+
 public class RegC111 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "C111";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String numProc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String indProc;
 
     public RegC111(String numProc, String indProc) {

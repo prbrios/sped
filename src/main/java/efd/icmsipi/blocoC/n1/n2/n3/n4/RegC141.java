@@ -11,16 +11,16 @@ import java.time.LocalDate;
 @Getter
 public class RegC141 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "C141";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer numParc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtVcto;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlParc;
 
     public RegC141(Integer numParc, LocalDate dtVcto, BigDecimal vlParc) {

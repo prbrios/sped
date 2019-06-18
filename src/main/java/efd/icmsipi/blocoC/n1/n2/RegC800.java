@@ -10,62 +10,61 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
 
-@Getter
-@Setter
+
 public class RegC800 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "C800";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codMod;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codSit;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer numCfe;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtDoc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCfe;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlPis;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCofins;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String cnpjCpf;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer nrSat;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String chvCfe;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlDesc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlMerc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlOutDa;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlIcms;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlPisSt;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCofinsSt;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegC850> regC850;
 
     public RegC800(String codMod, String codSit, Integer numCfe, LocalDate dtDoc, BigDecimal vlCfe, BigDecimal vlPis, BigDecimal vlCofins, String cnpjCpf, Integer nrSat, String chvCfe, BigDecimal vlDesc, BigDecimal vlMerc, BigDecimal vlOutDa, BigDecimal vlIcms, BigDecimal vlPisSt, BigDecimal vlCofinsSt) {

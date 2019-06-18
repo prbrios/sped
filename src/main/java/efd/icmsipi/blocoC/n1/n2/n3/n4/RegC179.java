@@ -6,26 +6,25 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@Getter
-@Setter
+
 public class RegC179 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "C179";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal bcStOrigDest;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal icmsStRep;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal icmsStCompl;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal bcRet;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal icmsRet;
 
     public RegC179(BigDecimal bcStOrigDest, BigDecimal icmsStRep, BigDecimal icmsStCompl, BigDecimal bcRet, BigDecimal icmsRet) {

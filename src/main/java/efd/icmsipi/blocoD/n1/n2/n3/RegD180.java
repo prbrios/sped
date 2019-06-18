@@ -7,62 +7,61 @@ import lombok.Setter;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-@Getter
-@Setter
+
 public class RegD180 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "D180";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer numSeq;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String indEmit;
 
-    @Inclui(zerosEsquerda = 14)
+    @Getter @Setter @Inclui(zerosEsquerda = 14)
     private Long cnpjCpfEmit;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String ufEmit;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String ieEmit;
 
-    @Inclui(zerosEsquerda = 7)
+    @Getter @Setter @Inclui(zerosEsquerda = 7)
     private Integer codMunOrig;
 
-    @Inclui
-    private Long cnpjCpfTom;
+    @Getter @Setter @Inclui
+    private String cnpjCpfTom;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String ufTom;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String ieTom;
 
-    @Inclui(zerosEsquerda = 7)
+    @Getter @Setter @Inclui(zerosEsquerda = 7)
     private Integer codMunDest;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codMod;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String ser;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer sub;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer numDoc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtDoc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlDoc;
 
-    public RegD180(Integer numSeq, String indEmit, Long cnpjCpfEmit, String ufEmit, String ieEmit, Integer codMunOrig, Long cnpjCpfTom, String ufTom, String ieTom, Integer codMunDest, String codMod, String ser, Integer sub, Integer numDoc, LocalDate dtDoc, BigDecimal vlDoc) {
+    public RegD180(Integer numSeq, String indEmit, Long cnpjCpfEmit, String ufEmit, String ieEmit, Integer codMunOrig, String cnpjCpfTom, String ufTom, String ieTom, Integer codMunDest, String codMod, String ser, Integer sub, Integer numDoc, LocalDate dtDoc, BigDecimal vlDoc) {
         this.numSeq = numSeq;
         this.indEmit = indEmit;
         this.cnpjCpfEmit = cnpjCpfEmit;

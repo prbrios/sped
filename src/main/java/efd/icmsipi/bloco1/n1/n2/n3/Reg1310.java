@@ -9,41 +9,40 @@ import lombok.Setter;
 import java.math.BigDecimal;
 import java.util.List;
 
-@Getter
-@Setter
+
 public class Reg1310 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "1310";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String numTanque;
 
-    @Inclui(casasDecimais = 3)
+    @Getter @Setter @Inclui(casasDecimais = 3)
     private BigDecimal estqAbert;
 
-    @Inclui(casasDecimais = 3)
+    @Getter @Setter @Inclui(casasDecimais = 3)
     private BigDecimal volEntr;
 
-    @Inclui(casasDecimais = 3)
+    @Getter @Setter @Inclui(casasDecimais = 3)
     private BigDecimal volDisp;
 
-    @Inclui(casasDecimais = 3)
+    @Getter @Setter @Inclui(casasDecimais = 3)
     private BigDecimal volSaidas;
 
-    @Inclui(casasDecimais = 3)
+    @Getter @Setter @Inclui(casasDecimais = 3)
     private BigDecimal estqEscr;
 
-    @Inclui(casasDecimais = 3)
+    @Getter @Setter @Inclui(casasDecimais = 3)
     private BigDecimal valAjPerda;
 
-    @Inclui(casasDecimais = 3)
+    @Getter @Setter @Inclui(casasDecimais = 3)
     private BigDecimal valAjGanho;
 
-    @Inclui(casasDecimais = 3)
+    @Getter @Setter @Inclui(casasDecimais = 3)
     private BigDecimal fechFisico;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<Reg1320> reg1320;
 
     public Reg1310(String numTanque, BigDecimal estqAbert, BigDecimal volEntr, BigDecimal volDisp, BigDecimal volSaidas, BigDecimal estqEscr, BigDecimal valAjPerda, BigDecimal valAjGanho, BigDecimal fechFisico) {

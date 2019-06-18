@@ -9,38 +9,37 @@ import lombok.Setter;
 
 import java.util.List;
 
-@Getter
-@Setter
+
 public class RegD160 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "D160";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String despacho;
 
-    @Inclui(zerosEsquerda = 14)
+    @Getter @Setter @Inclui(zerosEsquerda = 14)
     private Long cnpjCpfRem;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String ieRem;
 
-    @Inclui(zerosEsquerda = 7)
+    @Getter @Setter @Inclui(zerosEsquerda = 7)
     private Integer codMunOri;
 
-    @Inclui(zerosEsquerda = 7)
+    @Getter @Setter @Inclui(zerosEsquerda = 7)
     private Long cnpjCpfDest;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer ieDest;
 
-    @Inclui(zerosEsquerda = 7)
+    @Getter @Setter @Inclui(zerosEsquerda = 7)
     private Integer codMunDest;
 
-    @Filho
+    @Getter @Setter @Filho
     private RegD161 regD161;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegD162> regD162;
 
     public RegD160(String despacho, Long cnpjCpfRem, String ieRem, Integer codMunOri, Long cnpjCpfDest, Integer ieDest, Integer codMunDest) {

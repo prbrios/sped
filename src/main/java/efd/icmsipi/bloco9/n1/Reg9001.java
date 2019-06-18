@@ -8,17 +8,16 @@ import lombok.Setter;
 
 import java.util.List;
 
-@Getter
-@Setter
+
 public class Reg9001 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "9001";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer indMov;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<Reg9900> reg9900;
 
     public Reg9001(Integer indMov) {

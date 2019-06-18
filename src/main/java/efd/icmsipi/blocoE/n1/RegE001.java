@@ -11,26 +11,25 @@ import lombok.Setter;
 
 import java.util.List;
 
-@Getter
-@Setter
+
 public class RegE001 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "E001";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String indMov;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegE100> regE100;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegE200> regE200;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegE300> regE300;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegE500> regE500;
 
     public RegE001(String indMov) {

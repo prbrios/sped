@@ -4,14 +4,13 @@ import efd.anotacoes.Inclui;
 import lombok.Getter;
 import lombok.Setter;
 
-@Getter
-@Setter
+
 public class Reg0990 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "0990";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer qtdLin0;
 
     public Reg0990(Integer qtdLin0) {

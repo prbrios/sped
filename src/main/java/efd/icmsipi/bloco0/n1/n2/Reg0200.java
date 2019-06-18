@@ -12,59 +12,58 @@ import lombok.Setter;
 import java.math.BigDecimal;
 import java.util.List;
 
-@Getter
-@Setter
+
 public class Reg0200 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "0200";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codItem;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String descrItem;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codBarras;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codAntItem;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String unidInv;
 
-    @Inclui(zerosEsquerda = 2)
+    @Getter @Setter @Inclui(zerosEsquerda = 2)
     private Integer tipoItem;
 
-    @Inclui(zerosEsquerda = 8)
+    @Getter @Setter @Inclui(zerosEsquerda = 8)
     private Integer codNcm;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String exIpi;
 
-    @Inclui(zerosEsquerda = 2)
+    @Getter @Setter @Inclui(zerosEsquerda = 2)
     private Integer codGen;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codLst;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal aliqIcms;
 
-    @Inclui(zerosEsquerda = 7)
+    @Getter @Setter @Inclui(zerosEsquerda = 7)
     private Integer cest;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<Reg0205> reg0205;
 
-    @Filho
+    @Getter @Setter @Filho
     private Reg0206 reg0206;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<Reg0210> reg0210;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<Reg0220> reg0220;
 
     public Reg0200(String codItem, String descrItem, String codBarras, String codAntItem, String unidInv,

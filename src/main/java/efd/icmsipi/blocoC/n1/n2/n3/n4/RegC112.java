@@ -7,32 +7,31 @@ import lombok.Setter;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-@Getter
-@Setter
+
 public class RegC112 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "C112";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codDa;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String uf;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String numDa;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codAut;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlDa;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtVcto;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtPgto;
 
     public RegC112(String codDa, String uf, String numDa, String codAut, BigDecimal vlDa, LocalDate dtVcto, LocalDate dtPgto) {

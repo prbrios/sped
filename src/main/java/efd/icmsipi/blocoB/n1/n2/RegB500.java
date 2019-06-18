@@ -9,23 +9,22 @@ import lombok.Setter;
 import java.math.BigDecimal;
 import java.util.List;
 
-@Getter
-@Setter
+
 public class RegB500 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "B500";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlRec;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer qtdProf;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlOr;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegB510> regB510;
 
     public RegB500(BigDecimal vlRec, Integer qtdProf, BigDecimal vlOr) {

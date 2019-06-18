@@ -8,44 +8,43 @@ import lombok.Setter;
 
 import java.util.List;
 
-@Getter
-@Setter
+
 public class RegC001 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "C001";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String indMov;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegC100> regC100;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegC300> regC300;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegC350> regC350;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegC400> regC400;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegC495> regC495;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegC500> regC500;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegC600> regC600;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegC700> regC700;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegC800> regC800;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegC860> regC860;
 
     public RegC001(String indMov) {

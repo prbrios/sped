@@ -10,23 +10,22 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
 
-@Getter
-@Setter
+
 public class RegK250 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "K250";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtProd;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codItem;
 
-    @Inclui(casasDecimais = 6)
+    @Getter @Setter @Inclui(casasDecimais = 6)
     private BigDecimal qtd;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegK255> regK255;
 
     public RegK250(LocalDate dtProd, String codItem, BigDecimal qtd) {

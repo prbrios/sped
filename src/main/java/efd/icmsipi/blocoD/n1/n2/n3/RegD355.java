@@ -12,38 +12,37 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
 
-@Getter
-@Setter
+
 public class RegD355 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "D355";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtDoc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer cro;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer crz;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer numCooFin;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer gtFin;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBrt;
 
-    @Filho
+    @Getter @Setter @Filho
     private RegD360 regD360;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegD365> regD365;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegD390> regD390;
 
     public RegD355(LocalDate dtDoc, Integer cro, Integer crz, Integer numCooFin, Integer gtFin, BigDecimal vlBrt) {

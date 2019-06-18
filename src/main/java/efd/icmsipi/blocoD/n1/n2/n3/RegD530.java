@@ -6,29 +6,28 @@ import lombok.Setter;
 
 import java.time.LocalDate;
 
-@Getter
-@Setter
+
 public class RegD530 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "D530";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String indServ;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtIniServ;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtFinServ;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer perFiscal;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codArea;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer terminal;
 
     public RegD530(String indServ, LocalDate dtIniServ, LocalDate dtFinServ, Integer perFiscal, String codArea, Integer terminal) {

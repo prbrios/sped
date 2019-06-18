@@ -10,25 +10,25 @@ import java.math.BigDecimal;
 @Getter
 public class RegC160 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "C160";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codPart;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String veicId;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer qtdVol;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal pesoBrt;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal pesoLiq;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String ufId;
 
     public RegC160(String codPart, String veicId, Integer qtdVol, BigDecimal pesoBrt, BigDecimal pesoLiq, String ufId) {

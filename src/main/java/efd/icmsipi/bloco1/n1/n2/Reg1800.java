@@ -6,38 +6,37 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@Getter
-@Setter
+
 public class Reg1800 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "1800";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCarga;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlPass;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlFat;
 
-    @Inclui(casasDecimais = 6)
+    @Getter @Setter @Inclui(casasDecimais = 6)
     private BigDecimal indRat;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlIcmsAnt;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBcIcms;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlIcmsApur;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBcIcmsApur;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlDif;
 
     public Reg1800(BigDecimal vlCarga, BigDecimal vlPass, BigDecimal vlFat, BigDecimal indRat, BigDecimal vlIcmsAnt, BigDecimal vlBcIcms, BigDecimal vlIcmsApur, BigDecimal vlBcIcmsApur, BigDecimal vlDif) {

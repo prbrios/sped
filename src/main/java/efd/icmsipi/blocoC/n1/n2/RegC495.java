@@ -6,53 +6,52 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@Getter
-@Setter
+
 public class RegC495 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "C495";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal aliqIcms;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codItem;
 
-    @Inclui(casasDecimais = 3)
+    @Getter @Setter @Inclui(casasDecimais = 3)
     private BigDecimal qtd;
 
-    @Inclui(casasDecimais = 3)
+    @Getter @Setter @Inclui(casasDecimais = 3)
     private BigDecimal qtdCanc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String unid;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlItem;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlDesc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCanc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlAcmo;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBcIcms;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal clIcms;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlIsen;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlNt;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlIcmsSt;
 
     public RegC495(BigDecimal aliqIcms, String codItem, BigDecimal qtd, BigDecimal qtdCanc, String unid, BigDecimal vlItem, BigDecimal vlDesc, BigDecimal vlCanc, BigDecimal vlAcmo, BigDecimal vlBcIcms, BigDecimal clIcms, BigDecimal vlIsen, BigDecimal vlNt, BigDecimal vlIcmsSt) {

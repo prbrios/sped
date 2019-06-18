@@ -11,28 +11,28 @@ import java.time.LocalDate;
 @Getter
 public class RegC173 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "C173";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String loteMed;
 
-    @Inclui(casasDecimais = 3)
+    @Getter @Setter @Inclui(casasDecimais = 3)
     private BigDecimal qtdItem;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtFab;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtVal;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String indMed;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String tpProd;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlTabMax;
 
     public RegC173(String loteMed, BigDecimal qtdItem, LocalDate dtFab, LocalDate dtVal, String indMed, String tpProd, BigDecimal vlTabMax) {

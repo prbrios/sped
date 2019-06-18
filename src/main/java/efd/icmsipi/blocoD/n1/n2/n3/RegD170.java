@@ -6,50 +6,49 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@Getter
-@Setter
+
 public class RegD170 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "D170";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codPartConsg;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codPartRed;
 
-    @Inclui(zerosEsquerda = 7)
+    @Getter @Setter @Inclui(zerosEsquerda = 7)
     private Integer codMunOrig;
 
-    @Inclui(zerosEsquerda = 7)
+    @Getter @Setter @Inclui(zerosEsquerda = 7)
     private Integer codMunDest;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String otm;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String indNatFrt;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlLiqFrt;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlGris;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlPdg;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlOut;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlFrt;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String veicId;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String ufId;
 
     public RegD170(String codPartConsg, String codPartRed, Integer codMunOrig, Integer codMunDest, String otm, String indNatFrt, BigDecimal vlLiqFrt, BigDecimal vlGris, BigDecimal vlPdg, BigDecimal vlOut, BigDecimal vlFrt, String veicId, String ufId) {

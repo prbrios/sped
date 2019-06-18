@@ -6,29 +6,28 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@Getter
-@Setter
+
 public class RegB025 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "B025";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlContP;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBcIssP;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal aliqIss;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlIssP;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlIsntIssP;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codServ;
 
     public RegB025(BigDecimal vlContP, BigDecimal vlBcIssP, BigDecimal aliqIss, BigDecimal vlIssP, BigDecimal vlIsntIssP, String codServ) {

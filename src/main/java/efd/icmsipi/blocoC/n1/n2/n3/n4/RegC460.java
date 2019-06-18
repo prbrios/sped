@@ -11,44 +11,43 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
 
-@Getter
-@Setter
+
 public class RegC460 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "C460";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codMod;
 
-    @Inclui(zerosEsquerda = 2)
+    @Getter @Setter @Inclui(zerosEsquerda = 2)
     private Integer codSit;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer numDoc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtDoc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlDoc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlPis;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCofins;
 
-    @Inclui(zerosEsquerda = 14)
+    @Getter @Setter @Inclui(zerosEsquerda = 14)
     private Long cpfCnpj;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String nomAdq;
 
-    @Filho
+    @Getter @Setter @Filho
     private RegC465 regC465;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegC470> regC470;
 
     public RegC460(String codMod, Integer codSit, Integer numDoc, LocalDate dtDoc, BigDecimal vlDoc, BigDecimal vlPis, BigDecimal vlCofins, Long cpfCnpj, String nomAdq) {

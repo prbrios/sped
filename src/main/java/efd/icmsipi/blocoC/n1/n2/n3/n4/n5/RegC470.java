@@ -6,41 +6,40 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@Getter
-@Setter
+
 public class RegC470 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "C470";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codItem;
 
-    @Inclui(casasDecimais = 3)
+    @Getter @Setter @Inclui(casasDecimais = 3)
     private BigDecimal qtd;
 
-    @Inclui(casasDecimais = 3)
+    @Getter @Setter @Inclui(casasDecimais = 3)
     private BigDecimal qtdCanc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String unid;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlItem;
 
-    @Inclui(zerosEsquerda = 3)
+    @Getter @Setter @Inclui(zerosEsquerda = 3)
     private Integer cstIcms;
 
-    @Inclui(zerosEsquerda = 4)
+    @Getter @Setter @Inclui(zerosEsquerda = 4)
     private Integer cfop;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal aliqIcms;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlPis;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCofins;
 
     public RegC470(String codItem, BigDecimal qtd, BigDecimal qtdCanc, String unid, BigDecimal vlItem, Integer cstIcms, Integer cfop, BigDecimal aliqIcms, BigDecimal vlPis, BigDecimal vlCofins) {

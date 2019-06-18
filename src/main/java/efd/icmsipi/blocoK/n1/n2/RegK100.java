@@ -9,47 +9,46 @@ import lombok.Setter;
 import java.time.LocalDate;
 import java.util.List;
 
-@Getter
-@Setter
+
 public class RegK100 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "K100";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtIni;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtFin;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegK200> regK200;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegK210> regK210;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegK220> regK220;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegK230> regK230;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegK250> regK250;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegK260> regK260;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegK270> regK270;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegK280> regK280;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegK290> regK290;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegK300> regK300;
 
     public RegK100(LocalDate dtIni, LocalDate dtFin) {

@@ -10,56 +10,55 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
 
-@Getter
-@Setter
+
 public class RegD410 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "D410";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codMod;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String ser;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer sub;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer numDocIni;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer numDocFin;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtDoc;
 
-    @Inclui(zerosEsquerda = 3)
+    @Getter @Setter @Inclui(zerosEsquerda = 3)
     private Integer cstIcms;
 
-    @Inclui(zerosEsquerda = 4)
+    @Getter @Setter @Inclui(zerosEsquerda = 4)
     private Integer cfop;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal aliqIcms;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlOpr;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlDesc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlServ;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBcIcms;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlIcms;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegD411> regD411;
 
     public RegD410(String codMod, String ser, Integer sub, Integer numDocIni, Integer numDocFin, LocalDate dtDoc, Integer cstIcms, Integer cfop, BigDecimal aliqIcms, BigDecimal vlOpr, BigDecimal vlDesc, BigDecimal vlServ, BigDecimal vlBcIcms, BigDecimal vlIcms) {

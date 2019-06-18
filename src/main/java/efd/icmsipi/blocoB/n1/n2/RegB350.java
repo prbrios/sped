@@ -6,41 +6,40 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@Getter
-@Setter
+
 public class RegB350 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "B350";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codCtd;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String ctaIss;
 
-    @Inclui(zerosEsquerda = 8)
+    @Getter @Setter @Inclui(zerosEsquerda = 8)
     private Integer ctaCosif;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer qtdOcor;
 
-    @Inclui(zerosEsquerda = 4)
+    @Getter @Setter @Inclui(zerosEsquerda = 4)
     private Integer codServ;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCont;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBcIss;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal aliqIss;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlIss;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codIndObs;
 
     public RegB350(String codCtd, String ctaIss, Integer ctaCosif, Integer qtdOcor, Integer codServ, BigDecimal vlCont, BigDecimal vlBcIss, BigDecimal aliqIss, BigDecimal vlIss, String codIndObs) {

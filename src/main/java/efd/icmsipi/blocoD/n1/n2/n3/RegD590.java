@@ -6,41 +6,40 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@Getter
-@Setter
+
 public class RegD590 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "D590";
 
-    @Inclui(zerosEsquerda = 3)
+    @Getter @Setter @Inclui(zerosEsquerda = 3)
     private Integer cstIcms;
 
-    @Inclui(zerosEsquerda = 4)
+    @Getter @Setter @Inclui(zerosEsquerda = 4)
     private Integer cfop;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal aliqIcms;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlOper;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBcIcms;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlIcms;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBcIcmsUf;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlIcmsUf;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlRedBc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codObs;
 
     public RegD590(Integer cstIcms, Integer cfop, BigDecimal aliqIcms, BigDecimal vlOper, BigDecimal vlBcIcms, BigDecimal vlIcms, BigDecimal vlBcIcmsUf, BigDecimal vlIcmsUf, BigDecimal vlRedBc, String codObs) {

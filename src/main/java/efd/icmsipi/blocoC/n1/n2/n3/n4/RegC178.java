@@ -6,20 +6,19 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@Getter
-@Setter
+
 public class RegC178 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "C178";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String clEnq;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlUnid;
 
-    @Inclui(casasDecimais = 3)
+    @Getter @Setter @Inclui(casasDecimais = 3)
     private BigDecimal quantPad;
 
     public RegC178(String clEnq, BigDecimal vlUnid, BigDecimal quantPad) {

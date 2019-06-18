@@ -10,26 +10,25 @@ import lombok.Setter;
 import java.time.LocalDate;
 import java.util.List;
 
-@Getter
-@Setter
+
 public class RegE500 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "E500";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String indApur;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtIni;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtFin;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegE510> regE510;
 
-    @Filho
+    @Getter @Setter @Filho
     private RegE520 regE520;
 
     public RegE500(String indApur, LocalDate dtIni, LocalDate dtFin) {

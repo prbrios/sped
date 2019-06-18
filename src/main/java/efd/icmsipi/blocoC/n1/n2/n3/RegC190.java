@@ -8,47 +8,46 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@Getter
-@Setter
+
 public class RegC190 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "C190";
 
-    @Inclui(zerosEsquerda = 3)
+    @Getter @Setter @Inclui(zerosEsquerda = 3)
     private Integer cstIcms;
 
-    @Inclui(zerosEsquerda = 4)
+    @Getter @Setter @Inclui(zerosEsquerda = 4)
     private Integer cfop;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal aliqIcms;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlOpr;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBcIcms;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlIcms;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBcIcmsSt;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlIcmsSt;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlRedBc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlIpi;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codObs;
 
-    @Filho
+    @Getter @Setter @Filho
     private RegC191 regC191;
 
     public RegC190(Integer cstIcms, Integer cfop, BigDecimal aliqIcms, BigDecimal vlOpr, BigDecimal vlBcIcms, BigDecimal vlIcms, BigDecimal vlBcIcmsSt, BigDecimal vlIcmsSt, BigDecimal vlRedBc, BigDecimal vlIpi, String codObs) {

@@ -6,23 +6,22 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@Getter
-@Setter
+
 public class RegD310 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "D310";
 
-    @Inclui(zerosEsquerda = 7)
+    @Getter @Setter @Inclui(zerosEsquerda = 7)
     private Integer codMunOrig;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlServ;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlbcIcms;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlIcms;
 
     public RegD310(Integer codMunOrig, BigDecimal vlServ, BigDecimal vlbcIcms, BigDecimal vlIcms) {

@@ -10,29 +10,28 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
 
-@Getter
-@Setter
+
 public class RegK230 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "K230";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtIniOp;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtFinOp;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codDocOp;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codItem;
 
-    @Inclui(casasDecimais = 6)
+    @Getter @Setter @Inclui(casasDecimais = 6)
     private BigDecimal qtdEnc;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegK235> regK235;
 
     public RegK230(LocalDate dtIniOp, LocalDate dtFinOp, String codDocOp, String codItem, BigDecimal qtdEnc) {

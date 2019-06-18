@@ -10,35 +10,34 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
 
-@Getter
-@Setter
+
 public class RegK270 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "K270";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtIniAp;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtFinAp;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codOpOs;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codItem;
 
-    @Inclui(casasDecimais = 6)
+    @Getter @Setter @Inclui(casasDecimais = 6)
     private BigDecimal qtdCorPos;
 
-    @Inclui(casasDecimais = 6)
+    @Getter @Setter @Inclui(casasDecimais = 6)
     private BigDecimal qtdCorNeg;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String origem;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegK275> regK275;
 
     public RegK270(LocalDate dtIniAp, LocalDate dtFinAp, String codOpOs, String codItem, BigDecimal qtdCorPos, BigDecimal qtdCorNeg, String origem) {

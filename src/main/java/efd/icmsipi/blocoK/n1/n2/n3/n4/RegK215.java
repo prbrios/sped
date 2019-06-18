@@ -6,17 +6,16 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@Getter
-@Setter
+
 public class RegK215 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "K215";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codItemDes;
 
-    @Inclui(casasDecimais = 6)
+    @Getter @Setter @Inclui(casasDecimais = 6)
     private BigDecimal qtdDes;
 
     public RegK215(String codItemDes, BigDecimal qtdDes) {

@@ -11,68 +11,67 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
 
-@Getter
-@Setter
+
 public class RegD600 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "D600";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codMod;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer codMun;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String ser;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer sub;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer codCons;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer qtdCons;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtDoc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlDoc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlDesc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlServ;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlServNt;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlTerc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlDa;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBcIcms;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlIcms;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlPis;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCofins;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegD610> regD610;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegD690> regD690;
 
     public RegD600(String codMod, Integer codMun, String ser, Integer sub, Integer codCons, Integer qtdCons, LocalDate dtDoc, BigDecimal vlDoc, BigDecimal vlDesc, BigDecimal vlServ, BigDecimal vlServNt, BigDecimal vlTerc, BigDecimal vlDa, BigDecimal vlBcIcms, BigDecimal vlIcms, BigDecimal vlPis, BigDecimal vlCofins) {

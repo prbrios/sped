@@ -6,53 +6,52 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@Getter
-@Setter
+
 public class RegB470 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "B470";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCont;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlMatTerc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlMatProp;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlSub;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlIsnt;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlDedBc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBcIss;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBcIssRt;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlIss;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlIssRt;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlDed;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlIssRec;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlIssSt;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlIssRecUni;
 
     public RegB470(BigDecimal vlCont, BigDecimal vlMatTerc, BigDecimal vlMatProp, BigDecimal vlSub, BigDecimal vlIsnt, BigDecimal vlDedBc, BigDecimal vlBcIss, BigDecimal vlBcIssRt, BigDecimal vlIss, BigDecimal vlIssRt, BigDecimal vlDed, BigDecimal vlIssRec, BigDecimal vlIssSt, BigDecimal vlIssRecUni) {

@@ -10,113 +10,112 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
 
-@Getter
-@Setter
+
 public class RegD100 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "D100";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String indOper;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String indEmit;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codPart;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codMod;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer codSit;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String ser;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String sub;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer numDoc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String chvCte;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtDoc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtAp;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer tpCte;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String chvCteRef;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlDoc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlDesc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String indFrt;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlServ;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBcIcms;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlIcms;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlNt;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codInf;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codCta;
 
-    @Inclui(zerosEsquerda = 7)
+    @Getter @Setter @Inclui(zerosEsquerda = 7)
     private Integer codMunOrig;
 
-    @Inclui(zerosEsquerda = 7)
+    @Getter @Setter @Inclui(zerosEsquerda = 7)
     private Integer codMunDest;
 
-    @Filho
+    @Getter @Setter @Filho
     private RegD101 regD101;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegD110> regD110;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegD130> regD130;
 
-    @Filho
+    @Getter @Setter @Filho
     private RegD140 regD140;
 
-    @Filho
+    @Getter @Setter @Filho
     private RegD150 regD150;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegD160> regD160;
 
-    @Filho
+    @Getter @Setter @Filho
     private RegD170 regD170;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegD180> regD180;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegD190> regD190;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegD195> regD195;
 
     public RegD100(String indOper, String indEmit, String codPart, String codMod, Integer codSit, String ser, String sub, Integer numDoc, String chvCte, LocalDate dtDoc, LocalDate dtAp, Integer tpCte, String chvCteRef, BigDecimal vlDoc, BigDecimal vlDesc, String indFrt, BigDecimal vlServ, BigDecimal vlBcIcms, BigDecimal vlIcms, BigDecimal vlNt, String codInf, String codCta, Integer codMunOrig, Integer codMunDest) {

@@ -9,47 +9,46 @@ import lombok.Setter;
 import java.math.BigDecimal;
 import java.util.List;
 
-@Getter
-@Setter
+
 public class Reg1970 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "1970";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String indAp;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal g301;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal g302;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal g303;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal g304;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal g305;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal g306;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal g307;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal g3T;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal g308;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal g309;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<Reg1975> reg1975;
 
     public Reg1970(String indAp) {

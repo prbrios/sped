@@ -6,26 +6,25 @@ import lombok.Setter;
 
 import java.time.LocalDate;
 
-@Getter
-@Setter
+
 public class RegC114 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "C114";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codMod;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String ecfFab;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer ecfCx;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer numDoc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtDoc;
 
     public RegC114(String codMod, String ecfFab, Integer ecfCx, Integer numDoc, LocalDate dtDoc) {

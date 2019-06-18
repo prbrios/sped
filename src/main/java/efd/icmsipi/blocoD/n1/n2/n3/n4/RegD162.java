@@ -7,38 +7,37 @@ import lombok.Setter;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-@Getter
-@Setter
+
 public class RegD162 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "D162";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codMod;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String ser;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer numDoc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtDoc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlDoc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlMerc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer qtdVol;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal pesoBrt;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal pesoLiq;
 
     public RegD162(String codMod, String ser, Integer numDoc, LocalDate dtDoc, BigDecimal vlDoc, BigDecimal vlMerc, Integer qtdVol, BigDecimal pesoBrt, BigDecimal pesoLiq) {

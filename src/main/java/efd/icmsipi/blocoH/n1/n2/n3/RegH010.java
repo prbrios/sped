@@ -9,44 +9,43 @@ import lombok.Setter;
 import java.math.BigDecimal;
 import java.util.List;
 
-@Getter
-@Setter
+
 public class RegH010 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "H010";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codImtem;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String unid;
 
-    @Inclui(casasDecimais = 3)
+    @Getter @Setter @Inclui(casasDecimais = 3)
     private BigDecimal qtd;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlUnit;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlItem;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String indProp;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codPart;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String txtCompl;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codCta;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlItemIr;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegH020> regH020;
 
     public RegH010(String codImtem, String unid, BigDecimal qtd, BigDecimal vlUnit, BigDecimal vlItem, String indProp, String codPart, String txtCompl, String codCta, BigDecimal vlItemIr) {

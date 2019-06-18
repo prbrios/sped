@@ -10,20 +10,19 @@ import lombok.Setter;
 import java.time.LocalDate;
 import java.util.List;
 
-@Getter
-@Setter
+
 public class RegK300 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "K300";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtProd;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegK301> regK301;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegK302> regK302;
 
     public RegK300(LocalDate dtProd) {

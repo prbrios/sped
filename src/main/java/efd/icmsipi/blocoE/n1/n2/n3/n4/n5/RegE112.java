@@ -7,26 +7,25 @@ import lombok.Setter;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-@Getter
-@Setter
+
 public class RegE112 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "E112";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String numDa;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String numProc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String indProc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String proc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String txtCompl;
 
     public RegE112(String numDa, String numProc, String indProc, String proc, String txtCompl) {

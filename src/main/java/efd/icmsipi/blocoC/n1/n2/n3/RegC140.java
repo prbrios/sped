@@ -13,28 +13,28 @@ import java.util.List;
 @Getter
 public class RegC140 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "C140";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String indEmit;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String indTit;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String descTit;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String numTit;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer qtdParc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlTit;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegC141> regC141;
 
     public RegC140(String indEmit, String indTit, String descTit, String numTit, Integer qtdParc, BigDecimal vlTit) {

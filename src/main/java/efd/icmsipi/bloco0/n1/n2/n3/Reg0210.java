@@ -6,20 +6,19 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@Getter
-@Setter
+
 public class Reg0210 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "0210";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codItemComp;
 
-    @Inclui(casasDecimais = 6)
+    @Getter @Setter @Inclui(casasDecimais = 6)
     private BigDecimal qtdComp;
 
-    @Inclui(casasDecimais = 4)
+    @Getter @Setter @Inclui(casasDecimais = 4)
     private BigDecimal perda;
 
     public Reg0210(String codItemComp, BigDecimal qtdComp, BigDecimal perda) {

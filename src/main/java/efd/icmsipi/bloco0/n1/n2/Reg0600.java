@@ -6,20 +6,19 @@ import lombok.Setter;
 
 import java.time.LocalDate;
 
-@Getter
-@Setter
+
 public class Reg0600 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "0600";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtAlt;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codCcus;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String ccus;
 
     public Reg0600(LocalDate dtAlt, String codCcus, String ccus) {

@@ -11,56 +11,55 @@ import lombok.Setter;
 import java.math.BigDecimal;
 import java.util.List;
 
-@Getter
-@Setter
+
 public class Reg1920 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "1920";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vltotTransfDebitosOa;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlTotAjDebitosOa;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlEstornosCredOa;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlTotTransfCreditosOa;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlTotAjCretidosOa;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlEstornosDebOa;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlSldCredorAntOa;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlSldApuradoOa;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlTotDed;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlIcmsRecolherOa;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlSldCredorTranspOa;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal debEspOa;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<Reg1921> reg1921;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<Reg1925> reg1925;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<Reg1926> reg1926;
 
     public Reg1920(BigDecimal vltotTransfDebitosOa, BigDecimal vlTotAjDebitosOa, BigDecimal vlEstornosCredOa, BigDecimal vlTotTransfCreditosOa, BigDecimal vlTotAjCretidosOa, BigDecimal vlEstornosDebOa, BigDecimal vlSldCredorAntOa, BigDecimal vlSldApuradoOa, BigDecimal vlTotDed, BigDecimal vlIcmsRecolherOa, BigDecimal vlSldCredorTranspOa, BigDecimal debEspOa) {

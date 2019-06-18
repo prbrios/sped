@@ -6,20 +6,19 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@Getter
-@Setter
+
 public class RegC191 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "C191";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlFcpOp;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlFcpSt;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlFcpRet;
 
     public RegC191(BigDecimal vlFcpOp, BigDecimal vlFcpSt, BigDecimal vlFcpRet) {

@@ -4,20 +4,19 @@ import efd.anotacoes.Inclui;
 import lombok.Getter;
 import lombok.Setter;
 
-@Getter
-@Setter
+
 public class Reg1710 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "1710";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer numDocIni;
 
-    @Inclui
-    private Inclui numDocFin;
+    @Getter @Setter @Inclui
+    private Integer numDocFin;
 
-    public Reg1710(Integer numDocIni, Inclui numDocFin) {
+    public Reg1710(Integer numDocIni, Integer numDocFin) {
         this.numDocIni = numDocIni;
         this.numDocFin = numDocFin;
     }

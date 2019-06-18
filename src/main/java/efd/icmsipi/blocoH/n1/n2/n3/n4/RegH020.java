@@ -7,20 +7,19 @@ import lombok.Setter;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-@Getter
-@Setter
+
 public class RegH020 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "H020";
 
-    @Inclui(zerosEsquerda = 3)
+    @Getter @Setter @Inclui(zerosEsquerda = 3)
     private Integer cstIcms;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal bcIcms;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlIcms;
 
     public RegH020(Integer cstIcms, BigDecimal bcIcms, BigDecimal vlIcms) {

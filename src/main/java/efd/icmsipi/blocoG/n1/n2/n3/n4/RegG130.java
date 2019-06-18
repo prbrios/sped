@@ -9,35 +9,34 @@ import lombok.Setter;
 import java.time.LocalDate;
 import java.util.List;
 
-@Getter
-@Setter
+
 public class RegG130 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "G130";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String indEmit;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codPart;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codMod;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String serie;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer numDoc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String chvNfeCte;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtDoc;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegG140> regG140;
 
     public RegG130(String indEmit, String codPart, String codMod, String serie, Integer numDoc, String chvNfeCte, LocalDate dtDoc) {

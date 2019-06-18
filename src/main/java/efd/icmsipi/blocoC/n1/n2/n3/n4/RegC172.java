@@ -10,16 +10,16 @@ import java.math.BigDecimal;
 @Getter
 public class RegC172 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "C172";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBcIssqn;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal aliqIssqn;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlIssqn;
 
     public RegC172(BigDecimal vlBcIssqn, BigDecimal aliqIssqn, BigDecimal vlIssqn) {

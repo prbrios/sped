@@ -10,41 +10,40 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
 
-@Getter
-@Setter
+
 public class RegG110 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "G110";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtIni;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtFin;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal saldoInIcms;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal somParc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlTribExp;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlTotal;
 
-    @Inclui(casasDecimais = 8)
+    @Getter @Setter @Inclui(casasDecimais = 8)
     private BigDecimal indPerSai;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal icmsAprop;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal somIcmsOc;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegG125> regG125;
 
     public RegG110(LocalDate dtIni, LocalDate dtFin, BigDecimal saldoInIcms, BigDecimal somParc, BigDecimal vlTribExp, BigDecimal vlTotal, BigDecimal indPerSai, BigDecimal icmsAprop, BigDecimal somIcmsOc) {

@@ -6,62 +6,61 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@Getter
-@Setter
+
 public class RegD610 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "D610";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer codClass;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codItem;
 
-    @Inclui(casasDecimais = 3)
+    @Getter @Setter @Inclui(casasDecimais = 3)
     private BigDecimal qtd;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String unid;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlItem;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlDesc;
 
-    @Inclui(zerosEsquerda = 3)
+    @Getter @Setter @Inclui(zerosEsquerda = 3)
     private Integer cstIcms;
 
-    @Inclui(zerosEsquerda = 4)
+    @Getter @Setter @Inclui(zerosEsquerda = 4)
     private Integer cfop;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal aliqIcms;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBcIcms;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlIcms;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBcIcmsUf;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlIcmsUf;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlRedBc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlPis;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCofins;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codCta;
 
     public RegD610(Integer codClass, String codItem, BigDecimal qtd, String unid, BigDecimal vlItem, BigDecimal vlDesc, Integer cstIcms, Integer cfop, BigDecimal aliqIcms, BigDecimal vlBcIcms, BigDecimal vlIcms, BigDecimal vlBcIcmsUf, BigDecimal vlIcmsUf, BigDecimal vlRedBc, BigDecimal vlPis, BigDecimal vlCofins, String codCta) {

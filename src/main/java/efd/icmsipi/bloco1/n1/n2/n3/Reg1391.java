@@ -7,59 +7,58 @@ import lombok.Setter;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-@Getter
-@Setter
+
 public class Reg1391 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "1391";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtRegistro;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal qtdMoid;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal estqIni;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal qtdProduz;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal entAnidHid;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal outrEntr;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal perda;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal cons;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal saiAniHid;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer saidas;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal estqFin;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal estqIniMel;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal prodDiaMel;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal utilMel;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal prodAlcMel;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String obs;
 
     public Reg1391(LocalDate dtRegistro, BigDecimal qtdMoid, BigDecimal estqIni, BigDecimal qtdProduz, BigDecimal entAnidHid, BigDecimal outrEntr, BigDecimal perda, BigDecimal cons, BigDecimal saiAniHid, Integer saidas, BigDecimal estqFin, BigDecimal estqIniMel, BigDecimal prodDiaMel, BigDecimal utilMel, BigDecimal prodAlcMel, String obs) {

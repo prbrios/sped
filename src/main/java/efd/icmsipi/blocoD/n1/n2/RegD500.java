@@ -12,89 +12,88 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
 
-@Getter
-@Setter
+
 public class RegD500 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "D500";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String indOper;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String indEmit;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codPart;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codMod;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer codSit;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String ser;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String sub;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer numDoc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtDoc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtAp;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlDoc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlDesc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlServ;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlServNt;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlTerc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlDa;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBcIcms;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlIcms;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codInf;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlPis;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCofins;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codCta;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer tpAssinante;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegD510> regD510;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegD530> regD530;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegD590> regD590;
 
     public RegD500(String indOper, String indEmit, String codPart, String codMod, Integer codSit, String ser, String sub, Integer numDoc, LocalDate dtDoc, LocalDate dtAp, BigDecimal vlDoc, BigDecimal vlDesc, BigDecimal vlServ, BigDecimal vlServNt, BigDecimal vlTerc, BigDecimal vlDa, BigDecimal vlBcIcms, BigDecimal vlIcms, String codInf, BigDecimal vlPis, BigDecimal vlCofins, String codCta, Integer tpAssinante) {

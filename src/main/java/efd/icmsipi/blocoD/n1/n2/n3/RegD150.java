@@ -6,41 +6,40 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@Getter
-@Setter
+
 public class RegD150 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "D150";
 
-    @Inclui(zerosEsquerda = 7)
+    @Getter @Setter @Inclui(zerosEsquerda = 7)
     private Integer codMunOrig;
 
-    @Inclui(zerosEsquerda = 7)
+    @Getter @Setter @Inclui(zerosEsquerda = 7)
     private Integer codMunDest;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String veicId;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer viagem;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String indTfa;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlPesoTx;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlTxTerr;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlTxRed;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlOut;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlTxAdv;
 
     public RegD150(Integer codMunOrig, Integer codMunDest, String veicId, Integer viagem, String indTfa, BigDecimal vlPesoTx, BigDecimal vlTxTerr, BigDecimal vlTxRed, BigDecimal vlOut, BigDecimal vlTxAdv) {

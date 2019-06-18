@@ -8,23 +8,22 @@ import lombok.Setter;
 
 import java.time.LocalDate;
 
-@Getter
-@Setter
+
 public class RegE200 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "E200";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String uf;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtIni;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtFin;
 
-    @Filho
+    @Getter @Setter @Filho
     private RegE210 regE210;
 
     public RegE200(String uf, LocalDate dtIni, LocalDate dtFin) {

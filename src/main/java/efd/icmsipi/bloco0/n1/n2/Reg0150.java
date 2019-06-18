@@ -8,50 +8,49 @@ import lombok.Setter;
 
 import java.util.List;
 
-@Getter
-@Setter
+
 public class Reg0150 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "0150";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codPart;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String nome;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer codPais;
 
-    @Inclui(zerosEsquerda = 14)
+    @Getter @Setter @Inclui(zerosEsquerda = 14)
     private Long cnpj;
 
-    @Inclui(zerosEsquerda = 11)
+    @Getter @Setter @Inclui(zerosEsquerda = 11)
     private Long cpf;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String ie;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer codMun;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String suframa;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String end;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String num;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String compl;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String bairro;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<Reg0175> reg0175;
 
     public Reg0150(String codPart, String nome, Integer codPais, Long cnpj, Long cpf,

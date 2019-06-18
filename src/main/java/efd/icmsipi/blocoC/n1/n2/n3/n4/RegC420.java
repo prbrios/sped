@@ -9,26 +9,25 @@ import lombok.Setter;
 import java.math.BigDecimal;
 import java.util.List;
 
-@Getter
-@Setter
+
 public class RegC420 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "C420";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codTotPar;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlrAcumTot;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer nrTot;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String descrNrTot;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegC425> regC425;
 
     public RegC420(String codTotPar, BigDecimal vlrAcumTot, Integer nrTot, String descrNrTot) {

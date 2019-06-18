@@ -9,32 +9,31 @@ import lombok.Setter;
 import java.math.BigDecimal;
 import java.util.List;
 
-@Getter
-@Setter
+
 public class RegE530 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "E330";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String indAj;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlAj;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codAj;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String indDoc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String numDoc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String descrAj;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegE531> regE531;
 
     public RegE530(String indAj, BigDecimal vlAj, String codAj, String indDoc, String numDoc, String descrAj) {

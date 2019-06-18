@@ -9,35 +9,34 @@ import lombok.Setter;
 import java.math.BigDecimal;
 import java.util.List;
 
-@Getter
-@Setter
+
 public class RegE520 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "E520";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlSdAntIpi;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlDebIpi;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCredIpi;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlodIpi;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlOcIpi;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlScIpi;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlSdIpi;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegE530> regE530;
 
     public RegE520(BigDecimal vlSdAntIpi, BigDecimal vlDebIpi, BigDecimal vlCredIpi, BigDecimal vlodIpi, BigDecimal vlOcIpi, BigDecimal vlScIpi, BigDecimal vlSdIpi) {

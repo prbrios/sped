@@ -4,23 +4,22 @@ import efd.anotacoes.Inclui;
 import lombok.Getter;
 import lombok.Setter;
 
-@Getter
-@Setter
+
 public class RegD120 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "D120";
 
-    @Inclui(zerosEsquerda = 7)
+    @Getter @Setter @Inclui(zerosEsquerda = 7)
     private Integer codMunOrig;
 
-    @Inclui(zerosEsquerda = 7)
+    @Getter @Setter @Inclui(zerosEsquerda = 7)
     private Integer codMunDest;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String veicId;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String ufId;
 
     public RegD120(Integer codMunOrig, Integer codMunDest, String veicId, String ufId) {

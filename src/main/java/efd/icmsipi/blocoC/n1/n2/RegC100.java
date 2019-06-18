@@ -10,129 +10,128 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
 
-@Getter
-@Setter
+
 public class RegC100 {
 
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "C100";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String indOper;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String indEmit;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codPart;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codMod;
 
-    @Inclui(zerosEsquerda = 2)
+    @Getter @Setter @Inclui(zerosEsquerda = 2)
     private Integer codSit;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String ser;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer numDoc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String chvNfe;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtDoc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtES;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlDoc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String indPgto;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlDesc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlAbatNt;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlMerc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String indFrt;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlFrt;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlSeg;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlOutDa;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBcIcms;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlIcms;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBcIcmsSt;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlIcmsSt;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlIpi;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlPis;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCofins;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlPisSt;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCofinsSt;
 
-    @Filho
+    @Getter @Setter @Filho
     private RegC101 regC101;
 
-    @Filho
+    @Getter @Setter @Filho
     private RegC105 regC105;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegC110> regC110;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegC120> regC120;
 
-    @Filho
+    @Getter @Setter @Filho
     private RegC130 regC130;
 
-    @Filho
+    @Getter @Setter @Filho
     private RegC140 regC140;
 
-    @Filho
+    @Getter @Setter @Filho
     private RegC160 regC160;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegC165> regC165;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegC170> regC170;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegC190> regC190;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegC195> regC195;
 
     public RegC100(String indOper, String indEmit, String codPart, String codMod, Integer codSit, String ser, Integer numDoc, String chvNfe, LocalDate dtDoc, LocalDate dtES, BigDecimal vlDoc, String indPgto, BigDecimal vlDesc, BigDecimal vlAbatNt, BigDecimal vlMerc, String indFrt, BigDecimal vlFrt, BigDecimal vlSeg, BigDecimal vlOutDa, BigDecimal vlBcIcms, BigDecimal vlIcms, BigDecimal vlBcIcmsSt, BigDecimal vlIcmsSt, BigDecimal vlIpi, BigDecimal vlPis, BigDecimal vlCofins, BigDecimal vlPisSt, BigDecimal vlCofinsSt) {

@@ -6,17 +6,16 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@Getter
-@Setter
+
 public class RegC410 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "C410";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlPis;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCofins;
 
     public RegC410(BigDecimal vlPis, BigDecimal vlCofins) {

@@ -9,26 +9,25 @@ import lombok.Setter;
 import java.math.BigDecimal;
 import java.util.List;
 
-@Getter
-@Setter
+
 public class RegD365 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "D365";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codTotPar;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlrAcumTot;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer nrTot;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String descrNrTot;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegD370> regD370;
 
     public RegD365(String codTotPar, BigDecimal vlrAcumTot, Integer nrTot, String descrNrTot) {

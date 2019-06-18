@@ -7,26 +7,25 @@ import lombok.Setter;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-@Getter
-@Setter
+
 public class RegK220 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "K220";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtMov;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codItemOri;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codItemDeSt;
 
-    @Inclui(casasDecimais = 6)
+    @Getter @Setter @Inclui(casasDecimais = 6)
     private BigDecimal qtdOri;
 
-    @Inclui(casasDecimais = 6)
+    @Getter @Setter @Inclui(casasDecimais = 6)
     private BigDecimal qtdDest;
 
     public RegK220(LocalDate dtMov, String codItemOri, String codItemDeSt, BigDecimal qtdOri, BigDecimal qtdDest) {

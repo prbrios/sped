@@ -8,16 +8,16 @@ import lombok.Setter;
 @Getter
 public class RegC174 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "C174";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String indArm;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String numArm;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String descrCompl;
 
     public RegC174(String indArm, String numArm, String descrCompl) {

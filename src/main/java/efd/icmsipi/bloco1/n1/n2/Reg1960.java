@@ -6,47 +6,46 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@Getter
-@Setter
+
 public class Reg1960 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "1960";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer indAp;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal g101;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal g102;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal g103;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal g104;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal g105;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal g106;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal g107;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal g108;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal g109;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal g110;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal g111;
 
     public Reg1960(Integer indAp) {

@@ -9,38 +9,37 @@ import lombok.Setter;
 import java.time.LocalDate;
 import java.util.List;
 
-@Getter
-@Setter
+
 public class RegC700 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "C700";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codMod;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String ser;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer nroOrdIni;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer nroOrdFin;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtDocIni;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtDocFin;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String nomMest;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String chvCodDig;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegC790> regC790;
 
     public RegC700(String codMod, String ser, Integer nroOrdIni, Integer nroOrdFin, LocalDate dtDocIni, LocalDate dtDocFin, String nomMest, String chvCodDig) {

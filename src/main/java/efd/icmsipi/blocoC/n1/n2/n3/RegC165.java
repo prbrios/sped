@@ -11,43 +11,43 @@ import java.time.LocalTime;
 @Getter
 public class RegC165 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "C165";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codPart;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String veidId;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codAut;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String nrPasse;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalTime hora;
 
-    @Inclui(casasDecimais = 1)
+    @Getter @Setter @Inclui(casasDecimais = 1)
     private BigDecimal temper;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer qtdVol;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal pesoBrt;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal pesoLiq;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String nomMot;
 
-    @Inclui(zerosEsquerda = 11)
+    @Getter @Setter @Inclui(zerosEsquerda = 11)
     private Long cpf;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String ufId;
 
     public RegC165(String codPart, String veidId, String codAut, String nrPasse, LocalTime hora, BigDecimal temper, Integer qtdVol, BigDecimal pesoBrt, BigDecimal pesoLiq, String nomMot, Long cpf, String ufId) {

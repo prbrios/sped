@@ -6,23 +6,22 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@Getter
-@Setter
+
 public class RegK275 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "K275";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codItem;
 
-    @Inclui(casasDecimais = 6)
+    @Getter @Setter @Inclui(casasDecimais = 6)
     private BigDecimal qtdCorPos;
 
-    @Inclui(casasDecimais = 6)
+    @Getter @Setter @Inclui(casasDecimais = 6)
     private BigDecimal qtdCorNeg;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codInsSubst;
 
     public RegK275(String codItem, BigDecimal qtdCorPos, BigDecimal qtdCorNeg, String codInsSubst) {

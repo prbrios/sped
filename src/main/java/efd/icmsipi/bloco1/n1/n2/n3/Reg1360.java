@@ -6,17 +6,16 @@ import lombok.Setter;
 
 import java.time.LocalDate;
 
-@Getter
-@Setter
+
 public class Reg1360 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "1360";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String numLacre;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtAplicacao;
 
     public Reg1360(String numLacre, LocalDate dtAplicacao) {

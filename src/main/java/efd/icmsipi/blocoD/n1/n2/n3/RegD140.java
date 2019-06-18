@@ -6,50 +6,49 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@Getter
-@Setter
+
 public class RegD140 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "D140";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codPartConsg;
 
-    @Inclui(zerosEsquerda = 7)
+    @Getter @Setter @Inclui(zerosEsquerda = 7)
     private Integer codMunOrig;
 
-    @Inclui(zerosEsquerda = 7)
+    @Getter @Setter @Inclui(zerosEsquerda = 7)
     private Integer codMunDest;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String indVeic;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String veicId;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String indNav;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer viagem;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlFrtLiq;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlDespPort;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlDespCarDesc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlOut;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlfrtBr;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlFrtMm;
 
     public RegD140(String codPartConsg, Integer codMunOrig, Integer codMunDest, String indVeic, String veicId, String indNav, Integer viagem, BigDecimal vlFrtLiq, BigDecimal vlDespPort, BigDecimal vlDespCarDesc, BigDecimal vlOut, BigDecimal vlfrtBr, BigDecimal vlFrtMm) {

@@ -10,26 +10,25 @@ import lombok.Setter;
 import java.math.BigDecimal;
 import java.util.List;
 
-@Getter
-@Setter
+
 public class Reg1921 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "1921";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codAjApur;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String descrComplAj;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlAjApur;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<Reg1922> reg1922;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<Reg1923> reg1923;
 
     public Reg1921(String codAjApur, String descrComplAj, BigDecimal vlAjApur) {

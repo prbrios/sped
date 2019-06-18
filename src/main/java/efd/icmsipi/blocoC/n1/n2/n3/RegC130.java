@@ -10,28 +10,28 @@ import java.math.BigDecimal;
 @Getter
 public class RegC130 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "C130";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlServNt;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBcIssqn;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlIssqn;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBcIrrf;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlIrrf;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBcPrev;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlPrev;
 
     public RegC130(BigDecimal vlServNt, BigDecimal vlBcIssqn, BigDecimal vlIssqn, BigDecimal vlBcIrrf, BigDecimal vlIrrf, BigDecimal vlBcPrev, BigDecimal vlPrev) {

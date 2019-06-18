@@ -6,41 +6,40 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@Getter
-@Setter
+
 public class Reg1320 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "1320";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer numBico;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer nrInterv;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String motInterv;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String nomInterv;
 
-    @Inclui(zerosEsquerda = 14)
+    @Getter @Setter @Inclui(zerosEsquerda = 14)
     private Long cnpjInterv;
 
-    @Inclui(zerosEsquerda = 11)
+    @Getter @Setter @Inclui(zerosEsquerda = 11)
     private Long cpfInterv;
 
-    @Inclui(casasDecimais = 3)
+    @Getter @Setter @Inclui(casasDecimais = 3)
     private BigDecimal valFecha;
 
-    @Inclui(casasDecimais = 3)
+    @Getter @Setter @Inclui(casasDecimais = 3)
     private BigDecimal valAbert;
 
-    @Inclui(casasDecimais = 3)
+    @Getter @Setter @Inclui(casasDecimais = 3)
     private BigDecimal volAferi;
 
-    @Inclui(casasDecimais = 3)
+    @Getter @Setter @Inclui(casasDecimais = 3)
     private BigDecimal volVendas;
 
     public Reg1320(Integer numBico, Integer nrInterv, String motInterv, String nomInterv, Long cnpjInterv, Long cpfInterv, BigDecimal valFecha, BigDecimal valAbert, BigDecimal volAferi, BigDecimal volVendas) {

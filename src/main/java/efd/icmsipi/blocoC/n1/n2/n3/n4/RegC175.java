@@ -8,19 +8,19 @@ import lombok.Setter;
 @Getter
 public class RegC175 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "C175";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String indVeicOper;
 
-    @Inclui(zerosEsquerda = 14)
+    @Getter @Setter @Inclui(zerosEsquerda = 14)
     private Long cnpj;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String uf;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String chassiVeic;
 
     public RegC175(String indVeicOper, Long cnpj, String uf, String chassiVeic) {

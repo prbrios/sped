@@ -8,20 +8,19 @@ import lombok.Setter;
 
 import java.util.List;
 
-@Getter
-@Setter
+
 public class RegD195 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "D195";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codObs;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String txtCompl;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegD197> regD197;
 
     public RegD195(String codObs, String txtCompl) {

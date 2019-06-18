@@ -9,29 +9,28 @@ import lombok.Setter;
 import java.time.LocalDate;
 import java.util.List;
 
-@Getter
-@Setter
+
 public class RegC860 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "C860";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codMod;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer nrSat;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtDoc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer docIni;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer docFin;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegC890> regC890;
 
     public RegC860(String codMod, Integer nrSat, LocalDate dtDoc, Integer docIni, Integer docFin) {

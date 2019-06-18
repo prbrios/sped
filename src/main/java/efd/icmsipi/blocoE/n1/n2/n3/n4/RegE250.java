@@ -7,38 +7,37 @@ import lombok.Setter;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-@Getter
-@Setter
+
 public class RegE250 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "E250";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codOr;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlOr;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtVcto;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codRec;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String numProc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String indProc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String proc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String txtCompl;
 
-    @Inclui(formatoData = "MMyyyy")
+    @Getter @Setter @Inclui(formatoData = "MMyyyy")
     private LocalDate mesRef;
 
     public RegE250(String codOr, BigDecimal vlOr, LocalDate dtVcto, String codRec, String numProc, String indProc, String proc, String txtCompl, LocalDate mesRef) {

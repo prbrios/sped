@@ -9,32 +9,31 @@ import lombok.Setter;
 import java.math.BigDecimal;
 import java.util.List;
 
-@Getter
-@Setter
+
 public class Reg1200 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "1200";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codAjApur;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal sldCred;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal credApr;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal credReceb;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal credUtil;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal sldCredFim;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<Reg1210> reg1210;
 
     public Reg1200(String codAjApur, BigDecimal sldCred, BigDecimal credApr, BigDecimal credReceb, BigDecimal credUtil, BigDecimal sldCredFim) {

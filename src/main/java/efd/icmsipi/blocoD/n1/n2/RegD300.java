@@ -11,74 +11,73 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
 
-@Getter
-@Setter
+
 public class RegD300 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "D300";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codMod;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String ser;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer sub;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer numDocIni;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer numDocFin;
 
-    @Inclui(zerosEsquerda = 3)
+    @Getter @Setter @Inclui(zerosEsquerda = 3)
     private Integer cstIcms;
 
-    @Inclui(zerosEsquerda = 4)
+    @Getter @Setter @Inclui(zerosEsquerda = 4)
     private Integer cfop;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal aliqIcms;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtDoc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlOpr;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlDesc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlServ;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlSeg;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlOutDesp;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlbcIcms;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlIcms;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlRedBc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codObs;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codCta;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegD301> regD301;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegD310> regD310;
 
     public RegD300(String codMod, String ser, Integer sub, Integer numDocIni, Integer numDocFin, Integer cstIcms, Integer cfop, BigDecimal aliqIcms, LocalDate dtDoc, BigDecimal vlOpr, BigDecimal vlDesc, BigDecimal vlServ, BigDecimal vlSeg, BigDecimal vlOutDesp, BigDecimal vlbcIcms, BigDecimal vlIcms, BigDecimal vlRedBc, String codObs, String codCta) {

@@ -6,29 +6,28 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@Getter
-@Setter
+
 public class RegC370 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "C370";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer numItem;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codItem;
 
-    @Inclui(casasDecimais = 3)
+    @Getter @Setter @Inclui(casasDecimais = 3)
     private BigDecimal qtd;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String unid;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlItem;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlDesc;
 
     public RegC370(Integer numItem, String codItem, BigDecimal qtd, String unid, BigDecimal vlItem, BigDecimal vlDesc) {

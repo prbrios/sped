@@ -4,20 +4,19 @@ import efd.anotacoes.Inclui;
 import lombok.Getter;
 import lombok.Setter;
 
-@Getter
-@Setter
+
 public class RegC177 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "C177";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codSeloIpi;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Long qtSeloIpi;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codInfItem;
 
     public RegC177(String codSeloIpi, Long qtSeloIpi, String codInfItem) {

@@ -6,17 +6,16 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@Getter
-@Setter
+
 public class Reg0220 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "0220";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String unidConv;
 
-    @Inclui(casasDecimais = 6)
+    @Getter @Setter @Inclui(casasDecimais = 6)
     private BigDecimal fatConv;
 
     public Reg0220(String unidConv, BigDecimal fatConv) {

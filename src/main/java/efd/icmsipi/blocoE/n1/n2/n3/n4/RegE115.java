@@ -6,20 +6,19 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@Getter
-@Setter
+
 public class RegE115 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "E115";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codInfAdic;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlInfAdic;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String descrComplAj;
 
     public RegE115(String codInfAdic, BigDecimal vlInfAdic, String descrComplAj) {

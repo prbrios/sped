@@ -4,38 +4,37 @@ import efd.anotacoes.Inclui;
 import lombok.Getter;
 import lombok.Setter;
 
-@Getter
-@Setter
+
 public class Reg0005 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "0005";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String fantasia;
 
-    @Inclui(zerosEsquerda = 8)
+    @Getter @Setter @Inclui(zerosEsquerda = 8)
     private Integer cep;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String end;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String num;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String compl;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String bairro;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String fone;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String fax;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String email;
 
     public Reg0005(String fantasia, Integer cep, String end, String num, String compl,

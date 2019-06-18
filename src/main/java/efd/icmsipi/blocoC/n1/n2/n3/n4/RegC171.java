@@ -10,13 +10,13 @@ import java.math.BigDecimal;
 @Getter
 public class RegC171 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "C171";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String numTanque;
 
-    @Inclui(casasDecimais = 3)
+    @Getter @Setter @Inclui(casasDecimais = 3)
     private BigDecimal qtde;
 
     public RegC171(String numTanque, BigDecimal qtde) {

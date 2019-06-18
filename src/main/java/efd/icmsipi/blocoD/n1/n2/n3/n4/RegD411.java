@@ -4,14 +4,13 @@ import efd.anotacoes.Inclui;
 import lombok.Getter;
 import lombok.Setter;
 
-@Getter
-@Setter
+
 public class RegD411 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "D411";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer numDocCanc;
 
     public RegD411(Integer numDocCanc) {

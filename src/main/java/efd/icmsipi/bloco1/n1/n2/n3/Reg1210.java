@@ -6,23 +6,22 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@Getter
-@Setter
+
 public class Reg1210 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "1210";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String tipoUtil;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String nrDoc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCredUtil;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String chvDoce;
 
     public Reg1210(String tipoUtil, String nrDoc, BigDecimal vlCredUtil, String chvDoce) {

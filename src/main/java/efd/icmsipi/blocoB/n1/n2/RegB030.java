@@ -7,44 +7,43 @@ import lombok.Setter;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-@Getter
-@Setter
+
 public class RegB030 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "B030";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codMod;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String ser;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer numDocIni;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer numDocFin;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtDoc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer qtdCanc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCont;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlIsntIss;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBcIss;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlIss;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codInfObs;
 
     public RegB030(String codMod, String ser, Integer numDocIni, Integer numDocFin, LocalDate dtDoc, Integer qtdCanc, BigDecimal vlCont, BigDecimal vlIsntIss, BigDecimal vlBcIss, BigDecimal vlIss, String codInfObs) {

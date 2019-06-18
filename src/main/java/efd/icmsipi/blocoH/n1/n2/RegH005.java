@@ -10,23 +10,22 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
 
-@Getter
-@Setter
+
 public class RegH005 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "H005";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtInv;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlInv;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String motInv;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegH010> regH010;
 
     public RegH005(LocalDate dtInv, BigDecimal vlInv, String motInv) {

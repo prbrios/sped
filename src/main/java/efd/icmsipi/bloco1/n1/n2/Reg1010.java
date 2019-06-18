@@ -4,47 +4,46 @@ import efd.anotacoes.Inclui;
 import lombok.Getter;
 import lombok.Setter;
 
-@Getter
-@Setter
+
 public class Reg1010 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "1010";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String indExp;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String indCcrf;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String indComb;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String indUsina;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String indVa;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String indEe;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String indCart;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String indForm;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String indAer;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String indGiaf1;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String indGiaf3;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String indGiaf4;
 
     public Reg1010(String indExp, String indCcrf, String indComb, String indUsina, String indVa, String indEe, String indCart, String indForm, String indAer, String indGiaf1, String indGiaf3, String indGiaf4) {

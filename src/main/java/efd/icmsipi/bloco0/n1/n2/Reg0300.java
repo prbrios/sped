@@ -6,32 +6,31 @@ import efd.icmsipi.bloco0.n1.n2.n3.Reg0305;
 import lombok.Getter;
 import lombok.Setter;
 
-@Getter
-@Setter
+
 public class Reg0300 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "0300";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codIndBem;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String identMerc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String descrItem;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codPrnc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codCta;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer nrParc;
 
-    @Filho
+    @Getter @Setter @Filho
     private Reg0305 bloco0350;
 
     public Reg0300(String codIndBem, String identMerc, String descrItem, String codPrnc, String codCta, Integer nrParc) {

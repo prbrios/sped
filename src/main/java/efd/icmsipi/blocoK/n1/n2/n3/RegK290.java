@@ -10,26 +10,25 @@ import lombok.Setter;
 import java.time.LocalDate;
 import java.util.List;
 
-@Getter
-@Setter
+
 public class RegK290 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "K290";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtIniOp;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtFinOp;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codDocOp;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegK291> regK291;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegK292> regK292;
 
     public RegK290(LocalDate dtIniOp, LocalDate dtFinOp, String codDocOp) {

@@ -6,23 +6,22 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@Getter
-@Setter
+
 public class Reg1975 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "1975";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal aliqImpBase;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal g310;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal g311;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal g312;
 
     public Reg1975(BigDecimal aliqImpBase, BigDecimal g310, BigDecimal g311, BigDecimal g312) {

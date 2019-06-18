@@ -11,53 +11,52 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
 
-@Getter
-@Setter
+
 public class RegC350 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "C350";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String ser;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String subSer;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer numDoc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtDoc;
 
-    @Inclui
-    private Long cnpjCpf;
+    @Getter @Setter @Inclui
+    private String cnpjCpf;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlMerc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlDoc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlDesc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlPis;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCofins;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codCta;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegC370> regC370;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegC390> regC390;
 
-    public RegC350(String ser, String subSer, Integer numDoc, LocalDate dtDoc, Long cnpjCpf, BigDecimal vlMerc, BigDecimal vlDoc, BigDecimal vlDesc, BigDecimal vlPis, BigDecimal vlCofins, String codCta) {
+    public RegC350(String ser, String subSer, Integer numDoc, LocalDate dtDoc, String cnpjCpf, BigDecimal vlMerc, BigDecimal vlDoc, BigDecimal vlDesc, BigDecimal vlPis, BigDecimal vlCofins, String codCta) {
         this.ser = ser;
         this.subSer = subSer;
         this.numDoc = numDoc;

@@ -10,59 +10,58 @@ import lombok.Setter;
 import java.math.BigDecimal;
 import java.util.List;
 
-@Getter
-@Setter
+
 public class RegE210 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "E210";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String indMovSt;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlSldCredAntSt;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlDevolSt;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlRessascSt;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlOutCredSt;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlAjCreditosSt;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlRetencaoSt;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlOutDebSt;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlAjdebitosSt;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlSldDevAntSt;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlDeducoesSt;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlicmsRecolSt;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlSldCredStTransportar;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal debEspSt;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegE220> regE220;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegE250> regE250;
 
     public RegE210(String indMovSt, BigDecimal vlSldCredAntSt, BigDecimal vlDevolSt, BigDecimal vlRessascSt, BigDecimal vlOutCredSt, BigDecimal vlAjCreditosSt, BigDecimal vlRetencaoSt, BigDecimal vlOutDebSt, BigDecimal vlAjdebitosSt, BigDecimal vlSldDevAntSt, BigDecimal vlDeducoesSt, BigDecimal vlicmsRecolSt, BigDecimal vlSldCredStTransportar, BigDecimal debEspSt) {

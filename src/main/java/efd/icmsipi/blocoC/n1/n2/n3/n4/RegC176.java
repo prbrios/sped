@@ -7,89 +7,88 @@ import lombok.Setter;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-@Getter
-@Setter
+
 public class RegC176 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "C176";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codModUltE;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer numDocUltE;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String serUltE;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtUltE;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codPartUltE;
 
-    @Inclui(casasDecimais = 3)
+    @Getter @Setter @Inclui(casasDecimais = 3)
     private BigDecimal quantUltE;
 
-    @Inclui(casasDecimais = 3)
+    @Getter @Setter @Inclui(casasDecimais = 3)
     private BigDecimal vlUnitUltE;
 
-    @Inclui(casasDecimais = 3)
+    @Getter @Setter @Inclui(casasDecimais = 3)
     private BigDecimal vlUnitBcSt;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String chaveNfeUltE;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer numItemUltE;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlUnitBcIcmsUltE;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal aliqIcmsUltE;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlUnitLimiteBcIcmsUltE;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlUnitIcmsUltE;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal aliqStUltE;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlUnitRes;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer codRespRet;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer codMotRes;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String chaveNfeRet;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codParNfeRet;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String serNfeRet;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer numNfeRet;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer itemNfeRet;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codDa;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String numDa;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlUnitResFcpSt;
 
     public RegC176(String codModUltE, Integer numDocUltE, String serUltE, LocalDate dtUltE, String codPartUltE, BigDecimal quantUltE, BigDecimal vlUnitUltE, BigDecimal vlUnitBcSt, String chaveNfeUltE, Integer numItemUltE, BigDecimal vlUnitBcIcmsUltE, BigDecimal aliqIcmsUltE, BigDecimal vlUnitLimiteBcIcmsUltE, BigDecimal vlUnitIcmsUltE, BigDecimal aliqStUltE, BigDecimal vlUnitRes, Integer codRespRet, Integer codMotRes, String chaveNfeRet, String codParNfeRet, String serNfeRet, Integer numNfeRet, Integer itemNfeRet, String codDa, String numDa, BigDecimal vlUnitResFcpSt) {

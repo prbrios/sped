@@ -11,47 +11,46 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
 
-@Getter
-@Setter
+
 public class RegC300 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "C300";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codMod;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String ser;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String sub;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer numDocIni;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer numDocFin;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtDoc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlDoc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlPis;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCofins;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codCta;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegC310> regC310;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegC320> regC320;
 
     public RegC300(String codMod, String ser, String sub, Integer numDocIni, Integer numDocFin, LocalDate dtDoc, BigDecimal vlDoc, BigDecimal vlPis, BigDecimal vlCofins, String codCta) {

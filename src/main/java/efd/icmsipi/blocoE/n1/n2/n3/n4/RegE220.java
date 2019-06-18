@@ -11,35 +11,34 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
 
-@Getter
-@Setter
+
 public class RegE220 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "E220";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String uf;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtIni;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtFin;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codAjApur;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String descrComplAj;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlAjApur;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegE230> regE230;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegE240> regE240;
 
     public RegE220(String uf, LocalDate dtIni, LocalDate dtFin, String codAjApur, String descrComplAj, BigDecimal vlAjApur) {

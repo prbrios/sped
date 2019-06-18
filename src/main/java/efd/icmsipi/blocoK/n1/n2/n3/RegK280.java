@@ -7,29 +7,28 @@ import lombok.Setter;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-@Getter
-@Setter
+
 public class RegK280 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "K280";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtEst;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codItem;
 
-    @Inclui(casasDecimais = 3)
+    @Getter @Setter @Inclui(casasDecimais = 3)
     private BigDecimal qtdCorPos;
 
-    @Inclui(casasDecimais = 3)
+    @Getter @Setter @Inclui(casasDecimais = 3)
     private BigDecimal qtdCodNeg;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String indEst;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codPart;
 
     public RegK280(LocalDate dtEst, String codItem, BigDecimal qtdCorPos, BigDecimal qtdCodNeg, String indEst, String codPart) {

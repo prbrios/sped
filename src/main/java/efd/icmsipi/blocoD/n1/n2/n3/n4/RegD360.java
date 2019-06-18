@@ -6,17 +6,16 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@Getter
-@Setter
+
 public class RegD360 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "D360";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlPis;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCofins;
 
     public RegD360(BigDecimal vlPis, BigDecimal vlCofins) {

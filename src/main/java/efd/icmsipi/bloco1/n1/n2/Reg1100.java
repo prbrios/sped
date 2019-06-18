@@ -9,47 +9,46 @@ import lombok.Setter;
 import java.time.LocalDate;
 import java.util.List;
 
-@Getter
-@Setter
+
 public class Reg1100 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "1100";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer indDoc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String nroDe;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtDe;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer natExp;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer nroRe;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtRe;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String chcEmb;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtChc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtAvb;
 
-    @Inclui(zerosEsquerda = 2)
+    @Getter @Setter @Inclui(zerosEsquerda = 2)
     private Integer tpChc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer pais;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<Reg1105> reg1105;
 
     public Reg1100(Integer indDoc, String nroDe, LocalDate dtDe, Integer natExp, Integer nroRe, LocalDate dtRe, String chcEmb, LocalDate dtChc, LocalDate dtAvb, Integer tpChc, Integer pais) {

@@ -8,17 +8,16 @@ import lombok.Setter;
 
 import java.util.List;
 
-@Getter
-@Setter
+
 public class Reg1390 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "1390";
 
-    @Inclui(zerosEsquerda = 2)
+    @Getter @Setter @Inclui(zerosEsquerda = 2)
     private Integer codProd;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<Reg1391> reg1391;
 
     public Reg1390(Integer codProd) {

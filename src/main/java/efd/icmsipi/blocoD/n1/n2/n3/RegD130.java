@@ -6,50 +6,49 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@Getter
-@Setter
+
 public class RegD130 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "D130";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codPartConsg;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codPartRed;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String indFrtRed;
 
-    @Inclui(zerosEsquerda = 7)
+    @Getter @Setter @Inclui(zerosEsquerda = 7)
     private Integer codMunOrig;
 
-    @Inclui(zerosEsquerda = 7)
+    @Getter @Setter @Inclui(zerosEsquerda = 7)
     private Integer codMunDest;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String veicId;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlLiqFrt;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlSecCat;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlDesp;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlPedg;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlOut;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlFrt;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String ufId;
 
     public RegD130(String codPartConsg, String codPartRed, String indFrtRed, Integer codMunOrig, Integer codMunDest, String veicId, BigDecimal vlLiqFrt, BigDecimal vlSecCat, BigDecimal vlDesp, BigDecimal vlPedg, BigDecimal vlOut, BigDecimal vlFrt, String ufId) {

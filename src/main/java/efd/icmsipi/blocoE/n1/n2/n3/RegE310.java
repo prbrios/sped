@@ -10,80 +10,79 @@ import lombok.Setter;
 import java.math.BigDecimal;
 import java.util.List;
 
-@Getter
-@Setter
+
 public class RegE310 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "E310";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String indMovDifal;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlSldCredAntDifal;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlTotDebitosDifal;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlOutDebDifal;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlTotDebFcp;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlTotCreditosDifal;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlTotCredFcp;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlOutCredDifal;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlSldDevAntDifal;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlDeducoesDifal;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlRecol;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlSldCredTransportar;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal debEspDifal;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String indMovFcpDifal;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlSldCredAntFcp;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlOutDebFcp;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlOutCredFcp;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlSldDevantFcp;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlDeducoesFcp;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlRecolFcp;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal debEspFcp;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegE311> regE311;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegE316> regE316;
 
     public RegE310(String indMovDifal, BigDecimal vlSldCredAntDifal, BigDecimal vlTotDebitosDifal, BigDecimal vlOutDebDifal, BigDecimal vlTotDebFcp, BigDecimal vlTotCreditosDifal, BigDecimal vlTotCredFcp, BigDecimal vlOutCredDifal, BigDecimal vlSldDevAntDifal, BigDecimal vlDeducoesDifal, BigDecimal vlRecol, BigDecimal vlSldCredTransportar, BigDecimal debEspDifal, String indMovFcpDifal, BigDecimal vlSldCredAntFcp, BigDecimal vlOutDebFcp, BigDecimal vlOutCredFcp, BigDecimal vlSldDevantFcp, BigDecimal vlDeducoesFcp, BigDecimal vlRecolFcp, BigDecimal debEspFcp) {

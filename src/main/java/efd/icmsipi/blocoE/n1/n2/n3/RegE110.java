@@ -11,62 +11,61 @@ import lombok.Setter;
 import java.math.BigDecimal;
 import java.util.List;
 
-@Getter
-@Setter
+
 public class RegE110 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "E110";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlTotDebitos;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlAjDebitos;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlTotAjDebitos;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlEstornosCred;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlTotCreditos;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlAjCreditos;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlTotAjCreditos;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlEstornosDeb;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlSldCredoAnt;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlSldApurado;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlTotDed;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlicmsRecolher;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlSldCredorTransportar;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal debEsp;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegE111> regE111;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegE115> regE115;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegE116> regE116;
 
     public RegE110(BigDecimal vlTotDebitos, BigDecimal vlAjDebitos, BigDecimal vlTotAjDebitos, BigDecimal vlEstornosCred, BigDecimal vlTotCreditos, BigDecimal vlAjCreditos, BigDecimal vlTotAjCreditos, BigDecimal vlEstornosDeb, BigDecimal vlSldCredoAnt, BigDecimal vlSldApurado, BigDecimal vlTotDed, BigDecimal vlicmsRecolher, BigDecimal vlSldCredorTransportar, BigDecimal debEsp) {

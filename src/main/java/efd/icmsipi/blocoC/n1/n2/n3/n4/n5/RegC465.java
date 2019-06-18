@@ -4,17 +4,16 @@ import efd.anotacoes.Inclui;
 import lombok.Getter;
 import lombok.Setter;
 
-@Getter
-@Setter
+
 public class RegC465 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "C465";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String chvCfe;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer numCcf;
 
     public RegC465(String chvCfe, Integer numCcf) {

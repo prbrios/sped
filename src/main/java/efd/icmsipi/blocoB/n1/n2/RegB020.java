@@ -10,74 +10,73 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
 
-@Getter
-@Setter
+
 public class RegB020 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "B020";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String indOper;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String indEmit;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codPart;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codMod;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codSit;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String ser;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer numDoc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String chvNfe;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtDoc;
 
-    @Inclui(zerosEsquerda = 7)
+    @Getter @Setter @Inclui(zerosEsquerda = 7)
     private Integer codMunServ;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCont;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlMatTerc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlSub;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlInstIss;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlDedBc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBcIss;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBsIssRt;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlIssRt;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlIss;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codInfObs;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegB025> regB025;
 
     public RegB020(String indOper, String indEmit, String codPart, String codMod, String codSit, String ser, Integer numDoc, String chvNfe, LocalDate dtDoc, Integer codMunServ, BigDecimal vlCont, BigDecimal vlMatTerc, BigDecimal vlSub, BigDecimal vlInstIss, BigDecimal vlDedBc, BigDecimal vlBcIss, BigDecimal vlBsIssRt, BigDecimal vlIssRt, BigDecimal vlIss, String codInfObs) {

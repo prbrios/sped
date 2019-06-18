@@ -10,22 +10,22 @@ import java.time.LocalDate;
 @Getter
 public class RegC116 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "C116";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codMod;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Long nrSat;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String chvNfe;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer numCfe;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtDoc;
 
     public RegC116(String codMod, Long nrSat, String chvNfe, Integer numCfe, LocalDate dtDoc) {

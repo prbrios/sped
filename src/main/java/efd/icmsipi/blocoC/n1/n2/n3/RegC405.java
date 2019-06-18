@@ -10,41 +10,40 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
 
-@Getter
-@Setter
+
 public class RegC405 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "C405";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtDoc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer cro;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer crz;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer numCooFin;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal gtFin;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBrt;
 
-    @Filho
+    @Getter @Setter @Filho
     private RegC410 regC410;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegC420> regC420;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegC460> regC460;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegC490> regC490;
 
     public RegC405(LocalDate dtDoc, Integer cro, Integer crz, Integer numCooFin, BigDecimal gtFin, BigDecimal vlBrt) {

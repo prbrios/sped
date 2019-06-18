@@ -9,41 +9,40 @@ import lombok.Setter;
 
 import java.util.List;
 
-@Getter
-@Setter
+
 public class RegB001 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "B001";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String indDad;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegB020> regB020;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegB030> regB030;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegB035> regB035;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegB350> regB350;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegB420> regB420;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegB440> regB440;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegB460> regB460;
 
-    @Filho
+    @Getter @Setter @Filho
     private RegB470 regB470;
 
-    @Filho
+    @Getter @Setter @Filho
     private RegB500 regB500;
 
     public RegB001(String indDad) {

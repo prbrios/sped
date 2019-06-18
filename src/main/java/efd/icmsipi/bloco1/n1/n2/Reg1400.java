@@ -6,20 +6,19 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@Getter
-@Setter
+
 public class Reg1400 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "1400";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codItemImp;
 
-    @Inclui(zerosEsquerda = 7)
+    @Getter @Setter @Inclui(zerosEsquerda = 7)
     private Integer mun;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal valor;
 
     public Reg1400(String codItemImp, Integer mun, BigDecimal valor) {

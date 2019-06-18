@@ -9,29 +9,28 @@ import lombok.Setter;
 
 import java.util.List;
 
-@Getter
-@Setter
+
 public class Reg1350 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "1350";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String serie;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String fabricante;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String modelo;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String tipoMedicao;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<Reg1360> reg1360;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<Reg1370> reg1370;
 
     public Reg1350(String serie, String fabricante, String modelo, String tipoMedicao) {

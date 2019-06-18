@@ -7,35 +7,34 @@ import lombok.Setter;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-@Getter
-@Setter
+
 public class RegG126 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "G126";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtIni;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtFin;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer numParc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlParcPass;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal clTribOc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlTotal;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal indPerSai;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlParcAprop;
 
     public RegG126(LocalDate dtIni, LocalDate dtFin, Integer numParc, BigDecimal vlParcPass, BigDecimal clTribOc, BigDecimal vlTotal, BigDecimal indPerSai, BigDecimal vlParcAprop) {

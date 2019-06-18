@@ -12,83 +12,82 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
 
-@Getter
-@Setter
+
 public class RegC600 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "C600";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codMod;
 
-    @Inclui(zerosEsquerda = 7)
+    @Getter @Setter @Inclui(zerosEsquerda = 7)
     private Integer codMun;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String ser;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer sub;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codCons;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer qtdCons;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer qtdCanc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtDoc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlDoc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlDesc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer cons;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlForn;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlServNt;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlTerc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlDa;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBcIcms;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlIcms;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlBcIcmsSt;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlIcmsSt;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlPis;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal vlCofins;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegC601> regC601;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegC610> regC610;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegC690> regC690;
 
     public RegC600(String codMod, Integer codMun, String ser, Integer sub, String codCons, Integer qtdCons, Integer qtdCanc, LocalDate dtDoc, BigDecimal vlDoc, BigDecimal vlDesc, Integer cons, BigDecimal vlForn, BigDecimal vlServNt, BigDecimal vlTerc, BigDecimal vlDa, BigDecimal vlBcIcms, BigDecimal vlIcms, BigDecimal vlBcIcmsSt, BigDecimal vlIcmsSt, BigDecimal vlPis, BigDecimal vlCofins) {

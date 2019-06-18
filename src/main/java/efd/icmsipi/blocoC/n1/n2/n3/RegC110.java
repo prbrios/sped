@@ -8,35 +8,34 @@ import lombok.Setter;
 
 import java.util.List;
 
-@Getter
-@Setter
+
 public class RegC110 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "C110";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codInf;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String txtCompl;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegC111> regC111;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegC112> regC112;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegC113> regC113;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegC114> regC114;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegC115> regC115;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<RegC116> regC116;
 
     public RegC110(String codInf, String txtCompl) {

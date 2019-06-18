@@ -6,50 +6,49 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 
-@Getter
-@Setter
+
 public class Reg1980 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "1980";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer indAp;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal g401;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal g402;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal g403;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal g404;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal g405;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal g406;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal g407;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal g408;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal g409;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal g410;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal g411;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private BigDecimal g412;
 
     public Reg1980(Integer indAp) {

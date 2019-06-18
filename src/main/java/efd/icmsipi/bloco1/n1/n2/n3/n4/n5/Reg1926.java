@@ -6,38 +6,37 @@ import lombok.Setter;
 
 import java.time.LocalDate;
 
-@Getter
-@Setter
+
 public class Reg1926 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "1926";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codOr;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer vlOr;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtVcto;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codRec;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String nunProc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String indProc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String proc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String txtCompl;
 
-    @Inclui(formatoData = "MMyyyy")
+    @Getter @Setter @Inclui(formatoData = "MMyyyy")
     private LocalDate mesRef;
 
     public Reg1926(String codOr, Integer vlOr, LocalDate dtVcto, String codRec, String nunProc, String indProc, String proc, String txtCompl, LocalDate mesRef) {

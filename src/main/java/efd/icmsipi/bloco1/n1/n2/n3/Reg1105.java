@@ -9,32 +9,31 @@ import lombok.Setter;
 import java.time.LocalDate;
 import java.util.List;
 
-@Getter
-@Setter
+
 public class Reg1105 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "1105";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codMod;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String serie;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer numDoc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String chvNfe;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private LocalDate dtDoc;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codItem;
 
-    @Filho
+    @Getter @Setter @Filho
     private List<Reg1110> reg1110;
 
     public Reg1105(String codMod, String serie, Integer numDoc, String chvNfe, LocalDate dtDoc, String codItem) {

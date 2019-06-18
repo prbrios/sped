@@ -7,17 +7,16 @@ import lombok.Setter;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-@Getter
-@Setter
+
 public class RegG140 {
 
-    @Inclui
+    @Getter @Inclui
     private final String reg = "G140";
 
-    @Inclui
+    @Getter @Setter @Inclui
     private Integer numItem;
 
-    @Inclui
+    @Getter @Setter @Inclui
     private String codItem;
 
     public RegG140(Integer numItem, String codItem) {
