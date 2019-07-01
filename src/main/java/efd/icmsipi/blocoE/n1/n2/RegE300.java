@@ -21,15 +21,15 @@ public class RegE300 {
     private LocalDate dtIni;
 
     @Getter @Setter @Inclui
-    private LocalDate dtfin;
+    private LocalDate dtFin;
 
     @Getter @Setter @Filho
     private RegE310 regE310;
 
-    public RegE300(String uf, LocalDate dtIni, LocalDate dtfin) {
+    public RegE300(String uf, LocalDate dtIni, LocalDate dtFin) {
         this.uf = uf;
         this.dtIni = dtIni;
-        this.dtfin = dtfin;
+        this.dtFin = dtFin;
     }
 
     public RegE300(){}

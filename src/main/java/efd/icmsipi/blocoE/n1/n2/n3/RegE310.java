@@ -17,7 +17,7 @@ public class RegE310 {
     private final String reg = "E310";
 
     @Getter @Setter @Inclui
-    private String indMovDifal;
+    private String indMovFcpDifal;
 
     @Getter @Setter @Inclui
     private BigDecimal vlSldCredAntDifal;
@@ -29,13 +29,7 @@ public class RegE310 {
     private BigDecimal vlOutDebDifal;
 
     @Getter @Setter @Inclui
-    private BigDecimal vlTotDebFcp;
-
-    @Getter @Setter @Inclui
     private BigDecimal vlTotCreditosDifal;
-
-    @Getter @Setter @Inclui
-    private BigDecimal vlTotCredFcp;
 
     @Getter @Setter @Inclui
     private BigDecimal vlOutCredDifal;
@@ -47,28 +41,31 @@ public class RegE310 {
     private BigDecimal vlDeducoesDifal;
 
     @Getter @Setter @Inclui
-    private BigDecimal vlRecol;
+    private BigDecimal vlRecolDifal;
 
     @Getter @Setter @Inclui
-    private BigDecimal vlSldCredTransportar;
+    private BigDecimal vlSldCredTransportarDifal;
 
     @Getter @Setter @Inclui
     private BigDecimal debEspDifal;
 
     @Getter @Setter @Inclui
-    private String indMovFcpDifal;
+    private BigDecimal vlSldCredAntFcp;
 
     @Getter @Setter @Inclui
-    private BigDecimal vlSldCredAntFcp;
+    private BigDecimal vlTotDebFcp;
 
     @Getter @Setter @Inclui
     private BigDecimal vlOutDebFcp;
 
     @Getter @Setter @Inclui
+    private BigDecimal vlTotCredFcp;
+
+    @Getter @Setter @Inclui
     private BigDecimal vlOutCredFcp;
 
     @Getter @Setter @Inclui
-    private BigDecimal vlSldDevantFcp;
+    private BigDecimal vlSldDevAntFcp;
 
     @Getter @Setter @Inclui
     private BigDecimal vlDeducoesFcp;
@@ -77,35 +74,32 @@ public class RegE310 {
     private BigDecimal vlRecolFcp;
 
     @Getter @Setter @Inclui
+    private BigDecimal vlSldCredTransportarFcp;
+
+    @Getter @Setter @Inclui
     private BigDecimal debEspFcp;
 
-    @Getter @Setter @Filho
-    private List<RegE311> regE311;
-
-    @Getter @Setter @Filho
-    private List<RegE316> regE316;
-
-    public RegE310(String indMovDifal, BigDecimal vlSldCredAntDifal, BigDecimal vlTotDebitosDifal, BigDecimal vlOutDebDifal, BigDecimal vlTotDebFcp, BigDecimal vlTotCreditosDifal, BigDecimal vlTotCredFcp, BigDecimal vlOutCredDifal, BigDecimal vlSldDevAntDifal, BigDecimal vlDeducoesDifal, BigDecimal vlRecol, BigDecimal vlSldCredTransportar, BigDecimal debEspDifal, String indMovFcpDifal, BigDecimal vlSldCredAntFcp, BigDecimal vlOutDebFcp, BigDecimal vlOutCredFcp, BigDecimal vlSldDevantFcp, BigDecimal vlDeducoesFcp, BigDecimal vlRecolFcp, BigDecimal debEspFcp) {
-        this.indMovDifal = indMovDifal;
+    public RegE310(String indMovFcpDifal, BigDecimal vlSldCredAntDifal, BigDecimal vlTotDebitosDifal, BigDecimal vlOutDebDifal, BigDecimal vlTotCreditosDifal, BigDecimal vlOutCredDifal, BigDecimal vlSldDevAntDifal, BigDecimal vlDeducoesDifal, BigDecimal vlRecolDifal, BigDecimal vlSldCredTransportarDifal, BigDecimal debEspDifal, BigDecimal vlSldCredAntFcp, BigDecimal vlTotDebFcp, BigDecimal vlOutDebFcp, BigDecimal vlTotCredFcp, BigDecimal vlOutCredFcp, BigDecimal vlSldDevAntFcp, BigDecimal vlDeducoesFcp, BigDecimal vlRecolFcp, BigDecimal vlSldCredTransportarFcp, BigDecimal debEspFcp) {
+        this.indMovFcpDifal = indMovFcpDifal;
         this.vlSldCredAntDifal = vlSldCredAntDifal;
         this.vlTotDebitosDifal = vlTotDebitosDifal;
         this.vlOutDebDifal = vlOutDebDifal;
-        this.vlTotDebFcp = vlTotDebFcp;
         this.vlTotCreditosDifal = vlTotCreditosDifal;
-        this.vlTotCredFcp = vlTotCredFcp;
         this.vlOutCredDifal = vlOutCredDifal;
         this.vlSldDevAntDifal = vlSldDevAntDifal;
         this.vlDeducoesDifal = vlDeducoesDifal;
-        this.vlRecol = vlRecol;
-        this.vlSldCredTransportar = vlSldCredTransportar;
+        this.vlRecolDifal = vlRecolDifal;
+        this.vlSldCredTransportarDifal = vlSldCredTransportarDifal;
         this.debEspDifal = debEspDifal;
-        this.indMovFcpDifal = indMovFcpDifal;
         this.vlSldCredAntFcp = vlSldCredAntFcp;
+        this.vlTotDebFcp = vlTotDebFcp;
         this.vlOutDebFcp = vlOutDebFcp;
+        this.vlTotCredFcp = vlTotCredFcp;
         this.vlOutCredFcp = vlOutCredFcp;
-        this.vlSldDevantFcp = vlSldDevantFcp;
+        this.vlSldDevAntFcp = vlSldDevAntFcp;
         this.vlDeducoesFcp = vlDeducoesFcp;
         this.vlRecolFcp = vlRecolFcp;
+        this.vlSldCredTransportarFcp = vlSldCredTransportarFcp;
         this.debEspFcp = debEspFcp;
     }
 
