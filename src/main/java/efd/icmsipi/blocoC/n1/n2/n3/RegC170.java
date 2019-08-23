@@ -171,7 +171,7 @@ public class RegC170 {
      * 23 - ALIQ_IPI
      * Aliquota IPI
      */
-    @Getter @Setter @Inclui(casasDecimais = 4)
+    @Getter @Setter @Inclui
     private BigDecimal aliqIpi;
 
     /**
