@@ -15,7 +15,7 @@ public class Reg1001Test {
 
     @Test
     public void teste2() {
-        Reg1001 obj = new Reg1001(0);
+        Reg1001 obj = new Reg1001("0");
 
         String parseado = Conversor.converte(obj);
         String esperado = "|1001|0|" + System.getProperty("line.separator");
