@@ -33,6 +33,17 @@
         </developer>
     </developers>
 
+    <distributionManagement>
+        <snapshotRepository>
+            <id>mavenunigex-bucket-snapshot</id>
+            <url>gs://mavenunigex/snapshot</url>
+        </snapshotRepository>
+        <repository>
+            <id>mavenunigex-bucket-release</id>
+            <url>gs://mavenunigex/release</url>
+        </repository>
+    </distributionManagement>
+
     <build>
         <plugins>
             <plugin>
@@ -62,6 +73,13 @@
                 </configuration>
             </plugin-->
         </plugins>
+        <extensions>
+            <extension>
+                <groupId>com.gkatzioura.maven.cloud</groupId>
+                <artifactId>google-storage-wagon</artifactId>
+                <version>1.0</version>
+            </extension>
+        </extensions>
     </build>
     <dependencies>
 
