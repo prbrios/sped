@@ -129,10 +129,53 @@ public class RegC100 {
     private List<RegC170> regC170;
 
     @Getter @Setter @Filho
+    private List<RegC185> regC185;
+
+    @Getter @Setter @Filho
     private List<RegC190> regC190;
 
     @Getter @Setter @Filho
     private List<RegC195> regC195;
+
+    // Campo para utilidades, não entra no registro
+    @Getter @Setter
+    private Object c_0;
+
+    // Campo para utilidades, não entra no registro
+    @Getter @Setter
+    private Object c_1;
+    
+    // Campo para utilidades, não entra no registro
+    @Getter @Setter
+    private Object c_2;
+    
+    // Campo para utilidades, não entra no registro
+    @Getter @Setter
+    private Object c_3;
+    
+    // Campo para utilidades, não entra no registro
+    @Getter @Setter
+    private Object c_4;
+    
+    // Campo para utilidades, não entra no registro
+    @Getter @Setter
+    private Object c_5;
+    
+    // Campo para utilidades, não entra no registro
+    @Getter @Setter
+    private Object c_6;
+    
+    // Campo para utilidades, não entra no registro
+    @Getter @Setter
+    private Object c_7;
+    
+    // Campo para utilidades, não entra no registro
+    @Getter @Setter
+    private Object c_8;
+    
+    // Campo para utilidades, não entra no registro
+    @Getter @Setter
+    private Object c_9;
 
     public RegC100(String indOper, String indEmit, String codPart, String codMod, Integer codSit, String ser, Integer numDoc, String chvNfe, LocalDate dtDoc, LocalDate dtES, BigDecimal vlDoc, String indPgto, BigDecimal vlDesc, BigDecimal vlAbatNt, BigDecimal vlMerc, String indFrt, BigDecimal vlFrt, BigDecimal vlSeg, BigDecimal vlOutDa, BigDecimal vlBcIcms, BigDecimal vlIcms, BigDecimal vlBcIcmsSt, BigDecimal vlIcmsSt, BigDecimal vlIpi, BigDecimal vlPis, BigDecimal vlCofins, BigDecimal vlPisSt, BigDecimal vlCofinsSt) {
         this.indOper = indOper;

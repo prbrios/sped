@@ -306,6 +306,9 @@ public class RegC170 {
     @Getter @Setter @Filho
     private RegC179 regC179;
 
+    @Getter @Setter @Filho
+    private RegC180 regC180;
+
     public RegC170(Integer numItem, String codItem, String descrCompl, BigDecimal qtd, String unid, BigDecimal vlItem, BigDecimal vlDesc, String indMov, Integer cstIcms, Integer cfop, String codNat, BigDecimal vlBcIcms, BigDecimal aliqIcms, BigDecimal vlIcms, BigDecimal vlBcIcmsSt, BigDecimal aliqSt, BigDecimal vlIcmsSt, String indApur, Integer cstIpi, String codEnq, BigDecimal vlBcIpi, BigDecimal aliqIpi, BigDecimal vlIpi, Integer cstPis, BigDecimal vlBcPis, BigDecimal aliqPis, BigDecimal quantBcPis, BigDecimal aliqPisRs, BigDecimal vlPisRs, Integer cstCofins, BigDecimal vlBcCofins, BigDecimal aliqCofins, BigDecimal quantBcCofins, BigDecimal aliqCofinsRs, BigDecimal vlCofins, String codCta, BigDecimal vlAbatNt) {
         this.numItem = numItem;
         this.codItem = codItem;

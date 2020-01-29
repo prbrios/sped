@@ -2,6 +2,7 @@ package efd.icmsipi.blocoC.n1.n2;
 
 import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
+import efd.icmsipi.blocoC.n1.n2.n3.RegC810;
 import efd.icmsipi.blocoC.n1.n2.n3.RegC850;
 import lombok.Getter;
 import lombok.Setter;
@@ -63,6 +64,9 @@ public class RegC800 {
 
     @Getter @Setter @Inclui
     private BigDecimal vlCofinsSt;
+
+    @Getter @Setter @Filho
+    private List<RegC810> regC810;
 
     @Getter @Setter @Filho
     private List<RegC850> regC850;

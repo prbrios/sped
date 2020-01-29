@@ -2,6 +2,7 @@ package efd.icmsipi.blocoC.n1.n2;
 
 import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
+import efd.icmsipi.blocoC.n1.n2.n3.RegC870;
 import efd.icmsipi.blocoC.n1.n2.n3.RegC890;
 import lombok.Getter;
 import lombok.Setter;
@@ -29,6 +30,9 @@ public class RegC860 {
 
     @Getter @Setter @Inclui
     private Integer docFin;
+
+    @Getter @Setter @Filho
+    private List<RegC870> regC870;
 
     @Getter @Setter @Filho
     private List<RegC890> regC890;

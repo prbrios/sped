@@ -3,6 +3,7 @@ package efd.icmsipi.blocoH.n1.n2.n3;
 import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
 import efd.icmsipi.blocoH.n1.n2.n3.n4.RegH020;
+import efd.icmsipi.blocoH.n1.n2.n3.n4.RegH030;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -47,6 +48,9 @@ public class RegH010 {
 
     @Getter @Setter @Filho
     private List<RegH020> regH020;
+
+    @Getter @Setter @Filho
+    private RegH030 regH030;
 
     public RegH010(String codImtem, String unid, BigDecimal qtd, BigDecimal vlUnit, BigDecimal vlItem, String indProp, String codPart, String txtCompl, String codCta, BigDecimal vlItemIr) {
         this.codImtem = codImtem;

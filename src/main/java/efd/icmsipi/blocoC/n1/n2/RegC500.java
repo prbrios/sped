@@ -4,6 +4,7 @@ import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
 import efd.icmsipi.blocoC.n1.n2.n3.RegC510;
 import efd.icmsipi.blocoC.n1.n2.n3.RegC590;
+import efd.icmsipi.blocoC.n1.n2.n3.RegC595;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -95,11 +96,32 @@ public class RegC500 {
     @Getter @Setter @Inclui
     private String codGrupoTensao;
 
+    @Getter @Setter @Inclui
+    private String chvDocE;
+
+    @Getter @Setter @Inclui
+    private Integer finDocE;
+
+    @Getter @Setter @Inclui
+    private String chvDocERef;
+
+    @Getter @Setter @Inclui
+    private Integer indDest;
+
+    @Getter @Setter @Inclui
+    private Integer codMunDest;
+
+    @Getter @Setter @Inclui
+    private String codCta;
+
     @Getter @Setter @Filho
     private List<RegC510> regC510;
 
     @Getter @Setter @Filho
     private List<RegC590> regC590;
+
+    @Getter @Setter @Filho
+    private List<RegC595> regC595;
 
     public RegC500(String indOper, String indEmit, String codPart, String codMod, Integer codSit, String ser, Integer sub, String codCons, Integer numDoc, LocalDate dtDoc, LocalDate dtEs, BigDecimal vlDoc, BigDecimal vlDesc, BigDecimal vlForn, BigDecimal vlServNt, BigDecimal vlTerc, BigDecimal vlDa, BigDecimal vlBcIcms, BigDecimal vlIcms, BigDecimal vlBcIcmsSt, BigDecimal vlIcmsSt, String codInf, BigDecimal vlPis, BigDecimal vlCofins, Integer tpLigacao, String codGrupoTensao) {
         this.indOper = indOper;
@@ -128,6 +150,44 @@ public class RegC500 {
         this.vlCofins = vlCofins;
         this.tpLigacao = tpLigacao;
         this.codGrupoTensao = codGrupoTensao;
+    }
+
+    /**
+     * CAMPOS INCLUÍDOS NO LEIAUTE A PARTIR DO PERÍODO DE APURAÇÃO DE JANEIRO DE 2020
+     */
+    public RegC500(String indOper, String indEmit, String codPart, String codMod, Integer codSit, String ser, Integer sub, String codCons, Integer numDoc, LocalDate dtDoc, LocalDate dtEs, BigDecimal vlDoc, BigDecimal vlDesc, BigDecimal vlForn, BigDecimal vlServNt, BigDecimal vlTerc, BigDecimal vlDa, BigDecimal vlBcIcms, BigDecimal vlIcms, BigDecimal vlBcIcmsSt, BigDecimal vlIcmsSt, String codInf, BigDecimal vlPis, BigDecimal vlCofins, Integer tpLigacao, String codGrupoTensao, String chvDocE, Integer finDocE, String chvDocERef, Integer indDest, Integer codMunDest, String codCta) {
+        this.indOper = indOper;
+        this.indEmit = indEmit;
+        this.codPart = codPart;
+        this.codMod = codMod;
+        this.codSit = codSit;
+        this.ser = ser;
+        this.sub = sub;
+        this.codCons = codCons;
+        this.numDoc = numDoc;
+        this.dtDoc = dtDoc;
+        this.dtEs = dtEs;
+        this.vlDoc = vlDoc;
+        this.vlDesc = vlDesc;
+        this.vlForn = vlForn;
+        this.vlServNt = vlServNt;
+        this.vlTerc = vlTerc;
+        this.vlDa = vlDa;
+        this.vlBcIcms = vlBcIcms;
+        this.vlIcms = vlIcms;
+        this.vlBcIcmsSt = vlBcIcmsSt;
+        this.vlIcmsSt = vlIcmsSt;
+        this.codInf = codInf;
+        this.vlPis = vlPis;
+        this.vlCofins = vlCofins;
+        this.tpLigacao = tpLigacao;
+        this.codGrupoTensao = codGrupoTensao;
+        this.chvDocE = chvDocE;
+        this.finDocE = finDocE;
+        this.chvDocERef = chvDocERef;
+        this.indDest = indDest;
+        this.codMunDest = codMunDest;
+        this.codCta = codCta;
     }
 
     public RegC500(){}

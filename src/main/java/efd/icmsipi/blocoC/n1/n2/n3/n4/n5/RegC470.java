@@ -1,6 +1,8 @@
 package efd.icmsipi.blocoC.n1.n2.n3.n4.n5;
 
+import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
+import efd.icmsipi.blocoC.n1.n2.n3.n4.n5.n6.RegC480;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -41,6 +43,9 @@ public class RegC470 {
 
     @Getter @Setter @Inclui
     private BigDecimal vlCofins;
+
+    @Getter @Setter @Filho
+    private RegC480 regC480;
 
     public RegC470(String codItem, BigDecimal qtd, BigDecimal qtdCanc, String unid, BigDecimal vlItem, Integer cstIcms, Integer cfop, BigDecimal aliqIcms, BigDecimal vlPis, BigDecimal vlCofins) {
         this.codItem = codItem;
