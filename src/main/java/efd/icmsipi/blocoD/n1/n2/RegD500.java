@@ -30,7 +30,7 @@ public class RegD500 {
     @Getter @Setter @Inclui
     private String codMod;
 
-    @Getter @Setter @Inclui
+    @Getter @Setter @Inclui(zerosEsquerda = 2)
     private Integer codSit;
 
     @Getter @Setter @Inclui
