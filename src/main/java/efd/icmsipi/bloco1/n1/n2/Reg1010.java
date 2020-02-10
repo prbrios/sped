@@ -46,7 +46,10 @@ public class Reg1010 {
     @Getter @Setter @Inclui
     private String indGiaf4;
 
-    public Reg1010(String indExp, String indCcrf, String indComb, String indUsina, String indVa, String indEe, String indCart, String indForm, String indAer, String indGiaf1, String indGiaf3, String indGiaf4) {
+    @Getter @Setter @Inclui
+    private String indRestResarcComplIcms;
+
+    public Reg1010(String indExp, String indCcrf, String indComb, String indUsina, String indVa, String indEe, String indCart, String indForm, String indAer, String indGiaf1, String indGiaf3, String indGiaf4, String indRestResarcComplIcms) {
         this.indExp = indExp;
         this.indCcrf = indCcrf;
         this.indComb = indComb;
@@ -59,6 +62,7 @@ public class Reg1010 {
         this.indGiaf1 = indGiaf1;
         this.indGiaf3 = indGiaf3;
         this.indGiaf4 = indGiaf4;
+        this.indRestResarcComplIcms = indRestResarcComplIcms;
     }
 
     public Reg1010(){}

@@ -61,7 +61,16 @@ public class Reg1391 {
     @Getter @Setter @Inclui
     private String obs;
 
-    public Reg1391(LocalDate dtRegistro, BigDecimal qtdMoid, BigDecimal estqIni, BigDecimal qtdProduz, BigDecimal entAnidHid, BigDecimal outrEntr, BigDecimal perda, BigDecimal cons, BigDecimal saiAniHid, Integer saidas, BigDecimal estqFin, BigDecimal estqIniMel, BigDecimal prodDiaMel, BigDecimal utilMel, BigDecimal prodAlcMel, String obs) {
+    @Getter @Setter @Inclui(zerosEsquerda = 2)
+    String codItem;
+
+    @Getter @Setter @Inclui
+    Integer tpResiduo;
+
+    @Getter @Setter @Inclui
+    private BigDecimal qtdResiduo;
+
+    public Reg1391(LocalDate dtRegistro, BigDecimal qtdMoid, BigDecimal estqIni, BigDecimal qtdProduz, BigDecimal entAnidHid, BigDecimal outrEntr, BigDecimal perda, BigDecimal cons, BigDecimal saiAniHid, Integer saidas, BigDecimal estqFin, BigDecimal estqIniMel, BigDecimal prodDiaMel, BigDecimal utilMel, BigDecimal prodAlcMel, String obs, String codItem, Integer tpResiduo, BigDecimal qtdResiduo) {
         this.dtRegistro = dtRegistro;
         this.qtdMoid = qtdMoid;
         this.estqIni = estqIni;
@@ -78,6 +87,9 @@ public class Reg1391 {
         this.utilMel = utilMel;
         this.prodAlcMel = prodAlcMel;
         this.obs = obs;
+        this.codItem = codItem;
+        this.tpResiduo = tpResiduo;
+        this.qtdResiduo = qtdResiduo;
     }
 
     public Reg1391(){}

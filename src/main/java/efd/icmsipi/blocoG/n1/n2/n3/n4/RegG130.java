@@ -36,6 +36,9 @@ public class RegG130 {
     @Getter @Setter @Inclui
     private LocalDate dtDoc;
 
+    @Getter @Setter @Inclui
+    private String numDa;
+
     @Getter @Setter @Filho
     private List<RegG140> regG140;
 

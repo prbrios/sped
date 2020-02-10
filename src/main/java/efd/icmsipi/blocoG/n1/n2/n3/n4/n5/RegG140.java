@@ -19,9 +19,33 @@ public class RegG140 {
     @Getter @Setter @Inclui
     private String codItem;
 
-    public RegG140(Integer numItem, String codItem) {
+    @Getter @Setter @Inclui(casasDecimais = 5)
+    private BigDecimal qtde;
+
+    @Getter @Setter @Inclui
+    private String unid;
+
+    @Getter @Setter @Inclui
+    private BigDecimal vlIcmsOpAplicado;
+
+    @Getter @Setter @Inclui
+    private BigDecimal vlIcmsStAplicado;
+
+    @Getter @Setter @Inclui
+    private BigDecimal vlIcmsFrtAplicado;
+
+    @Getter @Setter @Inclui
+    private BigDecimal vlIcmsDifAplicado;
+
+    public RegG140(Integer numItem, String codItem, BigDecimal qtde, String unid, BigDecimal vlIcmsOpAplicado, BigDecimal vlIcmsStAplicado, BigDecimal vlIcmsFrtAplicado, BigDecimal vlIcmsDifAplicado) {
         this.numItem = numItem;
         this.codItem = codItem;
+        this.qtde = qtde;
+        this.unid = unid;
+        this.vlIcmsOpAplicado = vlIcmsOpAplicado;
+        this.vlIcmsStAplicado = vlIcmsStAplicado;
+        this.vlIcmsFrtAplicado = vlIcmsFrtAplicado;
+        this.vlIcmsDifAplicado = vlIcmsDifAplicado;
     }
 
     public RegG140(){}
