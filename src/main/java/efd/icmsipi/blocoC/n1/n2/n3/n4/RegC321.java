@@ -1,13 +1,13 @@
 package efd.icmsipi.blocoC.n1.n2.n3.n4;
 
 
+import java.math.BigDecimal;
+
 import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
 import efd.icmsipi.blocoC.n1.n2.n3.n4.n5.RegC330;
 import lombok.Getter;
 import lombok.Setter;
-
-import java.math.BigDecimal;
 
 
 public class RegC321 {

@@ -1,12 +1,12 @@
 package efd.icmsipi.blocoG.n1;
 
+import java.util.List;
+
 import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
 import efd.icmsipi.blocoG.n1.n2.RegG110;
 import lombok.Getter;
 import lombok.Setter;
-
-import java.util.List;
 
 
 public class RegG001 {

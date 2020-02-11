@@ -1,15 +1,15 @@
 package efd.contribuicoes.blocoC.n1.n2.n3;
 
+import java.math.BigDecimal;
+import java.time.LocalDate;
+import java.util.List;
+
 import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
 import efd.contribuicoes.blocoC.n1.n2.n3.n4.RegC381;
 import efd.contribuicoes.blocoC.n1.n2.n3.n4.RegC385;
 import lombok.Getter;
 import lombok.Setter;
-
-import java.math.BigDecimal;
-import java.time.LocalDate;
-import java.util.List;
 
 public class RegC380 {
 

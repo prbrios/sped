@@ -1,12 +1,12 @@
 package efd.icmsipi.bloco9.n1;
 
+import java.util.List;
+
 import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
 import efd.icmsipi.bloco9.n1.n2.Reg9900;
 import lombok.Getter;
 import lombok.Setter;
-
-import java.util.List;
 
 
 public class Reg9001 {

@@ -1,12 +1,22 @@
 package efd.contribuicoes.blocoC.n1.n2;
 
+import java.util.List;
+
 import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
-import efd.contribuicoes.blocoC.n1.n2.n3.*;
+import efd.contribuicoes.blocoC.n1.n2.n3.RegC100;
+import efd.contribuicoes.blocoC.n1.n2.n3.RegC180;
+import efd.contribuicoes.blocoC.n1.n2.n3.RegC190;
+import efd.contribuicoes.blocoC.n1.n2.n3.RegC380;
+import efd.contribuicoes.blocoC.n1.n2.n3.RegC395;
+import efd.contribuicoes.blocoC.n1.n2.n3.RegC400;
+import efd.contribuicoes.blocoC.n1.n2.n3.RegC490;
+import efd.contribuicoes.blocoC.n1.n2.n3.RegC500;
+import efd.contribuicoes.blocoC.n1.n2.n3.RegC600;
+import efd.contribuicoes.blocoC.n1.n2.n3.RegC800;
+import efd.contribuicoes.blocoC.n1.n2.n3.RegC860;
 import lombok.Getter;
 import lombok.Setter;
-
-import java.util.List;
 
 public class RegC010 {
 

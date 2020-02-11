@@ -1,9 +1,16 @@
 package efd;
 
-import efd.contribuicoes.blocoF.n1.RegF990;
-import efd.contribuicoes.blocoI.n1.RegI990;
-import efd.contribuicoes.blocoM.n1.RegM990;
-import efd.contribuicoes.blocoP.n1.RegP990;
+import java.lang.reflect.Field;
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Map;
+import java.util.function.Function;
+import java.util.stream.Collectors;
+
+import org.apache.log4j.Logger;
+
 import efd.icmsipi.bloco0.Reg0000;
 import efd.icmsipi.bloco0.n1.Reg0001;
 import efd.icmsipi.bloco0.n1.Reg0990;
@@ -30,16 +37,6 @@ import efd.icmsipi.blocoH.n1.RegH001;
 import efd.icmsipi.blocoH.n1.RegH990;
 import efd.icmsipi.blocoK.n1.RegK001;
 import efd.icmsipi.blocoK.n1.RegK990;
-import org.apache.log4j.Logger;
-
-import java.lang.reflect.Field;
-import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Map;
-import java.util.function.Function;
-import java.util.stream.Collectors;
 
 public class Conversor {
 

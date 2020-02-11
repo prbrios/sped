@@ -1,12 +1,12 @@
 package efd.contribuicoes.blocoF.n1;
 
+import java.util.List;
+
 import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
 import efd.contribuicoes.blocoF.n1.n2.RegF010;
 import lombok.Getter;
 import lombok.Setter;
-
-import java.util.List;
 
 public class RegF001 {
 

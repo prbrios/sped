@@ -1,5 +1,7 @@
 package efd.contribuicoes.bloco0;
 
+import java.time.LocalDate;
+
 import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
 import efd.contribuicoes.bloco0.n1.Reg0001;
@@ -24,8 +26,6 @@ import efd.contribuicoes.blocoP.n1.RegP001;
 import efd.contribuicoes.blocoP.n1.RegP990;
 import lombok.Getter;
 import lombok.Setter;
-
-import java.time.LocalDate;
 
 public class Reg0000 {
 

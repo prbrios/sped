@@ -1,13 +1,13 @@
 package efd.contribuicoes.bloco1.n1.n2.n3;
 
+import java.math.BigDecimal;
+import java.time.LocalDate;
+
 import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
 import efd.contribuicoes.bloco1.n1.n2.n3.n4.Reg1502;
 import lombok.Getter;
 import lombok.Setter;
-
-import java.math.BigDecimal;
-import java.time.LocalDate;
 
 public class Reg1501 {
 

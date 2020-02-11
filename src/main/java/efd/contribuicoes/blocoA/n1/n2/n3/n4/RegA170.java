@@ -1,11 +1,10 @@
 package efd.contribuicoes.blocoA.n1.n2.n3.n4;
 
+import java.math.BigDecimal;
+
 import efd.anotacoes.Inclui;
 import lombok.Getter;
 import lombok.Setter;
-
-import javax.xml.bind.annotation.XmlInlineBinaryData;
-import java.math.BigDecimal;
 
 public class RegA170 {
 

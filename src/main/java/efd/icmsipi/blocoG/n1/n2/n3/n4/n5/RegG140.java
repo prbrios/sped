@@ -1,11 +1,10 @@
 package efd.icmsipi.blocoG.n1.n2.n3.n4.n5;
 
+import java.math.BigDecimal;
+
 import efd.anotacoes.Inclui;
 import lombok.Getter;
 import lombok.Setter;
-
-import java.math.BigDecimal;
-import java.time.LocalDate;
 
 
 public class RegG140 {

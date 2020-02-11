@@ -1,12 +1,12 @@
 package efd.icmsipi.blocoK.n1;
 
+import java.util.List;
+
 import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
 import efd.icmsipi.blocoK.n1.n2.RegK100;
 import lombok.Getter;
 import lombok.Setter;
-
-import java.util.List;
 
 
 public class RegK001 {

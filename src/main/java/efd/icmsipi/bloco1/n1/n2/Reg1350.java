@@ -1,13 +1,13 @@
 package efd.icmsipi.bloco1.n1.n2;
 
+import java.util.List;
+
 import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
 import efd.icmsipi.bloco1.n1.n2.n3.Reg1360;
 import efd.icmsipi.bloco1.n1.n2.n3.Reg1370;
 import lombok.Getter;
 import lombok.Setter;
-
-import java.util.List;
 
 
 public class Reg1350 {

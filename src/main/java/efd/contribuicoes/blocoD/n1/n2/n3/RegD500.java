@@ -1,5 +1,9 @@
 package efd.contribuicoes.blocoD.n1.n2.n3;
 
+import java.math.BigDecimal;
+import java.time.LocalDate;
+import java.util.List;
+
 import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
 import efd.contribuicoes.blocoD.n1.n2.n3.n4.RegD501;
@@ -7,10 +11,6 @@ import efd.contribuicoes.blocoD.n1.n2.n3.n4.RegD505;
 import efd.contribuicoes.blocoD.n1.n2.n3.n4.RegD509;
 import lombok.Getter;
 import lombok.Setter;
-
-import java.math.BigDecimal;
-import java.time.LocalDate;
-import java.util.List;
 
 public class RegD500 {
 

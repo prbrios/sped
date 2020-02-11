@@ -1,12 +1,18 @@
 package efd.contribuicoes.bloco0.n1;
 
+import java.util.List;
+
 import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
-import efd.contribuicoes.bloco0.n1.n2.*;
+import efd.contribuicoes.bloco0.n1.n2.Reg0035;
+import efd.contribuicoes.bloco0.n1.n2.Reg0100;
+import efd.contribuicoes.bloco0.n1.n2.Reg0110;
+import efd.contribuicoes.bloco0.n1.n2.Reg0120;
+import efd.contribuicoes.bloco0.n1.n2.Reg0140;
+import efd.contribuicoes.bloco0.n1.n2.Reg0500;
+import efd.contribuicoes.bloco0.n1.n2.Reg0600;
 import lombok.Getter;
 import lombok.Setter;
-
-import java.util.List;
 
 public class Reg0001 {
 

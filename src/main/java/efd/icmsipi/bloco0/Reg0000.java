@@ -1,5 +1,7 @@
 package efd.icmsipi.bloco0;
 
+import java.time.LocalDate;
+
 import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
 import efd.icmsipi.bloco0.n1.Reg0001;
@@ -25,8 +27,6 @@ import efd.icmsipi.blocoK.n1.RegK001;
 import efd.icmsipi.blocoK.n1.RegK990;
 import lombok.Getter;
 import lombok.Setter;
-
-import java.time.LocalDate;
 
 
 public class Reg0000 {

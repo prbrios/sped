@@ -1,5 +1,8 @@
 package efd.icmsipi.blocoE.n1.n2.n3;
 
+import java.math.BigDecimal;
+import java.util.List;
+
 import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
 import efd.icmsipi.blocoE.n1.n2.n3.n4.RegE111;
@@ -7,9 +10,6 @@ import efd.icmsipi.blocoE.n1.n2.n3.n4.RegE115;
 import efd.icmsipi.blocoE.n1.n2.n3.n4.RegE116;
 import lombok.Getter;
 import lombok.Setter;
-
-import java.math.BigDecimal;
-import java.util.List;
 
 
 public class RegE110 {
