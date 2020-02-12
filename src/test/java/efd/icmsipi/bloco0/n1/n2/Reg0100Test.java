@@ -1,10 +1,10 @@
 package efd.icmsipi.bloco0.n1.n2;
 
-import efd.Conversor;
-import efd.icmsipi.Util;
-import efd.icmsipi.bloco0.n1.Reg0001;
 import org.junit.Assert;
 import org.junit.Test;
+
+import efd.Conversor;
+import efd.icmsipi.Util;
 
 public class Reg0100Test {
 

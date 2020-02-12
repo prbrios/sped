@@ -154,7 +154,7 @@ public class Parsers {
         arr.removeAll(Collections.singleton(null));
 
         if(arr.size() > 0) {
-            sb.append("|" + String.join("|", arr) + "|" + System.getProperty("line.separator"));
+            sb.append("|" + String.join("|", arr) + "|" + StringUtils.CR + StringUtils.LF);
         }
 
         for(Object j : nosFilhos){

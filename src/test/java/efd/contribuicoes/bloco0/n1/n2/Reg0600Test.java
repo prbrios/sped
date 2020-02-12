@@ -1,10 +1,12 @@
 package efd.contribuicoes.bloco0.n1.n2;
 
-import efd.Conversor;
+import java.time.LocalDate;
+
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.time.LocalDate;
+import efd.Conversor;
+import efd.icmsipi.Util;
 
 public class Reg0600Test {
 
@@ -18,7 +20,7 @@ public class Reg0600Test {
         Reg0600 obj = new Reg0600(LocalDate.parse("2019-07-08"), "0", "0");
 
         String parseado = Conversor.converte(obj);
-        String esperado = "|0600|08072019|0|0|" + System.getProperty("line.separator");
+        String esperado = Util.formata("|0600|08072019|0|0|");
 
         Assert.assertEquals(esperado, parseado);
     }

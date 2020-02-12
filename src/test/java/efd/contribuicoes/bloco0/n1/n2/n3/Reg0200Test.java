@@ -1,11 +1,12 @@
 package efd.contribuicoes.bloco0.n1.n2.n3;
 
-import efd.Conversor;
+import java.math.BigDecimal;
+
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.math.BigDecimal;
-import java.time.LocalDate;
+import efd.Conversor;
+import efd.icmsipi.Util;
 
 public class Reg0200Test {
 
@@ -19,7 +20,7 @@ public class Reg0200Test {
         Reg0200 obj = new Reg0200("12345", "Teste", "abc", "def", "UNI", 00, "123", "456", 00, 1111, new BigDecimal(1.11));
 
         String parseado = Conversor.converte(obj);
-        String esperado = "|0200|12345|Teste|abc|def|UNI|00|123|456|00|1111|1,11|" + System.getProperty("line.separator");
+        String esperado = Util.formata("|0200|12345|Teste|abc|def|UNI|00|123|456|00|1111|1,11|");
 
         Assert.assertEquals(esperado, parseado);
     }

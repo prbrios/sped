@@ -1,9 +1,10 @@
 package efd.icmsipi.bloco0.n1.n2.n3;
 
-import efd.Conversor;
-import efd.icmsipi.Util;
 import org.junit.Assert;
 import org.junit.Test;
+
+import efd.Conversor;
+import efd.icmsipi.Util;
 
 public class Reg0206Test {
 

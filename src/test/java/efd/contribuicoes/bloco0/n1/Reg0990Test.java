@@ -1,10 +1,10 @@
 package efd.contribuicoes.bloco0.n1;
 
-import efd.Conversor;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.time.LocalDate;
+import efd.Conversor;
+import efd.icmsipi.Util;
 
 public class Reg0990Test {
 
@@ -18,7 +18,7 @@ public class Reg0990Test {
         Reg0990 obj = new Reg0990(1);
 
         String parseado = Conversor.converte(obj);
-        String esperado = "|0990|1|" + System.getProperty("line.separator");
+        String esperado = Util.formata("|0990|1|");
 
         Assert.assertEquals(esperado, parseado);
     }
