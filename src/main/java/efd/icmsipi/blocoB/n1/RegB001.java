@@ -1,13 +1,20 @@
 package efd.icmsipi.blocoB.n1;
 
+import java.util.List;
+
 import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
-import efd.icmsipi.blocoB.n1.n2.*;
+import efd.icmsipi.blocoB.n1.n2.RegB020;
+import efd.icmsipi.blocoB.n1.n2.RegB030;
+import efd.icmsipi.blocoB.n1.n2.RegB350;
+import efd.icmsipi.blocoB.n1.n2.RegB420;
+import efd.icmsipi.blocoB.n1.n2.RegB440;
+import efd.icmsipi.blocoB.n1.n2.RegB460;
+import efd.icmsipi.blocoB.n1.n2.RegB470;
+import efd.icmsipi.blocoB.n1.n2.RegB500;
 import efd.icmsipi.blocoB.n1.n2.n3.RegB035;
 import lombok.Getter;
 import lombok.Setter;
-
-import java.util.List;
 
 
 public class RegB001 {

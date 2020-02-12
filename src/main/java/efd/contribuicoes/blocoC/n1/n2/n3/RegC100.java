@@ -1,14 +1,18 @@
 package efd.contribuicoes.blocoC.n1.n2.n3;
 
-import efd.anotacoes.Filho;
-import efd.anotacoes.Inclui;
-import efd.contribuicoes.blocoC.n1.n2.n3.n4.*;
-import lombok.Getter;
-import lombok.Setter;
-
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
+
+import efd.anotacoes.Filho;
+import efd.anotacoes.Inclui;
+import efd.contribuicoes.blocoC.n1.n2.n3.n4.RegC110;
+import efd.contribuicoes.blocoC.n1.n2.n3.n4.RegC111;
+import efd.contribuicoes.blocoC.n1.n2.n3.n4.RegC120;
+import efd.contribuicoes.blocoC.n1.n2.n3.n4.RegC170;
+import efd.contribuicoes.blocoC.n1.n2.n3.n4.RegC175;
+import lombok.Getter;
+import lombok.Setter;
 
 public class RegC100 {
 

@@ -1,13 +1,13 @@
 package efd.icmsipi.blocoC.n1.n2;
 
+import java.time.LocalDate;
+import java.util.List;
+
 import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
 import efd.icmsipi.blocoC.n1.n2.n3.RegC790;
 import lombok.Getter;
 import lombok.Setter;
-
-import java.time.LocalDate;
-import java.util.List;
 
 
 public class RegC700 {

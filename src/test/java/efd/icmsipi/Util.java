@@ -1,9 +1,9 @@
 package efd.icmsipi;
 
-import org.apache.commons.lang3.StringUtils;
-
 import java.math.BigDecimal;
 import java.time.LocalDate;
+
+import org.apache.commons.lang3.StringUtils;
 
 public class Util {
 

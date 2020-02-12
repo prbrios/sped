@@ -1,15 +1,14 @@
 package efd.contribuicoes.blocoI.n1.n2.n3.n4;
 
+import java.math.BigDecimal;
+import java.util.List;
+
 import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
-import efd.contribuicoes.blocoI.n1.n2.RegI010;
 import efd.contribuicoes.blocoI.n1.n2.n3.n4.n5.RegI299;
 import efd.contribuicoes.blocoI.n1.n2.n3.n4.n5.RegI300;
 import lombok.Getter;
 import lombok.Setter;
-
-import java.math.BigDecimal;
-import java.util.List;
 
 public class RegI200 {
 

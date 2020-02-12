@@ -1,14 +1,25 @@
 package efd.icmsipi.blocoC.n1.n2;
 
-import efd.anotacoes.Filho;
-import efd.anotacoes.Inclui;
-import efd.icmsipi.blocoC.n1.n2.n3.*;
-import lombok.Getter;
-import lombok.Setter;
-
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
+
+import efd.anotacoes.Filho;
+import efd.anotacoes.Inclui;
+import efd.icmsipi.blocoC.n1.n2.n3.RegC101;
+import efd.icmsipi.blocoC.n1.n2.n3.RegC105;
+import efd.icmsipi.blocoC.n1.n2.n3.RegC110;
+import efd.icmsipi.blocoC.n1.n2.n3.RegC120;
+import efd.icmsipi.blocoC.n1.n2.n3.RegC130;
+import efd.icmsipi.blocoC.n1.n2.n3.RegC140;
+import efd.icmsipi.blocoC.n1.n2.n3.RegC160;
+import efd.icmsipi.blocoC.n1.n2.n3.RegC165;
+import efd.icmsipi.blocoC.n1.n2.n3.RegC170;
+import efd.icmsipi.blocoC.n1.n2.n3.RegC185;
+import efd.icmsipi.blocoC.n1.n2.n3.RegC190;
+import efd.icmsipi.blocoC.n1.n2.n3.RegC195;
+import lombok.Getter;
+import lombok.Setter;
 
 
 public class RegC100 {

@@ -1,8 +1,5 @@
 package efd;
 
-import efd.anotacoes.*;
-import org.apache.commons.lang3.StringUtils;
-
 import java.lang.reflect.Field;
 import java.math.BigDecimal;
 import java.time.LocalDate;
@@ -12,6 +9,20 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Locale;
+
+import org.apache.commons.lang3.StringUtils;
+
+import efd.anotacoes.Filho;
+import efd.anotacoes.G1;
+import efd.anotacoes.G2;
+import efd.anotacoes.G3;
+import efd.anotacoes.G4;
+import efd.anotacoes.G5;
+import efd.anotacoes.G6;
+import efd.anotacoes.G7;
+import efd.anotacoes.G8;
+import efd.anotacoes.G9;
+import efd.anotacoes.Inclui;
 
 public class Parsers {
 
@@ -143,7 +154,7 @@ public class Parsers {
         arr.removeAll(Collections.singleton(null));
 
         if(arr.size() > 0) {
-            sb.append("|" + String.join("|", arr) + "|" + System.getProperty("line.separator"));
+            sb.append("|" + String.join("|", arr) + "|" + StringUtils.CR + StringUtils.LF);
         }
 
         for(Object j : nosFilhos){

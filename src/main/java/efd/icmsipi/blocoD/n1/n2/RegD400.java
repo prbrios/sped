@@ -1,15 +1,15 @@
 package efd.icmsipi.blocoD.n1.n2;
 
+import java.math.BigDecimal;
+import java.time.LocalDate;
+import java.util.List;
+
 import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
 import efd.icmsipi.blocoD.n1.n2.n3.RegD410;
 import efd.icmsipi.blocoD.n1.n2.n3.RegD420;
 import lombok.Getter;
 import lombok.Setter;
-
-import java.math.BigDecimal;
-import java.time.LocalDate;
-import java.util.List;
 
 
 public class RegD400 {

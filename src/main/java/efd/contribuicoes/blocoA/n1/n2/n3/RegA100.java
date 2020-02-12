@@ -1,5 +1,9 @@
 package efd.contribuicoes.blocoA.n1.n2.n3;
 
+import java.math.BigDecimal;
+import java.time.LocalDate;
+import java.util.List;
+
 import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
 import efd.contribuicoes.blocoA.n1.n2.n3.n4.RegA110;
@@ -8,10 +12,6 @@ import efd.contribuicoes.blocoA.n1.n2.n3.n4.RegA120;
 import efd.contribuicoes.blocoA.n1.n2.n3.n4.RegA170;
 import lombok.Getter;
 import lombok.Setter;
-
-import java.math.BigDecimal;
-import java.time.LocalDate;
-import java.util.List;
 
 public class RegA100 {
 

@@ -1,9 +1,26 @@
 package efd;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import org.junit.Test;
+
 import efd.contribuicoes.bloco0.Reg0000;
 import efd.contribuicoes.bloco0.n1.Reg0001;
-import efd.contribuicoes.bloco0.n1.n2.*;
-import efd.contribuicoes.bloco0.n1.n2.n3.*;
+import efd.contribuicoes.bloco0.n1.n2.Reg0035;
+import efd.contribuicoes.bloco0.n1.n2.Reg0100;
+import efd.contribuicoes.bloco0.n1.n2.Reg0110;
+import efd.contribuicoes.bloco0.n1.n2.Reg0120;
+import efd.contribuicoes.bloco0.n1.n2.Reg0140;
+import efd.contribuicoes.bloco0.n1.n2.Reg0500;
+import efd.contribuicoes.bloco0.n1.n2.Reg0600;
+import efd.contribuicoes.bloco0.n1.n2.n3.Reg0111;
+import efd.contribuicoes.bloco0.n1.n2.n3.Reg0145;
+import efd.contribuicoes.bloco0.n1.n2.n3.Reg0150;
+import efd.contribuicoes.bloco0.n1.n2.n3.Reg0190;
+import efd.contribuicoes.bloco0.n1.n2.n3.Reg0200;
+import efd.contribuicoes.bloco0.n1.n2.n3.Reg0400;
+import efd.contribuicoes.bloco0.n1.n2.n3.Reg0450;
 import efd.contribuicoes.bloco1.n1.Reg1001;
 import efd.contribuicoes.blocoA.n1.RegA001;
 import efd.contribuicoes.blocoC.n1.RegC001;
@@ -12,10 +29,6 @@ import efd.contribuicoes.blocoF.n1.RegF001;
 import efd.contribuicoes.blocoI.n1.RegI001;
 import efd.contribuicoes.blocoM.n1.RegM001;
 import efd.contribuicoes.blocoP.n1.RegP001;
-import org.junit.Test;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class ContribuicoesTest {
 

@@ -1,11 +1,12 @@
 package efd.icmsipi.bloco0.n1.n2.n3;
 
-import efd.Conversor;
-import efd.icmsipi.Util;
+import java.math.BigDecimal;
+
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.math.BigDecimal;
+import efd.Conversor;
+import efd.icmsipi.Util;
 
 public class Reg0210Test {
 

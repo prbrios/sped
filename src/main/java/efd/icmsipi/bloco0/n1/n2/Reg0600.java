@@ -1,10 +1,10 @@
 package efd.icmsipi.bloco0.n1.n2;
 
+import java.time.LocalDate;
+
 import efd.anotacoes.Inclui;
 import lombok.Getter;
 import lombok.Setter;
-
-import java.time.LocalDate;
 
 
 public class Reg0600 {

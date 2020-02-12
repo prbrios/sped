@@ -1,5 +1,7 @@
 package efd.icmsipi.blocoE.n1;
 
+import java.util.List;
+
 import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
 import efd.icmsipi.blocoE.n1.n2.RegE100;
@@ -8,8 +10,6 @@ import efd.icmsipi.blocoE.n1.n2.RegE300;
 import efd.icmsipi.blocoE.n1.n2.RegE500;
 import lombok.Getter;
 import lombok.Setter;
-
-import java.util.List;
 
 
 public class RegE001 {
