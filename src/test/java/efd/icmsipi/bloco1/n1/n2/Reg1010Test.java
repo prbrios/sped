@@ -23,9 +23,10 @@ public class Reg1010Test {
         reg.setIndGiaf1("N");
         reg.setIndGiaf3("S");
         reg.setIndGiaf4("N");
+        reg.setIndRestResarcComplIcms(null);
 
-        Assert.assertEquals(Util.formata("|1010|S|N|S|N|S|N|S|N|S|N|S|N|"), Conversor.converteBloco(reg));
-        Assert.assertEquals(Util.formata("|1010|||||||||||||"), Conversor.converteBloco(new Reg1010()));
+        Assert.assertEquals(Util.formata("|1010|S|N|S|N|S|N|S|N|S|N|S|N||"), Conversor.converteBloco(reg));
+        Assert.assertEquals(Util.formata("|1010||||||||||||||"), Conversor.converteBloco(new Reg1010()));
 
     }
 
