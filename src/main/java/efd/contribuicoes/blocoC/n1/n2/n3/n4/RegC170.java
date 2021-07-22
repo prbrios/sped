@@ -65,7 +65,7 @@ private final String reg = "C170";
     @Getter @Setter @Inclui
     private String indApur;
 
-    @Getter @Setter @Inclui
+    @Getter @Setter @Inclui(zerosEsquerda = 2)
     private Integer cstIpi;
 
     @Getter @Setter @Inclui

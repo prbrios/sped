@@ -19,7 +19,7 @@ public class RegM610 {
 
     private Grupo grupo;
 
-    @Getter @Setter @Inclui @G1 @G2
+    @Getter @Inclui @G1 @G2
     private final String reg = "M610";
 
     @Getter @Setter @Inclui @G1 @G2
