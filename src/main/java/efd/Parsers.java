@@ -17,7 +17,6 @@ import java.util.Locale;
 public class Parsers {
 	static Logger logger = Logger.getLogger(Parsers.class);
     public static String converteBlocoEmString(Object obj, boolean processaFilhos) {
-    	Runtime.getRuntime().gc();
         Grupo grupo = null;
 
         List arr = new ArrayList();
@@ -30,8 +29,6 @@ public class Parsers {
         StringBuilder sb = new StringBuilder();
         List<Object> nosFilhos = new ArrayList<Object>();
 
-        String append1, append2, append3;
-        
         for(Field m : clazz.getDeclaredFields()){
 
             m.setAccessible(true);
@@ -146,9 +143,7 @@ public class Parsers {
         arr.removeAll(Collections.singleton(null));
 
         if(arr.size() > 0) {
-        	append1 = "|" + String.join("|", arr) + "|" + System.getProperty("line.separator");
-        	logger.info(append1);
-            sb.append(append1);
+            sb.append("|" + String.join("|", arr) + "|" + System.getProperty("line.separator"));
         }
 
         for(Object j : nosFilhos){
@@ -156,16 +151,12 @@ public class Parsers {
             if (j.getClass().equals(ArrayList.class)) {
 
                 for(Object o : (ArrayList) j){
-                	append2 = new Parsers().converteBlocoEmString(o, processaFilhos);
-                	logger.info(append2);
-                    sb.append(append2);
+                    sb.append(new Parsers().converteBlocoEmString(o, processaFilhos));
 
                 }
 
             } else {
-            	append3 = new Parsers().converteBlocoEmString(j, processaFilhos);
-            	logger.info(append3);
-                sb.append(append3);
+                sb.append(new Parsers().converteBlocoEmString(j, processaFilhos));
 
             }
 
