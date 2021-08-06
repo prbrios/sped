@@ -17,7 +17,7 @@ import java.util.Locale;
 public class Parsers {
 	static Logger logger = Logger.getLogger(Parsers.class);
     public static String converteBlocoEmString(Object obj, boolean processaFilhos) {
-
+    	Runtime.getRuntime().gc();
         Grupo grupo = null;
 
         List arr = new ArrayList();
