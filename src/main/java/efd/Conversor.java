@@ -52,7 +52,6 @@ public class Conversor {
     }
 
     private void trataObjeto(Object obj) {
-
         try {
             if(obj != null) {
                 for (Field field : obj.getClass().getDeclaredFields()) {
@@ -82,6 +81,7 @@ public class Conversor {
             }
 
         } catch (Exception e){
+        	logger.error("Falha no tratamento: " + e.getMessage());
             e.printStackTrace();
         }
 
@@ -102,15 +102,15 @@ public class Conversor {
             logger.info("Converter objeto em String com a opção de contagem automatica dos totalizadores dos blocos");
             logger.info("Calculando a quantidade de registros de cada bloco");
 
-            int qtdReg0 = getQuantidadeRegistrosDoBloco(((IcmsIpi) obj).getReg0000().getReg0001()); logger.info("Blogo 0" + qtdReg0);
-            int qtdReg1 = getQuantidadeRegistrosDoBloco(((IcmsIpi) obj).getReg0000().getReg1001()); logger.info("Blogo 1" + qtdReg1);
-            int qtdRegB = getQuantidadeRegistrosDoBloco(((IcmsIpi) obj).getReg0000().getRegB001()); logger.info("Blogo B" + qtdRegB);
-            int qtdRegC = getQuantidadeRegistrosDoBloco(((IcmsIpi) obj).getReg0000().getRegC001()); logger.info("Blogo C" + qtdRegC);
-            int qtdRegD = getQuantidadeRegistrosDoBloco(((IcmsIpi) obj).getReg0000().getRegD001()); logger.info("Blogo D" + qtdRegD);
-            int qtdRegE = getQuantidadeRegistrosDoBloco(((IcmsIpi) obj).getReg0000().getRegE001()); logger.info("Blogo E" + qtdRegE);
-            int qtdRegG = getQuantidadeRegistrosDoBloco(((IcmsIpi) obj).getReg0000().getRegG001()); logger.info("Blogo G" + qtdRegG);
-            int qtdRegH = getQuantidadeRegistrosDoBloco(((IcmsIpi) obj).getReg0000().getRegH001()); logger.info("Blogo H" + qtdRegH);
-            int qtdRegK = getQuantidadeRegistrosDoBloco(((IcmsIpi) obj).getReg0000().getRegK001()); logger.info("Blogo K" + qtdRegK);
+            int qtdReg0 = getQuantidadeRegistrosDoBloco(((IcmsIpi) obj).getReg0000().getReg0001()); logger.info("Blogo 0: " + qtdReg0);
+            int qtdReg1 = getQuantidadeRegistrosDoBloco(((IcmsIpi) obj).getReg0000().getReg1001()); logger.info("Blogo 1: " + qtdReg1);
+            int qtdRegB = getQuantidadeRegistrosDoBloco(((IcmsIpi) obj).getReg0000().getRegB001()); logger.info("Blogo B: " + qtdRegB);
+            int qtdRegC = getQuantidadeRegistrosDoBloco(((IcmsIpi) obj).getReg0000().getRegC001()); logger.info("Blogo C: " + qtdRegC);
+            int qtdRegD = getQuantidadeRegistrosDoBloco(((IcmsIpi) obj).getReg0000().getRegD001()); logger.info("Blogo D: " + qtdRegD);
+            int qtdRegE = getQuantidadeRegistrosDoBloco(((IcmsIpi) obj).getReg0000().getRegE001()); logger.info("Blogo E: " + qtdRegE);
+            int qtdRegG = getQuantidadeRegistrosDoBloco(((IcmsIpi) obj).getReg0000().getRegG001()); logger.info("Blogo G: " + qtdRegG);
+            int qtdRegH = getQuantidadeRegistrosDoBloco(((IcmsIpi) obj).getReg0000().getRegH001()); logger.info("Blogo H: " + qtdRegH);
+            int qtdRegK = getQuantidadeRegistrosDoBloco(((IcmsIpi) obj).getReg0000().getRegK001()); logger.info("Blogo K: " + qtdRegK);
 
 
             if(qtdReg0 > 0){
@@ -145,7 +145,9 @@ public class Conversor {
             logger.info("Inicio de conversao da classe IcmsIpi");
             
             Conversor c = new Conversor();
+            logger.info("Inicio do tratamento do objeto");
             c.trataObjeto(obj);
+            logger.info("Tratamento do objeto concluído");
 
             Map<String, Long> resultado = c.getClasses().stream().collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
             ArrayList<String> sortedKeys = new ArrayList<String>(resultado.keySet());
