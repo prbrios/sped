@@ -2,6 +2,7 @@ package efd;
 
 import efd.anotacoes.*;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.log4j.Logger;
 
 import java.lang.reflect.Field;
 import java.math.BigDecimal;
@@ -14,7 +15,7 @@ import java.util.List;
 import java.util.Locale;
 
 public class Parsers {
-
+	static Logger logger = Logger.getLogger(Parsers.class);
     public static String converteBlocoEmString(Object obj, boolean processaFilhos) {
 
         Grupo grupo = null;
@@ -29,6 +30,8 @@ public class Parsers {
         StringBuilder sb = new StringBuilder();
         List<Object> nosFilhos = new ArrayList<Object>();
 
+        String append1, append2, append3;
+        
         for(Field m : clazz.getDeclaredFields()){
 
             m.setAccessible(true);
@@ -143,7 +146,9 @@ public class Parsers {
         arr.removeAll(Collections.singleton(null));
 
         if(arr.size() > 0) {
-            sb.append("|" + String.join("|", arr) + "|" + System.getProperty("line.separator"));
+        	append1 = "|" + String.join("|", arr) + "|" + System.getProperty("line.separator");
+        	logger.info(append1);
+            sb.append(append1);
         }
 
         for(Object j : nosFilhos){
@@ -151,14 +156,16 @@ public class Parsers {
             if (j.getClass().equals(ArrayList.class)) {
 
                 for(Object o : (ArrayList) j){
-
-                    sb.append(new Parsers().converteBlocoEmString(o, processaFilhos));
+                	append2 = new Parsers().converteBlocoEmString(o, processaFilhos);
+                	logger.info(append2);
+                    sb.append(append2);
 
                 }
 
             } else {
-
-                sb.append(new Parsers().converteBlocoEmString(j, processaFilhos));
+            	append3 = new Parsers().converteBlocoEmString(j, processaFilhos);
+            	logger.info(append3);
+                sb.append(append3);
 
             }
 
