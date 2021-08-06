@@ -81,7 +81,7 @@ public class Conversor {
                 }
             }
 
-        } catch (IllegalAccessException e){
+        } catch (Exception e){
             e.printStackTrace();
         }
 
@@ -100,19 +100,18 @@ public class Conversor {
         if(obj instanceof IcmsIpi && calculaQuantidades) {
 
             logger.info("Converter objeto em String com a opção de contagem automatica dos totalizadores dos blocos");
-            logger.info("Inicio de conversao da classe IcmsIpi");
+            logger.info("Calculando a quantidade de registros de cada bloco");
 
-            int qtdReg0 = getQuantidadeRegistrosDoBloco(((IcmsIpi) obj).getReg0000().getReg0001());
-            int qtdReg1 = getQuantidadeRegistrosDoBloco(((IcmsIpi) obj).getReg0000().getReg1001());
-            int qtdRegB = getQuantidadeRegistrosDoBloco(((IcmsIpi) obj).getReg0000().getRegB001());
-            int qtdRegC = getQuantidadeRegistrosDoBloco(((IcmsIpi) obj).getReg0000().getRegC001());
-            int qtdRegD = getQuantidadeRegistrosDoBloco(((IcmsIpi) obj).getReg0000().getRegD001());
-            int qtdRegE = getQuantidadeRegistrosDoBloco(((IcmsIpi) obj).getReg0000().getRegE001());
-            int qtdRegG = getQuantidadeRegistrosDoBloco(((IcmsIpi) obj).getReg0000().getRegG001());
-            int qtdRegH = getQuantidadeRegistrosDoBloco(((IcmsIpi) obj).getReg0000().getRegH001());
-            int qtdRegK = getQuantidadeRegistrosDoBloco(((IcmsIpi) obj).getReg0000().getRegK001());
+            int qtdReg0 = getQuantidadeRegistrosDoBloco(((IcmsIpi) obj).getReg0000().getReg0001()); logger.info("Blogo 0" + qtdReg0);
+            int qtdReg1 = getQuantidadeRegistrosDoBloco(((IcmsIpi) obj).getReg0000().getReg1001()); logger.info("Blogo 1" + qtdReg1);
+            int qtdRegB = getQuantidadeRegistrosDoBloco(((IcmsIpi) obj).getReg0000().getRegB001()); logger.info("Blogo B" + qtdRegB);
+            int qtdRegC = getQuantidadeRegistrosDoBloco(((IcmsIpi) obj).getReg0000().getRegC001()); logger.info("Blogo C" + qtdRegC);
+            int qtdRegD = getQuantidadeRegistrosDoBloco(((IcmsIpi) obj).getReg0000().getRegD001()); logger.info("Blogo D" + qtdRegD);
+            int qtdRegE = getQuantidadeRegistrosDoBloco(((IcmsIpi) obj).getReg0000().getRegE001()); logger.info("Blogo E" + qtdRegE);
+            int qtdRegG = getQuantidadeRegistrosDoBloco(((IcmsIpi) obj).getReg0000().getRegG001()); logger.info("Blogo G" + qtdRegG);
+            int qtdRegH = getQuantidadeRegistrosDoBloco(((IcmsIpi) obj).getReg0000().getRegH001()); logger.info("Blogo H" + qtdRegH);
+            int qtdRegK = getQuantidadeRegistrosDoBloco(((IcmsIpi) obj).getReg0000().getRegK001()); logger.info("Blogo K" + qtdRegK);
 
-            logger.info("Calculado a quantidade de registro de cada bloco");
 
             if(qtdReg0 > 0){
                 ((IcmsIpi) obj).getReg0000().setReg0990(new Reg0990(qtdReg0 + 2));
@@ -141,7 +140,10 @@ public class Conversor {
             if(qtdRegK > 0){
                 ((IcmsIpi) obj).getReg0000().setRegK990(new RegK990(qtdRegK + 1));
             }
-
+            
+            logger.info("Quantidade de registros de cada bloco calculada");
+            logger.info("Inicio de conversao da classe IcmsIpi");
+            
             Conversor c = new Conversor();
             c.trataObjeto(obj);
 
