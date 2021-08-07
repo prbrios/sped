@@ -16,7 +16,15 @@ import java.util.Locale;
 
 public class Parsers {
 	static Logger logger = Logger.getLogger(Parsers.class);
+	static int seq = 0;
     public static String converteBlocoEmString(Object obj, boolean processaFilhos) {
+    	if(seq >= 1000) {
+    		seq = 0;
+    		logger.info("GC");
+    		Runtime.getRuntime().gc();
+    	}
+    	seq++;
+    	
         Grupo grupo = null;
 
         List arr = new ArrayList();
