@@ -4,6 +4,8 @@ import efd.anotacoes.*;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.log4j.Logger;
 
+import java.io.IOException;
+import java.io.UnsupportedEncodingException;
 import java.lang.reflect.Field;
 import java.math.BigDecimal;
 import java.time.LocalDate;
@@ -16,15 +18,8 @@ import java.util.Locale;
 
 public class Parsers {
 	static Logger logger = Logger.getLogger(Parsers.class);
-	static int seq = 0;
+
     public static String converteBlocoEmString(Object obj, boolean processaFilhos) {
-    	if(seq >= 1000) {
-    		seq = 0;
-    		logger.info("GC");
-    		Runtime.getRuntime().gc();
-    	}
-    	seq++;
-    	
         Grupo grupo = null;
 
         List arr = new ArrayList();
@@ -35,6 +30,7 @@ public class Parsers {
         Object anotacao;
 
         StringBuilder sb = new StringBuilder();
+        //MyStringBuilderFile sb = new MyStringBuilderFile("C:\\users\\prbri\\temp\\0001.txt");
         List<Object> nosFilhos = new ArrayList<Object>();
 
         for(Field m : clazz.getDeclaredFields()){
@@ -202,3 +198,44 @@ public class Parsers {
     }
 
 }
+/*
+class MyStringBuilderFile {
+	
+	static Logger logger = Logger.getLogger(MyStringBuilderFile.class);
+	
+	private String fileName;
+	MyStringBuilderFile(String fileName){
+		try {
+			this.fileName = fileName;
+			if(!new java.io.File(this.fileName).exists())
+				java.nio.file.Files.createFile(java.nio.file.Paths.get(this.fileName));
+		} catch (IOException e) {
+			logger.info("Falha ao criar arquivo " + this.fileName);
+		}
+	}
+	
+	public void append(String str) {
+		try {
+			
+            java.nio.file.Files.write(java.nio.file.Paths.get(this.fileName), str.getBytes(), java.nio.file.StandardOpenOption.APPEND);
+        } catch (java.io.IOException e) {
+        	logger.info("Falha ao escrever no arquivo " + this.fileName);
+        }
+	}
+	
+	@Override
+	public String toString() {
+
+		try {
+			return new String(java.nio.file.Files.readAllBytes(java.nio.file.Paths.get(this.fileName)), "utf-8");
+		} catch (UnsupportedEncodingException e) {
+			logger.info("Falha ao escrever no arquivo " + this.fileName);
+		} catch (IOException e) {
+			logger.info("Falha ao escrever no arquivo " + this.fileName);
+		}
+		
+		return StringUtils.EMPTY;
+	}
+	
+}
+*/
