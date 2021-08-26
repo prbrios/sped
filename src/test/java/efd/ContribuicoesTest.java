@@ -7,6 +7,10 @@ import efd.contribuicoes.bloco0.n1.n2.n3.*;
 import efd.contribuicoes.bloco1.n1.Reg1001;
 import efd.contribuicoes.blocoA.n1.RegA001;
 import efd.contribuicoes.blocoC.n1.RegC001;
+import efd.contribuicoes.blocoC.n1.n2.RegC010;
+import efd.contribuicoes.blocoC.n1.n2.n3.RegC500;
+import efd.contribuicoes.blocoC.n1.n2.n3.n4.RegC501;
+import efd.contribuicoes.blocoC.n1.n2.n3.n4.RegC505;
 import efd.contribuicoes.blocoD.n1.RegD001;
 import efd.contribuicoes.blocoF.n1.RegF001;
 import efd.contribuicoes.blocoI.n1.RegI001;
@@ -145,7 +149,33 @@ public class ContribuicoesTest {
     }
 
     private RegC001 getC001() {
-        return null;
+
+    	RegC505 regC505t = new RegC505(null, null, null, null, null, null, null);
+    	
+    	List<RegC505> regC505 = new ArrayList<RegC505>();
+    	regC505.add(regC505t);
+    	
+    	List<RegC501> regC501 = new ArrayList<RegC501>();
+    	regC501.add(new RegC501(null, null, null, null, null, null, null));
+    	regC501.add(new RegC501(null, null, null, null, null, null, null));
+    	regC501.add(new RegC501(null, null, null, null, null, null, null));
+    	
+    	RegC500 regC500t = new RegC500(null, null, null, null, null, null, null, null, null, null, null, null, null, null);
+    	regC500t.setRegC501(regC501);
+    	regC500t.setRegC505(regC505);
+    	
+    	List<RegC500> regC500 = new ArrayList<RegC500>();
+    	regC500.add(regC500t);
+    	
+    	RegC010 regC010t = new RegC010(1L, "");
+    	regC010t.setRegC500(regC500);
+    	
+    	List<RegC010> regC010 = new ArrayList<RegC010>();
+    	regC010.add(regC010t);
+    	
+    	RegC001 regC001 = new RegC001("0");
+    	regC001.setRegC010(regC010);
+        return regC001;
     }
 
     private RegA001 getA001(){
