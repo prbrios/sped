@@ -1,45 +1,28 @@
 package efd;
 
-import efd.contribuicoes.blocoF.n1.RegF990;
-import efd.contribuicoes.blocoI.n1.RegI990;
-import efd.contribuicoes.blocoM.n1.RegM990;
-import efd.contribuicoes.blocoP.n1.RegP990;
-import efd.icmsipi.bloco0.Reg0000;
-import efd.icmsipi.bloco0.n1.Reg0001;
-import efd.icmsipi.bloco0.n1.Reg0990;
-import efd.icmsipi.bloco0.n1.n2.Reg0200;
-import efd.icmsipi.bloco1.n1.Reg1990;
-import efd.icmsipi.bloco9.Reg9999;
-import efd.icmsipi.bloco9.n1.Reg9001;
-import efd.icmsipi.bloco9.n1.Reg9990;
-import efd.icmsipi.bloco9.n1.n2.Reg9900;
-import efd.icmsipi.blocoB.n1.RegB001;
-import efd.icmsipi.blocoB.n1.RegB990;
-import efd.icmsipi.blocoC.n1.RegC001;
-import efd.icmsipi.blocoC.n1.RegC990;
-import efd.icmsipi.blocoC.n1.n2.RegC100;
-import efd.icmsipi.blocoC.n1.n2.n3.RegC101;
-import efd.icmsipi.blocoC.n1.n2.n3.RegC170;
-import efd.icmsipi.blocoD.n1.RegD001;
-import efd.icmsipi.blocoD.n1.RegD990;
-import efd.icmsipi.blocoE.n1.RegE001;
-import efd.icmsipi.blocoE.n1.RegE990;
-import efd.icmsipi.blocoG.n1.RegG001;
-import efd.icmsipi.blocoG.n1.RegG990;
-import efd.icmsipi.blocoH.n1.RegH001;
-import efd.icmsipi.blocoH.n1.RegH990;
-import efd.icmsipi.blocoK.n1.RegK001;
-import efd.icmsipi.blocoK.n1.RegK990;
-import org.apache.log4j.Logger;
-
 import java.lang.reflect.Field;
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 import java.util.function.Function;
 import java.util.stream.Collectors;
+
+import org.apache.log4j.Logger;
+
+import efd.icmsipi.bloco0.n1.Reg0990;
+import efd.icmsipi.bloco1.n1.Reg1990;
+import efd.icmsipi.bloco9.Reg9999;
+import efd.icmsipi.bloco9.n1.Reg9001;
+import efd.icmsipi.bloco9.n1.Reg9990;
+import efd.icmsipi.bloco9.n1.n2.Reg9900;
+import efd.icmsipi.blocoB.n1.RegB990;
+import efd.icmsipi.blocoC.n1.RegC990;
+import efd.icmsipi.blocoD.n1.RegD990;
+import efd.icmsipi.blocoE.n1.RegE990;
+import efd.icmsipi.blocoG.n1.RegG990;
+import efd.icmsipi.blocoH.n1.RegH990;
+import efd.icmsipi.blocoK.n1.RegK990;
 
 public class Conversor {
 
@@ -58,6 +41,10 @@ public class Conversor {
 
                     field.setAccessible(true);
 
+                    if (field.getName().equals("grupo")) {
+                    	continue;
+                    }
+                    
                     if (field.get(obj) != null) {
 
                         if (field.get(obj) instanceof ArrayList) {
@@ -291,58 +278,5 @@ public class Conversor {
     public static String converteBloco(Object obj){
         return Parsers.converteBlocoEmString(obj, false);
     }
-
-
-    public static void main(String[] args){
-
-        List<Reg0200> r0200 = new ArrayList<>();
-        r0200.add(new Reg0200());
-        r0200.add(new Reg0200());
-        r0200.add(new Reg0200());
-
-        RegB001 rB001 = new RegB001();
-        RegD001 rD001 = new RegD001();
-        RegE001 rE001 = new RegE001();
-        RegG001 rG001 = new RegG001();
-        RegH001 rH001 = new RegH001();
-        RegK001 rK001 = new RegK001();
-
-        RegC101 rC101 = new RegC101();
-        List<RegC170> rC170l = new ArrayList<>();
-        rC170l.add(new RegC170());
-
-        RegC100 rC100 = new RegC100();
-        rC100.setRegC101(rC101);
-        rC100.setRegC170(rC170l);
-
-        List<RegC100> rC100l = new ArrayList<RegC100>();
-        rC100l.add(new RegC100());
-        rC100l.add(new RegC100());
-        rC100l.add(new RegC100());
-        rC100l.add(rC100);
-
-        RegC001 regC001 = new RegC001("0");
-        regC001.setRegC100(rC100l);
-
-        Reg0001 r0001 = new Reg0001(0);
-        r0001.setReg0200(r0200);
-
-        Reg0000 r0000 = new Reg0000(1, 1, LocalDate.parse("2019-05-05"), LocalDate.parse("2019-05-05"), "Nome", null, null, null, null, null, null, null, null, null);
-        r0000.setReg0001(r0001);
-        r0000.setRegB001(rB001);
-        r0000.setRegD001(rD001);
-        r0000.setRegE001(rE001);
-        r0000.setRegG001(rG001);
-        r0000.setRegH001(rH001);
-        r0000.setRegK001(rK001);
-        r0000.setRegC001(regC001);
-
-        IcmsIpi obj = new IcmsIpi();
-        obj.setReg0000(r0000);
-
-        System.out.println(Conversor.converte(obj, true));
-
-    }
-
 
 }
