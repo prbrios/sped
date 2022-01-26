@@ -18,9 +18,18 @@ public class Reg0220 {
     @Getter @Setter @Inclui(casasDecimais = 6)
     private BigDecimal fatConv;
 
+    @Getter @Setter @Inclui
+    private String codBarra;
+
     public Reg0220(String unidConv, BigDecimal fatConv) {
         this.unidConv = unidConv;
         this.fatConv = fatConv;
+    }
+    
+    public Reg0220(String unidConv, BigDecimal fatConv, String codBarra) {
+        this.unidConv = unidConv;
+        this.fatConv = fatConv;
+        this.codBarra = codBarra;
     }
 
     public Reg0220(){}

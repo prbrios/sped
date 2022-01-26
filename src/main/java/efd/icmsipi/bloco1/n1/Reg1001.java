@@ -46,6 +46,9 @@ public class Reg1001 {
 
     @Getter @Setter @Filho
     private List<Reg1600> reg1600;
+    
+    @Getter @Setter @Filho
+    private List<Reg1601> reg1601;
 
     @Getter @Setter @Filho
     private List<Reg1700> reg1700;
