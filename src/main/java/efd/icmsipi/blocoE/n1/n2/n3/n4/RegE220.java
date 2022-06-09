@@ -18,15 +18,6 @@ public class RegE220 {
     private final String reg = "E220";
 
     @Getter @Setter @Inclui
-    private String uf;
-
-    @Getter @Setter @Inclui
-    private LocalDate dtIni;
-
-    @Getter @Setter @Inclui
-    private LocalDate dtFin;
-
-    @Getter @Setter @Inclui
     private String codAjApur;
 
     @Getter @Setter @Inclui
@@ -41,10 +32,7 @@ public class RegE220 {
     @Getter @Setter @Filho
     private List<RegE240> regE240;
 
-    public RegE220(String uf, LocalDate dtIni, LocalDate dtFin, String codAjApur, String descrComplAj, BigDecimal vlAjApur) {
-        this.uf = uf;
-        this.dtIni = dtIni;
-        this.dtFin = dtFin;
+    public RegE220(String codAjApur, String descrComplAj, BigDecimal vlAjApur) {
         this.codAjApur = codAjApur;
         this.descrComplAj = descrComplAj;
         this.vlAjApur = vlAjApur;
