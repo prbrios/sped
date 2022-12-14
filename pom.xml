@@ -6,7 +6,7 @@
 
     <groupId>com.github.prbrios</groupId>
     <artifactId>sped</artifactId>
-    <version>1.16</version>
+    <version>1.17</version>
 
     <name>SPED</name>
     <description>Geração de arquivos SPED</description>
