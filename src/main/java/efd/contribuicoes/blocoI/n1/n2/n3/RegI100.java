@@ -8,7 +8,7 @@ import efd.contribuicoes.blocoI.n1.n2.n3.n4.RegI200;
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.xml.bind.annotation.XmlInlineBinaryData;
+
 import java.math.BigDecimal;
 import java.util.List;
 
