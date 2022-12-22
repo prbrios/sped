@@ -39,7 +39,7 @@ public class RegC500 {
     Integer sub;
 
     @Getter @Setter @Inclui @G1 @G2
-    Integer numDoc;
+    Long numDoc;
 
     @Getter @Setter @Inclui @G1 @G2
     LocalDate dtDoc;
@@ -74,7 +74,7 @@ public class RegC500 {
     @Getter @Setter @Filho
     private List<RegC509> regC509;
 
-    public RegC500(String codPart, String codMod, Integer codSit, String ser, Integer sub, Integer numDoc, LocalDate dtDoc, LocalDate dtEnt, BigDecimal vlDoc, BigDecimal vlIcms, String codInf, BigDecimal vlPis, BigDecimal vlCofins) {
+    public RegC500(String codPart, String codMod, Integer codSit, String ser, Integer sub, Long numDoc, LocalDate dtDoc, LocalDate dtEnt, BigDecimal vlDoc, BigDecimal vlIcms, String codInf, BigDecimal vlPis, BigDecimal vlCofins) {
     	this.grupo = Grupo.G1;
         this.codPart = codPart;
         this.codMod = codMod;
@@ -91,7 +91,7 @@ public class RegC500 {
         this.vlCofins = vlCofins;
     }
     
-    public RegC500(String codPart, String codMod, Integer codSit, String ser, Integer sub, Integer numDoc, LocalDate dtDoc, LocalDate dtEnt, BigDecimal vlDoc, BigDecimal vlIcms, String codInf, BigDecimal vlPis, BigDecimal vlCofins, String chvDoce) {
+    public RegC500(String codPart, String codMod, Integer codSit, String ser, Integer sub, Long numDoc, LocalDate dtDoc, LocalDate dtEnt, BigDecimal vlDoc, BigDecimal vlIcms, String codInf, BigDecimal vlPis, BigDecimal vlCofins, String chvDoce) {
     	this.grupo = Grupo.G2;
         this.codPart = codPart;
         this.codMod = codMod;
