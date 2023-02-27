@@ -12,7 +12,7 @@ import lombok.Setter;
 public class RegC150 {
 
 	@Getter @Inclui
-	private static final String reg = "C150";
+	private final String reg = "C150";
 	
 	@Getter @Setter @Inclui
 	private LocalDate dtIni;

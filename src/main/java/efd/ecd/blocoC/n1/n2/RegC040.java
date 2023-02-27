@@ -13,7 +13,7 @@ import lombok.Setter;
 public class RegC040 {
 
 	@Getter @Inclui
-	private static final String reg = "C040";
+	private final String reg = "C040";
 	
 	@Getter @Setter @Inclui
 	private String hashEcdRec;
