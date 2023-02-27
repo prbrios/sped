@@ -23,7 +23,7 @@ import lombok.Setter;
 public class RegI010 {
 
 	@Getter @Inclui
-	private static final String reg = "I010";
+	private final String reg = "I010";
 	
 	@Getter @Setter @Inclui
 	private String indEsc;

@@ -9,7 +9,7 @@ import lombok.Setter;
 public class RegI100 {
 
 	@Getter @Inclui
-	private static final String reg = "I100";
+	private final String reg = "I100";
 	
 	@Getter @Setter @Inclui
 	private LocalDate dtAlt;

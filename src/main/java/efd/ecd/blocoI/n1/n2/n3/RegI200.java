@@ -13,7 +13,7 @@ import lombok.Setter;
 public class RegI200 {
 
 	@Getter @Inclui
-	private static final String reg = "I200";
+	private final String reg = "I200";
 	
 	@Getter @Setter @Inclui
 	private String numLcto;

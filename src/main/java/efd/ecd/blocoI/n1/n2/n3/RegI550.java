@@ -11,7 +11,7 @@ import lombok.Setter;
 public class RegI550 {
 
 	@Getter @Inclui
-	private static final String reg = "I550";
+	private final String reg = "I550";
 	
 	@Getter @Setter @Inclui
 	private String rzCont;

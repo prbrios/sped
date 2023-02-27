@@ -7,7 +7,7 @@ import lombok.Setter;
 public class RegI510 {
 
 	@Getter @Inclui
-	private static final String reg = "I510";
+	private final String reg = "I510";
 	
 	@Getter @Setter @Inclui
 	private String nmCampo;
