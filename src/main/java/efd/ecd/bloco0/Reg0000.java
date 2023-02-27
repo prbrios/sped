@@ -6,6 +6,16 @@ import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
 import efd.ecd.bloco0.n1.Reg0001;
 import efd.ecd.bloco0.n1.Reg0990;
+import efd.ecd.bloco9.n1.Reg9001;
+import efd.ecd.bloco9.n1.Reg9990;
+import efd.ecd.blocoC.n1.RegC001;
+import efd.ecd.blocoC.n1.RegC990;
+import efd.ecd.blocoI.n1.RegI001;
+import efd.ecd.blocoI.n1.RegI990;
+import efd.ecd.blocoJ.n1.RegJ001;
+import efd.ecd.blocoJ.n1.RegJ990;
+import efd.ecd.blocoK.n1.RegK001;
+import efd.ecd.blocoK.n1.RegK990;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -85,6 +95,36 @@ public class Reg0000 {
     
     @Getter @Setter @Filho
     private Reg0990 reg0990;
+
+    @Getter @Setter @Filho
+    private RegC001 regC001;
+
+    @Getter @Setter @Filho
+    private RegC990 regC990;
+
+    @Getter @Setter @Filho
+    private RegI001 regI001;
+
+    @Getter @Setter @Filho
+    private RegI990 regI990;
+
+    @Getter @Setter @Filho
+    private RegJ001 regJ001;
+
+    @Getter @Setter @Filho
+    private RegJ990 regJ990;
+
+    @Getter @Setter @Filho
+    private RegK001 regK001;
+
+    @Getter @Setter @Filho
+    private RegK990 regK990;
+
+    @Getter @Setter @Filho
+    private Reg9001 reg9001;
+
+    @Getter @Setter @Filho
+    private Reg9990 reg9990;
 
     public Reg0000() {
     	this.lecd = "LECD";
