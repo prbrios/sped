@@ -266,6 +266,79 @@ public class Conversor {
 
             return Parsers.converteBlocoEmString(contrib, true);
 
+        } else if(obj instanceof Ecd && calculaQuantidades) {
+
+            logger.info("Converter objeto em String com a opção de contagem automatica dos totalizadores dos blocos");
+            logger.info("Inicio de conversao da classe Contribuicoes");
+
+            int qtdReg0 = getQuantidadeRegistrosDoBloco(((Ecd) obj).getReg0000().getReg0001());
+            int qtdRegC = getQuantidadeRegistrosDoBloco(((Ecd) obj).getReg0000().getRegC001());
+            int qtdRegI = getQuantidadeRegistrosDoBloco(((Ecd) obj).getReg0000().getRegI001());
+            int qtdRegJ = getQuantidadeRegistrosDoBloco(((Ecd) obj).getReg0000().getRegJ001());
+            int qtdRegK = getQuantidadeRegistrosDoBloco(((Ecd) obj).getReg0000().getRegK001());
+
+            logger.info("Calculado a quantidade de registro de cada bloco");
+
+            if(qtdReg0 > 0){
+                ((Ecd) obj).getReg0000().setReg0990(new efd.ecd.bloco0.n1.Reg0990(qtdReg0 + 2));
+            }
+            if(qtdRegC > 0){
+                ((Ecd) obj).getReg0000().setRegC990(new efd.ecd.blocoC.n1.RegC990(qtdRegC + 1));
+            }
+            if(qtdRegI > 0){
+                ((Ecd) obj).getReg0000().setRegI990(new efd.ecd.blocoI.n1.RegI990(qtdRegI + 1));
+            }
+            if(qtdRegJ > 0){
+                ((Ecd) obj).getReg0000().setRegJ990(new efd.ecd.blocoJ.n1.RegJ990(qtdRegJ + 1));
+            }
+            if(qtdRegK > 0){
+                ((Ecd) obj).getReg0000().setRegK990(new efd.ecd.blocoK.n1.RegK990(qtdRegK + 1));
+            }
+
+            Conversor c = new Conversor();
+            c.trataObjeto(obj);
+
+            Map<String, Long> resultado = c.getClasses().stream().collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+            ArrayList<String> sortedKeys = new ArrayList<String>(resultado.keySet());
+            Collections.sort(sortedKeys);
+
+            Integer quantidadeTotalLinhas = 3;
+
+            List<efd.ecd.bloco9.n1.n2.Reg9900> reg9900 = new ArrayList<>();
+            for (String key : sortedKeys) {
+
+                Integer quantidade = Integer.parseInt(resultado.get(key).toString());
+                quantidadeTotalLinhas += quantidade;
+
+                efd.ecd.bloco9.n1.n2.Reg9900 reg9900l = new efd.ecd.bloco9.n1.n2.Reg9900();
+                reg9900l.setRegBlc(key.substring(3));
+                reg9900l.setQtdRegBlc(quantidade);
+                reg9900.add(reg9900l);
+
+            }
+
+            reg9900.add(new efd.ecd.bloco9.n1.n2.Reg9900("9001", 1));
+            reg9900.add(new efd.ecd.bloco9.n1.n2.Reg9900("9900", reg9900.size() + 3));
+            reg9900.add(new efd.ecd.bloco9.n1.n2.Reg9900("9990", 1));
+            reg9900.add(new efd.ecd.bloco9.n1.n2.Reg9900("9999", 1));
+
+            efd.ecd.bloco9.n1.Reg9001 reg9001 = new efd.ecd.bloco9.n1.Reg9001();
+            reg9001.setIndDad(0);
+            reg9001.setReg9900(reg9900);
+
+            efd.ecd.bloco9.n1.Reg9990 reg9990 = new efd.ecd.bloco9.n1.Reg9990();
+            reg9990.setQtdLin9(reg9900.size() + 3);
+
+            efd.ecd.bloco9.Reg9999 reg9999 = new efd.ecd.bloco9.Reg9999();
+            reg9999.setQtdLin(quantidadeTotalLinhas + reg9900.size());
+
+            Ecd ecd = (Ecd) obj;
+            ecd.getReg0000().setReg9001(reg9001);
+            ecd.getReg0000().setReg9990(reg9990);
+            ecd.setReg9999(reg9999);
+
+            return Parsers.converteBlocoEmString(ecd, true);
+
         }
 
         return Parsers.converteBlocoEmString(obj, true);
