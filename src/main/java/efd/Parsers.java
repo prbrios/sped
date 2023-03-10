@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.lang.reflect.Field;
 import java.math.BigDecimal;
+import java.math.BigInteger;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
@@ -112,6 +113,14 @@ public class Parsers {
                         } else if (m.getType().equals(Long.class)) {
 
                             o = (Long) m.get(obj);
+
+                            if (zerosEsquerda > 0) {
+                                o = String.format("%0" + zerosEsquerda+ "d", o);
+                            }
+
+                        } else if (m.getType().equals(BigInteger.class)) {
+
+                            o = (BigInteger) m.get(obj);
 
                             if (zerosEsquerda > 0) {
                                 o = String.format("%0" + zerosEsquerda+ "d", o);
