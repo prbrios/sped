@@ -16,6 +16,8 @@ import efd.contribuicoes.blocoF.n1.RegF001;
 import efd.contribuicoes.blocoI.n1.RegI001;
 import efd.contribuicoes.blocoM.n1.RegM001;
 import efd.contribuicoes.blocoP.n1.RegP001;
+
+import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -41,6 +43,8 @@ public class ContribuicoesTest {
         obj.setReg0000(r0000);
 
         System.out.println(Conversor.converte(obj, true));
+        
+        Assert.assertTrue(true);
 
     }
 

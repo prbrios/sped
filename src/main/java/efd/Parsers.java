@@ -4,8 +4,8 @@ import efd.anotacoes.*;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.log4j.Logger;
 
-import java.io.IOException;
-import java.io.UnsupportedEncodingException;
+
+
 import java.lang.reflect.Field;
 import java.math.BigDecimal;
 import java.math.BigInteger;
@@ -20,7 +20,8 @@ import java.util.Locale;
 public class Parsers {
 	static Logger logger = Logger.getLogger(Parsers.class);
 
-    public static String converteBlocoEmString(Object obj, boolean processaFilhos) {
+    @SuppressWarnings({ "unchecked", "rawtypes", "static-access" })
+	public static String converteBlocoEmString(Object obj, boolean processaFilhos) {
         Grupo grupo = null;
 
         List arr = new ArrayList();
@@ -157,6 +158,7 @@ public class Parsers {
 
         if(arr.size() > 0) {
             sb.append("|" + String.join("|", arr) + "|" + System.getProperty("line.separator"));
+            logger.info("Analisando " + clazz.getSimpleName());
         }
 
         for(Object j : nosFilhos){
