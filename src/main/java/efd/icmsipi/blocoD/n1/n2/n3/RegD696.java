@@ -6,13 +6,15 @@ import efd.icmsipi.blocoD.n1.n2.n3.n4.RegD697;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.List;
 
 
-public class RegD696 {
+public class RegD696 implements Serializable {
+	private static final long serialVersionUID = -4713380129975497400L;
 
-    @Getter @Inclui
+	@Getter @Inclui
     private final String reg = "D696";
 
     @Getter @Setter @Inclui(zerosEsquerda = 3)

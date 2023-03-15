@@ -6,14 +6,16 @@ import efd.icmsipi.blocoC.n1.n2.n3.n4.*;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.List;
 
-@Setter
-@Getter
-public class RegC170 {
 
-    /**
+
+public class RegC170 implements Serializable {
+	private static final long serialVersionUID = 6373252562737421905L;
+
+	/**
      * 01 - REG
      * Texto fixo contendo "C170"
      */

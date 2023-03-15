@@ -6,9 +6,11 @@ import efd.icmsipi.blocoC.n1.n2.n3.n4.RegC815;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 
-public class RegC810 {
+public class RegC810 implements Serializable {
+	private static final long serialVersionUID = -7656549448590721618L;
 
 	@Getter @Inclui
 	private final String reg = "C810";

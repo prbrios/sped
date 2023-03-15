@@ -4,13 +4,15 @@ import efd.anotacoes.Inclui;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-public class RegF600 {
+public class RegF600 implements Serializable {
+	private static final long serialVersionUID = 5387050722453599420L;
 
-    @Getter @Inclui
-private final String reg = "F600";
+	@Getter @Inclui
+	private final String reg = "F600";
 
     @Getter @Setter @Inclui(zerosEsquerda = 2)
     private Integer indNatRet;

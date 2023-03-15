@@ -7,13 +7,15 @@ import efd.icmsipi.blocoE.n1.n2.n3.n4.RegE250;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.List;
 
 
-public class RegE210 {
+public class RegE210 implements Serializable {
+	private static final long serialVersionUID = -4437770625280188980L;
 
-    @Getter @Inclui
+	@Getter @Inclui
     private final String reg = "E210";
 
     @Getter @Setter @Inclui

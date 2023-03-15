@@ -1,13 +1,16 @@
 package efd.icmsipi.bloco0.n1.n2;
 
+import java.io.Serializable;
+
 import efd.anotacoes.Inclui;
 import lombok.Getter;
 import lombok.Setter;
 
 
-public class Reg0015 {
+public class Reg0015 implements Serializable {
+	private static final long serialVersionUID = 5136146648311384866L;
 
-    @Getter @Inclui
+	@Getter @Inclui
     private final String reg = "0015";
 
     @Getter @Setter @Inclui

@@ -6,15 +6,16 @@ import efd.icmsipi.blocoC.n1.n2.n3.*;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
 
 
-public class RegC100 {
+public class RegC100 implements Serializable {
+	private static final long serialVersionUID = -5952082811148273385L;
 
-
-    @Getter @Inclui
+	@Getter @Inclui
     private final String reg = "C100";
 
     @Getter @Setter @Inclui

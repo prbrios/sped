@@ -6,14 +6,16 @@ import efd.icmsipi.blocoK.n1.n2.n3.n4.RegK235;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
 
 
-public class RegK230 {
+public class RegK230 implements Serializable {
+	private static final long serialVersionUID = 1376141362506156402L;
 
-    @Getter @Inclui
+	@Getter @Inclui
     private final String reg = "K230";
 
     @Getter @Setter @Inclui

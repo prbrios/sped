@@ -2,17 +2,19 @@ package efd.contribuicoes.blocoF.n1.n2.n3;
 
 import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
-import efd.contribuicoes.blocoF.n1.n2.n3.n4.RegF211;
+
 import efd.contribuicoes.blocoF.n1.n2.n3.n4.RegF569;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.List;
 
-public class RegF560 {
+public class RegF560 implements Serializable {
+	private static final long serialVersionUID = -6520630323960038745L;
 
-    @Getter @Inclui
+	@Getter @Inclui
     private final String reg = "F560";
 
     @Getter @Setter @Inclui

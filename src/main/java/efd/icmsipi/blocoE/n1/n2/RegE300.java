@@ -6,12 +6,14 @@ import efd.icmsipi.blocoE.n1.n2.n3.RegE310;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
 
-public class RegE300 {
+public class RegE300 implements Serializable {
+	private static final long serialVersionUID = 1194037608186673802L;
 
-    @Getter @Inclui
+	@Getter @Inclui
     private final String reg = "E300";
 
     @Getter @Setter @Inclui

@@ -1,5 +1,6 @@
 package efd.ecd.blocoI.n1.n2.n3;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
@@ -10,7 +11,8 @@ import efd.ecd.blocoI.n1.n2.n3.n4.RegI250;
 import lombok.Getter;
 import lombok.Setter;
 
-public class RegI200 {
+public class RegI200 implements Serializable {
+	private static final long serialVersionUID = -8075561456447653131L;
 
 	@Getter @Inclui
 	private final String reg = "I200";

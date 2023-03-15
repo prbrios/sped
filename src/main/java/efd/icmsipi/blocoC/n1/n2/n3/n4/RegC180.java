@@ -5,9 +5,11 @@ import efd.anotacoes.Inclui;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 
-public class RegC180 {
+public class RegC180 implements Serializable {
+	private static final long serialVersionUID = 5499294116212694361L;
 
 	@Getter @Inclui
 	private final String reg = "C180";

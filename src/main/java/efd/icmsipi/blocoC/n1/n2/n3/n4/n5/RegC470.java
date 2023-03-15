@@ -6,12 +6,14 @@ import efd.icmsipi.blocoC.n1.n2.n3.n4.n5.n6.RegC480;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 
 
-public class RegC470 {
+public class RegC470 implements Serializable {
+	private static final long serialVersionUID = 2492739079819582794L;
 
-    @Getter @Inclui
+	@Getter @Inclui
     private final String reg = "C470";
 
     @Getter @Setter @Inclui

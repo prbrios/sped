@@ -7,16 +7,18 @@ import efd.contribuicoes.blocoD.n1.n2.n3.n4.RegD205;
 import efd.contribuicoes.blocoD.n1.n2.n3.n4.RegD209;
 import lombok.Getter;
 import lombok.Setter;
-import lombok.ToString;
 
+
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
 
-public class RegD200 {
+public class RegD200 implements Serializable {
+	private static final long serialVersionUID = -8742415110912633554L;
 
-    @Getter @Inclui
-private final String reg = "D200";
+	@Getter @Inclui
+	private final String reg = "D200";
 
     @Getter @Setter @Inclui
     private String codMod;

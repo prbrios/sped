@@ -1,5 +1,6 @@
 package efd.ecd.bloco0.n1;
 
+import java.io.Serializable;
 import java.util.List;
 
 import efd.anotacoes.Filho;
@@ -11,9 +12,10 @@ import efd.ecd.bloco0.n1.n2.Reg0150;
 import lombok.Getter;
 import lombok.Setter;
 
-public class Reg0001 {
-    
-    @Getter @Inclui
+public class Reg0001 implements Serializable {
+	private static final long serialVersionUID = 1431649468739411979L;
+
+	@Getter @Inclui
     private final String reg = "0001";
 
     @Getter @Setter @Inclui

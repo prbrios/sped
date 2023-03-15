@@ -1,19 +1,21 @@
 package efd.icmsipi.blocoE.n1.n2.n3;
 
-import efd.anotacoes.Filho;
+
 import efd.anotacoes.Inclui;
-import efd.icmsipi.blocoE.n1.n2.n3.n4.RegE311;
-import efd.icmsipi.blocoE.n1.n2.n3.n4.RegE316;
+
+
 import lombok.Getter;
 import lombok.Setter;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
-import java.util.List;
 
 
-public class RegE310 {
 
-    @Getter @Inclui
+public class RegE310 implements Serializable {
+	private static final long serialVersionUID = -7730345635479678023L;
+
+	@Getter @Inclui
     private final String reg = "E310";
 
     @Getter @Setter @Inclui

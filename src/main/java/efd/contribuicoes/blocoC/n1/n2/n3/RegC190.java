@@ -9,14 +9,16 @@ import efd.contribuicoes.blocoC.n1.n2.n3.n4.RegC199;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
 
-public class RegC190 {
+public class RegC190 implements Serializable {
+	private static final long serialVersionUID = -1488521384378609813L;
 
-    @Getter @Inclui
-private final String reg = "C190";
+	@Getter @Inclui
+	private final String reg = "C190";
 
     @Getter @Setter @Inclui
     private String codMod;

@@ -7,14 +7,15 @@ import efd.contribuicoes.blocoM.n1.n2.n3.RegM210;
 import lombok.Getter;
 import lombok.Setter;
 
-
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.List;
 
-public class RegM200 {
+public class RegM200 implements Serializable {
+	private static final long serialVersionUID = -3449376050538652849L;
 
-    @Getter @Inclui
-private final String reg = "M200";
+	@Getter @Inclui
+    private final String reg = "M200";
 
     @Getter @Setter @Inclui
     private BigDecimal vlTotContNcPer;

@@ -6,14 +6,16 @@ import efd.contribuicoes.blocoF.n1.n2.n3.n4.RegF139;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
 
-public class RegF130 {
+public class RegF130 implements Serializable {
+	private static final long serialVersionUID = 4497350747869308775L;
 
-    @Getter @Inclui
-private final String reg = "F130";
+	@Getter @Inclui
+	private final String reg = "F130";
 
     @Getter @Setter @Inclui
     private String natBcCred;

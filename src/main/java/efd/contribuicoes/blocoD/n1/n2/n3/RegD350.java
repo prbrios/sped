@@ -6,14 +6,16 @@ import efd.contribuicoes.blocoD.n1.n2.n3.n4.RegD359;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
 
-public class RegD350 {
+public class RegD350 implements Serializable {
+	private static final long serialVersionUID = 2319509663279093024L;
 
-    @Getter @Inclui
-private final String reg = "D350";
+	@Getter @Inclui
+	private final String reg = "D350";
 
     @Getter @Setter @Inclui
     private String codMod;

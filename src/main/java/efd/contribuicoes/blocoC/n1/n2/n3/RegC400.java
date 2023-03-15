@@ -7,12 +7,14 @@ import efd.contribuicoes.blocoC.n1.n2.n3.n4.RegC489;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class RegC400 {
+public class RegC400 implements Serializable {
+	private static final long serialVersionUID = 228334774517452721L;
 
-    @Getter @Inclui
-private final String reg = "C400";
+	@Getter @Inclui
+	private final String reg = "C400";
 
     @Getter @Setter @Inclui
     private String codMod;

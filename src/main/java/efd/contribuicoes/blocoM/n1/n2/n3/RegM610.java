@@ -12,12 +12,15 @@ import efd.contribuicoes.blocoM.n1.n2.n3.n4.RegM630;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.List;
 
-public class RegM610 {
+public class RegM610 implements Serializable {
+	private static final long serialVersionUID = -2063417808920071942L;
 
-    private Grupo grupo;
+	@SuppressWarnings("unused")
+	private Grupo grupo;
 
     @Getter @Inclui @G1 @G2
     private final String reg = "M610";

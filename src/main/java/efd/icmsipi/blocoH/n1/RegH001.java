@@ -6,12 +6,14 @@ import efd.icmsipi.blocoH.n1.n2.RegH005;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.io.Serializable;
 import java.util.List;
 
 
-public class RegH001 {
+public class RegH001 implements Serializable {
+	private static final long serialVersionUID = 7447776642584254147L;
 
-    @Getter @Inclui
+	@Getter @Inclui
     private final String reg = "H001";
 
     @Getter @Setter @Inclui

@@ -6,12 +6,14 @@ import efd.contribuicoes.blocoF.n1.n2.n3.*;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class RegF010 {
+public class RegF010 implements Serializable {
+	private static final long serialVersionUID = 8838775355613132003L;
 
-    @Getter @Inclui
-private final String reg = "F010";
+	@Getter @Inclui
+	private final String reg = "F010";
 
     @Getter @Setter @Inclui(zerosEsquerda = 14)
     private Long cnpj;

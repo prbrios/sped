@@ -9,12 +9,14 @@ import efd.icmsipi.blocoE.n1.n2.RegE500;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.io.Serializable;
 import java.util.List;
 
 
-public class RegE001 {
+public class RegE001 implements Serializable {
+	private static final long serialVersionUID = -8388569629222877436L;
 
-    @Getter @Inclui
+	@Getter @Inclui
     private final String reg = "E001";
 
     @Getter @Setter @Inclui

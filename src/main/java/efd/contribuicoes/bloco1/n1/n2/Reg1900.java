@@ -4,12 +4,14 @@ import efd.anotacoes.Inclui;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 
-public class Reg1900 {
+public class Reg1900 implements Serializable {
+	private static final long serialVersionUID = 5245162614486968297L;
 
-    @Getter @Inclui
-private final String reg = "1900";
+	@Getter @Inclui
+	private final String reg = "1900";
 
     @Getter @Setter @Inclui(zerosEsquerda = 14)
     private Long cnpj;

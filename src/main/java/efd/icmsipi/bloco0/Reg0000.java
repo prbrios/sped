@@ -26,12 +26,14 @@ import efd.icmsipi.blocoK.n1.RegK990;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
 
-public class Reg0000 {
+public class Reg0000 implements Serializable {
+	private static final long serialVersionUID = -6155523942201230995L;
 
-    /**
+	/**
      * 01 REG
      * Texto fixo contendo "0000"
      */

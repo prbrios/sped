@@ -4,12 +4,14 @@ import efd.anotacoes.Inclui;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
 
-public class Reg0175 {
+public class Reg0175 implements Serializable {
+	private static final long serialVersionUID = 1850257692408479694L;
 
-    @Getter @Inclui
+	@Getter @Inclui
     private final String reg = "0175";
 
     @Getter @Setter @Inclui

@@ -7,14 +7,16 @@ import efd.icmsipi.blocoG.n1.n2.n3.n4.RegG130;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
 
 
-public class RegG125 {
+public class RegG125 implements Serializable {
+	private static final long serialVersionUID = 3336817459219171142L;
 
-    @Getter @Inclui
+	@Getter @Inclui
     private final String reg = "G125";
 
     @Getter @Setter @Inclui

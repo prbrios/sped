@@ -6,14 +6,16 @@ import efd.contribuicoes.bloco1.n1.n2.n3.Reg1101;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
 
-public class Reg1100 {
+public class Reg1100 implements Serializable {
+	private static final long serialVersionUID = 3384086159451986555L;
 
-    @Getter @Inclui
-private final String reg = "1100";
+	@Getter @Inclui
+	private final String reg = "1100";
 
     @Getter @Setter @Inclui(formatoData = "MMyyyy")
     private LocalDate perApuCred;

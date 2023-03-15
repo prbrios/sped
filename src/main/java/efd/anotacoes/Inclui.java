@@ -11,6 +11,7 @@ public @interface Inclui {
     String formatoHora() default "hhmmss";
     int casasDecimais() default 2;
     int zerosEsquerda() default 0;
-    Class classe() default String.class;
+    @SuppressWarnings("rawtypes")
+	Class classe() default String.class;
 
 }

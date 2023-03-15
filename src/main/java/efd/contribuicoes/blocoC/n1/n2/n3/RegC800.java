@@ -8,14 +8,16 @@ import efd.contribuicoes.blocoC.n1.n2.n3.n4.RegC830;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
 
-public class RegC800 {
+public class RegC800 implements Serializable {
+	private static final long serialVersionUID = 4126197879661618233L;
 
-    @Getter @Inclui
-private final String reg = "C800";
+	@Getter @Inclui
+	private final String reg = "C800";
 
     @Getter @Setter @Inclui
     private String codMod;

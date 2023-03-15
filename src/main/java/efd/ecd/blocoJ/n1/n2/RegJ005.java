@@ -1,5 +1,6 @@
 package efd.ecd.blocoJ.n1.n2;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.List;
 
@@ -13,9 +14,10 @@ import efd.ecd.blocoJ.n1.n2.n3.RegJ801;
 import lombok.Getter;
 import lombok.Setter;
 
-public class RegJ005 {
-    
-    @Getter @Inclui
+public class RegJ005 implements Serializable {
+	private static final long serialVersionUID = 6517463535046071546L;
+
+	@Getter @Inclui
     private final String reg = "J005";
 
     @Getter @Setter @Inclui

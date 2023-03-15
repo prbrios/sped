@@ -7,13 +7,15 @@ import efd.contribuicoes.blocoM.n1.n2.n3.RegM510;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.List;
 
-public class RegM500 {
+public class RegM500 implements Serializable {
+	private static final long serialVersionUID = -8462661106098890609L;
 
-    @Getter @Inclui
-private final String reg = "M500";
+	@Getter @Inclui
+	private final String reg = "M500";
 
     @Getter @Setter @Inclui
     private String codCred;

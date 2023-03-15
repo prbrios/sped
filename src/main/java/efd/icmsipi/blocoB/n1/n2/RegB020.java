@@ -6,14 +6,16 @@ import efd.icmsipi.blocoB.n1.n2.n3.RegB025;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
 
 
-public class RegB020 {
+public class RegB020 implements Serializable {
+	private static final long serialVersionUID = -3633119462458690377L;
 
-    @Getter @Inclui
+	@Getter @Inclui
     private final String reg = "B020";
 
     @Getter @Setter @Inclui

@@ -7,14 +7,16 @@ import efd.icmsipi.blocoC.n1.n2.n3.RegC390;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
 
 
-public class RegC350 {
+public class RegC350 implements Serializable {
+	private static final long serialVersionUID = 569231195917346984L;
 
-    @Getter @Inclui
+	@Getter @Inclui
     private final String reg = "C350";
 
     @Getter @Setter @Inclui

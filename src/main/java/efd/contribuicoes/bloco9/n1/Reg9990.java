@@ -1,13 +1,16 @@
 package efd.contribuicoes.bloco9.n1;
 
+import java.io.Serializable;
+
 import efd.anotacoes.Inclui;
 import lombok.Getter;
 import lombok.Setter;
 
-public class Reg9990 {
+public class Reg9990 implements Serializable {
+	private static final long serialVersionUID = -4292130050846116038L;
 
-    @Getter @Inclui
-private final String reg = "9990";
+	@Getter @Inclui
+	private final String reg = "9990";
     
     @Getter @Setter @Inclui
     private Integer qtdLin9;

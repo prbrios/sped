@@ -7,13 +7,15 @@ import efd.contribuicoes.blocoM.n1.n2.n3.RegM610;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.List;
 
-public class RegM600 {
+public class RegM600 implements Serializable {
+	private static final long serialVersionUID = 5962877550676541715L;
 
-    @Getter @Inclui
-private final String reg = "M600";
+	@Getter @Inclui
+	private final String reg = "M600";
 
     @Getter @Setter @Inclui
     private BigDecimal vlTotContNcPer;

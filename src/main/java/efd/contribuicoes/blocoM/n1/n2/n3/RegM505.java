@@ -4,12 +4,14 @@ import efd.anotacoes.Inclui;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 
-public class RegM505 {
+public class RegM505 implements Serializable {
+	private static final long serialVersionUID = -6598292555883185040L;
 
-    @Getter @Inclui
-private final String reg = "M505";
+	@Getter @Inclui
+	private final String reg = "M505";
 
     @Getter @Setter @Inclui
     private String natBcCred;

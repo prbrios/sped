@@ -4,13 +4,15 @@ import efd.anotacoes.Inclui;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
 
-public class RegK280 {
+public class RegK280 implements Serializable {
+	private static final long serialVersionUID = 8574191290874040846L;
 
-    @Getter @Inclui
+	@Getter @Inclui
     private final String reg = "K280";
 
     @Getter @Setter @Inclui

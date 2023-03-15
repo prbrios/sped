@@ -6,13 +6,15 @@ import efd.contribuicoes.blocoM.n1.n2.*;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.io.Serializable;
 import java.util.List;
 
 
-public class RegM001 {
+public class RegM001 implements Serializable {
+	private static final long serialVersionUID = -7536116551928757839L;
 
-    @Getter @Inclui
-private final String reg = "M001";
+	@Getter @Inclui
+	private final String reg = "M001";
 
     @Getter @Setter @Inclui
     private String indMov;

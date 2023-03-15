@@ -1,5 +1,6 @@
 package efd.ecd.blocoK.n1.n2.n3;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
@@ -10,9 +11,10 @@ import efd.ecd.blocoK.n1.n2.n3.n4.RegK110;
 import lombok.Getter;
 import lombok.Setter;
 
-public class RegK100 {
-    
-    @Getter @Inclui
+public class RegK100 implements Serializable {
+	private static final long serialVersionUID = -783723575203530442L;
+
+	@Getter @Inclui
     private final String reg = "K100";
 
     @Getter @Setter @Inclui

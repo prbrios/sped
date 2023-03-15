@@ -7,14 +7,16 @@ import efd.contribuicoes.blocoP.n1.n2.n3.n4.RegP199;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
 
-public class RegP100 {
+public class RegP100 implements Serializable {
+	private static final long serialVersionUID = 1922350901014792331L;
 
-    @Getter @Inclui
-private final String reg = "P100";
+	@Getter @Inclui
+	private final String reg = "P100";
 
     @Getter @Setter @Inclui
     private LocalDate dtIni;

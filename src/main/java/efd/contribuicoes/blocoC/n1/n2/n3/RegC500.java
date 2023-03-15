@@ -1,5 +1,6 @@
 package efd.contribuicoes.blocoC.n1.n2.n3;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
@@ -15,7 +16,8 @@ import efd.contribuicoes.blocoC.n1.n2.n3.n4.RegC509;
 import lombok.Getter;
 import lombok.Setter;
 
-public class RegC500 {
+public class RegC500 implements Serializable {
+	private static final long serialVersionUID = -6283982160366421192L;
 
 	@SuppressWarnings("unused")
 	private Grupo grupo;

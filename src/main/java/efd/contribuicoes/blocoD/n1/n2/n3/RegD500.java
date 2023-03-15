@@ -8,14 +8,16 @@ import efd.contribuicoes.blocoD.n1.n2.n3.n4.RegD509;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
 
-public class RegD500 {
+public class RegD500 implements Serializable {
+	private static final long serialVersionUID = 614576220901572628L;
 
-    @Getter @Inclui
-private final String reg = "D500";
+	@Getter @Inclui
+	private final String reg = "D500";
 
     @Getter @Setter @Inclui
     private String indOper;

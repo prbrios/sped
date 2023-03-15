@@ -7,13 +7,15 @@ import efd.icmsipi.blocoH.n1.n2.n3.n4.RegH030;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.List;
 
 
-public class RegH010 {
+public class RegH010 implements Serializable {
+	private static final long serialVersionUID = -165643234053049370L;
 
-    @Getter @Inclui
+	@Getter @Inclui
     private final String reg = "H010";
 
     @Getter @Setter @Inclui

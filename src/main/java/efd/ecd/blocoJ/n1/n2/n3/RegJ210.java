@@ -1,5 +1,6 @@
 package efd.ecd.blocoJ.n1.n2.n3;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.List;
 
@@ -9,9 +10,10 @@ import efd.ecd.blocoJ.n1.n2.n3.n4.RegJ215;
 import lombok.Getter;
 import lombok.Setter;
 
-public class RegJ210 {
+public class RegJ210 implements Serializable {
+	private static final long serialVersionUID = -5267912330737837998L;
 
-    @Getter @Inclui
+	@Getter @Inclui
     private final String reg = "J210";
 
     @Getter @Setter @Inclui

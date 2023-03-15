@@ -1,14 +1,17 @@
 package efd.icmsipi.blocoC.n1.n2.n3.n4;
 
+import java.io.Serializable;
+
 import efd.anotacoes.Inclui;
 import lombok.Getter;
 import lombok.Setter;
 
 @Setter
 @Getter
-public class RegC115 {
+public class RegC115 implements Serializable {
+	private static final long serialVersionUID = -2210792766552499730L;
 
-    @Getter @Inclui
+	@Getter @Inclui
     private final String reg = "C115";
 
     @Getter @Setter @Inclui

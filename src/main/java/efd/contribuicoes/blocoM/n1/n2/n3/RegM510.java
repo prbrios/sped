@@ -6,14 +6,16 @@ import efd.contribuicoes.blocoM.n1.n2.n3.n4.RegM515;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
 
-public class RegM510 {
+public class RegM510 implements Serializable {
+	private static final long serialVersionUID = -4302033040232364789L;
 
-    @Getter @Inclui
-private final String reg = "M510";
+	@Getter @Inclui
+	private final String reg = "M510";
 
     @Getter @Setter @Inclui
     private String indAj;

@@ -4,12 +4,14 @@ import efd.anotacoes.Inclui;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 
-public class RegM410 {
+public class RegM410 implements Serializable {
+	private static final long serialVersionUID = -2106051877125213661L;
 
-    @Getter @Inclui
-private final String reg = "M410";
+	@Getter @Inclui
+	private final String reg = "M410";
 
     @Getter @Setter @Inclui
     private String natRec;

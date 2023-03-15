@@ -1,12 +1,14 @@
 package efd.ecd.blocoI.n1.n2.n3.n4.n5;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 
 import efd.anotacoes.Inclui;
 import lombok.Getter;
 import lombok.Setter;
 
-public class RegI157 {
+public class RegI157 implements Serializable {
+	private static final long serialVersionUID = 7056029078592600270L;
 
 	@Getter @Inclui
 	private final String reg = "I157";
