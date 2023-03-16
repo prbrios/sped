@@ -126,7 +126,7 @@ public class RegC500 implements Serializable {
     private String serDocRef;
     
     @Getter @Setter @Inclui
-    private Integer numDocRef;
+    private Long numDocRef;
     
     @Getter @Setter @Inclui(zerosEsquerda = 6)
     private Integer mesDocRef;
@@ -219,7 +219,7 @@ public class RegC500 implements Serializable {
 			BigDecimal vlBcIcms, BigDecimal vlIcms, BigDecimal vlBcIcmsSt, BigDecimal vlIcmsSt, String codInf,
 			BigDecimal vlPis, BigDecimal vlCofins, Integer tpLigacao, String codGrupoTensao, String chvDocE,
 			Integer finDocE, String chvDocERef, Integer indDest, Integer codMunDest, String codCta,
-			Integer codModDocRef, String hashDocRef, String serDocRef, Integer numDocRef, Integer mesDocRef,
+			Integer codModDocRef, String hashDocRef, String serDocRef, Long numDocRef, Integer mesDocRef,
 			BigDecimal enerInjet, BigDecimal outrasDed) {
 		super();
 		this.indOper = indOper;

@@ -35,7 +35,7 @@ public class RegD400 implements Serializable {
     private Integer sub;
 
     @Getter @Setter @Inclui
-    private Integer numDoc;
+    private Long numDoc;
 
     @Getter @Setter @Inclui
     private LocalDate dtDoc;
@@ -70,7 +70,7 @@ public class RegD400 implements Serializable {
     @Getter @Setter @Filho
     private List<RegD420> regD420;
 
-    public RegD400(String codPart, String codMod, Integer codSit, String ser, Integer sub, Integer numDoc, LocalDate dtDoc, BigDecimal vlDoc, BigDecimal vlDesc, BigDecimal vlServ, BigDecimal vlBcIcms, BigDecimal vlIcms, BigDecimal vlPis, BigDecimal vlCofins, String codCta) {
+    public RegD400(String codPart, String codMod, Integer codSit, String ser, Integer sub, Long numDoc, LocalDate dtDoc, BigDecimal vlDoc, BigDecimal vlDesc, BigDecimal vlServ, BigDecimal vlBcIcms, BigDecimal vlIcms, BigDecimal vlPis, BigDecimal vlCofins, String codCta) {
         this.codPart = codPart;
         this.codMod = codMod;
         this.codSit = codSit;

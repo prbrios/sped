@@ -25,7 +25,7 @@ public class Reg1110 implements Serializable {
     private String ser;
 
     @Getter @Setter @Inclui
-    private Integer numDoc;
+    private Long numDoc;
 
     @Getter @Setter @Inclui
     private LocalDate dtDoc;
@@ -42,7 +42,7 @@ public class Reg1110 implements Serializable {
     @Getter @Setter @Inclui
     private String unid;
 
-    public Reg1110(String codPart, String codMod, String ser, Integer numDoc, LocalDate dtDoc, String chvNfe, Integer nrMemo, BigDecimal qtd, String unid) {
+    public Reg1110(String codPart, String codMod, String ser, Long numDoc, LocalDate dtDoc, String chvNfe, Integer nrMemo, BigDecimal qtd, String unid) {
         this.codPart = codPart;
         this.codMod = codMod;
         this.ser = ser;

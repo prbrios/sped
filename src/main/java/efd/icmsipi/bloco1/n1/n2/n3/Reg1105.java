@@ -24,7 +24,7 @@ public class Reg1105 implements Serializable {
     private String serie;
 
     @Getter @Setter @Inclui
-    private Integer numDoc;
+    private Long numDoc;
 
     @Getter @Setter @Inclui
     private String chvNfe;
@@ -38,7 +38,7 @@ public class Reg1105 implements Serializable {
     @Getter @Setter @Filho
     private List<Reg1110> reg1110;
 
-    public Reg1105(String codMod, String serie, Integer numDoc, String chvNfe, LocalDate dtDoc, String codItem) {
+    public Reg1105(String codMod, String serie, Long numDoc, String chvNfe, LocalDate dtDoc, String codItem) {
         this.codMod = codMod;
         this.serie = serie;
         this.numDoc = numDoc;

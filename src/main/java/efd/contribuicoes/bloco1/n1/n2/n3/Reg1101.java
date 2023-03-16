@@ -32,7 +32,7 @@ public class Reg1101 implements Serializable {
     private String subSer;
 
     @Getter @Setter @Inclui
-    private Integer numDoc;
+    private Long numDoc;
 
     @Getter @Setter @Inclui
     private LocalDate dtOper;
@@ -82,7 +82,7 @@ public class Reg1101 implements Serializable {
     @Getter @Setter @Filho
     private Reg1102 reg1102;
 
-    public Reg1101(String codPart, String codItem, String codMod, String ser, String subSer, Integer numDoc, LocalDate dtOper, String chvNfe, BigDecimal vlOper, Integer cfop, String natBcCred, String indOrigCred, Integer cstPis, BigDecimal vlBcPis, BigDecimal aliqPis, BigDecimal vlPis, String codCta, String codCcus, String descCompl, LocalDate perEscrit, Long cnpj) {
+    public Reg1101(String codPart, String codItem, String codMod, String ser, String subSer, Long numDoc, LocalDate dtOper, String chvNfe, BigDecimal vlOper, Integer cfop, String natBcCred, String indOrigCred, Integer cstPis, BigDecimal vlBcPis, BigDecimal aliqPis, BigDecimal vlPis, String codCta, String codCcus, String descCompl, LocalDate perEscrit, Long cnpj) {
         this.codPart = codPart;
         this.codItem = codItem;
         this.codMod = codMod;

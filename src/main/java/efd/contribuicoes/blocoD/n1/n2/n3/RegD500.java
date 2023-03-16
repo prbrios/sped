@@ -41,7 +41,7 @@ public class RegD500 implements Serializable {
     private Integer sub;
 
     @Getter @Setter @Inclui
-    private Integer numDoc;
+    private Long numDoc;
 
     @Getter @Setter @Inclui
     private LocalDate dtDoc;
@@ -91,7 +91,7 @@ public class RegD500 implements Serializable {
     @Getter @Setter @Filho
     private List<RegD509> regD509;
 
-    public RegD500(String indOper, String indEmit, String codPart, String codMod, Integer codSit, String ser, Integer sub, Integer numDoc, LocalDate dtDoc, LocalDate dtAP, BigDecimal vlDoc, BigDecimal vlDesc, BigDecimal vlServ, BigDecimal vlServNt, BigDecimal vlTerc, BigDecimal vlDA, BigDecimal vlBcIcms, BigDecimal vlIcms, String codInf, BigDecimal vlPis, BigDecimal vlCofins) {
+    public RegD500(String indOper, String indEmit, String codPart, String codMod, Integer codSit, String ser, Integer sub, Long numDoc, LocalDate dtDoc, LocalDate dtAP, BigDecimal vlDoc, BigDecimal vlDesc, BigDecimal vlServ, BigDecimal vlServNt, BigDecimal vlTerc, BigDecimal vlDA, BigDecimal vlBcIcms, BigDecimal vlIcms, String codInf, BigDecimal vlPis, BigDecimal vlCofins) {
         this.indOper = indOper;
         this.indEmit = indEmit;
         this.codPart = codPart;

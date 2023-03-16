@@ -26,7 +26,7 @@ public class RegC350 implements Serializable {
     private String subSer;
 
     @Getter @Setter @Inclui
-    private Integer numDoc;
+    private Long numDoc;
 
     @Getter @Setter @Inclui
     private LocalDate dtDoc;
@@ -58,7 +58,7 @@ public class RegC350 implements Serializable {
     @Getter @Setter @Filho
     private List<RegC390> regC390;
 
-    public RegC350(String ser, String subSer, Integer numDoc, LocalDate dtDoc, String cnpjCpf, BigDecimal vlMerc, BigDecimal vlDoc, BigDecimal vlDesc, BigDecimal vlPis, BigDecimal vlCofins, String codCta) {
+    public RegC350(String ser, String subSer, Long numDoc, LocalDate dtDoc, String cnpjCpf, BigDecimal vlMerc, BigDecimal vlDoc, BigDecimal vlDesc, BigDecimal vlPis, BigDecimal vlCofins, String codCta) {
         this.ser = ser;
         this.subSer = subSer;
         this.numDoc = numDoc;

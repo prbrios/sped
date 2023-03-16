@@ -30,7 +30,7 @@ public class RegG130 implements Serializable {
     private String serie;
 
     @Getter @Setter @Inclui
-    private Integer numDoc;
+    private Long numDoc;
 
     @Getter @Setter @Inclui
     private String chvNfeCte;
@@ -44,7 +44,7 @@ public class RegG130 implements Serializable {
     @Getter @Setter @Filho
     private List<RegG140> regG140;
 
-    public RegG130(String indEmit, String codPart, String codMod, String serie, Integer numDoc, String chvNfeCte, LocalDate dtDoc) {
+    public RegG130(String indEmit, String codPart, String codMod, String serie, Long numDoc, String chvNfeCte, LocalDate dtDoc) {
         this.indEmit = indEmit;
         this.codPart = codPart;
         this.codMod = codMod;

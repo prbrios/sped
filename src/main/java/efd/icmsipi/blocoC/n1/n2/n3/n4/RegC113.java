@@ -33,7 +33,7 @@ public class RegC113 implements Serializable {
     private Integer sub;
 
     @Getter @Setter @Inclui
-    private Integer numDoc;
+    private Long numDoc;
 
     @Getter @Setter @Inclui
     private LocalDate dtDoc;
@@ -41,7 +41,7 @@ public class RegC113 implements Serializable {
     @Getter @Setter @Inclui
     private String chvDoce;
 
-    public RegC113(String indOper, String indEmit, String codPart, String codMod, String ser, Integer sub, Integer numDoc, LocalDate dtDoc, String chvDoce) {
+    public RegC113(String indOper, String indEmit, String codPart, String codMod, String ser, Integer sub, Long numDoc, LocalDate dtDoc, String chvDoce) {
         this.indOper = indOper;
         this.indEmit = indEmit;
         this.codPart = codPart;

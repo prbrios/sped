@@ -28,10 +28,10 @@ public class RegD410 implements Serializable {
     private Integer sub;
 
     @Getter @Setter @Inclui
-    private Integer numDocIni;
+    private Long numDocIni;
 
     @Getter @Setter @Inclui
-    private Integer numDocFin;
+    private Long numDocFin;
 
     @Getter @Setter @Inclui
     private LocalDate dtDoc;
@@ -63,7 +63,7 @@ public class RegD410 implements Serializable {
     @Getter @Setter @Filho
     private List<RegD411> regD411;
 
-    public RegD410(String codMod, String ser, Integer sub, Integer numDocIni, Integer numDocFin, LocalDate dtDoc, Integer cstIcms, Integer cfop, BigDecimal aliqIcms, BigDecimal vlOpr, BigDecimal vlDesc, BigDecimal vlServ, BigDecimal vlBcIcms, BigDecimal vlIcms) {
+    public RegD410(String codMod, String ser, Integer sub, Long numDocIni, Long numDocFin, LocalDate dtDoc, Integer cstIcms, Integer cfop, BigDecimal aliqIcms, BigDecimal vlOpr, BigDecimal vlDesc, BigDecimal vlServ, BigDecimal vlBcIcms, BigDecimal vlIcms) {
         this.codMod = codMod;
         this.ser = ser;
         this.sub = sub;

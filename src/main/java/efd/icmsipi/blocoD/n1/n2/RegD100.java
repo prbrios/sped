@@ -40,7 +40,7 @@ public class RegD100 implements Serializable {
     private String sub;
 
     @Getter @Setter @Inclui
-    private Integer numDoc;
+    private Long numDoc;
 
     @Getter @Setter @Inclui
     private String chvCte;
@@ -120,7 +120,7 @@ public class RegD100 implements Serializable {
     @Getter @Setter @Filho
     private List<RegD195> regD195;
 
-    public RegD100(String indOper, String indEmit, String codPart, String codMod, Integer codSit, String ser, String sub, Integer numDoc, String chvCte, LocalDate dtDoc, LocalDate dtAp, Integer tpCte, String chvCteRef, BigDecimal vlDoc, BigDecimal vlDesc, String indFrt, BigDecimal vlServ, BigDecimal vlBcIcms, BigDecimal vlIcms, BigDecimal vlNt, String codInf, String codCta, Integer codMunOrig, Integer codMunDest) {
+    public RegD100(String indOper, String indEmit, String codPart, String codMod, Integer codSit, String ser, String sub, Long numDoc, String chvCte, LocalDate dtDoc, LocalDate dtAp, Integer tpCte, String chvCteRef, BigDecimal vlDoc, BigDecimal vlDesc, String indFrt, BigDecimal vlServ, BigDecimal vlBcIcms, BigDecimal vlIcms, BigDecimal vlNt, String codInf, String codCta, Integer codMunOrig, Integer codMunDest) {
         this.indOper = indOper;
         this.indEmit = indEmit;
         this.codPart = codPart;

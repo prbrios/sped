@@ -37,7 +37,7 @@ public class RegB020 implements Serializable {
     private String ser;
 
     @Getter @Setter @Inclui
-    private Integer numDoc;
+    private Long numDoc;
 
     @Getter @Setter @Inclui
     private String chvNfe;
@@ -81,7 +81,7 @@ public class RegB020 implements Serializable {
     @Getter @Setter @Filho
     private List<RegB025> regB025;
 
-    public RegB020(String indOper, String indEmit, String codPart, String codMod, String codSit, String ser, Integer numDoc, String chvNfe, LocalDate dtDoc, Integer codMunServ, BigDecimal vlCont, BigDecimal vlMatTerc, BigDecimal vlSub, BigDecimal vlInstIss, BigDecimal vlDedBc, BigDecimal vlBcIss, BigDecimal vlBsIssRt, BigDecimal vlIssRt, BigDecimal vlIss, String codInfObs) {
+    public RegB020(String indOper, String indEmit, String codPart, String codMod, String codSit, String ser, Long numDoc, String chvNfe, LocalDate dtDoc, Integer codMunServ, BigDecimal vlCont, BigDecimal vlMatTerc, BigDecimal vlSub, BigDecimal vlInstIss, BigDecimal vlDedBc, BigDecimal vlBcIss, BigDecimal vlBsIssRt, BigDecimal vlIssRt, BigDecimal vlIss, String codInfObs) {
         this.indOper = indOper;
         this.indEmit = indEmit;
         this.codPart = codPart;

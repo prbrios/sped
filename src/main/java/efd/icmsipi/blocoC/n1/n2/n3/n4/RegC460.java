@@ -26,7 +26,7 @@ public class RegC460 implements Serializable {
     private Integer codSit;
 
     @Getter @Setter @Inclui
-    private Integer numDoc;
+    private Long numDoc;
 
     @Getter @Setter @Inclui
     private LocalDate dtDoc;
@@ -52,7 +52,7 @@ public class RegC460 implements Serializable {
     @Getter @Setter @Filho
     private List<RegC470> regC470;
 
-    public RegC460(String codMod, Integer codSit, Integer numDoc, LocalDate dtDoc, BigDecimal vlDoc, BigDecimal vlPis, BigDecimal vlCofins, Long cpfCnpj, String nomAdq) {
+    public RegC460(String codMod, Integer codSit, Long numDoc, LocalDate dtDoc, BigDecimal vlDoc, BigDecimal vlPis, BigDecimal vlCofins, Long cpfCnpj, String nomAdq) {
         this.codMod = codMod;
         this.codSit = codSit;
         this.numDoc = numDoc;

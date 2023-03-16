@@ -28,7 +28,7 @@ public class RegE531 implements Serializable {
     private Integer sub;
 
     @Getter @Setter @Inclui
-    private Integer numDoc;
+    private Long numDoc;
 
     @Getter @Setter @Inclui
     private LocalDate dtDoc;
@@ -42,7 +42,7 @@ public class RegE531 implements Serializable {
     @Getter @Setter @Inclui
     private String chvNfe;
 
-    public RegE531(String codPart, String codMod, String ser, Integer sub, Integer numDoc, LocalDate dtDoc, String codItem, BigDecimal vlAjitem, String chvNfe) {
+    public RegE531(String codPart, String codMod, String ser, Integer sub, Long numDoc, LocalDate dtDoc, String codItem, BigDecimal vlAjitem, String chvNfe) {
         this.codPart = codPart;
         this.codMod = codMod;
         this.ser = ser;

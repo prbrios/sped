@@ -22,7 +22,7 @@ public class RegD162 implements Serializable {
     private String ser;
 
     @Getter @Setter @Inclui
-    private Integer numDoc;
+    private Long numDoc;
 
     @Getter @Setter @Inclui
     private LocalDate dtDoc;
@@ -42,7 +42,7 @@ public class RegD162 implements Serializable {
     @Getter @Setter @Inclui
     private BigDecimal pesoLiq;
 
-    public RegD162(String codMod, String ser, Integer numDoc, LocalDate dtDoc, BigDecimal vlDoc, BigDecimal vlMerc, Integer qtdVol, BigDecimal pesoBrt, BigDecimal pesoLiq) {
+    public RegD162(String codMod, String ser, Long numDoc, LocalDate dtDoc, BigDecimal vlDoc, BigDecimal vlMerc, Integer qtdVol, BigDecimal pesoBrt, BigDecimal pesoLiq) {
         this.codMod = codMod;
         this.ser = ser;
         this.numDoc = numDoc;

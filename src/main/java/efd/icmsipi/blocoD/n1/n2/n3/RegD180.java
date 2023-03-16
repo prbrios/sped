@@ -55,7 +55,7 @@ public class RegD180 implements Serializable {
     private Integer sub;
 
     @Getter @Setter @Inclui
-    private Integer numDoc;
+    private Long numDoc;
 
     @Getter @Setter @Inclui
     private LocalDate dtDoc;
@@ -63,7 +63,7 @@ public class RegD180 implements Serializable {
     @Getter @Setter @Inclui
     private BigDecimal vlDoc;
 
-    public RegD180(Integer numSeq, String indEmit, Long cnpjCpfEmit, String ufEmit, String ieEmit, Integer codMunOrig, String cnpjCpfTom, String ufTom, String ieTom, Integer codMunDest, String codMod, String ser, Integer sub, Integer numDoc, LocalDate dtDoc, BigDecimal vlDoc) {
+    public RegD180(Integer numSeq, String indEmit, Long cnpjCpfEmit, String ufEmit, String ieEmit, Integer codMunOrig, String cnpjCpfTom, String ufTom, String ieTom, Integer codMunDest, String codMod, String ser, Integer sub, Long numDoc, LocalDate dtDoc, BigDecimal vlDoc) {
         this.numSeq = numSeq;
         this.indEmit = indEmit;
         this.cnpjCpfEmit = cnpjCpfEmit;

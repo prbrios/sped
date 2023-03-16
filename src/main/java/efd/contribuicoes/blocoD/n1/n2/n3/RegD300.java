@@ -27,10 +27,10 @@ public class RegD300 implements Serializable {
     private Integer sub;
 
     @Getter @Setter @Inclui
-    private Integer numDocIni;
+    private Long numDocIni;
 
     @Getter @Setter @Inclui
-    private Integer numDocFin;
+    private Long numDocFin;
 
     @Getter @Setter @Inclui(zerosEsquerda = 4)
     private Integer cfop;
@@ -74,7 +74,7 @@ public class RegD300 implements Serializable {
     @Getter @Setter @Filho
     private List<RegD309> regD309;
 
-    public RegD300(String codMod, String ser, Integer sub, Integer numDocIni, Integer numDocFin, Integer cfop, LocalDate dtRef, BigDecimal vlDoc, BigDecimal vlDesc, Integer cstPis, BigDecimal vlBcPis, BigDecimal aliqPis, BigDecimal vlPis, Integer cstCofins, BigDecimal vlBcCofins, BigDecimal aliqCofins, BigDecimal vlCofins, String codCta) {
+    public RegD300(String codMod, String ser, Integer sub, Long numDocIni, Long numDocFin, Integer cfop, LocalDate dtRef, BigDecimal vlDoc, BigDecimal vlDesc, Integer cstPis, BigDecimal vlBcPis, BigDecimal aliqPis, BigDecimal vlPis, Integer cstCofins, BigDecimal vlBcCofins, BigDecimal aliqCofins, BigDecimal vlCofins, String codCta) {
         this.codMod = codMod;
         this.ser = ser;
         this.sub = sub;

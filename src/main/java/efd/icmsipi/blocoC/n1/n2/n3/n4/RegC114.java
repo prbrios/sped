@@ -24,12 +24,12 @@ public class RegC114 implements Serializable {
     private Integer ecfCx;
 
     @Getter @Setter @Inclui
-    private Integer numDoc;
+    private Long numDoc;
 
     @Getter @Setter @Inclui
     private LocalDate dtDoc;
 
-    public RegC114(String codMod, String ecfFab, Integer ecfCx, Integer numDoc, LocalDate dtDoc) {
+    public RegC114(String codMod, String ecfFab, Integer ecfCx, Long numDoc, LocalDate dtDoc) {
         this.codMod = codMod;
         this.ecfFab = ecfFab;
         this.ecfCx = ecfCx;

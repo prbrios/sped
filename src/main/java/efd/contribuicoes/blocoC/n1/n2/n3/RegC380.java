@@ -28,10 +28,10 @@ public class RegC380 implements Serializable {
     private LocalDate dtDocFin;
 
     @Getter @Setter @Inclui
-    private Integer numDocIni;
+    private Long numDocIni;
 
     @Getter @Setter @Inclui
-    private Integer numDocFin;
+    private Long numDocFin;
 
     @Getter @Setter @Inclui
     private BigDecimal vlDoc;
@@ -45,7 +45,7 @@ public class RegC380 implements Serializable {
     @Getter @Setter @Filho
     private List<RegC385> regC385;
 
-    public RegC380(String codMod, LocalDate dtDocIni, LocalDate dtDocFin, Integer numDocIni, Integer numDocFin, BigDecimal vlDoc, BigDecimal vlDocCanc) {
+    public RegC380(String codMod, LocalDate dtDocIni, LocalDate dtDocFin, Long numDocIni, Long numDocFin, BigDecimal vlDoc, BigDecimal vlDocCanc) {
         this.codMod = codMod;
         this.dtDocIni = dtDocIni;
         this.dtDocFin = dtDocFin;

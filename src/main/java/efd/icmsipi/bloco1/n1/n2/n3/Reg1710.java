@@ -14,12 +14,12 @@ public class Reg1710 implements Serializable {
     private final String reg = "1710";
 
     @Getter @Setter @Inclui
-    private Integer numDocIni;
+    private Long numDocIni;
 
     @Getter @Setter @Inclui
-    private Integer numDocFin;
+    private Long numDocFin;
 
-    public Reg1710(Integer numDocIni, Integer numDocFin) {
+    public Reg1710(Long numDocIni, Long numDocFin) {
         this.numDocIni = numDocIni;
         this.numDocFin = numDocFin;
     }

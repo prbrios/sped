@@ -19,7 +19,7 @@ public class RegC176 implements Serializable {
     private String codModUltE;
 
     @Getter @Setter @Inclui
-    private Integer numDocUltE;
+    private Long numDocUltE;
 
     @Getter @Setter @Inclui
     private String serUltE;
@@ -93,7 +93,7 @@ public class RegC176 implements Serializable {
     @Getter @Setter @Inclui
     private BigDecimal vlUnitResFcpSt;
 
-    public RegC176(String codModUltE, Integer numDocUltE, String serUltE, LocalDate dtUltE, String codPartUltE, BigDecimal quantUltE, BigDecimal vlUnitUltE, BigDecimal vlUnitBcSt, String chaveNfeUltE, Integer numItemUltE, BigDecimal vlUnitBcIcmsUltE, BigDecimal aliqIcmsUltE, BigDecimal vlUnitLimiteBcIcmsUltE, BigDecimal vlUnitIcmsUltE, BigDecimal aliqStUltE, BigDecimal vlUnitRes, Integer codRespRet, Integer codMotRes, String chaveNfeRet, String codParNfeRet, String serNfeRet, Integer numNfeRet, Integer itemNfeRet, String codDa, String numDa, BigDecimal vlUnitResFcpSt) {
+    public RegC176(String codModUltE, Long numDocUltE, String serUltE, LocalDate dtUltE, String codPartUltE, BigDecimal quantUltE, BigDecimal vlUnitUltE, BigDecimal vlUnitBcSt, String chaveNfeUltE, Integer numItemUltE, BigDecimal vlUnitBcIcmsUltE, BigDecimal aliqIcmsUltE, BigDecimal vlUnitLimiteBcIcmsUltE, BigDecimal vlUnitIcmsUltE, BigDecimal aliqStUltE, BigDecimal vlUnitRes, Integer codRespRet, Integer codMotRes, String chaveNfeRet, String codParNfeRet, String serNfeRet, Integer numNfeRet, Integer itemNfeRet, String codDa, String numDa, BigDecimal vlUnitResFcpSt) {
         this.codModUltE = codModUltE;
         this.numDocUltE = numDocUltE;
         this.serUltE = serUltE;

@@ -29,10 +29,10 @@ public class Reg1700 implements Serializable {
     private String sub;
 
     @Getter @Setter @Inclui
-    private Integer numDocIni;
+    private Long numDocIni;
 
     @Getter @Setter @Inclui
-    private Integer numDocFin;
+    private Long numDocFin;
 
     @Getter @Setter @Inclui
     private Integer numAut;
@@ -40,7 +40,7 @@ public class Reg1700 implements Serializable {
     @Getter @Setter @Filho
     private List<Reg1710> reg1710;
 
-    public Reg1700(String codDisp, String codMod, String ser, String sub, Integer numDocIni, Integer numDocFin, Integer numAut) {
+    public Reg1700(String codDisp, String codMod, String ser, String sub, Long numDocIni, Long numDocFin, Integer numAut) {
         this.codDisp = codDisp;
         this.codMod = codMod;
         this.ser = ser;

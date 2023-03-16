@@ -16,8 +16,8 @@ public class Reg0220Test {
         reg.setUnidConv("UND");
         reg.setFatConv(new BigDecimal(153));
 
-        Assert.assertEquals(Util.formata("|0220|UND|153,000000|"), Conversor.converteBloco(reg));
-        Assert.assertEquals(Util.formata("|0220|||"), Conversor.converteBloco(new Reg0220()));
+        Assert.assertEquals(Util.formata("|0220|UND|153,000000||"), Conversor.converteBloco(reg));
+        Assert.assertEquals(Util.formata("|0220||||"), Conversor.converteBloco(new Reg0220()));
     }
 
 }

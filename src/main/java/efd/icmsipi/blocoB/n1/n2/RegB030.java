@@ -22,10 +22,10 @@ public class RegB030 implements Serializable {
     private String ser;
 
     @Getter @Setter @Inclui
-    private Integer numDocIni;
+    private Long numDocIni;
 
     @Getter @Setter @Inclui
-    private Integer numDocFin;
+    private Long numDocFin;
 
     @Getter @Setter @Inclui
     private LocalDate dtDoc;
@@ -48,7 +48,7 @@ public class RegB030 implements Serializable {
     @Getter @Setter @Inclui
     private String codInfObs;
 
-    public RegB030(String codMod, String ser, Integer numDocIni, Integer numDocFin, LocalDate dtDoc, Integer qtdCanc, BigDecimal vlCont, BigDecimal vlIsntIss, BigDecimal vlBcIss, BigDecimal vlIss, String codInfObs) {
+    public RegB030(String codMod, String ser, Long numDocIni, Long numDocFin, LocalDate dtDoc, Integer qtdCanc, BigDecimal vlCont, BigDecimal vlIsntIss, BigDecimal vlBcIss, BigDecimal vlIss, String codInfObs) {
         this.codMod = codMod;
         this.ser = ser;
         this.numDocIni = numDocIni;

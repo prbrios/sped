@@ -14,9 +14,9 @@ public class RegD301 implements Serializable {
     private final String reg = "D301";
 
     @Getter @Setter @Inclui
-    private Integer numDocCan;
+    private Long numDocCan;
 
-    public RegD301(Integer numDocCan) {
+    public RegD301(Long numDocCan) {
         this.numDocCan = numDocCan;
     }
 

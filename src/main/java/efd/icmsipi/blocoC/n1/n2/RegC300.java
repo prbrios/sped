@@ -29,10 +29,10 @@ public class RegC300 implements Serializable {
     private String sub;
 
     @Getter @Setter @Inclui
-    private Integer numDocIni;
+    private Long numDocIni;
 
     @Getter @Setter @Inclui
-    private Integer numDocFin;
+    private Long numDocFin;
 
     @Getter @Setter @Inclui
     private LocalDate dtDoc;
@@ -55,7 +55,7 @@ public class RegC300 implements Serializable {
     @Getter @Setter @Filho
     private List<RegC320> regC320;
 
-    public RegC300(String codMod, String ser, String sub, Integer numDocIni, Integer numDocFin, LocalDate dtDoc, BigDecimal vlDoc, BigDecimal vlPis, BigDecimal vlCofins, String codCta) {
+    public RegC300(String codMod, String ser, String sub, Long numDocIni, Long numDocFin, LocalDate dtDoc, BigDecimal vlDoc, BigDecimal vlPis, BigDecimal vlCofins, String codCta) {
         this.codMod = codMod;
         this.ser = ser;
         this.sub = sub;
