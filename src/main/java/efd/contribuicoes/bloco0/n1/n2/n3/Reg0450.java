@@ -1,13 +1,16 @@
 package efd.contribuicoes.bloco0.n1.n2.n3;
 
+import java.io.Serializable;
+
 import efd.anotacoes.Inclui;
 import lombok.Getter;
 import lombok.Setter;
 
-public class Reg0450 {
+public class Reg0450 implements Serializable {
+	private static final long serialVersionUID = -7164739356061899083L;
 
-    @Getter @Inclui
-private final String reg = "0450";
+	@Getter @Inclui
+	private final String reg = "0450";
 
     @Getter @Setter @Inclui
     private String codInf;

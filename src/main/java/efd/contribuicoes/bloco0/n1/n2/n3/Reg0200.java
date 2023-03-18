@@ -8,13 +8,15 @@ import efd.contribuicoes.bloco0.n1.n2.n3.n4.Reg0208;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.List;
 
-public class Reg0200 {
+public class Reg0200 implements Serializable {
+	private static final long serialVersionUID = -2374394535670570249L;
 
-    @Getter @Inclui
-private final String reg = "0200";
+	@Getter @Inclui
+	private final String reg = "0200";
 
     @Getter @Setter @Inclui
     private String codItem;

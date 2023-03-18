@@ -25,11 +25,13 @@ import efd.contribuicoes.blocoP.n1.RegP990;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class Reg0000 {
+public class Reg0000 implements Serializable {
+	private static final long serialVersionUID = 1752130219378821080L;
 
-    @Getter @Inclui
+	@Getter @Inclui
     private final String reg = "0000";
 
     @Getter @Setter @Inclui(zerosEsquerda = 3)
