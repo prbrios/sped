@@ -8,7 +8,8 @@ import java.util.Map;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import efd.icmsipi.bloco0.n1.Reg0990;
 import efd.icmsipi.bloco1.n1.Reg1990;
@@ -26,7 +27,7 @@ import efd.icmsipi.blocoK.n1.RegK990;
 
 public class Conversor {
 
-    static Logger logger = Logger.getLogger(Conversor.class);
+    static Logger logger = LogManager.getLogger(Conversor.class);
 
     private List<String> classes = new ArrayList<String>();
 

@@ -2,9 +2,8 @@ package efd;
 
 import efd.anotacoes.*;
 import org.apache.commons.lang3.StringUtils;
-import org.apache.log4j.Logger;
-
-
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 import java.lang.reflect.Field;
 import java.math.BigDecimal;
@@ -18,7 +17,7 @@ import java.util.List;
 import java.util.Locale;
 
 public class Parsers {
-	static Logger logger = Logger.getLogger(Parsers.class);
+	static Logger logger = LogManager.getLogger(Parsers.class);
 
     @SuppressWarnings({ "unchecked", "rawtypes", "static-access" })
 	public static String converteBlocoEmString(Object obj, boolean processaFilhos) {
