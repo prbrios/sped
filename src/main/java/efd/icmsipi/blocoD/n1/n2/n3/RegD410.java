@@ -3,64 +3,61 @@ package efd.icmsipi.blocoD.n1.n2.n3;
 import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
 import efd.icmsipi.blocoD.n1.n2.n3.n4.RegD411;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
 
-
 public class RegD410 implements Serializable {
 	private static final long serialVersionUID = -5033752942557659825L;
 
-	@Getter @Inclui
+	@Inclui
     private final String reg = "D410";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codMod;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String ser;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private Integer sub;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private Long numDocIni;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private Long numDocFin;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private LocalDate dtDoc;
 
-    @Getter @Setter @Inclui(zerosEsquerda = 3)
+    @Inclui(zerosEsquerda = 3)
     private Integer cstIcms;
 
-    @Getter @Setter @Inclui(zerosEsquerda = 4)
+    @Inclui(zerosEsquerda = 4)
     private Integer cfop;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal aliqIcms;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlOpr;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlDesc;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlServ;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlBcIcms;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlIcms;
 
-    @Getter @Setter @Filho
+    @Filho
     private List<RegD411> regD411;
 
     public RegD410(String codMod, String ser, Integer sub, Long numDocIni, Long numDocFin, LocalDate dtDoc, Integer cstIcms, Integer cfop, BigDecimal aliqIcms, BigDecimal vlOpr, BigDecimal vlDesc, BigDecimal vlServ, BigDecimal vlBcIcms, BigDecimal vlIcms) {
@@ -81,4 +78,129 @@ public class RegD410 implements Serializable {
     }
 
     public RegD410(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public String getCodMod() {
+        return codMod;
+    }
+
+    public void setCodMod(String codMod) {
+        this.codMod = codMod;
+    }
+
+    public String getSer() {
+        return ser;
+    }
+
+    public void setSer(String ser) {
+        this.ser = ser;
+    }
+
+    public Integer getSub() {
+        return sub;
+    }
+
+    public void setSub(Integer sub) {
+        this.sub = sub;
+    }
+
+    public Long getNumDocIni() {
+        return numDocIni;
+    }
+
+    public void setNumDocIni(Long numDocIni) {
+        this.numDocIni = numDocIni;
+    }
+
+    public Long getNumDocFin() {
+        return numDocFin;
+    }
+
+    public void setNumDocFin(Long numDocFin) {
+        this.numDocFin = numDocFin;
+    }
+
+    public LocalDate getDtDoc() {
+        return dtDoc;
+    }
+
+    public void setDtDoc(LocalDate dtDoc) {
+        this.dtDoc = dtDoc;
+    }
+
+    public Integer getCstIcms() {
+        return cstIcms;
+    }
+
+    public void setCstIcms(Integer cstIcms) {
+        this.cstIcms = cstIcms;
+    }
+
+    public Integer getCfop() {
+        return cfop;
+    }
+
+    public void setCfop(Integer cfop) {
+        this.cfop = cfop;
+    }
+
+    public BigDecimal getAliqIcms() {
+        return aliqIcms;
+    }
+
+    public void setAliqIcms(BigDecimal aliqIcms) {
+        this.aliqIcms = aliqIcms;
+    }
+
+    public BigDecimal getVlOpr() {
+        return vlOpr;
+    }
+
+    public void setVlOpr(BigDecimal vlOpr) {
+        this.vlOpr = vlOpr;
+    }
+
+    public BigDecimal getVlDesc() {
+        return vlDesc;
+    }
+
+    public void setVlDesc(BigDecimal vlDesc) {
+        this.vlDesc = vlDesc;
+    }
+
+    public BigDecimal getVlServ() {
+        return vlServ;
+    }
+
+    public void setVlServ(BigDecimal vlServ) {
+        this.vlServ = vlServ;
+    }
+
+    public BigDecimal getVlBcIcms() {
+        return vlBcIcms;
+    }
+
+    public void setVlBcIcms(BigDecimal vlBcIcms) {
+        this.vlBcIcms = vlBcIcms;
+    }
+
+    public BigDecimal getVlIcms() {
+        return vlIcms;
+    }
+
+    public void setVlIcms(BigDecimal vlIcms) {
+        this.vlIcms = vlIcms;
+    }
+
+    public List<RegD411> getRegD411() {
+        return regD411;
+    }
+
+    public void setRegD411(List<RegD411> regD411) {
+        this.regD411 = regD411;
+    }
+    
 }

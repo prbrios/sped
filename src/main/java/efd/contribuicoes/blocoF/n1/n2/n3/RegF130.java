@@ -3,8 +3,6 @@ package efd.contribuicoes.blocoF.n1.n2.n3;
 import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
 import efd.contribuicoes.blocoF.n1.n2.n3.n4.RegF139;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -14,70 +12,70 @@ import java.util.List;
 public class RegF130 implements Serializable {
 	private static final long serialVersionUID = 4497350747869308775L;
 
-	@Getter @Inclui
+	@Inclui
 	private final String reg = "F130";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String natBcCred;
 
-    @Getter @Setter @Inclui(zerosEsquerda = 2)
+    @Inclui(zerosEsquerda = 2)
     private Integer identBemImob;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String indOrigCred;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private Integer indUtilBemImob;
 
-    @Getter @Setter @Inclui(formatoData = "MMyyyy")
+    @Inclui(formatoData = "MMyyyy")
     private LocalDate mesOperAquis;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlOperAquis;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal parcOperNaoBcCred;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlBcCred;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private Integer indNrParc;
 
-    @Getter @Setter @Inclui(zerosEsquerda = 2)
+    @Inclui(zerosEsquerda = 2)
     private Integer cstPis;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlBcPis;
 
-    @Getter @Setter @Inclui(casasDecimais = 4)
+    @Inclui(casasDecimais = 4)
     private BigDecimal aliqPis;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlPis;
 
-    @Getter @Setter @Inclui(zerosEsquerda = 2)
+    @Inclui(zerosEsquerda = 2)
     private Integer cstCofins;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlBcCofins;
 
-    @Getter @Setter @Inclui(casasDecimais = 4)
+    @Inclui(casasDecimais = 4)
     private BigDecimal aliqCofins;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlCofins;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codCta;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codCcus;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String descBemImob;
 
-    @Getter @Setter @Filho
+    @Filho
     private List<RegF139> regF139;
 
     public RegF130(String natBcCred, Integer identBemImob, String indOrigCred, Integer indUtilBemImob, LocalDate mesOperAquis, BigDecimal vlOperAquis, BigDecimal parcOperNaoBcCred, BigDecimal vlBcCred, Integer indNrParc, Integer cstPis, BigDecimal vlBcPis, BigDecimal aliqPis, BigDecimal vlPis, Integer cstCofins, BigDecimal vlBcCofins, BigDecimal aliqCofins, BigDecimal vlCofins, String codCta, String codCcus, String descBemImob) {
@@ -104,4 +102,177 @@ public class RegF130 implements Serializable {
     }
 
     public RegF130(){ }
+
+    public String getReg() {
+        return reg;
+    }
+
+    public String getNatBcCred() {
+        return natBcCred;
+    }
+
+    public void setNatBcCred(String natBcCred) {
+        this.natBcCred = natBcCred;
+    }
+
+    public Integer getIdentBemImob() {
+        return identBemImob;
+    }
+
+    public void setIdentBemImob(Integer identBemImob) {
+        this.identBemImob = identBemImob;
+    }
+
+    public String getIndOrigCred() {
+        return indOrigCred;
+    }
+
+    public void setIndOrigCred(String indOrigCred) {
+        this.indOrigCred = indOrigCred;
+    }
+
+    public Integer getIndUtilBemImob() {
+        return indUtilBemImob;
+    }
+
+    public void setIndUtilBemImob(Integer indUtilBemImob) {
+        this.indUtilBemImob = indUtilBemImob;
+    }
+
+    public LocalDate getMesOperAquis() {
+        return mesOperAquis;
+    }
+
+    public void setMesOperAquis(LocalDate mesOperAquis) {
+        this.mesOperAquis = mesOperAquis;
+    }
+
+    public BigDecimal getVlOperAquis() {
+        return vlOperAquis;
+    }
+
+    public void setVlOperAquis(BigDecimal vlOperAquis) {
+        this.vlOperAquis = vlOperAquis;
+    }
+
+    public BigDecimal getParcOperNaoBcCred() {
+        return parcOperNaoBcCred;
+    }
+
+    public void setParcOperNaoBcCred(BigDecimal parcOperNaoBcCred) {
+        this.parcOperNaoBcCred = parcOperNaoBcCred;
+    }
+
+    public BigDecimal getVlBcCred() {
+        return vlBcCred;
+    }
+
+    public void setVlBcCred(BigDecimal vlBcCred) {
+        this.vlBcCred = vlBcCred;
+    }
+
+    public Integer getIndNrParc() {
+        return indNrParc;
+    }
+
+    public void setIndNrParc(Integer indNrParc) {
+        this.indNrParc = indNrParc;
+    }
+
+    public Integer getCstPis() {
+        return cstPis;
+    }
+
+    public void setCstPis(Integer cstPis) {
+        this.cstPis = cstPis;
+    }
+
+    public BigDecimal getVlBcPis() {
+        return vlBcPis;
+    }
+
+    public void setVlBcPis(BigDecimal vlBcPis) {
+        this.vlBcPis = vlBcPis;
+    }
+
+    public BigDecimal getAliqPis() {
+        return aliqPis;
+    }
+
+    public void setAliqPis(BigDecimal aliqPis) {
+        this.aliqPis = aliqPis;
+    }
+
+    public BigDecimal getVlPis() {
+        return vlPis;
+    }
+
+    public void setVlPis(BigDecimal vlPis) {
+        this.vlPis = vlPis;
+    }
+
+    public Integer getCstCofins() {
+        return cstCofins;
+    }
+
+    public void setCstCofins(Integer cstCofins) {
+        this.cstCofins = cstCofins;
+    }
+
+    public BigDecimal getVlBcCofins() {
+        return vlBcCofins;
+    }
+
+    public void setVlBcCofins(BigDecimal vlBcCofins) {
+        this.vlBcCofins = vlBcCofins;
+    }
+
+    public BigDecimal getAliqCofins() {
+        return aliqCofins;
+    }
+
+    public void setAliqCofins(BigDecimal aliqCofins) {
+        this.aliqCofins = aliqCofins;
+    }
+
+    public BigDecimal getVlCofins() {
+        return vlCofins;
+    }
+
+    public void setVlCofins(BigDecimal vlCofins) {
+        this.vlCofins = vlCofins;
+    }
+
+    public String getCodCta() {
+        return codCta;
+    }
+
+    public void setCodCta(String codCta) {
+        this.codCta = codCta;
+    }
+
+    public String getCodCcus() {
+        return codCcus;
+    }
+
+    public void setCodCcus(String codCcus) {
+        this.codCcus = codCcus;
+    }
+
+    public String getDescBemImob() {
+        return descBemImob;
+    }
+
+    public void setDescBemImob(String descBemImob) {
+        this.descBemImob = descBemImob;
+    }
+
+    public List<RegF139> getRegF139() {
+        return regF139;
+    }
+
+    public void setRegF139(List<RegF139> regF139) {
+        this.regF139 = regF139;
+    }
+    
 }

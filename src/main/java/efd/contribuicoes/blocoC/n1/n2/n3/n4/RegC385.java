@@ -1,8 +1,6 @@
 package efd.contribuicoes.blocoC.n1.n2.n3.n4;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -10,34 +8,34 @@ import java.math.BigDecimal;
 public class RegC385 implements Serializable {
 	private static final long serialVersionUID = 7429532330166224589L;
 
-	@Getter @Inclui
+	@Inclui
 	private final String reg = "C385";
 
-    @Getter @Setter @Inclui(zerosEsquerda = 2)
+    @Inclui(zerosEsquerda = 2)
     private Integer cstCofins;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codItem;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlItem;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlBcCofins;
 
-    @Getter @Setter @Inclui(casasDecimais = 4)
+    @Inclui(casasDecimais = 4)
     private BigDecimal aliqCofins;
 
-    @Getter @Setter @Inclui(casasDecimais = 3)
+    @Inclui(casasDecimais = 3)
     private BigDecimal quantBcCofins;
 
-    @Getter @Setter @Inclui(casasDecimais = 4)
+    @Inclui(casasDecimais = 4)
     private BigDecimal aliqCofinsQuant;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlCofins;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codCta;
 
     public RegC385(Integer cstCofins, String codItem, BigDecimal vlItem, BigDecimal vlBcCofins, BigDecimal aliqCofins, BigDecimal quantBcCofins, BigDecimal aliqCofinsQuant, BigDecimal vlCofins, String codCta) {
@@ -53,4 +51,81 @@ public class RegC385 implements Serializable {
     }
 
     public RegC385(){ }
+
+    public String getReg() {
+        return reg;
+    }
+
+    public Integer getCstCofins() {
+        return cstCofins;
+    }
+
+    public void setCstCofins(Integer cstCofins) {
+        this.cstCofins = cstCofins;
+    }
+
+    public String getCodItem() {
+        return codItem;
+    }
+
+    public void setCodItem(String codItem) {
+        this.codItem = codItem;
+    }
+
+    public BigDecimal getVlItem() {
+        return vlItem;
+    }
+
+    public void setVlItem(BigDecimal vlItem) {
+        this.vlItem = vlItem;
+    }
+
+    public BigDecimal getVlBcCofins() {
+        return vlBcCofins;
+    }
+
+    public void setVlBcCofins(BigDecimal vlBcCofins) {
+        this.vlBcCofins = vlBcCofins;
+    }
+
+    public BigDecimal getAliqCofins() {
+        return aliqCofins;
+    }
+
+    public void setAliqCofins(BigDecimal aliqCofins) {
+        this.aliqCofins = aliqCofins;
+    }
+
+    public BigDecimal getQuantBcCofins() {
+        return quantBcCofins;
+    }
+
+    public void setQuantBcCofins(BigDecimal quantBcCofins) {
+        this.quantBcCofins = quantBcCofins;
+    }
+
+    public BigDecimal getAliqCofinsQuant() {
+        return aliqCofinsQuant;
+    }
+
+    public void setAliqCofinsQuant(BigDecimal aliqCofinsQuant) {
+        this.aliqCofinsQuant = aliqCofinsQuant;
+    }
+
+    public BigDecimal getVlCofins() {
+        return vlCofins;
+    }
+
+    public void setVlCofins(BigDecimal vlCofins) {
+        this.vlCofins = vlCofins;
+    }
+
+    public String getCodCta() {
+        return codCta;
+    }
+
+    public void setCodCta(String codCta) {
+        this.codCta = codCta;
+    }
+    
 }

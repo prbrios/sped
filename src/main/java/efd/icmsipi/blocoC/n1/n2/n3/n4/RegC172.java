@@ -1,27 +1,23 @@
 package efd.icmsipi.blocoC.n1.n2.n3.n4;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
 
-@Setter
-@Getter
 public class RegC172 implements Serializable {
 	private static final long serialVersionUID = 242777204200672992L;
 
-	@Getter @Inclui
+	@Inclui
     private final String reg = "C172";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlBcIssqn;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal aliqIssqn;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlIssqn;
 
     public RegC172(BigDecimal vlBcIssqn, BigDecimal aliqIssqn, BigDecimal vlIssqn) {
@@ -31,4 +27,33 @@ public class RegC172 implements Serializable {
     }
 
     public RegC172(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public BigDecimal getVlBcIssqn() {
+        return vlBcIssqn;
+    }
+
+    public void setVlBcIssqn(BigDecimal vlBcIssqn) {
+        this.vlBcIssqn = vlBcIssqn;
+    }
+
+    public BigDecimal getAliqIssqn() {
+        return aliqIssqn;
+    }
+
+    public void setAliqIssqn(BigDecimal aliqIssqn) {
+        this.aliqIssqn = aliqIssqn;
+    }
+
+    public BigDecimal getVlIssqn() {
+        return vlIssqn;
+    }
+
+    public void setVlIssqn(BigDecimal vlIssqn) {
+        this.vlIssqn = vlIssqn;
+    }
+    
 }

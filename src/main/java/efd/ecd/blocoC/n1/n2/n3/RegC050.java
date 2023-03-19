@@ -7,37 +7,35 @@ import java.util.List;
 import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
 import efd.ecd.blocoC.n1.n2.n3.n4.RegC051;
-import lombok.Getter;
-import lombok.Setter;
 
 public class RegC050 implements Serializable {
 	private static final long serialVersionUID = -3349345202397418875L;
 
-	@Getter @Inclui
+	@Inclui
 	private final String reg = "C050";
 	
-	@Getter @Setter @Inclui
+	@Inclui
 	private LocalDate dtAlt;
 	
-	@Getter @Setter @Inclui
+	@Inclui
 	private String codNat;
 	
-	@Getter @Setter @Inclui
+	@Inclui
 	private String indCta;
 	
-	@Getter @Setter @Inclui
+	@Inclui
 	private Integer nivel;
 	
-	@Getter @Setter @Inclui
+	@Inclui
 	private String codCta;
 	
-	@Getter @Setter @Inclui
+	@Inclui
 	private String codCtaSup;
 	
-	@Getter @Setter @Inclui
+	@Inclui
 	private String cta;
 	
-	@Getter @Setter @Filho
+	@Filho
 	private List<RegC051> regC051;
 
 	public RegC050(LocalDate dtAlt, String codNat, String indCta, Integer nivel, String codCta, String codCtaSup,
@@ -53,5 +51,74 @@ public class RegC050 implements Serializable {
 	}
 	
 	public RegC050() {/* */}
+
+	public String getReg() {
+		return reg;
+	}
+
+	public LocalDate getDtAlt() {
+		return dtAlt;
+	}
+
+	public void setDtAlt(LocalDate dtAlt) {
+		this.dtAlt = dtAlt;
+	}
+
+	public String getCodNat() {
+		return codNat;
+	}
+
+	public void setCodNat(String codNat) {
+		this.codNat = codNat;
+	}
+
+	public String getIndCta() {
+		return indCta;
+	}
+
+	public void setIndCta(String indCta) {
+		this.indCta = indCta;
+	}
+
+	public Integer getNivel() {
+		return nivel;
+	}
+
+	public void setNivel(Integer nivel) {
+		this.nivel = nivel;
+	}
+
+	public String getCodCta() {
+		return codCta;
+	}
+
+	public void setCodCta(String codCta) {
+		this.codCta = codCta;
+	}
+
+	public String getCodCtaSup() {
+		return codCtaSup;
+	}
+
+	public void setCodCtaSup(String codCtaSup) {
+		this.codCtaSup = codCtaSup;
+	}
+
+	public String getCta() {
+		return cta;
+	}
+
+	public void setCta(String cta) {
+		this.cta = cta;
+	}
+
+	public List<RegC051> getRegC051() {
+		return regC051;
+	}
+
+	public void setRegC051(List<RegC051> regC051) {
+		this.regC051 = regC051;
+	}
+	
 	
 }

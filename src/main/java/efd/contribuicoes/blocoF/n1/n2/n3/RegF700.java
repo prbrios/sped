@@ -1,8 +1,6 @@
 package efd.contribuicoes.blocoF.n1.n2.n3;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -10,28 +8,28 @@ import java.math.BigDecimal;
 public class RegF700 implements Serializable {
 	private static final long serialVersionUID = -8371989897723378027L;
 
-	@Getter @Inclui
+	@Inclui
 	private final String reg = "F700";
 
-    @Getter @Setter @Inclui(zerosEsquerda = 2)
+    @Inclui(zerosEsquerda = 2)
     private Integer indOriDed;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private Integer indNatDed;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlDedPis;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlDedCofins;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlBcOper;
 
-    @Getter @Setter @Inclui(zerosEsquerda = 14)
+    @Inclui(zerosEsquerda = 14)
     private Long cnpj;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String infComp;
 
     public RegF700(Integer indOriDed, Integer indNatDed, BigDecimal vlDedPis, BigDecimal vlDedCofins, BigDecimal vlBcOper, Long cnpj, String infComp) {
@@ -45,4 +43,65 @@ public class RegF700 implements Serializable {
     }
 
     public RegF700(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public Integer getIndOriDed() {
+        return indOriDed;
+    }
+
+    public void setIndOriDed(Integer indOriDed) {
+        this.indOriDed = indOriDed;
+    }
+
+    public Integer getIndNatDed() {
+        return indNatDed;
+    }
+
+    public void setIndNatDed(Integer indNatDed) {
+        this.indNatDed = indNatDed;
+    }
+
+    public BigDecimal getVlDedPis() {
+        return vlDedPis;
+    }
+
+    public void setVlDedPis(BigDecimal vlDedPis) {
+        this.vlDedPis = vlDedPis;
+    }
+
+    public BigDecimal getVlDedCofins() {
+        return vlDedCofins;
+    }
+
+    public void setVlDedCofins(BigDecimal vlDedCofins) {
+        this.vlDedCofins = vlDedCofins;
+    }
+
+    public BigDecimal getVlBcOper() {
+        return vlBcOper;
+    }
+
+    public void setVlBcOper(BigDecimal vlBcOper) {
+        this.vlBcOper = vlBcOper;
+    }
+
+    public Long getCnpj() {
+        return cnpj;
+    }
+
+    public void setCnpj(Long cnpj) {
+        this.cnpj = cnpj;
+    }
+
+    public String getInfComp() {
+        return infComp;
+    }
+
+    public void setInfComp(String infComp) {
+        this.infComp = infComp;
+    }
+    
 }

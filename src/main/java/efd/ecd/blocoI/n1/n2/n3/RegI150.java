@@ -7,22 +7,20 @@ import java.util.List;
 import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
 import efd.ecd.blocoI.n1.n2.n3.n4.RegI155;
-import lombok.Getter;
-import lombok.Setter;
 
 public class RegI150 implements Serializable {
 	private static final long serialVersionUID = 5491709407948730135L;
 
-	@Getter @Inclui
+	@Inclui
 	private final String reg = "I150";
 	
-	@Getter @Setter @Inclui
+	@Inclui
 	private LocalDate dtIni;
 	
-	@Getter @Setter @Inclui
+	@Inclui
 	private LocalDate dtFin;
 	
-	@Getter @Setter @Filho
+	@Filho
 	private List<RegI155> regI155;
 	
 	public RegI150(LocalDate dtIni, LocalDate dtFin) {
@@ -32,5 +30,34 @@ public class RegI150 implements Serializable {
 	}
 	
 	public RegI150() {/* */}
+
+	public String getReg() {
+		return reg;
+	}
+
+	public LocalDate getDtIni() {
+		return dtIni;
+	}
+
+	public void setDtIni(LocalDate dtIni) {
+		this.dtIni = dtIni;
+	}
+
+	public LocalDate getDtFin() {
+		return dtFin;
+	}
+
+	public void setDtFin(LocalDate dtFin) {
+		this.dtFin = dtFin;
+	}
+
+	public List<RegI155> getRegI155() {
+		return regI155;
+	}
+
+	public void setRegI155(List<RegI155> regI155) {
+		this.regI155 = regI155;
+	}
+	
 	
 }

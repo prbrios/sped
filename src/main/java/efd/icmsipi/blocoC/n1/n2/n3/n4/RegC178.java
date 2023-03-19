@@ -1,26 +1,23 @@
 package efd.icmsipi.blocoC.n1.n2.n3.n4;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
 
-
 public class RegC178 implements Serializable {
 	private static final long serialVersionUID = 3661440278605105432L;
 
-	@Getter @Inclui
+	@Inclui
     private final String reg = "C178";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String clEnq;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlUnid;
 
-    @Getter @Setter @Inclui(casasDecimais = 3)
+    @Inclui(casasDecimais = 3)
     private BigDecimal quantPad;
 
     public RegC178(String clEnq, BigDecimal vlUnid, BigDecimal quantPad) {
@@ -30,4 +27,33 @@ public class RegC178 implements Serializable {
     }
 
     public RegC178(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public String getClEnq() {
+        return clEnq;
+    }
+
+    public void setClEnq(String clEnq) {
+        this.clEnq = clEnq;
+    }
+
+    public BigDecimal getVlUnid() {
+        return vlUnid;
+    }
+
+    public void setVlUnid(BigDecimal vlUnid) {
+        this.vlUnid = vlUnid;
+    }
+
+    public BigDecimal getQuantPad() {
+        return quantPad;
+    }
+
+    public void setQuantPad(BigDecimal quantPad) {
+        this.quantPad = quantPad;
+    }
+    
 }

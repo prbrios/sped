@@ -1,8 +1,6 @@
 package efd.contribuicoes.bloco0.n1.n2;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.time.LocalDate;
@@ -10,13 +8,13 @@ import java.time.LocalDate;
 public class Reg0120 implements Serializable {
 	private static final long serialVersionUID = -7501036524565434658L;
 
-	@Getter @Inclui
+	@Inclui
 	private final String reg = "0120";
 
-    @Getter @Setter @Inclui(formatoData = "MMyyyy")
+    @Inclui(formatoData = "MMyyyy")
     private LocalDate mesRefer;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String infComp;
 
     public Reg0120(LocalDate mesRefer, String infComp) {
@@ -25,4 +23,25 @@ public class Reg0120 implements Serializable {
     }
 
     public Reg0120(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public LocalDate getMesRefer() {
+        return mesRefer;
+    }
+
+    public void setMesRefer(LocalDate mesRefer) {
+        this.mesRefer = mesRefer;
+    }
+
+    public String getInfComp() {
+        return infComp;
+    }
+
+    public void setInfComp(String infComp) {
+        this.infComp = infComp;
+    }
+    
 }

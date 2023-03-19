@@ -5,35 +5,32 @@ import java.io.Serializable;
 import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
 import efd.icmsipi.bloco0.n1.n2.n3.Reg0305;
-import lombok.Getter;
-import lombok.Setter;
-
 
 public class Reg0300 implements Serializable {
 	private static final long serialVersionUID = -6247841193227375045L;
 
-	@Getter @Inclui
+	@Inclui
     private final String reg = "0300";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codIndBem;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String identMerc;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String descrItem;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codPrnc;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codCta;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private Integer nrParc;
 
-    @Getter @Setter @Filho
+    @Filho
     private Reg0305 bloco0350;
 
     public Reg0300(String codIndBem, String identMerc, String descrItem, String codPrnc, String codCta, Integer nrParc) {
@@ -47,5 +44,66 @@ public class Reg0300 implements Serializable {
     }
 
     public Reg0300(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public String getCodIndBem() {
+        return codIndBem;
+    }
+
+    public void setCodIndBem(String codIndBem) {
+        this.codIndBem = codIndBem;
+    }
+
+    public String getIdentMerc() {
+        return identMerc;
+    }
+
+    public void setIdentMerc(String identMerc) {
+        this.identMerc = identMerc;
+    }
+
+    public String getDescrItem() {
+        return descrItem;
+    }
+
+    public void setDescrItem(String descrItem) {
+        this.descrItem = descrItem;
+    }
+
+    public String getCodPrnc() {
+        return codPrnc;
+    }
+
+    public void setCodPrnc(String codPrnc) {
+        this.codPrnc = codPrnc;
+    }
+
+    public String getCodCta() {
+        return codCta;
+    }
+
+    public void setCodCta(String codCta) {
+        this.codCta = codCta;
+    }
+
+    public Integer getNrParc() {
+        return nrParc;
+    }
+
+    public void setNrParc(Integer nrParc) {
+        this.nrParc = nrParc;
+    }
+
+    public Reg0305 getBloco0350() {
+        return bloco0350;
+    }
+
+    public void setBloco0350(Reg0305 bloco0350) {
+        this.bloco0350 = bloco0350;
+    }
+    
 
 }

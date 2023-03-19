@@ -3,8 +3,6 @@ package efd.contribuicoes.bloco1.n1.n2;
 import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
 import efd.contribuicoes.bloco1.n1.n2.n3.Reg1501;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -14,61 +12,61 @@ import java.util.List;
 public class Reg1500 implements Serializable {
 	private static final long serialVersionUID = -8614441886815265603L;
 
-	@Getter @Inclui
+	@Inclui
 	private final String reg = "1500";
 
-    @Getter @Setter @Inclui(formatoData = "MMyyyy")
+    @Inclui(formatoData = "MMyyyy")
     private LocalDate perApuCred;
 
-    @Getter @Setter @Inclui(zerosEsquerda = 2)
+    @Inclui(zerosEsquerda = 2)
     private Integer origCred;
 
-    @Getter @Setter @Inclui(zerosEsquerda = 14)
+    @Inclui(zerosEsquerda = 14)
     private Long cnpjSuc;
 
-    @Getter @Setter @Inclui(zerosEsquerda = 3)
+    @Inclui(zerosEsquerda = 3)
     private Integer codCred;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlCredApu;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlCredExtApu;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlTotCredApu;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlCredDescPaAnt;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlCredPerPaAnt;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlCredDcompPaAnt;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal sdCredDispEfd;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlCredDescEfd;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlCredPerEfd;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlCredDcompEfd;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlCredTrans;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlCredOut;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal sldCredFim;
 
-    @Getter @Setter @Filho
+    @Filho
     private List<Reg1501> reg1501;
 
     public Reg1500(LocalDate perApuCred, Integer origCred, Long cnpjSuc, Integer codCred, BigDecimal vlCredApu, BigDecimal vlCredExtApu, BigDecimal vlTotCredApu, BigDecimal vlCredDescPaAnt, BigDecimal vlCredPerPaAnt, BigDecimal vlCredDcompPaAnt, BigDecimal sdCredDispEfd, BigDecimal vlCredDescEfd, BigDecimal vlCredPerEfd, BigDecimal vlCredDcompEfd, BigDecimal vlCredTrans, BigDecimal vlCredOut, BigDecimal sldCredFim) {
@@ -92,4 +90,153 @@ public class Reg1500 implements Serializable {
     }
 
     public Reg1500(){ }
+
+    public String getReg() {
+        return reg;
+    }
+
+    public LocalDate getPerApuCred() {
+        return perApuCred;
+    }
+
+    public void setPerApuCred(LocalDate perApuCred) {
+        this.perApuCred = perApuCred;
+    }
+
+    public Integer getOrigCred() {
+        return origCred;
+    }
+
+    public void setOrigCred(Integer origCred) {
+        this.origCred = origCred;
+    }
+
+    public Long getCnpjSuc() {
+        return cnpjSuc;
+    }
+
+    public void setCnpjSuc(Long cnpjSuc) {
+        this.cnpjSuc = cnpjSuc;
+    }
+
+    public Integer getCodCred() {
+        return codCred;
+    }
+
+    public void setCodCred(Integer codCred) {
+        this.codCred = codCred;
+    }
+
+    public BigDecimal getVlCredApu() {
+        return vlCredApu;
+    }
+
+    public void setVlCredApu(BigDecimal vlCredApu) {
+        this.vlCredApu = vlCredApu;
+    }
+
+    public BigDecimal getVlCredExtApu() {
+        return vlCredExtApu;
+    }
+
+    public void setVlCredExtApu(BigDecimal vlCredExtApu) {
+        this.vlCredExtApu = vlCredExtApu;
+    }
+
+    public BigDecimal getVlTotCredApu() {
+        return vlTotCredApu;
+    }
+
+    public void setVlTotCredApu(BigDecimal vlTotCredApu) {
+        this.vlTotCredApu = vlTotCredApu;
+    }
+
+    public BigDecimal getVlCredDescPaAnt() {
+        return vlCredDescPaAnt;
+    }
+
+    public void setVlCredDescPaAnt(BigDecimal vlCredDescPaAnt) {
+        this.vlCredDescPaAnt = vlCredDescPaAnt;
+    }
+
+    public BigDecimal getVlCredPerPaAnt() {
+        return vlCredPerPaAnt;
+    }
+
+    public void setVlCredPerPaAnt(BigDecimal vlCredPerPaAnt) {
+        this.vlCredPerPaAnt = vlCredPerPaAnt;
+    }
+
+    public BigDecimal getVlCredDcompPaAnt() {
+        return vlCredDcompPaAnt;
+    }
+
+    public void setVlCredDcompPaAnt(BigDecimal vlCredDcompPaAnt) {
+        this.vlCredDcompPaAnt = vlCredDcompPaAnt;
+    }
+
+    public BigDecimal getSdCredDispEfd() {
+        return sdCredDispEfd;
+    }
+
+    public void setSdCredDispEfd(BigDecimal sdCredDispEfd) {
+        this.sdCredDispEfd = sdCredDispEfd;
+    }
+
+    public BigDecimal getVlCredDescEfd() {
+        return vlCredDescEfd;
+    }
+
+    public void setVlCredDescEfd(BigDecimal vlCredDescEfd) {
+        this.vlCredDescEfd = vlCredDescEfd;
+    }
+
+    public BigDecimal getVlCredPerEfd() {
+        return vlCredPerEfd;
+    }
+
+    public void setVlCredPerEfd(BigDecimal vlCredPerEfd) {
+        this.vlCredPerEfd = vlCredPerEfd;
+    }
+
+    public BigDecimal getVlCredDcompEfd() {
+        return vlCredDcompEfd;
+    }
+
+    public void setVlCredDcompEfd(BigDecimal vlCredDcompEfd) {
+        this.vlCredDcompEfd = vlCredDcompEfd;
+    }
+
+    public BigDecimal getVlCredTrans() {
+        return vlCredTrans;
+    }
+
+    public void setVlCredTrans(BigDecimal vlCredTrans) {
+        this.vlCredTrans = vlCredTrans;
+    }
+
+    public BigDecimal getVlCredOut() {
+        return vlCredOut;
+    }
+
+    public void setVlCredOut(BigDecimal vlCredOut) {
+        this.vlCredOut = vlCredOut;
+    }
+
+    public BigDecimal getSldCredFim() {
+        return sldCredFim;
+    }
+
+    public void setSldCredFim(BigDecimal sldCredFim) {
+        this.sldCredFim = sldCredFim;
+    }
+
+    public List<Reg1501> getReg1501() {
+        return reg1501;
+    }
+
+    public void setReg1501(List<Reg1501> reg1501) {
+        this.reg1501 = reg1501;
+    }
+    
 }

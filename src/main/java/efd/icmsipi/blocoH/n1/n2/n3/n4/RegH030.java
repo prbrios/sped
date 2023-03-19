@@ -1,8 +1,6 @@
 package efd.icmsipi.blocoH.n1.n2.n3.n4;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -10,19 +8,19 @@ import java.math.BigDecimal;
 public class RegH030 implements Serializable {
 	private static final long serialVersionUID = -6769700507434948266L;
 
-	@Getter @Inclui
+	@Inclui
 	private final String reg = "H030";
 
-	@Getter @Setter @Inclui(casasDecimais = 6)
+	@Inclui(casasDecimais = 6)
 	private BigDecimal vlIcmsOp;
 
-	@Getter @Setter @Inclui(casasDecimais = 6)
+	@Inclui(casasDecimais = 6)
 	private BigDecimal vlBcIcmsSt;
 
-	@Getter @Setter @Inclui(casasDecimais = 6)
+	@Inclui(casasDecimais = 6)
 	private BigDecimal vlIcmsSt;
 
-	@Getter @Setter @Inclui(casasDecimais = 6)
+	@Inclui(casasDecimais = 6)
 	private BigDecimal vlFcp;
 
 	public RegH030(BigDecimal vlIcmsOp, BigDecimal vlBcIcmsSt, BigDecimal vlIcmsSt, BigDecimal vlFcp) {
@@ -33,5 +31,42 @@ public class RegH030 implements Serializable {
 	}
 
 	public RegH030(){}
+
+	public String getReg() {
+		return reg;
+	}
+
+	public BigDecimal getVlIcmsOp() {
+		return vlIcmsOp;
+	}
+
+	public void setVlIcmsOp(BigDecimal vlIcmsOp) {
+		this.vlIcmsOp = vlIcmsOp;
+	}
+
+	public BigDecimal getVlBcIcmsSt() {
+		return vlBcIcmsSt;
+	}
+
+	public void setVlBcIcmsSt(BigDecimal vlBcIcmsSt) {
+		this.vlBcIcmsSt = vlBcIcmsSt;
+	}
+
+	public BigDecimal getVlIcmsSt() {
+		return vlIcmsSt;
+	}
+
+	public void setVlIcmsSt(BigDecimal vlIcmsSt) {
+		this.vlIcmsSt = vlIcmsSt;
+	}
+
+	public BigDecimal getVlFcp() {
+		return vlFcp;
+	}
+
+	public void setVlFcp(BigDecimal vlFcp) {
+		this.vlFcp = vlFcp;
+	}
+	
 
 }

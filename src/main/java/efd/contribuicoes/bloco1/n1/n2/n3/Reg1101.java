@@ -3,8 +3,6 @@ package efd.contribuicoes.bloco1.n1.n2.n3;
 import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
 import efd.contribuicoes.bloco1.n1.n2.n3.n4.Reg1102;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -13,73 +11,73 @@ import java.time.LocalDate;
 public class Reg1101 implements Serializable {
 	private static final long serialVersionUID = 6324834302859185819L;
 
-	@Getter @Inclui
+	@Inclui
 	private final String reg = "1101";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codPart;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codItem;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codMod;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String ser;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String subSer;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private Long numDoc;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private LocalDate dtOper;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String chvNfe;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlOper;
 
-    @Getter @Setter @Inclui(zerosEsquerda = 4)
+    @Inclui(zerosEsquerda = 4)
     private Integer cfop;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String natBcCred;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String indOrigCred;
 
-    @Getter @Setter @Inclui(zerosEsquerda = 2)
+    @Inclui(zerosEsquerda = 2)
     private Integer cstPis;
 
-    @Getter @Setter @Inclui(casasDecimais = 3)
+    @Inclui(casasDecimais = 3)
     private BigDecimal vlBcPis;
 
-    @Getter @Setter @Inclui(casasDecimais = 4)
+    @Inclui(casasDecimais = 4)
     private BigDecimal aliqPis;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlPis;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codCta;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codCcus;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String descCompl;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private LocalDate perEscrit;
 
-    @Getter @Setter @Inclui(zerosEsquerda = 14)
+    @Inclui(zerosEsquerda = 14)
     private Long cnpj;
 
-    @Getter @Setter @Filho
+    @Filho
     private Reg1102 reg1102;
 
     public Reg1101(String codPart, String codItem, String codMod, String ser, String subSer, Long numDoc, LocalDate dtOper, String chvNfe, BigDecimal vlOper, Integer cfop, String natBcCred, String indOrigCred, Integer cstPis, BigDecimal vlBcPis, BigDecimal aliqPis, BigDecimal vlPis, String codCta, String codCcus, String descCompl, LocalDate perEscrit, Long cnpj) {
@@ -107,4 +105,185 @@ public class Reg1101 implements Serializable {
     }
 
     public Reg1101(){ }
+
+    public String getReg() {
+        return reg;
+    }
+
+    public String getCodPart() {
+        return codPart;
+    }
+
+    public void setCodPart(String codPart) {
+        this.codPart = codPart;
+    }
+
+    public String getCodItem() {
+        return codItem;
+    }
+
+    public void setCodItem(String codItem) {
+        this.codItem = codItem;
+    }
+
+    public String getCodMod() {
+        return codMod;
+    }
+
+    public void setCodMod(String codMod) {
+        this.codMod = codMod;
+    }
+
+    public String getSer() {
+        return ser;
+    }
+
+    public void setSer(String ser) {
+        this.ser = ser;
+    }
+
+    public String getSubSer() {
+        return subSer;
+    }
+
+    public void setSubSer(String subSer) {
+        this.subSer = subSer;
+    }
+
+    public Long getNumDoc() {
+        return numDoc;
+    }
+
+    public void setNumDoc(Long numDoc) {
+        this.numDoc = numDoc;
+    }
+
+    public LocalDate getDtOper() {
+        return dtOper;
+    }
+
+    public void setDtOper(LocalDate dtOper) {
+        this.dtOper = dtOper;
+    }
+
+    public String getChvNfe() {
+        return chvNfe;
+    }
+
+    public void setChvNfe(String chvNfe) {
+        this.chvNfe = chvNfe;
+    }
+
+    public BigDecimal getVlOper() {
+        return vlOper;
+    }
+
+    public void setVlOper(BigDecimal vlOper) {
+        this.vlOper = vlOper;
+    }
+
+    public Integer getCfop() {
+        return cfop;
+    }
+
+    public void setCfop(Integer cfop) {
+        this.cfop = cfop;
+    }
+
+    public String getNatBcCred() {
+        return natBcCred;
+    }
+
+    public void setNatBcCred(String natBcCred) {
+        this.natBcCred = natBcCred;
+    }
+
+    public String getIndOrigCred() {
+        return indOrigCred;
+    }
+
+    public void setIndOrigCred(String indOrigCred) {
+        this.indOrigCred = indOrigCred;
+    }
+
+    public Integer getCstPis() {
+        return cstPis;
+    }
+
+    public void setCstPis(Integer cstPis) {
+        this.cstPis = cstPis;
+    }
+
+    public BigDecimal getVlBcPis() {
+        return vlBcPis;
+    }
+
+    public void setVlBcPis(BigDecimal vlBcPis) {
+        this.vlBcPis = vlBcPis;
+    }
+
+    public BigDecimal getAliqPis() {
+        return aliqPis;
+    }
+
+    public void setAliqPis(BigDecimal aliqPis) {
+        this.aliqPis = aliqPis;
+    }
+
+    public BigDecimal getVlPis() {
+        return vlPis;
+    }
+
+    public void setVlPis(BigDecimal vlPis) {
+        this.vlPis = vlPis;
+    }
+
+    public String getCodCta() {
+        return codCta;
+    }
+
+    public void setCodCta(String codCta) {
+        this.codCta = codCta;
+    }
+
+    public String getCodCcus() {
+        return codCcus;
+    }
+
+    public void setCodCcus(String codCcus) {
+        this.codCcus = codCcus;
+    }
+
+    public String getDescCompl() {
+        return descCompl;
+    }
+
+    public void setDescCompl(String descCompl) {
+        this.descCompl = descCompl;
+    }
+
+    public LocalDate getPerEscrit() {
+        return perEscrit;
+    }
+
+    public void setPerEscrit(LocalDate perEscrit) {
+        this.perEscrit = perEscrit;
+    }
+
+    public Long getCnpj() {
+        return cnpj;
+    }
+
+    public void setCnpj(Long cnpj) {
+        this.cnpj = cnpj;
+    }
+
+    public Reg1102 getReg1102() {
+        return reg1102;
+    }
+
+    public void setReg1102(Reg1102 reg1102) {
+        this.reg1102 = reg1102;
+    }
+    
 }

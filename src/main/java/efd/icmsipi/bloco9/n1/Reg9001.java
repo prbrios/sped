@@ -3,23 +3,20 @@ package efd.icmsipi.bloco9.n1;
 import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
 import efd.icmsipi.bloco9.n1.n2.Reg9900;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.util.List;
 
-
 public class Reg9001 implements Serializable {
 	private static final long serialVersionUID = 358745747048739476L;
 
-	@Getter @Inclui
+	@Inclui
     private final String reg = "9001";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private Integer indMov;
 
-    @Getter @Setter @Filho
+    @Filho
     private List<Reg9900> reg9900;
 
     public Reg9001(Integer indMov) {
@@ -27,4 +24,25 @@ public class Reg9001 implements Serializable {
     }
 
     public Reg9001(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public Integer getIndMov() {
+        return indMov;
+    }
+
+    public void setIndMov(Integer indMov) {
+        this.indMov = indMov;
+    }
+
+    public List<Reg9900> getReg9900() {
+        return reg9900;
+    }
+
+    public void setReg9900(List<Reg9900> reg9900) {
+        this.reg9900 = reg9900;
+    }
+    
 }

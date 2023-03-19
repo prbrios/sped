@@ -3,24 +3,20 @@ package efd.icmsipi.blocoC.n1.n2.n3.n4;
 import java.io.Serializable;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
 
-@Setter
-@Getter
 public class RegC174 implements Serializable {
 	private static final long serialVersionUID = 3001121341933004118L;
 
-	@Getter @Inclui
+	@Inclui
     private final String reg = "C174";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String indArm;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String numArm;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String descrCompl;
 
     public RegC174(String indArm, String numArm, String descrCompl) {
@@ -30,4 +26,33 @@ public class RegC174 implements Serializable {
     }
 
     public RegC174(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public String getIndArm() {
+        return indArm;
+    }
+
+    public void setIndArm(String indArm) {
+        this.indArm = indArm;
+    }
+
+    public String getNumArm() {
+        return numArm;
+    }
+
+    public void setNumArm(String numArm) {
+        this.numArm = numArm;
+    }
+
+    public String getDescrCompl() {
+        return descrCompl;
+    }
+
+    public void setDescrCompl(String descrCompl) {
+        this.descrCompl = descrCompl;
+    }
+    
 }

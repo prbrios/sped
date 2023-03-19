@@ -3,8 +3,6 @@ package efd.contribuicoes.blocoP.n1.n2;
 import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
 import efd.contribuicoes.blocoP.n1.n2.n3.RegP210;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -14,25 +12,25 @@ import java.util.List;
 public class RegP200 implements Serializable {
 	private static final long serialVersionUID = -1479123505846584856L;
 
-	@Getter @Inclui
+	@Inclui
 	private final String reg = "P200";
 
-    @Getter @Setter @Inclui(formatoData = "MMyyyy")
+    @Inclui(formatoData = "MMyyyy")
     private LocalDate perRef;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlTotContApu;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlTotAjAcres;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlTotContDev;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codRec;
 
-    @Getter @Setter @Filho
+    @Filho
     private List<RegP210> regP210;
 
     public RegP200(LocalDate perRef, BigDecimal vlTotContApu, BigDecimal vlTotAjAcres, BigDecimal vlTotContDev, String codRec) {
@@ -44,4 +42,57 @@ public class RegP200 implements Serializable {
     }
 
     public RegP200(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public LocalDate getPerRef() {
+        return perRef;
+    }
+
+    public void setPerRef(LocalDate perRef) {
+        this.perRef = perRef;
+    }
+
+    public BigDecimal getVlTotContApu() {
+        return vlTotContApu;
+    }
+
+    public void setVlTotContApu(BigDecimal vlTotContApu) {
+        this.vlTotContApu = vlTotContApu;
+    }
+
+    public BigDecimal getVlTotAjAcres() {
+        return vlTotAjAcres;
+    }
+
+    public void setVlTotAjAcres(BigDecimal vlTotAjAcres) {
+        this.vlTotAjAcres = vlTotAjAcres;
+    }
+
+    public BigDecimal getVlTotContDev() {
+        return vlTotContDev;
+    }
+
+    public void setVlTotContDev(BigDecimal vlTotContDev) {
+        this.vlTotContDev = vlTotContDev;
+    }
+
+    public String getCodRec() {
+        return codRec;
+    }
+
+    public void setCodRec(String codRec) {
+        this.codRec = codRec;
+    }
+
+    public List<RegP210> getRegP210() {
+        return regP210;
+    }
+
+    public void setRegP210(List<RegP210> regP210) {
+        this.regP210 = regP210;
+    }
+    
 }

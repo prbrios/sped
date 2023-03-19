@@ -4,46 +4,42 @@ import java.io.Serializable;
 import java.time.LocalDate;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
 
 public class RegJ932 implements Serializable {
 	private static final long serialVersionUID = -3687407120725265367L;
 
-	@Getter @Inclui
+	@Inclui
     private final String reg = "J932";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String identNomT;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String identCpfCnpjT;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String identQualifT;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codAssinT;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String indCrcT;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String emailT;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String foneT;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String ufCrcT;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String numSeqCrcT;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private LocalDate dtCrcT;
-
-    public RegJ932() {}
 
     public RegJ932(String identNomT, String identCpfCnpjT, String identQualifT, String codAssinT, String indCrcT,
             String emailT, String foneT, String ufCrcT, String numSeqCrcT, LocalDate dtCrcT) {
@@ -58,5 +54,92 @@ public class RegJ932 implements Serializable {
         this.numSeqCrcT = numSeqCrcT;
         this.dtCrcT = dtCrcT;
     }
+
+    public RegJ932() {}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public String getIdentNomT() {
+        return identNomT;
+    }
+
+    public void setIdentNomT(String identNomT) {
+        this.identNomT = identNomT;
+    }
+
+    public String getIdentCpfCnpjT() {
+        return identCpfCnpjT;
+    }
+
+    public void setIdentCpfCnpjT(String identCpfCnpjT) {
+        this.identCpfCnpjT = identCpfCnpjT;
+    }
+
+    public String getIdentQualifT() {
+        return identQualifT;
+    }
+
+    public void setIdentQualifT(String identQualifT) {
+        this.identQualifT = identQualifT;
+    }
+
+    public String getCodAssinT() {
+        return codAssinT;
+    }
+
+    public void setCodAssinT(String codAssinT) {
+        this.codAssinT = codAssinT;
+    }
+
+    public String getIndCrcT() {
+        return indCrcT;
+    }
+
+    public void setIndCrcT(String indCrcT) {
+        this.indCrcT = indCrcT;
+    }
+
+    public String getEmailT() {
+        return emailT;
+    }
+
+    public void setEmailT(String emailT) {
+        this.emailT = emailT;
+    }
+
+    public String getFoneT() {
+        return foneT;
+    }
+
+    public void setFoneT(String foneT) {
+        this.foneT = foneT;
+    }
+
+    public String getUfCrcT() {
+        return ufCrcT;
+    }
+
+    public void setUfCrcT(String ufCrcT) {
+        this.ufCrcT = ufCrcT;
+    }
+
+    public String getNumSeqCrcT() {
+        return numSeqCrcT;
+    }
+
+    public void setNumSeqCrcT(String numSeqCrcT) {
+        this.numSeqCrcT = numSeqCrcT;
+    }
+
+    public LocalDate getDtCrcT() {
+        return dtCrcT;
+    }
+
+    public void setDtCrcT(LocalDate dtCrcT) {
+        this.dtCrcT = dtCrcT;
+    }
+    
 
 }

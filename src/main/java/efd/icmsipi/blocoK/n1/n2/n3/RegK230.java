@@ -3,37 +3,34 @@ package efd.icmsipi.blocoK.n1.n2.n3;
 import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
 import efd.icmsipi.blocoK.n1.n2.n3.n4.RegK235;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
 
-
 public class RegK230 implements Serializable {
 	private static final long serialVersionUID = 1376141362506156402L;
 
-	@Getter @Inclui
+	@Inclui
     private final String reg = "K230";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private LocalDate dtIniOp;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private LocalDate dtFinOp;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codDocOp;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codItem;
 
-    @Getter @Setter @Inclui(casasDecimais = 6)
+    @Inclui(casasDecimais = 6)
     private BigDecimal qtdEnc;
 
-    @Getter @Setter @Filho
+    @Filho
     private List<RegK235> regK235;
 
     public RegK230(LocalDate dtIniOp, LocalDate dtFinOp, String codDocOp, String codItem, BigDecimal qtdEnc) {
@@ -45,4 +42,57 @@ public class RegK230 implements Serializable {
     }
 
     public RegK230(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public LocalDate getDtIniOp() {
+        return dtIniOp;
+    }
+
+    public void setDtIniOp(LocalDate dtIniOp) {
+        this.dtIniOp = dtIniOp;
+    }
+
+    public LocalDate getDtFinOp() {
+        return dtFinOp;
+    }
+
+    public void setDtFinOp(LocalDate dtFinOp) {
+        this.dtFinOp = dtFinOp;
+    }
+
+    public String getCodDocOp() {
+        return codDocOp;
+    }
+
+    public void setCodDocOp(String codDocOp) {
+        this.codDocOp = codDocOp;
+    }
+
+    public String getCodItem() {
+        return codItem;
+    }
+
+    public void setCodItem(String codItem) {
+        this.codItem = codItem;
+    }
+
+    public BigDecimal getQtdEnc() {
+        return qtdEnc;
+    }
+
+    public void setQtdEnc(BigDecimal qtdEnc) {
+        this.qtdEnc = qtdEnc;
+    }
+
+    public List<RegK235> getRegK235() {
+        return regK235;
+    }
+
+    public void setRegK235(List<RegK235> regK235) {
+        this.regK235 = regK235;
+    }
+    
 }

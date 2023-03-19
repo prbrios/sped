@@ -1,8 +1,6 @@
 package efd.contribuicoes.blocoF.n1.n2.n3;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -10,46 +8,46 @@ import java.math.BigDecimal;
 public class RegF150 implements Serializable {
 	private static final long serialVersionUID = 5285283706934273648L;
 
-	@Getter @Inclui
+	@Inclui
 	private final String reg = "F150";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String natBcCred;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlTotEst;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal estImp;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlBcEst;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlBcMenEst;
 
-    @Getter @Setter @Inclui(zerosEsquerda = 2)
+    @Inclui(zerosEsquerda = 2)
     private Integer cstPis;
 
-    @Getter @Setter @Inclui(casasDecimais = 4)
+    @Inclui(casasDecimais = 4)
     private BigDecimal aliqPis;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlCredPis;
 
-    @Getter @Setter @Inclui(zerosEsquerda = 2)
+    @Inclui(zerosEsquerda = 2)
     private Integer cstCofins;
 
-    @Getter @Setter @Inclui(casasDecimais = 4)
+    @Inclui(casasDecimais = 4)
     private BigDecimal aliqCofins;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlCredCofins;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String descEst;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codCta;
 
     public RegF150(String natBcCred, BigDecimal vlTotEst, BigDecimal estImp, BigDecimal vlBcEst, BigDecimal vlBcMenEst, Integer cstPis, BigDecimal aliqPis, BigDecimal vlCredPis, Integer cstCofins, BigDecimal aliqCofins, BigDecimal vlCredCofins, String descEst, String codCta) {
@@ -69,4 +67,113 @@ public class RegF150 implements Serializable {
     }
 
     public RegF150(){ }
+
+    public String getReg() {
+        return reg;
+    }
+
+    public String getNatBcCred() {
+        return natBcCred;
+    }
+
+    public void setNatBcCred(String natBcCred) {
+        this.natBcCred = natBcCred;
+    }
+
+    public BigDecimal getVlTotEst() {
+        return vlTotEst;
+    }
+
+    public void setVlTotEst(BigDecimal vlTotEst) {
+        this.vlTotEst = vlTotEst;
+    }
+
+    public BigDecimal getEstImp() {
+        return estImp;
+    }
+
+    public void setEstImp(BigDecimal estImp) {
+        this.estImp = estImp;
+    }
+
+    public BigDecimal getVlBcEst() {
+        return vlBcEst;
+    }
+
+    public void setVlBcEst(BigDecimal vlBcEst) {
+        this.vlBcEst = vlBcEst;
+    }
+
+    public BigDecimal getVlBcMenEst() {
+        return vlBcMenEst;
+    }
+
+    public void setVlBcMenEst(BigDecimal vlBcMenEst) {
+        this.vlBcMenEst = vlBcMenEst;
+    }
+
+    public Integer getCstPis() {
+        return cstPis;
+    }
+
+    public void setCstPis(Integer cstPis) {
+        this.cstPis = cstPis;
+    }
+
+    public BigDecimal getAliqPis() {
+        return aliqPis;
+    }
+
+    public void setAliqPis(BigDecimal aliqPis) {
+        this.aliqPis = aliqPis;
+    }
+
+    public BigDecimal getVlCredPis() {
+        return vlCredPis;
+    }
+
+    public void setVlCredPis(BigDecimal vlCredPis) {
+        this.vlCredPis = vlCredPis;
+    }
+
+    public Integer getCstCofins() {
+        return cstCofins;
+    }
+
+    public void setCstCofins(Integer cstCofins) {
+        this.cstCofins = cstCofins;
+    }
+
+    public BigDecimal getAliqCofins() {
+        return aliqCofins;
+    }
+
+    public void setAliqCofins(BigDecimal aliqCofins) {
+        this.aliqCofins = aliqCofins;
+    }
+
+    public BigDecimal getVlCredCofins() {
+        return vlCredCofins;
+    }
+
+    public void setVlCredCofins(BigDecimal vlCredCofins) {
+        this.vlCredCofins = vlCredCofins;
+    }
+
+    public String getDescEst() {
+        return descEst;
+    }
+
+    public void setDescEst(String descEst) {
+        this.descEst = descEst;
+    }
+
+    public String getCodCta() {
+        return codCta;
+    }
+
+    public void setCodCta(String codCta) {
+        this.codCta = codCta;
+    }
+    
 }

@@ -3,39 +3,36 @@ package efd.icmsipi.blocoE.n1.n2.n3.n4;
 import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
 import efd.icmsipi.blocoE.n1.n2.n3.n4.n5.RegE531;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.List;
 
-
 public class RegE530 implements Serializable {
 	private static final long serialVersionUID = 2714268030159211912L;
 
-	@Getter @Inclui
+	@Inclui
     private final String reg = "E330";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String indAj;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlAj;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codAj;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String indDoc;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String numDoc;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String descrAj;
 
-    @Getter @Setter @Filho
+    @Filho
     private List<RegE531> regE531;
 
     public RegE530(String indAj, BigDecimal vlAj, String codAj, String indDoc, String numDoc, String descrAj) {
@@ -48,4 +45,65 @@ public class RegE530 implements Serializable {
     }
 
     public RegE530(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public String getIndAj() {
+        return indAj;
+    }
+
+    public void setIndAj(String indAj) {
+        this.indAj = indAj;
+    }
+
+    public BigDecimal getVlAj() {
+        return vlAj;
+    }
+
+    public void setVlAj(BigDecimal vlAj) {
+        this.vlAj = vlAj;
+    }
+
+    public String getCodAj() {
+        return codAj;
+    }
+
+    public void setCodAj(String codAj) {
+        this.codAj = codAj;
+    }
+
+    public String getIndDoc() {
+        return indDoc;
+    }
+
+    public void setIndDoc(String indDoc) {
+        this.indDoc = indDoc;
+    }
+
+    public String getNumDoc() {
+        return numDoc;
+    }
+
+    public void setNumDoc(String numDoc) {
+        this.numDoc = numDoc;
+    }
+
+    public String getDescrAj() {
+        return descrAj;
+    }
+
+    public void setDescrAj(String descrAj) {
+        this.descrAj = descrAj;
+    }
+
+    public List<RegE531> getRegE531() {
+        return regE531;
+    }
+
+    public void setRegE531(List<RegE531> regE531) {
+        this.regE531 = regE531;
+    }
+    
 }

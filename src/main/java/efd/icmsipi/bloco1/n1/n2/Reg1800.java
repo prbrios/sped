@@ -1,44 +1,41 @@
 package efd.icmsipi.bloco1.n1.n2;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
 
-
 public class Reg1800 implements Serializable {
 	private static final long serialVersionUID = 4319977497936371499L;
 
-	@Getter @Inclui
+	@Inclui
     private final String reg = "1800";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlCarga;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlPass;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlFat;
 
-    @Getter @Setter @Inclui(casasDecimais = 6)
+    @Inclui(casasDecimais = 6)
     private BigDecimal indRat;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlIcmsAnt;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlBcIcms;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlIcmsApur;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlBcIcmsApur;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlDif;
 
     public Reg1800(BigDecimal vlCarga, BigDecimal vlPass, BigDecimal vlFat, BigDecimal indRat, BigDecimal vlIcmsAnt, BigDecimal vlBcIcms, BigDecimal vlIcmsApur, BigDecimal vlBcIcmsApur, BigDecimal vlDif) {
@@ -54,4 +51,81 @@ public class Reg1800 implements Serializable {
     }
 
     public Reg1800(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public BigDecimal getVlCarga() {
+        return vlCarga;
+    }
+
+    public void setVlCarga(BigDecimal vlCarga) {
+        this.vlCarga = vlCarga;
+    }
+
+    public BigDecimal getVlPass() {
+        return vlPass;
+    }
+
+    public void setVlPass(BigDecimal vlPass) {
+        this.vlPass = vlPass;
+    }
+
+    public BigDecimal getVlFat() {
+        return vlFat;
+    }
+
+    public void setVlFat(BigDecimal vlFat) {
+        this.vlFat = vlFat;
+    }
+
+    public BigDecimal getIndRat() {
+        return indRat;
+    }
+
+    public void setIndRat(BigDecimal indRat) {
+        this.indRat = indRat;
+    }
+
+    public BigDecimal getVlIcmsAnt() {
+        return vlIcmsAnt;
+    }
+
+    public void setVlIcmsAnt(BigDecimal vlIcmsAnt) {
+        this.vlIcmsAnt = vlIcmsAnt;
+    }
+
+    public BigDecimal getVlBcIcms() {
+        return vlBcIcms;
+    }
+
+    public void setVlBcIcms(BigDecimal vlBcIcms) {
+        this.vlBcIcms = vlBcIcms;
+    }
+
+    public BigDecimal getVlIcmsApur() {
+        return vlIcmsApur;
+    }
+
+    public void setVlIcmsApur(BigDecimal vlIcmsApur) {
+        this.vlIcmsApur = vlIcmsApur;
+    }
+
+    public BigDecimal getVlBcIcmsApur() {
+        return vlBcIcmsApur;
+    }
+
+    public void setVlBcIcmsApur(BigDecimal vlBcIcmsApur) {
+        this.vlBcIcmsApur = vlBcIcmsApur;
+    }
+
+    public BigDecimal getVlDif() {
+        return vlDif;
+    }
+
+    public void setVlDif(BigDecimal vlDif) {
+        this.vlDif = vlDif;
+    }
+    
 }

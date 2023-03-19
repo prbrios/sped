@@ -3,34 +3,32 @@ package efd.ecd.bloco0.n1.n2;
 import java.io.Serializable;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
 
 public class Reg0020 implements Serializable {
 	private static final long serialVersionUID = -1480265738284401174L;
 
-	@Getter @Inclui
+	@Inclui
     private final String reg = "0020";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private Integer indDec;
 
-    @Getter @Setter @Inclui(zerosEsquerda = 14)
+    @Inclui(zerosEsquerda = 14)
     private Long cnpj;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String uf;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String ie;
 
-    @Getter @Setter @Inclui(zerosEsquerda = 7)
+    @Inclui(zerosEsquerda = 7)
     private Integer codMun;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String im;
 
-    @Getter @Setter @Inclui(zerosEsquerda = 11)
+    @Inclui(zerosEsquerda = 11)
     private Long nire;
 
     public Reg0020(Integer indDec, Long cnpj, String uf, String ie, Integer codMun, String im, Long nire) {
@@ -44,5 +42,66 @@ public class Reg0020 implements Serializable {
     }
 
     public Reg0020(){/* */}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public Integer getIndDec() {
+        return indDec;
+    }
+
+    public void setIndDec(Integer indDec) {
+        this.indDec = indDec;
+    }
+
+    public Long getCnpj() {
+        return cnpj;
+    }
+
+    public void setCnpj(Long cnpj) {
+        this.cnpj = cnpj;
+    }
+
+    public String getUf() {
+        return uf;
+    }
+
+    public void setUf(String uf) {
+        this.uf = uf;
+    }
+
+    public String getIe() {
+        return ie;
+    }
+
+    public void setIe(String ie) {
+        this.ie = ie;
+    }
+
+    public Integer getCodMun() {
+        return codMun;
+    }
+
+    public void setCodMun(Integer codMun) {
+        this.codMun = codMun;
+    }
+
+    public String getIm() {
+        return im;
+    }
+
+    public void setIm(String im) {
+        this.im = im;
+    }
+
+    public Long getNire() {
+        return nire;
+    }
+
+    public void setNire(Long nire) {
+        this.nire = nire;
+    }
+    
     
 }

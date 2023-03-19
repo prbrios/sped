@@ -4,33 +4,30 @@ import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
 import efd.icmsipi.blocoE.n1.n2.n3.n4.n5.RegE112;
 import efd.icmsipi.blocoE.n1.n2.n3.n4.n5.RegE113;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.List;
 
-
 public class RegE111 implements Serializable {
 	private static final long serialVersionUID = -3585467234686335155L;
 
-	@Getter @Inclui
+	@Inclui
     private final String reg = "E111";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codAjApur;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String descrComplAj;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlAjApur;
 
-    @Getter @Setter @Filho
+    @Filho
     private List<RegE112> regE112;
 
-    @Getter @Setter @Filho
+    @Filho
     private List<RegE113> regE113;
 
     public RegE111(String codAjApur, String descrComplAj, BigDecimal vlAjApur) {
@@ -40,4 +37,49 @@ public class RegE111 implements Serializable {
     }
 
     public RegE111(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public String getCodAjApur() {
+        return codAjApur;
+    }
+
+    public void setCodAjApur(String codAjApur) {
+        this.codAjApur = codAjApur;
+    }
+
+    public String getDescrComplAj() {
+        return descrComplAj;
+    }
+
+    public void setDescrComplAj(String descrComplAj) {
+        this.descrComplAj = descrComplAj;
+    }
+
+    public BigDecimal getVlAjApur() {
+        return vlAjApur;
+    }
+
+    public void setVlAjApur(BigDecimal vlAjApur) {
+        this.vlAjApur = vlAjApur;
+    }
+
+    public List<RegE112> getRegE112() {
+        return regE112;
+    }
+
+    public void setRegE112(List<RegE112> regE112) {
+        this.regE112 = regE112;
+    }
+
+    public List<RegE113> getRegE113() {
+        return regE113;
+    }
+
+    public void setRegE113(List<RegE113> regE113) {
+        this.regE113 = regE113;
+    }
+    
 }

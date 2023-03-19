@@ -2,8 +2,6 @@ package efd.icmsipi.blocoC.n1.n2.n3.n4;
 
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -11,37 +9,37 @@ import java.math.BigDecimal;
 public class RegC180 implements Serializable {
 	private static final long serialVersionUID = 5499294116212694361L;
 
-	@Getter @Inclui
+	@Inclui
 	private final String reg = "C180";
 
-	@Getter @Setter @Inclui
+	@Inclui
 	private Integer codRespRet;
 
-	@Getter @Setter @Inclui(casasDecimais = 6)
+	@Inclui(casasDecimais = 6)
 	private BigDecimal quantConv;
 
-	@Getter @Setter
+	@Inclui
 	private String unid;
 
-	@Getter @Setter @Inclui(casasDecimais = 6)
+	@Inclui(casasDecimais = 6)
 	private BigDecimal vlUnitConv;
 
-	@Getter @Setter @Inclui(casasDecimais = 6)
+	@Inclui(casasDecimais = 6)
 	private BigDecimal vlUntiIcmsOpConv;
 
-	@Getter @Setter @Inclui(casasDecimais = 6)
+	@Inclui(casasDecimais = 6)
 	private BigDecimal vlUnitBcIcmsStConv;
 
-	@Getter @Setter @Inclui(casasDecimais = 6)
+	@Inclui(casasDecimais = 6)
 	private BigDecimal vlUnitIcmsStConv;
 
-	@Getter @Setter @Inclui(casasDecimais = 6)
+	@Inclui(casasDecimais = 6)
 	private BigDecimal vlUnitFcpStConv;
 
-	@Getter @Setter @Inclui
+	@Inclui
 	private String codDa;
 
-	@Getter @Setter @Inclui
+	@Inclui
 	private String numDa;
 
 	public RegC180(Integer codRespRet, BigDecimal quantConv, String unid, BigDecimal vlUnitConv, BigDecimal vlUntiIcmsOpConv, BigDecimal vlUnitBcIcmsStConv, BigDecimal vlUnitIcmsStConv, BigDecimal vlUnitFcpStConv, String codDa, String numDa) {
@@ -58,4 +56,89 @@ public class RegC180 implements Serializable {
 	}
 
 	public RegC180(){}
+
+	public String getReg() {
+		return reg;
+	}
+
+	public Integer getCodRespRet() {
+		return codRespRet;
+	}
+
+	public void setCodRespRet(Integer codRespRet) {
+		this.codRespRet = codRespRet;
+	}
+
+	public BigDecimal getQuantConv() {
+		return quantConv;
+	}
+
+	public void setQuantConv(BigDecimal quantConv) {
+		this.quantConv = quantConv;
+	}
+
+	public String getUnid() {
+		return unid;
+	}
+
+	public void setUnid(String unid) {
+		this.unid = unid;
+	}
+
+	public BigDecimal getVlUnitConv() {
+		return vlUnitConv;
+	}
+
+	public void setVlUnitConv(BigDecimal vlUnitConv) {
+		this.vlUnitConv = vlUnitConv;
+	}
+
+	public BigDecimal getVlUntiIcmsOpConv() {
+		return vlUntiIcmsOpConv;
+	}
+
+	public void setVlUntiIcmsOpConv(BigDecimal vlUntiIcmsOpConv) {
+		this.vlUntiIcmsOpConv = vlUntiIcmsOpConv;
+	}
+
+	public BigDecimal getVlUnitBcIcmsStConv() {
+		return vlUnitBcIcmsStConv;
+	}
+
+	public void setVlUnitBcIcmsStConv(BigDecimal vlUnitBcIcmsStConv) {
+		this.vlUnitBcIcmsStConv = vlUnitBcIcmsStConv;
+	}
+
+	public BigDecimal getVlUnitIcmsStConv() {
+		return vlUnitIcmsStConv;
+	}
+
+	public void setVlUnitIcmsStConv(BigDecimal vlUnitIcmsStConv) {
+		this.vlUnitIcmsStConv = vlUnitIcmsStConv;
+	}
+
+	public BigDecimal getVlUnitFcpStConv() {
+		return vlUnitFcpStConv;
+	}
+
+	public void setVlUnitFcpStConv(BigDecimal vlUnitFcpStConv) {
+		this.vlUnitFcpStConv = vlUnitFcpStConv;
+	}
+
+	public String getCodDa() {
+		return codDa;
+	}
+
+	public void setCodDa(String codDa) {
+		this.codDa = codDa;
+	}
+
+	public String getNumDa() {
+		return numDa;
+	}
+
+	public void setNumDa(String numDa) {
+		this.numDa = numDa;
+	}
+	
 }

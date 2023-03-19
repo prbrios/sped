@@ -1,33 +1,30 @@
 package efd.icmsipi.blocoK.n1.n2.n3;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-
 public class RegK220 implements Serializable {
 	private static final long serialVersionUID = 973698595620178574L;
 
-	@Getter @Inclui
+	@Inclui
     private final String reg = "K220";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private LocalDate dtMov;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codItemOri;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codItemDeSt;
 
-    @Getter @Setter @Inclui(casasDecimais = 6)
+    @Inclui(casasDecimais = 6)
     private BigDecimal qtdOri;
 
-    @Getter @Setter @Inclui(casasDecimais = 6)
+    @Inclui(casasDecimais = 6)
     private BigDecimal qtdDest;
 
     public RegK220(LocalDate dtMov, String codItemOri, String codItemDeSt, BigDecimal qtdOri, BigDecimal qtdDest) {
@@ -39,4 +36,49 @@ public class RegK220 implements Serializable {
     }
 
     public RegK220(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public LocalDate getDtMov() {
+        return dtMov;
+    }
+
+    public void setDtMov(LocalDate dtMov) {
+        this.dtMov = dtMov;
+    }
+
+    public String getCodItemOri() {
+        return codItemOri;
+    }
+
+    public void setCodItemOri(String codItemOri) {
+        this.codItemOri = codItemOri;
+    }
+
+    public String getCodItemDeSt() {
+        return codItemDeSt;
+    }
+
+    public void setCodItemDeSt(String codItemDeSt) {
+        this.codItemDeSt = codItemDeSt;
+    }
+
+    public BigDecimal getQtdOri() {
+        return qtdOri;
+    }
+
+    public void setQtdOri(BigDecimal qtdOri) {
+        this.qtdOri = qtdOri;
+    }
+
+    public BigDecimal getQtdDest() {
+        return qtdDest;
+    }
+
+    public void setQtdDest(BigDecimal qtdDest) {
+        this.qtdDest = qtdDest;
+    }
+    
 }

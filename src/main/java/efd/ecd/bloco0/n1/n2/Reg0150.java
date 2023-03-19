@@ -6,52 +6,50 @@ import java.util.List;
 import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
 import efd.ecd.bloco0.n1.n2.n3.Reg0180;
-import lombok.Getter;
-import lombok.Setter;
 
 public class Reg0150 implements Serializable {
 	private static final long serialVersionUID = 228926986009288780L;
 
-	@Getter @Inclui
+	@Inclui
     private final String reg = "0150";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codPart;
     
-    @Getter @Setter @Inclui
+    @Inclui
     private String nome;
     
-    @Getter @Setter @Inclui
+    @Inclui
     private Integer codPais;
     
-    @Getter @Setter @Inclui(zerosEsquerda = 14)
+    @Inclui(zerosEsquerda = 14)
     private Long cnpj;
     
-    @Getter @Setter @Inclui(zerosEsquerda = 11)
+    @Inclui(zerosEsquerda = 11)
     private Long cpf;
     
-    @Getter @Setter @Inclui
+    @Inclui
     private Long nit;
     
-    @Getter @Setter @Inclui
+    @Inclui
     private String uf;
     
-    @Getter @Setter @Inclui
+    @Inclui
     private String ie;
     
-    @Getter @Setter @Inclui
+    @Inclui
     private String ieSt;
     
-    @Getter @Setter @Inclui(zerosEsquerda = 7)
+    @Inclui(zerosEsquerda = 7)
     private Long codMun;
     
-    @Getter @Setter @Inclui
+    @Inclui
     private String im;
     
-    @Getter @Setter @Inclui
+    @Inclui
     private String suframa;
     
-    @Getter @Setter @Filho
+    @Filho
     private List<Reg0180> reg0180;
 
 	public Reg0150(String codPart, String nome, Integer codPais, Long cnpj, Long cpf, Long nit, String uf, String ie,
@@ -72,4 +70,113 @@ public class Reg0150 implements Serializable {
 	}
 	
 	public Reg0150() {/* */}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public String getCodPart() {
+        return codPart;
+    }
+
+    public void setCodPart(String codPart) {
+        this.codPart = codPart;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public Integer getCodPais() {
+        return codPais;
+    }
+
+    public void setCodPais(Integer codPais) {
+        this.codPais = codPais;
+    }
+
+    public Long getCnpj() {
+        return cnpj;
+    }
+
+    public void setCnpj(Long cnpj) {
+        this.cnpj = cnpj;
+    }
+
+    public Long getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(Long cpf) {
+        this.cpf = cpf;
+    }
+
+    public Long getNit() {
+        return nit;
+    }
+
+    public void setNit(Long nit) {
+        this.nit = nit;
+    }
+
+    public String getUf() {
+        return uf;
+    }
+
+    public void setUf(String uf) {
+        this.uf = uf;
+    }
+
+    public String getIe() {
+        return ie;
+    }
+
+    public void setIe(String ie) {
+        this.ie = ie;
+    }
+
+    public String getIeSt() {
+        return ieSt;
+    }
+
+    public void setIeSt(String ieSt) {
+        this.ieSt = ieSt;
+    }
+
+    public Long getCodMun() {
+        return codMun;
+    }
+
+    public void setCodMun(Long codMun) {
+        this.codMun = codMun;
+    }
+
+    public String getIm() {
+        return im;
+    }
+
+    public void setIm(String im) {
+        this.im = im;
+    }
+
+    public String getSuframa() {
+        return suframa;
+    }
+
+    public void setSuframa(String suframa) {
+        this.suframa = suframa;
+    }
+
+    public List<Reg0180> getReg0180() {
+        return reg0180;
+    }
+
+    public void setReg0180(List<Reg0180> reg0180) {
+        this.reg0180 = reg0180;
+    }
+    
 }

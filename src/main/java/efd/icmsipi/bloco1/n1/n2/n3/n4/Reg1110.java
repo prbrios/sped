@@ -1,45 +1,42 @@
 package efd.icmsipi.bloco1.n1.n2.n3.n4;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-
 public class Reg1110 implements Serializable {
 	private static final long serialVersionUID = 4153514942598913588L;
 
-	@Getter @Inclui
+	@Inclui
     private final String reg = "1110";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codPart;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codMod;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String ser;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private Long numDoc;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private LocalDate dtDoc;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String chvNfe;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private Integer nrMemo;
 
-    @Getter @Setter @Inclui(casasDecimais = 3)
+    @Inclui(casasDecimais = 3)
     private BigDecimal qtd;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String unid;
 
     public Reg1110(String codPart, String codMod, String ser, Long numDoc, LocalDate dtDoc, String chvNfe, Integer nrMemo, BigDecimal qtd, String unid) {
@@ -55,4 +52,81 @@ public class Reg1110 implements Serializable {
     }
 
     public Reg1110(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public String getCodPart() {
+        return codPart;
+    }
+
+    public void setCodPart(String codPart) {
+        this.codPart = codPart;
+    }
+
+    public String getCodMod() {
+        return codMod;
+    }
+
+    public void setCodMod(String codMod) {
+        this.codMod = codMod;
+    }
+
+    public String getSer() {
+        return ser;
+    }
+
+    public void setSer(String ser) {
+        this.ser = ser;
+    }
+
+    public Long getNumDoc() {
+        return numDoc;
+    }
+
+    public void setNumDoc(Long numDoc) {
+        this.numDoc = numDoc;
+    }
+
+    public LocalDate getDtDoc() {
+        return dtDoc;
+    }
+
+    public void setDtDoc(LocalDate dtDoc) {
+        this.dtDoc = dtDoc;
+    }
+
+    public String getChvNfe() {
+        return chvNfe;
+    }
+
+    public void setChvNfe(String chvNfe) {
+        this.chvNfe = chvNfe;
+    }
+
+    public Integer getNrMemo() {
+        return nrMemo;
+    }
+
+    public void setNrMemo(Integer nrMemo) {
+        this.nrMemo = nrMemo;
+    }
+
+    public BigDecimal getQtd() {
+        return qtd;
+    }
+
+    public void setQtd(BigDecimal qtd) {
+        this.qtd = qtd;
+    }
+
+    public String getUnid() {
+        return unid;
+    }
+
+    public void setUnid(String unid) {
+        this.unid = unid;
+    }
+    
 }

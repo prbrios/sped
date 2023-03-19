@@ -1,45 +1,42 @@
 package efd.icmsipi.blocoE.n1.n2.n3.n4;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-
 public class RegE250 implements Serializable {
 	private static final long serialVersionUID = -4584110669319428253L;
 
-	@Getter @Inclui
+	@Inclui
     private final String reg = "E250";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codOr;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlOr;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private LocalDate dtVcto;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codRec;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String numProc;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String indProc;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String proc;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String txtCompl;
 
-    @Getter @Setter @Inclui(formatoData = "MMyyyy")
+    @Inclui(formatoData = "MMyyyy")
     private LocalDate mesRef;
 
     public RegE250(String codOr, BigDecimal vlOr, LocalDate dtVcto, String codRec, String numProc, String indProc, String proc, String txtCompl, LocalDate mesRef) {
@@ -55,4 +52,81 @@ public class RegE250 implements Serializable {
     }
 
     public RegE250(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public String getCodOr() {
+        return codOr;
+    }
+
+    public void setCodOr(String codOr) {
+        this.codOr = codOr;
+    }
+
+    public BigDecimal getVlOr() {
+        return vlOr;
+    }
+
+    public void setVlOr(BigDecimal vlOr) {
+        this.vlOr = vlOr;
+    }
+
+    public LocalDate getDtVcto() {
+        return dtVcto;
+    }
+
+    public void setDtVcto(LocalDate dtVcto) {
+        this.dtVcto = dtVcto;
+    }
+
+    public String getCodRec() {
+        return codRec;
+    }
+
+    public void setCodRec(String codRec) {
+        this.codRec = codRec;
+    }
+
+    public String getNumProc() {
+        return numProc;
+    }
+
+    public void setNumProc(String numProc) {
+        this.numProc = numProc;
+    }
+
+    public String getIndProc() {
+        return indProc;
+    }
+
+    public void setIndProc(String indProc) {
+        this.indProc = indProc;
+    }
+
+    public String getProc() {
+        return proc;
+    }
+
+    public void setProc(String proc) {
+        this.proc = proc;
+    }
+
+    public String getTxtCompl() {
+        return txtCompl;
+    }
+
+    public void setTxtCompl(String txtCompl) {
+        this.txtCompl = txtCompl;
+    }
+
+    public LocalDate getMesRef() {
+        return mesRef;
+    }
+
+    public void setMesRef(LocalDate mesRef) {
+        this.mesRef = mesRef;
+    }
+    
 }

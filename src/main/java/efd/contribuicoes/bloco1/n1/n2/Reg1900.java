@@ -1,8 +1,6 @@
 package efd.contribuicoes.bloco1.n1.n2;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -10,43 +8,43 @@ import java.math.BigDecimal;
 public class Reg1900 implements Serializable {
 	private static final long serialVersionUID = 5245162614486968297L;
 
-	@Getter @Inclui
+	@Inclui
 	private final String reg = "1900";
 
-    @Getter @Setter @Inclui(zerosEsquerda = 14)
+    @Inclui(zerosEsquerda = 14)
     private Long cnpj;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codMod;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String ser;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private Integer subSer;
 
-    @Getter @Setter @Inclui(zerosEsquerda = 2)
+    @Inclui(zerosEsquerda = 2)
     private Integer codSit;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vltotRec;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private Integer quantDoc;
 
-    @Getter @Setter @Inclui(zerosEsquerda = 2)
+    @Inclui(zerosEsquerda = 2)
     private Integer cstPis;
 
-    @Getter @Setter @Inclui(zerosEsquerda = 2)
+    @Inclui(zerosEsquerda = 2)
     private Integer cstCofins;
 
-    @Getter @Setter @Inclui(zerosEsquerda = 4)
+    @Inclui(zerosEsquerda = 4)
     private Integer cfop;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String infCompl;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codCta;
 
     public Reg1900(Long cnpj, String codMod, String ser, Integer subSer, Integer codSit, BigDecimal vltotRec, Integer quantDoc, Integer cstPis, Integer cstCofins, Integer cfop, String infCompl, String codCta) {
@@ -65,4 +63,105 @@ public class Reg1900 implements Serializable {
     }
 
     public Reg1900(){ }
+
+    public String getReg() {
+        return reg;
+    }
+
+    public Long getCnpj() {
+        return cnpj;
+    }
+
+    public void setCnpj(Long cnpj) {
+        this.cnpj = cnpj;
+    }
+
+    public String getCodMod() {
+        return codMod;
+    }
+
+    public void setCodMod(String codMod) {
+        this.codMod = codMod;
+    }
+
+    public String getSer() {
+        return ser;
+    }
+
+    public void setSer(String ser) {
+        this.ser = ser;
+    }
+
+    public Integer getSubSer() {
+        return subSer;
+    }
+
+    public void setSubSer(Integer subSer) {
+        this.subSer = subSer;
+    }
+
+    public Integer getCodSit() {
+        return codSit;
+    }
+
+    public void setCodSit(Integer codSit) {
+        this.codSit = codSit;
+    }
+
+    public BigDecimal getVltotRec() {
+        return vltotRec;
+    }
+
+    public void setVltotRec(BigDecimal vltotRec) {
+        this.vltotRec = vltotRec;
+    }
+
+    public Integer getQuantDoc() {
+        return quantDoc;
+    }
+
+    public void setQuantDoc(Integer quantDoc) {
+        this.quantDoc = quantDoc;
+    }
+
+    public Integer getCstPis() {
+        return cstPis;
+    }
+
+    public void setCstPis(Integer cstPis) {
+        this.cstPis = cstPis;
+    }
+
+    public Integer getCstCofins() {
+        return cstCofins;
+    }
+
+    public void setCstCofins(Integer cstCofins) {
+        this.cstCofins = cstCofins;
+    }
+
+    public Integer getCfop() {
+        return cfop;
+    }
+
+    public void setCfop(Integer cfop) {
+        this.cfop = cfop;
+    }
+
+    public String getInfCompl() {
+        return infCompl;
+    }
+
+    public void setInfCompl(String infCompl) {
+        this.infCompl = infCompl;
+    }
+
+    public String getCodCta() {
+        return codCta;
+    }
+
+    public void setCodCta(String codCta) {
+        this.codCta = codCta;
+    }
+    
 }

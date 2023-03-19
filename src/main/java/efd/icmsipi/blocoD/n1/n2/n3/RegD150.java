@@ -1,47 +1,44 @@
 package efd.icmsipi.blocoD.n1.n2.n3;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
 
-
 public class RegD150 implements Serializable {
 	private static final long serialVersionUID = 1287383366029144731L;
 
-	@Getter @Inclui
+	@Inclui
     private final String reg = "D150";
 
-    @Getter @Setter @Inclui(zerosEsquerda = 7)
+    @Inclui(zerosEsquerda = 7)
     private Integer codMunOrig;
 
-    @Getter @Setter @Inclui(zerosEsquerda = 7)
+    @Inclui(zerosEsquerda = 7)
     private Integer codMunDest;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String veicId;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private Integer viagem;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String indTfa;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlPesoTx;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlTxTerr;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlTxRed;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlOut;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlTxAdv;
 
     public RegD150(Integer codMunOrig, Integer codMunDest, String veicId, Integer viagem, String indTfa, BigDecimal vlPesoTx, BigDecimal vlTxTerr, BigDecimal vlTxRed, BigDecimal vlOut, BigDecimal vlTxAdv) {
@@ -58,4 +55,89 @@ public class RegD150 implements Serializable {
     }
 
     public RegD150(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public Integer getCodMunOrig() {
+        return codMunOrig;
+    }
+
+    public void setCodMunOrig(Integer codMunOrig) {
+        this.codMunOrig = codMunOrig;
+    }
+
+    public Integer getCodMunDest() {
+        return codMunDest;
+    }
+
+    public void setCodMunDest(Integer codMunDest) {
+        this.codMunDest = codMunDest;
+    }
+
+    public String getVeicId() {
+        return veicId;
+    }
+
+    public void setVeicId(String veicId) {
+        this.veicId = veicId;
+    }
+
+    public Integer getViagem() {
+        return viagem;
+    }
+
+    public void setViagem(Integer viagem) {
+        this.viagem = viagem;
+    }
+
+    public String getIndTfa() {
+        return indTfa;
+    }
+
+    public void setIndTfa(String indTfa) {
+        this.indTfa = indTfa;
+    }
+
+    public BigDecimal getVlPesoTx() {
+        return vlPesoTx;
+    }
+
+    public void setVlPesoTx(BigDecimal vlPesoTx) {
+        this.vlPesoTx = vlPesoTx;
+    }
+
+    public BigDecimal getVlTxTerr() {
+        return vlTxTerr;
+    }
+
+    public void setVlTxTerr(BigDecimal vlTxTerr) {
+        this.vlTxTerr = vlTxTerr;
+    }
+
+    public BigDecimal getVlTxRed() {
+        return vlTxRed;
+    }
+
+    public void setVlTxRed(BigDecimal vlTxRed) {
+        this.vlTxRed = vlTxRed;
+    }
+
+    public BigDecimal getVlOut() {
+        return vlOut;
+    }
+
+    public void setVlOut(BigDecimal vlOut) {
+        this.vlOut = vlOut;
+    }
+
+    public BigDecimal getVlTxAdv() {
+        return vlTxAdv;
+    }
+
+    public void setVlTxAdv(BigDecimal vlTxAdv) {
+        this.vlTxAdv = vlTxAdv;
+    }
+    
 }

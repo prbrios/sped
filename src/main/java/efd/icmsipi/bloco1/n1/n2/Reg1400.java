@@ -1,26 +1,23 @@
 package efd.icmsipi.bloco1.n1.n2;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
 
-
 public class Reg1400 implements Serializable {
 	private static final long serialVersionUID = 3311337651021122227L;
 
-	@Getter @Inclui
+	@Inclui
     private final String reg = "1400";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codItemImp;
 
-    @Getter @Setter @Inclui(zerosEsquerda = 7)
+    @Inclui(zerosEsquerda = 7)
     private Integer mun;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal valor;
 
     public Reg1400(String codItemImp, Integer mun, BigDecimal valor) {
@@ -30,4 +27,33 @@ public class Reg1400 implements Serializable {
     }
 
     public Reg1400(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public String getCodItemImp() {
+        return codItemImp;
+    }
+
+    public void setCodItemImp(String codItemImp) {
+        this.codItemImp = codItemImp;
+    }
+
+    public Integer getMun() {
+        return mun;
+    }
+
+    public void setMun(Integer mun) {
+        this.mun = mun;
+    }
+
+    public BigDecimal getValor() {
+        return valor;
+    }
+
+    public void setValor(BigDecimal valor) {
+        this.valor = valor;
+    }
+    
 }

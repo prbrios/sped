@@ -3,37 +3,34 @@ package efd.icmsipi.blocoK.n1.n2.n3;
 import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
 import efd.icmsipi.blocoK.n1.n2.n3.n4.RegK215;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
 
-
 public class RegK210 implements Serializable {
 	private static final long serialVersionUID = 1045256751303446522L;
 
-	@Getter @Inclui
+	@Inclui
     private final String reg = "K210";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private LocalDate dtIniOs;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private LocalDate dtFinOs;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codDocOs;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codItemOri;
 
-    @Getter @Setter @Inclui(casasDecimais = 6)
+    @Inclui(casasDecimais = 6)
     private BigDecimal qtdOri;
 
-    @Getter @Setter @Filho
+    @Filho
     private List<RegK215> regK215;
 
     public RegK210(LocalDate dtIniOs, LocalDate dtFinOs, String codDocOs, String codItemOri, BigDecimal qtdOri) {
@@ -45,4 +42,57 @@ public class RegK210 implements Serializable {
     }
 
     public RegK210(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public LocalDate getDtIniOs() {
+        return dtIniOs;
+    }
+
+    public void setDtIniOs(LocalDate dtIniOs) {
+        this.dtIniOs = dtIniOs;
+    }
+
+    public LocalDate getDtFinOs() {
+        return dtFinOs;
+    }
+
+    public void setDtFinOs(LocalDate dtFinOs) {
+        this.dtFinOs = dtFinOs;
+    }
+
+    public String getCodDocOs() {
+        return codDocOs;
+    }
+
+    public void setCodDocOs(String codDocOs) {
+        this.codDocOs = codDocOs;
+    }
+
+    public String getCodItemOri() {
+        return codItemOri;
+    }
+
+    public void setCodItemOri(String codItemOri) {
+        this.codItemOri = codItemOri;
+    }
+
+    public BigDecimal getQtdOri() {
+        return qtdOri;
+    }
+
+    public void setQtdOri(BigDecimal qtdOri) {
+        this.qtdOri = qtdOri;
+    }
+
+    public List<RegK215> getRegK215() {
+        return regK215;
+    }
+
+    public void setRegK215(List<RegK215> regK215) {
+        this.regK215 = regK215;
+    }
+    
 }

@@ -3,23 +3,20 @@ package efd.icmsipi.blocoC.n1.n2.n3.n4;
 import java.io.Serializable;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
-
 
 public class RegC177 implements Serializable {
 	private static final long serialVersionUID = -2595647513192282820L;
 
-	@Getter @Inclui
+	@Inclui
     private final String reg = "C177";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codSeloIpi;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private Long qtSeloIpi;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codInfItem;
 
     public RegC177(String codSeloIpi, Long qtSeloIpi, String codInfItem) {
@@ -29,4 +26,33 @@ public class RegC177 implements Serializable {
     }
 
     public RegC177(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public String getCodSeloIpi() {
+        return codSeloIpi;
+    }
+
+    public void setCodSeloIpi(String codSeloIpi) {
+        this.codSeloIpi = codSeloIpi;
+    }
+
+    public Long getQtSeloIpi() {
+        return qtSeloIpi;
+    }
+
+    public void setQtSeloIpi(Long qtSeloIpi) {
+        this.qtSeloIpi = qtSeloIpi;
+    }
+
+    public String getCodInfItem() {
+        return codInfItem;
+    }
+
+    public void setCodInfItem(String codInfItem) {
+        this.codInfItem = codInfItem;
+    }
+    
 }

@@ -4,31 +4,29 @@ import java.io.Serializable;
 import java.math.BigDecimal;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
 
 public class RegI310 implements Serializable {
 	private static final long serialVersionUID = -6370313751868526522L;
 
-	@Getter @Inclui
+	@Inclui
 	private final String reg = "I310";
 	
-	@Getter @Setter @Inclui
+	@Inclui
 	private String codCta;
 	
-	@Getter @Setter @Inclui
+	@Inclui
 	private String codCcus;
 	
-	@Getter @Setter @Inclui
+	@Inclui
 	private BigDecimal valDebd;
 	
-	@Getter @Setter @Inclui
+	@Inclui
 	private BigDecimal valCredd;
 	
-	@Getter @Setter @Inclui
+	@Inclui
 	private BigDecimal valDebMf;
 	
-	@Getter @Setter @Inclui
+	@Inclui
 	private BigDecimal valCredMf;
 	
 	public RegI310(String codCta, String codCcus, BigDecimal valDebd, BigDecimal valCredd, BigDecimal valDebMf,
@@ -43,5 +41,58 @@ public class RegI310 implements Serializable {
 	}
 	
 	public RegI310() {/* */}
+
+	public String getReg() {
+		return reg;
+	}
+
+	public String getCodCta() {
+		return codCta;
+	}
+
+	public void setCodCta(String codCta) {
+		this.codCta = codCta;
+	}
+
+	public String getCodCcus() {
+		return codCcus;
+	}
+
+	public void setCodCcus(String codCcus) {
+		this.codCcus = codCcus;
+	}
+
+	public BigDecimal getValDebd() {
+		return valDebd;
+	}
+
+	public void setValDebd(BigDecimal valDebd) {
+		this.valDebd = valDebd;
+	}
+
+	public BigDecimal getValCredd() {
+		return valCredd;
+	}
+
+	public void setValCredd(BigDecimal valCredd) {
+		this.valCredd = valCredd;
+	}
+
+	public BigDecimal getValDebMf() {
+		return valDebMf;
+	}
+
+	public void setValDebMf(BigDecimal valDebMf) {
+		this.valDebMf = valDebMf;
+	}
+
+	public BigDecimal getValCredMf() {
+		return valCredMf;
+	}
+
+	public void setValCredMf(BigDecimal valCredMf) {
+		this.valCredMf = valCredMf;
+	}
+	
 	
 }

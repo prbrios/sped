@@ -3,8 +3,6 @@ package efd.contribuicoes.blocoI.n1.n2;
 import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
 import efd.contribuicoes.blocoI.n1.n2.n3.RegI100;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.util.List;
@@ -12,19 +10,19 @@ import java.util.List;
 public class RegI010 implements Serializable {
 	private static final long serialVersionUID = -424011208510817314L;
 
-	@Getter @Inclui
+	@Inclui
 	private final String reg = "I010";
 
-    @Getter @Setter @Inclui(zerosEsquerda = 14)
+    @Inclui(zerosEsquerda = 14)
     private Long cnpj;
 
-    @Getter @Setter @Inclui(zerosEsquerda = 2)
+    @Inclui(zerosEsquerda = 2)
     private Integer indAtiv;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String infoCompl;
 
-    @Getter @Setter @Filho
+    @Filho
     private List<RegI100> regI100;
 
     public RegI010(Long cnpj, Integer indAtiv, String infoCompl) {
@@ -34,4 +32,41 @@ public class RegI010 implements Serializable {
     }
 
     public RegI010(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public Long getCnpj() {
+        return cnpj;
+    }
+
+    public void setCnpj(Long cnpj) {
+        this.cnpj = cnpj;
+    }
+
+    public Integer getIndAtiv() {
+        return indAtiv;
+    }
+
+    public void setIndAtiv(Integer indAtiv) {
+        this.indAtiv = indAtiv;
+    }
+
+    public String getInfoCompl() {
+        return infoCompl;
+    }
+
+    public void setInfoCompl(String infoCompl) {
+        this.infoCompl = infoCompl;
+    }
+
+    public List<RegI100> getRegI100() {
+        return regI100;
+    }
+
+    public void setRegI100(List<RegI100> regI100) {
+        this.regI100 = regI100;
+    }
+    
 }

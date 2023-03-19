@@ -1,8 +1,6 @@
 package efd.contribuicoes.blocoM.n1.n2.n3.n4;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -10,25 +8,25 @@ import java.math.BigDecimal;
 public class RegM630 implements Serializable {
 	private static final long serialVersionUID = 4871862519243991928L;
 
-	@Getter @Inclui
+	@Inclui
 	private final String reg = "M630";
 
-    @Getter @Setter @Inclui(zerosEsquerda = 14)
+    @Inclui(zerosEsquerda = 14)
     private Long cnpj;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlVend;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlNaoReceb;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlContDif;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlCredDif;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal codCred;
 
     public RegM630(Long cnpj, BigDecimal vlVend, BigDecimal vlNaoReceb, BigDecimal vlContDif, BigDecimal vlCredDif, BigDecimal codCred) {
@@ -41,4 +39,58 @@ public class RegM630 implements Serializable {
     }
 
     public RegM630(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public Long getCnpj() {
+        return cnpj;
+    }
+
+    public void setCnpj(Long cnpj) {
+        this.cnpj = cnpj;
+    }
+
+    public BigDecimal getVlVend() {
+        return vlVend;
+    }
+
+    public void setVlVend(BigDecimal vlVend) {
+        this.vlVend = vlVend;
+    }
+
+    public BigDecimal getVlNaoReceb() {
+        return vlNaoReceb;
+    }
+
+    public void setVlNaoReceb(BigDecimal vlNaoReceb) {
+        this.vlNaoReceb = vlNaoReceb;
+    }
+
+    public BigDecimal getVlContDif() {
+        return vlContDif;
+    }
+
+    public void setVlContDif(BigDecimal vlContDif) {
+        this.vlContDif = vlContDif;
+    }
+
+    public BigDecimal getVlCredDif() {
+        return vlCredDif;
+    }
+
+    public void setVlCredDif(BigDecimal vlCredDif) {
+        this.vlCredDif = vlCredDif;
+    }
+
+    public BigDecimal getCodCred() {
+        return codCred;
+    }
+
+    public void setCodCred(BigDecimal codCred) {
+        this.codCred = codCred;
+    }
+
+    
 }

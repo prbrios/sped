@@ -4,42 +4,37 @@ import java.io.Serializable;
 import java.math.BigDecimal;
 
 import efd.anotacoes.Inclui;
-import lombok.EqualsAndHashCode.Include;
-import lombok.Getter;
-import lombok.Setter;
 
 public class RegC155 implements Serializable {
 	private static final long serialVersionUID = 54202026575163382L;
 
-	@Getter @Include
+	@Inclui
     private final String reg = "C155";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codCtaRec;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codCcusRec;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlSldIniRec;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String indDcIniRec;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlDebRec;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlCredRec;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlSldFinRec;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String indDcFinRec;
 
-    public RegC155() {}
-    
     public RegC155(String codCtaRec, String codCcusRec, BigDecimal vlSldIniRec, String indDcIniRec, BigDecimal vlDebRec,
             BigDecimal vlCredRec, BigDecimal vlSldFinRec, String indDcFinRec) {
         this.codCtaRec = codCtaRec;
@@ -51,5 +46,76 @@ public class RegC155 implements Serializable {
         this.vlSldFinRec = vlSldFinRec;
         this.indDcFinRec = indDcFinRec;
     }
+    
+    public RegC155() {}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public String getCodCtaRec() {
+        return codCtaRec;
+    }
+
+    public void setCodCtaRec(String codCtaRec) {
+        this.codCtaRec = codCtaRec;
+    }
+
+    public String getCodCcusRec() {
+        return codCcusRec;
+    }
+
+    public void setCodCcusRec(String codCcusRec) {
+        this.codCcusRec = codCcusRec;
+    }
+
+    public BigDecimal getVlSldIniRec() {
+        return vlSldIniRec;
+    }
+
+    public void setVlSldIniRec(BigDecimal vlSldIniRec) {
+        this.vlSldIniRec = vlSldIniRec;
+    }
+
+    public String getIndDcIniRec() {
+        return indDcIniRec;
+    }
+
+    public void setIndDcIniRec(String indDcIniRec) {
+        this.indDcIniRec = indDcIniRec;
+    }
+
+    public BigDecimal getVlDebRec() {
+        return vlDebRec;
+    }
+
+    public void setVlDebRec(BigDecimal vlDebRec) {
+        this.vlDebRec = vlDebRec;
+    }
+
+    public BigDecimal getVlCredRec() {
+        return vlCredRec;
+    }
+
+    public void setVlCredRec(BigDecimal vlCredRec) {
+        this.vlCredRec = vlCredRec;
+    }
+
+    public BigDecimal getVlSldFinRec() {
+        return vlSldFinRec;
+    }
+
+    public void setVlSldFinRec(BigDecimal vlSldFinRec) {
+        this.vlSldFinRec = vlSldFinRec;
+    }
+
+    public String getIndDcFinRec() {
+        return indDcFinRec;
+    }
+
+    public void setIndDcFinRec(String indDcFinRec) {
+        this.indDcFinRec = indDcFinRec;
+    }
+    
 
 }

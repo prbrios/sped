@@ -1,32 +1,29 @@
 package efd.icmsipi.blocoC.n1.n2.n3.n4;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
 
-
 public class RegC179 implements Serializable {
 	private static final long serialVersionUID = -9070511244860847710L;
 
-	@Getter @Inclui
+	@Inclui
     private final String reg = "C179";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal bcStOrigDest;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal icmsStRep;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal icmsStCompl;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal bcRet;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal icmsRet;
 
     public RegC179(BigDecimal bcStOrigDest, BigDecimal icmsStRep, BigDecimal icmsStCompl, BigDecimal bcRet, BigDecimal icmsRet) {
@@ -38,4 +35,49 @@ public class RegC179 implements Serializable {
     }
 
     public RegC179(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public BigDecimal getBcStOrigDest() {
+        return bcStOrigDest;
+    }
+
+    public void setBcStOrigDest(BigDecimal bcStOrigDest) {
+        this.bcStOrigDest = bcStOrigDest;
+    }
+
+    public BigDecimal getIcmsStRep() {
+        return icmsStRep;
+    }
+
+    public void setIcmsStRep(BigDecimal icmsStRep) {
+        this.icmsStRep = icmsStRep;
+    }
+
+    public BigDecimal getIcmsStCompl() {
+        return icmsStCompl;
+    }
+
+    public void setIcmsStCompl(BigDecimal icmsStCompl) {
+        this.icmsStCompl = icmsStCompl;
+    }
+
+    public BigDecimal getBcRet() {
+        return bcRet;
+    }
+
+    public void setBcRet(BigDecimal bcRet) {
+        this.bcRet = bcRet;
+    }
+
+    public BigDecimal getIcmsRet() {
+        return icmsRet;
+    }
+
+    public void setIcmsRet(BigDecimal icmsRet) {
+        this.icmsRet = icmsRet;
+    }
+    
 }

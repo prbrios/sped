@@ -1,8 +1,6 @@
 package efd.contribuicoes.bloco0.n1.n2.n3;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -10,22 +8,22 @@ import java.math.BigDecimal;
 public class Reg0145 implements Serializable {
 	private static final long serialVersionUID = 4007724611261441965L;
 
-	@Getter @Inclui
+	@Inclui
 	private final String reg = "0145";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private Integer codIncTrib;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlRecTot;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlRecAtiv;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlRecDemaisAtiv;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String infoCompl;
 
     public Reg0145(Integer codIncTrib, BigDecimal vlRecTot, BigDecimal vlRecAtiv, BigDecimal vlRecDemaisAtiv, String infoCompl) {
@@ -37,4 +35,49 @@ public class Reg0145 implements Serializable {
     }
 
     public Reg0145(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public Integer getCodIncTrib() {
+        return codIncTrib;
+    }
+
+    public void setCodIncTrib(Integer codIncTrib) {
+        this.codIncTrib = codIncTrib;
+    }
+
+    public BigDecimal getVlRecTot() {
+        return vlRecTot;
+    }
+
+    public void setVlRecTot(BigDecimal vlRecTot) {
+        this.vlRecTot = vlRecTot;
+    }
+
+    public BigDecimal getVlRecAtiv() {
+        return vlRecAtiv;
+    }
+
+    public void setVlRecAtiv(BigDecimal vlRecAtiv) {
+        this.vlRecAtiv = vlRecAtiv;
+    }
+
+    public BigDecimal getVlRecDemaisAtiv() {
+        return vlRecDemaisAtiv;
+    }
+
+    public void setVlRecDemaisAtiv(BigDecimal vlRecDemaisAtiv) {
+        this.vlRecDemaisAtiv = vlRecDemaisAtiv;
+    }
+
+    public String getInfoCompl() {
+        return infoCompl;
+    }
+
+    public void setInfoCompl(String infoCompl) {
+        this.infoCompl = infoCompl;
+    }
+    
 }

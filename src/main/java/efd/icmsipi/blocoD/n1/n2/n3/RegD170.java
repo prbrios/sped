@@ -1,56 +1,53 @@
 package efd.icmsipi.blocoD.n1.n2.n3;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
 
-
 public class RegD170 implements Serializable {
 	private static final long serialVersionUID = 2773291284651978022L;
 
-	@Getter @Inclui
+	@Inclui
     private final String reg = "D170";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codPartConsg;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codPartRed;
 
-    @Getter @Setter @Inclui(zerosEsquerda = 7)
+    @Inclui(zerosEsquerda = 7)
     private Integer codMunOrig;
 
-    @Getter @Setter @Inclui(zerosEsquerda = 7)
+    @Inclui(zerosEsquerda = 7)
     private Integer codMunDest;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String otm;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String indNatFrt;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlLiqFrt;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlGris;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlPdg;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlOut;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlFrt;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String veicId;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String ufId;
 
     public RegD170(String codPartConsg, String codPartRed, Integer codMunOrig, Integer codMunDest, String otm, String indNatFrt, BigDecimal vlLiqFrt, BigDecimal vlGris, BigDecimal vlPdg, BigDecimal vlOut, BigDecimal vlFrt, String veicId, String ufId) {
@@ -70,4 +67,113 @@ public class RegD170 implements Serializable {
     }
 
     public RegD170(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public String getCodPartConsg() {
+        return codPartConsg;
+    }
+
+    public void setCodPartConsg(String codPartConsg) {
+        this.codPartConsg = codPartConsg;
+    }
+
+    public String getCodPartRed() {
+        return codPartRed;
+    }
+
+    public void setCodPartRed(String codPartRed) {
+        this.codPartRed = codPartRed;
+    }
+
+    public Integer getCodMunOrig() {
+        return codMunOrig;
+    }
+
+    public void setCodMunOrig(Integer codMunOrig) {
+        this.codMunOrig = codMunOrig;
+    }
+
+    public Integer getCodMunDest() {
+        return codMunDest;
+    }
+
+    public void setCodMunDest(Integer codMunDest) {
+        this.codMunDest = codMunDest;
+    }
+
+    public String getOtm() {
+        return otm;
+    }
+
+    public void setOtm(String otm) {
+        this.otm = otm;
+    }
+
+    public String getIndNatFrt() {
+        return indNatFrt;
+    }
+
+    public void setIndNatFrt(String indNatFrt) {
+        this.indNatFrt = indNatFrt;
+    }
+
+    public BigDecimal getVlLiqFrt() {
+        return vlLiqFrt;
+    }
+
+    public void setVlLiqFrt(BigDecimal vlLiqFrt) {
+        this.vlLiqFrt = vlLiqFrt;
+    }
+
+    public BigDecimal getVlGris() {
+        return vlGris;
+    }
+
+    public void setVlGris(BigDecimal vlGris) {
+        this.vlGris = vlGris;
+    }
+
+    public BigDecimal getVlPdg() {
+        return vlPdg;
+    }
+
+    public void setVlPdg(BigDecimal vlPdg) {
+        this.vlPdg = vlPdg;
+    }
+
+    public BigDecimal getVlOut() {
+        return vlOut;
+    }
+
+    public void setVlOut(BigDecimal vlOut) {
+        this.vlOut = vlOut;
+    }
+
+    public BigDecimal getVlFrt() {
+        return vlFrt;
+    }
+
+    public void setVlFrt(BigDecimal vlFrt) {
+        this.vlFrt = vlFrt;
+    }
+
+    public String getVeicId() {
+        return veicId;
+    }
+
+    public void setVeicId(String veicId) {
+        this.veicId = veicId;
+    }
+
+    public String getUfId() {
+        return ufId;
+    }
+
+    public void setUfId(String ufId) {
+        this.ufId = ufId;
+    }
+    
 }

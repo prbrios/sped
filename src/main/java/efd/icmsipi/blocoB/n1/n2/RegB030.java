@@ -1,51 +1,48 @@
 package efd.icmsipi.blocoB.n1.n2;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-
 public class RegB030 implements Serializable {
 	private static final long serialVersionUID = -1731272944364057293L;
 
-	@Getter @Inclui
+	@Inclui
     private final String reg = "B030";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codMod;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String ser;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private Long numDocIni;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private Long numDocFin;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private LocalDate dtDoc;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private Integer qtdCanc;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlCont;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlIsntIss;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlBcIss;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlIss;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codInfObs;
 
     public RegB030(String codMod, String ser, Long numDocIni, Long numDocFin, LocalDate dtDoc, Integer qtdCanc, BigDecimal vlCont, BigDecimal vlIsntIss, BigDecimal vlBcIss, BigDecimal vlIss, String codInfObs) {
@@ -63,4 +60,97 @@ public class RegB030 implements Serializable {
     }
 
     public RegB030(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public String getCodMod() {
+        return codMod;
+    }
+
+    public void setCodMod(String codMod) {
+        this.codMod = codMod;
+    }
+
+    public String getSer() {
+        return ser;
+    }
+
+    public void setSer(String ser) {
+        this.ser = ser;
+    }
+
+    public Long getNumDocIni() {
+        return numDocIni;
+    }
+
+    public void setNumDocIni(Long numDocIni) {
+        this.numDocIni = numDocIni;
+    }
+
+    public Long getNumDocFin() {
+        return numDocFin;
+    }
+
+    public void setNumDocFin(Long numDocFin) {
+        this.numDocFin = numDocFin;
+    }
+
+    public LocalDate getDtDoc() {
+        return dtDoc;
+    }
+
+    public void setDtDoc(LocalDate dtDoc) {
+        this.dtDoc = dtDoc;
+    }
+
+    public Integer getQtdCanc() {
+        return qtdCanc;
+    }
+
+    public void setQtdCanc(Integer qtdCanc) {
+        this.qtdCanc = qtdCanc;
+    }
+
+    public BigDecimal getVlCont() {
+        return vlCont;
+    }
+
+    public void setVlCont(BigDecimal vlCont) {
+        this.vlCont = vlCont;
+    }
+
+    public BigDecimal getVlIsntIss() {
+        return vlIsntIss;
+    }
+
+    public void setVlIsntIss(BigDecimal vlIsntIss) {
+        this.vlIsntIss = vlIsntIss;
+    }
+
+    public BigDecimal getVlBcIss() {
+        return vlBcIss;
+    }
+
+    public void setVlBcIss(BigDecimal vlBcIss) {
+        this.vlBcIss = vlBcIss;
+    }
+
+    public BigDecimal getVlIss() {
+        return vlIss;
+    }
+
+    public void setVlIss(BigDecimal vlIss) {
+        this.vlIss = vlIss;
+    }
+
+    public String getCodInfObs() {
+        return codInfObs;
+    }
+
+    public void setCodInfObs(String codInfObs) {
+        this.codInfObs = codInfObs;
+    }
+    
 }

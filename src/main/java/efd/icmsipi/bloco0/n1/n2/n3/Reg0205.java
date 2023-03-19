@@ -1,29 +1,26 @@
 package efd.icmsipi.bloco0.n1.n2.n3;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.time.LocalDate;
 
-
 public class Reg0205 implements Serializable {
 	private static final long serialVersionUID = 7186065369504773204L;
 
-	@Getter @Inclui
+	@Inclui
     private final String reg = "0205";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String descrAntItem;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private LocalDate dtIni;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private LocalDate dtFim;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codAntItem;
 
     public Reg0205(String descrAntItem, LocalDate dtIni, LocalDate dtFim, String codAntItem) {
@@ -34,5 +31,42 @@ public class Reg0205 implements Serializable {
     }
 
     public Reg0205(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public String getDescrAntItem() {
+        return descrAntItem;
+    }
+
+    public void setDescrAntItem(String descrAntItem) {
+        this.descrAntItem = descrAntItem;
+    }
+
+    public LocalDate getDtIni() {
+        return dtIni;
+    }
+
+    public void setDtIni(LocalDate dtIni) {
+        this.dtIni = dtIni;
+    }
+
+    public LocalDate getDtFim() {
+        return dtFim;
+    }
+
+    public void setDtFim(LocalDate dtFim) {
+        this.dtFim = dtFim;
+    }
+
+    public String getCodAntItem() {
+        return codAntItem;
+    }
+
+    public void setCodAntItem(String codAntItem) {
+        this.codAntItem = codAntItem;
+    }
+    
 
 }

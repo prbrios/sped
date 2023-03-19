@@ -1,35 +1,32 @@
 package efd.icmsipi.blocoB.n1.n2.n3;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
 
-
 public class RegB035 implements Serializable {
 	private static final long serialVersionUID = -8781541162383289835L;
 
-	@Getter @Inclui
+	@Inclui
     private final String reg = "B035";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlContP;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlBcIssP;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal aliqIss;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlIssP;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlIsntIssP;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codServ;
 
     public RegB035(BigDecimal vlContP, BigDecimal vlBcIssP, BigDecimal aliqIss, BigDecimal vlIssP, BigDecimal vlIsntIssP, String codServ) {
@@ -42,4 +39,57 @@ public class RegB035 implements Serializable {
     }
 
     public RegB035(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public BigDecimal getVlContP() {
+        return vlContP;
+    }
+
+    public void setVlContP(BigDecimal vlContP) {
+        this.vlContP = vlContP;
+    }
+
+    public BigDecimal getVlBcIssP() {
+        return vlBcIssP;
+    }
+
+    public void setVlBcIssP(BigDecimal vlBcIssP) {
+        this.vlBcIssP = vlBcIssP;
+    }
+
+    public BigDecimal getAliqIss() {
+        return aliqIss;
+    }
+
+    public void setAliqIss(BigDecimal aliqIss) {
+        this.aliqIss = aliqIss;
+    }
+
+    public BigDecimal getVlIssP() {
+        return vlIssP;
+    }
+
+    public void setVlIssP(BigDecimal vlIssP) {
+        this.vlIssP = vlIssP;
+    }
+
+    public BigDecimal getVlIsntIssP() {
+        return vlIsntIssP;
+    }
+
+    public void setVlIsntIssP(BigDecimal vlIsntIssP) {
+        this.vlIsntIssP = vlIsntIssP;
+    }
+
+    public String getCodServ() {
+        return codServ;
+    }
+
+    public void setCodServ(String codServ) {
+        this.codServ = codServ;
+    }
+    
 }

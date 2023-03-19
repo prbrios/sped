@@ -1,8 +1,6 @@
 package efd.contribuicoes.blocoM.n1.n2.n3;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -10,34 +8,34 @@ import java.math.BigDecimal;
 public class RegM105 implements Serializable {
 	private static final long serialVersionUID = -7642051819185099515L;
 
-	@Getter @Inclui
+	@Inclui
     private final String reg = "M105";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String natBcCred;
 
-    @Getter @Setter @Inclui(zerosEsquerda = 2)
+    @Inclui(zerosEsquerda = 2)
     private Integer cstPis;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlBcPisTot;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlBcPisCum;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlbcPisNc;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlBcPis;
 
-    @Getter @Setter @Inclui(casasDecimais = 3)
+    @Inclui(casasDecimais = 3)
     private BigDecimal quantBcPisTot;
 
-    @Getter @Setter @Inclui(casasDecimais = 3)
+    @Inclui(casasDecimais = 3)
     private BigDecimal quantBcPis;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String descCred;
 
     public RegM105(String natBcCred, Integer cstPis, BigDecimal vlBcPisTot, BigDecimal vlBcPisCum, BigDecimal vlbcPisNc, BigDecimal vlBcPis, BigDecimal quantBcPisTot, BigDecimal quantBcPis, String descCred) {
@@ -53,4 +51,81 @@ public class RegM105 implements Serializable {
     }
 
     public RegM105(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public String getNatBcCred() {
+        return natBcCred;
+    }
+
+    public void setNatBcCred(String natBcCred) {
+        this.natBcCred = natBcCred;
+    }
+
+    public Integer getCstPis() {
+        return cstPis;
+    }
+
+    public void setCstPis(Integer cstPis) {
+        this.cstPis = cstPis;
+    }
+
+    public BigDecimal getVlBcPisTot() {
+        return vlBcPisTot;
+    }
+
+    public void setVlBcPisTot(BigDecimal vlBcPisTot) {
+        this.vlBcPisTot = vlBcPisTot;
+    }
+
+    public BigDecimal getVlBcPisCum() {
+        return vlBcPisCum;
+    }
+
+    public void setVlBcPisCum(BigDecimal vlBcPisCum) {
+        this.vlBcPisCum = vlBcPisCum;
+    }
+
+    public BigDecimal getVlbcPisNc() {
+        return vlbcPisNc;
+    }
+
+    public void setVlbcPisNc(BigDecimal vlbcPisNc) {
+        this.vlbcPisNc = vlbcPisNc;
+    }
+
+    public BigDecimal getVlBcPis() {
+        return vlBcPis;
+    }
+
+    public void setVlBcPis(BigDecimal vlBcPis) {
+        this.vlBcPis = vlBcPis;
+    }
+
+    public BigDecimal getQuantBcPisTot() {
+        return quantBcPisTot;
+    }
+
+    public void setQuantBcPisTot(BigDecimal quantBcPisTot) {
+        this.quantBcPisTot = quantBcPisTot;
+    }
+
+    public BigDecimal getQuantBcPis() {
+        return quantBcPis;
+    }
+
+    public void setQuantBcPis(BigDecimal quantBcPis) {
+        this.quantBcPis = quantBcPis;
+    }
+
+    public String getDescCred() {
+        return descCred;
+    }
+
+    public void setDescCred(String descCred) {
+        this.descCred = descCred;
+    }
+    
 }

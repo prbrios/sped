@@ -3,23 +3,20 @@ package efd.icmsipi.bloco0.n1.n2.n3;
 import java.io.Serializable;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
-
 
 public class Reg0305 implements Serializable {
 	private static final long serialVersionUID = 8053247972513653061L;
 
-	@Getter @Inclui
+	@Inclui
     private final String reg = "0305";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codCcus;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String func;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private Integer vidaUtil;
 
     public Reg0305(String codCcus, String func, Integer vidaUtil) {
@@ -29,5 +26,34 @@ public class Reg0305 implements Serializable {
     }
 
     public Reg0305(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public String getCodCcus() {
+        return codCcus;
+    }
+
+    public void setCodCcus(String codCcus) {
+        this.codCcus = codCcus;
+    }
+
+    public String getFunc() {
+        return func;
+    }
+
+    public void setFunc(String func) {
+        this.func = func;
+    }
+
+    public Integer getVidaUtil() {
+        return vidaUtil;
+    }
+
+    public void setVidaUtil(Integer vidaUtil) {
+        this.vidaUtil = vidaUtil;
+    }
+    
 
 }

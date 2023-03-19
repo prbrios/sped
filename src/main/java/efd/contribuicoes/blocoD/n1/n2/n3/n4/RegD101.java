@@ -1,8 +1,6 @@
 package efd.contribuicoes.blocoD.n1.n2.n3.n4;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -10,31 +8,31 @@ import java.math.BigDecimal;
 public class RegD101 implements Serializable {
 	private static final long serialVersionUID = 5510997665336138503L;
 
-	@Getter @Inclui
+	@Inclui
 	private final String reg = "D101";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String indNatFrt;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlItem;
 
-    @Getter @Setter @Inclui(zerosEsquerda = 2)
+    @Inclui(zerosEsquerda = 2)
     private Integer cstPis;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String natBcCred;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlBcPis;
 
-    @Getter @Setter @Inclui(casasDecimais = 4)
+    @Inclui(casasDecimais = 4)
     private BigDecimal aliqPis;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlPis;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codCta;
 
     public RegD101(String indNatFrt, BigDecimal vlItem, Integer cstPis, String natBcCred, BigDecimal vlBcPis, BigDecimal aliqPis, BigDecimal vlPis, String codCta) {
@@ -49,4 +47,73 @@ public class RegD101 implements Serializable {
     }
 
     public RegD101(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public String getIndNatFrt() {
+        return indNatFrt;
+    }
+
+    public void setIndNatFrt(String indNatFrt) {
+        this.indNatFrt = indNatFrt;
+    }
+
+    public BigDecimal getVlItem() {
+        return vlItem;
+    }
+
+    public void setVlItem(BigDecimal vlItem) {
+        this.vlItem = vlItem;
+    }
+
+    public Integer getCstPis() {
+        return cstPis;
+    }
+
+    public void setCstPis(Integer cstPis) {
+        this.cstPis = cstPis;
+    }
+
+    public String getNatBcCred() {
+        return natBcCred;
+    }
+
+    public void setNatBcCred(String natBcCred) {
+        this.natBcCred = natBcCred;
+    }
+
+    public BigDecimal getVlBcPis() {
+        return vlBcPis;
+    }
+
+    public void setVlBcPis(BigDecimal vlBcPis) {
+        this.vlBcPis = vlBcPis;
+    }
+
+    public BigDecimal getAliqPis() {
+        return aliqPis;
+    }
+
+    public void setAliqPis(BigDecimal aliqPis) {
+        this.aliqPis = aliqPis;
+    }
+
+    public BigDecimal getVlPis() {
+        return vlPis;
+    }
+
+    public void setVlPis(BigDecimal vlPis) {
+        this.vlPis = vlPis;
+    }
+
+    public String getCodCta() {
+        return codCta;
+    }
+
+    public void setCodCta(String codCta) {
+        this.codCta = codCta;
+    }
+    
 }

@@ -3,41 +3,38 @@ package efd.icmsipi.bloco0.n1.n2;
 import java.io.Serializable;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
-
 
 public class Reg0005 implements Serializable {
 	private static final long serialVersionUID = -3244182407110706470L;
 
-	@Getter @Inclui
+	@Inclui
     private final String reg = "0005";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String fantasia;
 
-    @Getter @Setter @Inclui(zerosEsquerda = 8)
+    @Inclui(zerosEsquerda = 8)
     private Integer cep;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String end;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String num;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String compl;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String bairro;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String fone;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String fax;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String email;
 
     public Reg0005(String fantasia, Integer cep, String end, String num, String compl,
@@ -56,5 +53,82 @@ public class Reg0005 implements Serializable {
     }
 
     public Reg0005(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public String getFantasia() {
+        return fantasia;
+    }
+
+    public void setFantasia(String fantasia) {
+        this.fantasia = fantasia;
+    }
+
+    public Integer getCep() {
+        return cep;
+    }
+
+    public void setCep(Integer cep) {
+        this.cep = cep;
+    }
+
+    public String getEnd() {
+        return end;
+    }
+
+    public void setEnd(String end) {
+        this.end = end;
+    }
+
+    public String getNum() {
+        return num;
+    }
+
+    public void setNum(String num) {
+        this.num = num;
+    }
+
+    public String getCompl() {
+        return compl;
+    }
+
+    public void setCompl(String compl) {
+        this.compl = compl;
+    }
+
+    public String getBairro() {
+        return bairro;
+    }
+
+    public void setBairro(String bairro) {
+        this.bairro = bairro;
+    }
+
+    public String getFone() {
+        return fone;
+    }
+
+    public void setFone(String fone) {
+        this.fone = fone;
+    }
+
+    public String getFax() {
+        return fax;
+    }
+
+    public void setFax(String fax) {
+        this.fax = fax;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+    
 
 }

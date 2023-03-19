@@ -4,31 +4,29 @@ import java.io.Serializable;
 import java.math.BigDecimal;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
 
 public class RegI157 implements Serializable {
 	private static final long serialVersionUID = 7056029078592600270L;
 
-	@Getter @Inclui
+	@Inclui
 	private final String reg = "I157";
 	
-	@Getter @Setter @Inclui
+	@Inclui
 	private String codCta;
 	
-	@Getter @Setter @Inclui
+	@Inclui
 	private String codCcus;
 	
-	@Getter @Setter @Inclui
+	@Inclui
 	private BigDecimal vlSldIni;
 	
-	@Getter @Setter @Inclui
+	@Inclui
 	private String indDcIni;
 	
-	@Getter @Setter @Inclui
+	@Inclui
 	private BigDecimal vlSldIniMf;
 	
-	@Getter @Setter @Inclui
+	@Inclui
 	private String indDcIniMf;
 
 	public RegI157(String codCta, String codCcus, BigDecimal vlSldIni, String indDcIni, BigDecimal vlSldIniMf,
@@ -43,5 +41,58 @@ public class RegI157 implements Serializable {
 	}
 	
 	public RegI157() {/**/}
+
+	public String getReg() {
+		return reg;
+	}
+
+	public String getCodCta() {
+		return codCta;
+	}
+
+	public void setCodCta(String codCta) {
+		this.codCta = codCta;
+	}
+
+	public String getCodCcus() {
+		return codCcus;
+	}
+
+	public void setCodCcus(String codCcus) {
+		this.codCcus = codCcus;
+	}
+
+	public BigDecimal getVlSldIni() {
+		return vlSldIni;
+	}
+
+	public void setVlSldIni(BigDecimal vlSldIni) {
+		this.vlSldIni = vlSldIni;
+	}
+
+	public String getIndDcIni() {
+		return indDcIni;
+	}
+
+	public void setIndDcIni(String indDcIni) {
+		this.indDcIni = indDcIni;
+	}
+
+	public BigDecimal getVlSldIniMf() {
+		return vlSldIniMf;
+	}
+
+	public void setVlSldIniMf(BigDecimal vlSldIniMf) {
+		this.vlSldIniMf = vlSldIniMf;
+	}
+
+	public String getIndDcIniMf() {
+		return indDcIniMf;
+	}
+
+	public void setIndDcIniMf(String indDcIniMf) {
+		this.indDcIniMf = indDcIniMf;
+	}
+	
 	
 }

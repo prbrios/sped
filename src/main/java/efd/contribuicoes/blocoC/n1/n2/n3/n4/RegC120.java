@@ -2,8 +2,6 @@ package efd.contribuicoes.blocoC.n1.n2.n3.n4;
 
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -11,22 +9,22 @@ import java.math.BigDecimal;
 public class RegC120 implements Serializable {
 	private static final long serialVersionUID = 5121992637141722174L;
 
-	@Getter @Inclui
+	@Inclui
 	private final String reg = "C120";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codDocImp;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String numDocImp;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlPisImp;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlCofinsImp;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String numAcdRaw;
 
     public RegC120(String codDocImp, String numDocImp, BigDecimal vlPisImp, BigDecimal vlCofinsImp, String numAcdRaw) {
@@ -38,4 +36,49 @@ public class RegC120 implements Serializable {
     }
 
     public RegC120(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public String getCodDocImp() {
+        return codDocImp;
+    }
+
+    public void setCodDocImp(String codDocImp) {
+        this.codDocImp = codDocImp;
+    }
+
+    public String getNumDocImp() {
+        return numDocImp;
+    }
+
+    public void setNumDocImp(String numDocImp) {
+        this.numDocImp = numDocImp;
+    }
+
+    public BigDecimal getVlPisImp() {
+        return vlPisImp;
+    }
+
+    public void setVlPisImp(BigDecimal vlPisImp) {
+        this.vlPisImp = vlPisImp;
+    }
+
+    public BigDecimal getVlCofinsImp() {
+        return vlCofinsImp;
+    }
+
+    public void setVlCofinsImp(BigDecimal vlCofinsImp) {
+        this.vlCofinsImp = vlCofinsImp;
+    }
+
+    public String getNumAcdRaw() {
+        return numAcdRaw;
+    }
+
+    public void setNumAcdRaw(String numAcdRaw) {
+        this.numAcdRaw = numAcdRaw;
+    }
+    
 }

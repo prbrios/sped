@@ -1,39 +1,36 @@
 package efd.icmsipi.blocoC.n1.n2.n3.n4;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-
 public class RegC112 implements Serializable {
 	private static final long serialVersionUID = 3335662827761497679L;
 
-	@Getter @Inclui
+	@Inclui
     private final String reg = "C112";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codDa;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String uf;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String numDa;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codAut;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlDa;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private LocalDate dtVcto;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private LocalDate dtPgto;
 
     public RegC112(String codDa, String uf, String numDa, String codAut, BigDecimal vlDa, LocalDate dtVcto, LocalDate dtPgto) {
@@ -47,4 +44,65 @@ public class RegC112 implements Serializable {
     }
 
     public RegC112(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public String getCodDa() {
+        return codDa;
+    }
+
+    public void setCodDa(String codDa) {
+        this.codDa = codDa;
+    }
+
+    public String getUf() {
+        return uf;
+    }
+
+    public void setUf(String uf) {
+        this.uf = uf;
+    }
+
+    public String getNumDa() {
+        return numDa;
+    }
+
+    public void setNumDa(String numDa) {
+        this.numDa = numDa;
+    }
+
+    public String getCodAut() {
+        return codAut;
+    }
+
+    public void setCodAut(String codAut) {
+        this.codAut = codAut;
+    }
+
+    public BigDecimal getVlDa() {
+        return vlDa;
+    }
+
+    public void setVlDa(BigDecimal vlDa) {
+        this.vlDa = vlDa;
+    }
+
+    public LocalDate getDtVcto() {
+        return dtVcto;
+    }
+
+    public void setDtVcto(LocalDate dtVcto) {
+        this.dtVcto = dtVcto;
+    }
+
+    public LocalDate getDtPgto() {
+        return dtPgto;
+    }
+
+    public void setDtPgto(LocalDate dtPgto) {
+        this.dtPgto = dtPgto;
+    }
+    
 }

@@ -1,56 +1,53 @@
 package efd.icmsipi.blocoD.n1.n2.n3;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
 
-
 public class RegD140 implements Serializable {
 	private static final long serialVersionUID = 4138749034311922144L;
 
-	@Getter @Inclui
+	@Inclui
     private final String reg = "D140";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codPartConsg;
 
-    @Getter @Setter @Inclui(zerosEsquerda = 7)
+    @Inclui(zerosEsquerda = 7)
     private Integer codMunOrig;
 
-    @Getter @Setter @Inclui(zerosEsquerda = 7)
+    @Inclui(zerosEsquerda = 7)
     private Integer codMunDest;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String indVeic;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String veicId;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String indNav;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private Integer viagem;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlFrtLiq;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlDespPort;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlDespCarDesc;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlOut;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlfrtBr;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlFrtMm;
 
     public RegD140(String codPartConsg, Integer codMunOrig, Integer codMunDest, String indVeic, String veicId, String indNav, Integer viagem, BigDecimal vlFrtLiq, BigDecimal vlDespPort, BigDecimal vlDespCarDesc, BigDecimal vlOut, BigDecimal vlfrtBr, BigDecimal vlFrtMm) {
@@ -70,4 +67,113 @@ public class RegD140 implements Serializable {
     }
 
     public RegD140(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public String getCodPartConsg() {
+        return codPartConsg;
+    }
+
+    public void setCodPartConsg(String codPartConsg) {
+        this.codPartConsg = codPartConsg;
+    }
+
+    public Integer getCodMunOrig() {
+        return codMunOrig;
+    }
+
+    public void setCodMunOrig(Integer codMunOrig) {
+        this.codMunOrig = codMunOrig;
+    }
+
+    public Integer getCodMunDest() {
+        return codMunDest;
+    }
+
+    public void setCodMunDest(Integer codMunDest) {
+        this.codMunDest = codMunDest;
+    }
+
+    public String getIndVeic() {
+        return indVeic;
+    }
+
+    public void setIndVeic(String indVeic) {
+        this.indVeic = indVeic;
+    }
+
+    public String getVeicId() {
+        return veicId;
+    }
+
+    public void setVeicId(String veicId) {
+        this.veicId = veicId;
+    }
+
+    public String getIndNav() {
+        return indNav;
+    }
+
+    public void setIndNav(String indNav) {
+        this.indNav = indNav;
+    }
+
+    public Integer getViagem() {
+        return viagem;
+    }
+
+    public void setViagem(Integer viagem) {
+        this.viagem = viagem;
+    }
+
+    public BigDecimal getVlFrtLiq() {
+        return vlFrtLiq;
+    }
+
+    public void setVlFrtLiq(BigDecimal vlFrtLiq) {
+        this.vlFrtLiq = vlFrtLiq;
+    }
+
+    public BigDecimal getVlDespPort() {
+        return vlDespPort;
+    }
+
+    public void setVlDespPort(BigDecimal vlDespPort) {
+        this.vlDespPort = vlDespPort;
+    }
+
+    public BigDecimal getVlDespCarDesc() {
+        return vlDespCarDesc;
+    }
+
+    public void setVlDespCarDesc(BigDecimal vlDespCarDesc) {
+        this.vlDespCarDesc = vlDespCarDesc;
+    }
+
+    public BigDecimal getVlOut() {
+        return vlOut;
+    }
+
+    public void setVlOut(BigDecimal vlOut) {
+        this.vlOut = vlOut;
+    }
+
+    public BigDecimal getVlfrtBr() {
+        return vlfrtBr;
+    }
+
+    public void setVlfrtBr(BigDecimal vlfrtBr) {
+        this.vlfrtBr = vlfrtBr;
+    }
+
+    public BigDecimal getVlFrtMm() {
+        return vlFrtMm;
+    }
+
+    public void setVlFrtMm(BigDecimal vlFrtMm) {
+        this.vlFrtMm = vlFrtMm;
+    }
+    
 }

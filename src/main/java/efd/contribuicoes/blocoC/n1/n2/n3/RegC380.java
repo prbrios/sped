@@ -4,8 +4,6 @@ import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
 import efd.contribuicoes.blocoC.n1.n2.n3.n4.RegC381;
 import efd.contribuicoes.blocoC.n1.n2.n3.n4.RegC385;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -15,34 +13,34 @@ import java.util.List;
 public class RegC380 implements Serializable {
 	private static final long serialVersionUID = 5960683522266230874L;
 
-	@Getter @Inclui
+	@Inclui
 	private final String reg = "C380";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codMod;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private LocalDate dtDocIni;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private LocalDate dtDocFin;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private Long numDocIni;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private Long numDocFin;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlDoc;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlDocCanc;
 
-    @Getter @Setter @Filho
+    @Filho
     private List<RegC381> regC381;
 
-    @Getter @Setter @Filho
+    @Filho
     private List<RegC385> regC385;
 
     public RegC380(String codMod, LocalDate dtDocIni, LocalDate dtDocFin, Long numDocIni, Long numDocFin, BigDecimal vlDoc, BigDecimal vlDocCanc) {
@@ -56,4 +54,81 @@ public class RegC380 implements Serializable {
     }
 
     public RegC380(){ }
+
+    public String getReg() {
+        return reg;
+    }
+
+    public String getCodMod() {
+        return codMod;
+    }
+
+    public void setCodMod(String codMod) {
+        this.codMod = codMod;
+    }
+
+    public LocalDate getDtDocIni() {
+        return dtDocIni;
+    }
+
+    public void setDtDocIni(LocalDate dtDocIni) {
+        this.dtDocIni = dtDocIni;
+    }
+
+    public LocalDate getDtDocFin() {
+        return dtDocFin;
+    }
+
+    public void setDtDocFin(LocalDate dtDocFin) {
+        this.dtDocFin = dtDocFin;
+    }
+
+    public Long getNumDocIni() {
+        return numDocIni;
+    }
+
+    public void setNumDocIni(Long numDocIni) {
+        this.numDocIni = numDocIni;
+    }
+
+    public Long getNumDocFin() {
+        return numDocFin;
+    }
+
+    public void setNumDocFin(Long numDocFin) {
+        this.numDocFin = numDocFin;
+    }
+
+    public BigDecimal getVlDoc() {
+        return vlDoc;
+    }
+
+    public void setVlDoc(BigDecimal vlDoc) {
+        this.vlDoc = vlDoc;
+    }
+
+    public BigDecimal getVlDocCanc() {
+        return vlDocCanc;
+    }
+
+    public void setVlDocCanc(BigDecimal vlDocCanc) {
+        this.vlDocCanc = vlDocCanc;
+    }
+
+    public List<RegC381> getRegC381() {
+        return regC381;
+    }
+
+    public void setRegC381(List<RegC381> regC381) {
+        this.regC381 = regC381;
+    }
+
+    public List<RegC385> getRegC385() {
+        return regC385;
+    }
+
+    public void setRegC385(List<RegC385> regC385) {
+        this.regC385 = regC385;
+    }
+    
 }

@@ -4,43 +4,41 @@ import java.io.Serializable;
 import java.math.BigDecimal;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
 
 public class RegI250 implements Serializable {
 	private static final long serialVersionUID = 3186588166419967224L;
 
-	@Getter @Inclui
+	@Inclui
 	private final String reg = "I250";
 	
-	@Getter @Setter @Inclui
+	@Inclui
 	private String codCta;
 	
-	@Getter @Setter @Inclui
+	@Inclui
 	private String codCcus;
 	
-	@Getter @Setter @Inclui
+	@Inclui
 	private BigDecimal vlDc;
 	
-	@Getter @Setter @Inclui
+	@Inclui
 	private String indDc;
 	
-	@Getter @Setter @Inclui
+	@Inclui
 	private String numArq;
 	
-	@Getter @Setter @Inclui
+	@Inclui
 	private String codHistPad;
 	
-	@Getter @Setter @Inclui
+	@Inclui
 	private String hist;
 	
-	@Getter @Setter @Inclui
+	@Inclui
 	private String codPart;
 	
-	@Getter @Setter @Inclui
+	@Inclui
 	private BigDecimal vlDcMf;
 	
-	@Getter @Setter @Inclui
+	@Inclui
 	private String indDcMf;
 	
 	public RegI250(String codCta, String codCcus, BigDecimal vlDc, String indDc, String numArq, String codHistPad,
@@ -59,5 +57,90 @@ public class RegI250 implements Serializable {
 	}
 	
 	public RegI250() {/* */}
+
+	public String getReg() {
+		return reg;
+	}
+
+	public String getCodCta() {
+		return codCta;
+	}
+
+	public void setCodCta(String codCta) {
+		this.codCta = codCta;
+	}
+
+	public String getCodCcus() {
+		return codCcus;
+	}
+
+	public void setCodCcus(String codCcus) {
+		this.codCcus = codCcus;
+	}
+
+	public BigDecimal getVlDc() {
+		return vlDc;
+	}
+
+	public void setVlDc(BigDecimal vlDc) {
+		this.vlDc = vlDc;
+	}
+
+	public String getIndDc() {
+		return indDc;
+	}
+
+	public void setIndDc(String indDc) {
+		this.indDc = indDc;
+	}
+
+	public String getNumArq() {
+		return numArq;
+	}
+
+	public void setNumArq(String numArq) {
+		this.numArq = numArq;
+	}
+
+	public String getCodHistPad() {
+		return codHistPad;
+	}
+
+	public void setCodHistPad(String codHistPad) {
+		this.codHistPad = codHistPad;
+	}
+
+	public String getHist() {
+		return hist;
+	}
+
+	public void setHist(String hist) {
+		this.hist = hist;
+	}
+
+	public String getCodPart() {
+		return codPart;
+	}
+
+	public void setCodPart(String codPart) {
+		this.codPart = codPart;
+	}
+
+	public BigDecimal getVlDcMf() {
+		return vlDcMf;
+	}
+
+	public void setVlDcMf(BigDecimal vlDcMf) {
+		this.vlDcMf = vlDcMf;
+	}
+
+	public String getIndDcMf() {
+		return indDcMf;
+	}
+
+	public void setIndDcMf(String indDcMf) {
+		this.indDcMf = indDcMf;
+	}
+	
 	
 }

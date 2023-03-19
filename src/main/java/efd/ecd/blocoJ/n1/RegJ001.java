@@ -7,28 +7,55 @@ import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
 import efd.ecd.blocoJ.n1.n2.RegJ005;
 import efd.ecd.blocoJ.n1.n2.RegJ900;
-import lombok.Getter;
-import lombok.Setter;
 
 public class RegJ001 implements Serializable {
 	private static final long serialVersionUID = -5507601689397579683L;
 
-	@Getter @Inclui
+	@Inclui
     private final String reg = "J001";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private Integer indDad;
 
-    @Getter @Setter @Filho
+    @Filho
     private List<RegJ005> regJ005;
 
-    @Getter @Setter @Filho
+    @Filho
     private RegJ900 regJ900;
-
-    public RegJ001() {}
 
     public RegJ001(Integer indDad) {
         this.indDad = indDad;
     }
+
+    public RegJ001() {}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public Integer getIndDad() {
+        return indDad;
+    }
+
+    public void setIndDad(Integer indDad) {
+        this.indDad = indDad;
+    }
+
+    public List<RegJ005> getRegJ005() {
+        return regJ005;
+    }
+
+    public void setRegJ005(List<RegJ005> regJ005) {
+        this.regJ005 = regJ005;
+    }
+
+    public RegJ900 getRegJ900() {
+        return regJ900;
+    }
+
+    public void setRegJ900(RegJ900 regJ900) {
+        this.regJ900 = regJ900;
+    }
+    
 
 }

@@ -1,8 +1,6 @@
 package efd.contribuicoes.blocoM.n1.n2.n3.n4;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -11,34 +9,34 @@ import java.time.LocalDate;
 public class RegM615 implements Serializable {
 	private static final long serialVersionUID = 6707055253933656674L;
 
-	@Getter @Inclui
+	@Inclui
 	private final String reg = "M615";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String indAjBc;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlAjBc;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codAjBc;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String numDoc;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String descrAjBc;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private LocalDate dtRef;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codCta;
 
-    @Getter @Setter @Inclui(zerosEsquerda = 14)
+    @Inclui(zerosEsquerda = 14)
     private Long cnpj;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String infoCompl;
 
     public RegM615(String indAjBc, BigDecimal vlAjBc, String codAjBc, String numDoc, String descrAjBc, LocalDate dtRef, String codCta, Long cnpj, String infoCompl) {
@@ -54,4 +52,81 @@ public class RegM615 implements Serializable {
     }
 
     public RegM615(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public String getIndAjBc() {
+        return indAjBc;
+    }
+
+    public void setIndAjBc(String indAjBc) {
+        this.indAjBc = indAjBc;
+    }
+
+    public BigDecimal getVlAjBc() {
+        return vlAjBc;
+    }
+
+    public void setVlAjBc(BigDecimal vlAjBc) {
+        this.vlAjBc = vlAjBc;
+    }
+
+    public String getCodAjBc() {
+        return codAjBc;
+    }
+
+    public void setCodAjBc(String codAjBc) {
+        this.codAjBc = codAjBc;
+    }
+
+    public String getNumDoc() {
+        return numDoc;
+    }
+
+    public void setNumDoc(String numDoc) {
+        this.numDoc = numDoc;
+    }
+
+    public String getDescrAjBc() {
+        return descrAjBc;
+    }
+
+    public void setDescrAjBc(String descrAjBc) {
+        this.descrAjBc = descrAjBc;
+    }
+
+    public LocalDate getDtRef() {
+        return dtRef;
+    }
+
+    public void setDtRef(LocalDate dtRef) {
+        this.dtRef = dtRef;
+    }
+
+    public String getCodCta() {
+        return codCta;
+    }
+
+    public void setCodCta(String codCta) {
+        this.codCta = codCta;
+    }
+
+    public Long getCnpj() {
+        return cnpj;
+    }
+
+    public void setCnpj(Long cnpj) {
+        this.cnpj = cnpj;
+    }
+
+    public String getInfoCompl() {
+        return infoCompl;
+    }
+
+    public void setInfoCompl(String infoCompl) {
+        this.infoCompl = infoCompl;
+    }
+    
 }

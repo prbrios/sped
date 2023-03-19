@@ -1,35 +1,32 @@
 package efd.icmsipi.blocoD.n1.n2.n3;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.time.LocalDate;
 
-
 public class RegD530 implements Serializable {
 	private static final long serialVersionUID = 5039995847073522913L;
 
-	@Getter @Inclui
+	@Inclui
     private final String reg = "D530";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String indServ;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private LocalDate dtIniServ;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private LocalDate dtFinServ;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private Integer perFiscal;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codArea;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private Integer terminal;
 
     public RegD530(String indServ, LocalDate dtIniServ, LocalDate dtFinServ, Integer perFiscal, String codArea, Integer terminal) {
@@ -42,4 +39,57 @@ public class RegD530 implements Serializable {
     }
 
     public RegD530(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public String getIndServ() {
+        return indServ;
+    }
+
+    public void setIndServ(String indServ) {
+        this.indServ = indServ;
+    }
+
+    public LocalDate getDtIniServ() {
+        return dtIniServ;
+    }
+
+    public void setDtIniServ(LocalDate dtIniServ) {
+        this.dtIniServ = dtIniServ;
+    }
+
+    public LocalDate getDtFinServ() {
+        return dtFinServ;
+    }
+
+    public void setDtFinServ(LocalDate dtFinServ) {
+        this.dtFinServ = dtFinServ;
+    }
+
+    public Integer getPerFiscal() {
+        return perFiscal;
+    }
+
+    public void setPerFiscal(Integer perFiscal) {
+        this.perFiscal = perFiscal;
+    }
+
+    public String getCodArea() {
+        return codArea;
+    }
+
+    public void setCodArea(String codArea) {
+        this.codArea = codArea;
+    }
+
+    public Integer getTerminal() {
+        return terminal;
+    }
+
+    public void setTerminal(Integer terminal) {
+        this.terminal = terminal;
+    }
+    
 }

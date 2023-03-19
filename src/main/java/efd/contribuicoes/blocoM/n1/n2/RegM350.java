@@ -1,8 +1,6 @@
 package efd.contribuicoes.blocoM.n1.n2;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -10,22 +8,22 @@ import java.math.BigDecimal;
 public class RegM350 implements Serializable {
 	private static final long serialVersionUID = 7213003671744536184L;
 
-	@Getter @Inclui
+	@Inclui
 	private final String reg = "M350";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlTotFol;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlExcBc;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlTotBc;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal aliqPisFol;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlTotContFol;
 
     public RegM350(BigDecimal vlTotFol, BigDecimal vlExcBc, BigDecimal vlTotBc, BigDecimal aliqPisFol, BigDecimal vlTotContFol) {
@@ -37,4 +35,49 @@ public class RegM350 implements Serializable {
     }
 
     public RegM350(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public BigDecimal getVlTotFol() {
+        return vlTotFol;
+    }
+
+    public void setVlTotFol(BigDecimal vlTotFol) {
+        this.vlTotFol = vlTotFol;
+    }
+
+    public BigDecimal getVlExcBc() {
+        return vlExcBc;
+    }
+
+    public void setVlExcBc(BigDecimal vlExcBc) {
+        this.vlExcBc = vlExcBc;
+    }
+
+    public BigDecimal getVlTotBc() {
+        return vlTotBc;
+    }
+
+    public void setVlTotBc(BigDecimal vlTotBc) {
+        this.vlTotBc = vlTotBc;
+    }
+
+    public BigDecimal getAliqPisFol() {
+        return aliqPisFol;
+    }
+
+    public void setAliqPisFol(BigDecimal aliqPisFol) {
+        this.aliqPisFol = aliqPisFol;
+    }
+
+    public BigDecimal getVlTotContFol() {
+        return vlTotContFol;
+    }
+
+    public void setVlTotContFol(BigDecimal vlTotContFol) {
+        this.vlTotContFol = vlTotContFol;
+    }
+    
 }

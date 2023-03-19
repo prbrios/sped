@@ -3,16 +3,14 @@ package efd.contribuicoes.blocoM.n1;
 import java.io.Serializable;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
 
 public class RegM990 implements Serializable {
 	private static final long serialVersionUID = 3477043355053762104L;
 
-	@Getter @Inclui
+	@Inclui
     private final String reg = "M990";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private Integer qtdLinM;
 
     public RegM990(Integer qtdLinM) {
@@ -20,4 +18,17 @@ public class RegM990 implements Serializable {
     }
 
     public RegM990(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public Integer getQtdLinM() {
+        return qtdLinM;
+    }
+
+    public void setQtdLinM(Integer qtdLinM) {
+        this.qtdLinM = qtdLinM;
+    }
+    
 }

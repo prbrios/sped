@@ -4,39 +4,36 @@ import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
 import efd.icmsipi.blocoC.n1.n2.n3.RegC870;
 import efd.icmsipi.blocoC.n1.n2.n3.RegC890;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.List;
 
-
 public class RegC860 implements Serializable {
 	private static final long serialVersionUID = 4102997785947095924L;
 
-	@Getter @Inclui
+	@Inclui
     private final String reg = "C860";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codMod;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private Integer nrSat;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private LocalDate dtDoc;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private Integer docIni;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private Integer docFin;
 
-    @Getter @Setter @Filho
+    @Filho
     private List<RegC870> regC870;
 
-    @Getter @Setter @Filho
+    @Filho
     private List<RegC890> regC890;
 
     public RegC860(String codMod, Integer nrSat, LocalDate dtDoc, Integer docIni, Integer docFin) {
@@ -48,4 +45,65 @@ public class RegC860 implements Serializable {
     }
 
     public RegC860(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public String getCodMod() {
+        return codMod;
+    }
+
+    public void setCodMod(String codMod) {
+        this.codMod = codMod;
+    }
+
+    public Integer getNrSat() {
+        return nrSat;
+    }
+
+    public void setNrSat(Integer nrSat) {
+        this.nrSat = nrSat;
+    }
+
+    public LocalDate getDtDoc() {
+        return dtDoc;
+    }
+
+    public void setDtDoc(LocalDate dtDoc) {
+        this.dtDoc = dtDoc;
+    }
+
+    public Integer getDocIni() {
+        return docIni;
+    }
+
+    public void setDocIni(Integer docIni) {
+        this.docIni = docIni;
+    }
+
+    public Integer getDocFin() {
+        return docFin;
+    }
+
+    public void setDocFin(Integer docFin) {
+        this.docFin = docFin;
+    }
+
+    public List<RegC870> getRegC870() {
+        return regC870;
+    }
+
+    public void setRegC870(List<RegC870> regC870) {
+        this.regC870 = regC870;
+    }
+
+    public List<RegC890> getRegC890() {
+        return regC890;
+    }
+
+    public void setRegC890(List<RegC890> regC890) {
+        this.regC890 = regC890;
+    }
+    
 }

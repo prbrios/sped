@@ -1,35 +1,32 @@
 package efd.icmsipi.bloco0.n1.n2;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.time.LocalDate;
 
-
 public class Reg0500 implements Serializable {
 	private static final long serialVersionUID = 7433376565549324925L;
 
-	@Getter @Inclui
+	@Inclui
     private final String reg = "0500";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private LocalDate dtAlt;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codNatCc;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String indCta;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private Integer nivel;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codCta;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String nomeCta;
 
     public Reg0500(LocalDate dtAlt, String codNatCc, String indCta, Integer nivel, String codCta, String nomeCta) {
@@ -43,5 +40,58 @@ public class Reg0500 implements Serializable {
     }
 
     public Reg0500(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public LocalDate getDtAlt() {
+        return dtAlt;
+    }
+
+    public void setDtAlt(LocalDate dtAlt) {
+        this.dtAlt = dtAlt;
+    }
+
+    public String getCodNatCc() {
+        return codNatCc;
+    }
+
+    public void setCodNatCc(String codNatCc) {
+        this.codNatCc = codNatCc;
+    }
+
+    public String getIndCta() {
+        return indCta;
+    }
+
+    public void setIndCta(String indCta) {
+        this.indCta = indCta;
+    }
+
+    public Integer getNivel() {
+        return nivel;
+    }
+
+    public void setNivel(Integer nivel) {
+        this.nivel = nivel;
+    }
+
+    public String getCodCta() {
+        return codCta;
+    }
+
+    public void setCodCta(String codCta) {
+        this.codCta = codCta;
+    }
+
+    public String getNomeCta() {
+        return nomeCta;
+    }
+
+    public void setNomeCta(String nomeCta) {
+        this.nomeCta = nomeCta;
+    }
+    
 
 }

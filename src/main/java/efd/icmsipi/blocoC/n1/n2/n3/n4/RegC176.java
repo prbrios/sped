@@ -1,96 +1,93 @@
 package efd.icmsipi.blocoC.n1.n2.n3.n4;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-
 public class RegC176 implements Serializable {
 	private static final long serialVersionUID = -4724971126856417199L;
 
-	@Getter @Inclui
+	@Inclui
     private final String reg = "C176";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codModUltE;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private Long numDocUltE;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String serUltE;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private LocalDate dtUltE;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codPartUltE;
 
-    @Getter @Setter @Inclui(casasDecimais = 3)
+    @Inclui(casasDecimais = 3)
     private BigDecimal quantUltE;
 
-    @Getter @Setter @Inclui(casasDecimais = 3)
+    @Inclui(casasDecimais = 3)
     private BigDecimal vlUnitUltE;
 
-    @Getter @Setter @Inclui(casasDecimais = 3)
+    @Inclui(casasDecimais = 3)
     private BigDecimal vlUnitBcSt;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String chaveNfeUltE;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private Integer numItemUltE;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlUnitBcIcmsUltE;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal aliqIcmsUltE;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlUnitLimiteBcIcmsUltE;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlUnitIcmsUltE;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal aliqStUltE;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlUnitRes;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private Integer codRespRet;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private Integer codMotRes;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String chaveNfeRet;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codParNfeRet;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String serNfeRet;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private Integer numNfeRet;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private Integer itemNfeRet;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codDa;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String numDa;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlUnitResFcpSt;
 
     public RegC176(String codModUltE, Long numDocUltE, String serUltE, LocalDate dtUltE, String codPartUltE, BigDecimal quantUltE, BigDecimal vlUnitUltE, BigDecimal vlUnitBcSt, String chaveNfeUltE, Integer numItemUltE, BigDecimal vlUnitBcIcmsUltE, BigDecimal aliqIcmsUltE, BigDecimal vlUnitLimiteBcIcmsUltE, BigDecimal vlUnitIcmsUltE, BigDecimal aliqStUltE, BigDecimal vlUnitRes, Integer codRespRet, Integer codMotRes, String chaveNfeRet, String codParNfeRet, String serNfeRet, Integer numNfeRet, Integer itemNfeRet, String codDa, String numDa, BigDecimal vlUnitResFcpSt) {
@@ -123,4 +120,217 @@ public class RegC176 implements Serializable {
     }
 
     public RegC176(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public String getCodModUltE() {
+        return codModUltE;
+    }
+
+    public void setCodModUltE(String codModUltE) {
+        this.codModUltE = codModUltE;
+    }
+
+    public Long getNumDocUltE() {
+        return numDocUltE;
+    }
+
+    public void setNumDocUltE(Long numDocUltE) {
+        this.numDocUltE = numDocUltE;
+    }
+
+    public String getSerUltE() {
+        return serUltE;
+    }
+
+    public void setSerUltE(String serUltE) {
+        this.serUltE = serUltE;
+    }
+
+    public LocalDate getDtUltE() {
+        return dtUltE;
+    }
+
+    public void setDtUltE(LocalDate dtUltE) {
+        this.dtUltE = dtUltE;
+    }
+
+    public String getCodPartUltE() {
+        return codPartUltE;
+    }
+
+    public void setCodPartUltE(String codPartUltE) {
+        this.codPartUltE = codPartUltE;
+    }
+
+    public BigDecimal getQuantUltE() {
+        return quantUltE;
+    }
+
+    public void setQuantUltE(BigDecimal quantUltE) {
+        this.quantUltE = quantUltE;
+    }
+
+    public BigDecimal getVlUnitUltE() {
+        return vlUnitUltE;
+    }
+
+    public void setVlUnitUltE(BigDecimal vlUnitUltE) {
+        this.vlUnitUltE = vlUnitUltE;
+    }
+
+    public BigDecimal getVlUnitBcSt() {
+        return vlUnitBcSt;
+    }
+
+    public void setVlUnitBcSt(BigDecimal vlUnitBcSt) {
+        this.vlUnitBcSt = vlUnitBcSt;
+    }
+
+    public String getChaveNfeUltE() {
+        return chaveNfeUltE;
+    }
+
+    public void setChaveNfeUltE(String chaveNfeUltE) {
+        this.chaveNfeUltE = chaveNfeUltE;
+    }
+
+    public Integer getNumItemUltE() {
+        return numItemUltE;
+    }
+
+    public void setNumItemUltE(Integer numItemUltE) {
+        this.numItemUltE = numItemUltE;
+    }
+
+    public BigDecimal getVlUnitBcIcmsUltE() {
+        return vlUnitBcIcmsUltE;
+    }
+
+    public void setVlUnitBcIcmsUltE(BigDecimal vlUnitBcIcmsUltE) {
+        this.vlUnitBcIcmsUltE = vlUnitBcIcmsUltE;
+    }
+
+    public BigDecimal getAliqIcmsUltE() {
+        return aliqIcmsUltE;
+    }
+
+    public void setAliqIcmsUltE(BigDecimal aliqIcmsUltE) {
+        this.aliqIcmsUltE = aliqIcmsUltE;
+    }
+
+    public BigDecimal getVlUnitLimiteBcIcmsUltE() {
+        return vlUnitLimiteBcIcmsUltE;
+    }
+
+    public void setVlUnitLimiteBcIcmsUltE(BigDecimal vlUnitLimiteBcIcmsUltE) {
+        this.vlUnitLimiteBcIcmsUltE = vlUnitLimiteBcIcmsUltE;
+    }
+
+    public BigDecimal getVlUnitIcmsUltE() {
+        return vlUnitIcmsUltE;
+    }
+
+    public void setVlUnitIcmsUltE(BigDecimal vlUnitIcmsUltE) {
+        this.vlUnitIcmsUltE = vlUnitIcmsUltE;
+    }
+
+    public BigDecimal getAliqStUltE() {
+        return aliqStUltE;
+    }
+
+    public void setAliqStUltE(BigDecimal aliqStUltE) {
+        this.aliqStUltE = aliqStUltE;
+    }
+
+    public BigDecimal getVlUnitRes() {
+        return vlUnitRes;
+    }
+
+    public void setVlUnitRes(BigDecimal vlUnitRes) {
+        this.vlUnitRes = vlUnitRes;
+    }
+
+    public Integer getCodRespRet() {
+        return codRespRet;
+    }
+
+    public void setCodRespRet(Integer codRespRet) {
+        this.codRespRet = codRespRet;
+    }
+
+    public Integer getCodMotRes() {
+        return codMotRes;
+    }
+
+    public void setCodMotRes(Integer codMotRes) {
+        this.codMotRes = codMotRes;
+    }
+
+    public String getChaveNfeRet() {
+        return chaveNfeRet;
+    }
+
+    public void setChaveNfeRet(String chaveNfeRet) {
+        this.chaveNfeRet = chaveNfeRet;
+    }
+
+    public String getCodParNfeRet() {
+        return codParNfeRet;
+    }
+
+    public void setCodParNfeRet(String codParNfeRet) {
+        this.codParNfeRet = codParNfeRet;
+    }
+
+    public String getSerNfeRet() {
+        return serNfeRet;
+    }
+
+    public void setSerNfeRet(String serNfeRet) {
+        this.serNfeRet = serNfeRet;
+    }
+
+    public Integer getNumNfeRet() {
+        return numNfeRet;
+    }
+
+    public void setNumNfeRet(Integer numNfeRet) {
+        this.numNfeRet = numNfeRet;
+    }
+
+    public Integer getItemNfeRet() {
+        return itemNfeRet;
+    }
+
+    public void setItemNfeRet(Integer itemNfeRet) {
+        this.itemNfeRet = itemNfeRet;
+    }
+
+    public String getCodDa() {
+        return codDa;
+    }
+
+    public void setCodDa(String codDa) {
+        this.codDa = codDa;
+    }
+
+    public String getNumDa() {
+        return numDa;
+    }
+
+    public void setNumDa(String numDa) {
+        this.numDa = numDa;
+    }
+
+    public BigDecimal getVlUnitResFcpSt() {
+        return vlUnitResFcpSt;
+    }
+
+    public void setVlUnitResFcpSt(BigDecimal vlUnitResFcpSt) {
+        this.vlUnitResFcpSt = vlUnitResFcpSt;
+    }
+    
 }

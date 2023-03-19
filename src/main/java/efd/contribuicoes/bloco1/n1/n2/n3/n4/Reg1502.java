@@ -1,8 +1,6 @@
 package efd.contribuicoes.bloco1.n1.n2.n3.n4;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -10,16 +8,16 @@ import java.math.BigDecimal;
 public class Reg1502 implements Serializable {
 	private static final long serialVersionUID = 2811756418690204954L;
 
-	@Getter @Inclui
+	@Inclui
 	private final String reg = "1502";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlCredCofinsTribMi;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlCredCofinsNtMi;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlCredCofinsExp;
 
     public Reg1502(BigDecimal vlCredCofinsTribMi, BigDecimal vlCredCofinsNtMi, BigDecimal vlCredCofinsExp) {
@@ -29,4 +27,33 @@ public class Reg1502 implements Serializable {
     }
 
     public Reg1502(){ }
+
+    public String getReg() {
+        return reg;
+    }
+
+    public BigDecimal getVlCredCofinsTribMi() {
+        return vlCredCofinsTribMi;
+    }
+
+    public void setVlCredCofinsTribMi(BigDecimal vlCredCofinsTribMi) {
+        this.vlCredCofinsTribMi = vlCredCofinsTribMi;
+    }
+
+    public BigDecimal getVlCredCofinsNtMi() {
+        return vlCredCofinsNtMi;
+    }
+
+    public void setVlCredCofinsNtMi(BigDecimal vlCredCofinsNtMi) {
+        this.vlCredCofinsNtMi = vlCredCofinsNtMi;
+    }
+
+    public BigDecimal getVlCredCofinsExp() {
+        return vlCredCofinsExp;
+    }
+
+    public void setVlCredCofinsExp(BigDecimal vlCredCofinsExp) {
+        this.vlCredCofinsExp = vlCredCofinsExp;
+    }
+    
 }

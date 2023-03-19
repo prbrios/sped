@@ -1,8 +1,6 @@
 package efd.contribuicoes.blocoM.n1.n2.n3;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -10,16 +8,16 @@ import java.math.BigDecimal;
 public class RegM605 implements Serializable {
 	private static final long serialVersionUID = 4313931287339915996L;
 
-	@Getter @Inclui
+	@Inclui
 	private final String reg = "M605";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String numCampo;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codRec;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlDebito;
 
     public RegM605(String numCampo, String codRec, BigDecimal vlDebito) {
@@ -29,4 +27,33 @@ public class RegM605 implements Serializable {
     }
 
     public RegM605(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public String getNumCampo() {
+        return numCampo;
+    }
+
+    public void setNumCampo(String numCampo) {
+        this.numCampo = numCampo;
+    }
+
+    public String getCodRec() {
+        return codRec;
+    }
+
+    public void setCodRec(String codRec) {
+        this.codRec = codRec;
+    }
+
+    public BigDecimal getVlDebito() {
+        return vlDebito;
+    }
+
+    public void setVlDebito(BigDecimal vlDebito) {
+        this.vlDebito = vlDebito;
+    }
+    
 }

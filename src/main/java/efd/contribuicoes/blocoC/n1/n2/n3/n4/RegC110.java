@@ -3,19 +3,17 @@ package efd.contribuicoes.blocoC.n1.n2.n3.n4;
 import java.io.Serializable;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
 
 public class RegC110 implements Serializable {
 	private static final long serialVersionUID = 8234729817162666043L;
 
-	@Getter @Inclui
+	@Inclui
 	private final String reg = "C110";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codInf;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String txtCompl;
 
     public RegC110(String codInf, String txtCompl) {
@@ -24,4 +22,25 @@ public class RegC110 implements Serializable {
     }
 
     public RegC110(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public String getCodInf() {
+        return codInf;
+    }
+
+    public void setCodInf(String codInf) {
+        this.codInf = codInf;
+    }
+
+    public String getTxtCompl() {
+        return txtCompl;
+    }
+
+    public void setTxtCompl(String txtCompl) {
+        this.txtCompl = txtCompl;
+    }
+    
 }

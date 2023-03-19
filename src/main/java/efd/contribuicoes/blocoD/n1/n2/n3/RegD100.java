@@ -5,8 +5,6 @@ import efd.anotacoes.Inclui;
 import efd.contribuicoes.blocoD.n1.n2.n3.n4.RegD101;
 import efd.contribuicoes.blocoD.n1.n2.n3.n4.RegD105;
 import efd.contribuicoes.blocoD.n1.n2.n3.n4.RegD111;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -16,82 +14,82 @@ import java.util.List;
 public class RegD100 implements Serializable {
 	private static final long serialVersionUID = 2957945551743374087L;
 
-	@Getter @Inclui
+	@Inclui
 	private final String reg = "D100";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String indOper;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String indEmit;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codPart;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codMod;
 
-    @Getter @Setter @Inclui(zerosEsquerda = 2)
+    @Inclui(zerosEsquerda = 2)
     private Integer codSit;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String ser;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String sub;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private Long numDoc;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String chvCte;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private LocalDate dtDoc;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private LocalDate dtAP;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private Integer tpCte;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String chvCteRef;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlDoc;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlDesc;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String indFrt;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlServ;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlBcIcms;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlIcms;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlNt;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String coInf;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codCta;
 
-    @Getter @Setter @Filho
+    @Filho
     private List<RegD101> regD101;
 
-    @Getter @Setter @Filho
+    @Filho
     private List<RegD105> regD105;
 
-    @Getter @Setter @Filho
+    @Filho
     private List<RegD111> regD111;
 
     public RegD100(String indOper, String indEmit, String codPart, String codMod, Integer codSit, String ser, String sub, Long numDoc, String chvCte, LocalDate dtDoc, LocalDate dtAP, Integer tpCte, String chvCteRef, BigDecimal vlDoc, BigDecimal vlDesc, String indFrt, BigDecimal vlServ, BigDecimal vlBcIcms, BigDecimal vlIcms, BigDecimal vlNt, String coInf, String codCta) {
@@ -120,4 +118,209 @@ public class RegD100 implements Serializable {
     }
 
     public RegD100(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public String getIndOper() {
+        return indOper;
+    }
+
+    public void setIndOper(String indOper) {
+        this.indOper = indOper;
+    }
+
+    public String getIndEmit() {
+        return indEmit;
+    }
+
+    public void setIndEmit(String indEmit) {
+        this.indEmit = indEmit;
+    }
+
+    public String getCodPart() {
+        return codPart;
+    }
+
+    public void setCodPart(String codPart) {
+        this.codPart = codPart;
+    }
+
+    public String getCodMod() {
+        return codMod;
+    }
+
+    public void setCodMod(String codMod) {
+        this.codMod = codMod;
+    }
+
+    public Integer getCodSit() {
+        return codSit;
+    }
+
+    public void setCodSit(Integer codSit) {
+        this.codSit = codSit;
+    }
+
+    public String getSer() {
+        return ser;
+    }
+
+    public void setSer(String ser) {
+        this.ser = ser;
+    }
+
+    public String getSub() {
+        return sub;
+    }
+
+    public void setSub(String sub) {
+        this.sub = sub;
+    }
+
+    public Long getNumDoc() {
+        return numDoc;
+    }
+
+    public void setNumDoc(Long numDoc) {
+        this.numDoc = numDoc;
+    }
+
+    public String getChvCte() {
+        return chvCte;
+    }
+
+    public void setChvCte(String chvCte) {
+        this.chvCte = chvCte;
+    }
+
+    public LocalDate getDtDoc() {
+        return dtDoc;
+    }
+
+    public void setDtDoc(LocalDate dtDoc) {
+        this.dtDoc = dtDoc;
+    }
+
+    public LocalDate getDtAP() {
+        return dtAP;
+    }
+
+    public void setDtAP(LocalDate dtAP) {
+        this.dtAP = dtAP;
+    }
+
+    public Integer getTpCte() {
+        return tpCte;
+    }
+
+    public void setTpCte(Integer tpCte) {
+        this.tpCte = tpCte;
+    }
+
+    public String getChvCteRef() {
+        return chvCteRef;
+    }
+
+    public void setChvCteRef(String chvCteRef) {
+        this.chvCteRef = chvCteRef;
+    }
+
+    public BigDecimal getVlDoc() {
+        return vlDoc;
+    }
+
+    public void setVlDoc(BigDecimal vlDoc) {
+        this.vlDoc = vlDoc;
+    }
+
+    public BigDecimal getVlDesc() {
+        return vlDesc;
+    }
+
+    public void setVlDesc(BigDecimal vlDesc) {
+        this.vlDesc = vlDesc;
+    }
+
+    public String getIndFrt() {
+        return indFrt;
+    }
+
+    public void setIndFrt(String indFrt) {
+        this.indFrt = indFrt;
+    }
+
+    public BigDecimal getVlServ() {
+        return vlServ;
+    }
+
+    public void setVlServ(BigDecimal vlServ) {
+        this.vlServ = vlServ;
+    }
+
+    public BigDecimal getVlBcIcms() {
+        return vlBcIcms;
+    }
+
+    public void setVlBcIcms(BigDecimal vlBcIcms) {
+        this.vlBcIcms = vlBcIcms;
+    }
+
+    public BigDecimal getVlIcms() {
+        return vlIcms;
+    }
+
+    public void setVlIcms(BigDecimal vlIcms) {
+        this.vlIcms = vlIcms;
+    }
+
+    public BigDecimal getVlNt() {
+        return vlNt;
+    }
+
+    public void setVlNt(BigDecimal vlNt) {
+        this.vlNt = vlNt;
+    }
+
+    public String getCoInf() {
+        return coInf;
+    }
+
+    public void setCoInf(String coInf) {
+        this.coInf = coInf;
+    }
+
+    public String getCodCta() {
+        return codCta;
+    }
+
+    public void setCodCta(String codCta) {
+        this.codCta = codCta;
+    }
+
+    public List<RegD101> getRegD101() {
+        return regD101;
+    }
+
+    public void setRegD101(List<RegD101> regD101) {
+        this.regD101 = regD101;
+    }
+
+    public List<RegD105> getRegD105() {
+        return regD105;
+    }
+
+    public void setRegD105(List<RegD105> regD105) {
+        this.regD105 = regD105;
+    }
+
+    public List<RegD111> getRegD111() {
+        return regD111;
+    }
+
+    public void setRegD111(List<RegD111> regD111) {
+        this.regD111 = regD111;
+    }
+    
 }

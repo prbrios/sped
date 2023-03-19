@@ -1,8 +1,6 @@
 package efd.contribuicoes.blocoF.n1.n2.n3.n4;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -10,58 +8,58 @@ import java.math.BigDecimal;
 public class RegF205 implements Serializable {
 	private static final long serialVersionUID = -7763089874442691580L;
 
-	@Getter @Inclui
+	@Inclui
 	private final String reg = "F205";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlCusIncAcumAnt;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlCusIncPerEsc;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlCusIncAcum;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlExcBcCusIncAcum;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlBcCusInc;
 
-    @Getter @Setter @Inclui(zerosEsquerda = 2)
+    @Inclui(zerosEsquerda = 2)
     private Integer cstPis;
 
-    @Getter @Setter @Inclui(casasDecimais = 4)
+    @Inclui(casasDecimais = 4)
     private BigDecimal aliqPis;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlCredPisAcum;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlCredPisDescAnt;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlCredPisDesc;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlCredPisDescFut;
 
-    @Getter @Setter @Inclui(zerosEsquerda = 2)
+    @Inclui(zerosEsquerda = 2)
     private Integer cstCofins;
 
-    @Getter @Setter @Inclui(casasDecimais = 4)
+    @Inclui(casasDecimais = 4)
     private BigDecimal aliqCofins;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlCredCofinsAcum;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlCredCofinsDescAnt;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlCredCofinsDesc;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlCredCofinsDescFut;
 
     public RegF205(BigDecimal vlCusIncAcumAnt, BigDecimal vlCusIncPerEsc, BigDecimal vlCusIncAcum, BigDecimal vlExcBcCusIncAcum, BigDecimal vlBcCusInc, Integer cstPis, BigDecimal aliqPis, BigDecimal vlCredPisAcum, BigDecimal vlCredPisDescAnt, BigDecimal vlCredPisDesc, BigDecimal vlCredPisDescFut, Integer cstCofins, BigDecimal aliqCofins, BigDecimal vlCredCofinsAcum, BigDecimal vlCredCofinsDescAnt, BigDecimal vlCredCofinsDesc, BigDecimal vlCredCofinsDescFut) {
@@ -85,4 +83,145 @@ public class RegF205 implements Serializable {
     }
 
     public RegF205(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public BigDecimal getVlCusIncAcumAnt() {
+        return vlCusIncAcumAnt;
+    }
+
+    public void setVlCusIncAcumAnt(BigDecimal vlCusIncAcumAnt) {
+        this.vlCusIncAcumAnt = vlCusIncAcumAnt;
+    }
+
+    public BigDecimal getVlCusIncPerEsc() {
+        return vlCusIncPerEsc;
+    }
+
+    public void setVlCusIncPerEsc(BigDecimal vlCusIncPerEsc) {
+        this.vlCusIncPerEsc = vlCusIncPerEsc;
+    }
+
+    public BigDecimal getVlCusIncAcum() {
+        return vlCusIncAcum;
+    }
+
+    public void setVlCusIncAcum(BigDecimal vlCusIncAcum) {
+        this.vlCusIncAcum = vlCusIncAcum;
+    }
+
+    public BigDecimal getVlExcBcCusIncAcum() {
+        return vlExcBcCusIncAcum;
+    }
+
+    public void setVlExcBcCusIncAcum(BigDecimal vlExcBcCusIncAcum) {
+        this.vlExcBcCusIncAcum = vlExcBcCusIncAcum;
+    }
+
+    public BigDecimal getVlBcCusInc() {
+        return vlBcCusInc;
+    }
+
+    public void setVlBcCusInc(BigDecimal vlBcCusInc) {
+        this.vlBcCusInc = vlBcCusInc;
+    }
+
+    public Integer getCstPis() {
+        return cstPis;
+    }
+
+    public void setCstPis(Integer cstPis) {
+        this.cstPis = cstPis;
+    }
+
+    public BigDecimal getAliqPis() {
+        return aliqPis;
+    }
+
+    public void setAliqPis(BigDecimal aliqPis) {
+        this.aliqPis = aliqPis;
+    }
+
+    public BigDecimal getVlCredPisAcum() {
+        return vlCredPisAcum;
+    }
+
+    public void setVlCredPisAcum(BigDecimal vlCredPisAcum) {
+        this.vlCredPisAcum = vlCredPisAcum;
+    }
+
+    public BigDecimal getVlCredPisDescAnt() {
+        return vlCredPisDescAnt;
+    }
+
+    public void setVlCredPisDescAnt(BigDecimal vlCredPisDescAnt) {
+        this.vlCredPisDescAnt = vlCredPisDescAnt;
+    }
+
+    public BigDecimal getVlCredPisDesc() {
+        return vlCredPisDesc;
+    }
+
+    public void setVlCredPisDesc(BigDecimal vlCredPisDesc) {
+        this.vlCredPisDesc = vlCredPisDesc;
+    }
+
+    public BigDecimal getVlCredPisDescFut() {
+        return vlCredPisDescFut;
+    }
+
+    public void setVlCredPisDescFut(BigDecimal vlCredPisDescFut) {
+        this.vlCredPisDescFut = vlCredPisDescFut;
+    }
+
+    public Integer getCstCofins() {
+        return cstCofins;
+    }
+
+    public void setCstCofins(Integer cstCofins) {
+        this.cstCofins = cstCofins;
+    }
+
+    public BigDecimal getAliqCofins() {
+        return aliqCofins;
+    }
+
+    public void setAliqCofins(BigDecimal aliqCofins) {
+        this.aliqCofins = aliqCofins;
+    }
+
+    public BigDecimal getVlCredCofinsAcum() {
+        return vlCredCofinsAcum;
+    }
+
+    public void setVlCredCofinsAcum(BigDecimal vlCredCofinsAcum) {
+        this.vlCredCofinsAcum = vlCredCofinsAcum;
+    }
+
+    public BigDecimal getVlCredCofinsDescAnt() {
+        return vlCredCofinsDescAnt;
+    }
+
+    public void setVlCredCofinsDescAnt(BigDecimal vlCredCofinsDescAnt) {
+        this.vlCredCofinsDescAnt = vlCredCofinsDescAnt;
+    }
+
+    public BigDecimal getVlCredCofinsDesc() {
+        return vlCredCofinsDesc;
+    }
+
+    public void setVlCredCofinsDesc(BigDecimal vlCredCofinsDesc) {
+        this.vlCredCofinsDesc = vlCredCofinsDesc;
+    }
+
+    public BigDecimal getVlCredCofinsDescFut() {
+        return vlCredCofinsDescFut;
+    }
+
+    public void setVlCredCofinsDescFut(BigDecimal vlCredCofinsDescFut) {
+        this.vlCredCofinsDescFut = vlCredCofinsDescFut;
+    }
+    
 }

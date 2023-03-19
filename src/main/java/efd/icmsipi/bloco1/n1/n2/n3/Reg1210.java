@@ -1,29 +1,26 @@
 package efd.icmsipi.bloco1.n1.n2.n3;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
 
-
 public class Reg1210 implements Serializable {
 	private static final long serialVersionUID = 3424891405491057200L;
 
-	@Getter @Inclui
+	@Inclui
     private final String reg = "1210";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String tipoUtil;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String nrDoc;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlCredUtil;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String chvDoce;
 
     public Reg1210(String tipoUtil, String nrDoc, BigDecimal vlCredUtil, String chvDoce) {
@@ -34,4 +31,41 @@ public class Reg1210 implements Serializable {
     }
 
     public Reg1210(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public String getTipoUtil() {
+        return tipoUtil;
+    }
+
+    public void setTipoUtil(String tipoUtil) {
+        this.tipoUtil = tipoUtil;
+    }
+
+    public String getNrDoc() {
+        return nrDoc;
+    }
+
+    public void setNrDoc(String nrDoc) {
+        this.nrDoc = nrDoc;
+    }
+
+    public BigDecimal getVlCredUtil() {
+        return vlCredUtil;
+    }
+
+    public void setVlCredUtil(BigDecimal vlCredUtil) {
+        this.vlCredUtil = vlCredUtil;
+    }
+
+    public String getChvDoce() {
+        return chvDoce;
+    }
+
+    public void setChvDoce(String chvDoce) {
+        this.chvDoce = chvDoce;
+    }
+    
 }

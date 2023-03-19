@@ -1,23 +1,20 @@
 package efd.icmsipi.blocoD.n1.n2.n3.n4;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
 
-
 public class RegD360 implements Serializable {
 	private static final long serialVersionUID = -4792358090148195613L;
 
-	@Getter @Inclui
+	@Inclui
     private final String reg = "D360";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlPis;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlCofins;
 
     public RegD360(BigDecimal vlPis, BigDecimal vlCofins) {
@@ -26,4 +23,25 @@ public class RegD360 implements Serializable {
     }
 
     public RegD360(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public BigDecimal getVlPis() {
+        return vlPis;
+    }
+
+    public void setVlPis(BigDecimal vlPis) {
+        this.vlPis = vlPis;
+    }
+
+    public BigDecimal getVlCofins() {
+        return vlCofins;
+    }
+
+    public void setVlCofins(BigDecimal vlCofins) {
+        this.vlCofins = vlCofins;
+    }
+    
 }

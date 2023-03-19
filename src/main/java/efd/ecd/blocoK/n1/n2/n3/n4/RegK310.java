@@ -7,33 +7,68 @@ import java.util.List;
 import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
 import efd.ecd.blocoK.n1.n2.n3.n4.n5.RegK315;
-import lombok.Getter;
-import lombok.Setter;
 
 public class RegK310 implements Serializable {
 	private static final long serialVersionUID = 2571866098862432089L;
 
-	@Getter @Inclui
+	@Inclui
     private final String reg = "K310";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private Integer empCodParte;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal valor;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String indValor;
     
-    @Getter @Setter @Filho
+    @Filho
     private List<RegK315> regK315;
-
-    public RegK310() {}
 
     public RegK310(Integer empCodParte, BigDecimal valor, String indValor) {
         this.empCodParte = empCodParte;
         this.valor = valor;
         this.indValor = indValor;
     }
+
+    public RegK310() {}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public Integer getEmpCodParte() {
+        return empCodParte;
+    }
+
+    public void setEmpCodParte(Integer empCodParte) {
+        this.empCodParte = empCodParte;
+    }
+
+    public BigDecimal getValor() {
+        return valor;
+    }
+
+    public void setValor(BigDecimal valor) {
+        this.valor = valor;
+    }
+
+    public String getIndValor() {
+        return indValor;
+    }
+
+    public void setIndValor(String indValor) {
+        this.indValor = indValor;
+    }
+
+    public List<RegK315> getRegK315() {
+        return regK315;
+    }
+
+    public void setRegK315(List<RegK315> regK315) {
+        this.regK315 = regK315;
+    }
+    
 
 }

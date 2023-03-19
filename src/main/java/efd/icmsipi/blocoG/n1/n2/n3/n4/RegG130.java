@@ -3,45 +3,42 @@ package efd.icmsipi.blocoG.n1.n2.n3.n4;
 import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
 import efd.icmsipi.blocoG.n1.n2.n3.n4.n5.RegG140;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.List;
 
-
 public class RegG130 implements Serializable {
 	private static final long serialVersionUID = 744845467171861085L;
 
-	@Getter @Inclui
+	@Inclui
     private final String reg = "G130";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String indEmit;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codPart;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codMod;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String serie;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private Long numDoc;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String chvNfeCte;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private LocalDate dtDoc;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String numDa;
 
-    @Getter @Setter @Filho
+    @Filho
     private List<RegG140> regG140;
 
     public RegG130(String indEmit, String codPart, String codMod, String serie, Long numDoc, String chvNfeCte, LocalDate dtDoc) {
@@ -55,4 +52,81 @@ public class RegG130 implements Serializable {
     }
 
     public RegG130(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public String getIndEmit() {
+        return indEmit;
+    }
+
+    public void setIndEmit(String indEmit) {
+        this.indEmit = indEmit;
+    }
+
+    public String getCodPart() {
+        return codPart;
+    }
+
+    public void setCodPart(String codPart) {
+        this.codPart = codPart;
+    }
+
+    public String getCodMod() {
+        return codMod;
+    }
+
+    public void setCodMod(String codMod) {
+        this.codMod = codMod;
+    }
+
+    public String getSerie() {
+        return serie;
+    }
+
+    public void setSerie(String serie) {
+        this.serie = serie;
+    }
+
+    public Long getNumDoc() {
+        return numDoc;
+    }
+
+    public void setNumDoc(Long numDoc) {
+        this.numDoc = numDoc;
+    }
+
+    public String getChvNfeCte() {
+        return chvNfeCte;
+    }
+
+    public void setChvNfeCte(String chvNfeCte) {
+        this.chvNfeCte = chvNfeCte;
+    }
+
+    public LocalDate getDtDoc() {
+        return dtDoc;
+    }
+
+    public void setDtDoc(LocalDate dtDoc) {
+        this.dtDoc = dtDoc;
+    }
+
+    public String getNumDa() {
+        return numDa;
+    }
+
+    public void setNumDa(String numDa) {
+        this.numDa = numDa;
+    }
+
+    public List<RegG140> getRegG140() {
+        return regG140;
+    }
+
+    public void setRegG140(List<RegG140> regG140) {
+        this.regG140 = regG140;
+    }
+    
 }

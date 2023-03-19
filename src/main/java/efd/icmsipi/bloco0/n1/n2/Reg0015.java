@@ -3,20 +3,17 @@ package efd.icmsipi.bloco0.n1.n2;
 import java.io.Serializable;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
-
 
 public class Reg0015 implements Serializable {
 	private static final long serialVersionUID = 5136146648311384866L;
 
-	@Getter @Inclui
+	@Inclui
     private final String reg = "0015";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String ufSt;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String ieSt;
 
     public Reg0015(String ufSt, String ieSt) {
@@ -25,5 +22,26 @@ public class Reg0015 implements Serializable {
     }
 
     public Reg0015(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public String getUfSt() {
+        return ufSt;
+    }
+
+    public void setUfSt(String ufSt) {
+        this.ufSt = ufSt;
+    }
+
+    public String getIeSt() {
+        return ieSt;
+    }
+
+    public void setIeSt(String ieSt) {
+        this.ieSt = ieSt;
+    }
+    
 
 }

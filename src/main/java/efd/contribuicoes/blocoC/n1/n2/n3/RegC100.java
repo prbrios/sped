@@ -3,8 +3,6 @@ package efd.contribuicoes.blocoC.n1.n2.n3;
 import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
 import efd.contribuicoes.blocoC.n1.n2.n3.n4.*;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -14,106 +12,106 @@ import java.util.List;
 public class RegC100 implements Serializable {
 	private static final long serialVersionUID = -8858816313640358241L;
 
-	@Getter @Inclui
+	@Inclui
 	private final String reg = "C100";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String indOper;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String indEmit;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codPart;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codMod;
 
-    @Getter @Setter @Inclui(zerosEsquerda = 2)
+    @Inclui(zerosEsquerda = 2)
     private Integer codSit;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String ser;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private Long numDoc;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String chvNfe;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private LocalDate dtDoc;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private LocalDate dtES;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlDoc;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String indPgto;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlDesc;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlAbatNt;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlMerc;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String indFrt;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlFrt;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlSeg;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlOutDa;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlBcIcms;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlIcms;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlBcIcmsSt;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlIcmsSt;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlIpi;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlPis;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlCofins;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlPisSt;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlCofinsSt;
 
-    @Getter @Setter @Filho
+    @Filho
     private List<RegC110> regC110;
 
-    @Getter @Setter @Filho
+    @Filho
     private List<RegC111> regC111;
 
-    @Getter @Setter @Filho
+    @Filho
     private List<RegC120> regC120;
 
-    @Getter @Setter @Filho
+    @Filho
     private List<RegC170> regC170;
 
-    @Getter @Setter @Filho
+    @Filho
     private List<RegC175> regC175;
 
     public RegC100(String indOper, String indEmit, String codPart, String codMod, Integer codSit, String ser, Long numDoc, String chvNfe, LocalDate dtDoc, LocalDate dtES, BigDecimal vlDoc, String indPgto, BigDecimal vlDesc, BigDecimal vlAbatNt, BigDecimal vlMerc, String indFrt, BigDecimal vlFrt, BigDecimal vlSeg, BigDecimal vlOutDa, BigDecimal vlBcIcms, BigDecimal vlIcms, BigDecimal vlBcIcmsSt, BigDecimal vlIcmsSt, BigDecimal vlIpi, BigDecimal vlPis, BigDecimal vlCofins, BigDecimal vlPisSt, BigDecimal vlCofinsSt) {
@@ -148,4 +146,273 @@ public class RegC100 implements Serializable {
     }
 
     public RegC100(){ }
+
+    public String getReg() {
+        return reg;
+    }
+
+    public String getIndOper() {
+        return indOper;
+    }
+
+    public void setIndOper(String indOper) {
+        this.indOper = indOper;
+    }
+
+    public String getIndEmit() {
+        return indEmit;
+    }
+
+    public void setIndEmit(String indEmit) {
+        this.indEmit = indEmit;
+    }
+
+    public String getCodPart() {
+        return codPart;
+    }
+
+    public void setCodPart(String codPart) {
+        this.codPart = codPart;
+    }
+
+    public String getCodMod() {
+        return codMod;
+    }
+
+    public void setCodMod(String codMod) {
+        this.codMod = codMod;
+    }
+
+    public Integer getCodSit() {
+        return codSit;
+    }
+
+    public void setCodSit(Integer codSit) {
+        this.codSit = codSit;
+    }
+
+    public String getSer() {
+        return ser;
+    }
+
+    public void setSer(String ser) {
+        this.ser = ser;
+    }
+
+    public Long getNumDoc() {
+        return numDoc;
+    }
+
+    public void setNumDoc(Long numDoc) {
+        this.numDoc = numDoc;
+    }
+
+    public String getChvNfe() {
+        return chvNfe;
+    }
+
+    public void setChvNfe(String chvNfe) {
+        this.chvNfe = chvNfe;
+    }
+
+    public LocalDate getDtDoc() {
+        return dtDoc;
+    }
+
+    public void setDtDoc(LocalDate dtDoc) {
+        this.dtDoc = dtDoc;
+    }
+
+    public LocalDate getDtES() {
+        return dtES;
+    }
+
+    public void setDtES(LocalDate dtES) {
+        this.dtES = dtES;
+    }
+
+    public BigDecimal getVlDoc() {
+        return vlDoc;
+    }
+
+    public void setVlDoc(BigDecimal vlDoc) {
+        this.vlDoc = vlDoc;
+    }
+
+    public String getIndPgto() {
+        return indPgto;
+    }
+
+    public void setIndPgto(String indPgto) {
+        this.indPgto = indPgto;
+    }
+
+    public BigDecimal getVlDesc() {
+        return vlDesc;
+    }
+
+    public void setVlDesc(BigDecimal vlDesc) {
+        this.vlDesc = vlDesc;
+    }
+
+    public BigDecimal getVlAbatNt() {
+        return vlAbatNt;
+    }
+
+    public void setVlAbatNt(BigDecimal vlAbatNt) {
+        this.vlAbatNt = vlAbatNt;
+    }
+
+    public BigDecimal getVlMerc() {
+        return vlMerc;
+    }
+
+    public void setVlMerc(BigDecimal vlMerc) {
+        this.vlMerc = vlMerc;
+    }
+
+    public String getIndFrt() {
+        return indFrt;
+    }
+
+    public void setIndFrt(String indFrt) {
+        this.indFrt = indFrt;
+    }
+
+    public BigDecimal getVlFrt() {
+        return vlFrt;
+    }
+
+    public void setVlFrt(BigDecimal vlFrt) {
+        this.vlFrt = vlFrt;
+    }
+
+    public BigDecimal getVlSeg() {
+        return vlSeg;
+    }
+
+    public void setVlSeg(BigDecimal vlSeg) {
+        this.vlSeg = vlSeg;
+    }
+
+    public BigDecimal getVlOutDa() {
+        return vlOutDa;
+    }
+
+    public void setVlOutDa(BigDecimal vlOutDa) {
+        this.vlOutDa = vlOutDa;
+    }
+
+    public BigDecimal getVlBcIcms() {
+        return vlBcIcms;
+    }
+
+    public void setVlBcIcms(BigDecimal vlBcIcms) {
+        this.vlBcIcms = vlBcIcms;
+    }
+
+    public BigDecimal getVlIcms() {
+        return vlIcms;
+    }
+
+    public void setVlIcms(BigDecimal vlIcms) {
+        this.vlIcms = vlIcms;
+    }
+
+    public BigDecimal getVlBcIcmsSt() {
+        return vlBcIcmsSt;
+    }
+
+    public void setVlBcIcmsSt(BigDecimal vlBcIcmsSt) {
+        this.vlBcIcmsSt = vlBcIcmsSt;
+    }
+
+    public BigDecimal getVlIcmsSt() {
+        return vlIcmsSt;
+    }
+
+    public void setVlIcmsSt(BigDecimal vlIcmsSt) {
+        this.vlIcmsSt = vlIcmsSt;
+    }
+
+    public BigDecimal getVlIpi() {
+        return vlIpi;
+    }
+
+    public void setVlIpi(BigDecimal vlIpi) {
+        this.vlIpi = vlIpi;
+    }
+
+    public BigDecimal getVlPis() {
+        return vlPis;
+    }
+
+    public void setVlPis(BigDecimal vlPis) {
+        this.vlPis = vlPis;
+    }
+
+    public BigDecimal getVlCofins() {
+        return vlCofins;
+    }
+
+    public void setVlCofins(BigDecimal vlCofins) {
+        this.vlCofins = vlCofins;
+    }
+
+    public BigDecimal getVlPisSt() {
+        return vlPisSt;
+    }
+
+    public void setVlPisSt(BigDecimal vlPisSt) {
+        this.vlPisSt = vlPisSt;
+    }
+
+    public BigDecimal getVlCofinsSt() {
+        return vlCofinsSt;
+    }
+
+    public void setVlCofinsSt(BigDecimal vlCofinsSt) {
+        this.vlCofinsSt = vlCofinsSt;
+    }
+
+    public List<RegC110> getRegC110() {
+        return regC110;
+    }
+
+    public void setRegC110(List<RegC110> regC110) {
+        this.regC110 = regC110;
+    }
+
+    public List<RegC111> getRegC111() {
+        return regC111;
+    }
+
+    public void setRegC111(List<RegC111> regC111) {
+        this.regC111 = regC111;
+    }
+
+    public List<RegC120> getRegC120() {
+        return regC120;
+    }
+
+    public void setRegC120(List<RegC120> regC120) {
+        this.regC120 = regC120;
+    }
+
+    public List<RegC170> getRegC170() {
+        return regC170;
+    }
+
+    public void setRegC170(List<RegC170> regC170) {
+        this.regC170 = regC170;
+    }
+
+    public List<RegC175> getRegC175() {
+        return regC175;
+    }
+
+    public void setRegC175(List<RegC175> regC175) {
+        this.regC175 = regC175;
+    }
+    
 }

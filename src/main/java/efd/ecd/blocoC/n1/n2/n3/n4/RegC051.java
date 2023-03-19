@@ -3,19 +3,17 @@ package efd.ecd.blocoC.n1.n2.n3.n4;
 import java.io.Serializable;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
 
 public class RegC051 implements Serializable {
 	private static final long serialVersionUID = -1531715344153453183L;
 
-	@Getter @Inclui
+	@Inclui
 	private final String reg = "C051";
 	
-	@Getter @Setter @Inclui
+	@Inclui
 	private String codCcus;
 	
-	@Getter @Setter @Inclui
+	@Inclui
 	private String codCtaRef;
 
 	public RegC051(String codCcus, String codCtaRef) {
@@ -25,5 +23,26 @@ public class RegC051 implements Serializable {
 	}
 	
 	public RegC051() {/* */}
+
+	public String getReg() {
+		return reg;
+	}
+
+	public String getCodCcus() {
+		return codCcus;
+	}
+
+	public void setCodCcus(String codCcus) {
+		this.codCcus = codCcus;
+	}
+
+	public String getCodCtaRef() {
+		return codCtaRef;
+	}
+
+	public void setCodCtaRef(String codCtaRef) {
+		this.codCtaRef = codCtaRef;
+	}
+	
 	
 }

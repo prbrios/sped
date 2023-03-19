@@ -8,34 +8,32 @@ import java.util.List;
 import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
 import efd.ecd.blocoI.n1.n2.n3.n4.RegI250;
-import lombok.Getter;
-import lombok.Setter;
 
 public class RegI200 implements Serializable {
 	private static final long serialVersionUID = -8075561456447653131L;
 
-	@Getter @Inclui
+	@Inclui
 	private final String reg = "I200";
 	
-	@Getter @Setter @Inclui
+	@Inclui
 	private String numLcto;
 	
-	@Getter @Setter @Inclui
+	@Inclui
 	private LocalDate dtLcto;
 	
-	@Getter @Setter @Inclui
+	@Inclui
 	private BigDecimal vlLcto;
 	
-	@Getter @Setter @Inclui
+	@Inclui
 	private String indLcto;
 	
-	@Getter @Setter @Inclui
+	@Inclui
 	private LocalDate dtLctoExt;
 	
-	@Getter @Setter @Inclui
+	@Inclui
 	private BigDecimal vlLctoMf;
 
-	@Getter @Setter @Filho
+	@Filho
 	private List<RegI250> regI250;
 	
 	public RegI200(String numLcto, LocalDate dtLcto, BigDecimal vlLcto, String indLcto, LocalDate dtLctoExt,
@@ -50,5 +48,66 @@ public class RegI200 implements Serializable {
 	}
 	
 	public RegI200() {/* */}
+
+	public String getReg() {
+		return reg;
+	}
+
+	public String getNumLcto() {
+		return numLcto;
+	}
+
+	public void setNumLcto(String numLcto) {
+		this.numLcto = numLcto;
+	}
+
+	public LocalDate getDtLcto() {
+		return dtLcto;
+	}
+
+	public void setDtLcto(LocalDate dtLcto) {
+		this.dtLcto = dtLcto;
+	}
+
+	public BigDecimal getVlLcto() {
+		return vlLcto;
+	}
+
+	public void setVlLcto(BigDecimal vlLcto) {
+		this.vlLcto = vlLcto;
+	}
+
+	public String getIndLcto() {
+		return indLcto;
+	}
+
+	public void setIndLcto(String indLcto) {
+		this.indLcto = indLcto;
+	}
+
+	public LocalDate getDtLctoExt() {
+		return dtLctoExt;
+	}
+
+	public void setDtLctoExt(LocalDate dtLctoExt) {
+		this.dtLctoExt = dtLctoExt;
+	}
+
+	public BigDecimal getVlLctoMf() {
+		return vlLctoMf;
+	}
+
+	public void setVlLctoMf(BigDecimal vlLctoMf) {
+		this.vlLctoMf = vlLctoMf;
+	}
+
+	public List<RegI250> getRegI250() {
+		return regI250;
+	}
+
+	public void setRegI250(List<RegI250> regI250) {
+		this.regI250 = regI250;
+	}
+	
 	
 }

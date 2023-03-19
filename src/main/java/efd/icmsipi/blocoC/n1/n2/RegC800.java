@@ -4,73 +4,70 @@ import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
 import efd.icmsipi.blocoC.n1.n2.n3.RegC810;
 import efd.icmsipi.blocoC.n1.n2.n3.RegC850;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
 
-
 public class RegC800 implements Serializable {
 	private static final long serialVersionUID = -2263327405937256830L;
 
-	@Getter @Inclui
+	@Inclui
     private final String reg = "C800";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codMod;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codSit;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private Integer numCfe;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private LocalDate dtDoc;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlCfe;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlPis;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlCofins;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String cnpjCpf;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private Integer nrSat;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String chvCfe;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlDesc;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlMerc;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlOutDa;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlIcms;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlPisSt;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlCofinsSt;
 
-    @Getter @Setter @Filho
+    @Filho
     private List<RegC810> regC810;
 
-    @Getter @Setter @Filho
+    @Filho
     private List<RegC850> regC850;
 
     public RegC800(String codMod, String codSit, Integer numCfe, LocalDate dtDoc, BigDecimal vlCfe, BigDecimal vlPis, BigDecimal vlCofins, String cnpjCpf, Integer nrSat, String chvCfe, BigDecimal vlDesc, BigDecimal vlMerc, BigDecimal vlOutDa, BigDecimal vlIcms, BigDecimal vlPisSt, BigDecimal vlCofinsSt) {
@@ -93,4 +90,153 @@ public class RegC800 implements Serializable {
     }
 
     public RegC800(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public String getCodMod() {
+        return codMod;
+    }
+
+    public void setCodMod(String codMod) {
+        this.codMod = codMod;
+    }
+
+    public String getCodSit() {
+        return codSit;
+    }
+
+    public void setCodSit(String codSit) {
+        this.codSit = codSit;
+    }
+
+    public Integer getNumCfe() {
+        return numCfe;
+    }
+
+    public void setNumCfe(Integer numCfe) {
+        this.numCfe = numCfe;
+    }
+
+    public LocalDate getDtDoc() {
+        return dtDoc;
+    }
+
+    public void setDtDoc(LocalDate dtDoc) {
+        this.dtDoc = dtDoc;
+    }
+
+    public BigDecimal getVlCfe() {
+        return vlCfe;
+    }
+
+    public void setVlCfe(BigDecimal vlCfe) {
+        this.vlCfe = vlCfe;
+    }
+
+    public BigDecimal getVlPis() {
+        return vlPis;
+    }
+
+    public void setVlPis(BigDecimal vlPis) {
+        this.vlPis = vlPis;
+    }
+
+    public BigDecimal getVlCofins() {
+        return vlCofins;
+    }
+
+    public void setVlCofins(BigDecimal vlCofins) {
+        this.vlCofins = vlCofins;
+    }
+
+    public String getCnpjCpf() {
+        return cnpjCpf;
+    }
+
+    public void setCnpjCpf(String cnpjCpf) {
+        this.cnpjCpf = cnpjCpf;
+    }
+
+    public Integer getNrSat() {
+        return nrSat;
+    }
+
+    public void setNrSat(Integer nrSat) {
+        this.nrSat = nrSat;
+    }
+
+    public String getChvCfe() {
+        return chvCfe;
+    }
+
+    public void setChvCfe(String chvCfe) {
+        this.chvCfe = chvCfe;
+    }
+
+    public BigDecimal getVlDesc() {
+        return vlDesc;
+    }
+
+    public void setVlDesc(BigDecimal vlDesc) {
+        this.vlDesc = vlDesc;
+    }
+
+    public BigDecimal getVlMerc() {
+        return vlMerc;
+    }
+
+    public void setVlMerc(BigDecimal vlMerc) {
+        this.vlMerc = vlMerc;
+    }
+
+    public BigDecimal getVlOutDa() {
+        return vlOutDa;
+    }
+
+    public void setVlOutDa(BigDecimal vlOutDa) {
+        this.vlOutDa = vlOutDa;
+    }
+
+    public BigDecimal getVlIcms() {
+        return vlIcms;
+    }
+
+    public void setVlIcms(BigDecimal vlIcms) {
+        this.vlIcms = vlIcms;
+    }
+
+    public BigDecimal getVlPisSt() {
+        return vlPisSt;
+    }
+
+    public void setVlPisSt(BigDecimal vlPisSt) {
+        this.vlPisSt = vlPisSt;
+    }
+
+    public BigDecimal getVlCofinsSt() {
+        return vlCofinsSt;
+    }
+
+    public void setVlCofinsSt(BigDecimal vlCofinsSt) {
+        this.vlCofinsSt = vlCofinsSt;
+    }
+
+    public List<RegC810> getRegC810() {
+        return regC810;
+    }
+
+    public void setRegC810(List<RegC810> regC810) {
+        this.regC810 = regC810;
+    }
+
+    public List<RegC850> getRegC850() {
+        return regC850;
+    }
+
+    public void setRegC850(List<RegC850> regC850) {
+        this.regC850 = regC850;
+    }
+    
 }

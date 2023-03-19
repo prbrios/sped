@@ -3,8 +3,6 @@ package efd.contribuicoes.blocoD.n1.n2.n3;
 import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
 import efd.contribuicoes.blocoD.n1.n2.n3.n4.RegD359;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -14,76 +12,76 @@ import java.util.List;
 public class RegD350 implements Serializable {
 	private static final long serialVersionUID = 2319509663279093024L;
 
-	@Getter @Inclui
+	@Inclui
 	private final String reg = "D350";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codMod;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String ecfMod;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String ecfFab;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private LocalDate dtDoc;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private Integer cro;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private Integer crz;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private Integer numCooFin;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal gtFin;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlBrt;
 
-    @Getter @Setter @Inclui(zerosEsquerda = 2)
+    @Inclui(zerosEsquerda = 2)
     private Integer cstPis;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlBcPis;
 
-    @Getter @Setter @Inclui(casasDecimais = 4)
+    @Inclui(casasDecimais = 4)
     private BigDecimal aliqPis;
 
-    @Getter @Setter @Inclui(casasDecimais = 3)
+    @Inclui(casasDecimais = 3)
     private BigDecimal quantBcPis;
 
-    @Getter @Setter @Inclui(casasDecimais = 4)
+    @Inclui(casasDecimais = 4)
     private BigDecimal aliqPisQuant;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlPis;
 
-    @Getter @Setter @Inclui(zerosEsquerda = 2)
+    @Inclui(zerosEsquerda = 2)
     private Integer cstCofins;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlBcCofins;
 
-    @Getter @Setter @Inclui(casasDecimais = 4)
+    @Inclui(casasDecimais = 4)
     private BigDecimal aliqCofins;
 
-    @Getter @Setter @Inclui(casasDecimais = 3)
+    @Inclui(casasDecimais = 3)
     private BigDecimal quantBcCofins;
 
-    @Getter @Setter @Inclui(casasDecimais = 4)
+    @Inclui(casasDecimais = 4)
     private BigDecimal aliqCofinsQuant;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlCofins;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codCta;
 
-    @Getter @Setter @Filho
+    @Filho
     private List<RegD359> regD359;
 
     public RegD350(String codMod, String ecfMod, String ecfFab, LocalDate dtDoc, Integer cro, Integer crz, Integer numCooFin, BigDecimal gtFin, BigDecimal vlBrt, Integer cstPis, BigDecimal vlBcPis, BigDecimal aliqPis, BigDecimal quantBcPis, BigDecimal aliqPisQuant, BigDecimal vlPis, Integer cstCofins, BigDecimal vlBcCofins, BigDecimal aliqCofins, BigDecimal quantBcCofins, BigDecimal aliqCofinsQuant, BigDecimal vlCofins, String codCta) {
@@ -112,4 +110,193 @@ public class RegD350 implements Serializable {
     }
 
     public RegD350(){ }
+
+    public String getReg() {
+        return reg;
+    }
+
+    public String getCodMod() {
+        return codMod;
+    }
+
+    public void setCodMod(String codMod) {
+        this.codMod = codMod;
+    }
+
+    public String getEcfMod() {
+        return ecfMod;
+    }
+
+    public void setEcfMod(String ecfMod) {
+        this.ecfMod = ecfMod;
+    }
+
+    public String getEcfFab() {
+        return ecfFab;
+    }
+
+    public void setEcfFab(String ecfFab) {
+        this.ecfFab = ecfFab;
+    }
+
+    public LocalDate getDtDoc() {
+        return dtDoc;
+    }
+
+    public void setDtDoc(LocalDate dtDoc) {
+        this.dtDoc = dtDoc;
+    }
+
+    public Integer getCro() {
+        return cro;
+    }
+
+    public void setCro(Integer cro) {
+        this.cro = cro;
+    }
+
+    public Integer getCrz() {
+        return crz;
+    }
+
+    public void setCrz(Integer crz) {
+        this.crz = crz;
+    }
+
+    public Integer getNumCooFin() {
+        return numCooFin;
+    }
+
+    public void setNumCooFin(Integer numCooFin) {
+        this.numCooFin = numCooFin;
+    }
+
+    public BigDecimal getGtFin() {
+        return gtFin;
+    }
+
+    public void setGtFin(BigDecimal gtFin) {
+        this.gtFin = gtFin;
+    }
+
+    public BigDecimal getVlBrt() {
+        return vlBrt;
+    }
+
+    public void setVlBrt(BigDecimal vlBrt) {
+        this.vlBrt = vlBrt;
+    }
+
+    public Integer getCstPis() {
+        return cstPis;
+    }
+
+    public void setCstPis(Integer cstPis) {
+        this.cstPis = cstPis;
+    }
+
+    public BigDecimal getVlBcPis() {
+        return vlBcPis;
+    }
+
+    public void setVlBcPis(BigDecimal vlBcPis) {
+        this.vlBcPis = vlBcPis;
+    }
+
+    public BigDecimal getAliqPis() {
+        return aliqPis;
+    }
+
+    public void setAliqPis(BigDecimal aliqPis) {
+        this.aliqPis = aliqPis;
+    }
+
+    public BigDecimal getQuantBcPis() {
+        return quantBcPis;
+    }
+
+    public void setQuantBcPis(BigDecimal quantBcPis) {
+        this.quantBcPis = quantBcPis;
+    }
+
+    public BigDecimal getAliqPisQuant() {
+        return aliqPisQuant;
+    }
+
+    public void setAliqPisQuant(BigDecimal aliqPisQuant) {
+        this.aliqPisQuant = aliqPisQuant;
+    }
+
+    public BigDecimal getVlPis() {
+        return vlPis;
+    }
+
+    public void setVlPis(BigDecimal vlPis) {
+        this.vlPis = vlPis;
+    }
+
+    public Integer getCstCofins() {
+        return cstCofins;
+    }
+
+    public void setCstCofins(Integer cstCofins) {
+        this.cstCofins = cstCofins;
+    }
+
+    public BigDecimal getVlBcCofins() {
+        return vlBcCofins;
+    }
+
+    public void setVlBcCofins(BigDecimal vlBcCofins) {
+        this.vlBcCofins = vlBcCofins;
+    }
+
+    public BigDecimal getAliqCofins() {
+        return aliqCofins;
+    }
+
+    public void setAliqCofins(BigDecimal aliqCofins) {
+        this.aliqCofins = aliqCofins;
+    }
+
+    public BigDecimal getQuantBcCofins() {
+        return quantBcCofins;
+    }
+
+    public void setQuantBcCofins(BigDecimal quantBcCofins) {
+        this.quantBcCofins = quantBcCofins;
+    }
+
+    public BigDecimal getAliqCofinsQuant() {
+        return aliqCofinsQuant;
+    }
+
+    public void setAliqCofinsQuant(BigDecimal aliqCofinsQuant) {
+        this.aliqCofinsQuant = aliqCofinsQuant;
+    }
+
+    public BigDecimal getVlCofins() {
+        return vlCofins;
+    }
+
+    public void setVlCofins(BigDecimal vlCofins) {
+        this.vlCofins = vlCofins;
+    }
+
+    public String getCodCta() {
+        return codCta;
+    }
+
+    public void setCodCta(String codCta) {
+        this.codCta = codCta;
+    }
+
+    public List<RegD359> getRegD359() {
+        return regD359;
+    }
+
+    public void setRegD359(List<RegD359> regD359) {
+        this.regD359 = regD359;
+    }
+    
 }

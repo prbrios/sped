@@ -13,8 +13,6 @@ import efd.anotacoes.Inclui;
 import efd.contribuicoes.blocoC.n1.n2.n3.n4.RegC501;
 import efd.contribuicoes.blocoC.n1.n2.n3.n4.RegC505;
 import efd.contribuicoes.blocoC.n1.n2.n3.n4.RegC509;
-import lombok.Getter;
-import lombok.Setter;
 
 public class RegC500 implements Serializable {
 	private static final long serialVersionUID = -6283982160366421192L;
@@ -22,58 +20,58 @@ public class RegC500 implements Serializable {
 	@SuppressWarnings("unused")
 	private Grupo grupo;
 	
-    @Getter @Inclui @G1 @G2
+    @Inclui @G1 @G2
     private final String reg = "C500";
 
-    @Getter @Setter @Inclui @G1 @G2
+    @Inclui @G1 @G2
     String codPart;
 
-    @Getter @Setter @Inclui @G1 @G2
+    @Inclui @G1 @G2
     String codMod;
 
-    @Getter @Setter @Inclui(zerosEsquerda = 2) @G1 @G2
+    @Inclui(zerosEsquerda = 2) @G1 @G2
     Integer codSit;
 
-    @Getter @Setter @Inclui @G1 @G2
+    @Inclui @G1 @G2
     String ser;
 
-    @Getter @Setter @Inclui @G1 @G2
+    @Inclui @G1 @G2
     Integer sub;
 
-    @Getter @Setter @Inclui @G1 @G2
+    @Inclui @G1 @G2
     Long numDoc;
 
-    @Getter @Setter @Inclui @G1 @G2
+    @Inclui @G1 @G2
     LocalDate dtDoc;
 
-    @Getter @Setter @Inclui @G1 @G2
+    @Inclui @G1 @G2
     LocalDate dtEnt;
 
-    @Getter @Setter @Inclui @G1 @G2
+    @Inclui @G1 @G2
     BigDecimal vlDoc;
 
-    @Getter @Setter @Inclui @G1 @G2
+    @Inclui @G1 @G2
     BigDecimal vlIcms;
 
-    @Getter @Setter @Inclui @G1 @G2
+    @Inclui @G1 @G2
     String codInf;
 
-    @Getter @Setter @Inclui @G1 @G2
+    @Inclui @G1 @G2
     BigDecimal vlPis;
 
-    @Getter @Setter @Inclui @G1 @G2
+    @Inclui @G1 @G2
     BigDecimal vlCofins;
     
-    @Getter @Setter @Inclui @G2
+    @Inclui @G2
     String chvDoce;
 
-    @Getter @Setter @Filho
+    @Filho
     private List<RegC501> regC501;
 
-    @Getter @Setter @Filho
+    @Filho
     private List<RegC505> regC505;
 
-    @Getter @Setter @Filho
+    @Filho
     private List<RegC509> regC509;
 
     public RegC500(String codPart, String codMod, Integer codSit, String ser, Integer sub, Long numDoc, LocalDate dtDoc, LocalDate dtEnt, BigDecimal vlDoc, BigDecimal vlIcms, String codInf, BigDecimal vlPis, BigDecimal vlCofins) {
@@ -112,4 +110,145 @@ public class RegC500 implements Serializable {
     }
 
     public RegC500(){ }
+
+    public String getReg() {
+        return reg;
+    }
+
+    public String getCodPart() {
+        return codPart;
+    }
+
+    public void setCodPart(String codPart) {
+        this.codPart = codPart;
+    }
+
+    public String getCodMod() {
+        return codMod;
+    }
+
+    public void setCodMod(String codMod) {
+        this.codMod = codMod;
+    }
+
+    public Integer getCodSit() {
+        return codSit;
+    }
+
+    public void setCodSit(Integer codSit) {
+        this.codSit = codSit;
+    }
+
+    public String getSer() {
+        return ser;
+    }
+
+    public void setSer(String ser) {
+        this.ser = ser;
+    }
+
+    public Integer getSub() {
+        return sub;
+    }
+
+    public void setSub(Integer sub) {
+        this.sub = sub;
+    }
+
+    public Long getNumDoc() {
+        return numDoc;
+    }
+
+    public void setNumDoc(Long numDoc) {
+        this.numDoc = numDoc;
+    }
+
+    public LocalDate getDtDoc() {
+        return dtDoc;
+    }
+
+    public void setDtDoc(LocalDate dtDoc) {
+        this.dtDoc = dtDoc;
+    }
+
+    public LocalDate getDtEnt() {
+        return dtEnt;
+    }
+
+    public void setDtEnt(LocalDate dtEnt) {
+        this.dtEnt = dtEnt;
+    }
+
+    public BigDecimal getVlDoc() {
+        return vlDoc;
+    }
+
+    public void setVlDoc(BigDecimal vlDoc) {
+        this.vlDoc = vlDoc;
+    }
+
+    public BigDecimal getVlIcms() {
+        return vlIcms;
+    }
+
+    public void setVlIcms(BigDecimal vlIcms) {
+        this.vlIcms = vlIcms;
+    }
+
+    public String getCodInf() {
+        return codInf;
+    }
+
+    public void setCodInf(String codInf) {
+        this.codInf = codInf;
+    }
+
+    public BigDecimal getVlPis() {
+        return vlPis;
+    }
+
+    public void setVlPis(BigDecimal vlPis) {
+        this.vlPis = vlPis;
+    }
+
+    public BigDecimal getVlCofins() {
+        return vlCofins;
+    }
+
+    public void setVlCofins(BigDecimal vlCofins) {
+        this.vlCofins = vlCofins;
+    }
+
+    public String getChvDoce() {
+        return chvDoce;
+    }
+
+    public void setChvDoce(String chvDoce) {
+        this.chvDoce = chvDoce;
+    }
+
+    public List<RegC501> getRegC501() {
+        return regC501;
+    }
+
+    public void setRegC501(List<RegC501> regC501) {
+        this.regC501 = regC501;
+    }
+
+    public List<RegC505> getRegC505() {
+        return regC505;
+    }
+
+    public void setRegC505(List<RegC505> regC505) {
+        this.regC505 = regC505;
+    }
+
+    public List<RegC509> getRegC509() {
+        return regC509;
+    }
+
+    public void setRegC509(List<RegC509> regC509) {
+        this.regC509 = regC509;
+    }
+    
 }

@@ -3,17 +3,14 @@ package efd.icmsipi.blocoD.n1.n2.n3;
 import java.io.Serializable;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
-
 
 public class RegD301 implements Serializable {
 	private static final long serialVersionUID = -6385896381682561927L;
 
-	@Getter @Inclui
+	@Inclui
     private final String reg = "D301";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private Long numDocCan;
 
     public RegD301(Long numDocCan) {
@@ -21,4 +18,17 @@ public class RegD301 implements Serializable {
     }
 
     public RegD301(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public Long getNumDocCan() {
+        return numDocCan;
+    }
+
+    public void setNumDocCan(Long numDocCan) {
+        this.numDocCan = numDocCan;
+    }
+    
 }

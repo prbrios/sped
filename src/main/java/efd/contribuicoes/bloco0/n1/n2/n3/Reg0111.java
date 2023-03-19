@@ -1,8 +1,6 @@
 package efd.contribuicoes.bloco0.n1.n2.n3;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -10,22 +8,22 @@ import java.math.BigDecimal;
 public class Reg0111 implements Serializable {
 	private static final long serialVersionUID = -2184432042969990333L;
 
-	@Getter @Inclui
+	@Inclui
 	private final String reg = "0111";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal recBruNcumTribMi;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal recBruNcumNtMi;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal recBruNcumExp;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal recBruCum;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal recBruTotal;
 
     public Reg0111(BigDecimal recBruNcumTribMi, BigDecimal recBruNcumNtMi, BigDecimal recBruNcumExp, BigDecimal recBruCum, BigDecimal recBruTotal) {
@@ -37,4 +35,49 @@ public class Reg0111 implements Serializable {
     }
 
     public Reg0111(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public BigDecimal getRecBruNcumTribMi() {
+        return recBruNcumTribMi;
+    }
+
+    public void setRecBruNcumTribMi(BigDecimal recBruNcumTribMi) {
+        this.recBruNcumTribMi = recBruNcumTribMi;
+    }
+
+    public BigDecimal getRecBruNcumNtMi() {
+        return recBruNcumNtMi;
+    }
+
+    public void setRecBruNcumNtMi(BigDecimal recBruNcumNtMi) {
+        this.recBruNcumNtMi = recBruNcumNtMi;
+    }
+
+    public BigDecimal getRecBruNcumExp() {
+        return recBruNcumExp;
+    }
+
+    public void setRecBruNcumExp(BigDecimal recBruNcumExp) {
+        this.recBruNcumExp = recBruNcumExp;
+    }
+
+    public BigDecimal getRecBruCum() {
+        return recBruCum;
+    }
+
+    public void setRecBruCum(BigDecimal recBruCum) {
+        this.recBruCum = recBruCum;
+    }
+
+    public BigDecimal getRecBruTotal() {
+        return recBruTotal;
+    }
+
+    public void setRecBruTotal(BigDecimal recBruTotal) {
+        this.recBruTotal = recBruTotal;
+    }
+    
 }

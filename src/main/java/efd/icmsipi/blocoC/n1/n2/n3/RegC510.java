@@ -1,77 +1,74 @@
 package efd.icmsipi.blocoC.n1.n2.n3;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
 
-
 public class RegC510 implements Serializable {
 	private static final long serialVersionUID = 836744071098707287L;
 
-	@Getter @Inclui
+	@Inclui
     private final String reg = "C510";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private Integer numItem;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codItem;
 
-    @Getter @Setter @Inclui(zerosEsquerda = 4)
+    @Inclui(zerosEsquerda = 4)
     private Integer cldClass;
 
-    @Getter @Setter @Inclui(casasDecimais = 3)
+    @Inclui(casasDecimais = 3)
     private BigDecimal qtd;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String unid;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlItem;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlDesc;
 
-    @Getter @Setter @Inclui(zerosEsquerda = 3)
+    @Inclui(zerosEsquerda = 3)
     private Integer cstIcms;
 
-    @Getter @Setter @Inclui(zerosEsquerda = 4)
+    @Inclui(zerosEsquerda = 4)
     private Integer cfop;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlBcIcms;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal aliqIcms;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlIcms;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlBcIcmsSt;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal aliqSt;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlIcmsSt;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String indRec;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codPart;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlPis;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlCofins;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codCta;
 
     public RegC510(Integer numItem, String codItem, Integer cldClass, BigDecimal qtd, String unid, BigDecimal vlItem, BigDecimal vlDesc, Integer cstIcms, Integer cfop, BigDecimal vlBcIcms, BigDecimal aliqIcms, BigDecimal vlIcms, BigDecimal vlBcIcmsSt, BigDecimal aliqSt, BigDecimal vlIcmsSt, String indRec, String codPart, BigDecimal vlPis, BigDecimal vlCofins, String codCta) {
@@ -98,4 +95,169 @@ public class RegC510 implements Serializable {
     }
 
     public RegC510(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public Integer getNumItem() {
+        return numItem;
+    }
+
+    public void setNumItem(Integer numItem) {
+        this.numItem = numItem;
+    }
+
+    public String getCodItem() {
+        return codItem;
+    }
+
+    public void setCodItem(String codItem) {
+        this.codItem = codItem;
+    }
+
+    public Integer getCldClass() {
+        return cldClass;
+    }
+
+    public void setCldClass(Integer cldClass) {
+        this.cldClass = cldClass;
+    }
+
+    public BigDecimal getQtd() {
+        return qtd;
+    }
+
+    public void setQtd(BigDecimal qtd) {
+        this.qtd = qtd;
+    }
+
+    public String getUnid() {
+        return unid;
+    }
+
+    public void setUnid(String unid) {
+        this.unid = unid;
+    }
+
+    public BigDecimal getVlItem() {
+        return vlItem;
+    }
+
+    public void setVlItem(BigDecimal vlItem) {
+        this.vlItem = vlItem;
+    }
+
+    public BigDecimal getVlDesc() {
+        return vlDesc;
+    }
+
+    public void setVlDesc(BigDecimal vlDesc) {
+        this.vlDesc = vlDesc;
+    }
+
+    public Integer getCstIcms() {
+        return cstIcms;
+    }
+
+    public void setCstIcms(Integer cstIcms) {
+        this.cstIcms = cstIcms;
+    }
+
+    public Integer getCfop() {
+        return cfop;
+    }
+
+    public void setCfop(Integer cfop) {
+        this.cfop = cfop;
+    }
+
+    public BigDecimal getVlBcIcms() {
+        return vlBcIcms;
+    }
+
+    public void setVlBcIcms(BigDecimal vlBcIcms) {
+        this.vlBcIcms = vlBcIcms;
+    }
+
+    public BigDecimal getAliqIcms() {
+        return aliqIcms;
+    }
+
+    public void setAliqIcms(BigDecimal aliqIcms) {
+        this.aliqIcms = aliqIcms;
+    }
+
+    public BigDecimal getVlIcms() {
+        return vlIcms;
+    }
+
+    public void setVlIcms(BigDecimal vlIcms) {
+        this.vlIcms = vlIcms;
+    }
+
+    public BigDecimal getVlBcIcmsSt() {
+        return vlBcIcmsSt;
+    }
+
+    public void setVlBcIcmsSt(BigDecimal vlBcIcmsSt) {
+        this.vlBcIcmsSt = vlBcIcmsSt;
+    }
+
+    public BigDecimal getAliqSt() {
+        return aliqSt;
+    }
+
+    public void setAliqSt(BigDecimal aliqSt) {
+        this.aliqSt = aliqSt;
+    }
+
+    public BigDecimal getVlIcmsSt() {
+        return vlIcmsSt;
+    }
+
+    public void setVlIcmsSt(BigDecimal vlIcmsSt) {
+        this.vlIcmsSt = vlIcmsSt;
+    }
+
+    public String getIndRec() {
+        return indRec;
+    }
+
+    public void setIndRec(String indRec) {
+        this.indRec = indRec;
+    }
+
+    public String getCodPart() {
+        return codPart;
+    }
+
+    public void setCodPart(String codPart) {
+        this.codPart = codPart;
+    }
+
+    public BigDecimal getVlPis() {
+        return vlPis;
+    }
+
+    public void setVlPis(BigDecimal vlPis) {
+        this.vlPis = vlPis;
+    }
+
+    public BigDecimal getVlCofins() {
+        return vlCofins;
+    }
+
+    public void setVlCofins(BigDecimal vlCofins) {
+        this.vlCofins = vlCofins;
+    }
+
+    public String getCodCta() {
+        return codCta;
+    }
+
+    public void setCodCta(String codCta) {
+        this.codCta = codCta;
+    }
+    
 }

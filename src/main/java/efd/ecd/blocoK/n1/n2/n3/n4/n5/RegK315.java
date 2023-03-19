@@ -4,28 +4,24 @@ import java.io.Serializable;
 import java.math.BigDecimal;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
 
 public class RegK315 implements Serializable {
 	private static final long serialVersionUID = -4603135862383021513L;
 
-	@Getter @Inclui
+	@Inclui
     private final String reg = "K315";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private Integer empCodContra;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codContra;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal valor;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String indValor;
-
-    public RegK315(){}
 
     public RegK315(Integer empCodContra, String codContra, BigDecimal valor, String indValor) {
         this.empCodContra = empCodContra;
@@ -33,5 +29,44 @@ public class RegK315 implements Serializable {
         this.valor = valor;
         this.indValor = indValor;
     }
+
+    public RegK315(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public Integer getEmpCodContra() {
+        return empCodContra;
+    }
+
+    public void setEmpCodContra(Integer empCodContra) {
+        this.empCodContra = empCodContra;
+    }
+
+    public String getCodContra() {
+        return codContra;
+    }
+
+    public void setCodContra(String codContra) {
+        this.codContra = codContra;
+    }
+
+    public BigDecimal getValor() {
+        return valor;
+    }
+
+    public void setValor(BigDecimal valor) {
+        this.valor = valor;
+    }
+
+    public String getIndValor() {
+        return indValor;
+    }
+
+    public void setIndValor(String indValor) {
+        this.indValor = indValor;
+    }
+    
 
 }

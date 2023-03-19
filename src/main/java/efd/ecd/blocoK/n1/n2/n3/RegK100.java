@@ -8,43 +8,39 @@ import java.util.List;
 import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
 import efd.ecd.blocoK.n1.n2.n3.n4.RegK110;
-import lombok.Getter;
-import lombok.Setter;
 
 public class RegK100 implements Serializable {
 	private static final long serialVersionUID = -783723575203530442L;
 
-	@Getter @Inclui
+	@Inclui
     private final String reg = "K100";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private Integer codPais;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private Integer empCod;
 
-    @Getter @Setter @Inclui(zerosEsquerda = 14)
+    @Inclui(zerosEsquerda = 14)
     private Long cnpj;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String nome;
 
-    @Getter @Setter @Inclui(casasDecimais = 4)
+    @Inclui(casasDecimais = 4)
     private BigDecimal perPart;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String evento;
 
-    @Getter @Setter @Inclui(casasDecimais = 4)
+    @Inclui(casasDecimais = 4)
     private BigDecimal perCons;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private LocalDate dataIniEmp;
 
-    @Getter @Setter @Filho
+    @Filho
     private List<RegK110> regK110;
-
-    public RegK100() {}
 
     public RegK100(Integer codPais, Integer empCod, Long cnpj, String nome, BigDecimal perPart, String evento,
             BigDecimal perCons, LocalDate dataIniEmp) {
@@ -57,5 +53,84 @@ public class RegK100 implements Serializable {
         this.perCons = perCons;
         this.dataIniEmp = dataIniEmp;
     }
+
+    public RegK100() {}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public Integer getCodPais() {
+        return codPais;
+    }
+
+    public void setCodPais(Integer codPais) {
+        this.codPais = codPais;
+    }
+
+    public Integer getEmpCod() {
+        return empCod;
+    }
+
+    public void setEmpCod(Integer empCod) {
+        this.empCod = empCod;
+    }
+
+    public Long getCnpj() {
+        return cnpj;
+    }
+
+    public void setCnpj(Long cnpj) {
+        this.cnpj = cnpj;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public BigDecimal getPerPart() {
+        return perPart;
+    }
+
+    public void setPerPart(BigDecimal perPart) {
+        this.perPart = perPart;
+    }
+
+    public String getEvento() {
+        return evento;
+    }
+
+    public void setEvento(String evento) {
+        this.evento = evento;
+    }
+
+    public BigDecimal getPerCons() {
+        return perCons;
+    }
+
+    public void setPerCons(BigDecimal perCons) {
+        this.perCons = perCons;
+    }
+
+    public LocalDate getDataIniEmp() {
+        return dataIniEmp;
+    }
+
+    public void setDataIniEmp(LocalDate dataIniEmp) {
+        this.dataIniEmp = dataIniEmp;
+    }
+
+    public List<RegK110> getRegK110() {
+        return regK110;
+    }
+
+    public void setRegK110(List<RegK110> regK110) {
+        this.regK110 = regK110;
+    }
+    
 
 }

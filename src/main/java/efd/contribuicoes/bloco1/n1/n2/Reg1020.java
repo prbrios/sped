@@ -1,8 +1,8 @@
 package efd.contribuicoes.bloco1.n1.n2;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
+
+
 
 import java.io.Serializable;
 import java.time.LocalDate;
@@ -10,16 +10,16 @@ import java.time.LocalDate;
 public class Reg1020 implements Serializable {
 	private static final long serialVersionUID = -7293218511127045636L;
 
-	@Getter @Inclui
+	@Inclui
 	private final String reg = "1020";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String numProc;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String indNatAcao;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private LocalDate dtDecAdm;
 
     public Reg1020(String numProc, String indNatAcao, LocalDate dtDecAdm) {
@@ -29,4 +29,33 @@ public class Reg1020 implements Serializable {
     }
 
     public Reg1020(){ }
+
+    public String getReg() {
+        return reg;
+    }
+
+    public String getNumProc() {
+        return numProc;
+    }
+
+    public void setNumProc(String numProc) {
+        this.numProc = numProc;
+    }
+
+    public String getIndNatAcao() {
+        return indNatAcao;
+    }
+
+    public void setIndNatAcao(String indNatAcao) {
+        this.indNatAcao = indNatAcao;
+    }
+
+    public LocalDate getDtDecAdm() {
+        return dtDecAdm;
+    }
+
+    public void setDtDecAdm(LocalDate dtDecAdm) {
+        this.dtDecAdm = dtDecAdm;
+    }
+    
 }

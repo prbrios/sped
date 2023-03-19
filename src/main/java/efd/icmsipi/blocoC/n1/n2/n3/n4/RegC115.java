@@ -3,42 +3,38 @@ package efd.icmsipi.blocoC.n1.n2.n3.n4;
 import java.io.Serializable;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
 
-@Setter
-@Getter
 public class RegC115 implements Serializable {
 	private static final long serialVersionUID = -2210792766552499730L;
 
-	@Getter @Inclui
+	@Inclui
     private final String reg = "C115";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private Integer indCarga;
 
-    @Getter @Setter @Inclui(zerosEsquerda = 14)
+    @Inclui(zerosEsquerda = 14)
     private Long cnpjCol;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String ieCol;
 
-    @Getter @Setter @Inclui(zerosEsquerda = 11)
+    @Inclui(zerosEsquerda = 11)
     private Long cpfCol;
 
-    @Getter @Setter @Inclui(zerosEsquerda = 7)
+    @Inclui(zerosEsquerda = 7)
     private Integer codMunCol;
 
-    @Getter @Setter @Inclui(zerosEsquerda = 14)
+    @Inclui(zerosEsquerda = 14)
     private Long cnpjEntg;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String ieEntg;
 
-    @Getter @Setter @Inclui(zerosEsquerda = 11)
+    @Inclui(zerosEsquerda = 11)
     private Integer cpfEntg;
 
-    @Getter @Setter @Inclui(zerosEsquerda = 7)
+    @Inclui(zerosEsquerda = 7)
     private Integer codMunEntg;
 
     public RegC115(Integer indCarga, Long cnpjCol, String ieCol, Long cpfCol, Integer codMunCol, Long cnpjEntg, String ieEntg, Integer cpfEntg, Integer codMunEntg) {
@@ -54,4 +50,81 @@ public class RegC115 implements Serializable {
     }
 
     public RegC115(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public Integer getIndCarga() {
+        return indCarga;
+    }
+
+    public void setIndCarga(Integer indCarga) {
+        this.indCarga = indCarga;
+    }
+
+    public Long getCnpjCol() {
+        return cnpjCol;
+    }
+
+    public void setCnpjCol(Long cnpjCol) {
+        this.cnpjCol = cnpjCol;
+    }
+
+    public String getIeCol() {
+        return ieCol;
+    }
+
+    public void setIeCol(String ieCol) {
+        this.ieCol = ieCol;
+    }
+
+    public Long getCpfCol() {
+        return cpfCol;
+    }
+
+    public void setCpfCol(Long cpfCol) {
+        this.cpfCol = cpfCol;
+    }
+
+    public Integer getCodMunCol() {
+        return codMunCol;
+    }
+
+    public void setCodMunCol(Integer codMunCol) {
+        this.codMunCol = codMunCol;
+    }
+
+    public Long getCnpjEntg() {
+        return cnpjEntg;
+    }
+
+    public void setCnpjEntg(Long cnpjEntg) {
+        this.cnpjEntg = cnpjEntg;
+    }
+
+    public String getIeEntg() {
+        return ieEntg;
+    }
+
+    public void setIeEntg(String ieEntg) {
+        this.ieEntg = ieEntg;
+    }
+
+    public Integer getCpfEntg() {
+        return cpfEntg;
+    }
+
+    public void setCpfEntg(Integer cpfEntg) {
+        this.cpfEntg = cpfEntg;
+    }
+
+    public Integer getCodMunEntg() {
+        return codMunEntg;
+    }
+
+    public void setCodMunEntg(Integer codMunEntg) {
+        this.codMunEntg = codMunEntg;
+    }
+    
 }

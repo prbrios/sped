@@ -4,33 +4,30 @@ import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
 import efd.icmsipi.blocoK.n1.n2.n3.n4.RegK291;
 import efd.icmsipi.blocoK.n1.n2.n3.n4.RegK292;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.List;
 
-
 public class RegK290 implements Serializable {
 	private static final long serialVersionUID = -4942167884255288342L;
 
-	@Getter @Inclui
+	@Inclui
     private final String reg = "K290";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private LocalDate dtIniOp;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private LocalDate dtFinOp;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codDocOp;
 
-    @Getter @Setter @Filho
+    @Filho
     private List<RegK291> regK291;
 
-    @Getter @Setter @Filho
+    @Filho
     private List<RegK292> regK292;
 
     public RegK290(LocalDate dtIniOp, LocalDate dtFinOp, String codDocOp) {
@@ -40,4 +37,49 @@ public class RegK290 implements Serializable {
     }
 
     public RegK290(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public LocalDate getDtIniOp() {
+        return dtIniOp;
+    }
+
+    public void setDtIniOp(LocalDate dtIniOp) {
+        this.dtIniOp = dtIniOp;
+    }
+
+    public LocalDate getDtFinOp() {
+        return dtFinOp;
+    }
+
+    public void setDtFinOp(LocalDate dtFinOp) {
+        this.dtFinOp = dtFinOp;
+    }
+
+    public String getCodDocOp() {
+        return codDocOp;
+    }
+
+    public void setCodDocOp(String codDocOp) {
+        this.codDocOp = codDocOp;
+    }
+
+    public List<RegK291> getRegK291() {
+        return regK291;
+    }
+
+    public void setRegK291(List<RegK291> regK291) {
+        this.regK291 = regK291;
+    }
+
+    public List<RegK292> getRegK292() {
+        return regK292;
+    }
+
+    public void setRegK292(List<RegK292> regK292) {
+        this.regK292 = regK292;
+    }
+    
 }

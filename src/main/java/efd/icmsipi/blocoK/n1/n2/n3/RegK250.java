@@ -3,31 +3,28 @@ package efd.icmsipi.blocoK.n1.n2.n3;
 import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
 import efd.icmsipi.blocoK.n1.n2.n3.n4.RegK255;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
 
-
 public class RegK250 implements Serializable {
 	private static final long serialVersionUID = 4572476482293586765L;
 
-	@Getter @Inclui
+	@Inclui
     private final String reg = "K250";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private LocalDate dtProd;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codItem;
 
-    @Getter @Setter @Inclui(casasDecimais = 6)
+    @Inclui(casasDecimais = 6)
     private BigDecimal qtd;
 
-    @Getter @Setter @Filho
+    @Filho
     private List<RegK255> regK255;
 
     public RegK250(LocalDate dtProd, String codItem, BigDecimal qtd) {
@@ -37,4 +34,41 @@ public class RegK250 implements Serializable {
     }
 
     public RegK250(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public LocalDate getDtProd() {
+        return dtProd;
+    }
+
+    public void setDtProd(LocalDate dtProd) {
+        this.dtProd = dtProd;
+    }
+
+    public String getCodItem() {
+        return codItem;
+    }
+
+    public void setCodItem(String codItem) {
+        this.codItem = codItem;
+    }
+
+    public BigDecimal getQtd() {
+        return qtd;
+    }
+
+    public void setQtd(BigDecimal qtd) {
+        this.qtd = qtd;
+    }
+
+    public List<RegK255> getRegK255() {
+        return regK255;
+    }
+
+    public void setRegK255(List<RegK255> regK255) {
+        this.regK255 = regK255;
+    }
+    
 }

@@ -1,32 +1,29 @@
 package efd.icmsipi.blocoB.n1.n2;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
 
-
 public class RegB440 implements Serializable {
 	private static final long serialVersionUID = -7560813795894164582L;
 
-	@Getter @Inclui
+	@Inclui
     private final String reg = "B440";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private Integer indOper;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codPart;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlContRt;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlBcIssRt;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlIssRt;
 
     public RegB440(Integer indOper, String codPart, BigDecimal vlContRt, BigDecimal vlBcIssRt, BigDecimal vlIssRt) {
@@ -38,4 +35,49 @@ public class RegB440 implements Serializable {
     }
 
     public RegB440(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public Integer getIndOper() {
+        return indOper;
+    }
+
+    public void setIndOper(Integer indOper) {
+        this.indOper = indOper;
+    }
+
+    public String getCodPart() {
+        return codPart;
+    }
+
+    public void setCodPart(String codPart) {
+        this.codPart = codPart;
+    }
+
+    public BigDecimal getVlContRt() {
+        return vlContRt;
+    }
+
+    public void setVlContRt(BigDecimal vlContRt) {
+        this.vlContRt = vlContRt;
+    }
+
+    public BigDecimal getVlBcIssRt() {
+        return vlBcIssRt;
+    }
+
+    public void setVlBcIssRt(BigDecimal vlBcIssRt) {
+        this.vlBcIssRt = vlBcIssRt;
+    }
+
+    public BigDecimal getVlIssRt() {
+        return vlIssRt;
+    }
+
+    public void setVlIssRt(BigDecimal vlIssRt) {
+        this.vlIssRt = vlIssRt;
+    }
+    
 }

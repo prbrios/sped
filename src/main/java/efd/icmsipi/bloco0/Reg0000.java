@@ -23,168 +23,119 @@ import efd.icmsipi.blocoH.n1.RegH001;
 import efd.icmsipi.blocoH.n1.RegH990;
 import efd.icmsipi.blocoK.n1.RegK001;
 import efd.icmsipi.blocoK.n1.RegK990;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.time.LocalDate;
 
-
 public class Reg0000 implements Serializable {
 	private static final long serialVersionUID = -6155523942201230995L;
 
-	/**
-     * 01 REG
-     * Texto fixo contendo "0000"
-     */
-    @Getter @Inclui
+    @Inclui
     private final String reg = "0000";
 
-    /**
-     * 02 COD_VER
-     */
-    @Getter @Setter @Inclui(zerosEsquerda = 3)
+    @Inclui(zerosEsquerda = 3)
     private Integer codVer;
 
-    /**
-     * 03 COD_FIN
-     */
-    @Getter @Setter @Inclui
+    @Inclui
     private Integer codFin;
 
-    /**
-     * 04 DT_INI
-     */
-    @Getter @Setter @Inclui
+    @Inclui
     private LocalDate dtIni;
 
-    /**
-     * 05 DT_FIN
-     */
-    @Getter @Setter @Inclui
+    @Inclui
     private LocalDate dtFin;
 
-    /**
-     * 06 NOME
-     */
-    @Getter @Setter @Inclui
+    @Inclui
     private String nome;
 
-    /**
-     * 07 CNPJ
-     */
-    @Getter @Setter @Inclui(zerosEsquerda = 14)
+    @Inclui(zerosEsquerda = 14)
     private Long cnpj;
 
-    /**
-     * 08 CPF
-     */
-    @Getter @Setter @Inclui(zerosEsquerda = 11)
+    @Inclui(zerosEsquerda = 11)
     private Long cpf;
 
-    /**
-     * 09 UF
-     */
-    @Getter @Setter @Inclui
+    @Inclui
     private String uf;
 
-    /**
-     * 10 IE
-     */
-    @Getter @Setter @Inclui
+    @Inclui
     private String ie;
 
-    /**
-     * 11 COD_MUN
-     */
-    @Getter @Setter @Inclui(zerosEsquerda = 7)
+    @Inclui(zerosEsquerda = 7)
     private Integer codMun;
 
-    /**
-     * 12 IM
-     */
-    @Getter @Setter @Inclui
+    @Inclui
     private String im;
 
-    /**
-     * 13 SUFRAMA
-     */
-    @Getter @Setter @Inclui
+    @Inclui
     private String suframa;
 
-    /**
-     * 14 IND_PERFIL
-     */
-    @Getter @Setter @Inclui
+    @Inclui
     private String indPerfil;
 
-    /**
-     * 15 IND_ATIV
-     */
-    @Getter @Setter @Inclui
+    @Inclui
     private Integer indAtiv;
 
-    @Getter @Setter @Filho
+    @Filho
     private Reg0001 reg0001;
 
-    @Getter @Setter @Filho
+    @Filho
     private Reg0002 reg0002;
 
-    @Getter @Setter @Filho
+    @Filho
     private Reg0990 reg0990;
 
-    @Getter @Setter @Filho
+    @Filho
     private RegB001 regB001;
 
-    @Getter @Setter @Filho
+    @Filho
     private RegB990 regB990;
 
-    @Getter @Setter @Filho
+    @Filho
     private RegC001 regC001;
 
-    @Getter @Setter @Filho
+    @Filho
     private RegC990 regC990;
 
-    @Getter @Setter @Filho
+    @Filho
     private RegD001 regD001;
 
-    @Getter @Setter @Filho
+    @Filho
     private RegD990 regD990;
 
-    @Getter @Setter @Filho
+    @Filho
     private RegE001 regE001;
 
-    @Getter @Setter @Filho
+    @Filho
     private RegE990 regE990;
 
-    @Getter @Setter @Filho
+    @Filho
     private RegG001 regG001;
 
-    @Getter @Setter @Filho
+    @Filho
     private RegG990 regG990;
 
-    @Getter @Setter @Filho
+    @Filho
     private RegH001 regH001;
 
-    @Getter @Setter @Filho
+    @Filho
     private RegH990 regH990;
 
-    @Getter @Setter @Filho
+    @Filho
     private RegK001 regK001;
 
-    @Getter @Setter @Filho
+    @Filho
     private RegK990 regK990;
 
-    @Getter @Setter @Filho
+    @Filho
     private Reg1001 reg1001;
 
-    @Getter @Setter @Filho
+    @Filho
     private Reg1990 reg1990;
 
-    @Getter @Setter @Filho
+    @Filho
     private Reg9001 reg9001;
 
-    @Getter @Setter @Filho
+    @Filho
     private Reg9990 reg9990;
 
     public Reg0000(Integer codVer, Integer codFin, LocalDate dtIni, LocalDate dtFin, String nome, Long cnpj, Long cpf, String uf, String ie, Integer codMun, String im, String suframa, String indPerfil, Integer indAtiv) {
@@ -206,5 +157,290 @@ public class Reg0000 implements Serializable {
     }
 
     public Reg0000(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public Integer getCodVer() {
+        return codVer;
+    }
+
+    public void setCodVer(Integer codVer) {
+        this.codVer = codVer;
+    }
+
+    public Integer getCodFin() {
+        return codFin;
+    }
+
+    public void setCodFin(Integer codFin) {
+        this.codFin = codFin;
+    }
+
+    public LocalDate getDtIni() {
+        return dtIni;
+    }
+
+    public void setDtIni(LocalDate dtIni) {
+        this.dtIni = dtIni;
+    }
+
+    public LocalDate getDtFin() {
+        return dtFin;
+    }
+
+    public void setDtFin(LocalDate dtFin) {
+        this.dtFin = dtFin;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public Long getCnpj() {
+        return cnpj;
+    }
+
+    public void setCnpj(Long cnpj) {
+        this.cnpj = cnpj;
+    }
+
+    public Long getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(Long cpf) {
+        this.cpf = cpf;
+    }
+
+    public String getUf() {
+        return uf;
+    }
+
+    public void setUf(String uf) {
+        this.uf = uf;
+    }
+
+    public String getIe() {
+        return ie;
+    }
+
+    public void setIe(String ie) {
+        this.ie = ie;
+    }
+
+    public Integer getCodMun() {
+        return codMun;
+    }
+
+    public void setCodMun(Integer codMun) {
+        this.codMun = codMun;
+    }
+
+    public String getIm() {
+        return im;
+    }
+
+    public void setIm(String im) {
+        this.im = im;
+    }
+
+    public String getSuframa() {
+        return suframa;
+    }
+
+    public void setSuframa(String suframa) {
+        this.suframa = suframa;
+    }
+
+    public String getIndPerfil() {
+        return indPerfil;
+    }
+
+    public void setIndPerfil(String indPerfil) {
+        this.indPerfil = indPerfil;
+    }
+
+    public Integer getIndAtiv() {
+        return indAtiv;
+    }
+
+    public void setIndAtiv(Integer indAtiv) {
+        this.indAtiv = indAtiv;
+    }
+
+    public Reg0001 getReg0001() {
+        return reg0001;
+    }
+
+    public void setReg0001(Reg0001 reg0001) {
+        this.reg0001 = reg0001;
+    }
+
+    public Reg0002 getReg0002() {
+        return reg0002;
+    }
+
+    public void setReg0002(Reg0002 reg0002) {
+        this.reg0002 = reg0002;
+    }
+
+    public Reg0990 getReg0990() {
+        return reg0990;
+    }
+
+    public void setReg0990(Reg0990 reg0990) {
+        this.reg0990 = reg0990;
+    }
+
+    public RegB001 getRegB001() {
+        return regB001;
+    }
+
+    public void setRegB001(RegB001 regB001) {
+        this.regB001 = regB001;
+    }
+
+    public RegB990 getRegB990() {
+        return regB990;
+    }
+
+    public void setRegB990(RegB990 regB990) {
+        this.regB990 = regB990;
+    }
+
+    public RegC001 getRegC001() {
+        return regC001;
+    }
+
+    public void setRegC001(RegC001 regC001) {
+        this.regC001 = regC001;
+    }
+
+    public RegC990 getRegC990() {
+        return regC990;
+    }
+
+    public void setRegC990(RegC990 regC990) {
+        this.regC990 = regC990;
+    }
+
+    public RegD001 getRegD001() {
+        return regD001;
+    }
+
+    public void setRegD001(RegD001 regD001) {
+        this.regD001 = regD001;
+    }
+
+    public RegD990 getRegD990() {
+        return regD990;
+    }
+
+    public void setRegD990(RegD990 regD990) {
+        this.regD990 = regD990;
+    }
+
+    public RegE001 getRegE001() {
+        return regE001;
+    }
+
+    public void setRegE001(RegE001 regE001) {
+        this.regE001 = regE001;
+    }
+
+    public RegE990 getRegE990() {
+        return regE990;
+    }
+
+    public void setRegE990(RegE990 regE990) {
+        this.regE990 = regE990;
+    }
+
+    public RegG001 getRegG001() {
+        return regG001;
+    }
+
+    public void setRegG001(RegG001 regG001) {
+        this.regG001 = regG001;
+    }
+
+    public RegG990 getRegG990() {
+        return regG990;
+    }
+
+    public void setRegG990(RegG990 regG990) {
+        this.regG990 = regG990;
+    }
+
+    public RegH001 getRegH001() {
+        return regH001;
+    }
+
+    public void setRegH001(RegH001 regH001) {
+        this.regH001 = regH001;
+    }
+
+    public RegH990 getRegH990() {
+        return regH990;
+    }
+
+    public void setRegH990(RegH990 regH990) {
+        this.regH990 = regH990;
+    }
+
+    public RegK001 getRegK001() {
+        return regK001;
+    }
+
+    public void setRegK001(RegK001 regK001) {
+        this.regK001 = regK001;
+    }
+
+    public RegK990 getRegK990() {
+        return regK990;
+    }
+
+    public void setRegK990(RegK990 regK990) {
+        this.regK990 = regK990;
+    }
+
+    public Reg1001 getReg1001() {
+        return reg1001;
+    }
+
+    public void setReg1001(Reg1001 reg1001) {
+        this.reg1001 = reg1001;
+    }
+
+    public Reg1990 getReg1990() {
+        return reg1990;
+    }
+
+    public void setReg1990(Reg1990 reg1990) {
+        this.reg1990 = reg1990;
+    }
+
+    public Reg9001 getReg9001() {
+        return reg9001;
+    }
+
+    public void setReg9001(Reg9001 reg9001) {
+        this.reg9001 = reg9001;
+    }
+
+    public Reg9990 getReg9990() {
+        return reg9990;
+    }
+
+    public void setReg9990(Reg9990 reg9990) {
+        this.reg9990 = reg9990;
+    }
+    
 
 }

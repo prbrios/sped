@@ -1,26 +1,23 @@
 package efd.icmsipi.bloco1.n1.n2.n3.n4.n5;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
 
-
 public class Reg1925 implements Serializable {
 	private static final long serialVersionUID = 4597840382006005280L;
 
-	@Getter @Inclui
+	@Inclui
     private final String reg = "1925";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codInfAdic;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlInfAdic;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String descrComplAj;
 
     public Reg1925(String codInfAdic, BigDecimal vlInfAdic, String descrComplAj) {
@@ -30,4 +27,33 @@ public class Reg1925 implements Serializable {
     }
 
     public Reg1925(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public String getCodInfAdic() {
+        return codInfAdic;
+    }
+
+    public void setCodInfAdic(String codInfAdic) {
+        this.codInfAdic = codInfAdic;
+    }
+
+    public BigDecimal getVlInfAdic() {
+        return vlInfAdic;
+    }
+
+    public void setVlInfAdic(BigDecimal vlInfAdic) {
+        this.vlInfAdic = vlInfAdic;
+    }
+
+    public String getDescrComplAj() {
+        return descrComplAj;
+    }
+
+    public void setDescrComplAj(String descrComplAj) {
+        this.descrComplAj = descrComplAj;
+    }
+    
 }

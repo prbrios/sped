@@ -3,20 +3,17 @@ package efd.icmsipi.blocoC.n1.n2.n3;
 import java.io.Serializable;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
-
 
 public class RegC105 implements Serializable {
 	private static final long serialVersionUID = -659911150883200582L;
 
-	@Getter @Inclui
+	@Inclui
     private final String reg = "C105";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private Integer oper;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String uf;
 
     public RegC105(Integer oper, String uf) {
@@ -25,4 +22,25 @@ public class RegC105 implements Serializable {
     }
 
     public RegC105(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public Integer getOper() {
+        return oper;
+    }
+
+    public void setOper(Integer oper) {
+        this.oper = oper;
+    }
+
+    public String getUf() {
+        return uf;
+    }
+
+    public void setUf(String uf) {
+        this.uf = uf;
+    }
+    
 }

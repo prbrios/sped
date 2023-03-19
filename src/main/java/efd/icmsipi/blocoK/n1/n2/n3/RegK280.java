@@ -1,36 +1,33 @@
 package efd.icmsipi.blocoK.n1.n2.n3;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-
 public class RegK280 implements Serializable {
 	private static final long serialVersionUID = 8574191290874040846L;
 
-	@Getter @Inclui
+	@Inclui
     private final String reg = "K280";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private LocalDate dtEst;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codItem;
 
-    @Getter @Setter @Inclui(casasDecimais = 3)
+    @Inclui(casasDecimais = 3)
     private BigDecimal qtdCorPos;
 
-    @Getter @Setter @Inclui(casasDecimais = 3)
+    @Inclui(casasDecimais = 3)
     private BigDecimal qtdCodNeg;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String indEst;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codPart;
 
     public RegK280(LocalDate dtEst, String codItem, BigDecimal qtdCorPos, BigDecimal qtdCodNeg, String indEst, String codPart) {
@@ -43,4 +40,57 @@ public class RegK280 implements Serializable {
     }
 
     public RegK280(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public LocalDate getDtEst() {
+        return dtEst;
+    }
+
+    public void setDtEst(LocalDate dtEst) {
+        this.dtEst = dtEst;
+    }
+
+    public String getCodItem() {
+        return codItem;
+    }
+
+    public void setCodItem(String codItem) {
+        this.codItem = codItem;
+    }
+
+    public BigDecimal getQtdCorPos() {
+        return qtdCorPos;
+    }
+
+    public void setQtdCorPos(BigDecimal qtdCorPos) {
+        this.qtdCorPos = qtdCorPos;
+    }
+
+    public BigDecimal getQtdCodNeg() {
+        return qtdCodNeg;
+    }
+
+    public void setQtdCodNeg(BigDecimal qtdCodNeg) {
+        this.qtdCodNeg = qtdCodNeg;
+    }
+
+    public String getIndEst() {
+        return indEst;
+    }
+
+    public void setIndEst(String indEst) {
+        this.indEst = indEst;
+    }
+
+    public String getCodPart() {
+        return codPart;
+    }
+
+    public void setCodPart(String codPart) {
+        this.codPart = codPart;
+    }
+    
 }

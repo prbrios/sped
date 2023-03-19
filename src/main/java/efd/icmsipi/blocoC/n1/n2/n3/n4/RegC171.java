@@ -1,24 +1,20 @@
 package efd.icmsipi.blocoC.n1.n2.n3.n4;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
 
-@Setter
-@Getter
 public class RegC171 implements Serializable {
 	private static final long serialVersionUID = -1659578247789460906L;
 
-	@Getter @Inclui
+	@Inclui
     private final String reg = "C171";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String numTanque;
 
-    @Getter @Setter @Inclui(casasDecimais = 3)
+    @Inclui(casasDecimais = 3)
     private BigDecimal qtde;
 
     public RegC171(String numTanque, BigDecimal qtde) {
@@ -27,4 +23,25 @@ public class RegC171 implements Serializable {
     }
 
     public RegC171(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public String getNumTanque() {
+        return numTanque;
+    }
+
+    public void setNumTanque(String numTanque) {
+        this.numTanque = numTanque;
+    }
+
+    public BigDecimal getQtde() {
+        return qtde;
+    }
+
+    public void setQtde(BigDecimal qtde) {
+        this.qtde = qtde;
+    }
+    
 }

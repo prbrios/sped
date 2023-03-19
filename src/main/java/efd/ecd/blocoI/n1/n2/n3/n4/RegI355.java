@@ -4,31 +4,29 @@ import java.io.Serializable;
 import java.math.BigDecimal;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
 
 public class RegI355 implements Serializable {
 	private static final long serialVersionUID = -2724466843738236549L;
 
-	@Getter @Inclui
+	@Inclui
 	private final String reg = "I355";
 	
-	@Getter @Setter @Inclui
+	@Inclui
 	private String codCta;
 	
-	@Getter @Setter @Inclui
+	@Inclui
 	private String codCcus;
 	
-	@Getter @Setter @Inclui
+	@Inclui
 	private BigDecimal vlCta;
 	
-	@Getter @Setter @Inclui
+	@Inclui
 	private String indDc;
 	
-	@Getter @Setter @Inclui
+	@Inclui
 	private BigDecimal vlCtaMf;
 	
-	@Getter @Setter @Inclui
+	@Inclui
 	private String indDcMf;
 	
 	public RegI355(String codCta, String codCcus, BigDecimal vlCta, String indDc, BigDecimal vlCtaMf, String indDcMf) {
@@ -42,5 +40,58 @@ public class RegI355 implements Serializable {
 	}
 	
 	public RegI355() {/* */}
+
+	public String getReg() {
+		return reg;
+	}
+
+	public String getCodCta() {
+		return codCta;
+	}
+
+	public void setCodCta(String codCta) {
+		this.codCta = codCta;
+	}
+
+	public String getCodCcus() {
+		return codCcus;
+	}
+
+	public void setCodCcus(String codCcus) {
+		this.codCcus = codCcus;
+	}
+
+	public BigDecimal getVlCta() {
+		return vlCta;
+	}
+
+	public void setVlCta(BigDecimal vlCta) {
+		this.vlCta = vlCta;
+	}
+
+	public String getIndDc() {
+		return indDc;
+	}
+
+	public void setIndDc(String indDc) {
+		this.indDc = indDc;
+	}
+
+	public BigDecimal getVlCtaMf() {
+		return vlCtaMf;
+	}
+
+	public void setVlCtaMf(BigDecimal vlCtaMf) {
+		this.vlCtaMf = vlCtaMf;
+	}
+
+	public String getIndDcMf() {
+		return indDcMf;
+	}
+
+	public void setIndDcMf(String indDcMf) {
+		this.indDcMf = indDcMf;
+	}
+	
 
 }

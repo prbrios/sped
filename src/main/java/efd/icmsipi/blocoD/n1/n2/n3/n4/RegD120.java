@@ -3,26 +3,23 @@ package efd.icmsipi.blocoD.n1.n2.n3.n4;
 import java.io.Serializable;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
-
 
 public class RegD120 implements Serializable {
 	private static final long serialVersionUID = 5534716955009261314L;
 
-	@Getter @Inclui
+	@Inclui
     private final String reg = "D120";
 
-    @Getter @Setter @Inclui(zerosEsquerda = 7)
+    @Inclui(zerosEsquerda = 7)
     private Integer codMunOrig;
 
-    @Getter @Setter @Inclui(zerosEsquerda = 7)
+    @Inclui(zerosEsquerda = 7)
     private Integer codMunDest;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String veicId;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String ufId;
 
     public RegD120(Integer codMunOrig, Integer codMunDest, String veicId, String ufId) {
@@ -33,4 +30,41 @@ public class RegD120 implements Serializable {
     }
 
     public RegD120(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public Integer getCodMunOrig() {
+        return codMunOrig;
+    }
+
+    public void setCodMunOrig(Integer codMunOrig) {
+        this.codMunOrig = codMunOrig;
+    }
+
+    public Integer getCodMunDest() {
+        return codMunDest;
+    }
+
+    public void setCodMunDest(Integer codMunDest) {
+        this.codMunDest = codMunDest;
+    }
+
+    public String getVeicId() {
+        return veicId;
+    }
+
+    public void setVeicId(String veicId) {
+        this.veicId = veicId;
+    }
+
+    public String getUfId() {
+        return ufId;
+    }
+
+    public void setUfId(String ufId) {
+        this.ufId = ufId;
+    }
+    
 }

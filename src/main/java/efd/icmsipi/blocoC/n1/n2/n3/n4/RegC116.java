@@ -1,33 +1,29 @@
 package efd.icmsipi.blocoC.n1.n2.n3.n4;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.time.LocalDate;
 
-@Setter
-@Getter
 public class RegC116 implements Serializable {
 	private static final long serialVersionUID = -5350329206951233157L;
 
-	@Getter @Inclui
+	@Inclui
     private final String reg = "C116";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codMod;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private Long nrSat;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String chvNfe;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private Integer numCfe;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private LocalDate dtDoc;
 
     public RegC116(String codMod, Long nrSat, String chvNfe, Integer numCfe, LocalDate dtDoc) {
@@ -39,4 +35,49 @@ public class RegC116 implements Serializable {
     }
 
     public RegC116(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public String getCodMod() {
+        return codMod;
+    }
+
+    public void setCodMod(String codMod) {
+        this.codMod = codMod;
+    }
+
+    public Long getNrSat() {
+        return nrSat;
+    }
+
+    public void setNrSat(Long nrSat) {
+        this.nrSat = nrSat;
+    }
+
+    public String getChvNfe() {
+        return chvNfe;
+    }
+
+    public void setChvNfe(String chvNfe) {
+        this.chvNfe = chvNfe;
+    }
+
+    public Integer getNumCfe() {
+        return numCfe;
+    }
+
+    public void setNumCfe(Integer numCfe) {
+        this.numCfe = numCfe;
+    }
+
+    public LocalDate getDtDoc() {
+        return dtDoc;
+    }
+
+    public void setDtDoc(LocalDate dtDoc) {
+        this.dtDoc = dtDoc;
+    }
+    
 }

@@ -1,33 +1,30 @@
 package efd.icmsipi.blocoK.n1.n2.n3;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-
 public class RegK200 implements Serializable {
 	private static final long serialVersionUID = -382752401758872422L;
 
-	@Getter @Inclui
+	@Inclui
     private final String reg = "K200";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private LocalDate dtEst;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codItem;
 
-    @Getter @Setter @Inclui(casasDecimais = 3)
+    @Inclui(casasDecimais = 3)
     private BigDecimal qtd;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String indEst;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codPart;
 
     public RegK200(LocalDate dtEst, String codItem, BigDecimal qtd, String indEst, String codPart) {
@@ -39,4 +36,49 @@ public class RegK200 implements Serializable {
     }
 
     public RegK200(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public LocalDate getDtEst() {
+        return dtEst;
+    }
+
+    public void setDtEst(LocalDate dtEst) {
+        this.dtEst = dtEst;
+    }
+
+    public String getCodItem() {
+        return codItem;
+    }
+
+    public void setCodItem(String codItem) {
+        this.codItem = codItem;
+    }
+
+    public BigDecimal getQtd() {
+        return qtd;
+    }
+
+    public void setQtd(BigDecimal qtd) {
+        this.qtd = qtd;
+    }
+
+    public String getIndEst() {
+        return indEst;
+    }
+
+    public void setIndEst(String indEst) {
+        this.indEst = indEst;
+    }
+
+    public String getCodPart() {
+        return codPart;
+    }
+
+    public void setCodPart(String codPart) {
+        this.codPart = codPart;
+    }
+    
 }

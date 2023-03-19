@@ -1,8 +1,6 @@
 package efd.contribuicoes.bloco1.n1.n2.n3;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -11,37 +9,37 @@ import java.time.LocalDate;
 public class Reg1610 implements Serializable {
 	private static final long serialVersionUID = 6325272729529477939L;
 
-	@Getter @Inclui
+	@Inclui
 	private final String reg = "1610";
 
-    @Getter @Setter @Inclui(zerosEsquerda = 14)
+    @Inclui(zerosEsquerda = 14)
     private Long cnpj;
 
-    @Getter @Setter @Inclui(zerosEsquerda = 2)
+    @Inclui(zerosEsquerda = 2)
     private Integer cstCofins;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codPart;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private LocalDate dtOper;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlOper;
 
-    @Getter @Setter @Inclui(casasDecimais = 3)
+    @Inclui(casasDecimais = 3)
     private BigDecimal vlBcCofins;
 
-    @Getter @Setter @Inclui(casasDecimais = 4)
+    @Inclui(casasDecimais = 4)
     private BigDecimal aliqCofins;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlCofins;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codCta;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String descCompl;
 
     public Reg1610(Long cnpj, Integer cstCofins, String codPart, LocalDate dtOper, BigDecimal vlOper, BigDecimal vlBcCofins, BigDecimal aliqCofins, BigDecimal vlCofins, String codCta, String descCompl) {
@@ -58,4 +56,89 @@ public class Reg1610 implements Serializable {
     }
 
     public Reg1610(){ }
+
+    public String getReg() {
+        return reg;
+    }
+
+    public Long getCnpj() {
+        return cnpj;
+    }
+
+    public void setCnpj(Long cnpj) {
+        this.cnpj = cnpj;
+    }
+
+    public Integer getCstCofins() {
+        return cstCofins;
+    }
+
+    public void setCstCofins(Integer cstCofins) {
+        this.cstCofins = cstCofins;
+    }
+
+    public String getCodPart() {
+        return codPart;
+    }
+
+    public void setCodPart(String codPart) {
+        this.codPart = codPart;
+    }
+
+    public LocalDate getDtOper() {
+        return dtOper;
+    }
+
+    public void setDtOper(LocalDate dtOper) {
+        this.dtOper = dtOper;
+    }
+
+    public BigDecimal getVlOper() {
+        return vlOper;
+    }
+
+    public void setVlOper(BigDecimal vlOper) {
+        this.vlOper = vlOper;
+    }
+
+    public BigDecimal getVlBcCofins() {
+        return vlBcCofins;
+    }
+
+    public void setVlBcCofins(BigDecimal vlBcCofins) {
+        this.vlBcCofins = vlBcCofins;
+    }
+
+    public BigDecimal getAliqCofins() {
+        return aliqCofins;
+    }
+
+    public void setAliqCofins(BigDecimal aliqCofins) {
+        this.aliqCofins = aliqCofins;
+    }
+
+    public BigDecimal getVlCofins() {
+        return vlCofins;
+    }
+
+    public void setVlCofins(BigDecimal vlCofins) {
+        this.vlCofins = vlCofins;
+    }
+
+    public String getCodCta() {
+        return codCta;
+    }
+
+    public void setCodCta(String codCta) {
+        this.codCta = codCta;
+    }
+
+    public String getDescCompl() {
+        return descCompl;
+    }
+
+    public void setDescCompl(String descCompl) {
+        this.descCompl = descCompl;
+    }
+    
 }

@@ -4,46 +4,44 @@ import java.io.Serializable;
 import java.time.LocalDate;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
 
 public class RegI030 implements Serializable {
 	private static final long serialVersionUID = -5408403529501668244L;
 
-	@Getter @Inclui
+	@Inclui
 	private final String reg = "I030";
 	
-	@Getter @Setter @Inclui
+	@Inclui
 	private String dnrcAbert;
 	
-	@Getter @Setter @Inclui
+	@Inclui
 	private Integer numOrd;
 	
-	@Getter @Setter @Inclui
+	@Inclui
 	private String natLivr;
 	
-	@Getter @Setter @Inclui
+	@Inclui
 	private Integer qtdLin;
 	
-	@Getter @Setter @Inclui
+	@Inclui
 	private String nome;
 	
-	@Getter @Setter @Inclui
+	@Inclui
 	private Long nire;
 	
-	@Getter @Setter @Inclui
+	@Inclui
 	private Long cnpj;
 	
-	@Getter @Setter @Inclui
+	@Inclui
 	private LocalDate dtArq;
 	
-	@Getter @Setter @Inclui
+	@Inclui
 	private LocalDate dtArqConv;
 	
-	@Getter @Setter @Inclui
+	@Inclui
 	private String descMun;
 	
-	@Getter @Setter @Inclui
+	@Inclui
 	private LocalDate dtExSocial;
 	
 	public RegI030(String dnrcAbert, Integer numOrd, String natLivr, Integer qtdLin, String nome, Long nire, Long cnpj,
@@ -63,5 +61,98 @@ public class RegI030 implements Serializable {
 	}
 	
 	public RegI030() {/* */}
+
+	public String getReg() {
+		return reg;
+	}
+
+	public String getDnrcAbert() {
+		return dnrcAbert;
+	}
+
+	public void setDnrcAbert(String dnrcAbert) {
+		this.dnrcAbert = dnrcAbert;
+	}
+
+	public Integer getNumOrd() {
+		return numOrd;
+	}
+
+	public void setNumOrd(Integer numOrd) {
+		this.numOrd = numOrd;
+	}
+
+	public String getNatLivr() {
+		return natLivr;
+	}
+
+	public void setNatLivr(String natLivr) {
+		this.natLivr = natLivr;
+	}
+
+	public Integer getQtdLin() {
+		return qtdLin;
+	}
+
+	public void setQtdLin(Integer qtdLin) {
+		this.qtdLin = qtdLin;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public Long getNire() {
+		return nire;
+	}
+
+	public void setNire(Long nire) {
+		this.nire = nire;
+	}
+
+	public Long getCnpj() {
+		return cnpj;
+	}
+
+	public void setCnpj(Long cnpj) {
+		this.cnpj = cnpj;
+	}
+
+	public LocalDate getDtArq() {
+		return dtArq;
+	}
+
+	public void setDtArq(LocalDate dtArq) {
+		this.dtArq = dtArq;
+	}
+
+	public LocalDate getDtArqConv() {
+		return dtArqConv;
+	}
+
+	public void setDtArqConv(LocalDate dtArqConv) {
+		this.dtArqConv = dtArqConv;
+	}
+
+	public String getDescMun() {
+		return descMun;
+	}
+
+	public void setDescMun(String descMun) {
+		this.descMun = descMun;
+	}
+
+	public LocalDate getDtExSocial() {
+		return dtExSocial;
+	}
+
+	public void setDtExSocial(LocalDate dtExSocial) {
+		this.dtExSocial = dtExSocial;
+	}
+	
 	
 }

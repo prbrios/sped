@@ -1,30 +1,27 @@
 package efd.icmsipi.blocoK.n1.n2.n3.n4;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-
 public class RegK235 implements Serializable {
 	private static final long serialVersionUID = 8077460082970537775L;
 
-	@Getter @Inclui
+	@Inclui
     private final String reg = "K235";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private LocalDate dtSaida;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codItem;
 
-    @Getter @Setter @Inclui(casasDecimais = 6)
+    @Inclui(casasDecimais = 6)
     private BigDecimal qtd;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codInsSubst;
 
     public RegK235(LocalDate dtSaida, String codItem, BigDecimal qtd, String codInsSubst) {
@@ -35,4 +32,41 @@ public class RegK235 implements Serializable {
     }
 
     public RegK235(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public LocalDate getDtSaida() {
+        return dtSaida;
+    }
+
+    public void setDtSaida(LocalDate dtSaida) {
+        this.dtSaida = dtSaida;
+    }
+
+    public String getCodItem() {
+        return codItem;
+    }
+
+    public void setCodItem(String codItem) {
+        this.codItem = codItem;
+    }
+
+    public BigDecimal getQtd() {
+        return qtd;
+    }
+
+    public void setQtd(BigDecimal qtd) {
+        this.qtd = qtd;
+    }
+
+    public String getCodInsSubst() {
+        return codInsSubst;
+    }
+
+    public void setCodInsSubst(String codInsSubst) {
+        this.codInsSubst = codInsSubst;
+    }
+    
 }

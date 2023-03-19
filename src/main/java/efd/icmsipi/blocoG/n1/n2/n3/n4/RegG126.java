@@ -1,42 +1,39 @@
 package efd.icmsipi.blocoG.n1.n2.n3.n4;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-
 public class RegG126 implements Serializable {
 	private static final long serialVersionUID = 4561528865969522724L;
 
-	@Getter @Inclui
+	@Inclui
     private final String reg = "G126";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private LocalDate dtIni;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private LocalDate dtFin;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private Integer numParc;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlParcPass;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal clTribOc;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlTotal;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal indPerSai;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlParcAprop;
 
     public RegG126(LocalDate dtIni, LocalDate dtFin, Integer numParc, BigDecimal vlParcPass, BigDecimal clTribOc, BigDecimal vlTotal, BigDecimal indPerSai, BigDecimal vlParcAprop) {
@@ -51,4 +48,73 @@ public class RegG126 implements Serializable {
     }
 
     public RegG126(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public LocalDate getDtIni() {
+        return dtIni;
+    }
+
+    public void setDtIni(LocalDate dtIni) {
+        this.dtIni = dtIni;
+    }
+
+    public LocalDate getDtFin() {
+        return dtFin;
+    }
+
+    public void setDtFin(LocalDate dtFin) {
+        this.dtFin = dtFin;
+    }
+
+    public Integer getNumParc() {
+        return numParc;
+    }
+
+    public void setNumParc(Integer numParc) {
+        this.numParc = numParc;
+    }
+
+    public BigDecimal getVlParcPass() {
+        return vlParcPass;
+    }
+
+    public void setVlParcPass(BigDecimal vlParcPass) {
+        this.vlParcPass = vlParcPass;
+    }
+
+    public BigDecimal getClTribOc() {
+        return clTribOc;
+    }
+
+    public void setClTribOc(BigDecimal clTribOc) {
+        this.clTribOc = clTribOc;
+    }
+
+    public BigDecimal getVlTotal() {
+        return vlTotal;
+    }
+
+    public void setVlTotal(BigDecimal vlTotal) {
+        this.vlTotal = vlTotal;
+    }
+
+    public BigDecimal getIndPerSai() {
+        return indPerSai;
+    }
+
+    public void setIndPerSai(BigDecimal indPerSai) {
+        this.indPerSai = indPerSai;
+    }
+
+    public BigDecimal getVlParcAprop() {
+        return vlParcAprop;
+    }
+
+    public void setVlParcAprop(BigDecimal vlParcAprop) {
+        this.vlParcAprop = vlParcAprop;
+    }
+    
 }

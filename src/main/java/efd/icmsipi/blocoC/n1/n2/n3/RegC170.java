@@ -3,312 +3,156 @@ package efd.icmsipi.blocoC.n1.n2.n3;
 import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
 import efd.icmsipi.blocoC.n1.n2.n3.n4.*;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.List;
 
-
-
 public class RegC170 implements Serializable {
 	private static final long serialVersionUID = 6373252562737421905L;
 
-	/**
-     * 01 - REG
-     * Texto fixo contendo "C170"
-     */
-    @Getter @Inclui
+    @Inclui
     private final String reg = "C170";
 
-    /**
-     * 02 - NUM_ITEM
-     * Número sequencial do item no documento fiscal
-     */
-    @Getter @Setter @Inclui
+    @Inclui
     private Integer numItem;
 
-    /**
-     * 03 - COD_ITEM
-     * Código do item (campo 02 do Registro 0200)
-     */
-    @Getter @Setter @Inclui
+    @Inclui
     private String codItem;
 
-    /**
-     * 04 - DESCR_COMPL
-     * Descrição complementar do item como adotado no documento fiscal
-     */
-    @Getter @Setter @Inclui
+    @Inclui
     private String descrCompl;
 
-    /**
-     * 05 - QTD
-     * Quantidade do item
-     */
-    @Getter @Setter @Inclui(casasDecimais = 5)
+    @Inclui(casasDecimais = 5)
     private BigDecimal qtd;
 
-    /**
-     * 06 - UNID
-     * Unidade do item (Campo 02 do registro 0190)
-     */
-    @Getter @Setter @Inclui
+    @Inclui
     private String unid;
 
-    /**
-     * 07 - VL_ITEM
-     * Valor total do item (mercadorias ou serviços)
-     */
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlItem;
 
-    /**
-     * 08 - VL_DESC
-     * Valor do desconto comercial
-     */
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlDesc;
 
-    /**
-     * 09 - IND_MOV
-     * Movimentação física do ITEM/PRODUTO
-     */
-    @Getter @Setter @Inclui
+    @Inclui
     private String indMov;
 
-    /**
-     * 10 - CST_ICMS
-     * Código da Situação Tributária referente ao ICMS, conforme a Tabela indicada no item 4.3.1
-     */
-    @Getter @Setter @Inclui(zerosEsquerda = 3)
+    @Inclui(zerosEsquerda = 3)
     private Integer cstIcms;
 
-    /**
-     * 11 - CFOP
-     * Código Fiscal de Operação e Prestação
-     */
-    @Getter @Setter @Inclui(zerosEsquerda = 4)
+    @Inclui(zerosEsquerda = 4)
     private Integer cfop;
 
-    /**
-     * 12 - COD_NAT
-     * Código da natureza da operação (campo 02 do Registro 0400)
-     */
-    @Getter @Setter @Inclui
+    @Inclui
     private String codNat;
 
-    /**
-     * 13 - VL_BC_ICMS
-     * Valor da base de cálculo do ICMS
-     */
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlBcIcms;
 
-    /**
-     * 14 - ALIQ_ICMS
-     * Alíquota do ICMS
-     */
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal aliqIcms;
 
-    /**
-     * 15 - VL_ICMS
-     * Valor do ICMS creditado/debitado
-     */
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlIcms;
 
-    /**
-     * 16 - VL_BC_ICMS_ST
-     * Valor da base de cálculo referente à substituição tributária
-     */
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlBcIcmsSt;
 
-    /**
-     * 17 - ALIQ_ST
-     * Alíquota do ICMS da substituição tributária na unidade da federação de destino
-     */
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal aliqSt;
 
-    /**
-     * 18 - VL_ICMS_ST
-     * Valor do ICMS referente à substituição tributária
-     */
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlIcmsSt;
 
-    /**
-     * 19 - IND_APUR
-     * Indicador de período de apuração do IPI
-     */
-    @Getter @Setter @Inclui
+    @Inclui
     private String indApur;
 
-    /**
-     * 20 - CST_IPI
-     * Código da Situação Tributária referente ao IPI
-     */
-    @Getter @Setter @Inclui(zerosEsquerda = 2)
+    @Inclui(zerosEsquerda = 2)
     private Integer cstIpi;
 
-    /**
-     * 21 - COD_ENQ
-     * Código de enquadramento legal do IPI
-     */
-    @Getter @Setter @Inclui
+    @Inclui
     private String codEnq;
 
-    /**
-     * 22 - VL_BC_IPI
-     * Valor da base de cálculo do IPI
-     */
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlBcIpi;
 
-    /**
-     * 23 - ALIQ_IPI
-     * Aliquota IPI
-     */
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal aliqIpi;
 
-    /**
-     * 24 - VL_IPI
-     * Valor do IPI creditado/debitado
-     */
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlIpi;
 
-    /**
-     * 25 - CST_PIS
-     * Código da Situação Tributária referente ao PIS
-     */
-    @Getter @Setter @Inclui(zerosEsquerda = 2)
+    @Inclui(zerosEsquerda = 2)
     private Integer cstPis;
 
-    /**
-     * 26 - VL_BC_PIS
-     * Valor da base de cálculo do PIS
-     */
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlBcPis;
 
-    /**
-     * 27 - ALIQ_PIS
-     * Alíquota do PIS (em percentual)
-     */
-    @Getter @Setter @Inclui(casasDecimais = 4)
+    @Inclui(casasDecimais = 4)
     private BigDecimal aliqPis;
 
-    /**
-     * 28 - QUANT_BC_PIS
-     * Quantidade – Base de cálculo PIS
-     */
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal quantBcPis;
 
-    /**
-     * 29 - ALIQ_PIS
-     * Alíquota do PIS (em reais)
-     */
-    @Getter @Setter @Inclui(casasDecimais = 4)
+    @Inclui(casasDecimais = 4)
     private BigDecimal aliqPisRs;
 
-    /**
-     * 30 - VL_PIS
-     * Valor do PIS
-     */
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlPisRs;
 
-    /**
-     * 31 - CST_COFINS
-     * Código da Situação Tributária referente ao COFINS
-     */
-    @Getter @Setter @Inclui(zerosEsquerda = 2)
+    @Inclui(zerosEsquerda = 2)
     private Integer cstCofins;
 
-    /**
-     * 32 - VL_BC_COFINS
-     * Valor da base de cálculo da COFINS
-     */
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlBcCofins;
 
-    /**
-     * 33 - ALIQ_COFINS
-     * Alíquota do COFINS (em percentual)
-     */
-    @Getter @Setter @Inclui(casasDecimais = 4)
+    @Inclui(casasDecimais = 4)
     private BigDecimal aliqCofins;
 
-    /**
-     * 34 - QUANT_BC_COFINS
-     * Quantidade – Base de cálculo COFINS
-     */
-    @Getter @Setter @Inclui(casasDecimais = 3)
+    @Inclui(casasDecimais = 3)
     private BigDecimal quantBcCofins;
 
-    /**
-     * 35 - ALIQ_COFINS
-     * Alíquota da COFINS (em reais)
-     */
-    @Getter @Setter @Inclui(casasDecimais = 4)
+    @Inclui(casasDecimais = 4)
     private BigDecimal aliqCofinsRs;
 
-    /**
-     * 36 - VL_COFINS
-     * Valor da COFINS
-     */
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlCofins;
 
-    /**
-     * 37 - COD_CTA
-     * Código da conta analítica contábil debitada/creditada
-     */
-    @Getter @Setter @Inclui
+    @Inclui
     private String codCta;
 
-    /**
-     * 38 - VL_ABAT_NT
-     * Valor do abatimento não tributado e não comercial
-     */
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlAbatNt;
 
-    @Getter @Setter @Filho
+    @Filho
     private List<RegC171> regC171;
 
-    @Getter @Setter @Filho
+    @Filho
     private RegC172 regC172;
 
-    @Getter @Setter @Filho
+    @Filho
     private List<RegC173> regC173;
 
-    @Getter @Setter @Filho
+    @Filho
     private List<RegC174> regC174;
 
-    @Getter @Setter @Filho
+    @Filho
     private List<RegC175> regC175;
 
-    @Getter @Setter @Filho
+    @Filho
     private List<RegC176> regC176;
 
-    @Getter @Setter @Filho
+    @Filho
     private RegC177 regC177;
 
-    @Getter @Setter @Filho
+    @Filho
     private RegC178 regC178;
 
-    @Getter @Setter @Filho
+    @Filho
     private RegC179 regC179;
 
-    @Getter @Setter @Filho
+    @Filho
     private RegC180 regC180;
 
     public RegC170(Integer numItem, String codItem, String descrCompl, BigDecimal qtd, String unid, BigDecimal vlItem, BigDecimal vlDesc, String indMov, Integer cstIcms, Integer cfop, String codNat, BigDecimal vlBcIcms, BigDecimal aliqIcms, BigDecimal vlIcms, BigDecimal vlBcIcmsSt, BigDecimal aliqSt, BigDecimal vlIcmsSt, String indApur, Integer cstIpi, String codEnq, BigDecimal vlBcIpi, BigDecimal aliqIpi, BigDecimal vlIpi, Integer cstPis, BigDecimal vlBcPis, BigDecimal aliqPis, BigDecimal quantBcPis, BigDecimal aliqPisRs, BigDecimal vlPisRs, Integer cstCofins, BigDecimal vlBcCofins, BigDecimal aliqCofins, BigDecimal quantBcCofins, BigDecimal aliqCofinsRs, BigDecimal vlCofins, String codCta, BigDecimal vlAbatNt) {
@@ -352,4 +196,385 @@ public class RegC170 implements Serializable {
     }
 
     public RegC170(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public Integer getNumItem() {
+        return numItem;
+    }
+
+    public void setNumItem(Integer numItem) {
+        this.numItem = numItem;
+    }
+
+    public String getCodItem() {
+        return codItem;
+    }
+
+    public void setCodItem(String codItem) {
+        this.codItem = codItem;
+    }
+
+    public String getDescrCompl() {
+        return descrCompl;
+    }
+
+    public void setDescrCompl(String descrCompl) {
+        this.descrCompl = descrCompl;
+    }
+
+    public BigDecimal getQtd() {
+        return qtd;
+    }
+
+    public void setQtd(BigDecimal qtd) {
+        this.qtd = qtd;
+    }
+
+    public String getUnid() {
+        return unid;
+    }
+
+    public void setUnid(String unid) {
+        this.unid = unid;
+    }
+
+    public BigDecimal getVlItem() {
+        return vlItem;
+    }
+
+    public void setVlItem(BigDecimal vlItem) {
+        this.vlItem = vlItem;
+    }
+
+    public BigDecimal getVlDesc() {
+        return vlDesc;
+    }
+
+    public void setVlDesc(BigDecimal vlDesc) {
+        this.vlDesc = vlDesc;
+    }
+
+    public String getIndMov() {
+        return indMov;
+    }
+
+    public void setIndMov(String indMov) {
+        this.indMov = indMov;
+    }
+
+    public Integer getCstIcms() {
+        return cstIcms;
+    }
+
+    public void setCstIcms(Integer cstIcms) {
+        this.cstIcms = cstIcms;
+    }
+
+    public Integer getCfop() {
+        return cfop;
+    }
+
+    public void setCfop(Integer cfop) {
+        this.cfop = cfop;
+    }
+
+    public String getCodNat() {
+        return codNat;
+    }
+
+    public void setCodNat(String codNat) {
+        this.codNat = codNat;
+    }
+
+    public BigDecimal getVlBcIcms() {
+        return vlBcIcms;
+    }
+
+    public void setVlBcIcms(BigDecimal vlBcIcms) {
+        this.vlBcIcms = vlBcIcms;
+    }
+
+    public BigDecimal getAliqIcms() {
+        return aliqIcms;
+    }
+
+    public void setAliqIcms(BigDecimal aliqIcms) {
+        this.aliqIcms = aliqIcms;
+    }
+
+    public BigDecimal getVlIcms() {
+        return vlIcms;
+    }
+
+    public void setVlIcms(BigDecimal vlIcms) {
+        this.vlIcms = vlIcms;
+    }
+
+    public BigDecimal getVlBcIcmsSt() {
+        return vlBcIcmsSt;
+    }
+
+    public void setVlBcIcmsSt(BigDecimal vlBcIcmsSt) {
+        this.vlBcIcmsSt = vlBcIcmsSt;
+    }
+
+    public BigDecimal getAliqSt() {
+        return aliqSt;
+    }
+
+    public void setAliqSt(BigDecimal aliqSt) {
+        this.aliqSt = aliqSt;
+    }
+
+    public BigDecimal getVlIcmsSt() {
+        return vlIcmsSt;
+    }
+
+    public void setVlIcmsSt(BigDecimal vlIcmsSt) {
+        this.vlIcmsSt = vlIcmsSt;
+    }
+
+    public String getIndApur() {
+        return indApur;
+    }
+
+    public void setIndApur(String indApur) {
+        this.indApur = indApur;
+    }
+
+    public Integer getCstIpi() {
+        return cstIpi;
+    }
+
+    public void setCstIpi(Integer cstIpi) {
+        this.cstIpi = cstIpi;
+    }
+
+    public String getCodEnq() {
+        return codEnq;
+    }
+
+    public void setCodEnq(String codEnq) {
+        this.codEnq = codEnq;
+    }
+
+    public BigDecimal getVlBcIpi() {
+        return vlBcIpi;
+    }
+
+    public void setVlBcIpi(BigDecimal vlBcIpi) {
+        this.vlBcIpi = vlBcIpi;
+    }
+
+    public BigDecimal getAliqIpi() {
+        return aliqIpi;
+    }
+
+    public void setAliqIpi(BigDecimal aliqIpi) {
+        this.aliqIpi = aliqIpi;
+    }
+
+    public BigDecimal getVlIpi() {
+        return vlIpi;
+    }
+
+    public void setVlIpi(BigDecimal vlIpi) {
+        this.vlIpi = vlIpi;
+    }
+
+    public Integer getCstPis() {
+        return cstPis;
+    }
+
+    public void setCstPis(Integer cstPis) {
+        this.cstPis = cstPis;
+    }
+
+    public BigDecimal getVlBcPis() {
+        return vlBcPis;
+    }
+
+    public void setVlBcPis(BigDecimal vlBcPis) {
+        this.vlBcPis = vlBcPis;
+    }
+
+    public BigDecimal getAliqPis() {
+        return aliqPis;
+    }
+
+    public void setAliqPis(BigDecimal aliqPis) {
+        this.aliqPis = aliqPis;
+    }
+
+    public BigDecimal getQuantBcPis() {
+        return quantBcPis;
+    }
+
+    public void setQuantBcPis(BigDecimal quantBcPis) {
+        this.quantBcPis = quantBcPis;
+    }
+
+    public BigDecimal getAliqPisRs() {
+        return aliqPisRs;
+    }
+
+    public void setAliqPisRs(BigDecimal aliqPisRs) {
+        this.aliqPisRs = aliqPisRs;
+    }
+
+    public BigDecimal getVlPisRs() {
+        return vlPisRs;
+    }
+
+    public void setVlPisRs(BigDecimal vlPisRs) {
+        this.vlPisRs = vlPisRs;
+    }
+
+    public Integer getCstCofins() {
+        return cstCofins;
+    }
+
+    public void setCstCofins(Integer cstCofins) {
+        this.cstCofins = cstCofins;
+    }
+
+    public BigDecimal getVlBcCofins() {
+        return vlBcCofins;
+    }
+
+    public void setVlBcCofins(BigDecimal vlBcCofins) {
+        this.vlBcCofins = vlBcCofins;
+    }
+
+    public BigDecimal getAliqCofins() {
+        return aliqCofins;
+    }
+
+    public void setAliqCofins(BigDecimal aliqCofins) {
+        this.aliqCofins = aliqCofins;
+    }
+
+    public BigDecimal getQuantBcCofins() {
+        return quantBcCofins;
+    }
+
+    public void setQuantBcCofins(BigDecimal quantBcCofins) {
+        this.quantBcCofins = quantBcCofins;
+    }
+
+    public BigDecimal getAliqCofinsRs() {
+        return aliqCofinsRs;
+    }
+
+    public void setAliqCofinsRs(BigDecimal aliqCofinsRs) {
+        this.aliqCofinsRs = aliqCofinsRs;
+    }
+
+    public BigDecimal getVlCofins() {
+        return vlCofins;
+    }
+
+    public void setVlCofins(BigDecimal vlCofins) {
+        this.vlCofins = vlCofins;
+    }
+
+    public String getCodCta() {
+        return codCta;
+    }
+
+    public void setCodCta(String codCta) {
+        this.codCta = codCta;
+    }
+
+    public BigDecimal getVlAbatNt() {
+        return vlAbatNt;
+    }
+
+    public void setVlAbatNt(BigDecimal vlAbatNt) {
+        this.vlAbatNt = vlAbatNt;
+    }
+
+    public List<RegC171> getRegC171() {
+        return regC171;
+    }
+
+    public void setRegC171(List<RegC171> regC171) {
+        this.regC171 = regC171;
+    }
+
+    public RegC172 getRegC172() {
+        return regC172;
+    }
+
+    public void setRegC172(RegC172 regC172) {
+        this.regC172 = regC172;
+    }
+
+    public List<RegC173> getRegC173() {
+        return regC173;
+    }
+
+    public void setRegC173(List<RegC173> regC173) {
+        this.regC173 = regC173;
+    }
+
+    public List<RegC174> getRegC174() {
+        return regC174;
+    }
+
+    public void setRegC174(List<RegC174> regC174) {
+        this.regC174 = regC174;
+    }
+
+    public List<RegC175> getRegC175() {
+        return regC175;
+    }
+
+    public void setRegC175(List<RegC175> regC175) {
+        this.regC175 = regC175;
+    }
+
+    public List<RegC176> getRegC176() {
+        return regC176;
+    }
+
+    public void setRegC176(List<RegC176> regC176) {
+        this.regC176 = regC176;
+    }
+
+    public RegC177 getRegC177() {
+        return regC177;
+    }
+
+    public void setRegC177(RegC177 regC177) {
+        this.regC177 = regC177;
+    }
+
+    public RegC178 getRegC178() {
+        return regC178;
+    }
+
+    public void setRegC178(RegC178 regC178) {
+        this.regC178 = regC178;
+    }
+
+    public RegC179 getRegC179() {
+        return regC179;
+    }
+
+    public void setRegC179(RegC179 regC179) {
+        this.regC179 = regC179;
+    }
+
+    public RegC180 getRegC180() {
+        return regC180;
+    }
+
+    public void setRegC180(RegC180 regC180) {
+        this.regC180 = regC180;
+    }
+    
 }

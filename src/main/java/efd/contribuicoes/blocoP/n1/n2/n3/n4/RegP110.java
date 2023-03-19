@@ -1,8 +1,6 @@
 package efd.contribuicoes.blocoP.n1.n2.n3.n4;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -10,19 +8,19 @@ import java.math.BigDecimal;
 public class RegP110 implements Serializable {
 	private static final long serialVersionUID = 1576155504418536275L;
 
-	@Getter @Inclui
+	@Inclui
 	private final String reg = "P110";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String numCampo;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codDet;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal detValor;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String infCompl;
 
     public RegP110(String numCampo, String codDet, BigDecimal detValor, String infCompl) {
@@ -33,4 +31,41 @@ public class RegP110 implements Serializable {
     }
 
     public RegP110(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public String getNumCampo() {
+        return numCampo;
+    }
+
+    public void setNumCampo(String numCampo) {
+        this.numCampo = numCampo;
+    }
+
+    public String getCodDet() {
+        return codDet;
+    }
+
+    public void setCodDet(String codDet) {
+        this.codDet = codDet;
+    }
+
+    public BigDecimal getDetValor() {
+        return detValor;
+    }
+
+    public void setDetValor(BigDecimal detValor) {
+        this.detValor = detValor;
+    }
+
+    public String getInfCompl() {
+        return infCompl;
+    }
+
+    public void setInfCompl(String infCompl) {
+        this.infCompl = infCompl;
+    }
+    
 }

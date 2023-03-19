@@ -3,53 +3,50 @@ package efd.icmsipi.bloco0.n1.n2;
 import java.io.Serializable;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
-
 
 public class Reg0100 implements Serializable {
 	private static final long serialVersionUID = 732381123262894129L;
 
-	@Getter @Inclui
+	@Inclui
     private final String reg = "0100";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String nome;
 
-    @Getter @Setter @Inclui(zerosEsquerda = 11)
+    @Inclui(zerosEsquerda = 11)
     private Long cpf;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String crc;
 
-    @Getter @Setter @Inclui(zerosEsquerda = 14)
+    @Inclui(zerosEsquerda = 14)
     private Long cnpj;
 
-    @Getter @Setter @Inclui(zerosEsquerda = 8)
+    @Inclui(zerosEsquerda = 8)
     private Integer cep;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String end;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String num;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String compl;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String bairro;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String fone;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String fax;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String email;
 
-    @Getter @Setter @Inclui(zerosEsquerda = 7)
+    @Inclui(zerosEsquerda = 7)
     private Integer codMun;
 
     public Reg0100(String nome, Long cpf, String crc, Long cnpj, Integer cep, String end,
@@ -72,5 +69,114 @@ public class Reg0100 implements Serializable {
     }
 
     public Reg0100(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public Long getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(Long cpf) {
+        this.cpf = cpf;
+    }
+
+    public String getCrc() {
+        return crc;
+    }
+
+    public void setCrc(String crc) {
+        this.crc = crc;
+    }
+
+    public Long getCnpj() {
+        return cnpj;
+    }
+
+    public void setCnpj(Long cnpj) {
+        this.cnpj = cnpj;
+    }
+
+    public Integer getCep() {
+        return cep;
+    }
+
+    public void setCep(Integer cep) {
+        this.cep = cep;
+    }
+
+    public String getEnd() {
+        return end;
+    }
+
+    public void setEnd(String end) {
+        this.end = end;
+    }
+
+    public String getNum() {
+        return num;
+    }
+
+    public void setNum(String num) {
+        this.num = num;
+    }
+
+    public String getCompl() {
+        return compl;
+    }
+
+    public void setCompl(String compl) {
+        this.compl = compl;
+    }
+
+    public String getBairro() {
+        return bairro;
+    }
+
+    public void setBairro(String bairro) {
+        this.bairro = bairro;
+    }
+
+    public String getFone() {
+        return fone;
+    }
+
+    public void setFone(String fone) {
+        this.fone = fone;
+    }
+
+    public String getFax() {
+        return fax;
+    }
+
+    public void setFax(String fax) {
+        this.fax = fax;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public Integer getCodMun() {
+        return codMun;
+    }
+
+    public void setCodMun(Integer codMun) {
+        this.codMun = codMun;
+    }
+    
 
 }

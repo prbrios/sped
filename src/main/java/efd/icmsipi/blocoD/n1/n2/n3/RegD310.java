@@ -1,29 +1,26 @@
 package efd.icmsipi.blocoD.n1.n2.n3;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
 
-
 public class RegD310 implements Serializable {
 	private static final long serialVersionUID = 5950731917999189201L;
 
-	@Getter @Inclui
+	@Inclui
     private final String reg = "D310";
 
-    @Getter @Setter @Inclui(zerosEsquerda = 7)
+    @Inclui(zerosEsquerda = 7)
     private Integer codMunOrig;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlServ;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlbcIcms;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlIcms;
 
     public RegD310(Integer codMunOrig, BigDecimal vlServ, BigDecimal vlbcIcms, BigDecimal vlIcms) {
@@ -34,4 +31,41 @@ public class RegD310 implements Serializable {
     }
 
     public RegD310(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public Integer getCodMunOrig() {
+        return codMunOrig;
+    }
+
+    public void setCodMunOrig(Integer codMunOrig) {
+        this.codMunOrig = codMunOrig;
+    }
+
+    public BigDecimal getVlServ() {
+        return vlServ;
+    }
+
+    public void setVlServ(BigDecimal vlServ) {
+        this.vlServ = vlServ;
+    }
+
+    public BigDecimal getVlbcIcms() {
+        return vlbcIcms;
+    }
+
+    public void setVlbcIcms(BigDecimal vlbcIcms) {
+        this.vlbcIcms = vlbcIcms;
+    }
+
+    public BigDecimal getVlIcms() {
+        return vlIcms;
+    }
+
+    public void setVlIcms(BigDecimal vlIcms) {
+        this.vlIcms = vlIcms;
+    }
+    
 }

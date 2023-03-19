@@ -1,8 +1,8 @@
 package efd.contribuicoes.bloco1.n1.n2;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
+
+
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -11,28 +11,28 @@ import java.time.LocalDate;
 public class Reg1700 implements Serializable {
 	private static final long serialVersionUID = 8566018312791585670L;
 
-	@Getter @Inclui
+	@Inclui
 	private final String reg = "1700";
 
-    @Getter @Setter @Inclui(zerosEsquerda = 2)
+    @Inclui(zerosEsquerda = 2)
     private Integer indNatRet;
 
-    @Getter @Setter @Inclui(formatoData = "MMyyyy")
+    @Inclui(formatoData = "MMyyyy")
     private LocalDate prRecRet;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlRetApu;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlRetDed;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlRetPer;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlRetDcomp;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal sldRet;
 
     public Reg1700(Integer indNatRet, LocalDate prRecRet, BigDecimal vlRetApu, BigDecimal vlRetDed, BigDecimal vlRetPer, BigDecimal vlRetDcomp, BigDecimal sldRet) {
@@ -46,4 +46,65 @@ public class Reg1700 implements Serializable {
     }
 
     public Reg1700(){ }
+
+    public String getReg() {
+        return reg;
+    }
+
+    public Integer getIndNatRet() {
+        return indNatRet;
+    }
+
+    public void setIndNatRet(Integer indNatRet) {
+        this.indNatRet = indNatRet;
+    }
+
+    public LocalDate getPrRecRet() {
+        return prRecRet;
+    }
+
+    public void setPrRecRet(LocalDate prRecRet) {
+        this.prRecRet = prRecRet;
+    }
+
+    public BigDecimal getVlRetApu() {
+        return vlRetApu;
+    }
+
+    public void setVlRetApu(BigDecimal vlRetApu) {
+        this.vlRetApu = vlRetApu;
+    }
+
+    public BigDecimal getVlRetDed() {
+        return vlRetDed;
+    }
+
+    public void setVlRetDed(BigDecimal vlRetDed) {
+        this.vlRetDed = vlRetDed;
+    }
+
+    public BigDecimal getVlRetPer() {
+        return vlRetPer;
+    }
+
+    public void setVlRetPer(BigDecimal vlRetPer) {
+        this.vlRetPer = vlRetPer;
+    }
+
+    public BigDecimal getVlRetDcomp() {
+        return vlRetDcomp;
+    }
+
+    public void setVlRetDcomp(BigDecimal vlRetDcomp) {
+        this.vlRetDcomp = vlRetDcomp;
+    }
+
+    public BigDecimal getSldRet() {
+        return sldRet;
+    }
+
+    public void setSldRet(BigDecimal sldRet) {
+        this.sldRet = sldRet;
+    }
+    
 }

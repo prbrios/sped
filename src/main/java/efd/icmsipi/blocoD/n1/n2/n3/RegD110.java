@@ -3,33 +3,30 @@ package efd.icmsipi.blocoD.n1.n2.n3;
 import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
 import efd.icmsipi.blocoD.n1.n2.n3.n4.RegD120;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.List;
 
-
 public class RegD110 implements Serializable {
 	private static final long serialVersionUID = 2362120510801769259L;
 
-	@Getter @Inclui
+	@Inclui
     private final String reg = "D110";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private Integer numItem;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codItem;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlServ;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlOut;
 
-    @Getter @Setter @Filho
+    @Filho
     private List<RegD120> regD120;
 
     public RegD110(Integer numItem, String codItem, BigDecimal vlServ, BigDecimal vlOut) {
@@ -40,4 +37,49 @@ public class RegD110 implements Serializable {
     }
 
     public RegD110(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public Integer getNumItem() {
+        return numItem;
+    }
+
+    public void setNumItem(Integer numItem) {
+        this.numItem = numItem;
+    }
+
+    public String getCodItem() {
+        return codItem;
+    }
+
+    public void setCodItem(String codItem) {
+        this.codItem = codItem;
+    }
+
+    public BigDecimal getVlServ() {
+        return vlServ;
+    }
+
+    public void setVlServ(BigDecimal vlServ) {
+        this.vlServ = vlServ;
+    }
+
+    public BigDecimal getVlOut() {
+        return vlOut;
+    }
+
+    public void setVlOut(BigDecimal vlOut) {
+        this.vlOut = vlOut;
+    }
+
+    public List<RegD120> getRegD120() {
+        return regD120;
+    }
+
+    public void setRegD120(List<RegD120> regD120) {
+        this.regD120 = regD120;
+    }
+    
 }

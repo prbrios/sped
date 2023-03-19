@@ -3,8 +3,6 @@ package efd.contribuicoes.blocoM.n1.n2;
 import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
 import efd.contribuicoes.blocoM.n1.n2.n3.RegM410;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -13,22 +11,22 @@ import java.util.List;
 public class RegM400 implements Serializable {
 	private static final long serialVersionUID = -3178413027920165002L;
 
-	@Getter @Inclui
+	@Inclui
 	private final String reg = "M400";
 
-    @Getter @Setter @Inclui(zerosEsquerda = 2)
+    @Inclui(zerosEsquerda = 2)
     private Integer cstPis;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlTotRec;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codCta;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String descCompl;
 
-    @Getter @Setter @Filho
+    @Filho
     private List<RegM410> regM410;
 
     public RegM400(Integer cstPis, BigDecimal vlTotRec, String codCta, String descCompl) {
@@ -39,4 +37,49 @@ public class RegM400 implements Serializable {
     }
 
     public RegM400(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public Integer getCstPis() {
+        return cstPis;
+    }
+
+    public void setCstPis(Integer cstPis) {
+        this.cstPis = cstPis;
+    }
+
+    public BigDecimal getVlTotRec() {
+        return vlTotRec;
+    }
+
+    public void setVlTotRec(BigDecimal vlTotRec) {
+        this.vlTotRec = vlTotRec;
+    }
+
+    public String getCodCta() {
+        return codCta;
+    }
+
+    public void setCodCta(String codCta) {
+        this.codCta = codCta;
+    }
+
+    public String getDescCompl() {
+        return descCompl;
+    }
+
+    public void setDescCompl(String descCompl) {
+        this.descCompl = descCompl;
+    }
+
+    public List<RegM410> getRegM410() {
+        return regM410;
+    }
+
+    public void setRegM410(List<RegM410> regM410) {
+        this.regM410 = regM410;
+    }
+    
 }

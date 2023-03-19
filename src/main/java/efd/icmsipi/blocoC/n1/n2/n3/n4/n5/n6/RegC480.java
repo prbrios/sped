@@ -1,8 +1,6 @@
 package efd.icmsipi.blocoC.n1.n2.n3.n4.n5.n6;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -10,52 +8,52 @@ import java.math.BigDecimal;
 public class RegC480 implements Serializable {
 	private static final long serialVersionUID = 3399504983252460598L;
 
-	@Getter @Inclui
+	@Inclui
 	private final String reg = "C480";
 
-	@Getter @Setter	@Inclui
+	@Inclui
 	private String codMotRestCompl;
 
-	@Getter @Setter	@Inclui(casasDecimais = 6)
+	@Inclui(casasDecimais = 6)
 	private BigDecimal quantConv;
 
-	@Getter @Setter	@Inclui
+	@Inclui
 	private String unid;
 
-	@Getter @Setter	@Inclui(casasDecimais = 6)
+	@Inclui(casasDecimais = 6)
 	private BigDecimal vlUnitConv;
 
-	@Getter @Setter	@Inclui(casasDecimais = 6)
+	@Inclui(casasDecimais = 6)
 	private BigDecimal vlUnitIcmsNaOperacaoConv;
 
-	@Getter @Setter	@Inclui(casasDecimais = 6)
+	@Inclui(casasDecimais = 6)
 	private BigDecimal vlUnitIcmsOpConv;
 
-	@Getter @Setter	@Inclui(casasDecimais = 6)
+	@Inclui(casasDecimais = 6)
 	private BigDecimal vlUnitIcmsOpEstoqueConv;
 
-	@Getter @Setter	@Inclui(casasDecimais = 6)
+	@Inclui(casasDecimais = 6)
 	private BigDecimal vlUnitIcmsStEstoqueConv;
 
-	@Getter @Setter	@Inclui(casasDecimais = 6)
+	@Inclui(casasDecimais = 6)
 	private BigDecimal vlUnitFcpIcmsStEstoqueConv;
 
-	@Getter @Setter	@Inclui(casasDecimais = 6)
+	@Inclui(casasDecimais = 6)
 	private BigDecimal vlUnitIcmsStConvRest;
 
-	@Getter @Setter	@Inclui(casasDecimais = 6)
+	@Inclui(casasDecimais = 6)
 	private BigDecimal vlUnitFcpStConvRest;
 
-	@Getter @Setter	@Inclui(casasDecimais = 6)
+	@Inclui(casasDecimais = 6)
 	private BigDecimal vlUnitIcmsStConvCompl;
 
-	@Getter @Setter	@Inclui(casasDecimais = 6)
+	@Inclui(casasDecimais = 6)
 	private BigDecimal vlUnitFcpStConvCompl;
 
-	@Getter @Setter	@Inclui(zerosEsquerda = 3)
+	@Inclui(zerosEsquerda = 3)
 	private Integer cstIcms;
 
-	@Getter @Setter	@Inclui(zerosEsquerda = 4)
+	@Inclui(zerosEsquerda = 4)
 	private Integer cfop;
 
 	public RegC480(String codMotRestCompl, BigDecimal quantConv, String unid, BigDecimal vlUnitConv, BigDecimal vlUnitIcmsNaOperacaoConv, BigDecimal vlUnitIcmsOpConv, BigDecimal vlUnitIcmsOpEstoqueConv, BigDecimal vlUnitIcmsStEstoqueConv, BigDecimal vlUnitFcpIcmsStEstoqueConv, BigDecimal vlUnitIcmsStConvRest, BigDecimal vlUnitFcpStConvRest, BigDecimal vlUnitIcmsStConvCompl, BigDecimal vlUnitFcpStConvCompl, Integer cstIcms, Integer cfop) {
@@ -77,5 +75,130 @@ public class RegC480 implements Serializable {
 	}
 
 	public RegC480(){}
+
+	public String getReg() {
+		return reg;
+	}
+
+	public String getCodMotRestCompl() {
+		return codMotRestCompl;
+	}
+
+	public void setCodMotRestCompl(String codMotRestCompl) {
+		this.codMotRestCompl = codMotRestCompl;
+	}
+
+	public BigDecimal getQuantConv() {
+		return quantConv;
+	}
+
+	public void setQuantConv(BigDecimal quantConv) {
+		this.quantConv = quantConv;
+	}
+
+	public String getUnid() {
+		return unid;
+	}
+
+	public void setUnid(String unid) {
+		this.unid = unid;
+	}
+
+	public BigDecimal getVlUnitConv() {
+		return vlUnitConv;
+	}
+
+	public void setVlUnitConv(BigDecimal vlUnitConv) {
+		this.vlUnitConv = vlUnitConv;
+	}
+
+	public BigDecimal getVlUnitIcmsNaOperacaoConv() {
+		return vlUnitIcmsNaOperacaoConv;
+	}
+
+	public void setVlUnitIcmsNaOperacaoConv(BigDecimal vlUnitIcmsNaOperacaoConv) {
+		this.vlUnitIcmsNaOperacaoConv = vlUnitIcmsNaOperacaoConv;
+	}
+
+	public BigDecimal getVlUnitIcmsOpConv() {
+		return vlUnitIcmsOpConv;
+	}
+
+	public void setVlUnitIcmsOpConv(BigDecimal vlUnitIcmsOpConv) {
+		this.vlUnitIcmsOpConv = vlUnitIcmsOpConv;
+	}
+
+	public BigDecimal getVlUnitIcmsOpEstoqueConv() {
+		return vlUnitIcmsOpEstoqueConv;
+	}
+
+	public void setVlUnitIcmsOpEstoqueConv(BigDecimal vlUnitIcmsOpEstoqueConv) {
+		this.vlUnitIcmsOpEstoqueConv = vlUnitIcmsOpEstoqueConv;
+	}
+
+	public BigDecimal getVlUnitIcmsStEstoqueConv() {
+		return vlUnitIcmsStEstoqueConv;
+	}
+
+	public void setVlUnitIcmsStEstoqueConv(BigDecimal vlUnitIcmsStEstoqueConv) {
+		this.vlUnitIcmsStEstoqueConv = vlUnitIcmsStEstoqueConv;
+	}
+
+	public BigDecimal getVlUnitFcpIcmsStEstoqueConv() {
+		return vlUnitFcpIcmsStEstoqueConv;
+	}
+
+	public void setVlUnitFcpIcmsStEstoqueConv(BigDecimal vlUnitFcpIcmsStEstoqueConv) {
+		this.vlUnitFcpIcmsStEstoqueConv = vlUnitFcpIcmsStEstoqueConv;
+	}
+
+	public BigDecimal getVlUnitIcmsStConvRest() {
+		return vlUnitIcmsStConvRest;
+	}
+
+	public void setVlUnitIcmsStConvRest(BigDecimal vlUnitIcmsStConvRest) {
+		this.vlUnitIcmsStConvRest = vlUnitIcmsStConvRest;
+	}
+
+	public BigDecimal getVlUnitFcpStConvRest() {
+		return vlUnitFcpStConvRest;
+	}
+
+	public void setVlUnitFcpStConvRest(BigDecimal vlUnitFcpStConvRest) {
+		this.vlUnitFcpStConvRest = vlUnitFcpStConvRest;
+	}
+
+	public BigDecimal getVlUnitIcmsStConvCompl() {
+		return vlUnitIcmsStConvCompl;
+	}
+
+	public void setVlUnitIcmsStConvCompl(BigDecimal vlUnitIcmsStConvCompl) {
+		this.vlUnitIcmsStConvCompl = vlUnitIcmsStConvCompl;
+	}
+
+	public BigDecimal getVlUnitFcpStConvCompl() {
+		return vlUnitFcpStConvCompl;
+	}
+
+	public void setVlUnitFcpStConvCompl(BigDecimal vlUnitFcpStConvCompl) {
+		this.vlUnitFcpStConvCompl = vlUnitFcpStConvCompl;
+	}
+
+	public Integer getCstIcms() {
+		return cstIcms;
+	}
+
+	public void setCstIcms(Integer cstIcms) {
+		this.cstIcms = cstIcms;
+	}
+
+	public Integer getCfop() {
+		return cfop;
+	}
+
+	public void setCfop(Integer cfop) {
+		this.cfop = cfop;
+	}
+	
 
 }

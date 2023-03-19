@@ -4,44 +4,41 @@ import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
 import efd.icmsipi.blocoD.n1.n2.n3.n4.RegD161;
 import efd.icmsipi.blocoD.n1.n2.n3.n4.RegD162;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.util.List;
 
-
 public class RegD160 implements Serializable {
 	private static final long serialVersionUID = 3386045982246113299L;
 
-	@Getter @Inclui
+	@Inclui
     private final String reg = "D160";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String despacho;
 
-    @Getter @Setter @Inclui(zerosEsquerda = 14)
+    @Inclui(zerosEsquerda = 14)
     private Long cnpjCpfRem;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String ieRem;
 
-    @Getter @Setter @Inclui(zerosEsquerda = 7)
+    @Inclui(zerosEsquerda = 7)
     private Integer codMunOri;
 
-    @Getter @Setter @Inclui(zerosEsquerda = 7)
+    @Inclui(zerosEsquerda = 7)
     private Long cnpjCpfDest;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private Integer ieDest;
 
-    @Getter @Setter @Inclui(zerosEsquerda = 7)
+    @Inclui(zerosEsquerda = 7)
     private Integer codMunDest;
 
-    @Getter @Setter @Filho
+    @Filho
     private RegD161 regD161;
 
-    @Getter @Setter @Filho
+    @Filho
     private List<RegD162> regD162;
 
     public RegD160(String despacho, Long cnpjCpfRem, String ieRem, Integer codMunOri, Long cnpjCpfDest, Integer ieDest, Integer codMunDest) {
@@ -55,4 +52,81 @@ public class RegD160 implements Serializable {
     }
 
     public RegD160(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public String getDespacho() {
+        return despacho;
+    }
+
+    public void setDespacho(String despacho) {
+        this.despacho = despacho;
+    }
+
+    public Long getCnpjCpfRem() {
+        return cnpjCpfRem;
+    }
+
+    public void setCnpjCpfRem(Long cnpjCpfRem) {
+        this.cnpjCpfRem = cnpjCpfRem;
+    }
+
+    public String getIeRem() {
+        return ieRem;
+    }
+
+    public void setIeRem(String ieRem) {
+        this.ieRem = ieRem;
+    }
+
+    public Integer getCodMunOri() {
+        return codMunOri;
+    }
+
+    public void setCodMunOri(Integer codMunOri) {
+        this.codMunOri = codMunOri;
+    }
+
+    public Long getCnpjCpfDest() {
+        return cnpjCpfDest;
+    }
+
+    public void setCnpjCpfDest(Long cnpjCpfDest) {
+        this.cnpjCpfDest = cnpjCpfDest;
+    }
+
+    public Integer getIeDest() {
+        return ieDest;
+    }
+
+    public void setIeDest(Integer ieDest) {
+        this.ieDest = ieDest;
+    }
+
+    public Integer getCodMunDest() {
+        return codMunDest;
+    }
+
+    public void setCodMunDest(Integer codMunDest) {
+        this.codMunDest = codMunDest;
+    }
+
+    public RegD161 getRegD161() {
+        return regD161;
+    }
+
+    public void setRegD161(RegD161 regD161) {
+        this.regD161 = regD161;
+    }
+
+    public List<RegD162> getRegD162() {
+        return regD162;
+    }
+
+    public void setRegD162(List<RegD162> regD162) {
+        this.regD162 = regD162;
+    }
+    
 }

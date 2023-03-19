@@ -1,8 +1,6 @@
 package efd.contribuicoes.blocoM.n1.n2.n3.n4.n5;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -11,31 +9,31 @@ import java.time.LocalDate;
 public class RegM225 implements Serializable {
 	private static final long serialVersionUID = -6038506638813937280L;
 
-	@Getter @Inclui
+	@Inclui
 	private final String reg = "M225";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal detValorAj;
 
-    @Getter @Setter @Inclui(zerosEsquerda = 2)
+    @Inclui(zerosEsquerda = 2)
     private Integer cstPis;
 
-    @Getter @Setter @Inclui(casasDecimais = 3)
+    @Inclui(casasDecimais = 3)
     private BigDecimal detBcCred;
 
-    @Getter @Setter @Inclui(casasDecimais = 4)
+    @Inclui(casasDecimais = 4)
     private BigDecimal detAliq;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private LocalDate dtOperAj;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String descAj;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codCta;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String infoCompl;
 
     public RegM225(BigDecimal detValorAj, Integer cstPis, BigDecimal detBcCred, BigDecimal detAliq, LocalDate dtOperAj, String descAj, String codCta, String infoCompl) {
@@ -50,4 +48,73 @@ public class RegM225 implements Serializable {
     }
 
     public RegM225(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public BigDecimal getDetValorAj() {
+        return detValorAj;
+    }
+
+    public void setDetValorAj(BigDecimal detValorAj) {
+        this.detValorAj = detValorAj;
+    }
+
+    public Integer getCstPis() {
+        return cstPis;
+    }
+
+    public void setCstPis(Integer cstPis) {
+        this.cstPis = cstPis;
+    }
+
+    public BigDecimal getDetBcCred() {
+        return detBcCred;
+    }
+
+    public void setDetBcCred(BigDecimal detBcCred) {
+        this.detBcCred = detBcCred;
+    }
+
+    public BigDecimal getDetAliq() {
+        return detAliq;
+    }
+
+    public void setDetAliq(BigDecimal detAliq) {
+        this.detAliq = detAliq;
+    }
+
+    public LocalDate getDtOperAj() {
+        return dtOperAj;
+    }
+
+    public void setDtOperAj(LocalDate dtOperAj) {
+        this.dtOperAj = dtOperAj;
+    }
+
+    public String getDescAj() {
+        return descAj;
+    }
+
+    public void setDescAj(String descAj) {
+        this.descAj = descAj;
+    }
+
+    public String getCodCta() {
+        return codCta;
+    }
+
+    public void setCodCta(String codCta) {
+        this.codCta = codCta;
+    }
+
+    public String getInfoCompl() {
+        return infoCompl;
+    }
+
+    public void setInfoCompl(String infoCompl) {
+        this.infoCompl = infoCompl;
+    }
+    
 }

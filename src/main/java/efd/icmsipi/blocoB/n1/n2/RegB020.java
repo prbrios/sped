@@ -3,82 +3,79 @@ package efd.icmsipi.blocoB.n1.n2;
 import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
 import efd.icmsipi.blocoB.n1.n2.n3.RegB025;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
 
-
 public class RegB020 implements Serializable {
 	private static final long serialVersionUID = -3633119462458690377L;
 
-	@Getter @Inclui
+	@Inclui
     private final String reg = "B020";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String indOper;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String indEmit;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codPart;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codMod;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codSit;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String ser;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private Long numDoc;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String chvNfe;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private LocalDate dtDoc;
 
-    @Getter @Setter @Inclui(zerosEsquerda = 7)
+    @Inclui(zerosEsquerda = 7)
     private Integer codMunServ;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlCont;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlMatTerc;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlSub;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlInstIss;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlDedBc;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlBcIss;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlBsIssRt;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlIssRt;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlIss;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codInfObs;
 
-    @Getter @Setter @Filho
+    @Filho
     private List<RegB025> regB025;
 
     public RegB020(String indOper, String indEmit, String codPart, String codMod, String codSit, String ser, Long numDoc, String chvNfe, LocalDate dtDoc, Integer codMunServ, BigDecimal vlCont, BigDecimal vlMatTerc, BigDecimal vlSub, BigDecimal vlInstIss, BigDecimal vlDedBc, BigDecimal vlBcIss, BigDecimal vlBsIssRt, BigDecimal vlIssRt, BigDecimal vlIss, String codInfObs) {
@@ -105,4 +102,177 @@ public class RegB020 implements Serializable {
     }
 
     public RegB020(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public String getIndOper() {
+        return indOper;
+    }
+
+    public void setIndOper(String indOper) {
+        this.indOper = indOper;
+    }
+
+    public String getIndEmit() {
+        return indEmit;
+    }
+
+    public void setIndEmit(String indEmit) {
+        this.indEmit = indEmit;
+    }
+
+    public String getCodPart() {
+        return codPart;
+    }
+
+    public void setCodPart(String codPart) {
+        this.codPart = codPart;
+    }
+
+    public String getCodMod() {
+        return codMod;
+    }
+
+    public void setCodMod(String codMod) {
+        this.codMod = codMod;
+    }
+
+    public String getCodSit() {
+        return codSit;
+    }
+
+    public void setCodSit(String codSit) {
+        this.codSit = codSit;
+    }
+
+    public String getSer() {
+        return ser;
+    }
+
+    public void setSer(String ser) {
+        this.ser = ser;
+    }
+
+    public Long getNumDoc() {
+        return numDoc;
+    }
+
+    public void setNumDoc(Long numDoc) {
+        this.numDoc = numDoc;
+    }
+
+    public String getChvNfe() {
+        return chvNfe;
+    }
+
+    public void setChvNfe(String chvNfe) {
+        this.chvNfe = chvNfe;
+    }
+
+    public LocalDate getDtDoc() {
+        return dtDoc;
+    }
+
+    public void setDtDoc(LocalDate dtDoc) {
+        this.dtDoc = dtDoc;
+    }
+
+    public Integer getCodMunServ() {
+        return codMunServ;
+    }
+
+    public void setCodMunServ(Integer codMunServ) {
+        this.codMunServ = codMunServ;
+    }
+
+    public BigDecimal getVlCont() {
+        return vlCont;
+    }
+
+    public void setVlCont(BigDecimal vlCont) {
+        this.vlCont = vlCont;
+    }
+
+    public BigDecimal getVlMatTerc() {
+        return vlMatTerc;
+    }
+
+    public void setVlMatTerc(BigDecimal vlMatTerc) {
+        this.vlMatTerc = vlMatTerc;
+    }
+
+    public BigDecimal getVlSub() {
+        return vlSub;
+    }
+
+    public void setVlSub(BigDecimal vlSub) {
+        this.vlSub = vlSub;
+    }
+
+    public BigDecimal getVlInstIss() {
+        return vlInstIss;
+    }
+
+    public void setVlInstIss(BigDecimal vlInstIss) {
+        this.vlInstIss = vlInstIss;
+    }
+
+    public BigDecimal getVlDedBc() {
+        return vlDedBc;
+    }
+
+    public void setVlDedBc(BigDecimal vlDedBc) {
+        this.vlDedBc = vlDedBc;
+    }
+
+    public BigDecimal getVlBcIss() {
+        return vlBcIss;
+    }
+
+    public void setVlBcIss(BigDecimal vlBcIss) {
+        this.vlBcIss = vlBcIss;
+    }
+
+    public BigDecimal getVlBsIssRt() {
+        return vlBsIssRt;
+    }
+
+    public void setVlBsIssRt(BigDecimal vlBsIssRt) {
+        this.vlBsIssRt = vlBsIssRt;
+    }
+
+    public BigDecimal getVlIssRt() {
+        return vlIssRt;
+    }
+
+    public void setVlIssRt(BigDecimal vlIssRt) {
+        this.vlIssRt = vlIssRt;
+    }
+
+    public BigDecimal getVlIss() {
+        return vlIss;
+    }
+
+    public void setVlIss(BigDecimal vlIss) {
+        this.vlIss = vlIss;
+    }
+
+    public String getCodInfObs() {
+        return codInfObs;
+    }
+
+    public void setCodInfObs(String codInfObs) {
+        this.codInfObs = codInfObs;
+    }
+
+    public List<RegB025> getRegB025() {
+        return regB025;
+    }
+
+    public void setRegB025(List<RegB025> regB025) {
+        this.regB025 = regB025;
+    }
+    
 }

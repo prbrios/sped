@@ -3,17 +3,14 @@ package efd.icmsipi.blocoB.n1;
 import java.io.Serializable;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
-
 
 public class RegB990 implements Serializable {
 	private static final long serialVersionUID = 5768048010076714442L;
 
-	@Getter @Inclui
+	@Inclui
     private final String reg = "B990";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private Integer qtdLinB;
 
     public RegB990(Integer qtdLinB) {
@@ -21,4 +18,17 @@ public class RegB990 implements Serializable {
     }
 
     public RegB990(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public Integer getQtdLinB() {
+        return qtdLinB;
+    }
+
+    public void setQtdLinB(Integer qtdLinB) {
+        this.qtdLinB = qtdLinB;
+    }
+    
 }

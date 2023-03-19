@@ -3,8 +3,6 @@ package efd.contribuicoes.blocoD.n1;
 import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
 import efd.contribuicoes.blocoD.n1.n2.RegD010;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.util.List;
@@ -12,13 +10,13 @@ import java.util.List;
 public class RegD001 implements Serializable {
 	private static final long serialVersionUID = 3142343053736613687L;
 
-	@Getter @Inclui
+	@Inclui
 	private final String reg = "D001";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String indMov;
 
-    @Getter @Setter @Filho
+    @Filho
     private List<RegD010> regD010;
 
     public RegD001(String indMov) {
@@ -26,4 +24,25 @@ public class RegD001 implements Serializable {
     }
 
     public RegD001(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public String getIndMov() {
+        return indMov;
+    }
+
+    public void setIndMov(String indMov) {
+        this.indMov = indMov;
+    }
+
+    public List<RegD010> getRegD010() {
+        return regD010;
+    }
+
+    public void setRegD010(List<RegD010> regD010) {
+        this.regD010 = regD010;
+    }
+    
 }

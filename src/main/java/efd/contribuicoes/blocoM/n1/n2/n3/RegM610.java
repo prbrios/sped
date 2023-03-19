@@ -9,8 +9,6 @@ import efd.contribuicoes.blocoM.n1.n2.n3.n4.RegM611;
 import efd.contribuicoes.blocoM.n1.n2.n3.n4.RegM615;
 import efd.contribuicoes.blocoM.n1.n2.n3.n4.RegM620;
 import efd.contribuicoes.blocoM.n1.n2.n3.n4.RegM630;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -22,64 +20,64 @@ public class RegM610 implements Serializable {
 	@SuppressWarnings("unused")
 	private Grupo grupo;
 
-    @Getter @Inclui @G1 @G2
+    @Inclui @G1 @G2
     private final String reg = "M610";
 
-    @Getter @Setter @Inclui @G1 @G2
+    @Inclui @G1 @G2
     private String codCont;
 
-    @Getter @Setter @Inclui @G1 @G2
+    @Inclui @G1 @G2
     private BigDecimal vlRecBrt;
 
-    @Getter @Setter @Inclui @G1 @G2
+    @Inclui @G1 @G2
     private BigDecimal vlBcCont;
 
-    @Getter @Setter @Inclui @G2
+    @Inclui @G2
     private BigDecimal vlAjusAcresBcCofins;
 
-    @Getter @Setter @Inclui @G2
+    @Inclui @G2
     private BigDecimal vlAjusReducBcCofins;
 
-    @Getter @Setter @Inclui @G2
+    @Inclui @G2
     private BigDecimal vlBcContAjus;
 
-    @Getter @Setter @Inclui(casasDecimais = 4) @G1 @G2
+    @Inclui(casasDecimais = 4) @G1 @G2
     private BigDecimal aliqCofins;
 
-    @Getter @Setter @Inclui(casasDecimais = 3) @G1 @G2
+    @Inclui(casasDecimais = 3) @G1 @G2
     private BigDecimal quantBcCofins;
 
-    @Getter @Setter @Inclui(casasDecimais = 4) @G1 @G2
+    @Inclui(casasDecimais = 4) @G1 @G2
     private BigDecimal aliqCofinsQuant;
 
-    @Getter @Setter @Inclui @G1 @G2
+    @Inclui @G1 @G2
     private BigDecimal vlContApur;
 
-    @Getter @Setter @Inclui @G1 @G2
+    @Inclui @G1 @G2
     private BigDecimal vlAjusAcres;
 
-    @Getter @Setter @Inclui @G1 @G2
+    @Inclui @G1 @G2
     private BigDecimal vlAjusReduc;
 
-    @Getter @Setter @Inclui @G1 @G2
+    @Inclui @G1 @G2
     private BigDecimal vlContDifer;
 
-    @Getter @Setter @Inclui @G1 @G2
+    @Inclui @G1 @G2
     private BigDecimal vlContDiferAnt;
 
-    @Getter @Setter @Inclui @G1 @G2
+    @Inclui @G1 @G2
     private BigDecimal vlContPer;
 
-    @Getter @Setter @Filho
+    @Filho
     private RegM611 regM611;
 
-    @Getter @Setter @Filho
+    @Filho
     private List<RegM615> regM615;
 
-    @Getter @Setter @Filho
+    @Filho
     private List<RegM620> regM620;
 
-    @Getter @Setter @Filho
+    @Filho
     private List<RegM630> regM630;
 
     /**
@@ -156,4 +154,162 @@ public class RegM610 implements Serializable {
     }
 
     public RegM610(){ }
+
+    public String getReg() {
+        return reg;
+    }
+
+    public String getCodCont() {
+        return codCont;
+    }
+
+    public void setCodCont(String codCont) {
+        this.codCont = codCont;
+    }
+
+    public BigDecimal getVlRecBrt() {
+        return vlRecBrt;
+    }
+
+    public void setVlRecBrt(BigDecimal vlRecBrt) {
+        this.vlRecBrt = vlRecBrt;
+    }
+
+    public BigDecimal getVlBcCont() {
+        return vlBcCont;
+    }
+
+    public void setVlBcCont(BigDecimal vlBcCont) {
+        this.vlBcCont = vlBcCont;
+    }
+
+    public BigDecimal getVlAjusAcresBcCofins() {
+        return vlAjusAcresBcCofins;
+    }
+
+    public void setVlAjusAcresBcCofins(BigDecimal vlAjusAcresBcCofins) {
+        this.vlAjusAcresBcCofins = vlAjusAcresBcCofins;
+    }
+
+    public BigDecimal getVlAjusReducBcCofins() {
+        return vlAjusReducBcCofins;
+    }
+
+    public void setVlAjusReducBcCofins(BigDecimal vlAjusReducBcCofins) {
+        this.vlAjusReducBcCofins = vlAjusReducBcCofins;
+    }
+
+    public BigDecimal getVlBcContAjus() {
+        return vlBcContAjus;
+    }
+
+    public void setVlBcContAjus(BigDecimal vlBcContAjus) {
+        this.vlBcContAjus = vlBcContAjus;
+    }
+
+    public BigDecimal getAliqCofins() {
+        return aliqCofins;
+    }
+
+    public void setAliqCofins(BigDecimal aliqCofins) {
+        this.aliqCofins = aliqCofins;
+    }
+
+    public BigDecimal getQuantBcCofins() {
+        return quantBcCofins;
+    }
+
+    public void setQuantBcCofins(BigDecimal quantBcCofins) {
+        this.quantBcCofins = quantBcCofins;
+    }
+
+    public BigDecimal getAliqCofinsQuant() {
+        return aliqCofinsQuant;
+    }
+
+    public void setAliqCofinsQuant(BigDecimal aliqCofinsQuant) {
+        this.aliqCofinsQuant = aliqCofinsQuant;
+    }
+
+    public BigDecimal getVlContApur() {
+        return vlContApur;
+    }
+
+    public void setVlContApur(BigDecimal vlContApur) {
+        this.vlContApur = vlContApur;
+    }
+
+    public BigDecimal getVlAjusAcres() {
+        return vlAjusAcres;
+    }
+
+    public void setVlAjusAcres(BigDecimal vlAjusAcres) {
+        this.vlAjusAcres = vlAjusAcres;
+    }
+
+    public BigDecimal getVlAjusReduc() {
+        return vlAjusReduc;
+    }
+
+    public void setVlAjusReduc(BigDecimal vlAjusReduc) {
+        this.vlAjusReduc = vlAjusReduc;
+    }
+
+    public BigDecimal getVlContDifer() {
+        return vlContDifer;
+    }
+
+    public void setVlContDifer(BigDecimal vlContDifer) {
+        this.vlContDifer = vlContDifer;
+    }
+
+    public BigDecimal getVlContDiferAnt() {
+        return vlContDiferAnt;
+    }
+
+    public void setVlContDiferAnt(BigDecimal vlContDiferAnt) {
+        this.vlContDiferAnt = vlContDiferAnt;
+    }
+
+    public BigDecimal getVlContPer() {
+        return vlContPer;
+    }
+
+    public void setVlContPer(BigDecimal vlContPer) {
+        this.vlContPer = vlContPer;
+    }
+
+    public RegM611 getRegM611() {
+        return regM611;
+    }
+
+    public void setRegM611(RegM611 regM611) {
+        this.regM611 = regM611;
+    }
+
+    public List<RegM615> getRegM615() {
+        return regM615;
+    }
+
+    public void setRegM615(List<RegM615> regM615) {
+        this.regM615 = regM615;
+    }
+
+    public List<RegM620> getRegM620() {
+        return regM620;
+    }
+
+    public void setRegM620(List<RegM620> regM620) {
+        this.regM620 = regM620;
+    }
+
+    public List<RegM630> getRegM630() {
+        return regM630;
+    }
+
+    public void setRegM630(List<RegM630> regM630) {
+        this.regM630 = regM630;
+    }
+
+    
 }

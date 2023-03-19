@@ -1,36 +1,32 @@
 package efd.icmsipi.blocoC.n1.n2.n3;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
 
-
-
 public class RegC160 implements Serializable {
 	private static final long serialVersionUID = -3584697133795870167L;
 
-	@Getter @Inclui
+	@Inclui
     private final String reg = "C160";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codPart;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String veicId;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private Integer qtdVol;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal pesoBrt;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal pesoLiq;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String ufId;
 
     public RegC160(String codPart, String veicId, Integer qtdVol, BigDecimal pesoBrt, BigDecimal pesoLiq, String ufId) {
@@ -43,4 +39,57 @@ public class RegC160 implements Serializable {
     }
 
     public RegC160(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public String getCodPart() {
+        return codPart;
+    }
+
+    public void setCodPart(String codPart) {
+        this.codPart = codPart;
+    }
+
+    public String getVeicId() {
+        return veicId;
+    }
+
+    public void setVeicId(String veicId) {
+        this.veicId = veicId;
+    }
+
+    public Integer getQtdVol() {
+        return qtdVol;
+    }
+
+    public void setQtdVol(Integer qtdVol) {
+        this.qtdVol = qtdVol;
+    }
+
+    public BigDecimal getPesoBrt() {
+        return pesoBrt;
+    }
+
+    public void setPesoBrt(BigDecimal pesoBrt) {
+        this.pesoBrt = pesoBrt;
+    }
+
+    public BigDecimal getPesoLiq() {
+        return pesoLiq;
+    }
+
+    public void setPesoLiq(BigDecimal pesoLiq) {
+        this.pesoLiq = pesoLiq;
+    }
+
+    public String getUfId() {
+        return ufId;
+    }
+
+    public void setUfId(String ufId) {
+        this.ufId = ufId;
+    }
+    
 }

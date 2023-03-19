@@ -1,26 +1,23 @@
 package efd.icmsipi.bloco0.n1.n2.n3;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
 
-
 public class Reg0220 implements Serializable {
 	private static final long serialVersionUID = 2895750169638281686L;
 
-	@Getter @Inclui
+	@Inclui
     private final String reg = "0220";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String unidConv;
 
-    @Getter @Setter @Inclui(casasDecimais = 6)
+    @Inclui(casasDecimais = 6)
     private BigDecimal fatConv;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codBarra;
 
     public Reg0220(String unidConv, BigDecimal fatConv) {
@@ -35,5 +32,34 @@ public class Reg0220 implements Serializable {
     }
 
     public Reg0220(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public String getUnidConv() {
+        return unidConv;
+    }
+
+    public void setUnidConv(String unidConv) {
+        this.unidConv = unidConv;
+    }
+
+    public BigDecimal getFatConv() {
+        return fatConv;
+    }
+
+    public void setFatConv(BigDecimal fatConv) {
+        this.fatConv = fatConv;
+    }
+
+    public String getCodBarra() {
+        return codBarra;
+    }
+
+    public void setCodBarra(String codBarra) {
+        this.codBarra = codBarra;
+    }
+    
 
 }

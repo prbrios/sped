@@ -7,58 +7,56 @@ import java.util.List;
 import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
 import efd.ecd.blocoI.n1.n2.n3.n4.n5.RegI157;
-import lombok.Getter;
-import lombok.Setter;
 
 public class RegI155 implements Serializable {
 	private static final long serialVersionUID = -2858481449217280533L;
 
-	@Getter @Inclui
+	@Inclui
 	private final String reg = "I155";
 	
-	@Getter @Setter @Inclui
+	@Inclui
 	private String codCta;
 	
-	@Getter @Setter @Inclui
+	@Inclui
 	private String codCcus;
 	
-	@Getter @Setter @Inclui
+	@Inclui
 	private BigDecimal vlSldIni;
 	
-	@Getter @Setter @Inclui
+	@Inclui
 	private String indDcIni;
 	
-	@Getter @Setter @Inclui
+	@Inclui
 	private BigDecimal vlDeb;
 	
-	@Getter @Setter @Inclui
+	@Inclui
 	private BigDecimal vlCred;
 	
-	@Getter @Setter @Inclui
+	@Inclui
 	private BigDecimal vlSldFin;
 	
-	@Getter @Setter @Inclui
+	@Inclui
 	private String indDcFin;
 	
-	@Getter @Setter @Inclui
+	@Inclui
 	private BigDecimal vlSldIniMf;
 	
-	@Getter @Setter @Inclui
+	@Inclui
 	private String indDcIniMf;
 	
-	@Getter @Setter @Inclui
+	@Inclui
 	private BigDecimal vlDebMf;
 	
-	@Getter @Setter @Inclui
+	@Inclui
 	private BigDecimal vlCredMf;
 	
-	@Getter @Setter @Inclui
+	@Inclui
 	private BigDecimal vlSldFinMf;
 	
-	@Getter @Setter @Inclui
+	@Inclui
 	private String indDcFinMf;
 	
-	@Getter @Setter @Filho
+	@Filho
 	private List<RegI157> regI157;
 	
 	public RegI155(String codCta, String codCcus, BigDecimal vlSldIni, String indDcIni, BigDecimal vlDeb,
@@ -82,5 +80,130 @@ public class RegI155 implements Serializable {
 	}
 	
 	public RegI155() {/* */}
+
+	public String getReg() {
+		return reg;
+	}
+
+	public String getCodCta() {
+		return codCta;
+	}
+
+	public void setCodCta(String codCta) {
+		this.codCta = codCta;
+	}
+
+	public String getCodCcus() {
+		return codCcus;
+	}
+
+	public void setCodCcus(String codCcus) {
+		this.codCcus = codCcus;
+	}
+
+	public BigDecimal getVlSldIni() {
+		return vlSldIni;
+	}
+
+	public void setVlSldIni(BigDecimal vlSldIni) {
+		this.vlSldIni = vlSldIni;
+	}
+
+	public String getIndDcIni() {
+		return indDcIni;
+	}
+
+	public void setIndDcIni(String indDcIni) {
+		this.indDcIni = indDcIni;
+	}
+
+	public BigDecimal getVlDeb() {
+		return vlDeb;
+	}
+
+	public void setVlDeb(BigDecimal vlDeb) {
+		this.vlDeb = vlDeb;
+	}
+
+	public BigDecimal getVlCred() {
+		return vlCred;
+	}
+
+	public void setVlCred(BigDecimal vlCred) {
+		this.vlCred = vlCred;
+	}
+
+	public BigDecimal getVlSldFin() {
+		return vlSldFin;
+	}
+
+	public void setVlSldFin(BigDecimal vlSldFin) {
+		this.vlSldFin = vlSldFin;
+	}
+
+	public String getIndDcFin() {
+		return indDcFin;
+	}
+
+	public void setIndDcFin(String indDcFin) {
+		this.indDcFin = indDcFin;
+	}
+
+	public BigDecimal getVlSldIniMf() {
+		return vlSldIniMf;
+	}
+
+	public void setVlSldIniMf(BigDecimal vlSldIniMf) {
+		this.vlSldIniMf = vlSldIniMf;
+	}
+
+	public String getIndDcIniMf() {
+		return indDcIniMf;
+	}
+
+	public void setIndDcIniMf(String indDcIniMf) {
+		this.indDcIniMf = indDcIniMf;
+	}
+
+	public BigDecimal getVlDebMf() {
+		return vlDebMf;
+	}
+
+	public void setVlDebMf(BigDecimal vlDebMf) {
+		this.vlDebMf = vlDebMf;
+	}
+
+	public BigDecimal getVlCredMf() {
+		return vlCredMf;
+	}
+
+	public void setVlCredMf(BigDecimal vlCredMf) {
+		this.vlCredMf = vlCredMf;
+	}
+
+	public BigDecimal getVlSldFinMf() {
+		return vlSldFinMf;
+	}
+
+	public void setVlSldFinMf(BigDecimal vlSldFinMf) {
+		this.vlSldFinMf = vlSldFinMf;
+	}
+
+	public String getIndDcFinMf() {
+		return indDcFinMf;
+	}
+
+	public void setIndDcFinMf(String indDcFinMf) {
+		this.indDcFinMf = indDcFinMf;
+	}
+
+	public List<RegI157> getRegI157() {
+		return regI157;
+	}
+
+	public void setRegI157(List<RegI157> regI157) {
+		this.regI157 = regI157;
+	}
+	
 	
 }

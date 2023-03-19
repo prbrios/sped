@@ -3,19 +3,17 @@ package efd.contribuicoes.blocoC.n1.n2.n3.n4;
 import java.io.Serializable;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
 
 public class RegC499 implements Serializable {
 	private static final long serialVersionUID = 1533497287613812649L;
 
-	@Getter @Inclui
+	@Inclui
 	private final String reg = "C499";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String numProc;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String indProc;
 
     public RegC499(String numProc, String indProc) {
@@ -24,4 +22,25 @@ public class RegC499 implements Serializable {
     }
 
     public RegC499(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public String getNumProc() {
+        return numProc;
+    }
+
+    public void setNumProc(String numProc) {
+        this.numProc = numProc;
+    }
+
+    public String getIndProc() {
+        return indProc;
+    }
+
+    public void setIndProc(String indProc) {
+        this.indProc = indProc;
+    }
+    
 }

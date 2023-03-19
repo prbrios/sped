@@ -1,26 +1,23 @@
 package efd.icmsipi.blocoC.n1.n2.n3.n4;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
 
-
 public class RegC791 implements Serializable {
 	private static final long serialVersionUID = 2737455482829616326L;
 
-	@Getter @Inclui
+	@Inclui
     private final String reg = "C791";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String uf;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlBcIcmsSt;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlIcmsSt;
 
     public RegC791(String uf, BigDecimal vlBcIcmsSt, BigDecimal vlIcmsSt) {
@@ -30,4 +27,33 @@ public class RegC791 implements Serializable {
     }
 
     public RegC791(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public String getUf() {
+        return uf;
+    }
+
+    public void setUf(String uf) {
+        this.uf = uf;
+    }
+
+    public BigDecimal getVlBcIcmsSt() {
+        return vlBcIcmsSt;
+    }
+
+    public void setVlBcIcmsSt(BigDecimal vlBcIcmsSt) {
+        this.vlBcIcmsSt = vlBcIcmsSt;
+    }
+
+    public BigDecimal getVlIcmsSt() {
+        return vlIcmsSt;
+    }
+
+    public void setVlIcmsSt(BigDecimal vlIcmsSt) {
+        this.vlIcmsSt = vlIcmsSt;
+    }
+    
 }

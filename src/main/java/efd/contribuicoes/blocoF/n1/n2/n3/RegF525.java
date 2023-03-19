@@ -1,8 +1,6 @@
 package efd.contribuicoes.blocoF.n1.n2.n3;
 
 import efd.anotacoes.Inclui;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -10,37 +8,37 @@ import java.math.BigDecimal;
 public class RegF525 implements Serializable {
 	private static final long serialVersionUID = -8968465742425463371L;
 
-	@Getter @Inclui
+	@Inclui
 	private final String reg = "F525";
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlRec;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String indRec;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String cnpjCpf;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String numDoc;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codItem;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private BigDecimal vlRecDet;
 
-    @Getter @Setter @Inclui(zerosEsquerda = 2)
+    @Inclui(zerosEsquerda = 2)
     private Integer cstPis;
 
-    @Getter @Setter @Inclui(zerosEsquerda = 2)
+    @Inclui(zerosEsquerda = 2)
     private Integer cstCofins;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String infoComp;
 
-    @Getter @Setter @Inclui
+    @Inclui
     private String codCta;
 
     public RegF525(BigDecimal vlRec, String indRec, String cnpjCpf, String numDoc, String codItem, BigDecimal vlRecDet, Integer cstPis, Integer cstCofins, String infoComp, String codCta) {
@@ -57,4 +55,89 @@ public class RegF525 implements Serializable {
     }
 
     public RegF525(){}
+
+    public String getReg() {
+        return reg;
+    }
+
+    public BigDecimal getVlRec() {
+        return vlRec;
+    }
+
+    public void setVlRec(BigDecimal vlRec) {
+        this.vlRec = vlRec;
+    }
+
+    public String getIndRec() {
+        return indRec;
+    }
+
+    public void setIndRec(String indRec) {
+        this.indRec = indRec;
+    }
+
+    public String getCnpjCpf() {
+        return cnpjCpf;
+    }
+
+    public void setCnpjCpf(String cnpjCpf) {
+        this.cnpjCpf = cnpjCpf;
+    }
+
+    public String getNumDoc() {
+        return numDoc;
+    }
+
+    public void setNumDoc(String numDoc) {
+        this.numDoc = numDoc;
+    }
+
+    public String getCodItem() {
+        return codItem;
+    }
+
+    public void setCodItem(String codItem) {
+        this.codItem = codItem;
+    }
+
+    public BigDecimal getVlRecDet() {
+        return vlRecDet;
+    }
+
+    public void setVlRecDet(BigDecimal vlRecDet) {
+        this.vlRecDet = vlRecDet;
+    }
+
+    public Integer getCstPis() {
+        return cstPis;
+    }
+
+    public void setCstPis(Integer cstPis) {
+        this.cstPis = cstPis;
+    }
+
+    public Integer getCstCofins() {
+        return cstCofins;
+    }
+
+    public void setCstCofins(Integer cstCofins) {
+        this.cstCofins = cstCofins;
+    }
+
+    public String getInfoComp() {
+        return infoComp;
+    }
+
+    public void setInfoComp(String infoComp) {
+        this.infoComp = infoComp;
+    }
+
+    public String getCodCta() {
+        return codCta;
+    }
+
+    public void setCodCta(String codCta) {
+        this.codCta = codCta;
+    }
+    
 }
