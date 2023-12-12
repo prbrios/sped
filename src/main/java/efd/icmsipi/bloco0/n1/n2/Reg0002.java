@@ -1,4 +1,4 @@
-package efd.icmsipi.bloco0.n1;
+package efd.icmsipi.bloco0.n1.n2;
 
 import java.io.Serializable;
 

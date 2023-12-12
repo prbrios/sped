@@ -3,7 +3,6 @@ package efd.icmsipi.bloco0;
 import efd.anotacoes.Filho;
 import efd.anotacoes.Inclui;
 import efd.icmsipi.bloco0.n1.Reg0001;
-import efd.icmsipi.bloco0.n1.Reg0002;
 import efd.icmsipi.bloco0.n1.Reg0990;
 import efd.icmsipi.bloco1.n1.Reg1001;
 import efd.icmsipi.bloco1.n1.Reg1990;
