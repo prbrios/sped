@@ -79,9 +79,6 @@ public class Reg0000 implements Serializable {
     private Reg0001 reg0001;
 
     @Filho
-    private Reg0002 reg0002;
-
-    @Filho
     private Reg0990 reg0990;
 
     @Filho
@@ -280,14 +277,6 @@ public class Reg0000 implements Serializable {
 
     public void setReg0001(Reg0001 reg0001) {
         this.reg0001 = reg0001;
-    }
-
-    public Reg0002 getReg0002() {
-        return reg0002;
-    }
-
-    public void setReg0002(Reg0002 reg0002) {
-        this.reg0002 = reg0002;
     }
 
     public Reg0990 getReg0990() {

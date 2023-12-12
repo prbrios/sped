@@ -17,6 +17,9 @@ public class Reg0001 implements Serializable {
     private Integer indMov;
 
     @Filho
+    private Reg0002 reg0002;
+
+    @Filho
     private Reg0005 reg0005;
 
     @Filho
@@ -70,6 +73,14 @@ public class Reg0001 implements Serializable {
         this.indMov = indMov;
     }
 
+    public Reg0002 getReg0002() {
+        return reg0002;
+    }
+
+    public void setReg0002(Reg0002 reg0002) {
+        this.reg0002 = reg0002;
+    }
+    
     public Reg0005 getReg0005() {
         return reg0005;
     }
